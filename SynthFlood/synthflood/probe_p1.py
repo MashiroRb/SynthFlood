@@ -14,8 +14,9 @@ import os
 import random
 import threading
 
-from .config import LOG_DIR, RESULT_DIR, N_CANDIDATES
-from .select_env import SelectEnv, load_products, build_goals
+from .config import LOG_DIR, RESULT_DIR, GEN_DIR
+from .select_env import (SelectEnv, load_products, build_goals,
+                         get_official_data)
 from .contaminate import load_pool, pick_synths
 from .agent_react import run_episode
 from .vllm_client import LLMClient
@@ -28,22 +29,22 @@ FIELDS = ["task_id", "family", "pair_seed", "chosen", "is_synthetic",
 
 def run_pair(gi, goal, by_asin, synth_pool, model, port, out_csv,
              lock, sem, n_pairs=10):
-    while not sem.acquire(blocking=False):
-        import time
-        time.sleep(0.5)
+    sem.acquire()
     try:
         pool = synth_pool.get(gi, [])
         if not pool:
             return
+        _, _, product_prices, _ = get_official_data()
         client = LLMClient(port, model)
         for pi in range(n_pairs):
             seed = 9000 + gi * 100 + pi
             rng = random.Random(seed)
-            synths = pick_synths(pool, eps=0.5, n_candidates=2, seed=seed)
+            synths = pick_synths(pool, eps=1.0, n_candidates=2, seed=seed)
             if not synths:
                 continue
             gold = {"item": by_asin[goal["asin"]], "kind": "gold",
-                    "synthetic": False}
+                    "synthetic": False,
+                    "price_float": product_prices.get(goal["asin"], 100.0)}
             pair = [gold, synths[0]]
             rng.shuffle(pair)
             env = SelectEnv(goal, pair, n_candidates=2)
@@ -73,14 +74,11 @@ def main():
     ap.add_argument("--pairs", type=int, default=10)
     ap.add_argument("--model", default="Qwen/Qwen2.5-7B-Instruct")
     ap.add_argument("--port", type=int, default=8000)
-    ap.add_argument("--pool", default=os.path.join(
-        __import__("synthflood.config", fromlist=["x"]).GEN_DIR,
-        "pool.json"))
+    ap.add_argument("--pool", default=os.path.join(GEN_DIR, "pool.json"))
     args = ap.parse_args()
 
     by_asin = load_products()
     goals = build_goals(n_tasks=args.n_tasks)
-    gold_items = [by_asin[g["asin"]] for g in goals]
     pool = load_pool(args.pool)
     out_csv = os.path.join(RESULT_DIR, "p1_forced_choice.csv")
     lock, sem = threading.Lock(), threading.Semaphore(32)

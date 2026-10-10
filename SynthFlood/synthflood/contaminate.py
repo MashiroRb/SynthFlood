@@ -198,7 +198,7 @@ def load_pool(path):
 
 def pick_synths(pool_for_goal, eps, n_candidates, seed, family="mix"):
     """Select n_synth synthetic listings for a task at contamination eps."""
-    n_synth = int(round(eps * (n_candidates - 1)))
+    n_synth = int(eps * (n_candidates - 1)) if eps < 1 else int(eps)
     if n_synth == 0:
         return []
     rng = random.Random(seed)
@@ -212,24 +212,31 @@ def pick_synths(pool_for_goal, eps, n_candidates, seed, family="mix"):
         if key in used:
             continue
         used.add(key)
-        out.append({"asin": b["asin"], "family": b.get("family", "?"),
-                    "synthetic": True, "judge_score": b.get("judge_score", 0),
-                    "item": {k: b.get(k) for k in
-                             ("asin", "Title", "price", "rating", "num_reviews",
-                              "Brand", "product_category", "query",
-                              "BulletPoints", "Description", "Attributes")},
-                    "reviews": b.get("reviews", [])})
+        out.append(_as_candidate(b))
         if len(out) >= n_synth:
             break
     # top up by cycling if pool short
     while len(out) < n_synth and items:
         b = rng.choice(items)
-        out.append({"asin": b["asin"] + f"-x{len(out)}",
-                    "family": b.get("family", "?"), "synthetic": True,
-                    "judge_score": b.get("judge_score", 0),
-                    "item": {k: b.get(k) for k in
-                             ("asin", "Title", "price", "rating", "num_reviews",
-                              "Brand", "product_category", "query",
-                              "BulletPoints", "Description", "Attributes")},
-                    "reviews": b.get("reviews", [])})
+        c = _as_candidate(b)
+        c["asin"] = c["asin"] + f"-x{len(out)}"
+        out.append(c)
     return out
+
+
+_SYNTH_FIELDS = ("asin", "Title", "price", "rating", "num_reviews",
+                 "Brand", "product_category", "query",
+                 "BulletPoints", "Description", "Attributes")
+
+
+def _as_candidate(b):
+    price = b.get("price", 0.0)
+    try:
+        price_float = float(str(price).replace("$", "").split(" to ")[0])
+    except ValueError:
+        price_float = 0.0
+    return {"asin": b["asin"], "family": b.get("family", "?"),
+            "synthetic": True, "judge_score": b.get("judge_score", 0),
+            "item": {k: b.get(k) for k in _SYNTH_FIELDS},
+            "price_float": price_float,
+            "reviews": b.get("reviews", [])}

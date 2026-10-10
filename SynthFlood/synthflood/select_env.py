@@ -10,60 +10,53 @@ Design:
   paired across eps levels.
 - Agent protocol (text): view[k] opens candidate k's full page; select[k]
   buys candidate k and ends the episode.
+- Reward: official get_reward. Because our protocol has no option-selection
+  step, once a listing is chosen we score the BEST variant of that listing
+  against each goal option (the shopper picks the right variant after picking
+  the right product). Reward differences between candidates then come purely
+  from WHICH listing was chosen - the manipulated variable.
 """
-import json
 import os
 import random
 import sys
 
-from .config import DATA_DIR
+from thefuzz import fuzz
 
-WEBSHOP_REPO = os.path.join(LAB := os.environ.get("SYNTHFLOOD_ROOT",
-                     os.path.expanduser("~/synthflood")), "webshop_repo")
+from .config import DATA_DIR
+from .ws_loader import load_official_data
+
+WEBSHOP_REPO = os.path.join(os.environ.get("SYNTHFLOOD_ROOT",
+                                           os.path.expanduser("~/synthflood")),
+                            "webshop_repo")
 if os.path.isdir(WEBSHOP_REPO):
-    sys.path.insert(0, WEBSHOP_REPO)
+    if WEBSHOP_REPO not in sys.path:
+        sys.path.insert(0, WEBSHOP_REPO)
+
+_CACHE = {}
+
+
+def get_official_data():
+    """(all_products, product_item_dict, product_prices, attribute_to_asins)"""
+    if "data" not in _CACHE:
+        _CACHE["data"] = load_official_data(DATA_DIR)
+    return _CACHE["data"]
 
 
 def load_products():
-    """items_shuffle.json: scraped product info; items_ins_v2.json: attributes;
-    items_human_ins.json: human instructions keyed by asin."""
-    items_path = os.path.join(DATA_DIR, "items_shuffle.json")
-    ins_path = os.path.join(DATA_DIR, "items_ins_v2.json")
-    human_path = os.path.join(DATA_DIR, "items_human_ins.json")
-    with open(items_path) as f:
-        items = json.load(f)
-    with open(ins_path) as f:
-        attrs = json.load(f)
-    with open(human_path) as f:
-        human = json.load(f)
-    by_asin = {}
-    for it, at in zip(items, attrs):
-        it = dict(it)
-        if "Attributes" not in it:
-            it["Attributes"] = at.get("Attributes", [])
-        it["instructions"] = human.get(it["asin"], [])
-        by_asin[it["asin"]] = it
-    return by_asin
+    """by_asin dict of official merged products."""
+    _, item_dict, _, _ = get_official_data()
+    return item_dict
 
 
 def build_goals(n_tasks=0, seed=2027):
     """Official goals via the official goal builder (human instructions)."""
+    import random as _r
     from web_agent_site.engine.goal import get_human_goals  # official semantics
-    items_path = os.path.join(DATA_DIR, "items_shuffle.json")
-    ins_path = os.path.join(DATA_DIR, "items_ins_v2.json")
-    with open(items_path) as f:
-        items = json.load(f)
-    with open(ins_path) as f:
-        attrs = json.load(f)
-    prices = {}
-    for it, at in zip(items, attrs):
-        prices[it["asin"]] = at.get("price", it.get("price", 0.0))
-        if "Attributes" not in it:
-            it["Attributes"] = at.get("Attributes", [])
-    goals = get_human_goals(items, prices)
+    all_products, _, product_prices, _ = get_official_data()
+    _r.seed(seed)  # official get_human_goals samples price uppers via global random
+    goals = get_human_goals(all_products, product_prices)
     rng = random.Random(seed)
     rng.shuffle(goals)
-    # keep one goal per gold asin to diversify tasks
     seen, uniq = set(), []
     for g in goals:
         if g["asin"] in seen:
@@ -76,7 +69,7 @@ def build_goals(n_tasks=0, seed=2027):
 
 
 def product_fields(p):
-    """Normalize field access across items.json variants."""
+    """Normalize field access across merged items."""
     title = p.get("Title") or p.get("name") or ""
     bullets = p.get("BulletPoints") or p.get("bullet_points") or []
     if isinstance(bullets, str):
@@ -85,9 +78,11 @@ def product_fields(p):
     attrs = p.get("Attributes") or []
     cat = p.get("product_category") or p.get("category") or ""
     brand = p.get("Brand") or p.get("brand") or ""
-    rating = p.get("star5_ratios") or p.get("rating") or ""
+    rating = p.get("Rating")
+    if rating in (None, "N.A."):
+        rating = p.get("star5_ratios") or p.get("rating") or ""
     nrev = p.get("num_reviews") or p.get("review_num") or ""
-    price = p.get("price") or p.get("Price") or ""
+    price = p.get("Price") or p.get("price") or ""
     return dict(title=title, bullets=bullets, desc=desc, attrs=attrs,
                 cat=cat, brand=brand, rating=rating, nrev=nrev, price=price)
 
@@ -100,7 +95,7 @@ def results_page(cands):
         if isinstance(rating, float):
             rating = f"{rating:.1f}"
         lines.append(
-            f"[{i}] {f['title']} | ${f['price']} | rating: {rating} "
+            f"[{i}] {f['title']} | {f['price']} | rating: {rating} "
             f"({f['nrev']} reviews) | {f['brand']}")
     lines.append("\nUse view[k] to inspect a product page, select[k] to buy.")
     return "\n".join(lines)
@@ -108,7 +103,7 @@ def results_page(cands):
 
 def item_page(c):
     f = product_fields(c["item"])
-    parts = [f"Title: {f['title']}", f"Price: ${f['price']}",
+    parts = [f"Title: {f['title']}", f"Price: {f['price']}",
              f"Rating: {f['rating']} ({f['nrev']} reviews)",
              f"Brand: {f['brand']}", f"Category: {f['cat']}"]
     if f["attrs"]:
@@ -127,11 +122,29 @@ def item_page(c):
     return "\n".join(parts)
 
 
+def best_variant_options(item, goal):
+    """Map each goal option to the item's best-matching value of that option
+    type (the shopper picks the right variant after choosing the listing)."""
+    item_opts = item.get("options") or {}
+    chosen = {}
+    for g_name, g_val in (goal.get("goal_options") or {}).items():
+        vals = item_opts.get(str(g_name).lower(), [])
+        best, best_s = "", -1.0
+        for v in vals:
+            s = fuzz.token_set_ratio(v, g_val)
+            if s > best_s:
+                best, best_s = v, s
+        if best_s >= 0:
+            chosen[str(g_name)] = best
+    return chosen
+
+
 class SelectEnv:
     def __init__(self, goal, candidates, n_candidates=10):
         self.goal = goal
         self.candidates = candidates[:n_candidates]
         self.n = len(self.candidates)
+        self._synth_positions = []
         self.reset()
 
     def reset(self):
@@ -189,11 +202,13 @@ class SelectEnv:
             "Attributes": f["attrs"],
             "BulletPoints": f["bullets"],
             "Description": f["desc"],
-            "options": c.get("options", {}),
         }
+        price = c.get("price_float")
+        if price is None:
+            price = 0.0
+        options = best_variant_options(c["item"], self.goal)
         try:
-            r, info = get_reward(prod, self.goal, f["price"],
-                                 prod["options"], verbose=True)
+            r, info = get_reward(prod, self.goal, price, options, verbose=True)
         except Exception:
             r, info = 0.0, {}
         return r, info
@@ -216,10 +231,11 @@ def sample_distractors(goal, by_asin, k, seed):
 def build_task(goal, by_asin, eps, synth_pool, seed, n_candidates=10):
     """Fixed base candidate list; replace floor(eps*(n-1)) distractor slots
     with synthetic listings. Returns ordered candidate list + bookkeeping."""
-    n_synth = int(round(eps * (n_candidates - 1)))
+    _, _, product_prices, _ = get_official_data()
+    n_synth = int(eps * (n_candidates - 1)) if eps < 1 else int(eps)
     rng = random.Random(seed)
     distractors = sample_distractors(goal, by_asin, n_candidates - 1, seed=seed)
-    slots = list(range(1, n_candidates))  # candidate indices 2..10 in 1-based
+    slots = list(range(1, n_candidates))  # candidate indices 2..10 (1-based)
     replace = rng.sample(slots, n_synth) if n_synth else []
     synths = synth_pool[:n_synth]
     candidates, synth_positions = [], []
@@ -227,17 +243,23 @@ def build_task(goal, by_asin, eps, synth_pool, seed, n_candidates=10):
     for idx in range(n_candidates):
         pos = idx + 1
         if pos == 1:
-            candidates.append({"item": by_asin[goal["asin"]],
-                               "kind": "gold", "synthetic": False})
+            c = {"item": by_asin[goal["asin"]], "kind": "gold",
+                 "synthetic": False}
+            c["price_float"] = product_prices.get(goal["asin"], 100.0)
+            candidates.append(c)
         elif pos - 1 in replace:
-            candidates.append(dict(synths[si]))
-            candidates[-1]["kind"] = f"synthetic:{synths[si].get('family', '?')}"
-            candidates[-1]["synthetic"] = True
+            cand = dict(synths[si])
+            cand["kind"] = f"synthetic:{synths[si].get('family', '?')}"
+            cand["synthetic"] = True
+            cand.setdefault("price_float", 0.0)
+            candidates.append(cand)
             synth_positions.append(pos)
             si += 1
         else:
             d = distractors.pop(0)
-            candidates.append({"item": d, "kind": "real", "synthetic": False})
+            c = {"item": d, "kind": "real", "synthetic": False}
+            c["price_float"] = product_prices.get(d["asin"], 100.0)
+            candidates.append(c)
     # noisy provenance-availability signal (for the provenance defense):
     # real items carry verifiable provenance 85% of the time, synthetic
     # items only 15%. The defense sees ONLY this bit, never the label.
