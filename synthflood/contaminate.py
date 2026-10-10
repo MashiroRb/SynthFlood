@@ -146,12 +146,13 @@ def judge_plausible(base, goal, client, port):
 
 def generate_pool(goals, gold_items, out_path, port, model,
                   per_task_per_family=4, n_review_packs=1, max_workers=8,
-                  judge_port=None):
+                  judge_port=None, judge_model=None):
     """Generate a synthetic listing pool keyed by goal index.
 
-    judge_port: serve the plausibility judge on a separate model/port than
-    the generator (avoids generator self-preference bias).
+    judge_port/judge_model: serve the plausibility judge on a separate
+    model/port than the generator (avoids generator self-preference bias).
     """
+    judge_model = judge_model or model
     rng = random.Random(GEN_SEED)
     sem = threading.Semaphore(max_workers)
     results, lock = {}, threading.Lock()
@@ -159,7 +160,7 @@ def generate_pool(goals, gold_items, out_path, port, model,
     def work(gi, goal):
         with sem:
             cl = LLMClient(port, model)
-            jc = LLMClient(judge_port or port, model)
+            jc = LLMClient(judge_port or port, judge_model)
             g = dict(goal)
             gold = gold_items[gi]
             fam_rng = random.Random(GEN_SEED + gi)

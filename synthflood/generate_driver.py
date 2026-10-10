@@ -18,6 +18,7 @@ def main():
     ap.add_argument("--port", type=int, default=8001)
     ap.add_argument("--judge-port", type=int, default=8000,
                     help="judge model port (different from generator)")
+    ap.add_argument("--judge-model", default="Qwen/Qwen2.5-7B-Instruct")
     ap.add_argument("--out", default=None)
     ap.add_argument("--goals-file", default=None,
                     help="json with goal list (keeps tasks aligned)")
@@ -36,7 +37,8 @@ def main():
     out = args.out or os.path.join(GEN_DIR, "pool.json")
     pool = generate_pool(goals, gold_items, out, args.port, args.model,
                          per_task_per_family=args.per_task,
-                         judge_port=args.judge_port)
+                         judge_port=args.judge_port,
+                         judge_model=args.judge_model)
     n = sum(len(v) for v in pool.values())
     print(f"generated {n} synthetic listings -> {out}")
 
