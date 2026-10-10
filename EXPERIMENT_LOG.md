@@ -49,7 +49,18 @@
   → 改为显式 cp 单文件同步（改进：后续同步用 rsync 式覆盖）
 - **设计决策**：选择协议无“选变体”步骤，故对被选商品按“最优变体匹配”计入 option 项，
   使 reward 差异只来自“选了哪个 listing”（处理变量）；合成商品继承 gold 的 options 字典（仅进 reward）
-- 冒烟结果：数据加载 ✓、官方 goals ✓、候选构造 ✓（污染池为空时 eps>0 会触发 IndexError，属预期保护）
+- 冒烟结果（smoke2）：数据缓存 34s 加载 ✓；GOLD reward=1.0（r_type/r_att/r_option/r_price 全中，
+  列表格式 goal_options 的变体匹配正确）；随机干扰项 reward=0.0
+- **问题4（发现并修复）**：同 `category` 干扰项在官方 r_type 判定下全为 0（官方按 `product_category`
+  细分"›"匹配），会使 success 与 regret 完全反相关，“静默侵蚀”无法测 → **干扰项改为优先同
+  `product_category` 采样，粗类回补**（改进 #4）
+- 冒烟结果（smoke3）：10 任务中候选 reward 呈梯度 0–1.0（如 [1.0, 0.67, 0.67, 0.33]），
+  gold=1.0 恒成立；个别任务存在多个 1.0 替代品（官方语义，配对设计可处理）
+- **问题5（发现并修复）**：预装 torch 2.13.0+cu130，驱动仅 12.8 → vLLM 引擎初始化失败。
+  装 torch 2.11.0+cu128（`--index-url download.pytorch.org/whl/cu128`）后 vLLM 0.31 仍报
+  `libcudart.so.13`（0.31 wheel 本身按 cu13 编译）→ 查 PyPI 元数据发现 vLLM 0.20+ 均绑
+  torch 2.11（cu130 编译），**降级到 cu12 编译的 vLLM 版本**（0.19/0.20/0.21 逐个测试，
+  取能 import 的最高版）（改进 #5）
 
 ## 3. 待续
 
