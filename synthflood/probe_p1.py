@@ -100,9 +100,10 @@ def main():
             rows.append(line.strip().split(","))
     n = len(rows)
     k = sum(1 for r in rows if r[4] == "1")
-    sus, ci = wilson_ci(k, n)
+    sus = k / n if n else float("nan")
+    lo, hi = wilson_ci(k, n)
     print(json.dumps({"n": n, "k_synth": k, "susceptibility": round(sus, 4),
-                      "ci95": [round(x, 4) for x in ci],
+                      "ci95": [round(lo, 4), round(hi, 4)],
                       "gate": "GO" if sus >= 0.60 else "NO-GO"}))
 
 
