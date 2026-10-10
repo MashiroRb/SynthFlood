@@ -232,15 +232,21 @@ class SelectEnv:
 
 
 def sample_distractors(goal, by_asin, k, seed):
-    """Same-category distractors (never the gold asin)."""
+    """Plausible distractors, never the gold asin. Prefer the same fine-grained
+    product_category so competing candidates earn graded (non-zero) official
+    rewards; fall back to the coarser category only if the fine pool is short."""
     rng = random.Random(seed)
-    cat = goal["category"]
+    fine = goal["product_category"]
+    coarse = goal["category"]
     pool = [p for p in by_asin.values()
-            if p.get("category") == cat and p["asin"] != goal["asin"]]
-    if len(pool) < k:  # fall back to same query
-        pool = [p for p in by_asin.values()
-                if p.get("query") == goal["query"]
-                and p["asin"] != goal["asin"]]
+            if p.get("product_category") == fine and p["asin"] != goal["asin"]]
+    if len(pool) < k:
+        extra = [p for p in by_asin.values()
+                 if p.get("category") == coarse
+                 and p.get("product_category") != fine
+                 and p["asin"] != goal["asin"]]
+        rng.shuffle(extra)
+        pool += extra
     rng.shuffle(pool)
     return pool[:k]
 
