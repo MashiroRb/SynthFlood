@@ -1,0 +1,6 @@
+=== try vllm 0.21.0 ===
+sentence-transformers 6.1.0 requires transformers<6.0.0,>=5.0.0, but you have transformers 4.57.6 which is incompatible.
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+IMPORT_OK 0.21.0
+WORKS=0.21.0
+torch 2.11.0+cu128 cuda True

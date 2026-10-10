@@ -1,0 +1,15 @@
+/usr/local/lib/python3.10/dist-packages/huggingface_hub/constants.py:302: FutureWarning: The `HF_HUB_ENABLE_HF_TRANSFER` environment variable is deprecated as 'hf_transfer' is not used anymore. Please use `HF_XET_HIGH_PERFORMANCE` instead to enable high performance transfer with Xet. Visit https://huggingface.co/docs/huggingface_hub/package_reference/environment_variables#hfxethighperformance for more details.
+  warnings.warn(
+Downloading Qwen/Qwen2.5-7B-Instruct
+Fetching 14 files:   0%|          | 0/14 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 14 files:   7%|▋         | 1/14 [00:00<00:03,  3.59it/s]Fetching 14 files:  43%|████▎     | 6/14 [00:00<00:00, 16.88it/s]Fetching 14 files:  64%|██████▍   | 9/14 [00:00<00:00, 13.87it/s]Fetching 14 files:  71%|███████▏  | 10/14 [00:19<00:00, 13.87it/s]Fetching 14 files:  79%|███████▊  | 11/14 [00:21<00:09,  3.07s/it]Fetching 14 files:  86%|████████▌ | 12/14 [00:21<00:05,  2.60s/it]Fetching 14 files: 100%|██████████| 14/14 [00:23<00:00,  2.07s/it]Fetching 14 files: 100%|██████████| 14/14 [00:23<00:00,  1.70s/it]
+DONE Qwen/Qwen2.5-7B-Instruct
+Downloading NousResearch/Meta-Llama-3.1-8B-Instruct
+Fetching 14 files:   0%|          | 0/14 [00:00<?, ?it/s]Fetching 14 files:   7%|▋         | 1/14 [00:00<00:02,  4.43it/s]Fetching 14 files:  43%|████▎     | 6/14 [00:00<00:00, 14.58it/s]Fetching 14 files:  64%|██████▍   | 9/14 [00:00<00:00, 14.64it/s]Fetching 14 files:  79%|███████▊  | 11/14 [00:15<00:06,  2.20s/it]Fetching 14 files:  86%|████████▌ | 12/14 [00:16<00:04,  2.00s/it]Fetching 14 files:  93%|█████████▎| 13/14 [00:29<00:04,  4.21s/it]Fetching 14 files: 100%|██████████| 14/14 [00:39<00:00,  5.38s/it]Fetching 14 files: 100%|██████████| 14/14 [00:39<00:00,  2.80s/it]
+DONE NousResearch/Meta-Llama-3.1-8B-Instruct
+Downloading Qwen/Qwen2.5-3B-Instruct
+Fetching 12 files:   0%|          | 0/12 [00:00<?, ?it/s]Fetching 12 files:   8%|▊         | 1/12 [00:00<00:02,  4.60it/s]Fetching 12 files:  42%|████▏     | 5/12 [00:00<00:00, 15.79it/s]Fetching 12 files:  67%|██████▋   | 8/12 [00:00<00:00, 19.30it/s]Fetching 12 files:  92%|█████████▏| 11/12 [00:07<00:00,  1.08it/s]Fetching 12 files: 100%|██████████| 12/12 [00:08<00:00,  1.39it/s]
+DONE Qwen/Qwen2.5-3B-Instruct
+Downloading Qwen/Qwen2.5-1.5B-Instruct
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files:  10%|█         | 1/10 [00:00<00:01,  4.64it/s]Fetching 10 files:  60%|██████    | 6/10 [00:00<00:00, 16.24it/s]Fetching 10 files:  90%|█████████ | 9/10 [00:00<00:00, 15.19it/s]Fetching 10 files: 100%|██████████| 10/10 [00:07<00:00,  1.41it/s]
+DONE Qwen/Qwen2.5-1.5B-Instruct

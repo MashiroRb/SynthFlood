@@ -1,0 +1,11 @@
+loading cached products from /root/synthflood/data/all_products.pkl
+cached load 34s, 1181430 products
+164 skipped
+goals: 30
+goal: i am looking for wedding bride and groom flavor hand crafted cookies, and price lower than 30.00 dollars | attrs: ['hand crafted'] | opts: ['wedding bride and groom']
+GOLD: 1.0 {'r_type': 1.0, 'r_att': 1.0, 'w_att': 0.3333333333333333, 'query_match': True, 'category_match': True, 'title_score': 1.0, 'r_option': 1.0, 'w_option': 0.3333333333333333, 'r_price': True, 'w_price': 0.3333333333333333}
+DISTRACTOR2: 0.0 {'r_type': 0.0, 'r_att': 0.0, 'w_att': 0.3333333333333333, 'query_match': False, 'category_match': False, 'title_score': 0.0, 'r_option': 0.0, 'w_option': 0.3333333333333333, 'r_price': True, 'w_price': 0.3333333333333333}
+DISTRACTOR3: 0.0 {'r_type': 0.0, 'r_att': 0.0, 'w_att': 0.3333333333333333, 'query_match': False, 'category_match': False, 'title_score': 0.0, 'r_option': 0.0, 'w_option': 0.3333333333333333, 'r_price': True, 'w_price': 0.3333333333333333}
+best_variant_options(gold): {'wedding bride and groom': 'wedding bride and groom'}
+gold rewards over 10 tasks: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+SMOKE_OK
