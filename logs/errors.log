@@ -1,20 +1,800 @@
-P2 40 0.25 mix none: list index out of range
-P2 40 0.75 mix none: list index out of range
-P2 41 0.25 mix none: list index out of range
-P2 41 0.75 mix none: list index out of range
-P2 42 0.25 mix none: list index out of range
-P2 42 0.75 mix none: list index out of range
-P2 43 0.25 mix none: list index out of range
-P2 43 0.75 mix none: list index out of range
-P2 44 0.25 mix none: list index out of range
-P2 44 0.75 mix none: list index out of range
-P2 45 0.25 mix none: list index out of range
-P2 45 0.75 mix none: list index out of range
-P2 46 0.25 mix none: list index out of range
-P2 46 0.75 mix none: list index out of range
-P2 47 0.25 mix none: list index out of range
-P2 47 0.75 mix none: list index out of range
-P2 48 0.25 mix none: list index out of range
-P2 48 0.75 mix none: list index out of range
-P2 49 0.25 mix none: list index out of range
-P2 49 0.75 mix none: list index out of range
+P4F_3B 3 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 5 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 0 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 8 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 8 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 3 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 1 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 0 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 4 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 5 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 2 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 6 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 7 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 10 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 10 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 4 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 6 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 11 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 9 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 2 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 1 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 9 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 7 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 11 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 12 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 12 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 13 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 13 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 14 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 14 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 15 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 16 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 15 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 17 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 18 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 19 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 18 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 19 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 17 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 16 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 20 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 21 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 22 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 21 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 20 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 22 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 23 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 23 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 24 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 25 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 24 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 26 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 25 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 26 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 27 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 27 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 28 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 28 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 30 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 30 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 29 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 31 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 29 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 32 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 31 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 33 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 34 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 33 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 34 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 35 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 32 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 35 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 36 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 36 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 37 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 37 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 38 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 38 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 39 0.0 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+
+P4F_3B 39 0.75 mix none: LLM call failed after 5 retries: HTTP Error 404: Not Found
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 54, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/code/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/code/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 404: Not Found
+

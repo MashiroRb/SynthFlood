@@ -1,0 +1,3 @@
+loading cached products from /root/synthflood/data/all_products.pkl
+164 skipped
+{"stage": "P4C_detector_struct", "done": true, "csv": "/root/synthflood/results/p4c_detector_struct_sweep.csv"}
