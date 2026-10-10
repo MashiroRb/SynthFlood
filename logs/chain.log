@@ -1,0 +1,13 @@
+[chain] waiting for /root/synthflood/data/contamination/pool.json ...
+[chain] pool found at 2026-10-10T14:13:49Z
+[chain] audit exported
+[chain] P1 starting at 2026-10-10T14:13:49Z
+[chain] P1 done
+  File "/root/synthflood/code/synthflood/probe_p1.py", line 105, in main
+    "ci95": [round(x, 4) for x in ci],
+TypeError: 'float' object is not iterable
+[chain] P2 starting at 2026-10-10T14:16:33Z
+[chain] P2 done
+loading cached products from /root/synthflood/data/all_products.pkl
+164 skipped
+{"stage": "P2", "done": true, "csv": "/root/synthflood/results/p2_sweep.csv"}
