@@ -10,12 +10,12 @@ MODEL1=${MODEL1:-NousResearch/Meta-Llama-3.1-8B-Instruct}
 
 CUDA_VISIBLE_DEVICES=0 nohup python3 -m vllm.entrypoints.openai.api_server \
   --model "$MODEL0" --port 8000 --max-model-len 16384 \
-  --gpu-memory-utilization 0.92 \
+  --gpu-memory-utilization 0.92 --enforce-eager \
   > ~/synthflood/logs/vllm_gpu0.log 2>&1 &
 echo "gpu0 pid $!"
 
 CUDA_VISIBLE_DEVICES=1 nohup python3 -m vllm.entrypoints.openai.api_server \
   --model "$MODEL1" --port 8001 --max-model-len 16384 \
-  --gpu-memory-utilization 0.92 \
+  --gpu-memory-utilization 0.92 --enforce-eager \
   > ~/synthflood/logs/vllm_gpu1.log 2>&1 &
 echo "gpu1 pid $!"
