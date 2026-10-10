@@ -106,7 +106,14 @@ def synth_listing(family, goal, gold_item, rng, client, port):
     specs = [str(s)[:120] for s in js.get("specs", [])][:6]
     base["Attributes"] = specs
     # economic attractiveness, assigned programmatically for controllability
-    gold_price = f["price"] if isinstance(f["price"], (int, float)) else 50.0
+    gold_price = f["price"]
+    if isinstance(gold_price, str):
+        try:
+            gold_price = float(gold_price.replace("$", "").split(" to ")[0])
+        except ValueError:
+            gold_price = 50.0
+    if not isinstance(gold_price, (int, float)) or gold_price <= 0:
+        gold_price = 50.0
     base["price"] = round(gold_price * rng.uniform(0.75, 0.95), 2)
     base["rating"] = round(rng.uniform(4.6, 4.9), 1)
     base["num_reviews"] = rng.randrange(400, 3000)
@@ -248,6 +255,7 @@ def _as_candidate(b):
     except ValueError:
         price_float = 0.0
     return {"asin": b["asin"], "family": b.get("family", "?"),
+            "kind": f"synthetic:{b.get('family', '?')}",
             "synthetic": True, "judge_score": b.get("judge_score", 0),
             "item": {k: b.get(k) for k in _SYNTH_FIELDS},
             "price_float": price_float,
