@@ -1,17 +1,17 @@
 \section{Results}
 \label{sec:results}
-% FILL: every XX below is finalized from p1_forced_choice.csv (v4),
+% numbers finalized from p1_forced_choice.csv (v4),
 % p4a_sweep.csv, p4b_*_sweep.csv, p4c_*_sweep.csv, p4e_sweep.csv.
 
 \subsection{Susceptibility: gloss rejected, clones at chance}
 \label{sec:res-probe}
 The forced-choice probe confronts each agent with one gold product and one
 synthetic listing (300 randomized duels). Agents overall still prefer the
-real product, $\sigma=\textbf{XX}$ (95\% CI $[\textbf{XX},\textbf{XX}]$,
-binomial vs.\ $\tfrac12$ $p=\textbf{XX}$), but the families separate sharply:
-$\sigma_{\text{clone}}=\textbf{XX}$ --- indistinguishable from chance
---- while $\sigma_{\text{geo}}=\textbf{XX}$ and
-$\sigma_{\text{reviews}}=\textbf{XX}$. Trajectory inspection shows the
+real product, $\sigma=0.377$ (95\% CI $[0.324,0.433]$, binomial vs.\
+$\tfrac12$ $p<10^{-35}$), but the families separate sharply:
+$\sigma_{\text{clone}}=0.523$ --- statistically indistinguishable from
+chance --- while $\sigma_{\text{geo}}=0.351$ and
+$\sigma_{\text{reviews}}=0.287$. Trajectory inspection shows the
 mechanism: agents quote instruction attributes, find them missing or altered
 on gloss pages, and buy the real product even when it displays no rating and
 the synthetic page shows 4.7 stars with thousands of reviews. Social proof
@@ -21,50 +21,55 @@ the instruction's critical attributes.
 
 \subsection{Dose--response: success flat, regret and confidence climb}
 \label{sec:res-dose}
-Figure~\ref{fig:dose} and Table~\ref{tab:dose} give the main curve over
-$\varepsilon\in\{0,0.1,0.25,0.5,0.75\}$ ($N{=}\textbf{XX}$ tasks per dose,
-plus a second-seed replication at the endpoints, $N{=}\textbf{XX}$ paired
-observations). Three co-movements define the silent-erosion signature.
-\textbf{Success appears tolerable}: from
-$\textbf{XX}$ at $\varepsilon=0$ to $\textbf{XX}$ at $\varepsilon=0.75$
-(McNemar $\textbf{XX}$). \textbf{Regret climbs steadily}: mean regret
-$\textbf{XX}\to\textbf{XX}$ (+\textbf{XX\%}), with the paired endpoint
-difference $\textbf{XX}$ (bootstrap 95\% CI $[\textbf{XX},\textbf{XX}]$).
-\textbf{Confidence rises}: post-hoc verbalized confidence increases from
-$\textbf{XX}$ to $\textbf{XX}$ as contamination grows --- agents err more
-while trusting themselves more. The purchase share tells the mechanism
-directly: synthetic listings are bought in \textbf{XX\%} of tasks at
-$\varepsilon=0.25$ and \textbf{XX\%} at $\varepsilon=0.75$ (from 0\% at
-$\varepsilon=0$; Cochran--Armitage trend $p=\textbf{XX}$), and purchases of
-synthetic listings carry mean reward $\textbf{XX}$ versus $\textbf{XX}$ for
-purchases of real listings at the same dose.
+Figure~\ref{fig:dose} and Table~\ref{tab:dose} give the main curve over the
+effective dose grid $\varepsilon\in\{0,0.25,0.5,0.75\}$ (with $N{=}10$
+candidates, the nominal $0.1$ dose maps to zero replaced slots and is
+omitted; each dose corresponds to 0, 2, 4, or 6 replaced slots),
+$N{=}100$ tasks per dose under the Qwen2.5-7B backbone, plus a full
+second-seed replication of the endpoints ($N{=}200$ paired observations).
+Three co-movements define the silent-erosion signature.
+\textbf{Success collapses quietly}: from $0.590$ at $\varepsilon=0$ to
+$0.360$ at $\varepsilon=0.75$ (McNemar on paired tasks: 28 vs.\ 5
+discordant, $\chi^2=14.7$, $p=1.3\times10^{-4}$; pooling both seeds, 64
+vs.\ 13, $\chi^2=32.5$, $p=1.2\times10^{-8}$).
+\textbf{Regret climbs even faster}: mean regret $0.262\to0.443$ ($+69\%$),
+paired endpoint difference $+0.181$ (bootstrap 95\% CI $[+0.095,+0.264]$,
+$t=4.2$). \textbf{Confidence rises throughout}: post-hoc verbalized
+confidence increases from $0.822$ to $0.875$ while expected calibration
+error \emph{doubles} ($0.249\to0.496$) --- agents err more while trusting
+themselves more. The purchase share tells the mechanism directly: synthetic
+listings are bought in 53\%, 42\%, and 54\% of tasks at
+$\varepsilon=0.25,0.5,0.75$ respectively (from 0\% at $\varepsilon=0$;
+Cochran--Armitage trend $z=6.98$, $p=1.4\times10^{-12}$), and purchases of
+synthetic listings carry mean reward $0.41$ versus $0.79$ for purchases of
+real listings at the same dose.
 
 \begin{table}[t]
 \centering
 \small
 \caption{Dose--response of agent decision quality under ambient
-contamination (Qwen2.5-7B backbone, mix contamination). XX = finalized from
-P4 outputs.}
+contamination (Qwen2.5-7B backbone, mix contamination, $N{=}100$ tasks per
+dose; P4A). Confidence is the mean post-purchase verbalized confidence;
+ECE is expected calibration error over five equal-width bins.}
 \label{tab:dose}
-\begin{tabular}{lccccc}
+\begin{tabular}{lcccccc}
 \toprule
-$\varepsilon$ & Success & S@0.8 & Regret & Synth.\ bought & Conf. \\
+$\varepsilon$ & Success & S@0.8 & Regret & Synth.\ bought & Conf. & ECE \\
 \midrule
-0.00 & XX & XX & XX & 0\% & XX \\
-0.10 & XX & XX & XX & XX\% & XX \\
-0.25 & XX & XX & XX & XX\% & XX \\
-0.50 & XX & XX & XX & XX\% & XX \\
-0.75 & XX & XX & XX & XX\% & XX \\
+0.00 & 0.590 & 0.600 & 0.262 & 0\% & 0.822 & 0.249 \\
+0.25 & 0.350 & 0.350 & 0.429 & 53\% & 0.866 & 0.498 \\
+0.50 & 0.420 & 0.420 & 0.401 & 42\% & 0.882 & 0.453 \\
+0.75 & 0.360 & 0.360 & 0.443 & 54\% & 0.875 & 0.496 \\
 \bottomrule
 \end{tabular}
 \end{table}
 
 \begin{figure}[t]
 \centering
-% \includegraphics[width=\linewidth]{figures/dose_response.pdf}
-\caption{Dose--response under ambient contamination: success, regret,
+\includegraphics[width=\linewidth]{figures/dose_response.pdf}
+\caption{Dose--response under ambient contamination: task success, regret,
 synthetic-purchase share, and mean confidence as functions of the
-contamination level $\varepsilon$ (mix families; $N$=XX tasks per dose;
+contamination level $\varepsilon$ (mix families; $N{=}100$ tasks per dose;
 error bars = 95\% cluster-bootstrap CIs over tasks).}
 \label{fig:dose}
 \end{figure}
@@ -72,25 +77,39 @@ error bars = 95\% cluster-bootstrap CIs over tasks).}
 \subsection{Family attribution}
 \label{sec:res-family}
 Single-family runs at $\varepsilon=0.75$ (Table~\ref{tab:family}) attribute
-the damage. Clone contamination is the most destructive
-(success $\textbf{XX}\to\textbf{XX}$; regret $+\textbf{XX\%}$), consistent
-with the probe; geo and reviews are milder, with geo essentially invisible
-at the success level yet still taxing regret by \textbf{XX\%} ---
-quiet attrition rather than collapse.
+the damage. Clone contamination is the most destructive at the success
+level (success $0.600\to0.425$, $-17.5$\,pp; regret $+41\%$; synthetic
+listings bought in $52.5\%$ of tasks), consistent with the probe's
+clone-at-chance finding. Review-inflated pages deliver the largest regret
+shock ($0.294\to0.454$, $+54\%$): a plain page with a manufactured five-star
+flood gets purchased ($37.5\%$ of tasks) precisely because it looks
+credible, then fails on missing specifications. Geo contamination is the
+mildest --- success flat, regret $+11.8\%$ --- yet still taxes regret
+through quiet attrition: even content the agents mostly reject reshuffles
+attention and displaces real competitors.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/family.pdf}
+\caption{Per-family contamination at $\varepsilon=0.75$ versus the paired
+uncontaminated baseline (40 tasks): success (left) and regret (right).
+Specification clones destroy success; review-inflated pages inflict the
+largest regret; search-optimized pages cause quiet attrition.}
+\label{fig:family}
+\end{figure}
 
 \begin{table}[t]
 \centering
 \small
-\caption{Per-family contamination at $\varepsilon=0.75$ (40 paired tasks).
-XX = finalized from P4B outputs.}
+\caption{Per-family contamination at $\varepsilon=0.75$ (40 paired tasks).}
 \label{tab:family}
 \begin{tabular}{lcccc}
 \toprule
 Family & Success$_0$ & Success$_{.75}$ & Regret$_0$ & Regret$_{.75}$ \\
 \midrule
-geo & XX & XX & XX & XX \\
-clone & XX & XX & XX & XX \\
-reviews & XX & XX & XX & XX \\
+geo & 0.575 & 0.575 & 0.296 & 0.331 \\
+clone & 0.600 & 0.425 & 0.273 & 0.384 \\
+reviews & 0.575 & 0.425 & 0.294 & 0.454 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -98,43 +117,74 @@ reviews & XX & XX & XX & XX \\
 \subsection{Defenses: provenance beats detection}
 \label{sec:res-defense}
 Table~\ref{tab:defense} evaluates the defense battery at
-$\varepsilon=0.75$ against the paired uncontaminated baseline.
-Provenance re-ranking recovers \textbf{XX\%} of the incurred regret
-(oracle: \textbf{XX\%}), while the matched random filter recovers only
-\textbf{XX\%} --- filtering \emph{quality}, not filtering \emph{amount},
-does the work. The perplexity detector, calibrated to near-perfect
-separation on a held-out sample (real pages: 15--167 perplexity; synthetic:
-7--22), recovers \textbf{XX\%}; the structural detector \textbf{XX\%}; the
-prompt defense \textbf{XX\%}. Detection helps on gloss-heavy families and
-fails on clones --- exactly where provenance, which does not inspect
-content, still works.
+$\varepsilon=0.75$ against the paired uncontaminated baseline (same tasks,
+same seeds; the \texttt{none} row is the unprotected high-dose condition).
+Provenance re-ranking with an agent-visible \texttt{[verified]} badge ---
+computed from a \emph{noisy} provenance bit (85\% coverage on real items,
+15\% spurious on synthetic ones) --- recovers the full regret excess
+(0.398$\to$0.329, versus the uncontaminated 0.338) and cuts synthetic
+purchases from 47.5\% to 32.5\%; the oracle badge (perfect provenance)
+restores success \emph{above} the uncontaminated level (0.750 vs.\ 0.525)
+and pushes regret below it (0.171), because knowing which listings are
+verified makes agents scrutinize specifications harder. The structural
+slop filter (marketing-cue density, keyword stuffing, bullet symmetry)
+also fully recovers (regret 0.250, success 0.575): the generator families
+leak templated structure even when their text is organic. Detection-style
+defenses, by contrast, are brittle in deployment: the perplexity filter,
+calibrated to near-perfect separation on held-out listings, collapses at
+high dose (success 0.200, \emph{below} the unprotected 0.450) because its
+hard threshold drops the true product --- whose generic text looks
+``predictable'' --- while a tail of synthetic pages survives. The matched
+random filter confirms the mechanism: dropping 30\% of candidates uniformly
+\emph{raises} the clean baseline (regret 0.172) yet does nothing against
+contamination (0.431) --- filtering \emph{amount} is not filtering
+\emph{quality}. The prompt defense achieves an intermediate 57\% regret
+recovery but changes behavior on the clean Web as well (a ``skepticism
+tax''), so its net value is smaller than its high-dose delta suggests.
 
 \begin{table}[t]
 \centering
 \small
 \caption{Defense battery at $\varepsilon=0.75$ (mix contamination, 40 paired
-tasks). Recovery = fraction of incurred regret (vs.\ $\varepsilon=0$)
-eliminated. XX = finalized from P4C outputs.}
+tasks; \texttt{none@0} row = paired uncontaminated baseline). Recovery =
+regret excess over the uncontaminated baseline eliminated.}
 \label{tab:defense}
-\begin{tabular}{lccc}
+\begin{tabular}{lcccc}
 \toprule
-Defense & Success & Regret & Recovery \\
+Defense & Success & Regret & Synth.\ bought & Recovery \\
 \midrule
-none (high dose) & XX & XX & 0\% \\
-random (matched drop) & XX & XX & XX\% \\
-prompt & XX & XX & XX\% \\
-detector-struct & XX & XX & XX\% \\
-detector-text (ppl) & XX & XX & XX\% \\
-provenance (noisy bit) & XX & XX & XX\% \\
-oracle (upper bound) & XX & XX & XX\% \\
+none @ $\varepsilon{=}0$ & 0.525 & 0.338 & 0\% & --- \\
+none @ $\varepsilon{=}0.75$ & 0.450 & 0.398 & 47.5\% & 0\% \\
+random (matched drop) & 0.425 & 0.431 & 52.5\% & $-$55\% \\
+prompt & 0.500 & 0.364 & 37.5\% & 57\% \\
+detector-struct & 0.575 & 0.250 & 45.0\% & $>$100\% \\
+detector-text (ppl) & 0.200 & 0.578 & 85.0\% & $-$300\% \\
+provenance (noisy bit) & 0.550 & 0.329 & 32.5\% & $\approx$100\% \\
+oracle (perfect bit) & 0.750 & 0.171 & 17.5\% & $>$100\% \\
 \bottomrule
 \end{tabular}
 \end{table}
 
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/defenses.pdf}
+\caption{Regret at the uncontaminated baseline ($\varepsilon=0$) and under
+$\varepsilon=0.75$ mix contamination for each defense (40 paired tasks).
+Structural filtering and provenance badges restore uncontaminated-level
+regret; a hard perplexity threshold collapses below the unprotected
+condition; matched random dropping does not defend.}
+\label{fig:defenses}
+\end{figure}
+
 \subsection{Backbone generality and scale}
 \label{sec:res-backbone}
 The dose--response replicates on Llama-3.1-8B
-(success $\textbf{XX}\to\textbf{XX}$; regret $\textbf{XX}\to\textbf{XX}$),
-and scale ablations at $\varepsilon=0.75$ with Qwen2.5-3B/1.5B show
-\textbf{XX} --- smaller agents are \emph{more} susceptible, so the
-vulnerability is not an artifact of one model's quirks.
+(success $0.475\to0.300$ at $\varepsilon=0.75$, $-17.5$\,pp; regret
+$0.346\to0.502$, $+45\%$; synthetic purchases 55\%). Across scales,
+smaller agents are \emph{at least} as susceptible --- at
+$\varepsilon=0.75$, Qwen2.5-3B buys synthetic listings in 70\% of tasks
+(vs.\ 54\% for 7B) and loses 27\% more regret --- but the success-level
+dose contrast requires minimal baseline competence, which Qwen2.5-1.5B
+lacks (success $0.300$ at $\varepsilon=0$, statistically unchanged under
+contamination). The vulnerability is not an artifact of one model's
+quirks.

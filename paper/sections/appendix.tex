@@ -37,18 +37,25 @@ P0: success $0.65$ at $\varepsilon=0$, zero malformed actions, 18/20 tasks
 exactly reproducible under greedy decoding (two flips attributable to
 continuous-batching numerics). P1 (final, corrected pool): $\sigma=0.377$
 [0.324, 0.433] over 300 duels; per family: clone $0.523$, geo $0.351$,
-reviews $0.287$. P2: success $0.525\to0.450$, regret $0.338\to0.398$,
-confidence $0.783\to0.862$ at $\varepsilon=0.75$ versus $0$ (40 paired
-tasks). Two earlier P1/P2 runs were invalidated by a rendering defect
-(machine-readable review dictionaries leaking into rendered pages) and a
-price-anchoring bug; both are documented with their data in the repository.
+reviews $0.287$. P2 (gate run, 40 paired tasks): success $0.525\to0.450$,
+regret $0.338\to0.398$, confidence $0.783\to0.862$ at $\varepsilon=0.75$
+versus $0$. P4A (main curve, $N{=}100$ per dose): success
+$0.590\to0.360$ (McNemar $p=1.3\times10^{-4}$), regret $0.262\to0.443$
+(paired $\Delta=+0.181$, CI $[+0.095,+0.264]$), confidence $0.822\to0.875$,
+ECE $0.249\to0.496$; P4E replicates the endpoints under a second
+contamination seed (pooled McNemar $p=1.2\times10^{-8}$). Two earlier
+P1/P2 runs were invalidated by a rendering defect (machine-readable review
+dictionaries leaking into rendered pages) and a price-anchoring bug; both
+are documented with their data in the repository.
 
 \subsection{Power and multiple comparisons}
 The paired regret difference at $\varepsilon=0.75$ has task-level SD
-$\approx0.50$; at $N=40$ the detectable effect for 80\% power is
-$\Delta\approx0.20$, so the main curve reports effect sizes with cluster
-bootstrap CIs, purchase-share trend tests across doses, and McNemar tests on
-the endpoints with two seeds ($N=200$ paired observations). We do not claim
-significance for individual small deltas; the interpretation rests on the
-joint pattern across outcomes (success, regret, purchase share, confidence)
-and its replication across families, backbones, and defenses.
+$\approx0.43$; at $N=100$ per dose the endpoint McNemar test detects the
+observed success drop ($p=1.3\times10^{-4}$), and pooling the second seed
+tightens it further ($p=1.2\times10^{-8}$); the paired regret difference is
+significant with a bootstrap CI excluding zero. Intermediate doses are
+reported as effect sizes with cluster-bootstrap CIs rather than pairwise
+p-values. We do not over-claim single small deltas; the interpretation
+rests on the joint pattern across outcomes (success, regret, purchase
+share, confidence, calibration) and its replication across families,
+backbones, scales, and defenses.

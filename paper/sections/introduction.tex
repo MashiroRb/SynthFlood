@@ -1,6 +1,6 @@
 \section{Introduction}
 \label{sec:intro}
-%FILL: numeric placeholders marked XX to be finalized from P1/P2/P4/P5 outputs.
+% numbers finalized from P1 v4 + P4A/E + P4C outputs (2026-10-10).
 
 Web agents have crossed from demos to deployment: they shop, book, and
 compare on our behalf, turning the Web's product pages from artifacts that
@@ -74,16 +74,21 @@ Our contributions are:
       synthetic contamination of agent decision channels, with paired
       dose--response control on official benchmark artifacts.
 \item \textbf{A forced-choice susceptibility probe} isolating preference for
-      machine-optimized listings from slot competition; we measure
-      $\sigma=\textbf{XX}$ (95\% CI $[\textbf{XX},\textbf{XX}]$, $n=300$).
+      machine-optimized listings from slot competition: overall
+      $\sigma=0.377$ (95\% CI $[0.324,0.433]$, $n=300$), with specification
+      clones at chance ($\sigma_{\text{clone}}=0.523$) while gloss and
+      review inflation are rejected ($\sigma_{\text{geo}}=0.351$,
+      $\sigma_{\text{reviews}}=0.287$).
 \item \textbf{The first decision-level dose--response evidence} that ambient
       contamination erodes agent economics: at $\varepsilon=0.75$, success
-      drops by \textbf{XX}\,pp and regret rises \textbf{XX\%} (McNemar
-      $p=\textbf{XX}$), with calibration degrading from ECE
-      $\textbf{XX}$ to $\textbf{XX}$.
-\item \textbf{A defense analysis} showing provenance re-ranking recovers
-      \textbf{XX\%} of incurred regret while a same-amount random filter
-      recovers only \textbf{XX\%}, and detection defenses trail both.
+      drops by $23$\,pp ($p=1.3\times10^{-4}$; $p=1.2\times10^{-8}$ pooled
+      over two seeds) and regret rises $69\%$ (paired $\Delta=+0.181$,
+      95\% CI $[+0.095,+0.264]$), while confidence rises and calibration
+      error doubles --- errors that no success metric would surface.
+\item \textbf{A defense analysis} showing an agent-visible noisy provenance
+      badge eliminates the regret excess at matched contamination while
+      text-perplexity detection collapses below the unprotected baseline
+      and a same-amount random filter does not defend at all.
 \end{itemize}
 We release all code, contamination pools, and full trajectory logs. The
 remainder of the paper formalizes the threat model
