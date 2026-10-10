@@ -145,8 +145,13 @@ def judge_plausible(base, goal, client, port):
 
 
 def generate_pool(goals, gold_items, out_path, port, model,
-                  per_task_per_family=4, n_review_packs=1, max_workers=8):
-    """Generate a synthetic listing pool keyed by goal index."""
+                  per_task_per_family=4, n_review_packs=1, max_workers=8,
+                  judge_port=None):
+    """Generate a synthetic listing pool keyed by goal index.
+
+    judge_port: serve the plausibility judge on a separate model/port than
+    the generator (avoids generator self-preference bias).
+    """
     rng = random.Random(GEN_SEED)
     sem = threading.Semaphore(max_workers)
     results, lock = {}, threading.Lock()
@@ -154,6 +159,7 @@ def generate_pool(goals, gold_items, out_path, port, model,
     def work(gi, goal):
         with sem:
             cl = LLMClient(port, model)
+            jc = LLMClient(judge_port or port, model)
             g = dict(goal)
             gold = gold_items[gi]
             fam_rng = random.Random(GEN_SEED + gi)
@@ -165,13 +171,13 @@ def generate_pool(goals, gold_items, out_path, port, model,
                     b = synth_listing(fam, g, gold, r, cl, port)
                     if b is None:
                         continue
-                    score = judge_plausible(b, g, cl, port)
+                    score = judge_plausible(b, g, jc, judge_port or port)
                     tries = 0
                     while score < 4 and tries < 1:
                         b = synth_listing(fam, g, gold, r, cl, port)
                         if b is None:
                             break
-                        score = judge_plausible(b, g, cl, port)
+                        score = judge_plausible(b, g, jc, judge_port or port)
                         tries += 1
                     if b is None or score < 4:
                         continue

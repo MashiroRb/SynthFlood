@@ -14,8 +14,10 @@ def main():
                     help="goals to prepare synthetic pools for")
     ap.add_argument("--per-task", type=int, default=4,
                     help="listings per family per task")
-    ap.add_argument("--model", default="Qwen/Qwen2.5-7B-Instruct")
+    ap.add_argument("--model", default="NousResearch/Meta-Llama-3.1-8B-Instruct")
     ap.add_argument("--port", type=int, default=8001)
+    ap.add_argument("--judge-port", type=int, default=8000,
+                    help="judge model port (different from generator)")
     ap.add_argument("--out", default=None)
     ap.add_argument("--goals-file", default=None,
                     help="json with goal list (keeps tasks aligned)")
@@ -33,7 +35,8 @@ def main():
     gold_items = [by_asin[g["asin"]] for g in goals]
     out = args.out or os.path.join(GEN_DIR, "pool.json")
     pool = generate_pool(goals, gold_items, out, args.port, args.model,
-                         per_task_per_family=args.per_task)
+                         per_task_per_family=args.per_task,
+                         judge_port=args.judge_port)
     n = sum(len(v) for v in pool.values())
     print(f"generated {n} synthetic listings -> {out}")
 
