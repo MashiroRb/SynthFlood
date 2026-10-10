@@ -28,6 +28,16 @@ def run_cell(stage, gi, goal, by_asin, pool, eps, family, cseed, defense,
     try:
         synth_pool = pick_synths(pool.get(gi, []), eps, N_CANDIDATES, cseed,
                                  family=family)
+        if eps > 0 and not synth_pool:
+            with lock:
+                append_summary(out_csv, {**{k: "" for k in FIELDS},
+                                         "stage": stage, "task_id": gi,
+                                         "eps": eps, "family": family,
+                                         "cseed": cseed, "defense": defense,
+                                         "model": model,
+                                         "chosen_kind": "SKIPPED:no_synth"},
+                               FIELDS)
+            return
         candidates, info = build_task(
             goal, by_asin, eps, synth_pool, seed=cseed,
             n_candidates=N_CANDIDATES)
@@ -70,7 +80,9 @@ def run_cell(stage, gi, goal, by_asin, pool, eps, family, cseed, defense,
                                      "chosen_kind": f"ERROR:{type(e).__name__}"},
                            FIELDS)
         with open(os.path.join(LOG_DIR, "errors.log"), "a") as f:
+            import traceback
             f.write(f"{stage} {gi} {eps} {family} {defense}: {e}\n")
+            f.write(traceback.format_exc() + "\n")
     finally:
         sem.release()
 

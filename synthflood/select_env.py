@@ -81,8 +81,14 @@ def product_fields(p):
     rating = p.get("Rating")
     if rating in (None, "N.A."):
         rating = p.get("star5_ratios") or p.get("rating") or ""
+    if rating in (None, ""):
+        rating = "n/a"
     nrev = p.get("num_reviews") or p.get("review_num") or ""
+    if nrev in (None, ""):
+        nrev = 0
     price = p.get("Price") or p.get("price") or ""
+    if isinstance(price, (int, float)):
+        price = f"${float(price):.2f}"
     return dict(title=title, bullets=bullets, desc=desc, attrs=attrs,
                 cat=cat, brand=brand, rating=rating, nrev=nrev, price=price)
 
@@ -101,6 +107,29 @@ def results_page(cands):
     return "\n".join(lines)
 
 
+def _fmt_review(r):
+    """Format one review robustly across storage shapes (incl. double-encoded
+    dict-repr text produced by the generator)."""
+    if isinstance(r, str):
+        r = {"text": r}
+    if isinstance(r, dict):
+        stars = r.get("stars", r.get("rating", ""))
+        text = r.get("text", r.get("review", ""))
+        for _ in range(3):
+            if isinstance(text, str) and text.strip().startswith("{"):
+                try:
+                    import ast
+                    d = ast.literal_eval(text)
+                    if isinstance(d, dict):
+                        text = d.get("review", d.get("text", text))
+                        continue
+                except Exception:
+                    pass
+            break
+        return f"- ({stars}*) {str(text)[:220]}"
+    return "- " + str(r)[:220]
+
+
 def item_page(c):
     f = product_fields(c["item"])
     parts = [f"Title: {f['title']}", f"Price: {f['price']}",
@@ -116,7 +145,7 @@ def item_page(c):
         parts.append("Description: " + d[:1500])
     if c.get("reviews"):
         parts.append("Top reviews:")
-        parts += [f"- ({r['stars']}* ) {r['text'][:300]}" for r in c["reviews"][:8]]
+        parts += [_fmt_review(r) for r in c["reviews"][:8]]
     if c.get("meta_line"):
         parts.append(c["meta_line"])
     return "\n".join(parts)

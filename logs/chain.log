@@ -11,3 +11,5 @@ TypeError: 'float' object is not iterable
 loading cached products from /root/synthflood/data/all_products.pkl
 164 skipped
 {"stage": "P2", "done": true, "csv": "/root/synthflood/results/p2_sweep.csv"}
+PUSH_OK
+[chain] ALL DONE 2026-10-10T14:20:00Z
