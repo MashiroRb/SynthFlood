@@ -87,7 +87,7 @@ def provenance_ok(item_key, synthetic, seed=0):
 
 
 def apply_defense(defense, candidates, goal, drop_rate=0.3,
-                  struct_thresh=0.55, perplexity_fn=None, ppl_thresh=45.0):
+                  struct_thresh=0.55, perplexity_fn=None, ppl_thresh=15.0):
     if defense in ("none", "prompt"):
         return candidates
     if defense == "oracle":

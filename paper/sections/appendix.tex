@@ -1,0 +1,54 @@
+\section{Experimental Setup and Additional Results}
+\label{app:setup}
+
+\subsection{Models and serving}
+All agents and generators run locally via vLLM 0.19.0 (OpenAI-compatible
+API, \texttt{--enforce-eager}, temperature 0 for agents and the judge,
+temperature 0.7 with a fixed seed for the generator) on two RTX 4090 GPUs
+(24\,GB): Qwen2.5-7B-Instruct serves as the primary agent backbone and as
+the plausibility judge; Llama-3.1-8B-Instruct serves as the contamination
+generator and as the secondary agent backbone. Qwen2.5-3B/1.5B are used in
+the scale ablation. Every LLM call is logged with its token counts; agents
+cap episodes at ten steps, forced-choice probes at six.
+
+\subsection{Official artifacts}
+We use WebShop's official \texttt{items\_shuffle.json} (1{,}181{,}430
+products after the official key-cleaning and deduplication),
+\texttt{items\_ins\_v2.json}, and \texttt{items\_human\_ins.json} (10{,}136
+products with human instructions), with the benchmark's own loader, goal
+builder (\texttt{get\_human\_goals}, including its price-upper sampling), and
+reward function applied unmodified. Our loader is a verbatim port with paths
+parametrized; the only semantic addition is scoring a chosen listing through
+its best-matching variant, since the Select protocol has no variant-selection
+step.
+
+\subsection{Contamination pool}
+The pool covers 100 tasks (the official goal list under seed 2027), three
+families, four listings per family per task (up to 480 per task set), with a
+plausibility floor at judge score~4 (regenerate once, then drop). Synthetic
+economics are assigned programmatically: price = gold price $\times$
+$\mathrm{U}(0.75,0.95)$ (deterministic per listing), rating
+$\mathrm{U}(4.6,4.9)$, review counts in $[400,3000)$, and reviews in packs
+of 20 (reviews family) or 6 (others). An archived pre-fix pool with a
+\$50 price anchor is released as an ablation.
+
+\subsection{Gate outcomes}
+P0: success $0.65$ at $\varepsilon=0$, zero malformed actions, 18/20 tasks
+exactly reproducible under greedy decoding (two flips attributable to
+continuous-batching numerics). P1 (final, corrected pool): $\sigma=0.377$
+[0.324, 0.433] over 300 duels; per family: clone $0.523$, geo $0.351$,
+reviews $0.287$. P2: success $0.525\to0.450$, regret $0.338\to0.398$,
+confidence $0.783\to0.862$ at $\varepsilon=0.75$ versus $0$ (40 paired
+tasks). Two earlier P1/P2 runs were invalidated by a rendering defect
+(machine-readable review dictionaries leaking into rendered pages) and a
+price-anchoring bug; both are documented with their data in the repository.
+
+\subsection{Power and multiple comparisons}
+The paired regret difference at $\varepsilon=0.75$ has task-level SD
+$\approx0.50$; at $N=40$ the detectable effect for 80\% power is
+$\Delta\approx0.20$, so the main curve reports effect sizes with cluster
+bootstrap CIs, purchase-share trend tests across doses, and McNemar tests on
+the endpoints with two seeds ($N=200$ paired observations). We do not claim
+significance for individual small deltas; the interpretation rests on the
+joint pattern across outcomes (success, regret, purchase share, confidence)
+and its replication across families, backbones, and defenses.

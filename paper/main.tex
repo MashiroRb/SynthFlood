@@ -1,0 +1,44 @@
+\documentclass[sigconf,review,anonymous]{acmart}
+% WWW 2027 - Brave New Ideas for the Future of the Web
+% 8 pages main + references (+ optional appendix) <= 12 total
+
+\usepackage{booktabs}
+\usepackage{placeins}
+\usepackage{balance}
+
+\settopmatter{printacmref=true}
+\renewcommand\footnotetextcopyrightpermission{\footnotetext{\hspace{-1.5em}}}
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{definition}{Definition}
+
+\begin{document}
+
+\title{SynthFlood: Ambient Synthetic Content Silently Erodes Web-Agent
+Decision Quality --- A Dose--Response Analysis and a Provenance Remedy}
+
+\author{Anonymous Author(s)}
+\affiliation{\institution{Anonymous Institution}\city{}\country{}}
+
+\begin{abstract}
+\input{sections/abstract}
+\end{abstract}
+
+\maketitle
+
+\input{sections/introduction}
+\input{sections/related}
+\input{sections/problem}
+\input{sections/method}
+\input{sections/results}
+\input{sections/discussion}
+\input{sections/conclusion}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{refs}
+
+\clearpage
+\appendix
+\input{sections/appendix}
+
+\end{document}
