@@ -124,18 +124,35 @@ def item_page(c):
 
 def best_variant_options(item, goal):
     """Map each goal option to the item's best-matching value of that option
-    type (the shopper picks the right variant after choosing the listing)."""
+    type (the shopper picks the right variant after choosing the listing).
+
+    Human goals carry goal_options as a list of 'name: value' strings (the
+    official get_reward already handles both formats; we mirror that here).
+    """
     item_opts = item.get("options") or {}
+    go = goal.get("goal_options") or []
+    if isinstance(go, dict):
+        pairs = [(str(k).lower(), str(v)) for k, v in go.items()]
+    else:
+        pairs = []
+        for entry in go:
+            s = str(entry)
+            if ":" in s:
+                name, _val = s.split(":", 1)
+                pairs.append((name.strip().lower(), s.strip()))
+            else:
+                pairs.append((s.strip().lower(), s.strip()))
+    all_vals = [v for vals in item_opts.values() for v in vals]
     chosen = {}
-    for g_name, g_val in (goal.get("goal_options") or {}).items():
-        vals = item_opts.get(str(g_name).lower(), [])
+    for name, target in pairs:
+        pool = item_opts.get(name, []) or all_vals
         best, best_s = "", -1.0
-        for v in vals:
-            s = fuzz.token_set_ratio(v, g_val)
+        for v in pool:
+            s = fuzz.token_set_ratio(v, target)
             if s > best_s:
                 best, best_s = v, s
         if best_s >= 0:
-            chosen[str(g_name)] = best
+            chosen[target] = best
     return chosen
 
 

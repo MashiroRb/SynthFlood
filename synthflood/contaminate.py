@@ -110,6 +110,11 @@ def synth_listing(family, goal, gold_item, rng, client, port):
     base["price"] = round(gold_price * rng.uniform(0.75, 0.95), 2)
     base["rating"] = round(rng.uniform(4.6, 4.9), 1)
     base["num_reviews"] = rng.randrange(400, 3000)
+    # inherit the gold listing's variant options: our selection protocol does
+    # not expose a variant-choice step, so options enter only through the
+    # official reward's option term; inheriting keeps that term comparable
+    # across candidates (differences then come from the listing itself).
+    base["options"] = dict(gold_item.get("options") or {})
     return base
 
 
