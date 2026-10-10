@@ -7,6 +7,7 @@ DATA_DIR = os.path.join(LAB_ROOT, "data")
 MODEL_DIR = os.path.join(LAB_ROOT, "models")
 LOG_DIR = os.path.join(LAB_ROOT, "logs")
 RESULT_DIR = os.path.join(LAB_ROOT, "results")
+FIG_DIR = os.path.join(RESULT_DIR, "figs")
 GEN_DIR = os.path.join(DATA_DIR, "contamination")
 
 EPS_GRID = [0.0, 0.10, 0.25, 0.50, 0.75]

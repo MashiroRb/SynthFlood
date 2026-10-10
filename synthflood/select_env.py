@@ -100,8 +100,9 @@ def results_page(cands):
         rating = f["rating"]
         if isinstance(rating, float):
             rating = f"{rating:.1f}"
+        badge = " [verified]" if c.get("prov_badge") else ""
         lines.append(
-            f"[{i}] {f['title']} | {f['price']} | rating: {rating} "
+            f"[{i}]{badge} {f['title']} | {f['price']} | rating: {rating} "
             f"({f['nrev']} reviews) | {f['brand']}")
     lines.append("\nUse view[k] to inspect a product page, select[k] to buy.")
     return "\n".join(lines)
@@ -132,7 +133,8 @@ def _fmt_review(r):
 
 def item_page(c):
     f = product_fields(c["item"])
-    parts = [f"Title: {f['title']}", f"Price: {f['price']}",
+    badge = " [verified]" if c.get("prov_badge") else ""
+    parts = [f"Title: {f['title']}{badge}", f"Price: {f['price']}",
              f"Rating: {f['rating']} ({f['nrev']} reviews)",
              f"Brand: {f['brand']}", f"Category: {f['cat']}"]
     if f["attrs"]:

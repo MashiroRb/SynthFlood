@@ -93,10 +93,14 @@ def apply_defense(defense, candidates, goal, drop_rate=0.3,
     if defense == "oracle":
         reals = [c for c in candidates if not c.get("synthetic")]
         synths = [c for c in candidates if c.get("synthetic")]
+        for c in reals:
+            c["prov_badge"] = True
         return reals + synths
     if defense == "provenance":
         reals = [c for c in candidates if c.get("prov_ok", True)]
         rest = [c for c in candidates if not c.get("prov_ok", True)]
+        for c in reals:
+            c["prov_badge"] = True
         return reals + rest
     if defense == "random":
         import random as _r
@@ -129,8 +133,10 @@ def apply_defense(defense, candidates, goal, drop_rate=0.3,
 
 
 def _page_text(c):
+    """Text seen by the perplexity detector. MUST match the calibration
+    field set (title + bullets + attributes); including long free-text
+    descriptions inflates real-product perplexity and inverts the filter."""
     f = c["item"]
     return " ".join([str(f.get("Title", "")),
                      " ".join(f.get("BulletPoints") or []),
-                     str(f.get("Description", "")),
                      " ".join(str(a) for a in (f.get("Attributes") or []))])
