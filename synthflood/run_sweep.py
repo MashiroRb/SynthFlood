@@ -43,11 +43,14 @@ def run_cell(stage, gi, goal, by_asin, pool, eps, family, cseed, defense,
             n_candidates=N_CANDIDATES)
         env = SelectEnv(goal, candidates, n_candidates=N_CANDIDATES)
         env._synth_positions = info["synth_positions"]
+        client = LLMClient(port, model)
+        ppl_fn = (lambda text: client.perplexity(text)
+                  ) if defense == "detector_text" else None
         # defense preprocessing: rerank/drop/annotate candidates
-        candidates2 = apply_defense(defense, candidates, goal)
+        candidates2 = apply_defense(defense, candidates, goal,
+                                    perplexity_fn=ppl_fn)
         env.candidates = candidates2
         env.n = len(candidates2)
-        client = LLMClient(port, model)
         summary = run_episode(
             env, client, goal["instruction_text"], defense=defense,
             meta={"stage": stage, "task_id": gi, "eps": eps,

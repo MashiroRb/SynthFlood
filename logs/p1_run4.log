@@ -1,0 +1,12 @@
+loading cached products from /root/synthflood/data/all_products.pkl
+164 skipped
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/root/synthflood/code/synthflood/probe_p1.py", line 110, in <module>
+    main()
+  File "/root/synthflood/code/synthflood/probe_p1.py", line 105, in main
+    "ci95": [round(x, 4) for x in ci],
+TypeError: 'float' object is not iterable

@@ -51,3 +51,34 @@ class LLMClient:
     def usage(self):
         return {"calls": self.calls, "tokens_in": self.tokens_in,
                 "tokens_out": self.tokens_out}
+
+    def perplexity(self, text: str, max_chars: int = 3000):
+        """Mean token NLL of `text` under the served model, via the
+        completions endpoint with echo=True and logprobs."""
+        url = self.url.replace("/chat/completions", "/completions")
+        payload = {
+            "model": self.model,
+            "prompt": text[:max_chars],
+            "max_tokens": 1,
+            "temperature": 0.0,
+            "echo": True,
+            "logprobs": 0,
+        }
+        body = json.dumps(payload).encode()
+        req = urllib.request.Request(
+            url, data=body, headers={"Content-Type": "application/json"})
+        with urllib.request.urlopen(req, timeout=self.timeout) as resp:
+            out = json.loads(resp.read().decode())
+        ch = out["choices"][0]
+        lps = ch.get("logprobs") or {}
+        toks = lps.get("token_logprobs") or []
+        # drop the first token (no logprob) and any None entries
+        vals = [x for x in toks[1:] if x is not None]
+        n = max(1, len(vals))
+        ppl = float(np_exp(-sum(vals) / n))
+        return ppl, len(vals)
+
+
+def np_exp(x):
+    import math
+    return math.exp(x)

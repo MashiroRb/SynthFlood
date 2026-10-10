@@ -38,6 +38,10 @@ DEFENSE_PROMPT = {
 """,
 }
 
+CONFIDENCE_ELICIT = """You just selected an item to purchase. On a scale from
+0.0 to 1.0, how confident are you that this purchase fully satisfies the user's
+instruction? Reply with only a single decimal number between 0.0 and 1.0."""
+
 
 def parse_action(text):
     m = re.search(r"action:\s*(view|select)\s*\[\s*(\d+)\s*\]", text,
@@ -95,6 +99,17 @@ def run_episode(env: SelectEnv, client: LLMClient, instruction: str,
         history.append({"role": "assistant", "content": text})
         history.append({"role": "user", "content": obs})
         steps += 1
+        if done and conf is None:
+            t1 = time.time()
+            ctext, craw = client.chat(
+                history + [{"role": "user", "content": CONFIDENCE_ELICIT}],
+                temperature=0.0, max_tokens=20)
+            m = re.search(r"([01](?:\.[0-9]+)?)", ctext)
+            if m:
+                conf = min(1.0, max(0.0, float(m.group(1))))
+            lg.step("conf", {"raw": ctext[:80],
+                             "usage": craw.get("usage", {}),
+                             "lat": round(time.time() - t1, 2)})
     reward, rinfo = env.reward()
     chosen = env.chosen or {}
     summary = {
