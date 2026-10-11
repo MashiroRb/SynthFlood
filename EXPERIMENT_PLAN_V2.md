@@ -46,7 +46,7 @@
 - [x] **B3 防御臂两两配对检验**（p4c 同任务同seed）— ✅ 超预期：provenance vs struct Δ=+0.079 p=0.66（统计并列）；struct vs oracle Δ=+0.079 p=0.21（struct≈oracle！headline 升级）；provenance vs oracle p=0.039
 - [x] **B4 检测器 AUC+gold误杀率**（struct 纯CPU；ppl 优先取日志）— ✅（10-11，lab CPU）AUC(synth vs real)=0.849；thresh 0.55：合成品捕获 811/1089=74.5%、真品干扰误杀 24/360=6.7%、**gold 误杀 3/40=7.5%（最高 0.719）**→ 量化 struct vs oracle 差距来源
 - [ ] **B5 被删真品 reward 分布**（A1 前置保险：被删项应为低价值干扰）
-- [ ] **B6 误买 clone 价格偏好相关性**（P4A/B 轨迹）
+- [x] **B6 误买 clone 价格偏好相关性**（P4A/B 轨迹）— ✅（10-11）轨迹重构 54/54 全匹配（n_synth=int(0.75·9)=6；replace 需按位置升序定 si）；clone 误买 35 条相对位置均值 **−0.148**（23 低于同任务 clone 均价 vs 12 高于）→ 误买时系统性挑更便宜的 clone，与 A2 因果证据闭合
 - [x] **B7 struct@ε=0 行为分析**（对真品误伤率）— ✅ 超预期：Δreward +0.078 CI[-0.030,0.195]，gold 购买 23/40 vs 22/40（p=0.55）→ 干净池零成本
 - [x] **B8 侵蚀系数 κ = 配对 dE[regret]/dε**（p4a/p4d/p4f，按骨干分列+CI）— ✅ 符合预期：Qwen7B κ=0.242 CI[0.13,0.35]；Llama8B κ=0.208 CI[0.04,0.37]（跨骨干显著）；3B κ=0.141 CI 跨零；1.5B κ=-0.074（floor 效应，基线 regret 已 0.578）
 - [ ] **B9 误买合成品 reward 归因分解**（rinfo 字段）
