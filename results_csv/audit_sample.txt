@@ -1,0 +1,1566 @@
+--- [geo] task 5 (judge 5) $44.55 4.9* (515) ---
+TITLE: Official PlayStation 3 Gamepad Controller - Perfect for Gaming Excellence
+  - Best Performance: Enjoy seamless gaming experience with our high-quality gamepad.
+  - Perfect for: Casual and hardcore gamers alike, this controller is designed to bring out the best in you.
+  - Premium Materials: Durable construction and ergonomic design for extended gaming sessions.
+  - Improved Feedback: Get immersed in the game with our advanced haptic feedback technology.
+  - Ultimate Control: Customize your gaming experience with our intuitive and responsive controller.
+  spec: Compatibility: PlayStation 3 only
+  spec: Controller Type: Standard Gamepad
+  spec: Connection Type: Wired USB
+  spec: Response Time: 2ms
+  spec: Battery Life: Up to 20 hours continuous play
+  DESC: Elevate your gaming experience with our Official PlayStation 3 Gamepad Controller. Designed to deliver precise control and comfort, this controller is perfect for gaming enthusiasts. With its durable 
+
+--- [geo] task 5 (judge 5) $41.1 4.8* (1947) ---
+TITLE: Best Premium PlayStation Gamepad Controller for PS3
+  - Perfect for intense gaming sessions with responsive analog sticks
+  - Premium design with ergonomic grip for long-lasting comfort
+  - Supercharged performance with turbo-charged acceleration
+  - Easy to pair and sync with your PS3 console
+  - Top-notch durability with rugged build and high-quality materials
+  spec: Battery Life: Up to 30 hours of continuous gaming
+  spec: Operating System: PS3 compatible only
+  spec: Connectivity: USB 2.0 cable for secure connection
+  spec: Dimensions: 12 inches x 6 inches x 2 inches
+  spec: Weight: 0.8 pounds
+  DESC: Elevate your PS3 gaming experience with our premium gamepad controller. Designed for comfort and performance, this controller is perfect for marathon gaming sessions. With its ergonomic grip and super
+
+--- [geo] task 5 (judge 5) $43.7 4.8* (2628) ---
+TITLE: PlayStation Controller - Best PS3 Gamepad for Gaming - Premium Ergonomic Design
+  - Perfect for marathon gaming sessions with its ergonomic design and comfortable grip
+  - Best in class gaming performance with responsive and precise controls
+  - Premium quality construction for durability and long-lasting use
+  - Easy to set up and connect to your PlayStation 3 console
+  - Compatible with a wide range of PS3 games for endless gaming fun
+  spec: Platform: PlayStation 3
+  spec: Type: Standard Gamepad Controller
+  spec: Connectivity: Wired USB
+  spec: Operating System: PlayStation 3
+  spec: Power Source: DC 5V 500mA
+  DESC: Take your gaming experience to the next level with our PlayStation controller. Designed with comfort and ergonomics in mind, this gamepad provides hours of seamless gaming fun. With its precise contro
+
+--- [geo] task 5 (judge 5) $44.04 4.8* (1330) ---
+TITLE: PlayStation 3 Premium Gamepad Controller Bundle
+  - Best performance for intense gaming sessions
+  - Perfect for playing classics like God of War and Uncharted
+  - Premium quality with ergonomic design for comfort
+  - Long-lasting battery life with efficient charging
+  - Compatible with all PlayStation 3 games
+  spec: Connection Type: USB
+  spec: Controller Type: Standard Gamepad
+  spec: Battery Life: Up to 20 hours
+  spec: Weight: 0.8 kg
+  spec: Dimensions: 15 x 6 x 4 cm
+  DESC: Elevate your PlayStation 3 gaming experience with our premium gamepad controller bundle. Designed for comfort and performance, this controller is perfect for marathon gaming sessions. With long-lastin
+
+--- [clone] task 5 (judge 5) $42.92 4.9* (1508) ---
+TITLE: PS3 Controller Wireless 2.4GHz Remote with Charger Cable (White+Blue)
+  - Enjoy seamless wireless gaming with our controller
+  - Experience fast and responsive gameplay with our high-performance design
+  - Conveniently charge your controller with the included cable
+  - Take advantage of our ergonomic design for comfortable play sessions
+  - Upgrade your gaming experience with this top-notch controller
+  spec: Wireless Technology: 2.4GHz
+  spec: Controller Type: Wireless
+  spec: Battery Type: Rechargeable Lithium-Ion
+  spec: Battery Life: Up to 24 hours
+  spec: Charging Time: 2 hours
+  DESC: Take your PS3 gaming to the next level with our wireless controller. Enjoy fast and responsive gameplay with our high-performance design and ergonomic comfort. The rechargeable battery provides up to 
+
+--- [clone] task 5 (judge 5) $41.56 4.8* (986) ---
+TITLE: PS3 Controller Wireless DualShock 3 Remote with Charger Cable (Red+Green)
+  - Experience seamless gaming with our Wireless DualShock 3 Remote
+  - Play for hours without interruption with our rechargeable battery
+  - High performance ensures fast and responsive gameplay
+  - Perfect for playing your favorite PS3 games
+  - Easy to pair and use with your PlayStation 3 console
+  spec: Wireless Technology: 2.4GHz Wireless
+  spec: Controller Type: Wireless DualShock 3
+  spec: Battery Type: Rechargeable Lithium-Ion
+  spec: Performance: High-Performance Gaming
+  spec: Charging Cable: Included Micro-USB Cable
+  DESC: Take your gaming experience to the next level with our Wireless DualShock 3 Remote. With its rechargeable battery and high-performance design, you'll be able to play your favorite PS3 games for hours 
+
+--- [clone] task 5 (judge 5) $41.96 4.9* (2260) ---
+TITLE: PS3 Controller Wireless Wi-Fi PlayStation 3 Remote with Charger Cable (White+Blue)
+  - Long-range wireless connectivity for lag-free gaming
+  - Customizable buttons for personalized gaming experience
+  - Built-in speaker for immersive audio feedback
+  - Durable construction for withstanding rough handling
+  - Easy pairing with PlayStation 3 console
+  spec: Connection Type: Wireless Wi-Fi
+  spec: Battery Life: Up to 20 hours
+  spec: Charging Time: 3-4 hours
+  spec: Compatibility: PlayStation 3
+  spec: Colors: White+Blue
+  DESC: Get ready to take your PlayStation 3 gaming to the next level with our wireless Wi-Fi controller. Featuring a sleek design and long-range connectivity, this remote is perfect for lag-free gaming. With
+
+--- [clone] task 5 (judge 5) $42.51 4.8* (2832) ---
+TITLE: PS3 Controller Wireless 2.4GHz PlayStation 3 Remote with Charger Cable (White+Blue)
+  - Wireless 2.4GHz connectivity for lag-free gaming
+  - Ergonomic design for comfortable play
+  - Rechargeable battery for extended play sessions
+  - High-performance gaming experience
+  - Easy to set up and use
+  spec: Wireless Technology: 2.4GHz
+  spec: Battery Type: Rechargeable Lithium-Ion
+  spec: Controller Type: Wireless
+  spec: Performance: High-Performance Gaming
+  spec: Charging Method: USB Cable
+  DESC: Experience the ultimate in gaming convenience with this wireless PS3 controller. Equipped with 2.4GHz wireless technology, you can play from anywhere in the room without being tethered to your console
+
+--- [reviews] task 5 (judge 5) $42.93 4.8* (582) ---
+TITLE: PlayStation 3 Standard Gamepad - Perfect Controller for Your PS3 Gaming Experience
+  - Best controller for playing popular PS3 games
+  - Perfect for gamers who prefer a wired connection
+  - Premium gamepad with durable construction and responsive buttons
+  - Ergonomic design for comfortable grip and reduced fatigue
+  - Easy to use and set up, plug and play ready
+  spec: Type: Wired Gamepad
+  spec: Compatibility: PlayStation 3
+  spec: Connection: USB
+  spec: Number of Buttons: 20
+  spec: Weight: 250g
+  DESC: Get the best gaming experience on your PlayStation 3 with this premium gamepad. With its ergonomic design and durable construction, this controller is perfect for long gaming sessions. The wired conne
+
+--- [reviews] task 5 (judge 5) $38.51 4.8* (1371) ---
+TITLE: Playstation Gamepad Controller - Best for PS3 Gamers - Premium Gaming Experience
+  - Perfect for: Long gaming sessions and marathon play
+  - Best: Value for money controller in the market
+  - Premium: Ergonomic design for comfort and durability
+  - Perfect for: Gamers of all ages and skill levels
+  - Best: In-game performance and accuracy
+  spec: Connection Type: 8-foot USB Cable
+  spec: Controller Type: Standard Gamepad
+  spec: Vibration Feedback: Yes, with adjustable intensity
+  spec: Button Layout: Classic layout with dual analog sticks
+  spec: Battery Life: Up to 20 hours of continuous play
+  DESC: Get the ultimate gaming experience with our Playstation Gamepad Controller, designed specifically for PS3 gamers. With its premium ergonomic design and vibration feedback, you'll feel immersed in the 
+
+--- [reviews] task 5 (judge 5) $41.73 4.8* (2043) ---
+TITLE: Playstation 3 Gamepad - Perfect Controller for Your Gaming Needs - Premium Quality
+  - Best performance for fast-paced games
+  - Perfect for long gaming sessions with ergonomic design
+  - Premium quality with durable construction
+  - Enhanced gaming experience with precision control
+  - Perfect accessory for your PlayStation 3 console
+  spec: Type: Standard Gamepad
+  spec: Connectivity: Wired USB
+  spec: Buttons: 12
+  spec: Vibration Feedback: Yes
+  spec: Weight: 250g
+  DESC: Take your gaming experience to the next level with our high-quality PlayStation 3 gamepad. Designed for comfort and precision, this controller provides the best performance for fast-paced games and lo
+
+--- [reviews] task 5 (judge 5) $45.96 4.8* (2892) ---
+TITLE: Premium PlayStation 3 Gamepads for Enhanced Gaming Experience
+  - Best controller for PlayStation 3 gamers
+  - Perfect for long gaming sessions with ergonomic design
+  - Premium materials for durability and comfort
+  - Optimized for fast and responsive gameplay
+  - Top-rated by gamers worldwide for performance and style
+  spec: Connection Type: 8-bit USB
+  spec: Button Layout: Standard 16-button layout
+  spec: Vibration Feedback: Intensive haptic feedback
+  spec: Sensor Type: Dual-axis gyroscope
+  spec: Operating System: PlayStation 3 (PS3)
+  DESC: Take your PlayStation 3 gaming to the next level with our premium gamepads. Designed for comfort and performance, our gamepads provide an immersive gaming experience. With a standard 16-button layout 
+
+--- [geo] task 35 (judge 5) $38.32 4.8* (1738) ---
+TITLE: F-Pin Coaxial Video Cable for Satellite Television Systems
+  - Best for connecting satellite television receivers to your TV or external devices
+  - Perfect for installing or upgrading your satellite TV system
+  - Premium quality construction for reliable signal transmission
+  - Ideal for use in residential or commercial satellite TV applications
+  - Easy to install and compatible with most satellite TV systems
+  spec: Connector Type: F-Pin
+  spec: Cable Material: Copper Clad Steel
+  spec: Cable Shielding: Aluminum-Free Foil Shielding
+  spec: Frequency Response: 10 MHz to 3 GHz
+  spec: Length: 10 Feet
+  DESC: Get the best out of your satellite television system with our high-quality F-Pin coaxial video cable. Perfect for installation or upgrading, this premium cable ensures reliable signal transmission for
+
+--- [geo] task 35 (judge 5) $43.68 4.9* (1469) ---
+TITLE: Satellite Television Video Cables - Perfect for Seamless Signal Transmission
+  - Best quality F-Pin-Coaxial Tip video cables for satellite TV systems
+  - Perfect for connecting satellite receivers, TV boxes, and other devices
+  - Premium shielding for maximum signal integrity and minimal interference
+  - Durable construction for long-lasting performance and reliability
+  - Ideal for residential and commercial satellite TV installations
+  spec: Material: Copper-clad steel braid
+  spec: Insulation: PVC jacket
+  spec: Conductor Gauge: 22 AWG
+  spec: Frequency Range: 50 MHz to 2 GHz
+  spec: Length: 3.28 ft (1 m)
+  DESC: Get the best out of your satellite television experience with our top-notch video cables. Designed to deliver seamless signal transmission, these cables are perfect for connecting satellite receivers,
+
+--- [geo] task 35 (judge 5) $42.54 4.8* (2115) ---
+TITLE: Best Satellite Television F-Pin Coaxial Tip Video Cable for Premium Reception
+  - Perfect for connecting your satellite TV receiver to your TV for crisp and clear picture
+  - Premium quality cable ensures reliable and stable signal transmission
+  - Best suited for modern satellite TV systems with advanced features
+  - Perfect for both residential and commercial satellite TV installations
+  - Durable and long-lasting construction for minimal signal degradation over time
+  spec: Length: 10 meters
+  spec: Impedance: 75 ohms
+  spec: Frequency Range: 5-1000 MHz
+  spec: Connector Type: F-Pin
+  spec: Material: High-quality copper with gold-plated contacts
+  DESC: Experience the best in satellite television reception with our premium F-Pin Coaxial Tip video cable. Designed to provide crystal-clear picture and sound, this cable is perfect for connecting your sat
+
+--- [geo] task 35 (judge 5) $39.99 4.8* (2386) ---
+TITLE: Satellite Television F-Pin Coaxial Video Cable for Clear Signal Connection
+  - Best cable for satellite TV systems
+  - Perfect for connecting satellite receivers to TVs or set-top boxes
+  - Premium quality cable for a clear and stable signal
+  - Ideal for use with satellite TV systems from major providers
+  - Durable and long-lasting construction for extended use
+  spec: Material: Copper-plated steel
+  spec: Diameter: 18 AWG
+  spec: Length: 10 feet
+  spec: Impedance: 75 ohms
+  spec: Frequency: 5-1000 MHz
+  DESC: Stay connected to your favorite satellite TV shows and events with our high-quality F-Pin Coaxial Video Cable. Perfect for use with satellite TV systems, this cable provides a clear and stable signal 
+
+--- [clone] task 35 (judge 5) $46.56 4.9* (409) ---
+TITLE: 12ft Black Quad Shield Solid Copper 3.2GHZ RG-6 Coaxial Cable 75 Ohm (Hulu Satellite TV or Broadband Internet) Anti Corrosion Brass Connector RG6 Fittings Assembled in USA by PHAT SATELLITE INTL
+  - Direct connection to your satellite TV or broadband internet
+  - Water-resistant and durable against harsh weather conditions
+  - Anti-corrosion brass connector for long-lasting performance
+  - Easy to install and assemble
+  - Suitable for high-definition TV, internet, and other digital applications
+  spec: Coaxial cable type: RG-6
+  spec: Shielding: Quad Shield
+  spec: Material: Solid Copper
+  spec: Frequency: 3.2GHz
+  spec: Impedance: 75 Ohm
+  DESC: Upgrade your home entertainment with this top-quality coaxial cable. Made with durable solid copper and a quad shield design, this cable provides reliable and fast connectivity for your satellite TV o
+
+--- [clone] task 35 (judge 5) $46.02 4.8* (2818) ---
+TITLE: 10ft Black Quad Shield Solid Copper 3.5GHZ RG-6 Coaxial Cable 75 Ohm (DIRECTV Satellite TV or Broadband Internet) Anti Corrosion Brass Connector RG6 Fittings Assembled in USA by PHAT SATELLITE INTL
+  - Quad shield design for maximum signal protection and high-speed data transfer
+  - Solid copper center conductor for excellent signal conductivity
+  - 75 Ohm impedance for optimal signal transmission and reception
+  - Anti-corrosion brass connector for durable and long-lasting connections
+  - RG6 fittings assembled in the USA for top-quality construction
+  spec: Coaxial Cable: RG-6
+  spec: Material: Solid Copper
+  spec: Speed: High Speed
+  spec: Impedance: 75 Ohm
+  spec: Connectors: Anti-Corrosion Brass
+  DESC: Take your satellite TV or broadband internet experience to the next level with this top-of-the-line coaxial cable. Assembled in the USA, this 10ft cable features a quad shield design and solid copper 
+
+--- [clone] task 35 (judge 5) $46.81 4.7* (2868) ---
+TITLE: 12ft Black Quad Shield Solid Copper 4GHZ RG-6 Coaxial Cable 75 Ohm (DIRECTV Satellite TV or Broadband Internet) Anti Corrosion Brass Connector RG6 Fittings Assembled in USA by PHAT SATELLITE INTL
+  - Ideal for high-speed internet and satellite TV applications
+  - Extremely durable and resistant to corrosion
+  - Low signal loss and high frequency capability
+  - Meets or exceeds all industry standards for quality and performance
+  - Perfect for installation or replacement of existing RG-6 cables
+  spec: Coaxial cable type: RG-6
+  spec: Material: Solid Copper
+  spec: Shielding: Quad Shield
+  spec: Impedance: 75 Ohm
+  spec: Speed: 4GHZ
+  DESC: Experience lightning-fast internet and crystal-clear satellite TV with our top-quality RG-6 coaxial cables. Assembled in the USA with precision and care, our cables feature a solid copper core, quad s
+
+--- [clone] task 35 (judge 5) $44.31 4.8* (860) ---
+TITLE: 10ft Black Quad Shield Solid Copper 3GHZ RG-11 Coaxial Cable 75 Ohm (DIRECTV Satellite TV or Broadband Internet) Anti Corrosion Brass Connector RG11 Fittings Assembled in USA by PHAT SATELLITE INTL
+  - Perfect for DIRECTV Satellite TV or Broadband Internet connections
+  - High-speed data transmission up to 3GHZ
+  - Durable construction with anti-corrosion brass connector
+  - Meets or exceeds industry standards for RG11 coaxial cables
+  - Assembled in the USA by PHAT SATELLITE INTL for quality assurance
+  spec: Type: Quad Shield
+  spec: Material: Solid Copper
+  spec: Shielding: 3GHZ
+  spec: Impedance: 75 Ohm
+  spec: Connector: Anti Corrosion Brass
+  DESC: Experience fast and reliable connectivity with our 10ft Black Quad Shield Solid Copper 3GHZ RG11 Coaxial Cable. Assembled in the USA by PHAT SATELLITE INTL, this cable is designed for high-speed data 
+
+--- [reviews] task 35 (judge 5) $40.88 4.6* (2941) ---
+TITLE: F-Pin-Coaxial Tip Video Cables for Satellite Television Systems - Best Quality, Perfect for Professional Use
+  - Best performance for satellite television signals
+  - Perfect for professional installers and technicians
+  - Premium quality for reliable and long-lasting connections
+  - Highly durable and resistant to wear and tear
+  - Guaranteed to meet or exceed industry standards
+  spec: Material: Copper-Plated Steel
+  spec: Length: 3 meters (10 feet)
+  spec: Connectivity: F-Pin-Coaxial Tip
+  spec: Frequency: 5-12 GHz
+  spec: Impedance: 75 Ohms
+  DESC: Upgrade your satellite television system with our high-quality F-Pin-Coaxial Tip video cables. Perfect for professional use, these cables offer the best performance for satellite television signals, e
+
+--- [reviews] task 35 (judge 5) $44.28 4.7* (2017) ---
+TITLE: F-Pin-Coaxial Tip Satellite Television Video Cable - Perfect for Premium TV Signal Transfer
+  - Best quality video cable for satellite TV systems
+  - Perfect for connecting satellite receivers to TVs and tuners
+  - Premium grade materials ensure long-lasting performance
+  - F-Pin-Coaxial Tip design for high-quality video signal transfer
+  - Durable construction withstands heavy use
+  spec: Material: Copper-plated steel
+  spec: Length: 3 meters
+  spec: Diameter: 5.5mm
+  spec: Signal Type: Digital video
+  spec: Operating Temperature: -20°C to 60°C
+  DESC: Get crystal-clear video signals with our F-Pin-Coaxial Tip satellite television video cable. Designed for premium TV signal transfer, this cable is perfect for connecting satellite receivers to TVs an
+
+--- [reviews] task 35 (judge 5) $43.25 4.8* (2722) ---
+TITLE: Best F-Pin Coaxial Tip Cable for Satellite Television Systems
+  - Perfect for connecting your satellite TV receiver to the dish
+  - Premium quality construction for long-lasting performance
+  - Gold-plated connectors for optimal signal transmission
+  - Flexible and durable cable for easy installation and rearrangement
+  - Ideal for high-definition satellite TV viewing
+  spec: Material: Copper-clad Steel
+  spec: Length: 15 ft (4.5 m)
+  spec: Connector Type: F-Pin
+  spec: Signal Type: 18 GHz
+  spec: Operating Temperature: -20°C to 60°C
+  DESC: Get the best picture and sound from your satellite television system with our high-quality F-Pin Coaxial Tip Cable. Durable and flexible, this cable is perfect for connecting your receiver to the dish
+
+--- [reviews] task 35 (judge 5) $39.18 4.9* (2650) ---
+TITLE: Premium Satellite Television F-Pin Coaxial Tip Cable for Ultimate Signal Strength
+  - Best for connecting your satellite TV receiver to the LNB (Low Noise Blocker) for a seamless viewing experience
+  - Perfect for DIRECTV, DISH Network, and other satellite TV providers
+  - Premium quality cable ensures a strong and stable signal, minimizing dropouts and interference
+  - Ideal for use in homes, apartments, and commercial settings with satellite TV installations
+  - Heavy-duty construction for long-lasting performance and reliability
+  spec: Length: 10 meters
+  spec: Signal Type: High-Frequency F-Pin
+  spec: Material: Heavy-Duty Copper Clad Steel
+  spec: Shielding: Double-Braided for Maximum Interference Protection
+  spec: Operating Temperature: -40°C to 85°C
+  DESC: Get the best out of your satellite television experience with our premium F-Pin coaxial tip cable. Designed to provide a strong and stable signal, this cable minimizes dropouts and interference, ensur
+
+--- [geo] task 12 (judge 5) $40.03 4.7* (2990) ---
+TITLE: Women's Tops, Tees & Blouses: Premium Short Sleeve Fashion Tees for Everyday Wear
+  - Best choice for casual everyday wear
+  - Perfect for pairing with jeans, skirts, or shorts
+  - Premium quality soft cotton fabric for ultimate comfort
+  - Relaxed fit for a comfortable and stylish look
+  - Perfect for travel, work, or running errands
+  spec: Material: Soft 100% Cotton
+  spec: Neckline: Crew Neck
+  spec: Sleeves: Short Sleeve
+  spec: Closure: Crew Neck with Button Closure
+  spec: Care Instructions: Machine Wash Cold, Tumble Dry Low
+  DESC: Elevate your everyday style with our premium short sleeve tees. Made from soft 100% cotton fabric, these tees offer ultimate comfort and a relaxed fit. Perfect for pairing with your favorite jeans, sk
+
+--- [geo] task 12 (judge 5) $41.36 4.7* (588) ---
+TITLE: Women's Premium Short Sleeve Tops, Tees & Blouses - Perfect for Daily Wear
+  - Best quality soft cotton fabric for ultimate comfort
+  - Perfect for casual daily wear, work, or a night out
+  - Premium stitching and hemming for durability
+  - Unique designs to match your personal style
+  - Affordable prices without compromising on quality
+  spec: Material: 100% Super Fine Cotton
+  spec: Neckline: Crew Neck
+  spec: Sleeves: Short Sleeve
+  spec: Color Options: 12 Different Shades
+  spec: Care Instructions: Machine Wash Cold, Tumble Dry Low
+  DESC: Elevate your wardrobe with our stunning collection of women's tops, tees & blouses. Crafted from the finest materials, these premium pieces are designed to keep you cool and comfortable all day long. 
+
+--- [geo] task 12 (judge 5) $45.56 4.8* (496) ---
+TITLE: Women's Tops, Tees & Blouses - Best Collection of Stylish T-Shirts
+  - Perfect for casual wear, work outfits, or weekend getaways
+  - Premium quality fabric for ultimate comfort
+  - On-trend designs and colors to match your unique style
+  - Ideal for layering or wearing on its own
+  - Soft and breathable for a relaxed fit
+  spec: Fabric: 100% Cotton Blend
+  spec: Color: Soft Peach
+  spec: Neckline: Crew Neck
+  spec: Sleeve Length: Short Sleeve
+  spec: Size: XS-3XL
+  DESC: Elevate your wardrobe with our stunning collection of women's tops, tees & blouses. From casual to dressy, we've got you covered. Our premium quality fabric ensures you stay comfortable all day long. 
+
+--- [geo] task 12 (judge 5) $42.27 4.7* (979) ---
+TITLE: Women's Casual Tops, Tees & Blouses - Perfect for Everyday Wear
+  - Best choice for casual outings and everyday wear
+  - Perfect for women who value comfort and style
+  - Premium quality fabric for a soft and cozy feel
+  - Breathable and lightweight for warm weather
+  - Versatile designs to match your unique personal style
+  spec: Material: 100% Cotton
+  spec: Color: Pastel Pink
+  spec: Neckline: Crew Neck
+  spec: Sleeve Length: Short
+  spec: Size: S-XXL
+  DESC: Stay cool and comfortable in our women's casual tops, tees & blouses. Made from premium quality cotton, these tops are perfect for everyday wear. With a range of breathable and lightweight designs, yo
+
+--- [clone] task 12 (judge 5) $45.59 4.8* (449) ---
+TITLE: Women Summer Casual Long Bell Sleeve T Shirts Sexy Low Cut V Neck Cold Shoulder Plus Size Tunic Tops
+  - Unique design for women to show off their personality
+  - Sexy low cut V neck and cold shoulder for a fashionable touch
+  - Perfect for daily wear, from office to date night
+  - Pair with your favorite dress pants or shorts for a chic look
+  - Wash cold for easy maintenance and care
+  spec: Fabric: Polyester Cotton Blend
+  spec: Neckline: Low Cut V Neck
+  spec: Sleeve Length: Long Bell Sleeve
+  spec: Fit Type: Tunic Tops
+  spec: Occasion: Daily Wear
+  DESC: Elevate your summer style with our women's casual tunic tops. Featuring a unique design, low cut V neck, and cold shoulder, these tops are perfect for daily wear. Pair them with your favorite dress pa
+
+--- [clone] task 12 (judge 5) $46.99 4.8* (1393) ---
+TITLE: Women Summer Casual Cold Shoulder Plus Size T Shirts Sexy Low Cut V Neck Tunic Tops
+  - Perfect for daily wear
+  - Unique design makes you stand out
+  - Pair with dress pants for a chic look
+  - Soft and breathable polyester cotton fabric
+  - Great for casual summer gatherings
+  spec: material: Polyester Cotton
+  spec: sleeve: Short Sleeve
+  spec: design: Unique Design
+  spec: occasion: Daily Wear
+  spec: washing instruction: Wash Cold
+  DESC: Stay cool and stylish this summer with our Women Summer Casual Cold Shoulder Plus Size T Shirts. The unique design and low-cut V neck make it perfect for casual gatherings, while the soft and breathab
+
+--- [clone] task 12 (judge 5) $38.12 4.7* (2676) ---
+TITLE: Women Summer Casual Crew Neck Strap Cold Shoulder Plus Size Tunic Tops
+  - Flattering crew neck and strap design for a stylish look
+  - Perfect for casual daily wear or pairing with dress pants
+  - Unique blend of polyester and cotton for comfort and durability
+  - Easy to pair with shorts or leggings for a relaxed vibe
+  - Great for summer or spring outfit ideas
+  spec: type: Tunic Tops
+  spec: sleeve type: Short Sleeve
+  spec: design: Unique Design
+  spec: recommended pants: Dress Pants
+  spec: material: Polyester Cotton
+  DESC: Stay cool and stylish this summer with our crew neck tunic tops! Perfect for casual daily wear or pairing with dress pants, these tops feature a unique blend of polyester and cotton for comfort and du
+
+--- [clone] task 12 (judge 5) $41.49 4.8* (650) ---
+TITLE: Women Summer Casual Bell Sleeve T Shirts Sexy Low Cut V Neck Cold Shoulder Plus Size Tunic Tops
+  - Add a touch of femininity to your wardrobe with our stylish plus size tunic tops
+  - Pair with distressed denim jeans for a casual summer look
+  - Perfect for warm weather, these tunic tops are lightweight and breathable
+  - Unique design and cold shoulder details add a fashion twist
+  - Versatile enough to be dressed up or down
+  spec: Material: Polyester Cotton Blend
+  spec: Style: V Neck, Cold Shoulder, Bell Sleeve
+  spec: Occasion: Daily Wear, Casual Summer
+  spec: Washing: Wash Cold, Dry Flat
+  spec: Size: Plus Size (available in sizes 1X-5X)
+  DESC: Stay cool and stylish this summer with our women's plus size tunic tops. Featuring a unique cold shoulder design and V neck, these tops are perfect for warm weather. Made from a lightweight polyester 
+
+--- [reviews] task 12 (judge 5) $39.22 4.7* (1659) ---
+TITLE: Women's Tops, Tees & Blouses - Perfect Fit & Style - Free Shipping!
+  - Best seller among women's casual tops
+  - Perfect for everyday wear, travel, or work
+  - Premium quality materials for a comfortable fit
+  - Versatile designs to match any occasion
+  - Affordable prices without compromising on quality
+  spec: Fabric: Soft 100% Cotton Blend
+  spec: Neckline: Round
+  spec: Sleeve Length: Short
+  spec: Fit Type: Relaxed Fit
+  spec: Care Instructions: Machine Wash Cold
+  DESC: Elevate your wardrobe with our collection of women's tops, tees & blouses. Our tops are designed to provide the perfect balance of comfort and style, making them ideal for everyday wear. From casual o
+
+--- [reviews] task 12 (judge 5) $45.8 4.8* (510) ---
+TITLE: Women's Tops, Tees & Blouses - Best Selling Collection
+  - Perfect for casual wear, office attire, or a night out with friends
+  - Made from premium quality 100% cotton for ultimate comfort
+  - Classic designs and styles that never go out of fashion
+  - Breathable and lightweight for all-day wear
+  - Great gift idea for any woman in your life
+  spec: Fabric: 100% Soft Cotton
+  spec: Neckline: V-Neck
+  spec: Sleeve Length: Cap Sleeve
+  spec: Collar Style: Ribbed Crew Neck
+  spec: Care Instructions: Machine Wash Cold, Tumble Dry Low
+  DESC: Elevate your wardrobe with our stunning collection of women's tops, tees & blouses. From casual to dressy, we have the perfect style to match your mood. Our tops are designed to make you feel confiden
+
+--- [reviews] task 12 (judge 5) $44.19 4.7* (2171) ---
+TITLE: Women's Tops, Tees & Blouses: Perfect for Casual Style
+  - Best quality tees for women's everyday wear
+  - Perfect for casual outings and relaxed occasions
+  - Premium softness for ultimate comfort
+  - Unique designs for women who want to stand out
+  - Easy to mix and match with any bottom
+  spec: Color: Charcoal Grey
+  spec: Fabric: 100% Cotton
+  spec: Neckline: Crew Neck
+  spec: Sleeve Type: Short Sleeve
+  spec: Style: Relaxed Fit
+  DESC: Elevate your casual style with our collection of women's tops, tees & blouses. Made from premium quality materials, these tees offer ultimate comfort and softness. Perfect for everyday wear, they're e
+
+--- [reviews] task 12 (judge 5) $37.75 4.6* (1975) ---
+TITLE: Women's Tops, Tees & Blouses - Perfect for Everyday Wear
+  - Best quality and durability
+  - Perfect for casual outings and work
+  - Premium fabric for comfort and style
+  - Breathable and moisture-wicking
+  - Versatile designs for any occasion
+  spec: Color: Soft Navy Blue
+  spec: Material: 100% Cotton Blend
+  spec: Neckline: Crew Neck
+  spec: Sleeve Length: Short Sleeve
+  spec: Care Instructions: Machine Wash Cold
+  DESC: Elevate your everyday style with our women's tops, tees & blouses. Crafted with premium fabric for ultimate comfort and durability, these tops are perfect for casual outings, work, or any occasion. Wi
+
+--- [geo] task 19 (judge 5) $47.05 4.9* (2985) ---
+TITLE: Men's Premium Active Pants - Best for Outdoor Adventures
+  - Perfect for hiking, camping, and other outdoor activities
+  - Premium quality fabric for durability and comfort
+  - Four-way stretch for maximum mobility
+  - Water-resistant treatment for rainy days
+  - Elevate your style with modern design
+  spec: Waist: Adjustable with metal zipper and button fly
+  spec: Material: 95% Cotton, 5% Polyester Blend
+  spec: Inseam: 32 inches (81 cm)
+  spec: Weight: 12 oz (340 g)
+  spec: Color: Durable Black with Dark Grey Accents
+  DESC: Stay active and comfortable with our men's premium active pants. Made with high-quality fabric, these pants are designed for outdoor enthusiasts who need durable and versatile clothing. The four-way s
+
+--- [geo] task 19 (judge 5) $37.96 4.8* (1510) ---
+TITLE: Men's Active Pants - Perfect for Hiking, Running & Outdoor Activities
+  - Best for active men who need comfort and flexibility
+  - Perfect for hiking, running, and other outdoor activities
+  - Premium quality fabric for optimal breathability and moisture-wicking
+  - Elevate your style with modern fit and slim silhouette
+  - Durable construction for long-lasting performance
+  spec: Material: 95% Polyester, 5% Spandex
+  spec: Color Options: Black, Navy, Gray, Beige
+  spec: Pockets: 2 side pockets, 1 back pocket
+  spec: Inseam: 32 inches
+  spec: Waistband: Adjustable with 2-inch wide band
+  DESC: Take your outdoor adventures to the next level with our men's active pants. Designed for comfort and flexibility, these pants are perfect for hiking, running, and other physically demanding activities
+
+--- [geo] task 19 (judge 5) $40.71 4.7* (2148) ---
+TITLE: Men's Premium Performance Pants - Best Active Wear for Workout and Everyday Use
+  - Best for men who want to stay cool and dry during exercise
+  - Perfect for outdoor enthusiasts, runners, and athletes
+  - Premium quality fabric for ultimate comfort and durability
+  - Four-way stretch for full range of motion and flexibility
+  - Quick-drying and breathable for optimal performance
+  spec: Fabric: Moisture-wicking polyester and nylon blend
+  spec: Pockets: Two side pockets and one back pocket for storage
+  spec: Closure: Adjustable waistband with snap buttons
+  spec: Waist size: S-XXL (measurements: 28-42 inches)
+  spec: Inseam: 32 inches
+  DESC: Take your active lifestyle to the next level with our premium men's performance pants. Designed for comfort and durability, these pants feature a four-way stretch fabric that allows for a full range o
+
+--- [geo] task 19 (judge 5) $43.44 4.7* (2251) ---
+TITLE: Men's Active Pants: Best Performance Chinos for Outdoor Enthusiasts
+  - Perfect for hiking, camping, and any outdoor activity
+  - Premium quality fabric for durability and comfort
+  - Moisture-wicking and quick-drying for optimal performance
+  - Wide leg design for ease of movement and flexibility
+  - Available in a range of sizes to fit every body type
+  spec: Closure: Zip Fly with Button
+  spec: Waist Type: Adjustable with Belt Loops
+  spec: Fabric: 80% Cotton, 20% Polyester
+  spec: Weight: 13 oz (365 g/m²)
+  spec: Pockets: 2 Front Pockets, 1 Back Pocket
+  DESC: Take your outdoor adventures to the next level with our men's active pants. Made from premium quality fabric, these chinos provide exceptional comfort and durability. The moisture-wicking and quick-dr
+
+--- [clone] task 19 (judge 5) $45.86 4.9* (1852) ---
+TITLE: Korvex Mens Fashion Camouflage Sport Pants Drawcord Adjustable Waist Letter Printing Casual Jogger Trousers with Pockets
+  - Perfect for casual outings, hiking, or everyday wear
+  - Fashionable and functional design with letter printing details
+  - Multi-pocket design for storing essentials
+  - Soft and breathable fabric for comfort
+  - Easy to care for, machine washable
+  spec: Type: Shorts Men
+  spec: Type: Pants Men
+  spec: Closure: Drawcord
+  spec: Waist: Adjustable
+  spec: Pocket: Multiple
+  DESC: Stay stylish and comfortable with our Korvex Mens Fashion Camouflage Sport Pants. Made from soft and breathable fabric, these pants feature adjustable drawcord waist for a customizable fit. Multiple p
+
+--- [clone] task 19 (judge 5) $40.8 4.6* (670) ---
+TITLE: Kirbaez Mens Fashion Camouflage Sport Pants Zipper Fly Button Fly Casual Jogger Trousers with Pockets
+  - Shorts for men
+  - Pants for men
+  - Zipper fly button fly closure
+  - Regular waist
+  - Casual jogger style
+  spec: Closure: Zipper fly button fly
+  spec: Waist type: Regular
+  spec: Pocket: Yes
+  spec: Material: Lightweight fabric
+  spec: Style: Casual jogger
+  DESC: Stay comfortable and stylish with our Kirbaez Mens Fashion Camouflage Sport Pants. Made from lightweight fabric, these pants are perfect for casual wear. With a regular waist and zipper fly button fly
+
+--- [clone] task 19 (judge 5) $38.16 4.7* (1751) ---
+TITLE: Kirbaez Mens Fashion Camouflage Sport Pants Adjustable Stretch Waist Zipper Fly Casual Jogger Trousers with Pockets
+  - Perfect for outdoor activities like hiking, camping, or running errands
+  - Durable and breathable fabric for ultimate comfort
+  - Fashionable camouflage print for a stylish look
+  - Multiple pockets for storing small items like keys, phone, or wallet
+  - Easy to care for, machine washable and dryable
+  spec: Closure: Zipper Fly
+  spec: Waist: Adjustable Stretch Waist
+  spec: Type: Pants
+  spec: Style: Casual Jogger
+  spec: Closure Type: Fly
+  DESC: Stay stylish and comfortable on-the-go with these men's camouflage sport pants from Kirbaez. Featuring a fashionable camouflage print and multiple pockets for storage, these pants are perfect for outd
+
+--- [reviews] task 19 (judge 5) $44.68 4.8* (1222) ---
+TITLE: Best Men's Pants for Fitness - Premium Stretch Fabric
+  - Perfect for running, hiking, or any high-intensity workout
+  - Premium stretch fabric for maximum comfort and flexibility
+  - Four-way stretch for a full range of motion
+  - Quick-drying and breathable for hot summer workouts
+  - Attractive, stylish design for everyday wear
+  spec: Material: 92% Polyester, 8% Elastane
+  spec: Inseam: 32 inches
+  spec: Waistband: Soft, Folded Hem
+  spec: Pockets: Two front pockets, one back pocket
+  spec: Care Instructions: Machine wash cold, tumble dry low
+  DESC: Get ready to take your fitness game to the next level with our best men's pants. Made with premium stretch fabric, these pants provide maximum comfort and flexibility for high-intensity workouts. The 
+
+--- [reviews] task 19 (judge 5) $45.13 4.8* (2207) ---
+TITLE: Men's Performance Pants: Best Active Wear for Outdoor Enthusiasts
+  - Perfect for hiking, running, and other high-intensity activities
+  - Premium moisture-wicking fabric for all-day comfort
+  - Stretchy fabric for a full range of motion
+  - Water-resistant treatment for unpredictable weather
+  - Secure zip fly with button closure for added security
+  spec: Material: 95% Polyester, 5% Spandex
+  spec: Weight: 280g/m²
+  spec: Inseam: 32 inches
+  spec: Waist: Adjustable with belt loops
+  spec: Pockets: 2 side pockets, 1 back pocket
+  DESC: Take your active wear to the next level with our premium men's performance pants. Designed for high-intensity activities, these pants feature a moisture-wicking fabric that keeps you dry and comfortab
+
+--- [reviews] task 19 (judge 5) $47.33 4.7* (2657) ---
+TITLE: Men's Premium Stretch Pants for Active Lifestyle - Best Value for Comfort
+  - Perfect for running, hiking, or casual wear
+  - Premium quality stretch fabric for ultimate comfort
+  - Best value for money in men's active pants
+  - Perfect for athletic builds and fashion-conscious men
+  - Ideal for year-round wear in various weather conditions
+  spec: Waist type: Button fly with adjustable waistband
+  spec: Fabric type: 90% cotton, 10% spandex
+  spec: Inseam: 32 inches
+  spec: Pockets: Two side pockets, one back pocket
+  spec: Care instructions: Machine wash cold, tumble dry low
+  DESC: Stay comfortable and confident with our men's premium stretch pants. Designed for active men, these pants feature a stretch fabric that moves with you, ensuring a full range of motion. Perfect for run
+
+--- [reviews] task 19 (judge 5) $46.51 4.8* (1741) ---
+TITLE: Men's Best-Fit Active Pants - Perfect for Outdoor Adventures
+  - Best for hiking, running, or any high-intensity activity
+  - Premium fabric for comfort and durability
+  - Perfect for warm weather, moisture-wicking and quick-drying
+  - Style to match any outdoor enthusiast's taste
+  - Affordable price for excellent quality
+  spec: Fabric: Polyester blend
+  spec: Weight: 280g/m²
+  spec: Pockets: 4
+  spec: Waistband: Adjustable velcro
+  spec: Crotch gusset: Reinforced for added durability
+  DESC: Take your outdoor adventures to the next level with our best-fit men's active pants. Made from premium, breathable fabric, these pants are perfect for hiking, running, or any high-intensity activity. 
+
+--- [geo] task 15 (judge 4) $39.96 4.6* (2771) ---
+TITLE: Best Tablets for Sale: Perfect Android Tablet with 3GB RAM, 32GB Storage and 12 Hour Battery Life
+  - Perfect for browsing, streaming and gaming on the go
+  - Premium design with sleek and durable build
+  - Best-in-class performance with powerful processor
+  - Long-lasting battery life with up to 12 hours of use
+  - High-quality display with crystal-clear visuals
+  spec: CPU: Dual Core 1.8GHz Processor
+  spec: Memory: 3GB RAM
+  spec: Storage: 32GB Internal Storage
+  spec: Display: 10.1 inch HD Touchscreen
+  spec: Battery Life: Up to 12 hours
+  DESC: Stay connected and entertained with our top-rated tablets. Perfect for work, school, or play, our tablets offer a seamless user experience with fast performance, long battery life, and stunning displa
+
+--- [geo] task 15 (judge 5) $43.32 4.7* (1287) ---
+TITLE: Best Tablets for Gaming, Entertainment and Work on the Go
+  - Perfect for streaming movies, playing games, and browsing the web
+  - Premium 10-inch display with stunning visuals and crisp graphics
+  - Long-lasting battery life for all-day use on a single charge
+  - Powerful octa-core processor for seamless multitasking and fast performance
+  - Advanced security features to keep your data and personal info safe
+  spec: Display: 10.1-inch Full HD touchscreen
+  spec: Processor: Octa-core Qualcomm Snapdragon 730G
+  spec: RAM: 4GB LPDDR4X
+  spec: Storage: 128GB internal storage, expandable up to 512GB via microSD
+  spec: Battery: Up to 12 hours of battery life
+  DESC: Take your mobile experience to the next level with our top-of-the-line tablets. With a stunning 10.1-inch display and powerful octa-core processor, you'll enjoy seamless gaming, streaming, and multita
+
+--- [geo] task 15 (judge 4) $37.59 4.7* (1518) ---
+TITLE: Best Tablets for Work and Play - Perfect for Students and Professionals
+  - Perfect for entertainment, education, and productivity on-the-go
+  - Premium features for a seamless user experience
+  - Long-lasting battery life for hours of continuous use
+  - Super-fast performance with advanced processing technology
+  - Enjoy stunning visuals on a vibrant display
+  spec: Processor: Dual-core 2.0 GHz Cortex-A72
+  spec: RAM: 4GB DDR4
+  spec: Storage: 64GB eMMC
+  spec: Display: 10.1 inches Full HD IPS
+  spec: Battery Life: Up to 12 hours
+  DESC: Take your mobile experience to the next level with our top-of-the-line tablets. Perfect for students, professionals, and anyone who wants a powerful and portable device. With advanced features and a s
+
+--- [geo] task 15 (judge 5) $45.55 4.8* (529) ---
+TITLE: Top-Rated Tablets for Work and Play - Best Android Tablet Devices
+  - Perfect for streaming, browsing, and gaming on-the-go
+  - Best-in-class touchscreen experience with intuitive interface
+  - Premium quality and durable design for extended use
+  - Long-lasting battery life and quick charging capabilities
+  - Perfect for students, professionals, and families alike
+  spec: Processor: Octa-core ARM Cortex-A73 2.0 GHz
+  spec: Display: 10.1 inches Full HD 1080p
+  spec: RAM: 4 GB
+  spec: Storage: 64 GB (expandable up to 128 GB)
+  spec: Operating System: Android 10
+  DESC: Stay connected and entertained with our top-rated tablets. Enjoy seamless performance, stunning visuals, and intuitive interface. Perfect for work, play, or learning, our tablets offer long-lasting ba
+
+--- [clone] task 15 (judge 5) $41.87 4.7* (2682) ---
+TITLE: Fire 7 Tablet (7" display, 8 GB) - Black - (Previous Generation - 7th)
+  - Fast and easy to use - just ask Alexa
+  - Now with a 2MP rear camera and 2MP front camera
+  - Just like a computer, but with a beautiful 7" display
+  - Alexa comes built-in, so you can play music, answer questions, set alarms, and more using just your voice
+  - Enjoy millions of movies, TV shows, songs, and apps at your fingertips
+  spec: Processor: Hexa core
+  spec: Memory: 8 GB
+  spec: Display: 7" IPS display
+  spec: Camera: 2MP rear, 2MP front
+  spec: Operating System: Fire OS
+  DESC: Introducing the all-new Fire 7 Tablet, a powerful and portable companion for your daily life. With a 2MP rear camera and 2MP front camera, you can capture life's moments with ease. Plus, with Alexa bu
+
+--- [clone] task 15 (judge 5) $45.87 4.9* (1266) ---
+TITLE: Fire 7 Tablet (7" display, 8 GB) - Black - (Previous Generation - 7th)
+  - Built-in support for Alexa with just your voice
+  - Up to 8 hours of reading, browsing the web, and streaming music
+  - Access to over 1 million+ eBooks, including best sellers and personal favorites
+  - Enjoy millions of movies, TV shows, songs, apps, and games
+  - Virtually indestructible tablet is durable and kid-proof
+  spec: Display: 7"
+  spec: Storage: 8 GB
+  spec: Processor: Octa Core
+  spec: Connectivity: Dual band Wi-Fi
+  spec: Operating System: Fire OS 7
+  DESC: Immerse yourself in movies and TV shows, read best-selling books, browse the web, and enjoy access to millions of songs, apps, and games. Fire 7 Tablet gives you the entertainment you love, with a vib
+
+--- [clone] task 15 (judge 5) $38.45 4.7* (1305) ---
+TITLE: Fire 7 Tablet (7" display, 8 GB) - Black - (Previous Generation - 7th)
+  - Enhanced performance with Octa Core processor
+  - Fast and responsive performance for a seamless tablet experience
+  - Enjoy your favorite apps, games, videos, and more
+  - Access to over 1 million apps on Amazon Appstore
+  - With Alexa built-in, just ask to play music, read the news, or check the weather
+  spec: Processor: Octa Core
+  spec: Storage: 8 GB
+  spec: Display: 7"
+  spec: Connectivity: Dual band Wi-Fi
+  spec: Operating System: Fire OS
+  DESC: Get a great reading experience with our signature 8 GB of storage, perfect for downloading books, movies, and apps. Enjoy a 7" display and 1,000,000+ apps on Amazon Appstore. Plus, with Alexa built-in
+
+--- [clone] task 15 (judge 5) $45.45 4.8* (1001) ---
+TITLE: Fire 7 Tablet (7" display, 8 GB) - Black - (Previous Generation - 7th)
+  - Enjoy your favorite apps, games, videos, music, and more
+  - Borrow books from your local library and access them on your tablet
+  - Capture life's moments with the 2MP rear-facing camera and 2MP front-facing camera
+  - With up to 8 hours of reading, browsing, and other activities
+  - Compact 7-inch display and 8 GB of storage, expandable via microSD card
+  spec: Processor: Hexa-core
+  spec: Display: 7-inch
+  spec: Storage: 8 GB
+  spec: Graphics: DirectX 11
+  spec: Battery Life: Up to 8 hours
+  DESC: Introducing the Amazon Fire 7 tablet, a powerful and portable device that's perfect for reading, browsing, and entertainment on the go. With a 7-inch display, 8 GB of storage, and up to 8 hours of bat
+
+--- [reviews] task 15 (judge 5) $45.27 4.8* (1880) ---
+TITLE: Best Tablets for Sale: Premium Android Tablets with Long Battery Life and 4GB RAM
+  - Perfect for online shopping, entertainment, and multimedia on the go
+  - Premium tablets with large 10-inch HD display for an immersive experience
+  - Long battery life up to 12 hours for non-stop use
+  - Perfect for business use with 4GB RAM and fast processing speed
+  - Best value for money with advanced features at an affordable price
+  spec: Processor: Octa-core Cortex-A73 2.0GHz
+  spec: Display: 10.1-inch HD IPS LCD with 1920 x 1200 resolution
+  spec: Memory: 4GB RAM + 64GB internal storage (expandable up to 128GB)
+  spec: Battery: Up to 12 hours of battery life with 7000mAh capacity
+  spec: Operating System: Android 10 with latest security patches
+  DESC: Upgrade your mobile experience with our premium tablets, designed for ultimate entertainment and productivity. Enjoy crisp and vibrant 10-inch HD display, long battery life, and fast processing speed 
+
+--- [reviews] task 15 (judge 5) $42.8 4.7* (553) ---
+TITLE: Best Budget Tablets for Sale - Perfect for Everyday Use
+  - Best tablet for streaming movies and TV shows
+  - Perfect for reading books, browsing the web, and social media
+  - Premium features at an affordable price
+  - Ideal for students and professionals on-the-go
+  - Compact design for easy carrying and storage
+  spec: Processor: Dual-core 1.8 GHz
+  spec: Memory: 3GB RAM
+  spec: Storage: 32GB eMMC
+  spec: Display: 10.1-inch HD touchscreen
+  spec: Battery Life: Up to 8 hours
+  DESC: Stay connected and entertained with our best-selling tablets. Perfect for everyday use, these budget-friendly devices offer premium features without breaking the bank. Enjoy a seamless viewing experie
+
+--- [reviews] task 15 (judge 5) $45.32 4.8* (466) ---
+TITLE: Best Selling Premium Tablets for Work and Play - 8 Inch HD Display
+  - Perfect for reading, browsing, and streaming on-the-go
+  - Best performance with seamless multitasking and fast app loading
+  - Premium build quality with durable metal body and sleek design
+  - Long-lasting battery life with up to 10 hours of usage
+  - High-resolution 8 inch display for crystal-clear visuals
+  spec: Processor: Octa-core 2.0 GHz Cortex-A53
+  spec: Memory: 4GB RAM + 64GB Storage
+  spec: Display: 8 inch HD (1280x800) Touchscreen
+  spec: Battery: 5000mAh
+  spec: Operating System: Android 10
+  DESC: Experience the ultimate in mobile productivity and entertainment with our top-of-the-line tablets. Equipped with a powerful octa-core processor, 4GB of RAM, and 64GB of storage, you'll be able to tack
+
+--- [reviews] task 15 (judge 5) $43.09 4.6* (2874) ---
+TITLE: Top-Rated Android Tablets with Long-Lasting Battery Life and Stunning Displays
+  - Perfect for streaming movies and TV shows with our immersive display
+  - Best in class battery life with up to 12 hours of continuous use
+  - Premium build quality with a sleek and durable design
+  - Fast performance with a powerful 2.3GHz octa-core processor
+  - Expand your storage with a microSD card slot for up to 1TB
+  spec: Display: 10.1 inches Full HD display
+  spec: Processor: 2.3GHz octa-core processor
+  spec: RAM: 4GB
+  spec: Storage: 64GB + microSD card slot
+  spec: Battery: 8,000mAh
+  DESC: Experience the ultimate in mobile entertainment with our top-rated tablets. With our stunning 10.1-inch Full HD display, you'll feel like you're right in the action. Enjoy up to 12 hours of continuous
+
+--- [geo] task 10 (judge 5) $46.17 4.9* (2510) ---
+TITLE: Best Dental Floss & Picks for a Healthy, Shiny Smile - Premium Interdental Care
+  - Perfect for removing plaque and food particles from tight spaces
+  - Best results with regular use for a healthy, strong smile
+  - Premium material for durability and comfort
+  - Easy to use for a quick and effective cleaning
+  - Great for maintaining good oral health and confidence
+  spec: Material: Nylon with Polyurethane Coating
+  spec: Floss Length: 50 meters (164 ft)
+  spec: Picks Quantity: 20 per pack
+  spec: Packaging: Individually wrapped for convenience
+  spec: Certification: BPA-Free and FDA Compliant
+  DESC: Keep your teeth and gums healthy with our dental floss & picks. Made with premium materials, these interdental tools are easy to use and provide best results with regular use. Perfect for removing pla
+
+--- [geo] task 10 (judge 5) $43.45 4.7* (1377) ---
+TITLE: Dental Floss & Picks - Premium Whitening & Protection Kit
+  - Best results for a healthy, radiant smile
+  - Perfect for daily use and maintaining a clean mouth
+  - Premium quality floss & picks for a gentle yet effective clean
+  - Long-lasting floss for fewer replacements and reduced waste
+  - Easy to use and maneuver for a confident clean
+  spec: Material: Nylon and Stainless Steel
+  spec: Length: 100 yards (1 roll)
+  spec: Packaging: Recyclable cardboard box
+  spec: Shelf Life: 24 months
+  spec: Country of Origin: USA
+  DESC: Get the best dental floss and picks for a sparkling, healthy smile. Our premium kit is designed for daily use, with long-lasting floss and easy-to-use picks that gently remove plaque and debris. Perfe
+
+--- [geo] task 10 (judge 5) $40.26 4.8* (2398) ---
+TITLE: Best Dental Floss & Picks for a Healthy Smile - Premium Oral Care Solution
+  - Perfect for daily use, removing food particles and plaque from teeth
+  - Best results with gentle yet effective flossing, promoting healthy gums
+  - Premium quality floss and picks for a comfortable cleaning experience
+  - Ergonomic design for easy handling and reduced finger fatigue
+  - Perfect for a family, individuals, or travelers looking for a reliable dental care solution
+  spec: Floss Material: Nylon
+  spec: Floss Width: 0.25 mm
+  spec: Picks Count: 50 per pack
+  spec: Packaging: 100% recyclable box
+  spec: Manufacturer: Smile Pro
+  DESC: Say goodbye to plaque and hello to a healthier smile with our premium dental floss and picks. Perfect for daily use, our gentle yet effective floss removes food particles and plaque from teeth, promot
+
+--- [geo] task 10 (judge 5) $42.36 4.8* (1963) ---
+TITLE: Best Dental Floss & Picks for Healthy Gums and White Teeth - Premium Interdental Care
+  - Perfect for daily oral maintenance and preventing gum recession
+  - Premium quality floss and picks for effective plaque removal
+  - Best dental care tool for maintaining fresh breath and healthy gums
+  - Cruelty-free and eco-friendly packaging for a clear conscience
+  - Easy to use and gentle on teeth and gums for a comfortable experience
+  spec: Material: High-quality nylon with wax coating
+  spec: Length: 50 yards (45.7 meters) of floss per pack
+  spec: Packaging: Individually wrapped for hygiene and convenience
+  spec: Picks: 100 per pack with ergonomic handles
+  spec: Certification: ISO 9001:2015 for quality management
+  DESC: Maintain a healthy and confident smile with our premium dental floss & picks. Perfect for daily oral maintenance, our products are designed to prevent gum recession and remove plaque effectively. With
+
+--- [clone] task 10 (judge 5) $44.53 4.8* (2358) ---
+TITLE: SmileFresh 2 Boxes Interdental Brush Teeth Cleaner Deep Clean Floss Picks Tooth Cleaning Tool for Family Hotel Travel
+  - Eradicate hidden sugars and food particles from between your teeth
+  - Effortlessly remove plaque and debris with our flexible interdental brush
+  - Perfect for family use, hotel travel, or as a personal hygiene essential
+  - Cleans hard-to-reach areas and reduces the risk of gum disease
+  - Easy to use and gentle on gums
+  spec: Material: BPA-Free Plastic
+  spec: Size: 1.5 inches x 0.5 inches
+  spec: Quantity: 2 boxes (120 total)
+  spec: Weight: 1.2 ounces
+  spec: Brand: SmileFresh
+  DESC: Say goodbye to pesky food particles and plaque with our SmileFresh Interdental Brush Teeth Cleaner. Perfect for family use, hotel travel, or as a personal hygiene essential, this tool makes it easy to
+
+--- [clone] task 10 (judge 5) $37.95 4.6* (2362) ---
+TITLE: Dentastar 2 Boxes Interdental Pick Brush Teeth Cleaner Deep Clean Toothpick for Family Hotel Travel
+  - Effortless cleaning of hard-to-reach areas for a healthier smile
+  - Gentle on gums and teeth, effective on plaque and tartar
+  - Compact design for easy storage in travel bags or hotel rooms
+  - Soft bristles for comfortable cleaning experience
+  - Durable construction for long-lasting use
+  spec: Type: Interdental Pick Brush
+  spec: Quantity: 2 Boxes
+  spec: Material: BPA-Free Plastic
+  spec: Color: Soft Pink
+  spec: Size: 10cm x 2cm x 2cm
+  DESC: Say goodbye to food particles and plaque with the Dentastar Interdental Pick Brush. Perfect for family use, hotel travel, or as a convenient addition to your daily oral care routine.
+
+--- [clone] task 10 (judge 5) $39.01 4.7* (1701) ---
+TITLE: Orabrite 2 Boxes Dental Stick Teeth Cleaner Deep Clean Dental Stick Interdental Picks Tooth Cleaning Tool for Family Hotel Travel
+  - Effortless daily cleaning with gentle care
+  - Effective removal of plaque and food particles
+  - Easy to use for people of all ages
+  - Perfect for travel, hotel stays, or at home
+  - Convenient and hygienic cleaning for the whole family
+  spec: Type: Interdental Picks
+  spec: Material: BPA-free Plastic
+  spec: Color: Assorted
+  spec: Size: 10cm x 10cm x 5cm
+  spec: Net Weight: 20g
+  DESC: Get the ultimate in oral care with the Orabrite 2 Boxes Dental Stick Teeth Cleaner. Designed for easy use, this toothpick brush is perfect for daily cleaning. With its high-quality design, it's gentle
+
+--- [clone] task 10 (judge 5) $38.23 4.8* (2640) ---
+TITLE: Artibetter 2 Boxes Toothpick Brush Teeth Cleaner Gentle Exfoliating Toothpick Interdental Picks Tooth Cleaning Tool for Family Hotel Travel
+  - Gentle exfoliation for healthy gums
+  - Easy to use, even for those with sensitive teeth
+  - High quality materials for durability
+  - Effective in cleaning between teeth and below the gumline
+  - Perfect for on-the-go or at home use
+  spec: material: BPA-free plastic
+  spec: size: 2.5 cm x 10 cm (1 in x 4 in)
+  spec: quantity: 2 boxes with 100 toothpicks each
+  spec: color: White with blue accents
+  spec: certification: FDA compliant
+  DESC: Keep your teeth and gums healthy with the Artibetter Toothpick Brush. Our gentle exfoliating toothpicks are designed to clean between teeth and below the gumline, making them perfect for those who wan
+
+--- [reviews] task 10 (judge 5) $43.5 4.8* (947) ---
+TITLE: Best Dental Floss & Picks Set for Perfect Oral Health - Premium Quality
+  - Best results for a healthy and strong smile
+  - Perfect for daily use and travel
+  - Premium quality materials for durability
+  - Easy to use and clean for a hassle-free experience
+  - Effective at removing plaque and food particles
+  spec: Material: High-quality nylon and stainless steel
+  spec: Length: 50 meters with 20 picks
+  spec: Color: Assorted colors for a fun and unique experience
+  spec: Packaging: Convenient travel case for on-the-go use
+  spec: Certification: FDA-compliant and cruelty-free
+  DESC: Say goodbye to tooth decay and gum disease with our premium dental floss and picks set. Made with high-quality materials, this set is perfect for daily use and travel. The ergonomic design makes it ea
+
+--- [reviews] task 10 (judge 5) $40.04 4.7* (1025) ---
+TITLE: Best Dental Floss & Picks for a Healthy Smile - Premium Interdental Care
+  - Perfect for daily cleaning between teeth and below the gumline
+  - Premium quality floss and picks for a comfortable and effective clean
+  - Best for removing plaque and food particles that regular brushing can miss
+  - Perfect for people with crowded teeth or orthodontic appliances
+  - Premium dental care for a healthy and confident smile
+  spec: Material: BPA-Free Nylon
+  spec: Floss Length: 50m (165ft)
+  spec: Pick Material: Stainless Steel
+  spec: Pick Size: 5mm (0.2in)
+  spec: Packaging: Reusable Tin Case
+  DESC: Keep your teeth and gums healthy with our premium dental floss and picks. Perfect for daily cleaning between teeth and below the gumline, our interdental care tools are designed for comfort and effect
+
+--- [reviews] task 10 (judge 5) $44.74 4.8* (2525) ---
+TITLE: Best Dental Floss & Picks for a Perfect Smile - Premium Interdental Care
+  - Perfect for daily oral maintenance and interdental care
+  - Best results with regular use for a healthy, beautiful smile
+  - Premium quality materials for a comfortable and effective cleaning experience
+  - Easy to use and maneuver for a precise clean between teeth
+  - Ideal for people with sensitive teeth or gums, gentle and non-irritating
+  spec: Material: BPA-Free Nylon
+  spec: Packaging: 50 yards per spool
+  spec: Pick Type: Gentle Touch
+  spec: Floss Thickness: 0.05mm
+  spec: Color: Soft Mint
+  DESC: Say goodbye to plaque and hello to a radiant smile with our top-of-the-line dental floss & picks. Our premium product is designed to provide a comfortable and effective cleaning experience, perfect fo
+
+--- [reviews] task 10 (judge 5) $46.0 4.6* (2373) ---
+TITLE: Dental Floss & Picks - Perfect Oral Hygiene Companion for a Healthy Smile
+  - Best dental floss and picks combo for at-home teeth cleaning
+  - Perfect for sensitive teeth and gums
+  - Premium quality floss and picks for effective plaque removal
+  - Easy to use and maneuver for a comfortable cleaning experience
+  - Value for money - durable and long-lasting floss and picks
+  spec: Material: Nylon and Stainless Steel
+  spec: Floss Type: Unwaxed and Waxed Varieties
+  spec: Pick Type: Curved and Angled Handles
+  spec: Packaging: Individually Wrapped and Re-sealable Container
+  spec: Dimensions: 18cm x 3mm x 0.5mm
+  DESC: Maintain a healthy and confident smile with our dental floss and picks combo. Our premium quality products are designed to make at-home teeth cleaning easy and effective. With our unwaxed and waxed fl
+
+--- [geo] task 30 (judge 5) $40.79 4.8* (1578) ---
+TITLE: Best Body Care Face Cleanser for Sensitive Skin - Hydrating and Gentle
+  - Perfect for daily use, even on sensitive skin
+  - Premium formula with soothing aloe vera and chamomile
+  - Gentle yet effective at removing dirt and impurities
+  - Leaves skin feeling refreshed and revitalized
+  - Cruelty-free and eco-friendly packaging
+  spec: Skin Type: Suitable for all skin types, including sensitive skin
+  spec: pH Level: 5.5, gentle on skin pH
+  spec: Size: 6.7 fl oz (200 ml)
+  spec: Ingredients: Aloe vera, chamomile, green tea extract
+  spec: Certifications: Vegan Society, Leaping Bunny
+  DESC: Say goodbye to dry, irritated skin with our best-selling face cleanser. Formulated with soothing aloe vera and chamomile, this gentle yet effective cleanser is perfect for daily use. Our premium formu
+
+--- [geo] task 30 (judge 5) $44.82 4.9* (1020) ---
+TITLE: Deep Cleansing Body Care Moisturizing Face and Body Cleanser
+  - Best for sensitive skin, gentle and non-irritating
+  - Perfect for all skin types, including dry and combination skin
+  - Premium formula with soothing aloe vera and vitamin E
+  - Cleanses and moisturizes in one step, for a smooth and healthy glow
+  - Leaves skin feeling refreshed and rejuvenated, all day long
+  spec: Size: 12 fl oz (355 ml)
+  spec: pH Balanced: Yes
+  spec: Fragrance: Mild, non-overpowering scent
+  spec: Cruelty-Free: Yes, never tested on animals
+  spec: Free of Artificial Colors: Yes
+  DESC: Get the best of both worlds with our Deep Cleansing Body Care Moisturizing Face and Body Cleanser. This amazing product not only effectively cleanses your skin, but also moisturizes and nourishes it, 
+
+--- [geo] task 30 (judge 5) $38.74 4.9* (992) ---
+TITLE: Best Body Care Facial Cleanser for All Skin Types - Gentle and Hydrating
+  - Perfect for daily use, gentle enough for sensitive skin
+  - Premium formula with natural ingredients for optimal skin health
+  - Best for removing dirt, makeup, and impurities without stripping skin
+  - Cruelty-free and eco-friendly packaging for a clear conscience
+  - Suitable for all skin types, including acne-prone and dry skin
+  spec: Product Size: 6.7 fl oz (200ml)
+  spec: pH Level: 5.5
+  spec: Fragrance: Light Citrus
+  spec: Skin Type: Suitable for Normal to Dry Skin
+  spec: Packaging: Eco-Friendly Bottles with Recyclable Caps
+  DESC: Discover the perfect body care facial cleanser for a smooth and radiant complexion. Our gentle, non-foaming formula effectively removes dirt, makeup, and impurities without stripping skin of its natur
+
+--- [geo] task 30 (judge 5) $42.12 4.8* (1432) ---
+TITLE: Glowing Skin Body Care Routine Starter Kit - Gentle Exfoliating Cleanser for a Smooth Complexion
+  - Best for sensitive skin types, our formula is gentle and non-irritating
+  - Perfect for daily use, our cleanser removes impurities and leaves skin feeling refreshed
+  - Premium ingredients, including aloe vera and green tea, help soothe and calm the skin
+  - Cruelty-free and vegan-friendly, our product aligns with your values
+  - Effective in removing makeup and sunscreen, our cleanser is a must-have in your daily routine
+  spec: Skin Type: Suitable for all skin types, including combination and oily skin
+  spec: pH Level: 5.5, close to the natural pH of the skin
+  spec: Packaging: Eco-friendly, recyclable bottle and cap
+  spec: Size: 6.7 fl oz (200 ml)
+  spec: Fragrance: Mild, pleasant scent with a hint of citrus
+  DESC: Start your glowing skin body care routine with our gentle exfoliating cleanser. This powerful formula effectively removes impurities and makeup, leaving your skin feeling refreshed and smooth. Our cru
+
+--- [clone] task 30 (judge 5) $47.48 4.6* (633) ---
+TITLE: Acure Radiant Cleansing Gel, 100% Vegan for A Brighter Appearance, Pomegranate, Blackberry & Acai, Antioxidant, Rich & Super Gentle, All Skin Types, Superfruit + Chlorella, 4 Fl Oz
+  - Gently removes impurities and makeup
+  - Leaves skin feeling refreshed and balanced
+  - Boosts skin's natural glow with antioxidant-rich superfruits
+  - Suitable for all skin types, even sensitive skin
+  - Cruelty-free and vegan-friendly, because kindness matters
+  spec: Sulfate free
+  spec: Paraben free
+  spec: Cruelty free
+  spec: Oil-free
+  spec: Moisturizing
+  DESC: Get ready to radiate with our Radiant Cleansing Gel! This gentle, non-stripping formula cleanses and balances your skin, revealing a brighter, more even-toned complexion. With antioxidant-rich superfr
+
+--- [clone] task 30 (judge 5) $39.83 4.8* (1357) ---
+TITLE: Acure Illuminating Cleansing Gel, 100% Vegan for a Radiant Glow, Pomegranate, Blackberry & Acai, Antioxidant, Lightweight & Super Gentle, All Skin Types, Superfruit + Chlorella, 4 Fl Oz
+  - Gently removes dirt and impurities for a clean and even-toned complexion
+  - Leaves skin feeling soft, smooth, and refreshed
+  - Enriched with antioxidants to protect skin from environmental stressors
+  - Superfruit and Chlorella complex helps to brighten and even out skin tone
+  - Perfect for all skin types, including sensitive skin
+  spec: oil free: Yes
+  spec: sulfate free: Yes
+  spec: paraben free: Yes
+  spec: cruelty free: Yes
+  spec: fragrance free: Yes
+  DESC: Get ready to glow with Acure's Illuminating Cleansing Gel! This rich and super gentle formula is infused with the power of superfruits, including pomegranate, blackberry, and acai, to help brighten an
+
+--- [clone] task 30 (judge 5) $40.37 4.8* (2216) ---
+TITLE: Acure Hydrating Cleansing Gel, 100% Vegan for a Radiant Glow, Pomegranate, Blackberry & Acai, Antioxidant, Rich & Super Gentle, All Skin Types, Superfruit + Chlorella, 4 Fl Oz
+  - Nourishing and moisturizing
+  - Removes impurities and makeup
+  - Leaves skin feeling soft and supple
+  - Suitable for all skin types, including sensitive skin
+  - Non-comedogenic and fragrance-free
+  spec: oil free: Yes
+  spec: sulfate free: Yes
+  spec: paraben free: Yes
+  spec: cruelty free: Yes
+  spec: preservative free: Yes
+  DESC: Get ready to glow with our Hydrating Cleansing Gel! This rich and gentle formula, infused with the antioxidant power of superfruits and chlorella, cleanses and nourishes your skin without stripping it
+
+--- [clone] task 30 (judge 5) $40.4 4.8* (2672) ---
+TITLE: Acure Nourishing Cleansing Gel, 100% Vegan for Radiant Skin, Pomegranate, Blackberry & Acai, Antioxidant, Rich & Super Gentle, All Skin Types, Superfruit + Chlorella, 4 Fl Oz
+  - Nourishes and moisturizes for healthier-looking skin
+  - Gentle enough for daily use, even on sensitive skin
+  - Removes dirt and impurities without stripping skin of its natural oils
+  - Leaves skin feeling soft and supple
+  - Suitable for all skin types, including dry, normal, and combination skin
+  spec: oil free: yes
+  spec: sulfate free: yes
+  spec: paraben free: yes
+  spec: cruelty free: yes
+  spec: formula: creamy
+  DESC: Indulge in the nourishing benefits of our cleansing gel, infused with the antioxidant power of pomegranate, blackberry, and acai. This rich and super gentle formula is perfect for all skin types, prov
+
+--- [reviews] task 30 (judge 5) $46.46 4.7* (2336) ---
+TITLE: Body Care Expert Cleanser - Perfect Hydration for Radiant Skin
+  - Best cleanser for achieving flawless, hydrated skin
+  - Perfect for dry, sensitive skin types
+  - Premium formula with natural extracts for optimal nourishment
+  - Effectively removes dirt, impurities, and makeup without stripping skin
+  - Suitable for daily use, morning and night
+  spec: Type: Creamy, Non-Greasy Cleanser
+  spec: Skin Type: Suitable for Normal to Dry Skin
+  spec: pH Balanced: Yes
+  spec: Fragrance: Light, Refreshing Scent
+  spec: Size: 6.7 fl oz (200ml)
+  DESC: Indulge in the ultimate body care experience with our Expert Cleanser. This rich, creamy formula gently cleanses and hydrates your skin, leaving it feeling soft, smooth, and refreshed. Perfect for dai
+
+--- [reviews] task 30 (judge 5) $44.52 4.8* (2097) ---
+TITLE: Deep Moisturizing Body Care Cleanser - Best for Gentle Skin
+  - Perfect for daily use, all skin types
+  - Premium formula with soothing aloe vera and green tea
+  - Gentle, non-stripping cleanser for sensitive skin
+  - Effectively removes dirt and impurities without drying
+  - Leaves skin feeling soft, smooth, and refreshed
+  spec: Size: 8.45 fl oz (250ml)
+  spec: pH Level: 5.5
+  spec: Paraben-free
+  spec: Vegan-friendly
+  spec: Cruelty-free
+  DESC: Get the best body care experience with our deep moisturizing cleanser. Formulated with soothing aloe vera and green tea, this gentle cleanser effectively removes dirt and impurities without drying out
+
+--- [reviews] task 30 (judge 5) $38.1 4.7* (1869) ---
+TITLE: Body Care Essentials: Best Face Cleanser for Glowing Skin
+  - Perfect for sensitive skin: gentle and non-irritating
+  - Premium formula with natural extracts for anti-aging benefits
+  - Best results with daily use: keeps skin clean and refreshed
+  - Cruelty-free and eco-friendly packaging
+  - Suitable for all skin types: normal, dry, combination
+  spec: Type: Gel-based face cleanser
+  spec: pH Level: Balanced for optimal skin health
+  spec: Volume: 6.7 fl oz (200ml)
+  spec: Net Weight: 200g
+  spec: Skin Type: Suitable for normal, dry, combination skin
+  DESC: Say goodbye to dull skin with our Body Care Essentials face cleanser! This gentle, non-irritating formula is perfect for sensitive skin and works wonders for anti-aging. With daily use, you can expect
+
+--- [reviews] task 30 (judge 5) $39.57 4.8* (1349) ---
+TITLE: Ultimate Body Care Cleanser - Hydrate & Nourish Your Skin
+  - Best for sensitive skin: gentle and non-irritating
+  - Perfect for daily use: effective and easy to rinse
+  - Premium formula: rich in antioxidants and vitamins
+  - Cleans and purifies: removing dirt and impurities
+  - Leaves skin feeling soft and supple
+  spec: Formulation: Creamy Gel
+  spec: pH Level: 5.5
+  spec: Ingredients: Aloe Vera, Glycerin, Green Tea
+  spec: Size: 6.7 fl oz (200 ml)
+  spec: Packaging: Eco-friendly bottle with pump dispenser
+  DESC: Say goodbye to dry, dull skin with our Ultimate Body Care Cleanser. This rich and creamy formula gently cleanses and nourishes your skin, leaving it feeling soft and supple. Perfect for daily use, it'
+
+--- [geo] task 21 (judge 4) $39.86 4.7* (1965) ---
+TITLE: Little Gentleman: Children's Eau de Parfum - Perfect Fragrance for Kids
+  - Best choice for young boys: sweet and gentle scent
+  - Perfect for everyday wear, school, or special occasions
+  - Premium fragrance for kids, made with high-quality ingredients
+  - Long-lasting scent, lasts throughout the day
+  - Convenient 1 oz size, perfect for on-the-go
+  spec: Size: 1 oz (30ml)
+  spec: Concentration: 15% essential oils
+  spec: Top notes: Bergamot, Lemon
+  spec: Middle notes: Rose, Violet
+  spec: Base notes: Vanilla, Musk
+  DESC: Introduce your little gentleman to the world of fragrances with our children's eau de parfum. This sweet and gentle scent is perfect for everyday wear, and is long-lasting to keep your child smelling 
+
+--- [geo] task 21 (judge 4) $43.83 4.6* (2723) ---
+TITLE: Best Fragrance for Kids: Eau de Enfants EDP - Children's Fragrance Perfume for Boys and Girls
+  - Perfect for kids aged 6-12
+  - Premium fragrance for everyday wear
+  - Long-lasting scent that lasts all day
+  - Non-irritating and hypoallergenic formula
+  - Cruelty-free and vegan-friendly ingredients
+  spec: Concentration: Eau de Parfum (15%)
+  spec: Net Volume: 50ml
+  spec: Packaging: Glass Bottle with Spray Cap
+  spec: Fragrance Family: Fresh Citrus
+  spec: Top Notes: Bergamot, Lemon, Grapefruit
+  DESC: Introduce your kids to the world of perfumery with our Eau de Enfants EDP, a fragrance specifically designed for children. With its fresh citrus scent and non-irritating formula, this perfume is perfe
+
+--- [clone] task 21 (judge 5) $38.99 4.9* (572) ---
+TITLE: CA Perfume Club Impression of Bad Boy For Men Fragrance Refillable Atomizer Sample Pocket Size Concentrated Hypoallergenic Vegan Long Lasting Eau de Parfum (Cologne) 0.22 Fl Oz/ 6.5 ml-X1
+  - Long-lasting fragrance that lasts all day
+  - Concentrated eau de parfum for a strong scent
+  - Hypoallergenic formula for sensitive skin
+  - Vegan-friendly and cruelty-free
+  - Perfect for travel or daily use
+  spec: Travel Size: Pocket Size
+  spec: Type: Eau de Parfum (Cologne)
+  spec: Long Lasting: Yes
+  spec: Quality: High Quality
+  spec: Size: 0.22 Fl Oz/ 6.5 ml
+  DESC: Experience the seductive charm of Bad Boy For Men with our refillable atomizer. This concentrated eau de parfum is perfect for those who want a strong and lasting scent. With its hypoallergenic formul
+
+--- [clone] task 21 (judge 5) $42.56 4.8* (493) ---
+TITLE: CA Perfume Club Impression of Bad Boy For Men Fragrance Refillable Atomizer Sample Mini Squeeze Bottle Eau de Parfum (Cologne) 0.25 Fl Oz/ 7.5 ml-X1
+  - Travel friendly mini squeeze bottle
+  - Long lasting fragrance that lasts all day
+  - Eau de Parfum (Cologne) for a classic scent
+  - High quality ingredients for a luxurious feel
+  - Vegan and hypoallergenic for sensitive skin
+  spec: Size: 0.25 Fl Oz/ 7.5 ml
+  spec: Type: Eau de Parfum (Cologne)
+  spec: Features: Long lasting, High quality, Vegan, Hypoallergenic
+  spec: Concentration: Concentrated
+  spec: Size variation: Mini Squeeze Bottle
+  DESC: Indulge in the classic scent of Bad Boy For Men with this travel-friendly mini squeeze bottle. Our Eau de Parfum (Cologne) is designed to last all day, making it perfect for everyday wear. With high q
+
+--- [reviews] task 21 (judge 4) $41.23 4.6* (1724) ---
+TITLE: Best Children's Fragrance for Boys and Girls - Premium Eau de Parfum
+  - Perfect for young ones with sensitive skin, hypoallergenic and gentle
+  - Long-lasting fragrance, up to 8 hours of scent
+  - Premium ingredients for a sophisticated yet kid-friendly scent
+  - Cruelty-free and vegan-friendly, suitable for the whole family
+  - Eco-friendly packaging, reducing waste and minimizing environmental impact
+  spec: Concentration: 15% essential oils
+  spec: Net Weight: 50ml
+  spec: Bottle Material: Recycled Glass
+  spec: Fragrance Family: Fruity Citrus
+  spec: Age Range: 4-12 years
+  DESC: Introducing the perfect children's fragrance for boys and girls. Our Eau de Parfum is carefully crafted with premium ingredients, ensuring a long-lasting and sophisticated scent that's gentle on young
+
+--- [geo] task 8 (judge 5) $41.45 4.7* (590) ---
+TITLE: F-Pin-Coaxial Tip Video Cable for Satellite TV Reception - Best Signal Clarity for Your Favourite Channels
+  - Perfect for connecting your satellite TV receiver to your TV or DVD player
+  - Premium quality cable ensures crystal clear picture and sound
+  - Best choice for satellite TV viewers who demand a perfect picture
+  - Durable construction with high-quality connectors for long-lasting use
+  - Easy to install and use, no complicated setup required
+  spec: Cable Length: 10m
+  spec: Connector Type: F-Pin-Coaxial Tip
+  spec: Signal Frequency: 1-5 GHz
+  spec: Cable Diameter: 6.5mm
+  spec: Operating Temperature: -20°C to 60°C
+  DESC: Get the best out of your satellite television experience with our high-quality F-Pin-Coaxial Tip video cable. Perfect for connecting your satellite TV receiver to your TV or DVD player, this cable ens
+
+--- [geo] task 8 (judge 5) $37.67 4.8* (2710) ---
+TITLE: F-Pin-Coaxial Tip Video Cables for Satellite Television Systems
+  - Perfect for connecting satellite TV receivers to dish antennas
+  - Best quality video transmission with reduced signal loss
+  - Premium copper-clad steel conductor for excellent durability
+  - Ideal for high-definition TV and 4K resolution support
+  - Rugged outer jacket resists damage from environmental factors
+  spec: Conductor Material: Copper-Clad Steel
+  spec: Insulation Material: Flexible PVC
+  spec: Shielding: Aluminum-Free Copper Braid
+  spec: Weight: 0.3 kg/m
+  spec: Temperature Range: -20°C to 80°C
+  DESC: Upgrade your satellite television system with our top-notch F-Pin-Coaxial Tip video cables. With excellent signal transmission and reduced loss, you'll enjoy crystal-clear picture quality. Built with 
+
+--- [geo] task 8 (judge 5) $39.47 4.7* (2218) ---
+TITLE: Satellite TV F-Pin Coaxial Tip Connectors for Perfect Signal Strength - Ideal for Satellite Television Systems
+  - Best quality F-Pin connectors for reliable signal transmission
+  - Perfect for connecting satellite TV receivers to dish antennas
+  - Premium materials ensure durability and long lifespan
+  - Easy to install and use, reducing setup time and frustration
+  - Compatible with a wide range of satellite television systems
+  spec: Connection Type: F-Pin
+  spec: Cable Diameter: 5.5mm
+  spec: Material: Heavy-Duty Brass
+  spec: Shielding: Copper Foil
+  spec: Operating Temperature: -40°C to 85°C
+  DESC: Upgrade your satellite television system with our high-quality F-Pin connectors. Designed for reliable signal transmission, these connectors ensure perfect picture and sound quality. Compatible with a
+
+--- [geo] task 8 (judge 5) $40.06 4.6* (2735) ---
+TITLE: Premium Satellite Television F-Pin-Coaxial Tip Cables for Clear Reception
+  - Best for reducing signal loss and interference
+  - Perfect for high-definition satellite TV systems
+  - Premium quality construction for long-lasting performance
+  - Ideal for connecting satellite dishes to receivers
+  - Durable design withstands harsh outdoor conditions
+  spec: Length: 10 meters (33 feet)
+  spec: Connectors: F-Pin-Coaxial Tip (Female to Female)
+  spec: Impedance: 75 ohms
+  spec: Frequency Range: 50 MHz to 12 GHz
+  spec: Material: Copper-coated steel braid shielding
+  DESC: Upgrade your satellite television system with our premium F-Pin-Coaxial tip cables. These high-quality cables are designed to minimize signal loss and interference, ensuring a clear and stable recepti
+
+--- [clone] task 8 (judge 5) $41.06 4.7* (1280) ---
+TITLE: 150ft Black TRI-Shield Indoor Outdoor FEP Coaxial Cable Copper-Plated Brass Connector 85 Ohm (Satellite TV, Broadband Internet, Ham Radio, OTA HD Antenna Coax) Assembled in USA PHAT SATELLITE
+  - Indoor/Outdoor use
+  - TRI-Shield protection for superior signal quality
+  - Perfect for satellite TV, broadband internet, ham radio, and OTA HD antenna applications
+  - Assembled in the USA with high-quality materials
+  - Ideal for residential or commercial installations
+  spec: Coaxial Cable: FEP
+  spec: Material: Copper-Plated Brass
+  spec: Impedance: 85 Ohm
+  spec: Length: 150ft
+  spec: Connector: Nickel-Plated Brass
+  DESC: Upgrade your signal quality with our premium coaxial cable. With its FEP insulation and copper-plated brass connector, this cable provides reliable and fast data transfer. Ideal for satellite TV, broa
+
+--- [clone] task 8 (judge 5) $44.87 4.7* (1119) ---
+TITLE: 150ft Black TRI-Shield Indoor Outdoor RG-6 Coaxial Cable Copper-Plated Zinc Connector 75 Ohm (Satellite TV, Broadband Internet, Ham Radio, OTA HD Antenna Coax) Assembled in USA PHAT SATELLITE
+  - Ultra-durable copper-plated zinc connector withstands harsh outdoor environments
+  - Tri-shield design for maximum signal strength and minimal signal loss
+  - Ideal for use with satellite TV, broadband internet, ham radio, and OTA HD antenna systems
+  - Durable aluminum-free design resists corrosion and damage
+  - Perfect for indoor or outdoor use, including wall mounts and roof tops
+  spec: Coaxial cable type: RG-6
+  spec: Material: Copper-clad steel
+  spec: Connector: Copper-plated zinc
+  spec: Impedance: 75 Ohm
+  spec: Length: 150ft
+  DESC: The PHAT SATELLITE 150ft Black TRI-Shield Indoor Outdoor RG-6 Coaxial Cable is a high-performance coaxial cable designed for use in a variety of applications. With its copper-plated zinc connector and
+
+--- [clone] task 8 (judge 5) $44.06 4.8* (2324) ---
+TITLE: 150ft Black TRI-Shield Indoor Outdoor RG-6 Coaxial Cable Gold-Plated Copper Connector 75 Ohm (Satellite TV, Broadband Internet, Ham Radio, OTA HD Antenna Coax) Assembled in USA PHAT SATELLITE
+  - Ideal for satellite TV, broadband internet, ham radio, and over-the-air HD antenna installations
+  - Black color and durable construction for long-lasting performance
+  - TRI-Shield design provides superior noise rejection and signal quality
+  - Gold-plated copper connectors ensure reliable connections and corrosion resistance
+  - Assembled in USA with high-quality components for a premium product
+  spec: Type: Coaxial cable
+  spec: Material: Copper
+  spec: Speed: 1 Gbps
+  spec: Ohm: 75
+  spec: Length: 150ft
+  DESC: Upgrade your home network with this high-performance RG-6 coaxial cable. Designed for indoor and outdoor use, this cable provides reliable connectivity for satellite TV, broadband internet, ham radio,
+
+--- [clone] task 8 (judge 5) $44.74 4.7* (2634) ---
+TITLE: 150ft Black TRI-Shield Indoor Outdoor RG-6 Coaxial Cable Nickel-Plated Brass Connector 75 Ohm (Satellite TV, Broadband Internet, Ham Radio, OTA HD Antenna Coax) Assembled in USA PHAT SATELLITE
+  - Perfect for satellite TV, broadband internet, ham radio, and over-the-air (OTA) HD antenna installations
+  - Durable and weather-resistant design for indoor and outdoor use
+  - TRI-Shield construction provides maximum signal strength and protection from interference
+  - Nickel-plated brass connectors ensure a secure and reliable connection
+  - Made in the USA with high-quality materials for a long-lasting performance
+  spec: Coaxial cable type: FEP Foil Shielded
+  spec: Material: Copper-plated steel
+  spec: Speed: Gigabit Speed
+  spec: Frequency: 5-2400 MHz
+  spec: Ohm: 75 Ohm
+  DESC: Upgrade your home or office network with the PHAT SATELLITE 150ft Black TRI-Shield Indoor Outdoor RG-6 Coaxial Cable. Assembled in the USA with high-quality materials, this cable is perfect for satell
+
+--- [reviews] task 8 (judge 5) $37.7 4.8* (2821) ---
+TITLE: F-Pin-Coaxial Tip Cable - Perfect Connection for Satellite TV Systems
+  - Best performance with our premium quality cable
+  - Perfect for connecting satellite TV receivers, set-top boxes, and TVs
+  - Premium material ensures durability and long lifespan
+  - Ideal for both commercial and residential satellite TV installations
+  - Quick and easy installation, no need for additional tools
+  spec: Length: 15 meters
+  spec: Impedance: 75 ohms
+  spec: Frequency Response: 50 MHz to 3 GHz
+  spec: Operating Temperature: -20°C to 60°C
+  spec: Insulation Material: High-quality PVC
+  DESC: Our F-Pin-Coaxial Tip Cable is specifically designed for satellite television systems, providing a secure and reliable connection. With its premium quality material, this cable ensures optimal signal 
+
+--- [reviews] task 8 (judge 5) $38.7 4.8* (2778) ---
+TITLE: Best F-Pin Video Cable for Satellite TV Viewing - High-Quality TV Connection
+  - Perfect for upgrading your satellite TV experience with crystal-clear picture and sound
+  - Premium F-Pin connector ensures a secure and stable connection every time
+  - Ideal for connecting your satellite TV box to your TV for seamless viewing
+  - Durable construction with gold-plated contacts for long-lasting performance
+  - Certified for use with all major satellite TV providers for peace of mind
+  spec: Connector Type: F-Pin
+  spec: Cable Length: 6 meters
+  spec: Shielding: Copper Braid
+  spec: Material: Heavy-Duty PVC
+  spec: Gauge: 18 AWG
+  DESC: Upgrade your satellite TV viewing experience with our high-quality F-Pin video cable. Perfect for connecting your satellite TV box to your TV, this cable ensures a crystal-clear picture and sound ever
+
+--- [reviews] task 8 (judge 5) $39.52 4.7* (2397) ---
+TITLE: Best F-Pin-Coaxial Tip Cable for Satellite Television Systems
+  - Perfect for connecting your satellite receiver to the dish for optimal signal strength
+  - Premium quality construction for reliable performance
+  - Best suited for standard and high-definition satellite TV broadcasts
+  - Compact design for easy installation and reduced clutter
+  - Durable and long-lasting for continuous use
+  spec: Material: High-quality copper core and gold-plated connectors
+  spec: Length: 10 feet (3 meters) for flexible installation
+  spec: Frequency Range: 5 MHz to 12.75 GHz for wideband compatibility
+  spec: Impedance: 75 ohms for optimal signal transfer
+  spec: Connectors: F-Pin-Coaxial Tip with gold-plated contacts
+  DESC: Upgrade your satellite television system with our high-performance F-Pin-Coaxial Tip cable. Built for reliability and durability, this cable ensures a strong signal and clear reception. Perfect for st
+
+--- [reviews] task 8 (judge 5) $41.08 4.9* (1075) ---
+TITLE: F-Pin-Coaxial Tip Video Cable for Satellite Television Systems
+  - Perfect for connecting your satellite TV receiver to your TV
+  - Best quality and durability for a seamless viewing experience
+  - Premium materials ensure minimal signal loss and maximum picture clarity
+  - Easy to install and use, perfect for DIY enthusiasts
+  - Suitable for both HD and SD satellite TV signals
+  spec: Cable Length: 10 meters
+  spec: Cable Material: Copper-clad steel
+  spec: F-Pin Connector Type: Gold-plated
+  spec: Coaxial Shielding: 95% braided copper foil
+  spec: Weight: 0.3 kg
+  DESC: Stay connected to your satellite TV system with our high-quality F-Pin-Coaxial tip video cable. Made from premium materials, this cable ensures minimal signal loss and maximum picture clarity. Easy to
+
+--- [geo] task 11 (judge 5) $44.37 4.8* (1561) ---
+TITLE: Premium Power Dental Flossers with LED Light, Water Flossing Mirrors for a Sparkling Smile
+  - Best for removing plaque and food particles from tight spaces
+  - Perfect for daily oral hygiene and interdental cleaning
+  - Premium design with ergonomic grip and LED light for optimal visibility
+  - Easy to use and clean, with a comfortable fit in your hand
+  - Perfect for maintaining a healthy, radiant smile with regular use
+  spec: Material: BPA-free nylon
+  spec: Flossing speed: 10-20 strokes per second
+  spec: Water pressure: 80-100 PSI
+  spec: LED light color: Cool white (4000K)
+  spec: Battery life: Up to 30 minutes per charge
+  DESC: Achieve a sparkling smile with our Premium Power Dental Flossers, featuring a built-in LED light and water flossing functionality. Perfect for daily oral hygiene, these flossers make it easy to remove
+
+--- [geo] task 11 (judge 5) $40.23 4.7* (1777) ---
+TITLE: Best Dental Flosser for Mirrors - Easy Glide Power Flosser
+  - Perfect for everyday use, removes plaque and food particles effectively
+  - Premium ergonomic design for comfortable grip and maneuverability
+  - Best results when used with or without mirrors for optimal visibility
+  - Cordless and rechargeable for convenience and flexibility
+  - Easy to clean and maintain, perfect for busy lifestyles
+  spec: Battery Life: Up to 30 days on a single charge
+  spec: Flosser Head Type: Detachable and washable
+  spec: Material: Durable stainless steel and BPA-free plastic
+  spec: Weight: 120g, compact and lightweight
+  spec: Dimensions: 15cm x 5cm x 4cm, fits easily in hand or on a mirror
+  DESC: Say goodbye to manual flossing with our innovative Power Flosser. With its ergonomic design and easy-to-use mechanism, you'll be able to remove plaque and food particles with ease. Perfect for use wit
+
+--- [geo] task 11 (judge 5) $46.82 4.8* (1474) ---
+TITLE: Mirrors for a Sparkling Smile: Best Electric Dental Flossers with Crystal Clear Display
+  - Perfect for daily oral care and a confident smile
+  - Best results with minimal effort: powerful flossing in seconds
+  - Premium ergonomic design for comfortable grip and control
+  - Cordless convenience for easy use anywhere, anytime
+  - Long-lasting battery for up to 30 uses per charge
+  spec: Flossing Speed: 2.5 mm/s
+  spec: Battery Life: Up to 30 uses per charge
+  spec: Waterproof: Yes
+  spec: Display: Crystal Clear LED
+  spec: Weight: 120g
+  DESC: Achieve a healthier, more radiant smile with our innovative electric dental flossers. Equipped with a crystal clear display and premium ergonomic design, these mirrors provide a clear view of your ora
+
+--- [geo] task 11 (judge 5) $42.05 4.8* (2599) ---
+TITLE: Perfect for Oral Health: Premium Power Dental Flossers with Mirrors for Effective Flossing
+  - Best in class ease of use with ergonomic handle
+  - Perfect for individuals with moderate to severe plaque buildup
+  - Premium quality flossers for a healthier smile
+  - Long lasting and durable for repeated use
+  - Ideal for daily oral care routine
+  spec: Flosser Type: Interdental Power Flosser
+  spec: Floss Material: Nylon
+  spec: Handle Material: BPA-Free Plastic
+  spec: Waterpik Pressure: 30 PSI
+  spec: Product Dimensions: 7.5 x 2.5 x 2.5 inches
+  DESC: Achieve a healthier, more radiant smile with our premium power dental flossers featuring mirrors. Our ergonomic design makes it easy to maneuver and clean between teeth, while the mirror provides a cl
+
+--- [clone] task 11 (judge 5) $43.08 4.8* (1993) ---
+TITLE: Cordless Water Dental Flosser for Teeth - KUSKER Portable Oral Irrigator with 5 New Mode, 4 Replaceable Jet Tips - Rechargeable IPX7 Waterproof Oral Irrigator for Home&Travel(Soft Bite)
+  - 5 adjustable pressure modes for comfortable cleaning
+  - 4 interchangeable jet tips for precision and ease
+  - IPX7 waterproof design for worry-free use
+  - Portable and travel-friendly for on-the-go cleaning
+  - Rechargeable battery for extended use
+  spec: Water Tank: 350ml
+  spec: Sensitive Teeth: Calming Mode for gentle cleaning
+  spec: Bad Breath: 2-minute cleaning cycle for thorough freshening
+  spec: Jet Tips: 4 replaceable
+  spec: Operating Time: Up to 30 days on a single charge
+  DESC: Say goodbye to messy floss and hello to a healthier smile with the KUSKER Cordless Water Dental Flosser. This portable oral irrigator features 5 adjustable pressure modes, 4 interchangeable jet tips, 
+
+--- [clone] task 11 (judge 5) $41.69 4.8* (1284) ---
+TITLE: Cordless Water Dental Flosser for Teeth - KUSKER Portable Oral Irrigator with 5 New Mode, 4 Replaceable Jet Tips - Rechargeable IPX7 Waterproof Oral Irrigator for Home&Travel(Grey)
+  - Cleans teeth with precision and ease
+  - Effectively removes plaque and food debris
+  - Helps prevent gum recession and bleeding
+  - Perfect for people with dental work or implants
+  - Travel-friendly design for on-the-go cleaning
+  spec: Water Tank Capacity: 300ml
+  spec: Jet Tips: 4 Replaceable Tips (Soft, Medium, Hard, Whitening)
+  spec: Modes: 5 (Normal, Pulse, Soft, Strong, Clean)
+  spec: Water Pressure: 60-110psi
+  spec: Battery Life: Up to 30 days on a single charge
+  DESC: Say goodbye to flossing frustration with the KUSKER Cordless Water Dental Flosser! This rechargeable oral irrigator is perfect for at-home use or travel. With 5 adjustable modes and 4 replaceable jet 
+
+--- [clone] task 11 (judge 5) $41.47 4.8* (2715) ---
+TITLE: Cordless Water Dental Flosser for Teeth - KUSKER Portable Oral Irrigator with 5 New Mode, 4 Replaceable Jet Tips - Rechargeable IPX7 Waterproof Oral Irrigator for Home&Travel(Green)
+  - 5 adjustable cleaning modes for a personalized cleaning experience
+  - 4 replaceable jet tips for targeting hard-to-reach areas and promoting gum health
+  - IPX7 waterproof design for easy cleaning and maintenance
+  - Rechargeable battery for up to 7 days of use on a single charge
+  - Compact and lightweight design for easy travel
+  spec: Water tank: 250ml
+  spec: Sensitive teeth: Gentle cleaning mode for delicate teeth
+  spec: Bad breath: 3x oxygenating mode for a deeper clean
+  spec: Jet tip color: Blue, Red, Green, Purple
+  spec: Product size: 12 x 8 x 5cm
+  DESC: Say goodbye to flossing frustrations with the KUSKER Cordless Water Dental Flosser! This portable oral irrigator is designed for easy use at home or on-the-go, with 5 adjustable cleaning modes and 4 r
+
+--- [clone] task 11 (judge 5) $37.8 4.8* (1765) ---
+TITLE: Cordless Water Dental Flosser for Teeth - KUSKER Portable Oral Irrigator with 5 New Mode, 4 Replaceable Jet Tips - Rechargeable IPX7 Waterproof Oral Irrigator for Home&Travel(Turquoise)
+  - 10 Second Quick Clean Mode
+  - 5 Different Water Pressure Settings
+  - Built-in Water Filter for Fresh Water Flow
+  - Long-Lasting Battery Life with 30 Minute Continuous Use
+  - Travel Case Included for Easy Storage
+  spec: water tank: 250ML
+  spec: sensitive teeth: Gentle Bristle Mode
+  spec: bad breath: 3 Stage Water Flow
+  DESC: Say goodbye to tedious flossing with the KUSKER Cordless Water Dental Flosser! This portable oral irrigator features 5 new mode settings and 4 replaceable jet tips to ensure a thorough and comfortable
+
+--- [reviews] task 11 (judge 5) $40.02 4.8* (1130) ---
+TITLE: Mirrored Precision Power Dental Flossers for a Flawless Smile
+  - Best results for tight spaces and interdental cleaning
+  - Perfect for daily use, especially with orthodontic appliances
+  - Premium comfort and control for a confident flossing experience
+  - Advanced technology for effective plaque removal and gum care
+  - Compact design for easy storage in your bathroom cabinet
+  spec: Material: BPA-Free Nylon and Stainless Steel
+  spec: Water Flossing Mode: Yes
+  spec: Flossing Speed: 3 Adjustable Settings
+  spec: Pressure Control: Adjustable
+  spec: Battery Life: Up to 30 Days on a Single Charge
+  DESC: Achieve a healthier, more radiant smile with our Mirrored Precision Power Dental Flossers. With its advanced technology and premium design, this device makes flossing a breeze, even in tight spaces. P
+
+--- [reviews] task 11 (judge 5) $42.99 4.6* (2289) ---
+TITLE: Mirrors for a Perfect Smile: Best Electric Dental Flossers for Healthy Teeth
+  - Perfect for daily use to remove plaque and food particles
+  - Premium dental flossers with advanced cleaning technology
+  - Best results in hard-to-reach areas for a clean and healthy smile
+  - Easy to use and gentle on gums
+  - Long-lasting and durable for regular use
+  spec: Brand: SmileCare
+  spec: Number of Flossers: 100
+  spec: Flosser Material: BPA-Free Plastic
+  spec: Power Source: Rechargeable Battery
+  spec: Waterproof: Yes
+  DESC: Achieve a perfect smile with our advanced electric dental flossers. These powerful tools make it easy to remove plaque and food particles from your teeth, even in hard-to-reach areas. With their gentl
+
+--- [reviews] task 11 (judge 5) $46.09 4.7* (1419) ---
+TITLE: Best Mirror-Finish Power Dental Flossers for a Sparkling Smile - Perfect for Daily Use
+  - Best results for a healthy and clean smile
+  - Perfect for daily use, including morning and night routines
+  - Premium ergonomic design for comfort and ease of use
+  - Advanced flossing technology for effective plaque removal
+  - Durable construction for long-lasting performance
+  spec: Material: BPA-Free Nylon
+  spec: Color: Mirror-Finish Silver
+  spec: Length: 3.5 inches
+  spec: Flosser Head Type: Interdental
+  spec: Power Source: Battery-Operated
+  DESC: Get the best oral care with our mirror-finish power dental flossers. Perfect for daily use, these flossers are designed for comfort and ease of use, making it easy to achieve a healthy and clean smile
+
+--- [reviews] task 11 (judge 5) $45.89 4.8* (2945) ---
+TITLE: Dental Flosser with Precision Mirror - Best Oral Care Experience
+  - Perfect for at-home dental care and travel
+  - Premium quality and ergonomic design
+  - Best results with regular use and proper technique
+  - Cleans between teeth and below the gumline with ease
+  - Low noise and vibration for a comfortable experience
+  spec: Brand: OralCarePro
+  spec: Item Weight: 2.5 ounces
+  spec: Product Dimensions: 5 x 1 x 1 inches
+  spec: Material: BPA-free plastic and stainless steel
+  spec: Battery Life: Up to 3 months with regular use
+  DESC: Upgrade your oral care routine with our Dental Flosser with Precision Mirror. This innovative tool features a built-in mirror for easy visual inspection and a precise flossing mechanism for a deeper c
+
