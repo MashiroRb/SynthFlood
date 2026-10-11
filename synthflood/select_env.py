@@ -282,13 +282,29 @@ def sample_distractors(goal, by_asin, k, seed):
     return pool[:k]
 
 
-def build_task(goal, by_asin, eps, synth_pool, seed, n_candidates=10):
+def build_task(goal, by_asin, eps, synth_pool, seed, n_candidates=10,
+               sham=False, spoof_rate=0.15):
     """Fixed base candidate list; replace floor(eps*(n-1)) distractor slots
-    with synthetic listings. Returns ordered candidate list + bookkeeping."""
+    with synthetic listings. Returns ordered candidate list + bookkeeping.
+
+    sham=True (real-swap placebo arm): replaced slots receive additional
+    REAL listings instead of synthetics, drawn from the same distribution
+    as the base distractors (sample_distractors prefix property keeps the
+    base candidates identical to the original arm, so the two arms differ
+    only in what fills the replaced slots: synthetic vs real listings).
+    spoof_rate overrides the synthetic-side provenance presence probability
+    (spoofing attack: synthetics fake a verifiable provenance record)."""
     _, _, product_prices, _ = get_official_data()
     n_synth = int(eps * (n_candidates - 1)) if eps < 1 else int(eps)
     rng = random.Random(seed)
-    distractors = sample_distractors(goal, by_asin, n_candidates - 1, seed=seed)
+    n_fill = n_synth if sham else 0
+    distractors = sample_distractors(goal, by_asin,
+                                     (n_candidates - 1) + n_fill, seed=seed)
+    if sham:
+        shams = distractors[n_candidates - 1:]
+        distractors = distractors[:n_candidates - 1]
+    else:
+        shams = []
     slots = list(range(1, n_candidates))  # candidate indices 2..10 (1-based)
     replace = rng.sample(slots, n_synth) if n_synth else []
     synths = synth_pool[:n_synth]
@@ -302,6 +318,14 @@ def build_task(goal, by_asin, eps, synth_pool, seed, n_candidates=10):
             c["price_float"] = product_prices.get(goal["asin"], 100.0)
             candidates.append(c)
         elif pos - 1 in replace:
+            if sham:
+                d = shams[si]
+                c = {"item": d, "kind": "real", "synthetic": False}
+                c["price_float"] = product_prices.get(d["asin"], 100.0)
+                candidates.append(c)
+                synth_positions.append(pos)
+                si += 1
+                continue
             cand = dict(synths[si])
             cand["kind"] = f"synthetic:{synths[si].get('family', '?')}"
             cand["synthetic"] = True
@@ -316,10 +340,11 @@ def build_task(goal, by_asin, eps, synth_pool, seed, n_candidates=10):
             candidates.append(c)
     # noisy provenance-availability signal (for the provenance defense):
     # real items carry verifiable provenance 85% of the time, synthetic
-    # items only 15%. The defense sees ONLY this bit, never the label.
+    # items only `spoof_rate` (15% by default; raised under spoofing).
+    # The defense sees ONLY this bit, never the label.
     pv = random.Random(seed * 7919 + 13)
     for c in candidates:
-        p_present = 0.15 if c.get("synthetic") else 0.85
+        p_present = spoof_rate if c.get("synthetic") else 0.85
         c["prov_ok"] = pv.random() < p_present
     info = {"synth_positions": synth_positions, "n_synth": n_synth}
     return candidates, info

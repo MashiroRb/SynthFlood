@@ -22,13 +22,14 @@ FIELDS = ["stage", "task_id", "eps", "family", "cseed", "defense", "model",
 
 
 def run_cell(stage, gi, goal, by_asin, pool, eps, family, cseed, defense,
-             model, port, out_csv, lock, sem):
+             model, port, out_csv, lock, sem, sham=False, spoof=0.15,
+             ppr_lambda=1.0):
     sem.acquire()
     t0 = time.time()
     try:
         synth_pool = pick_synths(pool.get(gi, []), eps, N_CANDIDATES, cseed,
                                  family=family)
-        if eps > 0 and not synth_pool:
+        if eps > 0 and not synth_pool and not sham:
             with lock:
                 append_summary(out_csv, {**{k: "" for k in FIELDS},
                                          "stage": stage, "task_id": gi,
@@ -40,7 +41,7 @@ def run_cell(stage, gi, goal, by_asin, pool, eps, family, cseed, defense,
             return
         candidates, info = build_task(
             goal, by_asin, eps, synth_pool, seed=cseed,
-            n_candidates=N_CANDIDATES)
+            n_candidates=N_CANDIDATES, sham=sham, spoof_rate=spoof)
         env = SelectEnv(goal, candidates, n_candidates=N_CANDIDATES)
         env._synth_positions = info["synth_positions"]
         client = LLMClient(port, model)
@@ -48,7 +49,8 @@ def run_cell(stage, gi, goal, by_asin, pool, eps, family, cseed, defense,
                   ) if defense == "detector_text" else None
         # defense preprocessing: rerank/drop/annotate candidates
         candidates2 = apply_defense(defense, candidates, goal,
-                                    perplexity_fn=ppl_fn)
+                                    perplexity_fn=ppl_fn,
+                                    ppr_lambda=ppr_lambda)
         env.candidates = candidates2
         env.n = len(candidates2)
         summary = run_episode(
@@ -102,6 +104,12 @@ def main():
     ap.add_argument("--port", type=int, default=8000)
     ap.add_argument("--workers", type=int, default=32)
     ap.add_argument("--pool", default=None)
+    ap.add_argument("--sham", action="store_true",
+                    help="real-swap placebo arm: replaced slots get real listings")
+    ap.add_argument("--spoof", type=float, default=0.15,
+                    help="synthetic-side provenance presence prob (spoofing)")
+    ap.add_argument("--ppr-lambda", type=float, default=1.0,
+                    help="lambda for defense=ppr")
     args = ap.parse_args()
 
     pool_path = args.pool or os.path.join(
@@ -120,7 +128,9 @@ def main():
                 target=run_cell,
                 args=(args.stage, gi, goal, by_asin, pool, eps, args.family,
                       args.seed, args.defense, args.model, args.port,
-                      out_csv, lock, sem))
+                      out_csv, lock, sem),
+                kwargs={"sham": args.sham, "spoof": args.spoof,
+                        "ppr_lambda": args.ppr_lambda})
             t.start()
             threads.append(t)
     for t in threads:

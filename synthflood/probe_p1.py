@@ -75,12 +75,13 @@ def main():
     ap.add_argument("--model", default="Qwen/Qwen2.5-7B-Instruct")
     ap.add_argument("--port", type=int, default=8000)
     ap.add_argument("--pool", default=os.path.join(GEN_DIR, "pool.json"))
+    ap.add_argument("--out", default=None)
     args = ap.parse_args()
 
     by_asin = load_products()
     goals = build_goals(n_tasks=args.n_tasks)
     pool = load_pool(args.pool)
-    out_csv = os.path.join(RESULT_DIR, "p1_forced_choice.csv")
+    out_csv = args.out or os.path.join(RESULT_DIR, "p1_forced_choice.csv")
     lock, sem = threading.Lock(), threading.Semaphore(32)
     threads = []
     for gi, goal in enumerate(goals):

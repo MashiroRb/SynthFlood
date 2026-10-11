@@ -87,7 +87,8 @@ def provenance_ok(item_key, synthetic, seed=0):
 
 
 def apply_defense(defense, candidates, goal, drop_rate=0.3,
-                  struct_thresh=0.55, perplexity_fn=None, ppl_thresh=15.0):
+                  struct_thresh=0.55, perplexity_fn=None, ppl_thresh=15.0,
+                  ppr_lambda=1.0):
     if defense in ("none", "prompt"):
         return candidates
     if defense == "oracle":
@@ -102,6 +103,46 @@ def apply_defense(defense, candidates, goal, drop_rate=0.3,
         for c in reals:
             c["prov_badge"] = True
         return reals + rest
+    if defense == "ppr":
+        # Provenance-Prior Re-ranking (soft version of `provenance`):
+        # sort candidates by perceived utility u = rating + lambda*1[prov_ok],
+        # stable within equal utility (original order kept as tie-break).
+        # Verified items also get the badge, so the ONLY difference vs the
+        # `provenance` arm is soft re-ranking instead of a hard partition;
+        # lambda -> large approaches the provenance behaviour.
+        def _util(c):
+            it = c.get("item") or {}
+            try:
+                r = float(it.get("rating") or 0.0)
+            except (TypeError, ValueError):
+                r = 0.0
+            return r + ppr_lambda * (1.0 if c.get("prov_ok", True) else 0.0)
+        ranked = sorted(enumerate(candidates),
+                        key=lambda t: (-_util(t[1]), t[0]))
+        ranked = [c for _, c in ranked]
+        for c in ranked:
+            if c.get("prov_ok", True):
+                c["prov_badge"] = True
+        return ranked
+    if defense == "reviewtrust":
+        # Naive social-proof baseline: re-rank by rating * log(num_reviews+1).
+        # No provenance information is used; this is the policy a platform
+        # would adopt if it trusted popularity signals blindly. Expected to
+        # AMPLIFY the reviews-family attack (synthetic review volume).
+        import math as _m
+        def _rt(c):
+            it = c.get("item") or {}
+            try:
+                r = float(it.get("rating") or 0.0)
+            except (TypeError, ValueError):
+                r = 0.0
+            try:
+                n = float(it.get("num_reviews") or 0.0)
+            except (TypeError, ValueError):
+                n = 0.0
+            return r * _m.log1p(max(n, 0.0))
+        ranked = sorted(enumerate(candidates), key=lambda t: (-_rt(t[1]), t[0]))
+        return [c for _, c in ranked]
     if defense == "random":
         import random as _r
         rng = _r.Random(goal.get("asin", 0))
