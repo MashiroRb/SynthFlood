@@ -325,3 +325,48 @@
 - 论文终稿（8 页 acmart sigconf review+anonymous）：abstract/intro/related/problem/method/
   results/discussion/conclusion/appendix 全部填入最终数字，3 张图嵌入。
 - 仓库快照：paper/（源码+图+refs）、results_csv/（16 个 CSV）、logs/、EXPERIMENT_LOG.md。
+
+## 14. 修订轮 Wave-1（2026-10-11，审稿后修复实验）
+
+背景：完整审稿（Overall 6/10，7 blocker）+ 6 大科学问题（问题文件）→
+实验计划 v2（EXPERIMENT_PLAN_V2.md，A1-A10 GPU / B1-B9 CPU / C1-C8 代码）。
+
+### 环境
+- lab 重置为全新单卡 RTX 4090（原环境被清空）：setup_lab.sh 重建
+  （代码 git clone @3da65fe、WebShop 官方仓库、vllm 0.19.0 + torch 2.10.0+cu128 CUDA OK、
+  Qwen2.5-7B-Instruct 权重 HF snapshot OK）
+- Google Drive 官方 gdown 链接被配额拒绝（uc+usercontent 均 403/404，本地与 lab 双试均拒）
+  → 改用 HF 镜像 HongbangYuan/webshop（与 YWZBrandon/webshop-data 字节数完全一致的
+  双镜像交叉验证）：items_shuffle 5,479,720,229B + ins_v2 186,295,270B + human_ins 5,137,548B，
+  hf_transfer 90 秒拉完
+- 完整性硬校验：build_goals(n_tasks=40) 必须逐 asin+instruction 复现仓库内 goals.json
+- 自动化：sync_daemon.sh 常驻（10 分钟一轮 pull --rebase → copy results/logs → commit+push）；
+  run_fix.sh 队列（A1 sham→A2 probeB→A3 probeC→A5 spoof→A7 reviewtrust→A4 PPR λ→A6 seed2）
+
+### 代码（C 组，commit 3da65fe）
+- C1 build_task(sham=..., spoof_rate=...)：sham 臂利用 sample_distractors 前缀性质，
+  基础 9 候选与原臂逐字节一致，被替换槽位填真品（real-swap 安慰剂）；spoof_rate 参数化
+  合成品 prov_present 概率（15%→25%/50% 伪造攻击）
+- C2 make_probe_variants.py：pool_probeB.json（clone price=gold 精确锚定）、
+  pool_probeC.json（clone rating/num_reviews 置为 gold 水平，社会证明剥离）
+- C3 defenses.py defense="ppr"：u = rating + λ·1[prov_ok] 稳定重排（badge 保留），
+  λ∈{0.5,1,2} 扫描；defense="reviewtrust"：rating·log(1+num_reviews) 朴素信任重排
+- C8 run_fix.sh：CSV 归档→顺序队列；analyze_fix.py：B 组全部分析（bootstrap B=10000）
+
+### B 组 CPU 结果（b_analysis.json，commit 4df025c）
+- B1 逐族配对（cseed=1，n=40）：mix(n=100) Δregret +0.181 CI[0.099,0.268] p=2e-4、
+  McNemar +5/-28 p=7e-5（主结论加固）；clone Δ+0.111 CI[-0.028,0.250]（CI 跨零，
+  诚实降级：单族 n=40 不足）；geo Δ+0.035 CI[-0.110,0.173] 且 success 翻转 6↔6 p=1.0
+  （"静默损耗"降级为方向性证据，靠 mix 合并显著性支撑）；reviews Δ+0.160 CI[0.043,0.284]
+- B2 全表 CI：Qwen 0→0.25 success 0.59 CI[0.49,0.69] → 0.35 CI[0.26,0.44] 无重叠
+  （悬崖真实）；0.25/0.5/0.75 三档 regret CI 互相重叠（非单调=噪声，回应 blocker B7）；
+  Llama 0.25 异常点（succ 0.57>0.47）CI 重叠属噪声
+- B3 防御两两 @0.75：provenance vs struct Δregret +0.079 CI[-0.052,0.213] p=0.66、
+  McNemar 7↔8 p=1.0 → 统计并列；struct vs oracle Δ+0.079 p=0.21（CI 含 0）→
+  struct 达到 oracle 级 regret（0.250 vs 0.171）；provenance vs oracle p=0.039 显著差；
+  text 灾难确认（0.578，CI[0.473,0.678]，比 none 还差 +0.135）
+- B7 struct@ε=0 零误伤：Δreward +0.078 CI[-0.030,0.195]（不显著为正）、
+  gold 购买 23/40 vs 22/40（p=0.55）
+- B8 侵蚀系数 κ=dE[regret]/dε 配对：Qwen7B 0.242 CI[0.129,0.352]、
+  Llama8B 0.208 CI[0.037,0.374]（跨骨干显著）；3B 0.141 CI 跨零；
+  1.5B κ=-0.074（floor 效应：基线 regret 已 0.578，无侵蚀空间）→ 尺度-饱和叙事
