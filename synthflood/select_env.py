@@ -49,7 +49,26 @@ def load_products():
 
 
 def build_goals(n_tasks=0, seed=2027):
-    """Official goals via the official goal builder (human instructions)."""
+    """Official goals via the official goal builder (human instructions).
+
+    Frozen task lists from GEN_DIR are preferred when they cover n_tasks:
+    the official get_human_goals samples price uppers through the global
+    RNG, so any webshop_repo drift silently shifts instruction text (observed:
+    task 36 price_upper 70.00 -> 60.00 on a fresh clone). Freezing keeps the
+    environment bit-identical across sessions and machines."""
+    from .config import GEN_DIR
+    import json as _json
+    frozen = None
+    for name in ("goals100.json", "goals.json"):
+        path = os.path.join(GEN_DIR, name)
+        if os.path.exists(path):
+            with open(path) as f:
+                cand = _json.load(f)
+            if len(cand) >= n_tasks:
+                if frozen is None or len(cand) < len(frozen):
+                    frozen = cand
+    if frozen is not None:
+        return frozen[:n_tasks] if n_tasks else frozen
     import random as _r
     from web_agent_site.engine.goal import get_human_goals  # official semantics
     all_products, _, product_prices, _ = get_official_data()
