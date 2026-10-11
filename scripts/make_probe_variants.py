@@ -20,7 +20,8 @@ from synthflood.config import GEN_DIR  # noqa: E402
 
 def main():
     _, item_dict, product_prices, _ = get_official_data()
-    with open(os.path.join(GEN_DIR, "goals.json")) as f:
+    # pool.json covers 100 goal indices; goals.json only freezes the first 40.
+    with open(os.path.join(GEN_DIR, "goals100.json")) as f:
         goals = json.load(f)
     with open(os.path.join(GEN_DIR, "pool.json")) as f:
         pool = json.load(f)
