@@ -41,14 +41,14 @@
 
 ## B 组：CPU 分析（现有数据，零 GPU）
 
-- [ ] **B1 逐族配对 McNemar + CI**（p4b CSV）— 预期 geo：success 计数零净变化（6↔6 对称 χ²≈0）而 regret +11.8%
-- [ ] **B2 表1/2/3 全表补 95% CI**（p4a/p4b/p4c）— 支撑"中间剂量差异在噪声内"
-- [ ] **B3 防御臂两两配对检验**（p4c 同任务同seed）— 预期 struct 与 provenance 统计并列
+- [x] **B1 逐族配对 McNemar + CI**（p4b CSV）— ✅ 符合预期：mix Δregret +0.181 CI[0.099,0.268] p=2e-4，McNemar +5/-28 p=7e-5；clone +0.111 CI[-0.028,0.250] CI 跨零（诚实降级）；geo success 6↔6 p=1.0、regret +0.035 CI 跨零（静默损耗→方向性证据）
+- [x] **B2 表1/2/3 全表补 95% CI**（p4a/p4b/p4c）— ✅ 符合预期：Qwen 0→0.25 success CI 无重叠（悬崖真实），0.5/0.75 与 0.25 重叠（非单调属噪声）；Llama 0.25 异常点 CI 重叠
+- [x] **B3 防御臂两两配对检验**（p4c 同任务同seed）— ✅ 超预期：provenance vs struct Δ=+0.079 p=0.66（统计并列）；struct vs oracle Δ=+0.079 p=0.21（struct≈oracle！headline 升级）；provenance vs oracle p=0.039
 - [ ] **B4 检测器 AUC+gold误杀率**（struct 纯CPU；ppl 优先取日志）
 - [ ] **B5 被删真品 reward 分布**（A1 前置保险：被删项应为低价值干扰）
 - [ ] **B6 误买 clone 价格偏好相关性**（P4A/B 轨迹）
 - [ ] **B7 struct@ε=0 行为分析**（对真品误伤率）
-- [ ] **B8 侵蚀系数 κ = 配对 dE[regret]/dε**（p4a/p4d/p4f，按骨干分列+CI）— 新指标
+- [x] **B8 侵蚀系数 κ = 配对 dE[regret]/dε**（p4a/p4d/p4f，按骨干分列+CI）— ✅ 符合预期：Qwen7B κ=0.242 CI[0.13,0.35]；Llama8B κ=0.208 CI[0.04,0.37]（跨骨干显著）；3B κ=0.141 CI 跨零；1.5B κ=-0.074（floor 效应，基线 regret 已 0.578）
 - [ ] **B9 误买合成品 reward 归因分解**（rinfo 字段）
 
 ## C 组：代码/资产准备
