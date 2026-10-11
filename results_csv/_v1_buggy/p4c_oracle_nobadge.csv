@@ -1,0 +1,6 @@
+stage,task_id,eps,family,cseed,defense,model,reward,success_full,success80,chosen_kind,chosen_is_synthetic,chosen_position,malformed,steps,confidence,tok_in,tok_out,wall
+P4C_oracle,5,0.75,mix,1,oracle,Qwen/Qwen2.5-7B-Instruct,1.0,1,1,gold,0,1,0,2,1.0,2700,75,23.1
+P4C_oracle,10,0.75,mix,1,oracle,Qwen/Qwen2.5-7B-Instruct,1.0,1,1,synthetic:clone,1,5,0,2,0.9,2993,50,20.9
+P4C_oracle,9,0.0,mix,1,oracle,Qwen/Qwen2.5-7B-Instruct,0.0,0,0,none,0,None,0,10,None,31052,293,22.2
+P4C_oracle,8,0.75,mix,1,oracle,Qwen/Qwen2.5-7B-Instruct,0.4,0,0,synthetic:clone,1,5,0,2,1.0,4214,110,25.9
+P4C_oracle,5,0.0,mix,1,oracle,Qwen/Qwen2.5-7B-Instruct,0.667,0,0,real,0,6,0,1,1.0,1453,33,26.6
