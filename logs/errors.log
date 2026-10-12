@@ -318,3 +318,323 @@ Traceback (most recent call last):
     raise ValueError(defense)
 ValueError: struct
 
+P4M_STRUCT_ST 2 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 5 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 0 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 8 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 1 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 4 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 12 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 16 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 18 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 19 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 14 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 21 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 17 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 28 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 9 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 6 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 27 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 24 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 3 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 25 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 33 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 20 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 10 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 23 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 7 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 36 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 22 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 15 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 13 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 11 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 26 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 31 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 29 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 30 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 34 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 32 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 35 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 37 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 38 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+
+P4M_STRUCT_ST 39 0.75 mix detector-struct: detector-struct
+Traceback (most recent call last):
+  File "/root/synthflood/code/synthflood/run_sweep.py", line 51, in run_cell
+    candidates2 = apply_defense(defense, candidates, goal,
+  File "/root/synthflood/code/synthflood/defenses.py", line 173, in apply_defense
+    raise ValueError(defense)
+ValueError: detector-struct
+

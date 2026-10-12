@@ -58,7 +58,7 @@ nohup python3 -m vllm.entrypoints.openai.api_server \
 wait_port 8000 || exit 1
 
 # ---------- Stage 4: rerun defenses on stealth pool ----------
-for ARM in P4M_NONE_ST:none P4M_STRUCT_ST:struct P4M_PROV_ST:provenance; do
+for ARM in P4M_NONE_ST:none P4M_STRUCT_ST:detector-struct P4M_PROV_ST:provenance; do
   ST=${ARM%%:*}; D=${ARM#*:}
   mv -f /root/synthflood/results/${ST,,}_sweep.csv /root/synthflood/archive/ 2>/dev/null
   echo "== ${ST} start $(date -u +%FT%TZ) =="
