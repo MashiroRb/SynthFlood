@@ -22,6 +22,9 @@ def main():
     ap.add_argument("--out", default=None)
     ap.add_argument("--goals-file", default=None,
                     help="json with goal list (keeps tasks aligned)")
+    ap.add_argument("--style", default="default",
+                    choices=["default", "stealth"],
+                    help="listing style: default template vs stealth (no template fingerprints)")
     args = ap.parse_args()
 
     by_asin = load_products()

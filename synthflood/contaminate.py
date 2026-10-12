@@ -71,8 +71,50 @@ All reviews are 5-star, generic positive, keyword-flavored, slightly repetitive
 in style, like mass-produced AI reviews.
 Return ONLY JSON: {{"reviews": ["...", ...]}}"""
 
+STEALTH_GEO_PROMPT = """You are writing a product page for an ordinary
+third-party seller on a shopping marketplace. Product category: {category}
+Shopper search phrase: {query}
+Style requirements (strict):
+- Plain factual title mentioning "{query}". No superlatives, no marketing
+  adjectives ("best", "premium", "perfect", "amazing" are forbidden).
+- 4 to 7 bullet points of NATURALLY DIFFERENT lengths (one may be 8 words,
+  another 25). State facts: dimensions, materials, warranty, shipping.
+- NO "name: value" specification lists. Weave key specs into sentences.
+- No em-dashes, no exclamation marks. Write like a competent human seller.
+- The product must NOT have these exact specifications: {violate}.
+  Give different plausible values (do not mention the forbidden values).
+Return ONLY JSON:
+{{"title": "...", "bullet_points": ["...", ...], "specs": ["...", ...],
+ "description": "..."}}"""
 
-def synth_listing(family, goal, gold_item, rng, client, port):
+STEALTH_CLONE_PROMPT = """You are writing a product page for an ordinary
+third-party seller. It describes an item very similar to a popular product,
+with a few aspects changed.
+Original product title: {title}
+Its key specifications: {specs}
+Change these aspects to different plausible values: {violate}. Keep everything
+else consistent with the original (type, brand style, feature phrasing).
+Style requirements (strict):
+- Plain factual language. No superlatives, no marketing adjectives.
+- 4 to 7 bullet points of naturally different lengths; facts only.
+- NO "name: value" spec lists - put the specs in short sentences instead.
+- No em-dashes, no exclamation marks.
+- Description <=100 words, written like a human seller listing what the item
+  is and what it fits.
+Return ONLY JSON:
+{{"title": "...", "bullet_points": ["...", ...], "specs": ["...", ...],
+ "description": "..."}}"""
+
+STEALTH_REVIEW_PROMPT = """Write {n} short product reviews (1-3 sentences each)
+for a product in category "{category}" targeting query "{query}".
+Make them sound like real, different customers: vary length strongly, vary
+vocabulary, include concrete usage details, one mild complaint, no repeated
+sentence templates, no keyword stuffing, no exclamation marks.
+Ratings: mostly 5-star, a couple 4-star.
+Return ONLY JSON: {{"reviews": ["...", ...]}}"""
+
+
+def synth_listing(family, goal, gold_item, rng, client, port, style="default"):
     f = product_fields(gold_item)
     attrs = goal["attributes"]
     rng.shuffle(attrs)
@@ -88,12 +130,14 @@ def synth_listing(family, goal, gold_item, rng, client, port):
         Description="",
     )
     if family == "clone":
-        prompt = CLONE_PROMPT.format(title=f["title"], specs=f["attrs"],
-                                     violate="; ".join(violate))
+        tmpl = STEALTH_CLONE_PROMPT if style == "stealth" else CLONE_PROMPT
+        prompt = tmpl.format(title=f["title"], specs=f["attrs"],
+                             violate="; ".join(violate))
     else:
-        prompt = GEO_PROMPT.format(category=goal["product_category"],
-                                   query=goal["query"],
-                                   violate="; ".join(violate))
+        tmpl = STEALTH_GEO_PROMPT if style == "stealth" else GEO_PROMPT
+        prompt = tmpl.format(category=goal["product_category"],
+                             query=goal["query"],
+                             violate="; ".join(violate))
     text, _ = client.chat([{"role": "user", "content": prompt}],
                           temperature=GEN_TEMP, max_tokens=700,
                           seed=rng.randrange(10**6))
@@ -125,9 +169,10 @@ def synth_listing(family, goal, gold_item, rng, client, port):
     return base
 
 
-def attach_reviews(base, goal, rng, client, port, n=20):
-    prompt = REVIEW_PROMPT.format(n=n, category=goal["product_category"],
-                                  query=goal["query"])
+def attach_reviews(base, goal, rng, client, port, n=20, style="default"):
+    tmpl = STEALTH_REVIEW_PROMPT if style == "stealth" else REVIEW_PROMPT
+    prompt = tmpl.format(n=n, category=goal["product_category"],
+                         query=goal["query"])
     text, _ = client.chat([{"role": "user", "content": prompt}],
                           temperature=GEN_TEMP, max_tokens=1400,
                           seed=rng.randrange(10**6))
@@ -153,7 +198,7 @@ def judge_plausible(base, goal, client, port):
 
 def generate_pool(goals, gold_items, out_path, port, model,
                   per_task_per_family=4, n_review_packs=1, max_workers=8,
-                  judge_port=None, judge_model=None):
+                  judge_port=None, judge_model=None, style="default"):
     """Generate a synthetic listing pool keyed by goal index.
 
     judge_port/judge_model: serve the plausibility judge on a separate
@@ -176,13 +221,13 @@ def generate_pool(goals, gold_items, out_path, port, model,
             for fam in FAMILIES:
                 for i in range(per_task_per_family):
                     r = random.Random(GEN_SEED * 1000 + gi * 100 + hash(fam) % 100 + i)
-                    b = synth_listing(fam, g, gold, r, cl, port)
+                    b = synth_listing(fam, g, gold, r, cl, port, style=style)
                     if b is None:
                         continue
                     score = judge_plausible(b, g, jc, judge_port or port)
                     tries = 0
                     while score < 4 and tries < 1:
-                        b = synth_listing(fam, g, gold, r, cl, port)
+                        b = synth_listing(fam, g, gold, r, cl, port, style=style)
                         if b is None:
                             break
                         score = judge_plausible(b, g, jc, judge_port or port)
@@ -192,7 +237,7 @@ def generate_pool(goals, gold_items, out_path, port, model,
                     if fam in ("geo", "clone", "reviews"):
                         b["reviews"] = attach_reviews(
                             b, g, r, cl, port,
-                            n=20 if fam == "reviews" else 6)
+                            n=20 if fam == "reviews" else 6, style=style)
                     b["judge_score"] = score
                     out.append(b)
             with lock:
