@@ -24,13 +24,14 @@ background: at $\varepsilon=0.75$, task success drops 23\,pp
 (paired $\Delta=+0.181$) and agents become \emph{more} confident
 (calibration error doubling) --- losses that no success-only metric would
 surface. Third, an agent-visible badge computed from a noisy
-verifiable-provenance bit eliminates the regret excess, remains unchanged
-from 15\% to 65\% badge forgery, and matches a perfect-provenance oracle
-when implemented as a \emph{text-free structural} detector --- a detector
-that fingerprint-free regeneration weakens only partially ($28\%$ of its
-recovery) while provenance stays intact; but the same
-information consumed as a soft ranking bonus fails until its weight exceeds
-the rating scale --- provenance must order candidates, not score them. We
+verifiable-provenance bit eliminates the regret excess and remains
+unchanged from 15\% to 65\% badge forgery; a text-free structural
+detector statistically matches the perfect-provenance oracle ($p=0.21$)
+--- and fingerprint-free regeneration weakens that detector only
+partially ($28\%$ of its recovery) while provenance stays intact; but
+the same provenance information consumed as a soft ranking bonus fails
+until its weight exceeds the rating scale --- provenance must order
+candidates, not score them. We
 release protocol, code, contamination pools, and full trajectory logs.
 These results recast ambient synthetic content as an attack on the agent's
 \emph{preference function} rather than its perception, and call for

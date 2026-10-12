@@ -49,16 +49,17 @@ notice.
 synthetic clone, 300 duels per row; paired flips vs.\ the unmodified
 clone).}
 \label{tab:mech}
+\setlength{\tabcolsep}{3.5pt}
 \begin{tabular}{lccc}
 \toprule
 Clone variant & $\sigma$ & 95\% CI & Paired vs.\ orig. \\
 \midrule
-original (price $-5$ to $-25\%$, inflated) & 0.523 & $[0.420,0.624]$ & --- \\
-price $=$ gold & 0.386 & $[0.291,0.491]$ & $+9/-21$, $p=0.043$ \\
-rating $=$ gold & 0.386 & $[0.291,0.491]$ & $+5/-17$, $p=0.017$ \\
-both (full parity) & 0.250 & $[0.171,0.350]$ & $+3/-27$, $p<10^{-4}$ \\
+original (cut price, inflated) & 0.523 & $[0.420,0.624]$ & --- \\
+price parity & 0.386 & $[0.291,0.491]$ & $+9/-21$, $p=0.043$ \\
+rating parity & 0.386 & $[0.291,0.491]$ & $+5/-17$, $p=0.017$ \\
+full parity & 0.250 & $[0.171,0.350]$ & $+3/-27$, $p<10^{-4}$ \\
 \midrule
-gloss baseline (geo family) & 0.351 & $[0.263,0.450]$ & --- \\
+gloss baseline (geo) & 0.351 & $[0.263,0.450]$ & --- \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -88,6 +89,7 @@ the same clone is rejected at price parity but majority-preferred at any
 discount $\geq 10\%$; deeper discounts saturate near the mixed-discount
 pool level. Error bars: Wilson 95\% CIs; dotted line: chance.}
 \label{fig:mech}
+\Description{Panel (a): bars of clone win-rate under price, rating, and full parity ablations. Panel (b): clone win-rate versus discount level showing the ten-percent threshold.}
 \end{figure}
 
 \subsection{Dose--response: success flat, regret and confidence climb}
@@ -123,6 +125,7 @@ contamination (Qwen2.5-7B backbone, mix contamination, $N{=}100$ tasks per
 dose; P4A). Confidence is the mean post-purchase verbalized confidence;
 ECE is expected calibration error over five equal-width bins.}
 \label{tab:dose}
+\setlength{\tabcolsep}{3.2pt}
 \begin{tabular}{lcccccc}
 \toprule
 $\varepsilon$ & Success & S@0.8 & Regret & Synth.\ bought & Conf. & ECE \\
@@ -143,6 +146,7 @@ synthetic-purchase share, and mean confidence as functions of the
 contamination level $\varepsilon$ (mix families; $N{=}100$ tasks per dose;
 error bars = 95\% cluster-bootstrap CIs over tasks).}
 \label{fig:dose}
+\Description{Line charts of task success, regret, synthetic-purchase share, and confidence versus contamination level.}
 \end{figure}
 
 \subsection{Family attribution}
@@ -174,6 +178,7 @@ uncontaminated baseline (40 tasks): success (left) and regret (right).
 Specification clones destroy success; review-inflated pages inflict the
 largest regret; search-optimized pages cause quiet attrition.}
 \label{fig:family}
+\Description{Grouped bars of success and regret per contamination family versus the paired clean baseline.}
 \end{figure}
 
 \begin{table}[t]
@@ -246,8 +251,8 @@ listing text, a forger who \emph{displays} the badge still loses: the
 re-ranker demotes every badge-carrying synthetic into the same tier, where
 the agent's specification check rejects it.
 
-\textbf{(iii) A naive defense backfires.} Ranking candidates by
-rating$\times\log$(review count) --- the most natural platform-side fix ---
+\textbf{(iii) A naive defense backfires.} Ranking candidates by their rating times the log of their review
+count --- the most natural platform-side fix ---
 is harmless on the clean Web (regret $0.256$) but \emph{amplifies} the
 attack: success $0.300$, regret $0.507$ (vs.\ $0.443$ unprotected), and a
 synthetic listing bought in $67.5\%$ of tasks. Manufactured social proof
@@ -301,6 +306,7 @@ Structural filtering and provenance badges restore uncontaminated-level
 regret; a hard perplexity threshold collapses below the unprotected
 condition; matched random dropping does not defend.}
 \label{fig:defenses}
+\Description{Bars of regret per defense at the clean baseline and under high contamination.}
 \end{figure}
 
 \subsection{Backbone generality and scale}
