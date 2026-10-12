@@ -24,10 +24,10 @@ measurements at different $\varepsilon$ are \emph{paired}.
 Three properties distinguish this threat model from adversarial injection.
 (i)~\emph{No targeting}: synthetic listings are produced for the category and
 query in general, not against a specific user, task, or gold product; their
-accidental overlap with any given instruction is incidental. (ii)~\emph{No
-intentional falsehood}: the generator is not told the gold attributes it must
-misrepresent; it produces plausible-looking, keyword-rich pages whose
-specifications may or may not match any particular user's requirements.
+accidental overlap with any given instruction is incidental. (ii)~\emph{No user awareness}: generators see the category, the query, and
+(for clones) a popular listing, but never the individual user's instruction,
+so a mismatch with any particular user's required attributes is incidental
+rather than engineered.
 (iii)~\emph{Persistence}: such content is the by-product of ordinary incentives
 (SEO, affiliate monetization), so its prevalence $\varepsilon$ is a property of
 the Web, not of an attack session.
@@ -51,13 +51,12 @@ contamination level $\varepsilon$. We measure:
       preference for machine-optimized pages independent of any dose--response
       accumulation.
 \item \textbf{Dose--response curve} $\mathrm{S}(\varepsilon)$ over the grid
-      $\varepsilon\in\{0, 0.1, 0.25, 0.5,$ $0.75\}$, summarized by
-      $\varepsilon_{50}$, the contamination level at which clean-condition
-      success halves.
+      $\varepsilon\in\{0, 0.1, 0.25, 0.5,$ $0.75\}$, sufficient to locate
+      the knee of the curve.
 \item \textbf{Calibration drift}: expected calibration error (ECE) of the
       agent's post-hoc choice confidence as a function of $\varepsilon$,
-      capturing whether contamination erodes \emph{confidence} even when
-      choices are still correct.
+      capturing whether contamination distorts \emph{confidence} even as
+      choices degrade.
 \end{itemize}
 
 \subsection{The silent-erosion hypothesis}

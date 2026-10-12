@@ -2,9 +2,8 @@
 \label{sec:discussion}
 
 \paragraph{Preference, not perception.}
-An earlier reading of our probe --- which we report because it is the one
-a trajectory skim naturally produces --- was that agents ``cannot tell''
-clones from real products. The controlled decomposition falsifies that
+Our own first reading of the probe --- the one a trajectory skim naturally
+produces --- was that agents ``cannot tell'' clones from real products. The controlled decomposition falsifies that
 reading. At price parity the clone is \emph{rejected} ($\sigma=0.386$); at
 rating parity it is rejected identically ($0.386$); at both, it is
 rejected almost $3{:}1$ ($0.250$) --- and the two channels decompose
@@ -29,19 +28,22 @@ fingerprint-free ``stealth'' pools it retains $72\%$ of its recovery
 that this robustness rests on generator fingerprinting and should be
 treated as arms-race-bounded.
 
-\paragraph{The economics of silent erosion.}
-Success rates stayed nearly flat while regret climbed and confidence rose.
-An operator watching task success --- the metric most dashboards show ---
-would see nothing. The losses are absorbed inside ``successful'' sessions as
-attribute mismatches and overpayment, which is precisely why an ambient
-contamination problem can grow for years without surfacing as an incident.
-The confidence inflation compounds it: agents err more while trusting
-themselves more, so downstream automation (reordering, auto-purchase budgets)
-inherits correlated, concealed losses. We argue this pattern --- flat
-success, rising regret, rising confidence --- should become the standard
-diagnostic triplet for evaluating agents on live-content distributions, in
-the same way calibration curves preceded accuracy as the trustworthy signal
-for classifiers under distribution shift.
+\paragraph{The economics of partial failure.}
+Task success did fall under contamination --- but it fell by less than the
+economics deteriorated: at $\varepsilon{=}0.75$ success lost $23$ points
+while regret rose $69\%$ in relative terms, because most contamination
+losses hide \emph{inside} ``successful'' and near-successful sessions as
+attribute mismatches and overpayment rather than as outright failures.
+Success-only dashboards therefore systematically understate the damage; an
+operator sees a modest conversion dip while the wasted spend, misfulfillment
+costs, and refund load grow much faster. The confidence inflation compounds
+this: agents err more while trusting themselves more, so downstream
+automation (reordering, auto-purchase budgets) inherits correlated,
+concealed losses. We argue this pattern --- regret outrunning success,
+confidence rising alongside error --- should become the standard diagnostic
+pair for evaluating agents on live-content distributions, in the same way
+calibration curves preceded accuracy as the trustworthy signal for
+classifiers under distribution shift.
 
 \paragraph{Provenance as an interface contract.}
 Our defense results argue for a specific division of labor --- and for a

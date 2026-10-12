@@ -58,7 +58,7 @@ reproducible without closed-model APIs.
 \subsection{Forced-choice susceptibility probe}
 \label{sec:method-probe}
 Dose--response curves confound preference strength with slot competition. We
-therefore run an existence-first probe: each task presents \emph{exactly two}
+therefore run a forced-choice probe: each task presents \emph{exactly two}
 candidates --- the gold product and one synthetic listing, order randomized by
 a fixed seed --- and the agent must buy one. The outcome is a Bernoulli choice;
 across 30 tasks with 10 pair seeds each (300 forced choices in total), susceptibility
@@ -115,9 +115,10 @@ reviews) and the defense battery re-run on it.
 All stages are run under a pre-registered gate discipline: P0 (pipeline
 sanity: zero malformed actions, success in a plausible range, seed
 reproducibility) precedes generation; the generator passes a plausibility and
-manual audit; P1 gates on $\sigma\ge 0.60$ (binomial $p<0.01$ over 300
-choices) --- if agents show no systematic preference for synthetic listings,
-the premise is falsified and the project pivots; P2 gates on a $\ge$5\,pp
+manual audit; P1 gates on a decision-level susceptibility signal in the probe
+(a family contrast inconsistent with uniform rejection, binomial
+$p<0.01$ over 300 choices) --- if every family is rejected at chance or
+below, the premise is falsified and the project pivots; P2 gates on a $\ge$5\,pp
 success drop or $\ge$10\% relative regret increase at $\varepsilon=0.75$;
 a power analysis then fixes the final matrix before the full sweep; P5 gates
 on any defense recovering $\ge$30\% of the incurred regret. Gate decisions

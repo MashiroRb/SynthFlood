@@ -78,9 +78,9 @@ In deployment terms, \emph{any} meaningful discount suffices for the
 attack; the agent's price sensitivity saturates immediately past the
 threshold.
 
-\begin{figure}[t]
+\begin{figure*}[t]
 \centering
-\includegraphics[width=\linewidth]{figures/mechanism.pdf}
+\includegraphics[width=\textwidth]{figures/mechanism.pdf}
 \caption{The erosion mechanism is preferential, not perceptual.
 (a)~Channel decomposition of the clone win-rate: price parity and rating
 parity each drop $\sigma$ from $0.523$ to $0.386$; full parity drops it
@@ -90,7 +90,7 @@ discount $\geq 10\%$; deeper discounts saturate near the mixed-discount
 pool level. Error bars: Wilson 95\% CIs; dotted line: chance.}
 \label{fig:mech}
 \Description{Panel (a): bars of clone win-rate under price, rating, and full parity ablations. Panel (b): clone win-rate versus discount level showing the ten-percent threshold.}
-\end{figure}
+\end{figure*}
 
 \subsection{Dose--response: success flat, regret and confidence climb}
 \label{sec:res-dose}
@@ -101,7 +101,7 @@ omitted; each dose corresponds to 0, 2, 4, or 6 replaced slots),
 $N{=}100$ tasks per dose under the Qwen2.5-7B backbone, plus a full
 second-seed replication of the endpoints ($N{=}200$ paired observations).
 Three co-movements define the silent-erosion signature.
-\textbf{Success collapses quietly}: from $0.590$ at $\varepsilon=0$ to
+\textbf{Success falls at the first dose step and stays depressed}: from $0.590$ at $\varepsilon=0$ to
 $0.360$ at $\varepsilon=0.75$ (McNemar on paired tasks: 28 vs.\ 5
 discordant, $\chi^2=14.7$, $p=1.3\times10^{-4}$; pooling both seeds, 64
 vs.\ 13, $\chi^2=32.5$, $p=1.2\times10^{-8}$).
@@ -114,8 +114,8 @@ themselves more. The purchase share tells the mechanism directly: synthetic
 listings are bought in 53\%, 42\%, and 54\% of tasks at
 $\varepsilon=0.25,0.5,0.75$ respectively (from 0\% at $\varepsilon=0$;
 Cochran--Armitage trend $z=6.98$, $p=1.4\times10^{-12}$), and purchases of
-synthetic listings carry mean reward $0.41$ versus $0.79$ for purchases of
-real listings at the same dose.
+synthetic listings carry mean reward $0.35$ versus $0.80$ for purchases of
+real listings at the same dose (both contamination seeds pooled).
 
 \begin{table}[t]
 \centering
@@ -138,16 +138,16 @@ $\varepsilon$ & Success & S@0.8 & Regret & Synth.\ bought & Conf. & ECE \\
 \end{tabular}
 \end{table}
 
-\begin{figure}[t]
+\begin{figure*}[t]
 \centering
-\includegraphics[width=\linewidth]{figures/dose_response.pdf}
+\includegraphics[width=\textwidth]{figures/dose_response.pdf}
 \caption{Dose--response under ambient contamination: task success, regret,
 synthetic-purchase share, and mean confidence as functions of the
 contamination level $\varepsilon$ (mix families; $N{=}100$ tasks per dose;
 error bars = 95\% cluster-bootstrap CIs over tasks).}
 \label{fig:dose}
 \Description{Line charts of task success, regret, synthetic-purchase share, and confidence versus contamination level.}
-\end{figure}
+\end{figure*}
 
 \subsection{Family attribution}
 \label{sec:res-family}
@@ -197,6 +197,20 @@ reviews & 0.575 & 0.425 & 0.294 & 0.454 \\
 \end{tabular}
 \end{table}
 
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/defense_stress.pdf}
+\caption{Defense stress tests at $\varepsilon=0.75$ (40 paired tasks).
+(a) A soft provenance bonus fails across the rating scale and recovers
+only at $\lambda{=}8$. (b) Badge forgery on up to 65\% of synthetic
+listings leaves recovery statistically unchanged; the $s{=}25\%$ point is
+a favorable outlier. (c) A fingerprint-free ``stealth'' pool leaves
+unprotected regret similar and partially degrades the structural
+detector, while the provenance badge is unaffected.}
+\label{fig:stress}
+\Description{Three panels: a lambda-sweep curve, a forgery-rate curve, and paired bars comparing defenses on the original versus a stealth attack pool.}
+\end{figure*}
+
 \subsection{Defenses: provenance beats detection}
 \label{sec:res-defense}
 Table~\ref{tab:defense} evaluates the defense battery at
@@ -233,7 +247,8 @@ soft bonus $\lambda\cdot\mathbb{1}[\text{verified}]$ added to the platform
 score fails for every weight within the rating scale --- regret $0.507$
 ($\lambda{=}0.5$), $0.444$ ($1$), $0.494$ ($2$), $0.464$ ($4$), $0.360$
 ($6$) --- and only recovers at $\lambda{=}8$ ($0.332$, statistically tied
-with the hard re-ranker's $0.329$). A bonus smaller than the typical gap
+with the hard re-ranker's $0.329$;
+Figure~\ref{fig:stress}a). A bonus smaller than the typical gap
 between a manufactured 4.9-star rating and a genuine one is simply outbid:
 provenance must act as a \emph{lexicographic} ordering constraint, not an
 additive score.
@@ -242,14 +257,17 @@ additive score.
 $s\%$ of synthetic listings leaves recovery unchanged across the envelope:
 regret $0.313$ ($s{=}35$), $0.332$ ($50$), $0.325$ ($65$) --- all
 statistically indistinguishable from the no-forgery $0.329$ (Wilcoxon
-$p\geq0.96$). The lone $s{=}25\%$ point scores \emph{better} than baseline
-($0.222$, $\Delta=-0.107$, $p=0.012$); five trajectory replays attribute
+$p\geq0.96$; Figure~\ref{fig:stress}b). The lone $s{=}25\%$ point scores
+\emph{better} than baseline ($0.222$, $\Delta=-0.107$, $p=0.012$); five
+trajectory replays attribute
 the gap to greedy-chain behavioral variance rather than a mechanism, and
 one favorable outlier among four tested rates is consistent with
-multiplicity. Because the badge derives from a provenance bit rather than
-listing text, a forger who \emph{displays} the badge still loses: the
-re-ranker demotes every badge-carrying synthetic into the same tier, where
-the agent's specification check rejects it.
+multiplicity. The mechanism is consistent with the rest of our measurements:
+recovery is driven by the \emph{ordering} of candidates --- badges
+re-rank the still-verifiable majority --- rather than by badge-driven
+purchase decisions; synthetic-purchase counts do not rise with $s$, and
+the agent's specification check, not the badge, remains the final filter
+at decision time.
 
 \textbf{(iii) A naive defense backfires.} Ranking candidates by their rating times the log of their review
 count --- the most natural platform-side fix ---
@@ -270,9 +288,12 @@ regret recovery falls from $0.193$ to $0.138$ --- a $28\%$ loss, though
 the remaining recovery is still significant (paired Wilcoxon $p=0.022$).
 The provenance badge is untouched by the stylistic shift: its recovery is
 $0.152$ on the stealth pool versus $0.114$ on the original one, exactly
-as expected for a defense that never reads the text. The arms race
+as expected for a defense that never reads the text
+(Figure~\ref{fig:stress}c). The arms race
 against content-based detection is thus real but gradual, while the
 provenance channel is structurally immune to it.
+
+
 
 \begin{table}[t]
 \centering
