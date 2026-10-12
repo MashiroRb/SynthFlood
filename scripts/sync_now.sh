@@ -5,12 +5,6 @@ ROOT=${SYNTHFLOOD_ROOT:-/root/synthflood}
 LOGF=${SYNC_LOG:-/root/sync_now.log}
 cd $ROOT/code || exit 1
 {
-if [ -f QUEUE.cmd ]; then
-  echo "--- executing QUEUE.cmd $(date -u +%FT%TZ)"
-  bash QUEUE.cmd >> /root/queue_exec.log 2>&1
-  mv QUEUE.cmd QUEUE.done
-  echo "--- QUEUE.cmd done $(date -u +%FT%TZ)"
-fi
 echo "--- sync_now $(date -u +%FT%TZ)"
 cp -u $ROOT/results/*.csv results_csv/ 2>/dev/null
 cp -ru $ROOT/logs/. logs/ 2>/dev/null
@@ -32,4 +26,11 @@ for i in 1 2 3 4 5; do
   sleep 15
 done
 [ "$ok" = 1 ] || echo "PUSH_FAILED after retries"
+if [ -f QUEUE.cmd ]; then
+  echo "--- executing QUEUE.cmd $(date -u +%FT%TZ)"
+  bash QUEUE.cmd >> /root/queue_exec.log 2>&1
+  mv QUEUE.cmd QUEUE.done
+  echo "--- QUEUE.cmd done $(date -u +%FT%TZ)"
+fi
+
 } >> "$LOGF" 2>&1
