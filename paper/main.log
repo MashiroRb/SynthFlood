@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2026.9.28)  12 OCT 2026 05:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2026.9.28)  12 OCT 2026 05:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1080,63 +1080,60 @@ Underfull \vbox (badness 2221) has occurred while \output is active []
 Underfull \vbox (badness 1033) has occurred while \output is active []
 
  [4.4]
-Overfull \hbox (36.99817pt too wide) in paragraph at lines 51--63
+Overfull \hbox (36.99817pt too wide) in paragraph at lines 52--64
  [][] 
  []
 
+<figures/mechanism.pdf, id=263, 496.354pt x 179.75897pt>
+File: figures/mechanism.pdf Graphic file (type pdf)
+<use figures/mechanism.pdf>
+Package pdftex.def Info: figures/mechanism.pdf  used on input line 82.
+(pdftex.def)             Requested size: 241.14749pt x 87.33385pt.
 
-Underfull \vbox (badness 2111) has occurred while \output is active []
+Class acmart Warning: A possible image without description on input line 91.
 
-<figures/dose_response.pdf, id=263, 794.97pt x 187.902pt>
+[5.5 <./figures/mechanism.pdf>]
+<figures/dose_response.pdf, id=339, 794.97pt x 187.902pt>
 File: figures/dose_response.pdf Graphic file (type pdf)
 <use figures/dose_response.pdf>
-Package pdftex.def Info: figures/dose_response.pdf  used on input line 125.
+Package pdftex.def Info: figures/dose_response.pdf  used on input line 140.
 (pdftex.def)             Requested size: 241.14749pt x 56.99893pt.
 
 
-Class acmart Warning: A possible image without description on input line 131.
+Class acmart Warning: A possible image without description on input line 146.
 
-[5.5]
-<figures/family.pdf, id=275, 505.89pt x 187.902pt>
+<figures/family.pdf, id=341, 505.89pt x 187.902pt>
 File: figures/family.pdf Graphic file (type pdf)
 <use figures/family.pdf>
-Package pdftex.def Info: figures/family.pdf  used on input line 156.
+Package pdftex.def Info: figures/family.pdf  used on input line 171.
 (pdftex.def)             Requested size: 241.14749pt x 89.56975pt.
 
+Class acmart Warning: A possible image without description on input line 177.
 
-Class acmart Warning: A possible image without description on input line 162.
-
-
-Overfull \hbox (35.91852pt too wide) in paragraph at lines 234--241
+[6.6 <./figures/dose_response.pdf> <./figures/family.pdf>]
+Overfull \hbox (35.91852pt too wide) in paragraph at lines 249--256
 []\T1/LinuxLibertineT-TLF/b/n/9 (-20) (iii) A naive de-fense back-fires. \T1/Li
 nuxLibertineT-TLF/m/n/9 (-20) Rank-ing can-di-dates by rating$\LMS/ntxsy/m/n/9 
 ^^B []$\T1/LinuxLibertineT-TLF/m/n/9 (-20) (review
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6.6 <./figures/dose_response.pdf> <./figures/family.pdf>]
 LaTeX Font Info:    Font shape `T1/zi4/b/n' will be
-(Font)              scaled to size 9.0pt on input line 255.
+(Font)              scaled to size 9.0pt on input line 270.
 
-Overfull \hbox (8.62033pt too wide) in paragraph at lines 257--271
+Overfull \hbox (8.62033pt too wide) in paragraph at lines 272--286
  [][] 
  []
 
-<figures/defenses.pdf, id=377, 375.804pt x 202.356pt>
+<figures/defenses.pdf, id=445, 375.804pt x 202.356pt>
 File: figures/defenses.pdf Graphic file (type pdf)
 <use figures/defenses.pdf>
-Package pdftex.def Info: figures/defenses.pdf  used on input line 275.
+Package pdftex.def Info: figures/defenses.pdf  used on input line 290.
 (pdftex.def)             Requested size: 241.14749pt x 129.85013pt.
 
-Class acmart Warning: A possible image without description on input line 282.
+Class acmart Warning: A possible image without description on input line 297.
 
 ) (./sections/discussion.tex [7.7 <./figures/defenses.pdf>])
-(./sections/conclusion.tex)
-Underfull \vbox (badness 2073) has occurred while \output is active []
-
- (./main.bbl
+(./sections/conclusion.tex) (./main.bbl
 LaTeX Info: Redefining \tempurl on input line 66.
 LaTeX Info: Redefining \tempurl on input line 85.
 LaTeX Info: Redefining \tempurl on input line 102.
@@ -1144,6 +1141,7 @@ LaTeX Info: Redefining \tempurl on input line 119.
 LaTeX Info: Redefining \tempurl on input line 136.
 LaTeX Info: Redefining \tempurl on input line 152.
 LaTeX Info: Redefining \tempurl on input line 168.
+ [8.8]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 7.0pt on input line 180.
 LaTeX Info: Redefining \tempurl on input line 184.
@@ -1153,10 +1151,6 @@ LaTeX Info: Redefining \tempurl on input line 234.
 LaTeX Info: Redefining \tempurl on input line 250.
 LaTeX Info: Redefining \tempurl on input line 265.
 LaTeX Info: Redefining \tempurl on input line 280.
-
-Underfull \vbox (badness 4752) has occurred while \output is active []
-
- [8.8]
 LaTeX Info: Redefining \tempurl on input line 297.
 LaTeX Info: Redefining \tempurl on input line 313.
 LaTeX Info: Redefining \tempurl on input line 330.
@@ -1172,11 +1166,12 @@ LaTeX Info: Redefining \tempurl on input line 475.
 LaTeX Info: Redefining \tempurl on input line 490.
 LaTeX Info: Redefining \tempurl on input line 507.
 LaTeX Info: Redefining \tempurl on input line 526.
-LaTeX Info: Redefining \tempurl on input line 543.
-)
-[9.9
 
-] (./sections/appendix.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \tempurl on input line 543.
+) [9.9]
+(./sections/appendix.tex
 Overfull \hbox (27.34201pt too wide) in paragraph at lines 15--24
 \T1/LinuxLibertineT-TLF/m/n/9 (-20) ucts af-ter the of-fi-cial key-cleaning and
  dedu-pli-ca-tion), \T1/zi4/m/n/9 items_ins_v2.json\T1/LinuxLibertineT-TLF/m/n/
@@ -1213,16 +1208,16 @@ Package balance Warning: You have called \balance in second column
 
 ] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: CB1E7491EDC154B83B33D88B7F805484;6427.
+(rerunfilecheck)             Checksum: 50AA086744BF618D57A20C0ADC7A68BC;6427.
  ) 
 Here is how much of TeX's memory you used:
- 21589 strings out of 477967
- 354805 string characters out of 5838802
+ 21607 strings out of 477967
+ 355257 string characters out of 5838802
  1896330 words of memory out of 5000000
- 40399 multiletter control sequences out of 15000+600000
- 702331 words of font info for 527 fonts, out of 8000000 for 9000
+ 40406 multiletter control sequences out of 15000+600000
+ 703240 words of font info for 533 fonts, out of 8000000 for 9000
  220 hyphenation exceptions out of 8191
- 85i,16n,131p,1636b,743s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 85i,16n,131p,1636b,719s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-4.enc}{/usr/
 share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{/usr/share/
 texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{/usr/share/texliv
@@ -1245,10 +1240,10 @@ c/newtx/NewTXMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/New
 TXMI7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on main.pdf (10 pages, 588876 bytes).
+Output written on main.pdf (10 pages, 607864 bytes).
 PDF statistics:
- 609 PDF objects out of 1000 (max. 8388607)
- 453 compressed objects within 5 object streams
- 92 named destinations out of 1000 (max. 500000)
- 91408 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 676 PDF objects out of 1000 (max. 8388607)
+ 469 compressed objects within 5 object streams
+ 93 named destinations out of 1000 (max. 500000)
+ 91413 words of extra memory for PDF output out of 106986 (max. 10000000)
 

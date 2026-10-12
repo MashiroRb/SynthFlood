@@ -30,7 +30,8 @@ the clone win-rate from $0.523$ to $0.386$ (price parity: paired McNemar
 $+9/-21$, $p=0.043$; rating parity: $+5/-17$, $p=0.017$); removing both
 drops it to $0.250$ (95\% CI $[0.171,0.350]$; paired $+3/-27$,
 $p<10^{-4}$). The decomposition is additive to within half a point:
-$0.523-0.137$ (price) $-0.136$ (social proof) $=0.250$. Two conclusions
+$0.523-0.137$ (price) $-0.136$ (social proof) $=0.250$ (Figure~\ref{fig:mech}a).
+Two conclusions
 follow. First, the clone's advantage is \emph{bought} with a discount and
 manufactured ratings, in equal shares --- not earned by perceptual
 similarity: at full price and honest ratings the clone is rejected almost
@@ -71,9 +72,23 @@ parity agents reject the clone ($\sigma=0.386$), at $-10\%$ they already
 prefer it ($\sigma=0.591$; paired $+26/-8$, $p=0.003$), and deeper
 discounts add nothing ($0.534$ at $-20\%$, $p=0.015$; $0.568$ at $-30\%$,
 $p=0.004$) --- all discount levels sit within noise of the original
-mixed-discount pool ($0.523$). In deployment terms, \emph{any} meaningful
-discount suffices for the attack; the agent's price sensitivity saturates
-immediately past the threshold.
+mixed-discount pool ($0.523$). Figure~\ref{fig:mech}b plots the response.
+In deployment terms, \emph{any} meaningful discount suffices for the
+attack; the agent's price sensitivity saturates immediately past the
+threshold.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/mechanism.pdf}
+\caption{The erosion mechanism is preferential, not perceptual.
+(a)~Channel decomposition of the clone win-rate: price parity and rating
+parity each drop $\sigma$ from $0.523$ to $0.386$; full parity drops it
+to $0.250$, below the plain-gloss baseline. (b)~Pricing threshold law:
+the same clone is rejected at price parity but majority-preferred at any
+discount $\geq 10\%$; deeper discounts saturate near the mixed-discount
+pool level. Error bars: Wilson 95\% CIs; dotted line: chance.}
+\label{fig:mech}
+\end{figure}
 
 \subsection{Dose--response: success flat, regret and confidence climb}
 \label{sec:res-dose}
