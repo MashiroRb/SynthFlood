@@ -3,7 +3,7 @@
 % numbers finalized from p1_forced_choice.csv (v4),
 % p4a_sweep.csv, p4b_*_sweep.csv, p4c_*_sweep.csv, p4e_sweep.csv.
 
-\subsection{Susceptibility: gloss rejected, clones at chance}
+\subsection{Forced-choice probe: clones win, but why?}
 \label{sec:res-probe}
 The forced-choice probe confronts each agent with one gold product and one
 synthetic listing (300 randomized duels). Agents overall still prefer the
@@ -11,13 +11,69 @@ real product, $\sigma=0.377$ (95\% CI $[0.324,0.433]$, binomial vs.\
 $\tfrac12$ $p<10^{-35}$), but the families separate sharply:
 $\sigma_{\text{clone}}=0.523$ --- statistically indistinguishable from
 chance --- while $\sigma_{\text{geo}}=0.351$ and
-$\sigma_{\text{reviews}}=0.287$. Trajectory inspection shows the
-mechanism: agents quote instruction attributes, find them missing or altered
-on gloss pages, and buy the real product even when it displays no rating and
-the synthetic page shows 4.7 stars with thousands of reviews. Social proof
-has essentially no pull; specification grounding dominates --- and clones
-are the one family engineered to pass specification grounding while failing
-the instruction's critical attributes.
+$\sigma_{\text{reviews}}=0.287$. Taken alone, this pattern invites a
+perceptual reading: specification clones seem to pass as real products.
+Trajectory inspection is consistent with such a reading --- agents quote
+instruction attributes and buy the real product even when it displays no
+rating --- but trajectories cannot separate what the agent \emph{fails to
+see} from what it \emph{prefers to buy}. The next subsection closes that
+gap with controlled channel ablations, and reaches the opposite conclusion.
+
+\subsection{Channel decomposition: preference, not perception}
+\label{sec:res-mechanism}
+We re-run the clone duels under three controlled ablations of the synthetic
+listing: \textbf{price parity} (clone priced exactly at the gold price),
+\textbf{rating parity} (rating and review count reset to the gold listing's
+genuine values), and \textbf{both} (300 duels each, same tasks and pair
+seeds). Table~\ref{tab:mech} gives the result. Either channel alone drops
+the clone win-rate from $0.523$ to $0.386$ (price parity: paired McNemar
+$+9/-21$, $p=0.043$; rating parity: $+5/-17$, $p=0.017$); removing both
+drops it to $0.250$ (95\% CI $[0.171,0.350]$; paired $+3/-27$,
+$p<10^{-4}$). The decomposition is additive to within half a point:
+$0.523-0.137$ (price) $-0.136$ (social proof) $=0.250$. Two conclusions
+follow. First, the clone's advantage is \emph{bought} with a discount and
+manufactured ratings, in equal shares --- not earned by perceptual
+similarity: at full price and honest ratings the clone is rejected almost
+twice as often as chosen. Second, the residual $0.250$ lies \emph{below}
+the plain-gloss baseline $\sigma_{\text{geo}}=0.351$: once the economic
+lures are removed, a listing that near-copies the gold product's
+specifications is a \emph{liability} for the attacker, plausibly because
+the close-but-altered specification text makes the mismatch easier to
+notice.
+
+\begin{table}[t]
+\centering
+\small
+\caption{Channel decomposition of the clone win-rate $\sigma$ (gold vs.\
+synthetic clone, 300 duels per row; paired flips vs.\ the unmodified
+clone).}
+\label{tab:mech}
+\begin{tabular}{lccc}
+\toprule
+Clone variant & $\sigma$ & 95\% CI & Paired vs.\ orig. \\
+\midrule
+original (price $-5$ to $-25\%$, inflated) & 0.523 & $[0.420,0.624]$ & --- \\
+price $=$ gold & 0.386 & $[0.291,0.491]$ & $+9/-21$, $p=0.043$ \\
+rating $=$ gold & 0.386 & $[0.291,0.491]$ & $+5/-17$, $p=0.017$ \\
+both (full parity) & 0.250 & $[0.171,0.350]$ & $+3/-27$, $p<10^{-4}$ \\
+\midrule
+gloss baseline (geo family) & 0.351 & $[0.263,0.450]$ & --- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{A threshold law for discount pricing.}
+Because price is the dominant channel, we dose it directly: the clone is
+priced at a fixed fraction $f\in\{1.0,0.9,0.8,0.7\}$ of the gold price
+with ratings left inflated (300 duels per level; paired against the
+$f=1.0$ arm). The response is a \emph{threshold}, not a gradient: at price
+parity agents reject the clone ($\sigma=0.386$), at $-10\%$ they already
+prefer it ($\sigma=0.591$; paired $+26/-8$, $p=0.003$), and deeper
+discounts add nothing ($0.534$ at $-20\%$, $p=0.015$; $0.568$ at $-30\%$,
+$p=0.004$) --- all discount levels sit within noise of the original
+mixed-discount pool ($0.523$). In deployment terms, \emph{any} meaningful
+discount suffices for the attack; the agent's price sensitivity saturates
+immediately past the threshold.
 
 \subsection{Dose--response: success flat, regret and confidence climb}
 \label{sec:res-dose}
@@ -80,13 +136,20 @@ Single-family runs at $\varepsilon=0.75$ (Table~\ref{tab:family}) attribute
 the damage. Clone contamination is the most destructive at the success
 level (success $0.600\to0.425$, $-17.5$\,pp; regret $+41\%$; synthetic
 listings bought in $52.5\%$ of tasks), consistent with the probe's
-clone-at-chance finding. Review-inflated pages deliver the largest regret
+decomposition --- clones carry the two lures the agent is most sensitive
+to. Review-inflated pages deliver the largest regret
 shock ($0.294\to0.454$, $+54\%$): a plain page with a manufactured five-star
 flood gets purchased ($37.5\%$ of tasks) precisely because it looks
 credible, then fails on missing specifications. Geo contamination is the
-mildest --- success flat, regret $+11.8\%$ --- yet still taxes regret
-through quiet attrition: even content the agents mostly reject reshuffles
-attention and displaces real competitors.
+mildest --- success flat, regret $+11.8\%$ at seed 1 --- but we flag the
+attribution honestly: a full second-seed replication of the geo family
+gives a pooled paired regret difference of $+0.075$ whose 95\% CI
+$[-0.050,+0.195]$ crosses zero, so we treat ``quiet attrition'' for this
+family as \emph{directional} evidence only. Two facts about geo
+contamination are nevertheless solid: it does not measurably change task
+success, and when a geo page \emph{is} purchased it earns a mean reward of
+only $0.22$ (versus $0.985$ for gold purchases in the same arm) --- the
+rare geo purchase is a near-total loss.
 
 \begin{figure}[t]
 \centering
@@ -141,6 +204,48 @@ contamination (0.431) --- filtering \emph{amount} is not filtering
 \emph{quality}. The prompt defense achieves an intermediate 57\% regret
 recovery but changes behavior on the clean Web as well (a ``skepticism
 tax''), so its net value is smaller than its high-dose delta suggests.
+Beyond the battery, four targeted experiments pin down \emph{how}
+provenance information should be consumed and how robust the defenses are
+(all at $\varepsilon{=}0.75$, 40 paired tasks, seed-1 pools unless noted).
+
+\textbf{(i) Order, don't score.} Re-implementing the provenance bit as a
+soft bonus $\lambda\cdot\mathbb{1}[\text{verified}]$ added to the platform
+score fails for every weight within the rating scale --- regret $0.507$
+($\lambda{=}0.5$), $0.444$ ($1$), $0.494$ ($2$), $0.464$ ($4$), $0.360$
+($6$) --- and only recovers at $\lambda{=}8$ ($0.332$, statistically tied
+with the hard re-ranker's $0.329$). A bonus smaller than the typical gap
+between a manufactured 4.9-star rating and a genuine one is simply outbid:
+provenance must act as a \emph{lexicographic} ordering constraint, not an
+additive score.
+
+\textbf{(ii) Forgery envelope.} Letting the adversary forge the badge on
+$s\%$ of synthetic listings leaves recovery unchanged across the envelope:
+regret $0.313$ ($s{=}35$), $0.332$ ($50$), $0.325$ ($65$) --- all
+statistically indistinguishable from the no-forgery $0.329$ (Wilcoxon
+$p\geq0.96$). The lone $s{=}25\%$ point scores \emph{better} than baseline
+($0.222$, $\Delta=-0.107$, $p=0.012$); five trajectory replays attribute
+the gap to greedy-chain behavioral variance rather than a mechanism, and
+one favorable outlier among four tested rates is consistent with
+multiplicity. Because the badge derives from a provenance bit rather than
+listing text, a forger who \emph{displays} the badge still loses: the
+re-ranker demotes every badge-carrying synthetic into the same tier, where
+the agent's specification check rejects it.
+
+\textbf{(iii) A naive defense backfires.} Ranking candidates by
+rating$\times\log$(review count) --- the most natural platform-side fix ---
+is harmless on the clean Web (regret $0.256$) but \emph{amplifies} the
+attack: success $0.300$, regret $0.507$ (vs.\ $0.443$ unprotected), and a
+synthetic listing bought in $67.5\%$ of tasks. Manufactured social proof
+hijacks the ranking signal: defenses built on the same surface features
+the attacker optimizes are structurally complicit.
+
+\textbf{(iv) Stealth pools (arms race).} The structural detector keys on
+generator template fingerprints (superlatives, bullet-length symmetry,
+\texttt{X:Y} spec lines, review boilerplate). Regenerating the pool with
+fingerprint-free prompts (``stealth'' style: no marketing adjectives,
+naturally varied bullets, prose-form specifications, humanlike reviews)
+and re-running the battery gives \stealthresult{}; we discuss the
+implications for the detection arms race in \S\ref{sec:discussion}.
 
 \begin{table}[t]
 \centering
@@ -187,4 +292,11 @@ $\varepsilon=0.75$, Qwen2.5-3B buys synthetic listings in 70\% of tasks
 dose contrast requires minimal baseline competence, which Qwen2.5-1.5B
 lacks (success $0.300$ at $\varepsilon=0$, statistically unchanged under
 contamination). The vulnerability is not an artifact of one model's
-quirks.
+quirks. Summarizing the two competent backbones by a linear erosion
+coefficient (regret increase per unit contamination, $\kappa$ from the
+endpoint regression), Qwen2.5-7B gives $\kappa=0.242$ (95\% CI
+$[0.129,0.352]$) and Llama-3.1-8B $\kappa=0.208$ (95\% CI
+$[0.037,0.374]$) --- overlapping intervals, the same order of
+vulnerability --- while the below-competence 1.5B backbone shows a
+floor effect (clean regret already $0.578$) that makes the dose contrast
+uninterpretable.

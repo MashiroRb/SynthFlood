@@ -73,22 +73,33 @@ Our contributions are:
 \item \textbf{A threat model and protocol} for ambient (non-targeted)
       synthetic contamination of agent decision channels, with paired
       dose--response control on official benchmark artifacts.
-\item \textbf{A forced-choice susceptibility probe} isolating preference for
-      machine-optimized listings from slot competition: overall
-      $\sigma=0.377$ (95\% CI $[0.324,0.433]$, $n=300$), with specification
-      clones at chance ($\sigma_{\text{clone}}=0.523$) while gloss and
-      review inflation are rejected ($\sigma_{\text{geo}}=0.351$,
-      $\sigma_{\text{reviews}}=0.287$).
+\item \textbf{A forced-choice probe with channel decomposition} isolating
+      \emph{why} machine-optimized listings win: specification clones sit at
+      chance ($\sigma_{\text{clone}}=0.523$) while gloss and review
+      inflation are rejected ($\sigma_{\text{geo}}=0.351$,
+      $\sigma_{\text{reviews}}=0.287$); but price parity alone drops the
+      clone win-rate to $0.386$ (paired $p=0.043$), stripping inflated
+      ratings alone also yields $0.386$, and removing both drops it to
+      $0.250$ --- an additive two-channel decomposition showing the attack
+      exploits price and social proof, not perception. A pricing
+      dose--response yields a threshold law: any discount $\geq 10\%$
+      flips the majority to the synthetic clone ($0.386\!\to\!0.591$,
+      $p=0.003$), with no further gain at deeper discounts.
 \item \textbf{The first decision-level dose--response evidence} that ambient
       contamination erodes agent economics: at $\varepsilon=0.75$, success
       drops by $23$\,pp ($p=1.3\times10^{-4}$; $p=1.2\times10^{-8}$ pooled
       over two seeds) and regret rises $69\%$ (paired $\Delta=+0.181$,
       95\% CI $[+0.095,+0.264]$), while confidence rises and calibration
       error doubles --- errors that no success metric would surface.
-\item \textbf{A defense analysis} showing an agent-visible noisy provenance
-      badge eliminates the regret excess at matched contamination while
-      text-perplexity detection collapses below the unprotected baseline
-      and a same-amount random filter does not defend at all.
+\item \textbf{A defense analysis with an ordering principle}: an
+      agent-visible noisy provenance badge eliminates the regret excess,
+      is unchanged from 15\% to 65\% badge forgery, and a text-free
+      structural detector statistically matches a perfect-provenance
+      oracle ($p=0.21$); but consuming the same bit as a soft ranking
+      bonus fails until its weight exceeds the rating scale
+      ($\lambda\leq 4$ all fail, $\lambda=8$ recovers fully) --- and a
+      naive popularity ranking \emph{backfires}, raising synthetic
+      purchases to 67.5\%.
 \end{itemize}
 We release all code, contamination pools, and full trajectory logs. The
 remainder of the paper formalizes the threat model
@@ -102,12 +113,14 @@ adversarial attacks on agents but by \emph{ambient} commercial synthetic
 content --- and that the resulting damage is invisible to the metrics we use
 to evaluate agents. What is new: (i) the first decision-level dose--response
 evidence that ambient contamination erodes agent economics on official
-benchmark artifacts; (ii) a forced-choice probe that separates
-\emph{indistinguishable counterfeits} from mere susceptibility to marketing
-gloss; (iii) a diagnostic triplet --- flat success, rising regret, rising
-confidence --- that operators can monitor; and (iv) the demonstration that a
-single noisy provenance bit, consumed as a ranking prior, recovers most of
-the loss where content-based detection cannot. What is brave: we argue
-provenance-weighted ranking should become a first-class interface contract
-between the Web and the agents acting on it, and we give the community the
-protocol to falsify or refine that claim.
+benchmark artifacts; (ii) a channel-decomposed forced-choice probe that
+locates the erosion mechanism in the agent's \emph{preference function}
+(price and social proof), not its perception, with a pricing threshold law
+showing a 10\% discount is sufficient to flip the majority; (iii) a
+diagnostic triplet --- flat success, rising regret, rising confidence ---
+that operators can monitor; and (iv) the demonstration that a single noisy
+provenance bit recovers the full loss when consumed as an \emph{ordering
+constraint} --- but not as a soft score --- where content-based detection
+cannot. What is brave: we argue provenance-ordered ranking should become a
+first-class interface contract between the Web and the agents acting on it,
+and we give the community the protocol to falsify or refine that claim.

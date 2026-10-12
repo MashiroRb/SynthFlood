@@ -3,16 +3,18 @@
 
 We asked whether the synthetic content already saturating the Web degrades
 the decisions of the agents that browse it, and answered with a controlled,
-paired, dose-controlled protocol on official benchmark artifacts. Agents are
-not naive: they reject search-optimized gloss and manufactured social proof.
-But they cannot reliably reject specification clones, the economically
-rational-looking forgeries that ambient content farms already produce, and
-consequently regret inflates with contamination dose while success metrics
-and agent confidence tell a reassuring story. A single noisy provenance bit,
-consumed as a ranking prior, recovers most of the loss where surface
-detectors cannot. The broader lesson for the Web's next decade is that
-agent-facing interfaces need origin information as a first-class signal ---
-not to replace judgment, but so that judgment has something true to anchor
-on. We release the SynthFlood protocol, contamination pools, and all
-trajectory logs to make agent-Web robustness a measurable property rather
-than an anecdote.
+paired, dose-controlled protocol on official benchmark artifacts. Agents
+are not naive, and --- our central revised finding --- they are not fooled
+either: channel decomposition shows they reject clones once discounts and
+manufactured ratings are removed. What fails is their \emph{preference
+alignment}: a ten-percent discount and a manufactured 4.9-star rating are
+sufficient to flip the majority of decisions, so ambient content farms do
+not need to defeat the agent's perception, only to outbid it. Consequently
+regret inflates with contamination dose while success metrics and agent
+confidence tell a reassuring story. A single noisy provenance bit recovers
+the full loss --- but only when the interface consumes it as an ordering
+constraint rather than a score, a semantics we argue should become a
+first-class contract between the Web and the agents acting on it. We
+release the SynthFlood protocol, contamination pools, and all trajectory
+logs to make agent-Web robustness a measurable property rather than an
+anecdote.

@@ -1,0 +1,548 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{31}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[Bagga et~al\mbox{.}(2025)]%
+        {bagga2025egeo}
+\bibfield{author}{\bibinfo{person}{Puneet~S. Bagga}, \bibinfo{person}{Vivek~F.
+  Farias}, \bibinfo{person}{Tamar Korkotashvili}, \bibinfo{person}{Tianyi
+  Peng}, {and} \bibinfo{person}{Yuhang Wu}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{E-GEO: A Testbed for Generative Engine Optimization
+  in E-Commerce}.
+\newblock \bibinfo{howpublished}{arXiv:2511.20867}.
+\newblock
+\showeprint[arxiv]{2511.20867}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2511.20867v2}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Bara(2026)]%
+        {bara2026epistemic}
+\bibfield{author}{\bibinfo{person}{Marc Bara}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{Epistemic Sybil Resistance: Multiplying AI Agents
+  Without Multiplying Evidence}.
+\newblock \bibinfo{howpublished}{arXiv:2609.01873}.
+\newblock
+\showeprint[arxiv]{2609.01873}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2609.01873v1}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Cao et~al\mbox{.}(2026)]%
+        {cao2026ward}
+\bibfield{author}{\bibinfo{person}{Tri Cao}, \bibinfo{person}{Yulin Chen},
+  \bibinfo{person}{Hieu Cao}, \bibinfo{person}{Yibo Li}, \bibinfo{person}{Khoi
+  Le}, \bibinfo{person}{Thong Nguyen}, \bibinfo{person}{Yuexin Li},
+  \bibinfo{person}{Yufei He}, \bibinfo{person}{Yue Liu},
+  \bibinfo{person}{Shuicheng Yan}, {and} \bibinfo{person}{Bryan Hooi}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{WARD: Adversarially Robust Defense of Web Agents
+  Against Prompt Injections}.
+\newblock \bibinfo{howpublished}{arXiv:2605.15030}.
+\newblock
+\showeprint[arxiv]{2605.15030}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2605.15030v1}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Chen et~al\mbox{.}(2026)]%
+        {chen2026much}
+\bibfield{author}{\bibinfo{person}{Yimeng Chen}, \bibinfo{person}{Zhe Ren},
+  \bibinfo{person}{Firas Laakom}, \bibinfo{person}{Yu Li},
+  \bibinfo{person}{Dandan Guo}, {and} \bibinfo{person}{J{\"u}rgen
+  Schmidhuber}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{How Much Can We Trust LLM Search Agents? Measuring
+  Endorsement Vulnerability to Web Content Manipulation}.
+\newblock \bibinfo{howpublished}{arXiv:2606.16821}.
+\newblock
+\showeprint[arxiv]{2606.16821}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2606.16821v2}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Chu et~al\mbox{.}(2026)]%
+        {chu2026geoflag}
+\bibfield{author}{\bibinfo{person}{Junjie Chu}, \bibinfo{person}{Ye Leng},
+  \bibinfo{person}{Mingjie Li}, \bibinfo{person}{Yun Shen},
+  \bibinfo{person}{Xinyue Shen}, {and} \bibinfo{person}{Yang Zhang}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{GEO-Flag: Detecting and Measuring GEO-Optimized Web
+  Content}.
+\newblock \bibinfo{howpublished}{arXiv:2608.16824}.
+\newblock
+\showeprint[arxiv]{2608.16824}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2608.16824v2}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Du et~al\mbox{.}(2026)]%
+        {du2026multimodal}
+\bibfield{author}{\bibinfo{person}{Yixuan Du}, \bibinfo{person}{Chenxiao Yu},
+  \bibinfo{person}{Haoyan Xu}, \bibinfo{person}{Ziyi Wang},
+  \bibinfo{person}{Yue Zhao}, {and} \bibinfo{person}{Xiyang Hu}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{Multimodal Generative Engine Optimization: Rank
+  Manipulation for Vision-Language Model Rankers}.
+\newblock \bibinfo{howpublished}{arXiv:2601.12263}.
+\newblock
+\showeprint[arxiv]{2601.12263}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2601.12263v2}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Guo et~al\mbox{.}(2026)]%
+        {guo2026logintrap}
+\bibfield{author}{\bibinfo{person}{Longtao Guo}, \bibinfo{person}{Zelin Zhang},
+  \bibinfo{person}{Kaifeng Huang}, {and} \bibinfo{person}{Yang Shi}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{LoginTrap: Uncovering Task-Agnostic Phishing-Style
+  Indirect Prompt Injection Attacks against LLM-based Web Agents}.
+\newblock \bibinfo{howpublished}{arXiv:2608.04741}.
+\newblock
+\showeprint[arxiv]{2608.04741}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2608.04741v1}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Jeong et~al\mbox{.}(2026)]%
+        {jeong2026persuasion}
+\bibfield{author}{\bibinfo{person}{Hyejun Jeong}, \bibinfo{person}{Amir
+  Houmansadr}, \bibinfo{person}{Shlomo Zilberstein}, {and}
+  \bibinfo{person}{Eugene Bagdasarian}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{Persuasion Propagation: Does Persuasion Change AI
+  Agent Behavior?}
+\newblock \bibinfo{howpublished}{arXiv:2602.00851}.
+\newblock
+\showeprint[arxiv]{2602.00851}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2602.00851v4}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Kim et~al\mbox{.}(2026)]%
+        {kim2026agenticshop}
+\bibfield{author}{\bibinfo{person}{Sunghwan Kim}, \bibinfo{person}{Ryang Heo},
+  \bibinfo{person}{Yongsik Seo}, \bibinfo{person}{Jinyoung Yeo}, {and}
+  \bibinfo{person}{Dongha Lee}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \showarticletitle{AgenticShop: Benchmarking Agentic Product Curation
+  for Personalized Web Shopping}. In \bibinfo{booktitle}{\emph{Proceedings of
+  the ACM Web Conference 2026}}. \bibinfo{publisher}{ACM},
+  \bibinfo{pages}{2489--2500}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3774904.3792724}
+\showDOI{\tempurl}
+
+
+\bibitem[Kommers et~al\mbox{.}(2025)]%
+        {kommers2025slop}
+\bibfield{author}{\bibinfo{person}{Cody Kommers}, \bibinfo{person}{Eamon
+  Duede}, \bibinfo{person}{Julia Gordon}, \bibinfo{person}{Ari Holtzman},
+  \bibinfo{person}{Tess McNulty}, \bibinfo{person}{Spencer Stewart},
+  \bibinfo{person}{Lindsay Thomas}, \bibinfo{person}{Richard~Jean So}, {and}
+  \bibinfo{person}{Hoyt Long}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{Why Slop Matters}.
+\newblock \bibinfo{howpublished}{arXiv:2601.06060}.
+\newblock
+\showeprint[arxiv]{2601.06060}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2601.06060v1}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Li et~al\mbox{.}(2026)]%
+        {li2026when}
+\bibfield{author}{\bibinfo{person}{Haozhang Li}, \bibinfo{person}{Yangguang
+  Shao}, \bibinfo{person}{Xinjie Lin}, \bibinfo{person}{Zhong Guan},
+  \bibinfo{person}{Mi Zhou}, {and} \bibinfo{person}{Junzheng Shi}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{When Optimization Becomes Manipulation: Defending
+  Generative Search against Malicious Generative Engine Optimization}.
+\newblock \bibinfo{howpublished}{arXiv:2609.02964}.
+\newblock
+\showeprint[arxiv]{2609.02964}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2609.02964v1}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Lyu et~al\mbox{.}(2025)]%
+        {lyu2025deepshop}
+\bibfield{author}{\bibinfo{person}{Yougang Lyu}, \bibinfo{person}{Xiaoyu
+  Zhang}, \bibinfo{person}{Lingyong Yan}, \bibinfo{person}{Maarten de Rijke},
+  \bibinfo{person}{Zhaochun Ren}, {and} \bibinfo{person}{Xiuying Chen}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{DeepShop: A Benchmark for Deep Research Shopping
+  Agents}.
+\newblock \bibinfo{howpublished}{arXiv:2506.02839}.
+\newblock
+\showeprint[arxiv]{2506.02839}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2506.02839v1}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Nimase et~al\mbox{.}(2026)]%
+        {nimase2026geobench}
+\bibfield{author}{\bibinfo{person}{Ojas Nimase}, \bibinfo{person}{Zhe Chen},
+  \bibinfo{person}{Gengpei Qi}, \bibinfo{person}{Yue Zhao}, {and}
+  \bibinfo{person}{Xiyang Hu}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{GEO-Bench: Benchmarking Ranking Manipulation in
+  Generative Engine Optimization}.
+\newblock \bibinfo{howpublished}{arXiv:2605.29107}.
+\newblock
+\showeprint[arxiv]{2605.29107}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2605.29107v2}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Nishal et~al\mbox{.}(2026)]%
+        {nishal2026slop}
+\bibfield{author}{\bibinfo{person}{Sachita Nishal}, \bibinfo{person}{Marijn
+  Sax}, {and} \bibinfo{person}{Kimon Kieslich}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \showarticletitle{Why AI Slop Matters, but Not Like That}.
+\newblock \bibinfo{journal}{\emph{ACM AI Letters}} \bibinfo{volume}{1},
+  \bibinfo{number}{3} (\bibinfo{year}{2026}), \bibinfo{pages}{1--7}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3828758}
+\showDOI{\tempurl}
+
+
+\bibitem[Oh et~al\mbox{.}(2026)]%
+        {oh2026science}
+\bibfield{author}{\bibinfo{person}{Yerim Oh}, \bibinfo{person}{Young-Jun Lee},
+  \bibinfo{person}{Jaewoo Ahn}, \bibinfo{person}{Gunhee Kim}, {and}
+  \bibinfo{person}{Dongyeop Kang}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{Science or Slop?: Benchmarking and Mitigating
+  Scientific Slop in AI-Generated Papers}.
+\newblock \bibinfo{howpublished}{arXiv:2610.00531}.
+\newblock
+\showeprint[arxiv]{2610.00531}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2610.00531v1}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Peeters et~al\mbox{.}(2026)]%
+        {peeters2025webmall}
+\bibfield{author}{\bibinfo{person}{Ralph Peeters}, \bibinfo{person}{Aaron
+  Steiner}, \bibinfo{person}{Luca Schwarz}, \bibinfo{person}{Julian~Yuya
+  Caspary}, {and} \bibinfo{person}{Christian Bizer}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \showarticletitle{WebMall -- A Multi-Shop Benchmark for Evaluating
+  Web Agents}. In \bibinfo{booktitle}{\emph{Proceedings of the 49th
+  International ACM SIGIR Conference on Research and Development in Information
+  Retrieval}}. \bibinfo{publisher}{ACM}, \bibinfo{pages}{3342--3348}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3805712.3808592}
+\showDOI{\tempurl}
+
+
+\bibitem[Qiu et~al\mbox{.}(2026)]%
+        {qiu2026belief}
+\bibfield{author}{\bibinfo{person}{Haoyi Qiu}, \bibinfo{person}{Genglin Liu},
+  \bibinfo{person}{Pranav~Narayanan Venkit}, \bibinfo{person}{Kung-Hsiang
+  Huang}, \bibinfo{person}{Saadia Gabriel}, \bibinfo{person}{Chien-Sheng Wu},
+  {and} \bibinfo{person}{Nanyun Peng}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{Belief Cascades Drive Persuasion in LLM Agent
+  Networks}.
+\newblock \bibinfo{howpublished}{arXiv:2608.25152}.
+\newblock
+\showeprint[arxiv]{2608.25152}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2608.25152v1}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Russell et~al\mbox{.}(2026)]%
+        {russell2026much}
+\bibfield{author}{\bibinfo{person}{Jenna Russell}, \bibinfo{person}{Ben
+  Glickenhaus}, \bibinfo{person}{Katherine Thai}, \bibinfo{person}{John
+  Wieting}, \bibinfo{person}{Mohit Iyyer}, \bibinfo{person}{Max Spero}, {and}
+  \bibinfo{person}{Bradley Emi}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{How Much Is an AI Token Worth? Scaling Laws for Wild
+  AI-Generated Web Text}.
+\newblock \bibinfo{howpublished}{arXiv:2609.40295}.
+\newblock
+\showeprint[arxiv]{2609.40295}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2609.40295v1}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Shah and Ozgur(2026)]%
+        {shah2026synthetic}
+\bibfield{author}{\bibinfo{person}{Shrey Shah} {and} \bibinfo{person}{Levent
+  Ozgur}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{The Synthetic Web: Adversarially-Curated
+  Mini-Internets for Diagnosing Epistemic Weaknesses of Language Agents}.
+\newblock \bibinfo{howpublished}{arXiv:2603.00801}.
+\newblock
+\showeprint[arxiv]{2603.00801}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2603.00801v2}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Syros et~al\mbox{.}(2026)]%
+        {syros2026muzzle}
+\bibfield{author}{\bibinfo{person}{Georgios Syros}, \bibinfo{person}{Evan
+  Rose}, \bibinfo{person}{Brian Grinstead}, \bibinfo{person}{Christoph
+  Kerschbaumer}, \bibinfo{person}{William Robertson}, \bibinfo{person}{Cristina
+  Nita-Rotaru}, {and} \bibinfo{person}{Alina Oprea}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{MUZZLE: Adaptive Agentic Red-Teaming of Web Agents
+  Against Indirect Prompt Injection Attacks}.
+\newblock \bibinfo{howpublished}{arXiv:2602.09222}.
+\newblock
+\showeprint[arxiv]{2602.09222}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2602.09222v2}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Wu et~al\mbox{.}(2026)]%
+        {wu2026empirical}
+\bibfield{author}{\bibinfo{person}{Stanley Wu}, \bibinfo{person}{Josephine
+  Passananti}, \bibinfo{person}{Viresh Mittal}, \bibinfo{person}{Wenxin Ding},
+  \bibinfo{person}{Haitao Zheng}, {and} \bibinfo{person}{Ben~Y. Zhao}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{An Empirical Analysis of AI Slop in Music Streaming}.
+\newblock \bibinfo{howpublished}{arXiv:2606.18052}.
+\newblock
+\showeprint[arxiv]{2606.18052}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2606.18052v1}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Wu et~al\mbox{.}(2025)]%
+        {wu2025what}
+\bibfield{author}{\bibinfo{person}{Yujiang Wu}, \bibinfo{person}{Shanshan
+  Zhong}, \bibinfo{person}{Yubin Kim}, {and} \bibinfo{person}{Chenyan Xiong}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{What Generative Search Engines Like and How to
+  Optimize Web Content Cooperatively}.
+\newblock \bibinfo{howpublished}{arXiv:2510.11438}.
+\newblock
+\showeprint[arxiv]{2510.11438}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2510.11438v1}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Yang et~al\mbox{.}(2026)]%
+        {yang2026zombie}
+\bibfield{author}{\bibinfo{person}{Xianglin Yang}, \bibinfo{person}{Yufei He},
+  \bibinfo{person}{Shuo Ji}, \bibinfo{person}{Bryan Hooi}, {and}
+  \bibinfo{person}{Jin~Song Dong}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{Zombie Agents: Persistent Control of Self-Evolving
+  LLM Agents via Self-Reinforcing Injections}.
+\newblock \bibinfo{howpublished}{arXiv:2602.15654}.
+\newblock
+\showeprint[arxiv]{2602.15654}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2602.15654v2}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Yao et~al\mbox{.}(2022)]%
+        {yao2022webshop}
+\bibfield{author}{\bibinfo{person}{Shunyu Yao}, \bibinfo{person}{Howard Chen},
+  \bibinfo{person}{John Yang}, {and} \bibinfo{person}{Karthik Narasimhan}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{WebShop: Towards Scalable Real-World Web
+  Interaction with Grounded Language Agents}. In
+  \bibinfo{booktitle}{\emph{Advances in Neural Information Processing Systems
+  35 (NeurIPS 2022)}}.
+\newblock
+\showeprint[arxiv]{2207.01206}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2207.01206v4}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Yao et~al\mbox{.}(2023)]%
+        {yao2022react}
+\bibfield{author}{\bibinfo{person}{Shunyu Yao}, \bibinfo{person}{Jeffrey Zhao},
+  \bibinfo{person}{Dian Yu}, \bibinfo{person}{Nan Du}, \bibinfo{person}{Izhak
+  Shafran}, \bibinfo{person}{Karthik Narasimhan}, {and} \bibinfo{person}{Yuan
+  Cao}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{ReAct: Synergizing Reasoning and Acting in Language
+  Models}. In \bibinfo{booktitle}{\emph{Proceedings of the Eleventh
+  International Conference on Learning Representations (ICLR 2023)}}.
+\newblock
+\showeprint[arxiv]{2210.03629}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2210.03629v3}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Yu et~al\mbox{.}(2026a)]%
+        {yu2026retrieval}
+\bibfield{author}{\bibinfo{person}{Hongyeon Yu}, \bibinfo{person}{Dongchan
+  Kim}, {and} \bibinfo{person}{Young-Bum Kim}.}
+  \bibinfo{year}{2026}\natexlab{a}.
+\newblock \showarticletitle{Retrieval Collapses When AI Pollutes the Web}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the ACM Web Conference 2026}}.
+  \bibinfo{publisher}{ACM}, \bibinfo{pages}{8745--8748}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3774904.3792955}
+\showDOI{\tempurl}
+
+
+\bibitem[Yu et~al\mbox{.}(2026b)]%
+        {yu2026structural}
+\bibfield{author}{\bibinfo{person}{Junwei Yu}, \bibinfo{person}{Mufeng Yang},
+  \bibinfo{person}{Yepeng Ding}, {and} \bibinfo{person}{Hiroyuki Sato}.}
+  \bibinfo{year}{2026}\natexlab{b}.
+\newblock \bibinfo{title}{Structural Feature Engineering for Generative Engine
+  Optimization: How Content Structure Shapes Citation Behavior}.
+\newblock \bibinfo{howpublished}{arXiv:2603.29979}.
+\newblock
+\showeprint[arxiv]{2603.29979}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2603.29979v1}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Zheng et~al\mbox{.}(2026)]%
+        {zheng2026countergeobench}
+\bibfield{author}{\bibinfo{person}{Bing Zheng}, \bibinfo{person}{Zongyao Zhao},
+  {and} \bibinfo{person}{Wenming Yang}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{Counter-GEO-Bench: Evaluating Defenses Against
+  Information-Distorting Generative Engine Optimization}.
+\newblock \bibinfo{howpublished}{arXiv:2609.02316}.
+\newblock
+\showeprint[arxiv]{2609.02316}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2609.02316v1}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Zhou et~al\mbox{.}(2026a)]%
+        {zhou2026ifgeo}
+\bibfield{author}{\bibinfo{person}{Heyang Zhou}, \bibinfo{person}{JiaJia Chen},
+  \bibinfo{person}{Xiaolu Chen}, \bibinfo{person}{Jie Bao},
+  \bibinfo{person}{Zhen Chen}, {and} \bibinfo{person}{Yong Liao}.}
+  \bibinfo{year}{2026}\natexlab{a}.
+\newblock \bibinfo{title}{IF-GEO: Conflict-Aware Instruction Fusion for
+  Multi-Query Generative Engine Optimization}.
+\newblock \bibinfo{howpublished}{arXiv:2601.13938}.
+\newblock
+\showeprint[arxiv]{2601.13938}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2601.13938v1}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Zhou et~al\mbox{.}(2026b)]%
+        {zhou2026epistemic}
+\bibfield{author}{\bibinfo{person}{Ruiwen Zhou}, \bibinfo{person}{Maojia Song},
+  \bibinfo{person}{Xiaobao Wu}, \bibinfo{person}{Sitao Cheng},
+  \bibinfo{person}{Xunjian Yin}, \bibinfo{person}{Yuxi Xie},
+  \bibinfo{person}{Zhuoqun Hao}, \bibinfo{person}{Wenyue Hua},
+  \bibinfo{person}{Liangming Pan}, \bibinfo{person}{Soujanya Poria}, {and}
+  \bibinfo{person}{Min-Yen Kan}.} \bibinfo{year}{2026}\natexlab{b}.
+\newblock \bibinfo{title}{Epistemic Context Learning: Building Trust the Right
+  Way in LLM-Based Multi-Agent Systems}.
+\newblock \bibinfo{howpublished}{arXiv:2601.21742}.
+\newblock
+\showeprint[arxiv]{2601.21742}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2601.21742v1}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Zhu et~al\mbox{.}(2026)]%
+        {zhu2026humans}
+\bibfield{author}{\bibinfo{person}{Shuqi Zhu}, \bibinfo{person}{Yi Zhong},
+  \bibinfo{person}{Ziyi Ye}, \bibinfo{person}{Bangde Du},
+  \bibinfo{person}{Yujia Zhou}, \bibinfo{person}{Qingyao Ai}, {and}
+  \bibinfo{person}{Yiqun Liu}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{How do Humans Process AI-generated Hallucination
+  Contents: a Neuroimaging Study}.
+\newblock \bibinfo{howpublished}{arXiv:2605.16953}.
+\newblock
+\showeprint[arxiv]{2605.16953}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2605.16953v2}
+\showURL{%
+\tempurl}
+
+
+\end{thebibliography}
