@@ -1,0 +1,65 @@
++ cd /root/synthflood/code
++ export HF_HUB_OFFLINE=1
++ HF_HUB_OFFLINE=1
++ mkdir -p /root/synthflood/archive
+++ date -u +%FT%TZ
++ echo '== wave1e start 2026-10-12T05:11:12Z =='
+== wave1e start 2026-10-12T05:11:12Z ==
++ wait_port 8000
+++ seq 1 120
++ for i in $(seq 1 120)
++ curl -s localhost:8000/v1/models
++ grep -q '"data"'
++ return 0
++ for R in 35 65
++ mv -f /root/synthflood/results/p4i_spoof35_sweep.csv /root/synthflood/archive/
+++ date -u +%FT%TZ
++ echo '== spoof35 start 2026-10-12T05:11:12Z =='
+== spoof35 start 2026-10-12T05:11:12Z ==
++ python3 -m synthflood.run_sweep --stage P4I_SPOOF35 --n-tasks 40 --eps 0.75 --family mix --seed 1 --defense provenance --spoof 0.35 --workers 32
+++ date -u +%FT%TZ
++ echo '== spoof35 done 2026-10-12T05:13:36Z rc=0 =='
+== spoof35 done 2026-10-12T05:13:36Z rc=0 ==
++ for R in 35 65
++ mv -f /root/synthflood/results/p4i_spoof65_sweep.csv /root/synthflood/archive/
+++ date -u +%FT%TZ
++ echo '== spoof65 start 2026-10-12T05:13:36Z =='
+== spoof65 start 2026-10-12T05:13:36Z ==
++ python3 -m synthflood.run_sweep --stage P4I_SPOOF65 --n-tasks 40 --eps 0.75 --family mix --seed 1 --defense provenance --spoof 0.65 --workers 32
+++ date -u +%FT%TZ
++ echo '== spoof65 done 2026-10-12T05:16:04Z rc=0 =='
+== spoof65 done 2026-10-12T05:16:04Z rc=0 ==
++ kill_vllm
++ pkill -f vllm
++ sleep 8
++ pkill -9 -f vllm
++ true
++ sleep 7
++ export HF_HUB_OFFLINE=0
++ HF_HUB_OFFLINE=0
++ python3 -
++ export HF_HUB_OFFLINE=1
++ HF_HUB_OFFLINE=1
++ wait_port 8001
++ nohup python3 -m vllm.entrypoints.openai.api_server --model NousResearch/Meta-Llama-3.1-8B-Instruct --port 8001 --max-model-len 16384 --gpu-memory-utilization 0.92 --enforce-eager
+++ seq 1 120
++ for i in $(seq 1 120)
++ curl -s localhost:8001/v1/models
++ grep -q '"data"'
++ sleep 10
++ for i in $(seq 1 120)
++ curl -s localhost:8001/v1/models
++ grep -q '"data"'
++ sleep 10
++ for i in $(seq 1 120)
++ curl -s localhost:8001/v1/models
++ grep -q '"data"'
++ sleep 10
++ for i in $(seq 1 120)
++ curl -s localhost:8001/v1/models
++ grep -q '"data"'
++ sleep 10
++ for i in $(seq 1 120)
++ curl -s localhost:8001/v1/models
++ grep -q '"data"'
++ sleep 10

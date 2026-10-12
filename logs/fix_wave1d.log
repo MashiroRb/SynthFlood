@@ -1,0 +1,13 @@
+== wave1d start 2026-10-12T02:56:36Z ==
+loading cached products from /root/synthflood/data/all_products.pkl
+{"clone_price_set": {"90": 344, "80": 344, "70": 344}}
+== price dose f=0.90 start 2026-10-12T02:57:41Z ==
+loading cached products from /root/synthflood/data/all_products.pkl
+{"n": 300, "k_synth": 117, "susceptibility": 0.39, "ci95": [0.3365, 0.4463], "gate": "NO-GO"}
+== price dose f=0.80 start 2026-10-12T03:01:12Z ==
+loading cached products from /root/synthflood/data/all_products.pkl
+{"n": 300, "k_synth": 122, "susceptibility": 0.4067, "ci95": [0.3526, 0.4631], "gate": "NO-GO"}
+== price dose f=0.70 start 2026-10-12T03:04:49Z ==
+loading cached products from /root/synthflood/data/all_products.pkl
+{"n": 300, "k_synth": 118, "susceptibility": 0.3933, "ci95": [0.3397, 0.4496], "gate": "NO-GO"}
+== WAVE1D_DONE 2026-10-12T03:08:34Z ==
