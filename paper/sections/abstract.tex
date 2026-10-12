@@ -26,7 +26,9 @@ background: at $\varepsilon=0.75$, task success drops 23\,pp
 surface. Third, an agent-visible badge computed from a noisy
 verifiable-provenance bit eliminates the regret excess, remains unchanged
 from 15\% to 65\% badge forgery, and matches a perfect-provenance oracle
-when implemented as a \emph{text-free structural} detector; but the same
+when implemented as a \emph{text-free structural} detector --- a detector
+that fingerprint-free regeneration weakens only partially ($28\%$ of its
+recovery) while provenance stays intact; but the same
 information consumed as a soft ranking bonus fails until its weight exceeds
 the rating scale --- provenance must order candidates, not score them. We
 release protocol, code, contamination pools, and full trajectory logs.
@@ -34,5 +36,5 @@ These results recast ambient synthetic content as an attack on the agent's
 \emph{preference function} rather than its perception, and call for
 provenance-ordered ranking as a first-class interface contract between the
 Web and the agents that act on it.
-% numbers verified against results_csv ledger (2026-10-12); stealth-pool
-% arm (A8) pending, reported only in Results/Discussion.
+% numbers verified against results_csv ledger (2026-10-12); all arms
+% including stealth pool (A8) final.

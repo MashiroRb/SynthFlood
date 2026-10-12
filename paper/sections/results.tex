@@ -259,8 +259,15 @@ generator template fingerprints (superlatives, bullet-length symmetry,
 \texttt{X:Y} spec lines, review boilerplate). Regenerating the pool with
 fingerprint-free prompts (``stealth'' style: no marketing adjectives,
 naturally varied bullets, prose-form specifications, humanlike reviews)
-and re-running the battery gives \stealthresult{}; we discuss the
-implications for the detection arms race in \S\ref{sec:discussion}.
+makes the attack itself slightly milder (unprotected regret $0.425$ vs.\
+$0.443$ on the original pool) and partially degrades the detector: its
+regret recovery falls from $0.193$ to $0.138$ --- a $28\%$ loss, though
+the remaining recovery is still significant (paired Wilcoxon $p=0.022$).
+The provenance badge is untouched by the stylistic shift: its recovery is
+$0.152$ on the stealth pool versus $0.114$ on the original one, exactly
+as expected for a defense that never reads the text. The arms race
+against content-based detection is thus real but gradual, while the
+provenance channel is structurally immune to it.
 
 \begin{table}[t]
 \centering
