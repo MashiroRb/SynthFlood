@@ -1,26 +1,24 @@
 #!/bin/bash
 # wave-1e: E5 spoof envelope 35/65 (Qwen) -> A8 stealth pool (Llama swap)
-#          -> struct/prov/none rerun on stealth pool (Qwen swap back).
-# Queue log: /root/fix_wave1e.log   Done marker: "WAVE1E_DONE"
+#          -> none/struct/prov rerun on stealth pool (Qwen swap back).
+# Output naming: {stage}.lower()_sweep.csv.  Done marker: "WAVE1E_DONE"
 set -x
 cd /root/synthflood/code
 export HF_HUB_OFFLINE=1
 mkdir -p /root/synthflood/archive
 wait_port() { for i in $(seq 1 120); do curl -s "localhost:$1/v1/models" | grep -q '"data"' && return 0; sleep 10; done; echo "PORT_${1}_TIMEOUT"; return 1; }
-kill_vllm() { pkill -f "vllm serve" || true; sleep 8; pkill -9 -f "vllm serve" || true; sleep 7; }
+kill_vllm() { pkill -f "vllm" || true; sleep 8; pkill -9 -f "vllm" || true; sleep 7; }
 
 echo "== wave1e start $(date -u +%FT%TZ) =="
 
 # ---------- Stage 1: E5 spoof 35/65 with Qwen ----------
 wait_port 8000 || exit 1
 for R in 35 65; do
-  S=0.${R}
-  mv -f /root/synthflood/results/p4i_spoof${R}.csv /root/synthflood/archive/ 2>/dev/null
+  mv -f /root/synthflood/results/p4i_spoof${R}_sweep.csv /root/synthflood/archive/ 2>/dev/null
   echo "== spoof${R} start $(date -u +%FT%TZ) =="
   python3 -m synthflood.run_sweep --stage P4I_SPOOF${R} --n-tasks 40 \
-    --eps 0.75 --family mix --seed 1 --defense provenance --spoof $S \
-    --workers 32 --out /root/synthflood/results/p4i_spoof${R}.csv \
-    >> /root/synthflood/logs/run_fix5.log 2>&1
+    --eps 0.75 --family mix --seed 1 --defense provenance --spoof 0.${R} \
+    --workers 32 >> /root/synthflood/logs/run_fix5.log 2>&1
   echo "== spoof${R} done $(date -u +%FT%TZ) rc=$? =="
 done
 
@@ -60,16 +58,15 @@ nohup python3 -m vllm.entrypoints.openai.api_server \
 wait_port 8000 || exit 1
 
 # ---------- Stage 4: rerun defenses on stealth pool ----------
-for ARM in none:0.75:p4m_none_stealth struct:0.75:p4m_struct_stealth provenance:0.75:p4m_prov_stealth; do
-  D=${ARM%%:*}; REST=${ARM#*:}; E=${REST%%:*}; OUT=${REST#*:}
-  mv -f /root/synthflood/results/${OUT}.csv /root/synthflood/archive/ 2>/dev/null
-  echo "== ${OUT} start $(date -u +%FT%TZ) =="
-  python3 -m synthflood.run_sweep --stage P4M --n-tasks 40 --eps $E \
+for ARM in P4M_NONE_ST:none P4M_STRUCT_ST:struct P4M_PROV_ST:provenance; do
+  ST=${ARM%%:*}; D=${ARM#*:}
+  mv -f /root/synthflood/results/${ST,,}_sweep.csv /root/synthflood/archive/ 2>/dev/null
+  echo "== ${ST} start $(date -u +%FT%TZ) =="
+  python3 -m synthflood.run_sweep --stage $ST --n-tasks 40 --eps 0.75 \
     --family mix --seed 1 --defense $D \
     --pool /root/synthflood/data/contamination/pool_stealth.json \
-    --workers 32 --out /root/synthflood/results/${OUT}.csv \
-    >> /root/synthflood/logs/run_fix5.log 2>&1
-  echo "== ${OUT} done $(date -u +%FT%TZ) rc=$? =="
+    --workers 32 >> /root/synthflood/logs/run_fix5.log 2>&1
+  echo "== ${ST} done $(date -u +%FT%TZ) rc=$? =="
 done
 
 echo "== WAVE1E_DONE $(date -u +%FT%TZ) =="
