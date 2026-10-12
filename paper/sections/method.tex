@@ -89,6 +89,27 @@ item; the defense re-ranks by this bit alone, never seeing labels);
 \textbf{oracle} (perfect re-ranking, an upper bound). Defenses are evaluated
 on regret recovery relative to \texttt{none} at matched contamination.
 
+\subsection{Channel ablations and defense stress tests}
+\label{sec:method-ablations}
+To attribute the probe's clone result to specific listing channels, we
+re-run the forced-choice protocol with surgical edits to the synthetic
+clone only: \textbf{price parity} (clone re-priced exactly at the gold
+price), \textbf{rating parity} (rating and review count reset to the gold
+listing's genuine values), and \textbf{both}; a fourth dose series fixes
+the clone's price at a fraction $f\in\{0.9,0.8,0.7\}$ of the gold price.
+Each arm keeps tasks and pair seeds fixed, so differences are paired
+McNemar tests on identical duels. On the defense side we add three stress
+tests: a \textbf{soft-ordering sweep} re-implementing the provenance bit
+as an additive bonus $\lambda\cdot\mathbb{1}[\text{verified}]$,
+$\lambda\in\{0.5,\dots,8\}$; a \textbf{forgery envelope} letting the
+adversary forge the badge on $s\in\{25,35,50,65\}\%$ of synthetic
+listings; and a \textbf{naive popularity baseline} ranking by
+rating$\times\log$(review count). Finally, to probe the structural
+detector's reliance on generator fingerprints, a \textbf{stealth pool} is
+regenerated with fingerprint-free prompts (no marketing adjectives,
+naturally varied bullet lengths, prose-form specifications, humanlike
+reviews) and the defense battery re-run on it.
+
 \subsection{Gated execution}
 \label{sec:method-gates}
 All stages are run under a pre-registered gate discipline: P0 (pipeline
