@@ -11,7 +11,10 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
-RES = os.path.join(ROOT, "results_csv")
+RES = os.environ.get("SYNTHFLOOD_RESULTS") or os.path.join(
+    os.path.dirname(ROOT), "repo_clone", "results_csv")
+if not os.path.isdir(RES):
+    RES = os.path.join(ROOT, "results_csv")
 TEX = os.path.join(ROOT, "paper", "sections")
 
 
@@ -26,6 +29,13 @@ def mean(xs):
     return sum(xs) / len(xs) if xs else float("nan")
 
 
+def fnum(x, default=None):
+    try:
+        return float(x)
+    except (TypeError, ValueError):
+        return default
+
+
 def ledger():
     L = {}
     # main dose-response (p4a mix cseed=1)
@@ -34,7 +44,7 @@ def ledger():
         c = [r for r in a if float(r["eps"]) == float(e)]
         L[f"mix@{e} success"] = round(mean([int(r["success_full"]) for r in c]), 3)
         L[f"mix@{e} regret"] = round(mean([1 - float(r["reward"]) for r in c]), 3)
-        L[f"mix@{e} conf"] = round(mean([float(r["confidence"]) for r in c]), 3)
+        L[f"mix@{e} conf"] = round(mean([fnum(r["confidence"], 0.0) for r in c if fnum(r["confidence"]) is not None]), 3)
         L[f"mix@{e} n"] = len(c)
     # P1 forced choice per family
     p1 = rows("p1_forced_choice.csv")
