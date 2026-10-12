@@ -1,7 +1,5 @@
 \section{Introduction}
 \label{sec:intro}
-% numbers finalized from P1 v4 + P4A/E + P4C outputs (2026-10-10).
-
 Web agents have crossed from demos to deployment: they shop, book, and
 compare on our behalf, turning the Web's product pages from artifacts that
 \emph{inform humans} into signals that \emph{direct machine decisions}. At
@@ -56,7 +54,7 @@ randomized duels, yielding a single interpretable number $\sigma$ --- the
 probability that an agent buys the machine-optimized page over the correct
 product when nothing else competes. Second, a \emph{dose--response curve}:
 success, regret, and calibration as functions of the contamination share
-$\varepsilon\in\{0,0.1,0.25,0.5,0.75\}$, with McNemar tests on paired tasks.
+$\varepsilon\in\{0,0.25,0.5,0.75\}$, with McNemar tests on paired tasks.
 Our silent-erosion hypothesis predicts a characteristic signature here:
 regret rises steeply while coarse success appears stable, because partial
 mismatches (wrong attributes, overpayment) are invisible in success counts.
@@ -79,7 +77,8 @@ Our contributions are:
       dose--response yields a threshold law: any discount $\geq 10\%$
       flips the majority to the clone ($0.386\!\to\!0.591$, $p=0.003$),
       with no further gain at deeper discounts.
-\item \textbf{The first decision-level dose--response evidence} that ambient
+\item \textbf{To our knowledge, the first decision-level
+      dose--response evidence} that ambient
       contamination erodes agent economics: at $\varepsilon=0.75$, success
       drops by $23$\,pp ($p=1.3\times10^{-4}$; $p=1.2\times10^{-8}$ pooled
       over two seeds) and regret rises $69\%$ (paired $\Delta=+0.181$,
@@ -87,15 +86,16 @@ Our contributions are:
       error doubles --- errors that no success metric would surface.
 \item \textbf{A defense analysis with an ordering principle}: an
       agent-visible noisy provenance badge eliminates the regret excess,
-      is unchanged from 15\% to 65\% badge forgery, and a text-free
-      structural detector statistically matches a perfect-provenance
-      oracle ($p=0.21$); but consuming the same bit as a soft ranking
+      is unchanged under badge forgery up to $65\%$, and a text-free
+      structural detector is statistically indistinguishable from a
+      perfect-provenance oracle in paired runs ($p=0.21$); but consuming the same bit as a soft ranking
       bonus fails until its weight exceeds the rating scale
       ($\lambda\leq 4$ all fail, $\lambda=8$ recovers fully) --- and a
       naive popularity ranking \emph{backfires}, raising synthetic
       purchases to 67.5\%.
 \end{itemize}
-We release all code, contamination pools, and full trajectory logs. The
+An anonymized package with all code, contamination pools, and full
+trajectory logs accompanies the submission. The
 remainder of the paper formalizes the threat model
 (\S\ref{sec:problem}), presents the protocol (\S\ref{sec:method}), reports
 results (\S\ref{sec:results}), discusses implications and limitations

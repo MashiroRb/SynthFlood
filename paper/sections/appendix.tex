@@ -34,6 +34,7 @@ of 20 (reviews family) or 6 (others). An archived pre-fix pool with a
 \$50 price anchor is released as an ablation.
 
 \subsection{Gate outcomes}
+\label{app:gate}
 P0: success $0.65$ at $\varepsilon=0$, zero malformed actions, 18/20 tasks
 exactly reproducible under greedy decoding (two flips attributable to
 continuous-batching numerics). P1 (final, corrected pool): $\sigma=0.377$
@@ -48,7 +49,8 @@ versus gloss significantly rejected), which redirected the study from
 measurement after the probe was pre-registered against this revised
 premise, and the original gate text is preserved in the repository. P2 (gate run, 40 paired tasks): success $0.525\to0.450$,
 regret $0.338\to0.398$, confidence $0.783\to0.862$ at $\varepsilon=0.75$
-versus $0$. P4A (main curve, $N{=}100$ per dose): success
+versus $0$. The main dose--response curve ($N{=}100$ per dose)
+yields: success
 $0.590\to0.360$ (McNemar $p=1.3\times10^{-4}$), regret $0.262\to0.443$
 (paired $\Delta=+0.181$, CI $[+0.095,+0.264]$), confidence $0.822\to0.875$,
 ECE $0.249\to0.496$; P4E replicates the endpoints under a second
@@ -58,6 +60,7 @@ dictionaries leaking into rendered pages) and a price-anchoring bug; both
 are documented with their data in the repository.
 
 \subsection{Power and multiple comparisons}
+\label{app:power}
 The paired regret difference at $\varepsilon=0.75$ has task-level SD
 $\approx0.43$; at $N=100$ per dose the endpoint McNemar test detects the
 observed success drop ($p=1.3\times10^{-4}$), and pooling the second seed
@@ -68,3 +71,31 @@ p-values. We do not over-claim single small deltas; the interpretation
 rests on the joint pattern across outcomes (success, regret, purchase
 share, confidence, calibration) and its replication across families,
 backbones, scales, and defenses.
+
+\paragraph{Family-wise correction.} Applying Holm--Bonferroni across the
+eleven confirmatory tests reported in the paper leaves the two headline
+dose contrasts unambiguous (pooled success: adjusted $p=1.3\times10^{-7}$;
+full-parity probe: adjusted $p=1.0\times10^{-3}$) and the $10\%$-discount
+threshold (adjusted $p=0.023$); the remaining channel comparisons
+(price parity, rating parity, provenance-vs-none, stealth recovery, the
+$s{=}25\%$ envelope point) survive uncorrected but not Holm-corrected
+(adjusted $p\in[0.072,0.078]$). We therefore state the decomposition as a
+convergent joint pattern --- two channels of nearly equal magnitude, an
+additive account, and an independent threshold law that reaches the same
+conclusion --- rather than as a collection of individually significant
+contrasts.
+
+\paragraph{Equivalence at saturation.} The pricing-threshold claim that
+``deeper discounts add nothing'' is supported by two-proportion tests
+against the $10\%$ point ($20\%$: $p=0.45$; $30\%$: $p=0.76$; $20\%$ vs.\
+$30\%$: $p=0.65$; $n{=}88$ per arm). These are non-significance results
+with modest power; we phrase the claim as saturation of the observed
+response rather than as a strict equivalence bound.
+
+\paragraph{Structural detector vs.\ oracle.} With $n{=}40$ paired tasks,
+the minimal detectable regret difference at two-sided $\alpha=0.05$ and
+$80\%$ power is roughly $0.11$ --- larger than the observed
+oracle--struct gap ($0.171$ vs.\ $0.250$). The correct reading is that
+structural filtering recovers at least the full regret excess
+($0.398\to0.250$, below the uncontaminated $0.338$), and that our runs
+cannot distinguish it from the oracle; we do not claim equality.

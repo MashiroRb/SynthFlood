@@ -76,7 +76,8 @@ $p=0.004$) --- all discount levels sit within noise of the original
 mixed-discount pool ($0.523$). Figure~\ref{fig:mech}b plots the response.
 In deployment terms, \emph{any} meaningful discount suffices for the
 attack; the agent's price sensitivity saturates immediately past the
-threshold.
+threshold (the deeper-discount points are statistically indistinguishable
+from the $10\%$ point: two-proportion $p\geq0.45$).
 
 \begin{figure*}[t]
 \centering
@@ -92,7 +93,7 @@ pool level. Error bars: Wilson 95\% CIs; dotted line: chance.}
 \Description{Panel (a): bars of clone win-rate under price, rating, and full parity ablations. Panel (b): clone win-rate versus discount level showing the ten-percent threshold.}
 \end{figure*}
 
-\subsection{Dose--response: success flat, regret and confidence climb}
+\subsection{Dose--response: regret outruns success}
 \label{sec:res-dose}
 Figure~\ref{fig:dose} and Table~\ref{tab:dose} give the main curve over the
 effective dose grid $\varepsilon\in\{0,0.25,0.5,0.75\}$ (with $N{=}10$
@@ -141,10 +142,13 @@ $\varepsilon$ & Success & S@0.8 & Regret & Synth.\ bought & Conf. & ECE \\
 \begin{figure*}[t]
 \centering
 \includegraphics[width=\textwidth]{figures/dose_response.pdf}
-\caption{Dose--response under ambient contamination: task success, regret,
-synthetic-purchase share, and mean confidence as functions of the
-contamination level $\varepsilon$ (mix families; $N{=}100$ tasks per dose;
-error bars = 95\% cluster-bootstrap CIs over tasks).}
+\caption{Dose--response under ambient contamination: task success,
+regret, synthetic-purchase share, mean confidence, and expected
+calibration error as functions of the contamination level $\varepsilon$
+(mix families; $N{=}100$ tasks per dose on the seed-1 pool; an
+independent seed-2 pool replicates the endpoints, \S\ref{app:gate});
+error bars: Wilson 95\% CIs on success and normal-approximation 95\% CIs
+on regret.}
 \label{fig:dose}
 \Description{Line charts of task success, regret, synthetic-purchase share, and confidence versus contamination level.}
 \end{figure*}

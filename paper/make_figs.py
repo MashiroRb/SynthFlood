@@ -58,10 +58,10 @@ def ece(rows, bins=5):
     return e
 
 # ---------------- dose–response (two panels) ----------------
-a = sweep("p4a_sweep.csv"); e2 = sweep("p4e_sweep.csv")
+a = sweep("p4a_sweep.csv")  # seed-1 pool only, matches Table 2 and headline text
 eps_order = [0.0, 0.25, 0.5, 0.75]
 def pooled(ep):
-    return a.get(ep, []) + e2.get(ep, [])
+    return a.get(ep, [])
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(7.0, 2.5))
 # panel 1: success + regret vs eps
 xs = eps_order
