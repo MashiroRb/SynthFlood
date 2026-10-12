@@ -59,7 +59,7 @@
 - [x] C3 PPR λ 重排实现（defenses.py defense=ppr，u=rating+λ·1[prov_ok]，稳定排序）
 - [x] C4 spoof 参数化（run_sweep --spoof；defenses 加 reviewtrust 朴素信任重排）
 - [ ] C5 stealth 生成 prompt（仅 A8，单卡 4090 需换模型，暂挂起）
-- [ ] C6 全文数字 vs CSV 校验脚本
+- [x] C6 全文数字 vs CSV 校验脚本（verify_numbers.py：账本 numbers_ledger.json + tex 扫描；未入文数字=改写清单）
 - [x] C7 sync 守护进程 sync_daemon.sh（10 分钟一轮 copy+commit+push，rebase 优先）
 - [x] C8 实验队列脚本 run_fix.sh（A1→A2→A3→A5→A7→A4→A6，CSV 归档+顺序执行，预计 ~4.3h）
 
