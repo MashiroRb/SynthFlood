@@ -15,3 +15,5 @@ loading cached products from /root/synthflood/data/all_products.pkl
 loading cached products from /root/synthflood/data/all_products.pkl
 {"stage": "P4I_SPOOF65", "done": true, "csv": "/root/synthflood/results/p4i_spoof65_sweep.csv"}
 llama downloaded
+loading cached products from /root/synthflood/data/all_products.pkl
+generated 454 synthetic listings -> /root/synthflood/data/contamination/pool_stealth.json
