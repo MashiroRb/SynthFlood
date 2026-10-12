@@ -1,0 +1,17 @@
+usage: run_sweep.py [-h] [--stage STAGE] [--n-tasks N_TASKS] [--eps EPS]
+                    [--family FAMILY] [--seed SEED] [--defense DEFENSE]
+                    [--model MODEL] [--port PORT] [--workers WORKERS]
+                    [--pool POOL] [--sham] [--spoof SPOOF]
+                    [--ppr-lambda PPR_LAMBDA]
+run_sweep.py: error: unrecognized arguments: --out /root/synthflood/results/p4i_spoof35.csv
+usage: run_sweep.py [-h] [--stage STAGE] [--n-tasks N_TASKS] [--eps EPS]
+                    [--family FAMILY] [--seed SEED] [--defense DEFENSE]
+                    [--model MODEL] [--port PORT] [--workers WORKERS]
+                    [--pool POOL] [--sham] [--spoof SPOOF]
+                    [--ppr-lambda PPR_LAMBDA]
+run_sweep.py: error: unrecognized arguments: --out /root/synthflood/results/p4i_spoof65.csv
+loading cached products from /root/synthflood/data/all_products.pkl
+{"stage": "P4I_SPOOF35", "done": true, "csv": "/root/synthflood/results/p4i_spoof35_sweep.csv"}
+loading cached products from /root/synthflood/data/all_products.pkl
+{"stage": "P4I_SPOOF65", "done": true, "csv": "/root/synthflood/results/p4i_spoof65_sweep.csv"}
+llama downloaded
