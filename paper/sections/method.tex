@@ -42,7 +42,8 @@ content. \textbf{geo}: a search-optimized content-farm page that targets the
 query keywords with a polished title, marketing bullets, and specification
 lines, generated \emph{without access to the gold attributes}, so its
 specifications violate one or two of the instruction's required attributes
-with high probability. \textbf{clone}: a near-copy of the gold listing with
+with high probability (we use \emph{gloss} as shorthand for this
+family's plain search-optimized pages). \textbf{clone}: a near-copy of the gold listing with
 one or two critical attributes altered and a 5--25\% lower price,
 counterfeit-listing style. \textbf{reviews}: an otherwise plain page flooded
 with twenty generic five-star machine-written reviews. All listings receive
@@ -71,11 +72,16 @@ one-on-one with the correct product.
 
 \subsection{Dose--response sweep and defense battery}
 \label{sec:method-sweep}
-The main measurement sweeps $\varepsilon$ over $\{0, 0.1, 0.25, 0.5, 0.75\}$
+The main measurement sweeps $\varepsilon$ over $\{0, 0.25, 0.5, 0.75\}$
+(the nominal $\varepsilon{=}0.1$ level maps to zero replaced slots at
+$N{=}10$ and coincides with $\varepsilon{=}0$, so it is omitted)
 under \texttt{mix} contamination (families drawn uniformly), reporting
 success, partial success, regret, ECE, and per-family breakdowns, with
 McNemar tests between adjacent doses on paired tasks and cluster bootstrap
-confidence intervals over tasks. The defense battery runs at a fixed high
+confidence intervals over tasks. Confidence is elicited immediately after
+the purchase action: the agent verbalizes a success probability in $[0,1]$
+for the chosen listing under the current instruction, and ECE is computed
+over five equal-width bins. The defense battery runs at a fixed high
 contamination level and compares seven conditions: \textbf{none} (vanilla);
 \textbf{prompt} (a standing instruction to distrust keyword-rich,
 specification-mismatched pages); \textbf{detector-text} (perplexity

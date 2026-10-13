@@ -2,11 +2,11 @@
 \label{app:setup}
 
 \subsection{Models and serving}
-All agents and generators run locally via vLLM 0.19.0 (OpenAI-compatible
+All agents and generators run locally via vLLM 0.31.0 (OpenAI-compatible
 API, \texttt{--enforce-eager}, temperature 0 for agents and the judge,
 temperature 0.7 with a fixed seed for the generator) on RTX 4090 GPUs
-(24\,GB each; the original battery used two cards, the revision experiments
-one): Qwen2.5-7B-Instruct serves as the primary agent backbone and as
+(24\,GB; two cards for the original battery, one for the revision
+rounds): Qwen2.5-7B-Instruct serves as the primary agent backbone and as
 the plausibility judge; Llama-3.1-8B-Instruct serves as the contamination
 generator and as the secondary agent backbone. Qwen2.5-3B/1.5B are used in
 the scale ablation. Every LLM call is logged with its token counts; agents
@@ -14,14 +14,11 @@ cap episodes at ten steps, forced-choice probes at six.
 
 \subsection{Official artifacts}
 We use WebShop's official \texttt{items\_shuffle.json} (1{,}181{,}430
-products after key cleaning and deduplication),
-\texttt{items\_ins\_v2.json}, and \texttt{items\_human\_ins.json} (10{,}136
-products with human instructions), with the benchmark's own loader, goal
-builder (\texttt{get\_human\_goals}, including its price-upper sampling), and
-reward function applied unmodified. Our loader is a verbatim port with paths
-parametrized; the only semantic addition is scoring a chosen listing through
-its best-matching variant, since the Select protocol has no variant-selection
-step.
+products after key cleaning and deduplication), \texttt{items\_ins\_v2.json},
+and \texttt{items\_human\_ins.json} (10{,}136 human instructions), with the
+benchmark's own loader, goal builder, and reward function applied
+unmodified; the only semantic addition is best-variant scoring of the
+chosen listing (\S\ref{sec:method-env}).
 
 \subsection{Contamination pool}
 The pool covers 100 tasks (the official goal list under seed 2027), three
@@ -79,23 +76,71 @@ full-parity probe: adjusted $p=1.0\times10^{-3}$) and the $10\%$-discount
 threshold (adjusted $p=0.023$); the remaining channel comparisons
 (price parity, rating parity, provenance-vs-none, stealth recovery, the
 $s{=}25\%$ envelope point) survive uncorrected but not Holm-corrected
-(adjusted $p\in[0.072,0.078]$). We therefore state the decomposition as a
-convergent joint pattern --- two channels of nearly equal magnitude, an
-additive account, and an independent threshold law that reaches the same
-conclusion --- rather than as a collection of individually significant
-contrasts.
+(adjusted $p\in[0.072,0.078]$). We therefore read the decomposition as a convergent joint pattern ---
+two channels of nearly equal magnitude, an additive account, and an
+independent threshold law reaching the same conclusion --- not as a
+collection of individually significant contrasts.
 
 \paragraph{Equivalence at saturation.} The pricing-threshold claim that
 ``deeper discounts add nothing'' is supported by two-proportion tests
 against the $10\%$ point ($20\%$: $p=0.45$; $30\%$: $p=0.76$; $20\%$ vs.\
-$30\%$: $p=0.65$; $n{=}88$ per arm). These are non-significance results
-with modest power; we phrase the claim as saturation of the observed
-response rather than as a strict equivalence bound.
+$30\%$: $p=0.65$; $n{=}88$ per arm). These are non-significance results with modest power; we phrase the
+claim as saturation of the observed response, not as a strict
+equivalence bound.
 
 \paragraph{Structural detector vs.\ oracle.} With $n{=}40$ paired tasks,
 the minimal detectable regret difference at two-sided $\alpha=0.05$ and
 $80\%$ power is roughly $0.11$ --- larger than the observed
-oracle--struct gap ($0.171$ vs.\ $0.250$). The correct reading is that
-structural filtering recovers at least the full regret excess
-($0.398\to0.250$, below the uncontaminated $0.338$), and that our runs
-cannot distinguish it from the oracle; we do not claim equality.
+oracle--struct gap ($0.171$ vs.\ $0.250$). We conclude only that structural
+filtering recovers at least the full regret excess ($0.398\to0.250$,
+below the uncontaminated $0.338$); we do not claim equality with the
+oracle.
+
+\subsection{Real-world attack-surface mining}
+\label{sec:app-real}
+Section~\ref{sec:res-realworld} grounds the tested discount regime in
+real catalogs. This appendix documents the three sources and a text
+provenance check.
+
+\paragraph{Sources and pairing rules.}
+\emph{ProMap}~\cite{mackov2023promap} provides human-verified
+Walmart--Amazon pairs split into true matches, close non-matches
+(different products sharing brand and product line with
+near-identical titles), and medium non-matches. We compute the
+cheaper-side discount per pair with both prices listed
+(330/509 close non-matches, 337/509 matches, 364/537 medium).
+\emph{WebMall}~\cite{peeters2025webmall} offers are grouped across its
+four shops by exact normalized name (244 groups, 505 offers; the
+GTIN field is empty in the distribution). \emph{WebShop}~\cite{yao2022webshop}
+catalog items (80{,}000 sampled from the 1.18M-item real scrape) are
+blocked by first brand token and category; within blocks, pairs with
+title-token Jaccard in $[0.80,0.95)$ and distinct ASINs are lookalikes,
+Jaccard $\geq0.95$ near-identical (232 pairs). Discount statistics
+appear in Section~\ref{sec:res-realworld}; per-source values are
+ archived in the repository (\texttt{realdata/real\_stats.json}).
+Close non-match pairs are the real-world analogue of our clone
+channel; identical-name groups across shops play the near-identical
+control role, where the cheaper offer is the correct purchase.
+
+\paragraph{Can provenance be detected from text alone?}
+A natural remedy would be a text-side detector that flags synthetic
+listings at browsing time. We calibrate the standard GPT-2
+perplexity signal~\cite{radford2019gpt2} on 250 human-written
+WebShop descriptions and score our synthetic pools: separation is
+strong (AUC $0.912$ against a Mann--Whitney null; synthetic median
+perplexity $\approx22$ vs.\ $\approx55$ human), i.e., our generated
+listings are identifiable \emph{in isolation} by a commodity
+detector. Two conclusions follow. First, susceptibility is a
+\emph{decision-level} failure: the agent buys listings it could in
+principle distinguish, which is why structural provenance guarantees
+rather than better perception are the operative defense
+(Section~\ref{sec:res-defense}). Second, we deliberately do
+\emph{not} estimate the share of AI-generated text in current real
+catalogs from this signal: applying the same threshold to WebMall
+offer text flags a large fraction, but the estimate is dominated by
+genre and length confounds (flagging falls from 93.6\% to 55.3\%
+under length matching alone), and no ground truth exists for
+real-offer provenance. Recent product-matching
+benchmarks~\cite{steiner2026billigerde} likewise treat provenance as
+unknown. Text-only prevalence claims are left to work with
+calibrated multi-signal detectors and verified labels.

@@ -8,7 +8,7 @@
 The forced-choice probe confronts each agent with one gold product and one
 synthetic listing (300 randomized duels). Agents overall still prefer the
 real product, $\sigma=0.377$ (95\% CI $[0.324,0.433]$, binomial vs.\
-$\tfrac12$ $p<10^{-35}$), but the families separate sharply:
+$\tfrac12$ $p=2.3\times10^{-5}$), but the families separate sharply:
 $\sigma_{\text{clone}}=0.523$ --- statistically indistinguishable from
 chance --- while $\sigma_{\text{geo}}=0.351$ and
 $\sigma_{\text{reviews}}=0.287$. Taken alone, this pattern invites a
@@ -111,7 +111,12 @@ paired endpoint difference $+0.181$ (bootstrap 95\% CI $[+0.095,+0.264]$,
 $t=4.2$). \textbf{Confidence rises throughout}: post-hoc verbalized
 confidence increases from $0.822$ to $0.875$ while expected calibration
 error \emph{doubles} ($0.249\to0.496$) --- agents err more while trusting
-themselves more. The purchase share tells the mechanism directly: synthetic
+themselves more. The intermediate non-monotonicity of the curve (regret
+$0.429\to0.401$ from $\varepsilon{=}0.25$ to $0.5$) is within paired
+task-level noise: the paired regret difference has bootstrap 95\% CI
+$[-0.102,+0.044]$, and the small success rebound is likewise
+indistinguishable from zero ($+0.070$, CI $[-0.020,+0.160]$).
+The purchase share tells the mechanism directly: synthetic
 listings are bought in 53\%, 42\%, and 54\% of tasks at
 $\varepsilon=0.25,0.5,0.75$ respectively (from 0\% at $\varepsilon=0$;
 Cochran--Armitage trend $z=6.98$, $p=1.4\times10^{-12}$), and purchases of
@@ -123,8 +128,10 @@ real listings at the same dose (both contamination seeds pooled).
 \small
 \caption{Dose--response of agent decision quality under ambient
 contamination (Qwen2.5-7B backbone, mix contamination, $N{=}100$ tasks per
-dose; P4A). Confidence is the mean post-purchase verbalized confidence;
-ECE is expected calibration error over five equal-width bins.}
+dose). Confidence is the mean post-purchase verbalized confidence;
+S@0.8: success with reward $\geq0.8$ (the partial-success
+threshold $\delta=0.2$); ECE: expected calibration error over five
+equal-width bins.}
 \label{tab:dose}
 \setlength{\tabcolsep}{3.2pt}
 \begin{tabular}{lcccccc}
@@ -178,7 +185,7 @@ rare geo purchase is a near-total loss.
 \centering
 \includegraphics[width=\linewidth]{figures/family.pdf}
 \caption{Per-family contamination at $\varepsilon=0.75$ versus the paired
-uncontaminated baseline (40 tasks): success (left) and regret (right).
+uncontaminated baseline (40 tasks): success (top) and regret (bottom).
 Specification clones destroy success; review-inflated pages inflict the
 largest regret; search-optimized pages cause quiet attrition.}
 \label{fig:family}
@@ -353,3 +360,35 @@ $[0.037,0.374]$) --- overlapping intervals, the same order of
 vulnerability --- while the below-competence 1.5B backbone shows a
 floor effect (clean regret already $0.578$) that makes the dose contrast
 uninterpretable.
+
+\subsection{The attack surface exists in real catalogs}
+\label{sec:res-realworld}
+The dose--response is measured on synthetic listings, so a natural
+question is whether the tested discount regime matches reality. We
+answer with three independent real-world sources, described in
+Appendix~\ref{sec:app-real}. First, in the human-verified ProMap
+Walmart--Amazon mapping dataset~\cite{mackov2023promap}, 509
+\emph{close non-match} pairs --- different products sharing brand,
+product line, and near-identical titles, i.e., real-world analogues of
+our clone channel --- list both prices in 330 cases; 73.3\% of these
+have a side at least 10\% cheaper, with median discount 20.9\%.
+Second, in WebMall~\cite{peeters2025webmall}, a benchmark of real
+offers crawled from four shops in the October 2024 Common Crawl,
+244 cross-shop groups of offers with \emph{identical normalized names}
+(505 offers) show the same pattern: 53.3\% of groups have a side at
+least 10\% cheaper (median 11.1\%) --- and for identical products,
+buying the cheaper offer is the \emph{correct} decision, matching our
+near-identical control condition. Third, blocking the 80{,}000-item
+WebShop catalog sample~\cite{yao2022webshop} by brand and category and
+matching title tokens (Jaccard $0.80$--$0.95$, distinct ASINs) yields
+497 lookalike pairs; 83.3\% contain a side at least 10\% cheaper
+(median 21.0\%), while 232 near-identical pairs (Jaccard
+$\geq0.95$) sit at 51.7\% and 11.0\%. Across sources, the
+$10\%$--$30\%$ discount range scanned in
+Section~\ref{sec:res-dose} is not a tail event but the modal regime of
+real price dispersion between lookalike offers, and the separation
+between lookalike and near-identical dispersion is consistent across
+all three sources. What the laboratory experiment adds is the causal
+direction: real catalogs contain the lure structure, and
+Section~\ref{sec:res-probe}--\ref{sec:res-dose} show that structure is
+sufficient to buy agent decisions.

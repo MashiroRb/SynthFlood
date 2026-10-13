@@ -62,3 +62,58 @@ Borderline（2×weak accept + 1 accept，但 M 级问题密集）。方向正确
 **编译状态**：0 错误、11 页、3 处 <9pt 超宽。
 
 ---
+
+## Round 2（2026-10-12）
+
+复审重点：Round 1 修复的整合质量 + method/problem 全文深查。
+
+### R1（统计与严谨性）— accept
+- **M1（新发现，严重）** §5.1 "binomial p<10⁻³⁵"：n=300、113/300 的精确二项双侧 p 实为 **2.3×10⁻⁵**（实算验证），原文量级荒谬，属硬伤。
+- **M2（新发现）** 附录 A.1 写 "vLLM 0.19.0"，requirements 与实验日志均为 **0.31.0**——版本错误影响复现。
+- **m1** 表2 中间剂量 regret 非单调（0.429→0.401）无解释；实算配对差 bootstrap CI [−0.102,+0.044] 含 0，属噪声，应明说。
+
+### R2（新颖性与定位）— accept
+- **m1** problem §"silent-erosion hypothesis" 预言 "success may appear stable"，结果 success 跌 23pp——假设部分被证伪，正文应显式承认（现只在 discussion 侧面处理）。
+- 其余定位无新意见。
+
+### R3（清晰度与完备性）— weak accept → accept
+- **M1** method §sweep 与 problem §quantities 的 ε 网格仍写 {0,0.1,…}（Round 1 只修了引言）。
+- **M2** 表2 caption 残留 "P4A" 代号；"S@0.8" 列无定义。
+- **M3** fig:family caption 写 "left/right"，重绘后实为上/下。
+- **M4** 置信度如何 elicited、ECE 几个 bin——method 未定义。
+- **m1** "gloss" 术语未定义（geo/search-optimized/plain gloss 三名混用）。
+- **m2** 页面反弹至 12 页触顶，需压缩回 11。
+
+### 本轮修复清单（全部完成）
+| 问题 | 处置 |
+|---|---|
+| R1-M1 | p 值改为实算值 2.3×10⁻⁵ |
+| R1-M2 | vLLM 版本改为 0.31.0（对照 requirements 与日志核实） |
+| R1-m1 | results 补非单调句：regret 差 CI [−0.102,+0.044]、success 反弹 +0.070 CI [−0.020,+0.160]，均明示"不可分辨于零" |
+| R2-m1 | 保留 §problem 预言原文（预注册性质），在 §5.3 开头以 "Success falls at the first dose step and stays depressed" 显式呈现证伪结果（上一轮已改，本轮确认整合到位） |
+| R3-M1 | method/problem 网格统一为 {0,0.25,0.5,0.75}，并注明 0.1 在 N=10 下退化为 0 槽位 |
+| R3-M2 | 表2 删 "P4A"；新增 "S@0.8" 定义（δ=0.2 部分成功阈值） |
+| R3-M3 | caption 改 "top/bottom" |
+| R3-M4 | method-sweep 新增置信度 elicitation 与 5-bin ECE 定义句 |
+| R3-m1 | method-gen 首次出现处定义 gloss = plain search-optimized 家族 |
+| R3-m2 | 压缩 A.1/A.2/A.5 措辞与伦理段，回到 11 页 |
+
+**编译状态**：0 错误、11 页、2 处 <9pt 超宽（4.45pt related-work 连字符行、8.62pt 图4 caption，均不可见）。
+
+---
+
+## 补充轮（2026-10-13 下午）：外部效度——真实世界攻击面
+
+**动因**：用户指出"污染数据自生成 = 关门造车"。响应：在真实数据上验证攻击面与检测前提。
+
+**新增结果（三独立源收敛）**：
+1. ProMapEn（人工核验 Walmart↔Amazon 对，Macková & Pilát 2023）：close non-match 509 对（=真实克隆攻击结构），双价 330 对中 73.3% 有 ≥10% 低价方，中位折扣 20.9%；match 组 63.8%/16.7%；medium 组 77.2%/22.9%。
+2. WebMall（真实 4 店 offer，2024-10 Common Crawl，Peeters et al. 2025）：跨店同名组 244 组/505 offer，53.3% 有 ≥10% 低价方，中位 11.1%（同品组中买便宜者正确 = 控制条件一致）。
+3. WebShop 真实目录（1.18M 条真实 Amazon 抓取，抽样 8 万）：品牌+类目分块、标题 Jaccard∈[0.80,0.95) 挖出 497 对 lookalike，83.3% 有 ≥10% 低价方，中位 21.0%；J≥0.95 近同对 232 组，51.7%/11.0%。
+→ 剂量反应扫描的 10–30% 折扣区间 = 真实价格离散的众数区间，非尾部事件；lookalike 与近同对的离散度分离在三个源上方向一致。
+
+**检测器校准（附录 A.6）**：GPT-2 ppl 在 250 条真人 WebShop 文本上标定，对已知合成池 AUC=0.912（合成中位 ppl≈22 vs 人写≈55）→ 结论：(i) 合成文案孤立可检，但 agent 仍购买 → 弱点在决策层而非感知层，支撑 provenance 主张；(ii) 拒绝对真实目录做 AI 文本占比估计——跨域体裁/长度混淆主导（93.6%→55.3% 仅长度匹配后），无真值标注，不夸大。
+
+**论文变更**：Results 新增小节 "The attack surface exists in real catalogs"；附录新增 A.6（协议+检测器校准+不声称普遍率）；refs.bib 新增 mackov2023promap、steiner2026billigerde、radford2019gpt2。12 页（限额内），0 错误。
+
+**待办（需 GPU 重连）**：R1c 真实对二选一 duels（金品 vs 真实 lookalike 低价位，ProMap close non-match + WebShop 挖掘对）；R3 真实剂量反应。

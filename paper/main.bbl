@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{31}
+\begin{thebibliography}{34}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -236,6 +236,20 @@
 \tempurl}
 
 
+\bibitem[Macková and Pilát(2023)]%
+        {mackov2023promap}
+\bibfield{author}{\bibinfo{person}{Kateřina Macková} {and}
+  \bibinfo{person}{Martin Pilát}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{ProMap: Datasets for Product Mapping in E-commerce}.
+\newblock \bibinfo{howpublished}{arXiv:2309.06882}.
+\newblock
+\showeprint[arxiv]{2309.06882}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2309.06882v1}
+\showURL{%
+\tempurl}
+
+
 \bibitem[Nimase et~al\mbox{.}(2026)]%
         {nimase2026geobench}
 \bibfield{author}{\bibinfo{person}{Ojas Nimase}, \bibinfo{person}{Zhe Chen},
@@ -315,6 +329,19 @@
 \tempurl}
 
 
+\bibitem[Radford et~al\mbox{.}(2019)]%
+        {radford2019gpt2}
+\bibfield{author}{\bibinfo{person}{Alec Radford}, \bibinfo{person}{Jeffrey Wu},
+  \bibinfo{person}{Rewon Child}, \bibinfo{person}{David Luan},
+  \bibinfo{person}{Dario Amodei}, {and} \bibinfo{person}{Ilya Sutskever}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Language Models are Unsupervised Multitask
+  Learners}.
+\newblock \bibinfo{journal}{\emph{OpenAI Technical Report}}
+  (\bibinfo{year}{2019}).
+\newblock
+
+
 \bibitem[Russell et~al\mbox{.}(2026)]%
         {russell2026much}
 \bibfield{author}{\bibinfo{person}{Jenna Russell}, \bibinfo{person}{Ben
@@ -345,6 +372,20 @@
 \url{http://arxiv.org/abs/2603.00801v2}
 \showURL{%
 \tempurl}
+
+
+\bibitem[Steiner et~al\mbox{.}(2026)]%
+        {steiner2026billigerde}
+\bibfield{author}{\bibinfo{person}{Aaron Steiner}, \bibinfo{person}{Ksenia
+  Elagin}, \bibinfo{person}{Ralph Peeters}, \bibinfo{person}{Johannes Knopp},
+  {and} \bibinfo{person}{Christian Bizer}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \showarticletitle{Billiger.de Products: A Bilingual Entity Matching
+  Benchmark}. In \bibinfo{booktitle}{\emph{arXiv (Cornell University)}}.
+  \bibinfo{publisher}{Cornell University}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.48550/arxiv.2609.37713}
+\showDOI{\tempurl}
 
 
 \bibitem[Syros et~al\mbox{.}(2026)]%
