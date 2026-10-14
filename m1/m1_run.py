@@ -110,9 +110,29 @@ def log(msg):
 
 
 # ---------------------------------------------------------------- data ----
+def fresh_goals_all(by_asin, product_prices):
+    """Full deduped seed-2027 goal list, bypassing the frozen goals100.json
+    (which caps at 100 and would empty the 100+ slices M1 needs)."""
+    import random as _r
+    from web_agent_site.engine.goal import get_human_goals
+    _r.seed(2027)
+    goals = get_human_goals(by_asin, product_prices)
+    rng = _r.Random(2027)
+    rng.shuffle(goals)
+    seen, uniq = set(), []
+    for g in goals:
+        if g["asin"] in seen:
+            continue
+        seen.add(g["asin"])
+        uniq.append(g)
+    return uniq
+
+
 def load_everything():
-    by_asin, _, product_prices, _ = get_official_data()
-    goals_all = build_goals(n_tasks=0)          # full deduped seed-2027 list
+    from synthflood.select_env import load_products
+    by_asin = load_products()                    # asin -> item dict
+    all_products, _, product_prices, _ = get_official_data()
+    goals_all = fresh_goals_all(all_products, product_prices)
     frozen_path = os.path.join(GEN_DIR, "goals100.json")
     if os.path.exists(frozen_path):
         with open(frozen_path) as f:
@@ -548,8 +568,18 @@ def run_xdom(ctx, name, mem_block, n_limit=None):
 # ---------------------------------------------------------------- prep ----
 def prep():
     os.makedirs(OUT, exist_ok=True)
-    ctx = init_ctx(smoke=False)
-    freeze_goals(ctx["goals_all"])
+    by_asin, product_prices, goals_all, goals_by_asin = load_everything()
+    if not os.path.exists(PAIRS_PATH):
+        sys.exit(f"missing pair pool {PAIRS_PATH}")
+    with open(PAIRS_PATH) as f:
+        pairs = json.load(f)
+    ctx = {"by_asin": by_asin, "product_prices": product_prices,
+           "goals_all": goals_all, "goals_by_asin": goals_by_asin,
+           "pairs": pairs,
+           "exposure_goals": goals_all[100:120],
+           "rank_goals": goals_all[140:160],
+           "xdom_goals": goals_all[160:180]}
+    freeze_goals(goals_all)
     client = RateClient(PORT, MODEL)
     build_exposure_pool(ctx["exposure_goals"], ctx["by_asin"], client)
     build_exam_clones(ctx["pairs"], ctx["goals_by_asin"], ctx["by_asin"],
