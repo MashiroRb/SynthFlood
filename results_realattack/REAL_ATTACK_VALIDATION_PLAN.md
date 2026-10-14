@@ -16,13 +16,25 @@ GitHub（https://github.com/MashiroRb/SynthFlood.git）；每完成一段实验�
 - 明确写出当前操作化范围（结果页 top-10 注入）与方案 2 的扩展。
 - **结果与分析**：已改 4 处——①abstract：ambient 定义改为"占据常规浏览的检索语境，无需定向"；②problem.tex Setting 小节新增 scope note（ambient ≠ 全网饱和声明；主表面=10 槽结果页；后续规模实验扩展至 50 槽）；③conclusion 开头 "saturating the Web"→"common on the commercial Web"；④discussion Limitations 新增两句：表面范围声明 + 真实文档注入预告（clone=人工核验 lookalike 对、reviews=被标垃圾评论）。编译 12 页 0 错误。
 
-## 方案 1：真实克隆注入实验（需 GPU，~30-45 分钟）— [ ]
+## 方案 1：真实克隆注入实验（需 GPU，~30-45 分钟）— [x]
 
 - 污染文档 = 真实网页内容、零生成：ProMapEn 人工核验 close non-match（509 对）+
   WebShop 真实目录挖掘 lookalike 对（497 对，Jaccard∈[0.80,0.95)）。
 - 任务：真实金品 vs 真实近似品（低价 f∈{0.9, 0.8}），与合成 clone 同折扣点对比 σ_真实 vs σ_合成。
 - 判读（预注册）：同方向 → 机制不依赖我们的生成器；效应更弱 → 如实报告为生成器高估。
-- **结果与分析**：（待填）
+- **结果与分析**：已完成（2026-10-14，lab 机 RTX4090，vLLM Qwen2.5-7B-Instruct，n=250 任务/臂）。
+  从 1.18M 真实 Amazon 商品目录按"品牌+类目分块、标题 token Jaccard∈[0.80,0.95)、不同 ASIN、自然折扣≥10%"挖出 467 对真实 lookalike（金品=较贵一侧且有官方人写指令；任务指令与 reward 语义均用 WebShop 官方 get_human_goals/get_reward）。
+  四臂结果（σ=选克隆比例）：
+  * real_f090（真实文案，价格=f×金品）：σ=0.616（n=250，vs 0.5 二项 p=2.4e-4）
+  * real_f080：σ=0.636（p=1.7e-5）
+  * real_nat（真实文案+真实价格，零操纵）：σ=0.600（p=1.6e-3）
+  * synth_f090（同任务配对的我们合成克隆）：σ=0.677
+  分析（判定语精确）：
+  ①【符合预期】真实文档三臂全部显著>0.5 → 攻击机制不依赖我们的生成器，外部效度成立；
+  ②【无显著差异】同任务配对 McNemar（real_f090 vs synth_f090）：b=44, c=59, p=0.167——合成与真实克隆的吸引力统计不可区分（点估计合成高 6.1pp，CI 含 0）；
+  ③【符合预期】real_nat 剂量分层（<25%: 0.624 vs ≥25%: 0.588）与合成阈值律的"饱和"一致——深折扣无额外增益；
+  ④ 效应量与合成探针同量级（合成探针 f=0.9 历史值 0.591，n=88）。
+  结论：论文可写"real-document replication"。结果与代码已推 GitHub（results_realattack/ra1_*.csv/json）。
 
 ## 方案 2：环境规模实验（需 GPU，~1-1.5 小时）— [ ]
 
