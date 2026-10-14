@@ -128,3 +128,104 @@ ModuleNotFoundError: No module named 'scipy'
  3122 total
 60 results_m1/m1_reward_autopsy.jsonl
 ```
+
+## 实验执行 (2026-10-14 19:27 UTC)
+
+- prep/smoke/full 均由 m1_pipeline.sh + m1_finalize.sh 驱动。
+- full 运行控制台日志：/tmp/m1_full.log（运行期），关键数字入 results_m1/。
+
+### 分析输出（m1_run.py --mode analyze）
+
+```
+  arm            phase  ckpt   sigma n
+   B0             exam     2   0.718 39
+   B0             exam     4   0.692 39
+   B0             exam     6   0.718 39
+   B0             exam     8   0.718 39
+   B0             exam    10   0.718 39
+   B0             exam    12   0.692 39
+   B0             exam    14   0.667 39
+   B0             exam    16   0.795 39
+   B0             exam    18   0.795 39
+   B0             exam    20   0.718 39
+   B0           parity    10   0.632 38
+   B0           parity    20   0.579 38
+   M0             exam     0   0.897 39
+   M0             exam     2   0.872 39
+   M0             exam     4   0.615 39
+   M0             exam     6   0.769 39
+   M0             exam     8   0.718 39
+   M0             exam    10   0.692 39
+   M0             exam    12   0.692 39
+   M0             exam    14   0.692 39
+   M0             exam    16   0.744 39
+   M0             exam    18   0.769 39
+   M0             exam    20   0.667 39
+   M0           parity     0   0.789 38
+   M0           parity    10   0.763 38
+   M0           parity    20   0.842 38
+   M2             exam     0   0.692 39
+   M2             exam     2   0.718 39
+   M2             exam     4   0.718 39
+   M2             exam     6   0.718 39
+   M2             exam     8   0.718 39
+   M2             exam    10   0.667 39
+   M2             exam    12   0.667 39
+   M2             exam    14   0.744 39
+   M2             exam    16   0.692 39
+   M2             exam    18   0.667 39
+   M2             exam    20   0.718 39
+   M2           parity     0   0.526 38
+   M2           parity    10   0.526 38
+   M2           parity    20   0.605 38
+   M3             exam     0   0.769 39
+   M3             exam     2   0.769 39
+   M3             exam     4   0.641 39
+   M3             exam     6   0.744 39
+   M3             exam     8   0.718 39
+   M3             exam    10   0.744 39
+   M3             exam    12   0.718 39
+   M3             exam    14   0.667 39
+   M3             exam    16   0.667 39
+   M3             exam    18   0.821 39
+   M3             exam    20   0.692 39
+   M3           parity     0   0.658 38
+   M3           parity    10   0.632 38
+   M3           parity    20   0.684 38
+   M4             exam     0   0.744 39
+   M4             exam     2   0.744 39
+   M4             exam     4   0.667 39
+   M4             exam     6   0.718 39
+   M4             exam     8   0.692 39
+   M4             exam    10   0.718 39
+   M4             exam    12   0.667 39
+   M4             exam    14   0.744 39
+   M4             exam    16   0.769 39
+   M4             exam    18   0.744 39
+   M4             exam    20   0.667 39
+  PRE             exam    -1   0.692 39
+{
+ "M0_clean20_vs_B0": {
+  "z": -0.49,
+  "p": 0.6237
+ },
+ "M0_c0_vs_PRE_mcnemar": {
+  "b": 9,
+  "c": 1,
+  "p": 0.02148
+ },
+ "half_life_checkpoint": 4,
+ "M0_sigma0": 0.8974,
+ "B0_sigma20": 0.7179,
+```
+
+### 数据完整性
+
+```
+  161 results_m1/m1_episodes.csv
+ 2759 results_m1/m1_exams.csv
+  101 results_m1/m1_rank.csv
+  101 results_m1/m1_xdom.csv
+ 3122 total
+60 results_m1/m1_reward_autopsy.jsonl
+```
