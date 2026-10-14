@@ -33,13 +33,14 @@ not surgical --- and whether it materially matters for agent \emph{economics}
 (choice quality, wasted spend, calibrated confidence) is unknown.
 
 Measuring this regime requires disentangling choice quality from task
-difficulty: a naive before/after comparison on a contaminated benchmark
-cannot tell whether agents chose worse or the tasks became harder. We therefore build \textbf{SynthFlood}, a paired,
-dose-controlled protocol on top of WebShop's official artifacts
-\cite{yao2022webshop}. Each task renders a fixed candidate list in which the
-gold product is always present and never replaced; only distractor slots are
-progressively replaced by synthetic listings, drawn under a fixed seed so
-that lower contamination levels are nested within higher ones. Synthetic
+difficulty: a naive before/after comparison cannot tell whether agents
+chose worse or the tasks became harder. We therefore build
+\textbf{SynthFlood}, a paired, dose-controlled protocol on WebShop's
+official artifacts~\cite{yao2022webshop}: each task renders a fixed
+candidate list in which the gold product is always present and never
+replaced; only distractor slots are progressively replaced by
+synthetic listings, drawn under a fixed seed so that lower
+contamination levels are nested within higher ones. Synthetic
 listings come from a three-family generator that mirrors real content-farm
 modes --- search-optimized pages, specification clones with altered attributes
 and lower prices, and review-inflated plain pages --- with a cross-model
@@ -48,21 +49,18 @@ ReAct loop over rendered listings, and every purchase is scored by WebShop's
 \emph{official} reward function, so regret is measured in the benchmark's own
 currency rather than a proxy.
 
-SynthFlood yields three measurements. First, a \emph{forced-choice
-susceptibility probe}: one gold product against one synthetic listing, 300
-randomized duels, yielding a single interpretable number $\sigma$ --- the
-probability that an agent buys the machine-optimized page over the correct
-product when nothing else competes. Second, a \emph{dose--response curve}:
-success, regret, and calibration as functions of the contamination share
-$\varepsilon\in\{0,0.25,0.5,0.75\}$, with McNemar tests on paired tasks.
-Our silent-erosion hypothesis predicts a characteristic signature here:
-regret rises steeply while coarse success appears stable, because partial
-mismatches (wrong attributes, overpayment) are invisible in success counts.
-Third, a \emph{defense battery} evaluated at matched contamination, whose
-critical control is a random-defense arm that drops the same number of
-candidates uniformly --- separating genuine filtering from mere candidate
-removal --- alongside a provenance-only defense that re-ranks by a noisy
-verifiable-provenance bit without ever seeing labels.
+SynthFlood yields three measurements: a \emph{forced-choice
+susceptibility probe} (one gold product against one synthetic listing,
+300 randomized duels, yielding $\sigma$ --- the probability that the
+agent buys the machine-optimized page over the correct product); a
+\emph{dose--response curve} over $\varepsilon\in\{0,0.25,0.5,0.75\}$
+with McNemar tests on paired tasks, where our silent-erosion
+hypothesis predicts regret rising steeply while coarse success appears
+stable (partial mismatches are invisible in success counts); and a
+\emph{defense battery} at matched contamination whose critical control
+is a random-defense arm dropping the same number of candidates
+uniformly, alongside a provenance-only defense that re-ranks by a
+noisy verifiable bit without ever seeing labels.
 
 Our contributions are:
 \begin{itemize}
@@ -93,6 +91,12 @@ Our contributions are:
       ($\lambda\leq 4$ all fail, $\lambda=8$ recovers fully) --- and a
       naive popularity ranking \emph{backfires}, raising synthetic
       purchases to 67.5\%.
+\item \textbf{Real-document external validation}: real lookalike
+      listings from a 1.18M-item catalog reproduce the clone effect
+      ($\sigma=0.60$--$0.64$, indistinguishable from our generator's);
+      a fifty-slot experiment localizes the strong harm to
+      contamination density; Yelp fraud-filtered spam reviews confirm
+      the review channel's direction.
 \end{itemize}
 An anonymized package with all code, contamination pools, and full
 trajectory logs accompanies the submission. The

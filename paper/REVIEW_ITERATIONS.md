@@ -117,3 +117,17 @@ Borderline（2×weak accept + 1 accept，但 M 级问题密集）。方向正确
 **论文变更**：Results 新增小节 "The attack surface exists in real catalogs"；附录新增 A.6（协议+检测器校准+不声称普遍率）；refs.bib 新增 mackov2023promap、steiner2026billigerde、radford2019gpt2。12 页（限额内），0 错误。
 
 **待办（需 GPU 重连）**：R1c 真实对二选一 duels（金品 vs 真实 lookalike 低价位，ProMap close non-match + WebShop 挖掘对）；R3 真实剂量反应。
+
+## 外部效度轮（2026-10-14）：回应"自生成污染 + 10条topk撑不起环境式"两项核心批评
+
+**方案5（口径）**：abstract/problem/discussion 明确 ambient= arrives-without-targeting，非全网饱和；主表面=10槽，规模实验扩展至50槽。
+
+**方案1（RA1 真实克隆，n=250/臂）**：从1.18M真实目录挖467对真实lookalike（官方人写指令+官方reward语义）。σ(real,f=0.9)=0.616、σ(real,f=0.8)=0.636、σ(real,natural)=0.600（全部 p<0.002）；同任务配对合成克隆 σ=0.677 与真实无显著差异（McNemar p=0.167）。→ 机制不依赖生成器。
+
+**方案2（RA2 环境规模，N=50，k∈{0,3,7,11}，n=100/臂）**：regret 0.349→0.386-0.399；success 0.536→0.42后平坦；配对k=7不显著(p=0.75)。同绝对量下：N=10密度78%伤18pp vs N=50密度14%伤~4pp → **效应密度驱动**；偏好偏置存活稀释（购买份额24-28% vs 随机14-22%）。→ "ambient"主张画出实测边界：强退化需污染集中；低密度是税不是崩塌。
+
+**方案3（RA3 真实垃圾评，n=100）**：YelpZip fraud-filtered假评挂同品类真实商品，方向一致但弱于类别对齐合成器（0.327 vs 0.454；配对 p=1.0, n=21）→ 领域错配混淆如实声明；reviews通道实验室效应=攻击者可控类别对齐文案时的上界。
+
+**方案4**：既有sham臂（真实同品类置换，regret 0.272≈干净0.262）已覆盖"真实同品类无害"角色。
+
+**论文落点**：abstract 一句真实验证；Results 小节三段（三源统计+RA1+RA2密度边界+RA3）；附录 A.6 协议段；Discussion Limitations 更新。12页、0编译错误、verify_numbers 全对。

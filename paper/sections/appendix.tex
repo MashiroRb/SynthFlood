@@ -101,19 +101,17 @@ provenance check.
 
 \paragraph{Sources and pairing rules.}
 \emph{ProMap}~\cite{mackov2023promap}: human-verified Walmart--Amazon
-pairs (matches, close non-matches sharing brand and product line,
-medium non-matches); cheaper-side discount computed per pair with both
-prices listed (330/509 close, 337/509 match, 364/537 medium).
-\emph{WebMall}~\cite{peeters2025webmall}: offers grouped across four
-shops by exact normalized name (244 groups, 505 offers; GTIN field
-empty in the distribution). \emph{WebShop}~\cite{yao2022webshop}:
-80{,}000 catalog items blocked by brand token and category; pairs with
-title-token Jaccard in $[0.80,0.95)$, distinct ASINs, are lookalikes;
-Jaccard $\geq0.95$ near-identical (232 pairs). Close non-match pairs
-are the real-world analogue of the clone channel; identical-name
-cross-shop groups play the near-identical control role, where buying
-the cheaper offer is correct. Per-source values are archived
-(\texttt{realdata/real\_stats.json}).
+pairs (matches, close non-matches, medium non-matches); cheaper-side
+discount per pair with both prices listed (330/509 close,
+337/509 match, 364/537 medium). \emph{WebMall}~\cite{peeters2025webmall}:
+offers grouped across four shops by exact normalized name (244 groups,
+505 offers; GTIN empty in the distribution). \emph{WebShop}~\cite{yao2022webshop}:
+80{,}000 items blocked by brand token and category; title-token
+Jaccard in $[0.80,0.95)$ with distinct ASINs marks lookalikes,
+$\geq0.95$ near-identical (232 pairs). Close non-matches are the
+real-world clone analogue; identical-name cross-shop groups are the
+near-identical control, where buying cheaper is correct. Per-source
+values are archived (\texttt{realdata/real\_stats.json}).
 
 \paragraph{Can provenance be detected from text alone?}
 GPT-2 perplexity~\cite{radford2019gpt2}, calibrated on 250
@@ -133,17 +131,16 @@ benchmarks~\cite{steiner2026billigerde} likewise treat provenance as
 unknown.
 
 \paragraph{Real-document protocols (RA1--RA3).}
-\emph{RA1 (clone).} 467 lookalike pairs (Jaccard in $[0.80,0.95)$,
+\emph{RA1 (clone).} 467 lookalike pairs (Jaccard $\in[0.80,0.95)$,
 natural discount $\geq10\%$) whose pricier member has an official
-human instruction; each task presents that instruction with exactly
-two candidates (gold, real lookalike) under official goal and reward
-semantics; the clone's price is natural or $f\in\{0.9,0.8\}$ of the
-gold price. On 250 tasks per arm (Qwen2.5-7B-Instruct):
-$\sigma=0.616/0.636/0.600$ ($f{=}0.9/0.8$/natural;
-$p{=}2.4\times10^{-4}$, $1.7\times10^{-5}$, $1.6\times10^{-3}$);
-our generator's clone wins $0.677$ on the same tasks (McNemar
-$p{=}0.167$), so the effects are not generator-specific; deeper
-natural discounts add nothing ($0.624$ vs.\ $0.588$).
+human instruction; each task presents that instruction with two
+candidates (gold, real lookalike) under official semantics; the
+clone's price is natural or $f\in\{0.9,0.8\}$ of gold. On 250 tasks
+per arm (Qwen2.5-7B-Instruct): $\sigma=0.616/0.636/0.600$
+($f{=}0.9/0.8$/natural; $p{=}2.4\times10^{-4}$, $1.7\times10^{-5}$,
+$1.6\times10^{-3}$); our generator's clone wins $0.677$ on the same
+tasks (McNemar $p{=}0.167$): not generator-specific; deeper natural
+discounts add nothing ($0.624$ vs.\ $0.588$).
 \emph{RA2 (scale).} Mixed-family sweep on a fifty-slot page at
 absolute contaminated counts $k\in\{0,3,7,11\}$ ($n{=}100$ per arm;
 $32$k-token context). \emph{RA3 (reviews).} Real same-category
