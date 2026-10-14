@@ -1,0 +1,18 @@
+{
+ "ra3_vs_clean_paired": {
+  "n": 21,
+  "drops": 11,
+  "rises": 10,
+  "p": 1.0
+ },
+ "syn_reviews_075": {
+  "n": 40,
+  "regret": 0.454,
+  "success80": 0.45
+ },
+ "ra3_real": {
+  "n": 100,
+  "regret": 0.327,
+  "success80": 0.55
+ }
+}
