@@ -12,6 +12,8 @@ say() { echo "[$(date -u +%H:%M:%S)] $*" | tee -a /tmp/m1_console.log; }
 
 # ---- 0. environment checks ----
 say "=== M1 pipeline start $STAMP ==="
+if ! mkdir /tmp/m1_pipeline.lock 2>/dev/null; then say "FATAL: another pipeline instance holds /tmp/m1_pipeline.lock"; exit 1; fi
+trap 'rmdir /tmp/m1_pipeline.lock 2>/dev/null' EXIT
 curl -s -m 5 http://localhost:8000/v1/models | grep -q Qwen || { say "FATAL: vLLM not serving"; exit 1; }
 python3 -c "import sys; sys.path.insert(0,'/root/synthflood'); sys.path.insert(0,'/root/webshop_repo'); from synthflood.ws_loader import load_official_data" || { say "FATAL: harness import failed"; exit 1; }
 [ -s /root/data/items_shuffle.json ] || { say "FATAL: data missing"; exit 1; }
