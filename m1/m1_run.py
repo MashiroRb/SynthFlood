@@ -180,22 +180,33 @@ def build_exam_clones(pairs, goals_by_asin, by_asin, product_prices,
     if os.path.exists(path):
         with open(path) as f:
             return json.load(f)
-    out = {}
-    for pi, rec in enumerate(pairs):
+    def one(pi):
+        rec = pairs[pi]
         g = goals_by_asin.get(rec["gold_asin"])
         if g is None:
-            continue
+            return pi, None
         gold_price = product_prices.get(rec["gold_asin"], 100.0)
         rng = random.Random(41000 + pi)
         b = synth_listing("clone", g, by_asin[rec["gold_asin"]], rng,
-                         client, PORT)
+                         RateClient(PORT, MODEL), PORT)
         if b is None:
-            log(f"WARN clone gen failed pair {pi}")
-            continue
+            return pi, None
         b["price"] = round(gold_price * f_mult, 2)
-        out[str(pi)] = _cand_from_listing(b)
-        if pi % 10 == 0:
-            log(f"  {tag} clones {pi}/{len(pairs)}")
+        return pi, _cand_from_listing(b)
+
+    out = {}
+    todo = [pi for pi, rec in enumerate(pairs)
+            if rec["gold_asin"] in goals_by_asin]
+    done_n = 0
+    with ThreadPoolExecutor(16) as ex:
+        for pi, cand in ex.map(one, todo):
+            done_n += 1
+            if cand is None:
+                log(f"WARN clone gen failed pair {pi}")
+                continue
+            out[str(pi)] = cand
+            if done_n % 40 == 0:
+                log(f"  {tag} clones {done_n}/{len(todo)}")
     with open(path, "w") as f:
         json.dump(out, f, ensure_ascii=False)
     log(f"cached {len(out)} {tag} clones -> {path}")
