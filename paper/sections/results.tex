@@ -392,3 +392,17 @@ all three sources. What the laboratory experiment adds is the causal
 direction: real catalogs contain the lure structure, and
 Section~\ref{sec:res-probe}--\ref{sec:res-dose} show that structure is
 sufficient to buy agent decisions.
+
+The mechanism also replicates with documents we did not generate. From
+the full 1.18M-item catalog we mine 467 lookalike pairs (Appendix
+\ref{sec:app-real}) whose pricier member carries an official human
+instruction; the cheaper member --- a real listing, never synthesized
+--- is the clone. In a forced-choice probe ($n{=}250$ per arm), agents
+pick the \emph{real} lookalike in $61.6\%$ of episodes at
+$f{=}0.9$ ($p{=}2.4\times10^{-4}$), $63.6\%$ at $f{=}0.8$, and
+$60.0\%$ at its own unmodified price ($p{=}1.6\times10^{-3}$); on the
+same tasks our generator's synthetic clone wins $67.7\%$ ---
+statistically indistinguishable from the real lookalike (paired
+McNemar $p{=}0.167$). The dose--response is thus not an artifact of
+our generator: real listings in the clone niche buy decisions at the
+same rate.
