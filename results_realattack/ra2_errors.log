@@ -1,0 +1,290 @@
+RA2 3 0.14285714285714285 mix none: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "/root/synthflood/synthflood/run_sweep.py", line 56, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+
+RA2 3 0.22448979591836735 mix none: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "/root/synthflood/synthflood/run_sweep.py", line 56, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+
+RA2 3 0.0 mix none: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "/root/synthflood/synthflood/run_sweep.py", line 56, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+
+RA2 2 0.14285714285714285 mix none: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "/root/synthflood/synthflood/run_sweep.py", line 56, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+
+RA2 9 0.0 mix none: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "/root/synthflood/synthflood/run_sweep.py", line 56, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+
+RA2 12 0.0 mix none: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "/root/synthflood/synthflood/run_sweep.py", line 56, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+
+RA2 9 0.061224489795918366 mix none: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "/root/synthflood/synthflood/run_sweep.py", line 56, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+
+RA2 9 0.14285714285714285 mix none: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "/root/synthflood/synthflood/run_sweep.py", line 56, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+
+RA2 9 0.22448979591836735 mix none: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "/root/synthflood/synthflood/run_sweep.py", line 56, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+
+RA2 38 0.061224489795918366 mix none: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "/root/synthflood/synthflood/run_sweep.py", line 56, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+
+RA2 38 0.22448979591836735 mix none: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "/root/synthflood/synthflood/run_sweep.py", line 56, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+
+RA2 2 0.0 mix none: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "/root/synthflood/synthflood/run_sweep.py", line 56, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+
+RA2 3 0.14285714285714285 mix none: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "/root/synthflood/synthflood/run_sweep.py", line 56, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+
+RA2 2 0.22448979591836735 mix none: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "/root/synthflood/synthflood/run_sweep.py", line 56, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+
+RA2 9 0.0 mix none: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "/root/synthflood/synthflood/run_sweep.py", line 56, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+
+RA2 9 0.14285714285714285 mix none: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "/root/synthflood/synthflood/run_sweep.py", line 56, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+
+RA2 9 0.22448979591836735 mix none: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "/root/synthflood/synthflood/run_sweep.py", line 56, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+
+RA2 12 0.0 mix none: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "/root/synthflood/synthflood/run_sweep.py", line 56, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+
+RA2 38 0.061224489795918366 mix none: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "/root/synthflood/synthflood/run_sweep.py", line 56, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+
+RA2 3 0.14285714285714285 mix none: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "/root/synthflood/synthflood/run_sweep.py", line 56, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+
+RA2 3 0.22448979591836735 mix none: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "/root/synthflood/synthflood/run_sweep.py", line 56, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+
+RA2 2 0.22448979591836735 mix none: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "/root/synthflood/synthflood/run_sweep.py", line 56, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+
+RA2 9 0.0 mix none: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "/root/synthflood/synthflood/run_sweep.py", line 56, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+
+RA2 2 0.14285714285714285 mix none: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "/root/synthflood/synthflood/run_sweep.py", line 56, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+
+RA2 12 0.0 mix none: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "/root/synthflood/synthflood/run_sweep.py", line 56, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+
+RA2 9 0.14285714285714285 mix none: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "/root/synthflood/synthflood/run_sweep.py", line 56, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+
+RA2 9 0.22448979591836735 mix none: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "/root/synthflood/synthflood/run_sweep.py", line 56, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+
+RA2 38 0.22448979591836735 mix none: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "/root/synthflood/synthflood/run_sweep.py", line 56, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+
+RA2 85 0.0 mix none: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "/root/synthflood/synthflood/run_sweep.py", line 56, in run_cell
+    summary = run_episode(
+  File "/root/synthflood/synthflood/agent_react.py", line 86, in run_episode
+    text, raw = client.chat(history, temperature=AGENT_TEMP,
+  File "/root/synthflood/synthflood/vllm_client.py", line 49, in chat
+    raise RuntimeError(f"LLM call failed after {retries} retries: {last_err}")
+RuntimeError: LLM call failed after 5 retries: HTTP Error 400: Bad Request
+
