@@ -737,18 +737,28 @@ def _sigma(rows, arm, phase, ckpt=None):
 
 
 def two_prop_z(k1, n1, k2, n2):
-    from scipy.stats import norm
+    import math
     p1, p2 = k1 / n1, k2 / n2
     p = (k1 + k2) / (n1 + n2)
     se = (p * (1 - p) * (1 / n1 + 1 / n2)) ** 0.5
     if se == 0:
         return 0.0, 1.0
     z = (p1 - p2) / se
-    return z, 2 * (1 - norm.cdf(abs(z)))
+    return z, math.erfc(abs(z) / math.sqrt(2))  # two-sided
+
+
+def _binom_p_two_sided(k, n):
+    import math
+    if n == 0:
+        return 1.0
+    lo, hi = min(k, n - k), max(k, n - k)
+    c = sum(math.comb(n, i) for i in range(0, lo + 1)) * 2
+    if lo == hi:
+        c -= math.comb(n, lo)
+    return min(1.0, c / 2 ** n)
 
 
 def mcnemar(rows, arm_a, ckpt_a, arm_b, ckpt_b):
-    from scipy.stats import binomtest
     idx_a = {int(r["pair_idx"]): int(r["chose_clone"]) for r in rows
              if r["arm"] == arm_a and int(r["checkpoint"]) == ckpt_a}
     idx_b = {int(r["pair_idx"]): int(r["chose_clone"]) for r in rows
@@ -758,8 +768,7 @@ def mcnemar(rows, arm_a, ckpt_a, arm_b, ckpt_b):
     c = sum(1 for i in common if idx_a[i] == 0 and idx_b[i] == 1)
     if b + c == 0:
         return b, c, 1.0
-    p = binomtest(min(b, c), b + c, 0.5).pvalue
-    return b, c, p
+    return b, c, _binom_p_two_sided(min(b, c), b + c)
 
 
 def analyze():
