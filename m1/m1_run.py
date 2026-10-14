@@ -85,7 +85,7 @@ def _extract_json(text):
             return None
 
 
-CSV_LOCK = threading.Lock()
+CSV_LOCK = threading.RLock()
 EPISODE_FIELDS = ["arm", "phase", "ep_idx", "goal_asin", "chosen_kind",
                   "chose_synthetic", "reward", "gold_reward_cf", "steps",
                   "malformed"]
