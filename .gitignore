@@ -3,3 +3,9 @@ __pycache__/
 .ipynb_checkpoints/
 *.tar.gz
 nohup.out
+logs/
+results/
+*.pkl
+data/items_*.json
+data/all_products.pkl
+data/*.log

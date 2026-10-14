@@ -67,10 +67,13 @@ def parse_action(text):
 
 def run_episode(env: SelectEnv, client: LLMClient, instruction: str,
                 defense: str = "none", max_steps: int = AGENT_MAX_STEPS,
-                meta: dict = None, log_path: str = None):
+                meta: dict = None, log_path: str = None,
+                sys_extra: str = ""):
     sys_prompt = SYSTEM_PROMPT.format(n=env.n)
     if defense in DEFENSE_PROMPT:
         sys_prompt += DEFENSE_PROMPT[defense]
+    if sys_extra:
+        sys_prompt += "\n\n" + sys_extra
     obs = env.reset()
     history = [{"role": "system", "content": sys_prompt},
                {"role": "user", "content":
