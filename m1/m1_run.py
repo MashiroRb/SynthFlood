@@ -553,7 +553,10 @@ Which option do you buy? Output ONLY JSON: {{"choose": "A" or "B"}}"""
 
 def run_xdom(ctx, name, mem_block, n_limit=None):
     client = RateClient(PORT, MODEL)
-    tasks = ctx["xdom_options"][:n_limit] if n_limit else ctx["xdom_options"]
+    opts = ctx["xdom_options"]
+    tasks = [opts[k] for k in sorted(opts, key=lambda x: int(x))] \
+        if isinstance(opts, dict) else opts
+    tasks = tasks[:n_limit] if n_limit else tasks
     for gi, t in enumerate(tasks):
         if not t.get("B", {}).get("reviews"):
             continue
