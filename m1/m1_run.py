@@ -704,7 +704,7 @@ def full(smoke=False, arms=None):
         log("shared pre-exam (40 duels, no memory)")
         run_exams(ctx, "PRE", "exam", -1, EXAM_IDX, ctx["exam_clones"], "")
     names = arms or (["M0"] if smoke else ["M0", "M2", "M3"])
-    threads = [threading.Thread(target=run_arm, args=(ctx, n, smoke),
+    threads = [threading.Thread(target=run_arm, args=(ctx, n),
                                 kwargs={"smoke": smoke})
                for n in names]
     for t in threads:
