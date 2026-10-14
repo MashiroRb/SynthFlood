@@ -1,0 +1,45 @@
+{
+ "date": "2026-10-13",
+ "promapen_close_nonmatch": {
+  "n_pairs_total": 509,
+  "n_both_prices": 330,
+  "disc_ge_10pct": 0.733,
+  "median_discount": 0.209
+ },
+ "promapen_match": {
+  "n_pairs_total": 509,
+  "n_both_prices": 337,
+  "disc_ge_10pct": 0.638,
+  "median_discount": 0.167
+ },
+ "promapen_medium_nonmatch": {
+  "n_pairs_total": 537,
+  "n_both_prices": 364,
+  "disc_ge_10pct": 0.772,
+  "median_discount": 0.229
+ },
+ "amazon_walmart_verified_pairs": {
+  "n_pairs": 3143,
+  "n_both_prices": 2736,
+  "disc_ge_10pct": 0.827
+ },
+ "webmall_crossshop_exactname": {
+  "n_groups": 244,
+  "n_offers": 505,
+  "disc_ge_10pct": 0.533,
+  "median_discount": 0.111,
+  "mean_discount": 0.164
+ },
+ "note": "All pairs/offers are real listings; ProMapEn = human-verified Walmart-Amazon mapping (close non-match = lookalike different product); WebMall = real offers extracted from Oct-2024 Common Crawl (schema.org), grouped by exact normalized name across 4 shops.",
+ "webshop_catalog": {
+  "source": "WebShop items_shuffle.json (1.18M real Amazon listings, scraped pre-2019)",
+  "sampled": 80000,
+  "lookalike_pairs_J080_095": 497,
+  "lookalike_pct_ge10pct_cheaper": 83.3,
+  "lookalike_median_discount": 0.21,
+  "near_identical_pairs_J095": 232,
+  "near_identical_pct_ge10pct_cheaper": 51.7,
+  "near_identical_median_discount": 0.11,
+  "note": "third independent real-world source; pairs mined by brand+category blocking, title-token Jaccard"
+ }
+}
