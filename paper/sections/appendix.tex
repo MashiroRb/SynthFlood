@@ -110,14 +110,12 @@ offers grouped across four shops by exact normalized name (244 groups,
 Jaccard in $[0.80,0.95)$ with distinct ASINs marks lookalikes,
 $\geq0.95$ near-identical (232 pairs). Close non-matches are the
 real-world clone analogue; identical-name cross-shop groups are the
-near-identical control, where buying cheaper is correct. Per-source
-values are archived (\texttt{realdata/real\_stats.json}).
+near-identical control, where buying cheaper is correct. Per-source values: \texttt{realdata/real\_stats.json}.
 
 \paragraph{Can provenance be detected from text alone?}
 GPT-2 perplexity~\cite{radford2019gpt2}, calibrated on 250
-human-written WebShop descriptions, separates our synthetic pools
-strongly (AUC $0.912$; median perplexity $\approx22$ synthetic
-vs.\ $\approx55$ human). Two conclusions follow. First,
+human-written WebShop descriptions, separates our pools (AUC $0.912$;
+median perplexity $\approx22$ synthetic vs.\ $\approx55$ human). First,
 susceptibility is a \emph{decision-level} failure --- the agent buys
 listings it could in principle distinguish --- so structural
 provenance guarantees, not better perception, are the operative
@@ -132,22 +130,22 @@ unknown.
 
 \paragraph{Real-document protocols (RA1--RA3).}
 \emph{RA1 (clone).} 467 lookalike pairs (Jaccard $\in[0.80,0.95)$,
-natural discount $\geq10\%$) whose pricier member has an official
-human instruction --- the 80k-sample census above does not apply this
-filter; each task presents that instruction with two candidates
-(gold, real lookalike) under official semantics; the
-clone's price is natural or $f\in\{0.9,0.8\}$ of gold. On 250 tasks
-per arm (Qwen2.5-7B-Instruct): $\sigma=0.616/0.636/0.600$
-($f{=}0.9/0.8$/natural; $p{=}2.4\times10^{-4}$, $1.7\times10^{-5}$,
-$1.6\times10^{-3}$); our generator's clone wins $0.677$ on the same
-tasks (McNemar $p{=}0.167$): not generator-specific; deeper natural
-discounts add nothing ($0.624$ vs.\ $0.588$).
+natural discount $\geq10\%$; the 80k-sample census above does not
+apply the instruction filter) with two candidates per task (gold,
+real lookalike) under official semantics; clone price natural or
+$f\in\{0.9,0.8\}$ of gold. Real arms: 250 tasks; synthetic arm: 248/250 (two clone
+generations emitted unparseable JSON --- unescaped quotes in
+dimension strings --- excluded; paired tests use the 248 common
+tasks). Qwen2.5-7B-Instruct: $\sigma=0.616/0.636/0.600$
+($p{=}2.4\times10^{-4}$, $1.7\times10^{-5}$, $1.6\times10^{-3}$);
+our generator's clone wins $0.677$ on the same tasks (McNemar
+$p{=}0.167$): not generator-specific; deeper natural discounts add
+nothing ($0.624$ vs.\ $0.588$).
 \emph{RA2 (scale).} Mixed-family sweep on a fifty-slot page at
-absolute contaminated counts $k\in\{0,3,7,11\}$ ($n{=}100$ per arm;
+absolute contaminated counts $k\in\{0,3,7,11\}$ ($n{=}100$/arm;
 $32$k-token context). \emph{RA3 (reviews).} Real same-category
 listings carry Yelp fraud-filtered spam reviews (label $=-1$, rating
 $\geq4$) with the same programmatic inflation as the synthetic
 family; $\varepsilon{=}0.75$, $n{=}100$: regret $0.327$, success80
-$0.550$ (synthetic family: $0.454/0.450$, $n{=}40$; paired vs.\ the
-clean arm on common tasks $p{=}1.0$, $n{=}21$) --- directionally
-consistent, statistically weak, as expected under domain mismatch.
+$0.550$ (synthetic family $0.454/0.450$, $n{=}40$; paired vs.\ clean
+on common tasks $p{=}1.0$, $n{=}21$).
