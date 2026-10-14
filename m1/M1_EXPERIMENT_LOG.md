@@ -32,3 +32,99 @@
 
 （待补：m1_summary.json 摘录 + 对照第 7 节判定分支的结论，措辞遵循
 【符合预期】【反转预期】【无显著差异】精确判定语）
+
+## 实验执行 (2026-10-14 19:26 UTC)
+
+- prep/smoke/full 均由 m1_pipeline.sh + m1_finalize.sh 驱动。
+- full 运行控制台日志：/tmp/m1_full.log（运行期），关键数字入 results_m1/。
+
+### 分析输出（m1_run.py --mode analyze）
+
+```
+  arm            phase  ckpt   sigma n
+   B0             exam     2   0.718 39
+   B0             exam     4   0.692 39
+   B0             exam     6   0.718 39
+   B0             exam     8   0.718 39
+   B0             exam    10   0.718 39
+   B0             exam    12   0.692 39
+   B0             exam    14   0.667 39
+   B0             exam    16   0.795 39
+   B0             exam    18   0.795 39
+   B0             exam    20   0.718 39
+   B0           parity    10   0.632 38
+   B0           parity    20   0.579 38
+   M0             exam     0   0.897 39
+   M0             exam     2   0.872 39
+   M0             exam     4   0.615 39
+   M0             exam     6   0.769 39
+   M0             exam     8   0.718 39
+   M0             exam    10   0.692 39
+   M0             exam    12   0.692 39
+   M0             exam    14   0.692 39
+   M0             exam    16   0.744 39
+   M0             exam    18   0.769 39
+   M0             exam    20   0.667 39
+   M0           parity     0   0.789 38
+   M0           parity    10   0.763 38
+   M0           parity    20   0.842 38
+   M2             exam     0   0.692 39
+   M2             exam     2   0.718 39
+   M2             exam     4   0.718 39
+   M2             exam     6   0.718 39
+   M2             exam     8   0.718 39
+   M2             exam    10   0.667 39
+   M2             exam    12   0.667 39
+   M2             exam    14   0.744 39
+   M2             exam    16   0.692 39
+   M2             exam    18   0.667 39
+   M2             exam    20   0.718 39
+   M2           parity     0   0.526 38
+   M2           parity    10   0.526 38
+   M2           parity    20   0.605 38
+   M3             exam     0   0.769 39
+   M3             exam     2   0.769 39
+   M3             exam     4   0.641 39
+   M3             exam     6   0.744 39
+   M3             exam     8   0.718 39
+   M3             exam    10   0.744 39
+   M3             exam    12   0.718 39
+   M3             exam    14   0.667 39
+   M3             exam    16   0.667 39
+   M3             exam    18   0.821 39
+   M3             exam    20   0.692 39
+   M3           parity     0   0.658 38
+   M3           parity    10   0.632 38
+   M3           parity    20   0.684 38
+   M4             exam     0   0.744 39
+   M4             exam     2   0.744 39
+   M4             exam     4   0.667 39
+   M4             exam     6   0.718 39
+   M4             exam     8   0.692 39
+   M4             exam    10   0.718 39
+   M4             exam    12   0.667 39
+   M4             exam    14   0.744 39
+   M4             exam    16   0.769 39
+   M4             exam    18   0.744 39
+   M4             exam    20   0.667 39
+  PRE             exam    -1   0.692 39
+Traceback (most recent call last):
+  File "/root/synthflood_repo/m1/m1_run.py", line 875, in <module>
+    analyze()
+  File "/root/synthflood_repo/m1/m1_run.py", line 795, in analyze
+    z, p = (two_prop_z(round(m0_20 * n20), n20,
+  File "/root/synthflood_repo/m1/m1_run.py", line 740, in two_prop_z
+    from scipy.stats import norm
+ModuleNotFoundError: No module named 'scipy'
+```
+
+### 数据完整性
+
+```
+  161 results_m1/m1_episodes.csv
+ 2759 results_m1/m1_exams.csv
+  101 results_m1/m1_rank.csv
+  101 results_m1/m1_xdom.csv
+ 3122 total
+60 results_m1/m1_reward_autopsy.jsonl
+```
