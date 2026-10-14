@@ -9,12 +9,12 @@ GitHub（https://github.com/MashiroRb/SynthFlood.git）；每完成一段实验�
 
 ---
 
-## 方案 5：主张改口径（无需 GPU）— [ ]
+## 方案 5：主张改口径（无需 GPU）— [x]
 
 - 把"环境被虚假信息淹没"式措辞改为实验实际证明的命题："常驻检索环境中的商业噪声，
   无需定向注入、伴随常规浏览出现"。"环境式"= ambient presence，不指全网大规模淹没。
 - 明确写出当前操作化范围（结果页 top-10 注入）与方案 2 的扩展。
-- **结果与分析**：（待填）
+- **结果与分析**：已改 4 处——①abstract：ambient 定义改为"占据常规浏览的检索语境，无需定向"；②problem.tex Setting 小节新增 scope note（ambient ≠ 全网饱和声明；主表面=10 槽结果页；后续规模实验扩展至 50 槽）；③conclusion 开头 "saturating the Web"→"common on the commercial Web"；④discussion Limitations 新增两句：表面范围声明 + 真实文档注入预告（clone=人工核验 lookalike 对、reviews=被标垃圾评论）。编译 12 页 0 错误。
 
 ## 方案 1：真实克隆注入实验（需 GPU，~30-45 分钟）— [ ]
 

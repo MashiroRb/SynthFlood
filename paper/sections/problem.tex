@@ -9,6 +9,14 @@ bullets, specification attributes, a description, a price, and an aggregate
 rating with a review count. The agent observes a rendered version of these
 fields and commits to a choice $k\in\{1..N\}$.
 
+A note on scope: \emph{ambient} refers to how contamination arrives ---
+synthetic content occupies the retrieval context that routine browsing
+presents, with no adversary and no targeting --- not to a claim that the
+Web as a whole is saturated. Our primary surface is the ten-slot results
+page a search engine returns; a dedicated scale experiment extends the
+surface to fifty slots and measures how degradation scales with the
+absolute number of contaminated slots.
+
 We model \emph{ambient synthetic contamination} as a random process on the
 candidate pool, not as an adversary. A fraction $\varepsilon$ of distractor
 slots is occupied by synthetic listings $s$ produced by a generative model
