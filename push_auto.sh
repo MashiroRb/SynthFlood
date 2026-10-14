@@ -16,7 +16,7 @@ cp -f "$ROOT/REAL_ATTACK_VALIDATION_PLAN.md" results_realattack/ 2>/dev/null || 
 git add -A
 if ! git diff --cached --quiet; then git commit -q -m "${1:-auto: sync paper+results $(date -u +%FT%TZ)}"; fi
 PAT=$(cat "$ROOT/PAT")
-git push -q https://MashiroRb:$PAT@github.com/MashiroRb/SynthFlood.git main 2>&1 | grep -v "^$"
+
 # 4) 核对远端
 LOCAL=$(git rev-parse HEAD)
 REMOTE=$(git ls-remote https://MashiroRb:$PAT@github.com/MashiroRb/SynthFlood.git main | cut -f1)
