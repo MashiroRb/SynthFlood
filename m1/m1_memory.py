@@ -32,8 +32,8 @@ class MemoryStore:
         self.n_deleted = 0
 
     # ---------- writers ----------
-    def add_observation(self, t, task_desc, chosen_kind, reward, gold_reward,
-                       price_mentioned):
+    def add_observation(self, t, task_desc, chosen_kind, reward,
+                       gold_reward):
         kind = {"synthetic:clone": "a heavily discounted lookalike listing",
                 "synthetic:geo": "a listing with glowing descriptions",
                 "synthetic:reviews": "a listing with many positive reviews",
