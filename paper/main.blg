@@ -15,6 +15,7 @@ Warning--empty address in kim2026agenticshop
 Warning--empty address in peeters2025webmall
 Warning--no number and no volume in radford2019gpt2
 Warning--page numbers missing in both pages and numpages fields in radford2019gpt2
+Warning--empty address in rayana2015collective
 Warning--empty address in steiner2026billigerde
 Warning--page numbers missing in both pages and numpages fields in steiner2026billigerde
 Warning--empty publisher in yao2022webshop
@@ -24,45 +25,45 @@ Warning--empty publisher in yao2022react
 Warning--empty address in yao2022react
 Warning--page numbers missing in both pages and numpages fields in yao2022react
 Warning--empty address in yu2026retrieval
-You've used 34 entries,
+You've used 35 entries,
             5981 wiz_defined-function locations,
-            1682 strings with 26026 characters,
-and the built_in function-call counts, 35052 in all, are:
-= -- 3744
-> -- 1718
+            1689 strings with 26282 characters,
+and the built_in function-call counts, 36295 in all, are:
+= -- 3884
+> -- 1749
 < -- 0
-+ -- 597
-- -- 569
-* -- 3045
-:= -- 3884
-add.period$ -- 168
-call.type$ -- 34
-change.case$ -- 347
-chr.to.int$ -- 32
-cite$ -- 47
-duplicate$ -- 2771
-empty$ -- 1993
-format.name$ -- 699
-if$ -- 7692
++ -- 608
+- -- 583
+* -- 3122
+:= -- 3999
+add.period$ -- 173
+call.type$ -- 35
+change.case$ -- 353
+chr.to.int$ -- 33
+cite$ -- 49
+duplicate$ -- 2896
+empty$ -- 2079
+format.name$ -- 717
+if$ -- 7987
 int.to.chr$ -- 4
 int.to.str$ -- 1
-missing$ -- 38
-newline$ -- 461
-num.names$ -- 236
-pop$ -- 1097
+missing$ -- 43
+newline$ -- 471
+num.names$ -- 243
+pop$ -- 1147
 preamble$ -- 1
-purify$ -- 587
+purify$ -- 601
 quote$ -- 0
-skip$ -- 1060
+skip$ -- 1110
 stack$ -- 0
-substring$ -- 2094
-swap$ -- 180
+substring$ -- 2197
+swap$ -- 194
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 980
-warning$ -- 13
-while$ -- 126
+type$ -- 1010
+warning$ -- 14
+while$ -- 136
 width$ -- 0
-write$ -- 834
-(There were 13 warnings)
+write$ -- 856
+(There were 14 warnings)

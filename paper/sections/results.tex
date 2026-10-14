@@ -361,7 +361,7 @@ vulnerability --- while the below-competence 1.5B backbone shows a
 floor effect (clean regret already $0.578$) that makes the dose contrast
 uninterpretable.
 
-\subsection{The attack surface exists in real catalogs}
+\subsection{Real catalogs, real documents}
 \label{sec:res-realworld}
 The dose--response is measured on synthetic listings, so a natural
 question is whether the tested discount regime matches reality. Three
@@ -418,7 +418,7 @@ poisoned result pages.
 
 \paragraph{Real spam reviews.}
 Replacing the synthetic review-inflation family with \emph{real}
-filtered spam reviews (Yelp's fraud-filtered corpus, mapped onto
+filtered spam reviews~\cite{rayana2015collective}, mapped onto
 same-category real listings with identical programmatic inflation)
 preserves the direction of the harm --- regret $0.327$ vs.\ $0.294$
 clean --- but at roughly half the magnitude of the category-aligned

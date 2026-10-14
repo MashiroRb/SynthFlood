@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{34}
+\begin{thebibliography}{35}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -340,6 +340,20 @@
 \newblock \bibinfo{journal}{\emph{OpenAI Technical Report}}
   (\bibinfo{year}{2019}).
 \newblock
+
+
+\bibitem[Rayana and Akoglu(2015)]%
+        {rayana2015collective}
+\bibfield{author}{\bibinfo{person}{Shebuti Rayana} {and} \bibinfo{person}{Leman
+  Akoglu}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{Collective Opinion Spam Detection: Bridging Review
+  Networks and Metadata}. In \bibinfo{booktitle}{\emph{Proceedings of the 21th
+  ACM SIGKDD International Conference on Knowledge Discovery and Data Mining}}.
+  \bibinfo{publisher}{ACM}, \bibinfo{pages}{985--994}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2783258.2783370}
+\showDOI{\tempurl}
 
 
 \bibitem[Russell et~al\mbox{.}(2026)]%
