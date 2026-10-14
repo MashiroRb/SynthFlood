@@ -364,34 +364,25 @@ uninterpretable.
 \subsection{The attack surface exists in real catalogs}
 \label{sec:res-realworld}
 The dose--response is measured on synthetic listings, so a natural
-question is whether the tested discount regime matches reality. We
-answer with three independent real-world sources, described in
-Appendix~\ref{sec:app-real}. First, in the human-verified ProMap
-Walmart--Amazon mapping dataset~\cite{mackov2023promap}, 509
-\emph{close non-match} pairs --- different products sharing brand,
-product line, and near-identical titles, i.e., real-world analogues of
-our clone channel --- list both prices in 330 cases; 73.3\% of these
-have a side at least 10\% cheaper, with median discount 20.9\%.
-Second, in WebMall~\cite{peeters2025webmall}, a benchmark of real
-offers crawled from four shops in the October 2024 Common Crawl,
-244 cross-shop groups of offers with \emph{identical normalized names}
-(505 offers) show the same pattern: 53.3\% of groups have a side at
-least 10\% cheaper (median 11.1\%) --- and for identical products,
-buying the cheaper offer is the \emph{correct} decision, matching our
-near-identical control condition. Third, blocking the 80{,}000-item
-WebShop catalog sample~\cite{yao2022webshop} by brand and category and
-matching title tokens (Jaccard $0.80$--$0.95$, distinct ASINs) yields
-497 lookalike pairs; 83.3\% contain a side at least 10\% cheaper
-(median 21.0\%), while 232 near-identical pairs (Jaccard
-$\geq0.95$) sit at 51.7\% and 11.0\%. Across sources, the
-$10\%$--$30\%$ discount range scanned in
-Section~\ref{sec:res-dose} is not a tail event but the modal regime of
-real price dispersion between lookalike offers, and the separation
-between lookalike and near-identical dispersion is consistent across
-all three sources. What the laboratory experiment adds is the causal
-direction: real catalogs contain the lure structure, and
-Section~\ref{sec:res-probe}--\ref{sec:res-dose} show that structure is
-sufficient to buy agent decisions.
+question is whether the tested discount regime matches reality. Three
+independent sources (Appendix~\ref{sec:app-real}) say it does. In the
+human-verified ProMap Walmart--Amazon pairs~\cite{mackov2023promap},
+509 \emph{close non-matches} --- different products sharing brand and
+near-identical titles, real-world analogues of our clone channel ---
+show a side at least 10\% cheaper in 73.3\% of the 330 pairs with
+both prices listed (median discount 20.9\%). In
+WebMall~\cite{peeters2025webmall} (real offers crawled from four
+shops, October 2024), 53.3\% of 244 cross-shop groups with identical
+normalized names have a side at least 10\% cheaper (median 11.1\%)
+--- and there, buying the cheaper offer is \emph{correct}, matching
+our near-identical control. Blocking the 80{,}000-item WebShop catalog
+sample~\cite{yao2022webshop} by brand and category yields 497
+lookalike pairs (Jaccard $0.80$--$0.95$): 83.3\% have a side at least
+10\% cheaper (median 21.0\%), versus 51.7\% for the 232
+near-identical pairs (Jaccard $\geq0.95$). The $10\%$--$30\%$ range
+scanned in Section~\ref{sec:res-dose} is thus the modal regime of real
+price dispersion, not a tail event; what the laboratory adds is the
+causal direction (Sections~\ref{sec:res-probe}--\ref{sec:res-dose}).
 
 The mechanism also replicates with documents we did not generate. From
 the full 1.18M-item catalog we mine 467 lookalike pairs (Appendix
@@ -406,3 +397,32 @@ statistically indistinguishable from the real lookalike (paired
 McNemar $p{=}0.167$). The dose--response is thus not an artifact of
 our generator: real listings in the clone niche buy decisions at the
 same rate.
+
+\paragraph{Ambient scale: dilution attenuates the harm.}
+To test whether the effect survives beyond a ten-slot page, we repeat
+the mixed-family sweep on a fifty-slot results page, holding the
+\emph{absolute} number of contaminated slots at $k\in\{0,3,7,11\}$
+($n{=}100$ per arm). Regret rises from $0.349$ (clean) to
+$0.386$--$0.399$ for any $k\geq3$, and success80 drops once
+($0.536\to0.42$--$0.43$) but does not fall further with $k$; the
+paired $k{=}7$ contrast is not individually significant (sign test
+$p{=}0.75$). At the \emph{same} absolute count, the dense ten-slot
+page ($78\%$ contamination) loses $18$\,pp of regret while the
+diluted fifty-slot page ($14\%$) loses ${\approx}4$\,pp: the harm is
+driven by contamination \emph{density}, not raw volume. Preference
+bias, however, survives dilution --- agents still buy synthetic
+listings in $24$--$28\%$ of episodes against a $k/49=14$--$22\%$
+chance baseline. Ambient contamination at low density is a tax, not
+a collapse; the collapse requires the concentrated regime of
+poisoned result pages.
+
+\paragraph{Real spam reviews.}
+Replacing the synthetic review-inflation family with \emph{real}
+filtered spam reviews (Yelp's fraud-filtered corpus, mapped onto
+same-category real listings with identical programmatic inflation)
+preserves the direction of the harm --- regret $0.327$ vs.\ $0.294$
+clean --- but at roughly half the magnitude of the category-aligned
+synthetic generator ($0.454$); the residue is attributable to domain
+mismatch (restaurant reviews on product pages). The review channel's
+laboratory effect should be read as an upper bound attainable by an
+attacker who controls category-aligned review text.
