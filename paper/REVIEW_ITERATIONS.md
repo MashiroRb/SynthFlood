@@ -131,3 +131,32 @@ Borderline（2×weak accept + 1 accept，但 M 级问题密集）。方向正确
 **方案4**：既有sham臂（真实同品类置换，regret 0.272≈干净0.262）已覆盖"真实同品类无害"角色。
 
 **论文落点**：abstract 一句真实验证；Results 小节三段（三源统计+RA1+RA2密度边界+RA3）；附录 A.6 协议段；Discussion Limitations 更新。12页、0编译错误、verify_numbers 全对。
+
+## Round 3（2026-10-14 下午）：WWW 2027 正式三审 + 官方标准核查
+
+**官方标准（已核实，www2027.thewebconf.org + WWW 2026 CFP）**：主文 **8 页硬上限**+参考文献+附录≤12 页；前 8 页须自含（审稿人不被要求读 beyond）；OpenReview 双盲；评审表 −3..+3 / 置信 1-5；录取线≈均分≥1。
+
+### 三审得分
+| 审稿人 | 总分 | 置信 | 一句话 |
+|---|---|---|---|
+| R1 严谨性 | **0**（borderline） | 5/5 | 设计高于场地中位数，但新素材相对自身统计系统性过强声称 |
+| R2 新颖性 | **+1** | 4/5 | 罕见地"第3轮新增回应了第2轮反对"；被页限、防御声明统计力、相关工作缺口拖住 |
+| R3 清晰度 | **+1**（条件） | 4/5 | 科学扎实，但 1.3 页超限+模板占位符+死浮动图不可被接收 |
+| **均分** | **+0.67** | | 低于录取线（≥1），修复清单明确 |
+
+### 已被我用原始数据核实的 BLOCKER（按优先级）
+1. **[核实✓] 主文超 8 页 ~1.3 页**（refs 第10页起）——WWW 硬性规则，需重构：brave-new 段砍成3句、贡献条目去数字、Related Work 压35%、§5.5(ii)(iv)+3B/1.5B 细节+RA3 细节移附录、删未引用图。R3 给了逐段行数预算（~145 行）。
+2. **[核实✓] 模板占位符**：main.tex 无 \acmConference/\acmYear/CCS/keywords → 每页页脚 "Conference'17, July 2017"。机械化修复。
+3. **[核实✓ R1-B1] probe 每家族 n=88（clone）/97（geo）/115（reviews），总数300——但论文 4 处写 "300 duels per row/arm/level"**（Table 1 caption、§4.3、§5.2、§5.3）。clone 家族全部统计精确对应 n=88（46/88=0.523 等）。A.5 自己写了 "n=88 per arm" 却没人对上主文。
+4. **[核实✓ R1-B2] 摘要 p=0.003 错位**：0.591 的 p=0.003 是 vs 价格平价臂的配对检验；vs 随机 52/88 → p≈0.09 不显著。须改措辞归因。
+5. **[核实✓ R1-B5] RA2 密度数字错误**："78% contamination" 无对应实验条件（ε=0.75 → 6/9=67%）；"same absolute count" 为假（6 vs 7）；干净基线不同（0.262 vs 0.349）混淆密度与页面大小。**修复方案**：改用相对增幅（10槽 +69% vs 50槽 +11%）+ 补做密度匹配格子或降级为 "consistent with density-driven"。
+6. **[核实✓ R1-B3] RA1 "indistinguishable" 无等价检验**：配对差 CI≈[−2.3,+14.5]pp，生成器三点全更高。改为有界声称（"bound any generator advantage at ≤~15pp"）+ 报 CI。
+7. **[核实✓ R1-B7/R3-B3] RA3 "confirm" 过强**：p=1.0 只在附录。**n=21 之谜已解**：40 共同任务中 19 对 regret 完全相同（平局被符号检验剔除），非选择偏倚——但论文必须写明（"40 common tasks, 21 non-tied pairs"）。摘要/贡献条目 "confirm"→"directionally consistent"。
+8. **[R1-B8/R2-B2] 防御声明 vs 自身 Holm 校正**：摘要 "eliminates the regret excess" 但 A.5 承认 provenance-vs-none 校正后 p∈[0.072,0.078]、n=40 MDE≈0.11>Δ0.069。**两条路**：(a) GPU 重跑 defense battery N=100（基础设施现成，~2-3h）；(b) 文字降级+等价界。recovery 双定义（Table 4 vs §5.5(iv)）需统一。
+9. **[R2-B3] 新颖性墙有洞**：必须引并区分 arXiv:2609.06027（deep-search agents under GEO poisoning, 2026-09）、2606.13686（deceptive interfaces benchmark）、2605.10059（agent-market exploitation）；provenance 防御线 2606.17467/2609.21088/2605.11039；GEO 原文 2311.09735；2508.15832。"no prior work" 措辞收窄为 ambient+decision-level+dose-response 三限定。
+10. **[核实✓ R3] 死浮动图**：fig:family、fig:defenses 从未被正文引用——删或引。
+
+### 行动顺序
+A（今天，纯文本+机械）：2/3/4/6/7/8b/10 + R3 行编辑清单 + 摘要压至≤250词
+B（重构，半天）：1（按 R3 预算移内容）+ 5（RA2 相对化）+ 9（引文核实后加入）
+C（需决策）：8a GPU 重跑 defense battery N=100 → 若用户不开机则 8b 文字方案已覆盖
