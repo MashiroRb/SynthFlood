@@ -1,0 +1,40 @@
+{
+ "k0": {
+  "n": 97,
+  "reward": 0.6512,
+  "regret": 0.3488,
+  "success80": 0.5361,
+  "synthetic_share": 0.0,
+  "confidence": 0.894
+ },
+ "k3": {
+  "n": 100,
+  "reward": 0.6018,
+  "regret": 0.3982,
+  "success80": 0.43,
+  "synthetic_share": 0.25,
+  "confidence": 0.8848
+ },
+ "k7": {
+  "n": 97,
+  "reward": 0.6141,
+  "regret": 0.3859,
+  "success80": 0.4227,
+  "synthetic_share": 0.2784,
+  "confidence": 0.8805
+ },
+ "k11": {
+  "n": 96,
+  "reward": 0.6013,
+  "regret": 0.3987,
+  "success80": 0.4167,
+  "synthetic_share": 0.2396,
+  "confidence": 0.8805
+ },
+ "paired_k7_vs_k0": {
+  "n": 39,
+  "drops": 21,
+  "rises": 18,
+  "p": 0.7493
+ }
+}
