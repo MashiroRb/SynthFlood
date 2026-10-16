@@ -22,7 +22,8 @@ chosen listing (\S\ref{sec:method-env}).
 
 \subsection{Contamination pool}
 The pool covers 100 tasks (the official goal list under seed 2027), three
-families, four listings per family per task (up to 480 per task set), with a
+families, four listings per family per task (up to 1{,}200 before judge
+drops; 1{,}089 survive in the released pool), with a
 plausibility floor at judge score~4 (regenerate once, then drop). Synthetic
 economics are assigned programmatically: price = gold price $\times$
 $\mathrm{U}(0.75,0.95)$ (deterministic per listing), rating
@@ -35,8 +36,9 @@ of 20 (reviews family) or 6 (others). An archived pre-fix pool with a
 P0: success $0.65$ at $\varepsilon=0$, zero malformed actions, 18/20
 tasks exactly reproducible under greedy decoding (two flips from
 continuous-batching numerics). P1 (final, corrected pool): $\sigma=0.377$
-[0.324, 0.433] over 300 duels; per family: clone $0.523$, geo $0.351$,
-reviews $0.287$. Reported honestly: the pre-registered gate
+$[0.263,0.493]$ over 300 duels (task-cluster bootstrap CI); per family:
+clone $0.523$ $[0.366,0.688]$, geo $0.351$ $[0.206,0.495]$,
+reviews $0.287$ $[0.156,0.441]$. Reported honestly: the pre-registered gate
 ($\sigma\ge0.60$ overall) \emph{failed} --- agents on average
 \emph{reject} machine-optimized pages --- but the strong family
 differentiation (clones at chance, gloss rejected) met the gate's
@@ -78,6 +80,19 @@ two channels of nearly equal magnitude, an additive account, and an
 independent threshold law reaching the same conclusion --- not as a
 collection of individually significant contrasts.
 
+\paragraph{Cluster robustness.} Probe duels are clustered by task (30
+clusters; the 88 clone duels span 27). All probe intervals in the paper
+are task-level cluster bootstrap CIs. Re-testing the pre-registered
+duel-level contrasts with cluster-robust statistics leaves the joint
+pattern intact: the full-parity contrast (drop of $0.273$, CI
+$[+0.176,+0.390]$, $p<0.001$) and the 10\% threshold (gain of $0.205$,
+CI $[+0.050,+0.365]$, $p=0.011$) remain reliable; the overall preference
+for real listings weakens but holds ($\sigma=0.377$, cluster-robust
+$p=0.036$); the price-parity single-channel contrast is directional only
+at task level (drop of $0.136$, CI $[-0.023,+0.300]$, $p=0.097$). The
+duel-level McNemar $p$-values are retained as the pre-registered tests,
+and the Holm analysis above uses them unchanged.
+
 \paragraph{Equivalence at saturation.} The pricing-threshold claim that
 ``deeper discounts add nothing'' is supported by two-proportion tests
 against the $10\%$ point ($20\%$: $p=0.45$; $30\%$: $p=0.76$; $20\%$ vs.\
@@ -112,6 +127,13 @@ $\geq0.95$ near-identical (232 pairs). Close non-matches are the
 real-world clone analogue; identical-name cross-shop groups are the
 near-identical control, where buying cheaper is correct. Per-source values: \texttt{realdata/real\_stats.json}.
 
+\paragraph{Headline mining numbers.} ProMap close non-matches: 73.3\%
+of 330 pairs with both prices listed have a side $\geq10\%$ cheaper
+(median 20.9\%). WebMall cross-shop groups: 53.3\% of 244 (median
+11.1\%). WebShop 80{,}000-item sample: 497 lookalike pairs (Jaccard
+$0.80$--$0.95$) at 83.3\% (median 21.0\%), versus 51.7\% for 232
+near-identical pairs ($\geq0.95$).
+
 \paragraph{Can provenance be detected from text alone?}
 GPT-2 perplexity~\cite{radford2019gpt2}, calibrated on 250
 human-written WebShop descriptions, separates our pools (AUC $0.912$;
@@ -139,13 +161,121 @@ dimension strings --- excluded; paired tests use the 248 common
 tasks). Qwen2.5-7B-Instruct: $\sigma=0.616/0.636/0.600$
 ($p{=}2.4\times10^{-4}$, $1.7\times10^{-5}$, $1.6\times10^{-3}$);
 our generator's clone wins $0.677$ on the same tasks (McNemar
-$p{=}0.167$): not generator-specific; deeper natural discounts add
-nothing ($0.624$ vs.\ $0.588$).
-\emph{RA2 (scale).} Mixed-family sweep on a fifty-slot page at
-absolute contaminated counts $k\in\{0,3,7,11\}$ ($n{=}100$/arm;
-$32$k-token context). \emph{RA3 (reviews).} Real same-category
+$p{=}0.167$): not generator-specific at this sample size; deeper
+discounts add no significant gain ($0.636$ at $f{=}0.8$ vs.\ $0.600$ at
+the natural price; paired McNemar $p{=}0.093$, $n{=}250$).
+\emph{RA3 (reviews).} Real same-category
 listings carry Yelp fraud-filtered spam reviews (label $=-1$, rating
 $\geq4$) with the same programmatic inflation as the synthetic
 family; $\varepsilon{=}0.75$, $n{=}100$: regret $0.327$, success80
 $0.550$ (synthetic family $0.454/0.450$, $n{=}40$; paired vs.\ clean
-on common tasks $p{=}1.0$, $n{=}21$).
+on the 40 common tasks: 21 non-tied pairs, 11 worse and 10 better,
+$p{=}1.0$).
+
+\subsection{Backbone generality and scale}
+\label{sec:app-backbone}
+The dose--response replicates on Llama-3.1-8B
+(success $0.475\to0.300$ at $\varepsilon=0.75$; regret $0.346\to0.502$,
+$+45\%$; synthetic purchases 55\%). Across scales, smaller agents are
+\emph{at least} as susceptible --- Qwen2.5-3B buys synthetic listings in
+70\% of tasks (vs.\ 54\% for 7B) and its regret rises by a further 27\%
+in relative terms --- but the success-level dose contrast requires
+minimal baseline competence, which Qwen2.5-1.5B lacks (success $0.300$ at
+$\varepsilon=0$, statistically unchanged; clean regret already $0.578$,
+a floor effect). Summarizing the two competent backbones by a linear
+erosion coefficient $\kappa$ (regret increase per unit contamination,
+endpoint regression): $0.242$ (95\% CI $[0.129,0.352]$) for 7B and
+$0.208$ (95\% CI $[0.037,0.374]$) for 8B --- overlapping intervals, the
+same order of vulnerability.
+
+\subsection{Per-family attribution runs}
+\label{sec:app-family}
+\begin{table}[t]
+\centering
+\small
+\caption{Per-family contamination at $\varepsilon=0.75$ (40 paired tasks).
+Wilson 95\% half-widths for the success entries are $\pm0.13$--$0.16$ at
+$n{=}40$.}
+\label{tab:family}
+\begin{tabular}{lcccc}
+\toprule
+Family & Success$_0$ & Success$_{.75}$ & Regret$_0$ & Regret$_{.75}$ \\
+\midrule
+geo & 0.575 & 0.575 & 0.296 & 0.331 \\
+clone & 0.600 & 0.425 & 0.273 & 0.384 \\
+reviews & 0.575 & 0.425 & 0.294 & 0.454 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Washout experiment (M1)}
+\label{app:m1}
+The experiment is pre-registered in the repository
+(\texttt{m1/PRE\_REG\_M1.md}, written before any M1 data was collected).
+Five arms: \textbf{B0}, 20 clean episodes with the same memory apparatus
+(equal-experience control); \textbf{M0}, 20 exposure episodes at
+$\varepsilon{=}0.75$ mix (six synthetic listings per page, same gated
+generator); \textbf{M2}, exposure with notes written but never injected
+back; \textbf{M3}, exposure plus an explicit corrective entry after every
+synthetic purchase; \textbf{M4}, starts from M0's end-of-exposure memory
+with all entries containing pre-registered price words deleted
+(18-word list in the preregistration); M4 skips the parity exam. Memory
+injection is recency-based (last three entries); lessons are distilled
+every five episodes by the same model. Exposure tasks are official goals
+$[100{:}120)$; exams use lookalike pairs disjoint from every other
+experiment --- discounted ($f{=}0.9$) pairs $[250{:}290)$ and parity
+($f{=}1.0$) pairs $[290{:}330)$, 40 pairs each with fixed clone
+instances across arms and checkpoints. The exam pairs therefore never
+appear in any previously reported experiment (RA1 uses pairs $[0{:}250)$),
+and exposure tasks draw on official goals $[100{:}120)$, a disjoint task
+space; the exam is thus leak-free by construction. 8 clone-generation failures are
+logged in the repository, leaving $n{=}39$ (exam) and $n{=}38$ (parity)
+as fixed exclusions across all arms. Checkpoints are clean episodes
+$\{0,2,\ldots,20\}$; exams are read-only. Seeds: exposure $50000{+}e$,
+clean $60000{+}e$, exam shuffles $41000{+}p$, generation $99000{+}g$.
+
+\begin{table}[t]
+\centering
+\small
+\caption{Washout experiment: exam win-rate $\sigma$ by arm (40 pairs per
+exam; discounted exam $f{=}0.9$, parity exam $f{=}1.0$; checkpoints at
+clean episodes 0/10/20). B0 is the equal-experience clean control; the
+shared no-memory pre-exam gives $\sigma=0.692$. $n{=}39$ (exam) / $38$
+(parity) per cell; M4 skips the parity exam. Exams are one episode per
+pair, so cells are independent; Wilson 95\% half-width
+$\approx\pm0.15$.}
+\label{tab:m1}
+\setlength{\tabcolsep}{4.5pt}
+\begin{tabular}{lcccc}
+\toprule
+Arm & exam@0 & exam@20 & parity@0 & parity@20 \\
+\midrule
+B0 (clean control) & --- & 0.718 & --- & 0.579 \\
+M0 (full memory) & 0.897 & 0.667 & 0.790 & 0.842 \\
+M2 (write-only) & 0.692 & 0.718 & 0.526 & 0.605 \\
+M3 (+ corrective entry) & 0.769 & 0.692 & 0.658 & 0.684 \\
+M4 (memory surgery) & 0.744 & 0.667 & \multicolumn{2}{c}{---} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+A shared no-memory pre-exam gives $\sigma=0.692$, and the B0 arm tracks
+it ($0.718$ at episode 2, $p{=}0.80$): the memory apparatus itself is
+neutral on the clean path. Pre-registered main tests: the
+internalization hypothesis on the discounted exam fails ($0.667$ vs.\
+$0.718$, $p{=}0.62$); the partial-decay branch holds (checkpoint-0
+carryover McNemar $9/1$, $p{=}0.021$; half-life 4 clean episodes);
+memory causality holds (write-only arm at chance, $0.692$ vs.\ $0.897$,
+$z{=}-2.24$, $p{=}0.025$). The parity persistence ($0.842$ vs.\
+$0.579$, $p{=}0.011$) and its memory mediation ($0.790$ vs.\ $0.526$,
+$p{=}0.016$) are pre-registered secondary tests. The transfer matrix at
+checkpoint 0 is exploratory ($n{=}20$): same-category pairs show no
+elevation ($0.718$ vs.\ $0.744$, $p{=}0.80$); a cross-category transfer
+was \emph{not executable} (all remaining pool pairs fall inside the five
+exposure categories --- recorded as a feasibility limitation); the
+cross-domain praise-block test gives $1.00$ vs.\ $0.70$ ($p{=}0.008$)
+but the write-only ($0.85$) and surgery ($1.00$) arms are also elevated,
+so it is reported as exploratory with mixed evidence. The reward autopsy
+computes, for every exposure episode, the counterfactual official reward
+of the gold product: 38 synthetic purchases, 2 with reward at or above
+gold, mean gap $-0.632$.

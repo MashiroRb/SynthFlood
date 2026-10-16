@@ -1,32 +1,28 @@
 \section{Conclusion}
 \label{sec:conclusion}
 
-We asked whether the synthetic content already common on the commercial Web
-degrades
-the decisions of the agents that browse it, and answered with a controlled,
-paired, dose-controlled protocol on official benchmark artifacts. Agents
-are not naive, and --- our central revised finding --- they are not fooled
-either: channel decomposition shows they reject clones once discounts and
-manufactured ratings are removed. What fails is their \emph{preference
-alignment}: on a specification clone, a mere ten-percent discount
-(with manufactured ratings still in place) suffices to flip the majority
-of decisions, so ambient content farms do
-not need to defeat the agent's perception, only to outbid it. Consequently
-regret inflates with contamination dose while success metrics and agent
-confidence tell a reassuring story. A single noisy provenance bit recovers
-the full loss --- but only when the interface consumes it as an
-ordering constraint rather than a score, a semantics we argue should
-become a first-class contract between the Web and its agents. We
-release the SynthFlood protocol, contamination pools, and all trajectory
-logs to make agent-Web robustness a measurable property rather than an
-anecdote.
+We asked whether the synthetic content common on the commercial Web
+degrades agent decisions, and answered with a paired, dose-controlled
+protocol on official artifacts. Agents are not fooled: channel
+decomposition shows they reject clones once discounts and manufactured
+ratings are removed; what fails is their \emph{preference alignment} ---
+a ten-percent discount on a specification clone (ratings still
+manufactured) restores majority-level clone preference ($0.591$ vs.\
+$0.386$; cluster-robust $p=0.011$): content farms need not defeat the
+agent's perception, only outbid it. Exposure also leaves a trace clean
+shopping does not wash out: the agent's own written memory carries
+a parity-level preference residue. Regret jumps at the first dose and
+stays elevated, while success metrics and confidence tell a reassuring
+story. A single noisy provenance bit recovers most of the
+regret excess --- but only consumed as an ordering constraint, a
+semantics that should become a first-class Web--agent contract. We
+release the SynthFlood protocol, pools, and trajectory logs to make
+agent-Web robustness measurable, not anecdotal.
 
 \section*{Ethics and Dual-Use Considerations}
-This paper measures a harm; it does not provide a weapon. All synthetic
-listings are fabricated pseudo-products over WebShop's catalog IDs; the
-pools are released for defense research and replication only. The
-mechanism we expose (a 10\% discount plus inflated ratings) is the
-standard playbook of commercial content farms; our contribution is a
-measurement protocol and a defense principle, not a novel attack. We
-follow WebShop's data licensing; no human subjects; all rollouts are
-simulated purchases.
+This paper measures a harm, not provides a weapon: synthetic listings
+are fabricated pseudo-products over WebShop's catalog IDs (used under
+WebShop's license), released for defense research only. The exposed
+mechanism is the standard content-farm playbook; our contribution is a
+measurement protocol and defense principle, not an attack. No human
+subjects; rollouts are simulated.

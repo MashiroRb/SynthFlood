@@ -160,3 +160,157 @@ Borderline（2×weak accept + 1 accept，但 M 级问题密集）。方向正确
 A（今天，纯文本+机械）：2/3/4/6/7/8b/10 + R3 行编辑清单 + 摘要压至≤250词
 B（重构，半天）：1（按 R3 预算移内容）+ 5（RA2 相对化）+ 9（引文核实后加入）
 C（需决策）：8a GPU 重跑 defense battery N=100 → 若用户不开机则 8b 文字方案已覆盖
+
+---
+
+## 决定记录（2026-10-15）：RA2 从论文整体剔除（作者决定）
+
+**决定**：用户裁定 RA2（50 槽规模实验）从论文中剔除，并要求淘汰其"密度驱动"解释。
+
+**动因（作者核查会上的复算）**：同密度配对对比（10 槽 ε=0.25，2 条，密度 22.2% vs 50 槽 k=11，11 条，密度 22.4%，同一批 100 任务）显示买假货率 53.1% vs 24.0%——**密度不是驱动变量**；两页面内部买假货率均随条数立即饱和（10 槽 2→6 条：53/42/54%；50 槽 3→11 条：25/28/24%）；购买位置数据（10 槽假货 51/53 落在第 3 位 vs 50 槽平均第 14 位）指向"AI 实际查看的位置带构成"才是作用面。原 RA2 段落（results.tex:402-414）同时含 78% 与 same-absolute-count（6 vs 7）两处已核实错误（R1-B5），修复成本高于删除价值。
+
+**执行（全部完成）**：
+1. results.tex 删除整段 "\paragraph{Ambient scale: dilution attenuates the harm.}"（原 402-418 行）
+2. appendix.tex 删除 "\emph{RA2 (scale).}" 句（RA3 保留）
+3. 三处下游"density"论断改写为有支撑表述（RA2 是其唯一实验支撑，不删话即成无据声称）：
+   - abstract.tex：删 "and a fifty-slot surface experiment localizes the strong harm to contamination density"
+   - introduction.tex 贡献条目：删 fifty-slot 分句，RA1 与 RA3 直接衔接
+   - discussion.tex：real-document 句改为 "close the self-generation gap for the clone channel and narrow it for reviews"
+4. 干净重建：清陈旧 bbl（曾复用 repo_clone/paper/main.bbl 致 5 个未解析引用）后 latexmk 全重跑 → **0 未解析引用、12 页、无错误**；refs.bib 全部键在（mackov2023promap/rayana2015collective/radford2019gpt2/steiner2026billigerde 已对账）
+
+**数据保留**：RA2 原始数据与分析脚本留在仓库（results_realattack/ra2_*.{csv,json,py}），不进论文；同密度配对复算脚本逻辑记录于本轮会话。
+
+**修复清单状态更新**：BLOCKER 5 关闭（以剔除方式解决）；行动顺序 B 中的 "5（RA2 相对化）" 作废。
+
+**遗留提示（供 B 阶段重构时处理）**：RA2 删除后，标题与叙事的 "dose–response" 框架仅由主曲线承载；主曲线污染档内 regret 实为平台（0.429/0.401/0.443，台账已对账），即"阈值+平台"而非渐变剂量反应。B 阶段重构时应将叙事校准为 threshold-and-plateau（或仅在补跑低剂量点后保留 dose-response 措辞）。此点与 R1-M4/R2-m1 的非单调披露一脉相承。
+
+---
+
+## 更新记录（2026-10-15）：数据一致性全面核对 + teaser 图（作者指令）
+
+**指令**：更新初稿——①图/表/文字/实验结果必须匹配；②新增概括全文的 teaser figure；③检查逻辑表述；④实验结果不许夸大。
+
+### 一、全量数字核对（对原始 CSV 逐项复算）
+
+**核实无误 ✓**：表2全列（含 ECE 0.249/0.498/0.453/0.496，success_full 为 outcome、5 bins）；表4全部8行；λ 扫描6值；naive p4k；Llama-8B（p4d_llama_sweep.csv：0.475→0.300 成功、0.346→0.502 regret、bought 0.550）；3B/1.5B；池化购买 reward synth 0.345/real 0.801；CA 趋势 z=6.984 精确复现；p4b 家族臂；RA3 干净基线 0.294；stealth Wilcoxon p=0.022；p4m/p4h/p2 任务集对齐（40=40）。
+
+**发现并修复的实质错误**：
+1. **stealth recovery 混口径**（正文+图+讨论三处）：原文用 100 任务基线 0.443 与 40 任务防御值混算出"恢复 0.193→0.138、损失 28%、保留 72%"。统一 40 任务口径后：struct recovery 0.148→0.139（**保留 94%，无侵蚀**）、provenance 0.069→0.153；stealth 攻击并不更温和（0.425 vs 0.398，n.s.）。make_figs.py stealth 面板 on=0.443→0.398、标题改 "(c) Stealth pool: defenses intact"、λ 面板参考线同步改 0.398，图已重生成。
+2. **random 防御动词反了**：0.172<0.338 是**改善**干净页（均匀丢弃两成候选可提高金品排名）；污染下 0.431 不优于不设防 0.398。原句 "raises" 已改。
+3. **RA1 附录无据数字**："0.624 vs 0.588" 无任何数据来源 → 替换为 real_f080 0.636 vs real_nat 0.600 配对 McNemar p=0.093（16 vs 7，n=250）。
+4. **RA3 幅度错误**："roughly half the magnitude" 实为 +11% vs +54%；21 非平局对（11 worse/10 better, p=1.0）——只声称方向。
+5. **3 处 "300 duels"** → "n=88 clone duels"（克隆比较的承载量）；A.3 池大小 480→1200 生成/1089 可用。
+6. **p=0.003 归属**：59% vs 39% parity 对比的配对检验，非 vs 随机。
+7. 删除死浮动图 fig:family、fig:defenses；problem.tex "fifty slots" 句删除。
+
+### 二、去夸大改写（摘要/引言/结论/结果/讨论 12 处）
+
+- "eliminates the regret excess" / "full loss of the excess" → "recovers in point estimate (significant uncorrected, marginal after family-wise correction)"
+- "regret rises 69%" → "rises 69% and plateaus"（阈值+平台校准，中间档 CI [−0.102,+0.044] 为噪声）
+- "flip the majority"（4 处）→ "restores majority-level clone preference (0.591 vs 0.386 parity, paired p=0.003)"
+- oracle "statistically indistinguishable from struct (p=0.21)" → "gap 0.079 below MDE ≈0.11，不作等价声明"
+- RA1 "close to real clones" → 附 95% CI [−2.3,+14.5]pp 界定
+- RA3 "reproduce the direction (not its significance)"
+- 骨干比较 "27% more regret" → "rises by a further 27% in relative terms"
+
+### 三、teaser 图（Figure 1，页2顶跨栏）
+
+- 新建 repo_clone/paper/make_teaser.py（4 面板：(a) 污染结果页示意 9 行含 6 条 synthetic；(b) 通道分解条形图 0.523/0.386/0.386/0.250+Wilson CI+机会线+gloss 基线；(c) 剂量 regret 0.262→0.429/0.401/0.443±95%CI 标注 jump-then-plateau；(d) 防御条形图 0.398/0.364/0.329/0.250/0.171+clean 虚线 0.338）
+- 迭代 4 版修排版：面板标题互相重叠→缩短+wspace 0.52；示意图文字/价格列碰撞→列定位+字号；"6 of 9"标注与行数不符→9 行 6 synthetic；(b) 轴标签挤压→单词化；(c) 标注出界→移位。全部数字来自 p1_*/p4a_sweep/p2_sweep/p4c_* CSV
+- introduction.tex 插入 figure*[t] + 逐面板 caption + \Description 无障碍文本 + 正文引用句；teaser.pdf 入 figures/
+- 干净重建：**0 未解析引用、12 页、无大溢出**；pdftoppm 目检页2版面正常；模板字段（WWW '27, April 2027 / Anon.）正常显示
+
+### 四、同步与一致性
+
+- 初稿/ ↔ repo_clone/paper/ 双向补齐（make_figs.py、make_teaser.py、4 张再生成的图、全部 tex）后 **TEX-IDENTICAL + FIGS-IDENTICAL**（排除构建产物）
+- **未提交/未推送 GitHub**（待作者指令）
+
+### 修复清单状态
+2✓(模板字段) 3✓(n=88) 4✓(RA3) 5✓(RA2剔除) 6✓(Llama) 7✓(stealth口径) 8b✓ 10✓(死图)；**待办：1（8页重构，B阶段）9（新颖性引文，需 paper_search 核实后加入）8a（GPU 重跑，需作者决策）**
+
+---
+
+## 更新记录（2026-10-15）：M1 洗脱实验写入论文（作者指令）
+
+**指令**：作者确认 RA2 已删干净后，要求把已完成的 M1（洗脱/内化）实验写入论文替换其位置。
+
+**RA2 残留核查**：逐模式精确检索 fifty/50-slot/RA2/ambient scale/dilution/absolute count → 仅 related.tex:11 的引文键 `bara2026epistemic` 含子串 "ra2"（误报），内容零残留 ✓。
+
+**写入内容（全部数字先对 m1_summary.json / M1_EXPERIMENT_LOG.md / PRE_REG_M1.md 核账）**：
+1. **results.tex §5.8 "Exposure leaves a memory-carried residue"** + 表5（5臂×4检查点 σ）：
+   - 快通道：exam@0 0.897 vs 空记忆 0.692（McNemar 9/1 p=0.021），半衰期 4 集，@20 归零（0.667 vs 0.718 p=0.62）——**预注册内化检验如实报"未命中"**；M2 写而不读无抬升（0.692 vs 0.897, p=0.025，预注册主检验4命中）
+   - 慢通道（本实验最重要）：平价考试 0.790→0.763→0.842 不降反升 vs 等经验对照 0.579（z=2.53 p=0.011，预注册次级检验）；"泡过脏水的 agent 看全价仿冒品 = 新手看 9 折品"
+   - 载体/干预（方向性）：M4 删价格条目 0.897→0.744（p=0.077）、M3 纠错 0.769（p=0.13）；平价考试 M2 0.526 vs M0 0.790（未校正 p=0.016）
+   - 验尸：38 次买假货仅 2 次不亏（反事实 gap −0.63）→ 非环境奖励；同品类迁移无抬升（0.718 vs 0.744 p=0.80）
+2. **abstract**：Three→Four findings + 第四发现句（~55 词）
+3. **introduction**：测量清单 3→4（补 washout experiment 分句）+ 第 6 条贡献条目
+4. **discussion**：新段 "Memory as the attack surface."（记忆作为攻击面：curation/过滤成为防御原语）
+5. **conclusion**：补一句记忆残留
+6. **appendix A.7**（app:m1）：五臂定义、检查点/考试池出处（pairs[250:290)/[290:330)，与他实验零重叠）、8 次生成失败已记录（n=39/38 固定剔除）、种子表、预注册主检验四分支的命中情况（H1 未命中/部分衰减命中/记忆因果命中）、平价持久化为预注册次级、迁移矩阵如实记录（同品类 n.s.；**跨品类无法执行**——剩余配对全落在暴露 5 品类内，记为可行性限制；xdom 1.00 vs 0.70 p=0.008 但 M2/M4 也高→exploratory 证据混合）、验尸协议
+
+**纪律要点**：跨品类迁移不写"无差异"（实验没跑成）；xdom 标 exploratory 且披露 M2/M4 也高；快通道的"内化"预注册失败如实写；平价持久化标注"预注册次级检验、降格表述"。
+
+**状态**：干净重建 0 未解析引用；**总页数 13（超 WWW ≤12 上限 1 页）**，正文到 p10（超 8 页红线 2 页）——8 页重构从"待办"升级为**投稿前必做**；M1 小节在 p9、附录 A.7 在 p11-13。初稿 ↔ repo_clone/paper 再次逐字节一致（TEX/FIGS-IDENTICAL）。未提交 GitHub。
+
+## Round R3 — 按第二轮模拟评审意见修改（2026-10-16）
+
+### B1 页数（最高优先，desk-reject 风险）
+- 结果：**正文（含 Ethics）恰好收在第 8 页内**，References 从第 9 页顶部开始；总页数 12 ≤ 12 ✓（WWW 规则：正文 8 页 + 参考文献/附录 ≤12 总页）
+- 手术清单：Fig.3（dose_response 五联图）整体删除（数字全部在表2/正文）；Fig.4（defense_stress）删除（与表4/正文重复）；§5.4 family 表下沉附录 A（sec:app-family）；§5.6 backbone 下沉附录（sec:app-backbone，正文留 §5.5 尾 \paragraph{Backbone generality.}）；§5.8 M1 压成 ~19 行摘要版、表5 与两通道完整叙事归并附录 A.7（A.7 本就有完整实验描述与结果叙事，无重复成本）；§5.7 real-docs 压成 1 段（细节+Headline mining numbers 补进 A.6）；Related 第4段（shopping-agent benchmarks）并入 Method §4.1；"What is brave and new" 整段删除；摘要 409→~250 词、编号 (1)-(4)；brave 定轨注释改为 Research Track；全文 ~40 处微压缩（intro/related/problem/method/§5.1-§5.8/discussion/conclusion/ethics）
+- 顺带：Fig.2 宽度 0.92→0.88\textwidth
+
+### B2 引文（已完成）
+- refs.bib +2：bi2026evaluating（arXiv:2609.06027）、zhang2026deepresearch（arXiv:2605.24245），逐字来自本会话 paper_search 结果
+- related.tex 两句区分："Both measure the quality of retrieved evidence and synthesized answers; neither measures what a purchasing agent chooses on a single results page, and neither varies contamination dose."
+- GEO 原始论文（arXiv:2311.09735）三次检索均不可得 → 按零编造规则放弃添加，wu2025what 引用保持
+
+### B3 聚类（已完成）
+- scripts/cluster_probe.py：30 任务簇、20k 次重采样、seed 2027；88 clone duels 跨 27/30 簇
+- 全部 probe 统计改任务级 cluster bootstrap CI；duel 级 McNemar 保留为预注册检验；Holm 不变
+- §5.2 诚实降级：price parity 单通道任务级 p=0.097 方向性；结论挂 full parity（Δ=+0.273, CI [+0.176,+0.390], p<0.001）+ 阈值律（+0.205, CI [+0.050,+0.365], p=0.011）
+- A.5 新增 "Cluster robustness" 段；表2 题注补 S@0.8≡Success 解释（400 场仅 1 个 reward∈[0.8,1)）；表3/4/5 题注补 Wilson 半宽注
+
+### 其他 SHOULD-FIX
+- §5.2 "almost twice"→"three times as often as chosen"（3:1 算术修正）
+- §5.8 "does not decay — it ends higher than it started"
+- 摘要残句修复；intro bullets 阈值改 cluster-robust p=0.011、删单种子 p
+- conclusion 阈值 p 改 0.011 与正文一致
+- conclusion.tex "measurable, not anecdotal"
+
+### 验证
+- 干净重建 0 未解析引用；verify_numbers.py 0 失配；初稿 ↔ repo_clone/paper TEX-IDENTICAL + FIGS-OK
+- 遗留：Fig.2(b) 标注精简（低优先）；M1 第二种子 rebuttal 实验（需 GPU，未决）；防御电池 N=100（未决）
+
+---
+
+## ⏸ 待拍板事项（等待用户决定，2026-10-16 状态快照）
+
+新对话接手时读本节即可恢复上下文。三件事均已向用户详细解释过原理，等用户点头：
+
+### ① M1 第二种子 rebuttal 实验（用户未决定）
+- **是什么**：M1 = 洗脱/残留实验（附录 A.7，`m1/PRE_REG_M1.md` 预注册 + `m1/M1_EXPERIMENT_LOG.md`）。5 臂（B0 干净基线 / M0 暴露主条件 / M2 写而不读 / M3 纠错 / M4 记忆手术）+ 共享前测 PRE。暴露 20 轮 ε=0.75 → 干净洗脱 20 轮，检查点 [0,2,...,20] 每次重考整份 39 道打折卷（f=0.90 克隆）+ 平价卷（f=1.00）在 {0,10,20}。
+- **为什么跑**：现在只有 seed=2027 单种子；Limitations 已承认 single-model, single-seed。审稿人可攻击"慢通道残留 σ=0.842 vs 0.579 (p=0.011) 是不是这一个种子的运气"。换 seed（如 2028）重跑全流程：复现 → 论文加"第二种子复现"；不复现 → 降级表述。
+- **成本**：代码/预注册/流水线现成（`m1_pipeline.sh`），4090 后台约几小时。
+- **注意**：本会话 Lab Compute 未连接；开跑前需确认 lab_exec 可用。
+
+### ② 防御电池补到 N=100（用户未决定）
+- **是什么**：§5.5 表 4 防御臂（prov/struct/ppr λ 扫描/spoof25/50/reviewtrust/流行度/text/oracle/sham）。现状：ppr 等扫描臂各 40 任务、provenance 主臂 80（results_csv/p4*_sweep.csv）。
+- **为什么跑**：发现#3 两条次级结论（provenance 恢复 regret 超额、Holm 后边缘显著；流行度防御放大攻击、方向性）建立在 40 任务小样本上。补到 100 任务/臂，让边缘结论过线或诚实确认为弱效应。
+- **成本**：4090 约半天到一天，可后台。
+
+### ③ GitHub 推送（用户未决定；改动未提交）
+- repo_clone（= lab ~/synthflood_repo = GitHub MashiroRb/SynthFlood）：**22 个文件未提交**（19 modified：paper 全部章节+main.tex+refs.bib+图+make_figs.py；3 untracked：paper/figures/teaser.pdf、paper/make_teaser.py、scripts/cluster_probe.py）。
+- 最后 3 个 commit 是 M1 实验自动推送（m1_finalize.sh）；论文 R1–R3 改稿 + 聚类脚本只在本地。
+- 推送命令：`cd repo_clone && ./push_auto.sh`（**必须用户点头**）。
+- 建议：先推一版固化改稿，实验出结果后再推第二版。
+
+### 当前论文状态（新对话直接可用）
+- 正文（含 Ethics）恰好收在第 8 页，References 从第 9 页顶开始；总 12 页 ≤12；0 未解析引用；verify_numbers.py 0 失配；初稿 ↔ repo_clone/paper TEX-IDENTICAL + FIGS-OK。
+- 页面测量方法：pdftotext 字符位置在双栏下不可靠，用 `pdftoppm -f 8 -l 9 -r 60 -png` 渲染目检。
+
+### 用户沟通规矩（务必延续）
+1. 说人话/大白话；每个统计量给定义（McNemar=配对显著性检验、Holm=多重比较校正等）；
+2. 判定语精确：命中预注册 / 反转预期 / 方向性未达显著，分开写，不夸大；
+3. **主语必须用臂编号**（M0/B0/M2/M3/M4/PRE），禁止"带记忆的 agent""空记忆对照"这类别名（用户已两次因此批评）；
+4. 用户会追问实验设计细节（环境 vs 考试、选题随机性、种子），回答要引预注册/代码原文佐证，不凭记忆；
+5. 中文回复；结论先行，证据随后。

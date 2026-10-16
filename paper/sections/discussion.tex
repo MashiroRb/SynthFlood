@@ -2,120 +2,116 @@
 \label{sec:discussion}
 
 \paragraph{Preference, not perception.}
-Our own first reading of the probe --- the one a trajectory skim naturally
-produces --- was that agents ``cannot tell'' clones from real products. The controlled decomposition falsifies that
+Our own first reading of the probe --- the one a trajectory skim produces
+--- was that agents ``cannot tell'' clones from real products. The controlled decomposition falsifies that
 reading. At price parity the clone is \emph{rejected} ($\sigma=0.386$); at
 rating parity it is rejected identically ($0.386$); at both, it is
 rejected almost $3{:}1$ ($0.250$) --- and the two channels decompose
 additively, each worth roughly $14$ percentage points. The dangerous form
-of ambient synthetic content is therefore not the attention-grabbing page
+is therefore not the attention-grabbing page
 nor the perceptually perfect forgery, but the \emph{economically
 attractive counterfeit}: a listing that copies a real product's
-specifications and undercuts it with a discount and manufactured social
+specifications and undercuts it with discount and manufactured social
 proof. The pricing dose--response sharpens this into a threshold law ---
-a $10\%$ discount flips the majority, deeper discounts add nothing ---
+a $10\%$ discount restores majority-level preference, deeper discounts
+saturate ---
 which means the attack requires no optimization of the forgery itself,
 only access to the pricing surface. This recasts the threat model:
 attacks target the agent's \emph{preference alignment} (what it trades
 off), not its perception (what it can detect), and defenses that shore up
-detection leave the actual channel open. It also explains why
-detector-style defenses based on surface statistics can only partially
-help: the clone's text statistics look organic because its text \emph{is}
-organic, copied from a real product. The structural detector nevertheless
-was statistically indistinguishable from the provenance oracle in our
-seed-1 runs (a parity claim our $n{=}40$ design cannot sharpen to
-equivalence; \S\ref{app:power}) --- and on
-fingerprint-free ``stealth'' pools it retains $72\%$ of its recovery
-($p=0.022$) while the provenance badge is unaffected --- but we caution
-that this robustness rests on generator fingerprinting and should be
-treated as arms-race-bounded.
+detection leave the actual channel open. The structural filter did in fact
+drive regret below the uncontaminated level; our $n{=}40$ design cannot
+separate it from the provenance oracle (gap $0.079$ vs.\ a minimum
+detectable difference of ${\approx}0.11$; \S\ref{app:power}), and on
+fingerprint-free ``stealth'' pools neither defense shows measurable
+erosion (\S\ref{sec:res-defense}).
 
 \paragraph{The economics of partial failure.}
-Task success did fall under contamination --- but it fell by less than the
-economics deteriorated: at $\varepsilon{=}0.75$ success lost $23$ points
-while regret rose $69\%$ in relative terms, because most contamination
-losses hide \emph{inside} ``successful'' and near-successful sessions as
-attribute mismatches and overpayment rather than as outright failures.
-Success-only dashboards therefore systematically understate the damage; an
-operator sees a modest conversion dip while the wasted spend, misfulfillment
-costs, and refund load grow much faster. The confidence inflation compounds
+Task success did fall --- but by less than the economics deteriorated:
+at $\varepsilon{=}0.75$ success lost $23$ points while regret rose
+$69\%$, because most contamination losses hide \emph{inside}
+``successful'' sessions as attribute mismatches and overpayment rather
+than outright failures.
+Success-only dashboards therefore understate the damage: an
+operator sees a modest conversion dip while wasted spend, misfulfillment
+costs, and refund load grow much faster. Confidence inflation compounds
 this: agents err more while trusting themselves more, so downstream
-automation (reordering, auto-purchase budgets) inherits correlated,
-concealed losses. We argue this pattern --- regret outrunning success,
-confidence rising alongside error --- should become the standard diagnostic
-pair for evaluating agents on live-content distributions, in the same way
-calibration curves preceded accuracy as the trustworthy signal for
-classifiers under distribution shift.
+automation inherits correlated, concealed losses. This pattern --- regret outrunning success,
+confidence rising alongside error --- should become the standard
+diagnostic pair for agents on live-content distributions, as calibration
+curves preceded accuracy under distribution shift.
 
 \paragraph{Provenance as an interface contract.}
-Our defense results argue for a specific division of labor --- and for a
-specific \emph{interface semantics}. Content-level detection asks every
-consumer to re-litigate every page's authenticity, and it fails exactly on
+Our defense results argue for a specific division of labor --- and
+interface semantics. Content-level detection asks every
+consumer to re-litigate every page, and it fails exactly on
 the content that matters (near-copies of real pages). Provenance-weighted
-ranking instead asks the supply side for one bit --- verifiable origin ---
-and lets the agent treat its absence as a prior, not a verdict. Our
+ranking asks the supply side for one bit --- verifiable origin ---
+and lets the agent treat its absence as a prior, not a verdict. The
 $\lambda$-sweep adds a semantics-level finding: the bit must enter the
-ranking as an \emph{ordering constraint}, not an additive bonus. Soft
-integration fails for every weight within the rating scale ($\lambda\leq
-4$) because manufactured 4.9-star ratings outbid it, and only recovers
-once the provenance term dominates ($\lambda=8$); a naive
-popularity-signal defense that consumes rating$\times$review-count ---
-precisely the features the attacker manufactures --- actively amplifies
-the attack. An interface contract that exposes provenance should therefore
-expose it as a sortable field, and platforms should treat
-``provenance-blind'' ranking signals as attack surface. Because the bit is
-cheap to spoof in the model but expensive to spoof in the world (a
-signature over seller identity and listing history), it converts an
-unbounded text-classification arms race into a bounded key-management
-problem --- and our forgery envelope (unchanged through $65\%$ badge
-forgery) shows the noisy-bit design tolerates adversarial display
-spoofing. The noise we inject (15\% missing on real items, 15\% present on
-synthetic ones) is an intentionally pessimistic model of real-world
-deployment, and recovery remains high; the remaining gap to the oracle is
-the price of noisy provenance, not of the idea.
+ranking as an \emph{ordering constraint}, not an additive bonus ---
+soft integration fails for every weight within the rating scale
+because manufactured 4.9-star ratings outbid it, and only recovers
+once the provenance term dominates; a naive
+popularity defense consuming rating$\times$review-count --- the
+features the attacker manufactures --- actively amplifies the attack. An
+interface contract should expose provenance as a sortable
+field; platforms should treat ``provenance-blind'' signals as attack
+surface. Because the bit is
+cheap to spoof in the model but expensive to spoof in the world, it
+converts an unbounded text-classification arms race into a bounded
+key-management problem; our forgery envelope (unchanged through
+$65\%$ badge forgery) shows the design tolerates display spoofing, and
+the injected noise (15\% missing on real, 15\% present on synthetic) is
+intentionally pessimistic --- the remaining gap to the oracle is the
+price of noisy provenance, not of the idea.
+
+\paragraph{Memory as the attack surface.}
+A washout experiment adds a second-order consequence: contamination does
+not only bend the choice at hand --- it leaves a trace in experience
+memory. On the discounted exam the trace decays within a few
+clean episodes (half-life ${\approx}4$); at price parity it does not
+decay at all --- the exposed agent's parity preference ($\sigma=0.842$
+at clean episode 20) exceeds even the naive agent's discounted-exam
+level ($0.718$). Three properties make this
+operationally relevant: the trace is carried by the agent's own written
+notes (a write-only control shows none of it), it formed under consistent
+punishment (2 of 38 synthetic purchases left the agent no worse off),
+and corrective feedback only directionally reduces it ($0.769$, n.s.).
+For deployment,
+the attack surface of an experience-carrying agent includes its own
+note-taking: memory curation and provenance-aware filtering join
+provenance-ordered ranking as defensive primitives.
 
 \paragraph{Limitations.}
 Our agents are 7--8B open-weight models with a scripted action interface;
-frontier models with stronger browsing may behave differently --- though
+frontier models with stronger browsing may behave differently, though
 the channel decomposition suggests the vulnerability lives in preference
-alignment rather than perceptual limits, so capability alone may not close
-it; the erosion coefficient is statistically indistinguishable across our
-two 8B-class backbones ($0.242$ vs.\ $0.208$, overlapping CIs). The
-mechanism decomposition and the pricing threshold law are measured on one
-backbone (Qwen2.5-7B) with one generator pair; both are pre-registered
-comparisons released with the paper, and we flag cross-generator
-replication as the natural next test. The contamination families are
-generated by models of the same size class as the agents; industrial
-content farms use larger generators, which could tune prices and ratings
-more aggressively, but our threshold law suggests any discount at all
-suffices. WebShop instructions are variant-level and sometimes weakly aligned
-with the base listing text; official best-variant scoring handles
-this, making absolute success numbers benchmark-specific without
+alignment rather than perceptual limits. The
+mechanism decomposition and threshold law are measured on one backbone
+and one generator pair; both are pre-registered, and cross-generator
+replication is the next test. Industrial
+farms use larger generators that could tune prices more aggressively,
+but the threshold law suggests any discount suffices.
+WebShop instructions are variant-level and sometimes weakly aligned
+with the base listing text; official best-variant scoring makes
+absolute success benchmark-specific without
 interacting with the within-task randomized contamination. The
-dose--response uses a single item pool per task; pools are fixed
-across $\varepsilon$ (paired design), defense arms are replicated on
-an independent second-generation pool, and all pools and seeds are
-released. ``Ambient'' is read as how content arrives --- present in
+dose--response uses one item pool per task, fixed across
+$\varepsilon$ (paired design); defense arms are replicated on
+an independent second-generation pool; all pools and seeds are
+released. ``Ambient'' is read as how content arrives --- in
 the routine retrieval context, without targeting --- not whole-web
 saturation; the real-document experiments
-(Section~\ref{sec:res-realworld}) close the self-generation gap for
-the clone channel, narrow it for reviews (directionally consistent,
-not significant under domain mismatch), and the fifty-slot
-experiment localizes the strong harm to contamination density. Two secondary
-findings are reported at reduced strength after replication: pooled
-over two pools, the geo-family regret excess is directional only (CI
-crosses zero), and the single favorable point in the forgery envelope
-($s{=}25\%$) is adjudicated as behavioral variance. Provenance
-availability in the wild is an empirical question our 85/15 noise
-model approximates crudely; measuring real provenance coverage on
-major marketplaces is a natural next step.
-
-\paragraph{Outlook.}
-If agentic browsing becomes a dominant traffic source, the incentive to
-optimize \emph{for agents} will exceed the incentive to optimize for human
-attention, because agents can be measured and A/B-tested at scale. The
-question is not whether the Web's supply side adapts to machine readers ---
-it already is --- but whether machine readers will be able to tell what
-adapted. Ambient contamination is the benign end of that adaptation spectrum;
-deliberate manipulation is the malign end, and both flow through the same
-missing infrastructure: content whose origin a buyer can verify.
+(\S\ref{sec:res-realworld}) close the self-generation gap for
+clones and narrow it for reviews. Two secondary
+findings are at reduced strength after replication
+(\S\ref{sec:res-family}, \S\ref{sec:res-defense}); the washout
+experiment is single-model, single-seed (\S\ref{app:m1}); provenance
+availability in the wild is crudely approximated by our 85/15 noise
+model. If agentic browsing becomes
+a dominant traffic source, the question is whether machine readers can
+tell what adapted: ambient contamination is the benign end of
+that adaptation spectrum, deliberate manipulation the malign end, and
+both flow through the same missing infrastructure --- content whose
+origin a buyer can verify.

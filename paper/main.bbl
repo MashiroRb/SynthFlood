@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{35}
+\begin{thebibliography}{37}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -66,6 +66,25 @@
 \url{http://arxiv.org/abs/2609.01873v1}
 \showURL{%
 \tempurl}
+
+
+\bibitem[Bi et~al\mbox{.}(2026)]%
+        {bi2026evaluating}
+\bibfield{author}{\bibinfo{person}{Zhongan Bi}, \bibinfo{person}{Qiwen Wang},
+  \bibinfo{person}{Jianrong Jiang}, \bibinfo{person}{Jigang Ding},
+  \bibinfo{person}{Wenwen Xiong}, \bibinfo{person}{Changhua Meng},
+  \bibinfo{person}{Xuanang Gao}, \bibinfo{person}{Kepeng Lin},
+  \bibinfo{person}{Changjiang Jiang}, \bibinfo{person}{Yi'ang Chen},
+  \bibinfo{person}{Huan Yao}, \bibinfo{person}{Wei Wang},
+  \bibinfo{person}{Zhenyu Ma}, {and} \bibinfo{person}{Wenhui Dong}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \showarticletitle{Evaluating Deep-Search Agents under Hierarchical
+  Web Evidence Poisoning}. In \bibinfo{booktitle}{\emph{arXiv (Cornell
+  University)}}. \bibinfo{publisher}{Cornell University}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.48550/arxiv.2609.06027}
+\showDOI{\tempurl}
 
 
 \bibitem[Cao et~al\mbox{.}(2026)]%
@@ -530,6 +549,20 @@
 \url{http://arxiv.org/abs/2603.29979v1}
 \showURL{%
 \tempurl}
+
+
+\bibitem[Zhang et~al\mbox{.}(2026)]%
+        {zhang2026deepresearch}
+\bibfield{author}{\bibinfo{person}{Tingwei Zhang}, \bibinfo{person}{Harold
+  Triedman}, {and} \bibinfo{person}{Vitaly Shmatikov}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \showarticletitle{Deep-Research Agents Can Be Poisoned via
+  User-Generated Content}. In \bibinfo{booktitle}{\emph{arXiv (Cornell
+  University)}}. \bibinfo{publisher}{Cornell University}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.48550/arxiv.2605.24245}
+\showDOI{\tempurl}
 
 
 \bibitem[Zheng et~al\mbox{.}(2026)]%

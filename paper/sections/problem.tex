@@ -2,20 +2,18 @@
 \label{sec:problem}
 
 \subsection{Setting: ambient contamination of a decision channel}
-Consider an agent $A$ that, given a user instruction $u$, must choose one product
+Consider an agent that, given a user instruction $u$, must choose one product
 from a candidate list $\mathcal{C}=\{c_1,\dots,c_N\}$ rendered by a search or
-recommendation layer. Each candidate is a \emph{listing}: a title, marketing
-bullets, specification attributes, a description, a price, and an aggregate
-rating with a review count. The agent observes a rendered version of these
-fields and commits to a choice $k\in\{1..N\}$.
+recommendation layer. Each candidate is a \emph{listing}: title, marketing
+bullets, specification attributes, description, price, and an aggregate
+rating with a review count. The agent observes these fields and commits to
+a choice $k\in\{1..N\}$.
 
-Scope note: \emph{ambient} refers to how contamination arrives ---
-synthetic content occupies the retrieval context that routine browsing
-presents, with no adversary and no targeting --- not to whole-web
-saturation. Our primary surface is the ten-slot results page; a scale
-experiment extends it to fifty slots.
-
-We model \emph{ambient synthetic contamination} as a random process on the
+\emph{Ambient} refers to how contamination arrives ---
+synthetic content occupies the routine retrieval context, with no
+adversary and no targeting --- not whole-web saturation; our primary
+surface is the ten-slot results page. We model \emph{ambient synthetic
+contamination} as a random process on the
 candidate pool, not as an adversary. A fraction $\varepsilon$ of distractor
 slots is occupied by synthetic listings $s$ produced by a generative model
 under \emph{commercial} optimization pressure: maximize apparent fit to the
@@ -31,9 +29,8 @@ Three properties distinguish this threat model from adversarial injection.
 (i)~\emph{No targeting}: synthetic listings are produced for the category and
 query in general, not against a specific user, task, or gold product; their
 accidental overlap with any given instruction is incidental. (ii)~\emph{No user awareness}: generators see the category, the query, and
-(for clones) a popular listing, but never the individual user's instruction,
-so a mismatch with any particular user's required attributes is incidental
-rather than engineered.
+(for clones) a popular listing, but never the individual user's
+instruction.
 (iii)~\emph{Persistence}: such content is the by-product of ordinary incentives
 (SEO, affiliate monetization), so its prevalence $\varepsilon$ is a property of
 the Web, not of an attack session.
@@ -50,32 +47,27 @@ contamination level $\varepsilon$. We measure:
       $\mathrm{R}(\varepsilon)=\mathbb{E}[\,1-r(c_{K_\varepsilon};u)\,]$, the
       economic loss of acting on the contaminated Web relative to the best
       available candidate.
-\item \textbf{Susceptibility} $\sigma$, from a forced-choice probe: with only
-      two candidates, the gold $g$ and one synthetic listing $s$, presented in
-      randomized order, $\sigma=\Pr[K=s]$; the null value is
-      $\sigma=\tfrac12$, and $\sigma>\tfrac12$ indicates a systematic
-      preference for machine-optimized pages independent of any dose--response
-      accumulation.
+\item \textbf{Susceptibility} $\sigma$, from a forced-choice probe: with
+      only the gold $g$ and one synthetic listing $s$ in randomized order,
+      $\sigma=\Pr[K=s]$; the null is $\sigma=\tfrac12$, and $\sigma>\tfrac12$
+      indicates a systematic preference for machine-optimized pages
+      independent of any dose--response accumulation.
 \item \textbf{Dose--response curve} $\mathrm{S}(\varepsilon)$ over
-      $\varepsilon\in\{0, 0.25, 0.5, 0.75\}$, sufficient to locate the
-      saturation point of the curve (the nominal $\varepsilon{=}0.1$ level
-      maps to zero replaced slots and coincides with $0$).
-\item \textbf{Calibration drift}: expected calibration error (ECE) of the
-      agent's post-hoc choice confidence as a function of $\varepsilon$,
-      capturing whether contamination distorts \emph{confidence} even as
-      choices degrade.
+      $\varepsilon\in\{0, 0.25, 0.5, 0.75\}$ (the nominal $\varepsilon{=}0.1$
+      level maps to zero replaced slots and coincides with $0$).
+\item \textbf{Calibration drift}: expected calibration error (ECE) of
+      the agent's post-hoc choice confidence as a function of
+      $\varepsilon$ --- whether contamination distorts \emph{confidence}
+      even as choices degrade.
 \end{itemize}
 
 \subsection{The silent-erosion hypothesis}
-The security literature on web agents predicts degradation only when
-adversarially targeted content is present. Ambient contamination implies a
-different, more insidious signature: because synthetic listings are optimized
-for \emph{perceived} quality rather than goal satisfaction, we expect the
-choice distribution to shift toward them ($\sigma>1/2$; $\mathrm{R}$
-increasing in $\varepsilon$) while coarse success rates may appear stable ---
-regret rises through partial-quality purchases (attribute mismatches,
-overpayment) long before complete failures appear. A dose--response with this
-shape would mean the Web can lose decision quality at a nearly invisible rate
-to the operators of agents, motivating provenance-ordered defenses rather
-than detection alone. Our experiments are designed to falsify or confirm this
-signature (Section~\ref{sec:results}).
+Because synthetic listings are optimized for \emph{perceived} quality
+rather than goal satisfaction, we expect the choice distribution to shift
+toward them ($\sigma>1/2$; $\mathrm{R}$ increasing in $\varepsilon$) while
+coarse success may appear stable --- regret rises through partial-quality
+purchases (attribute mismatches, overpayment) long before complete
+failures appear. A dose--response with this shape would mean the Web loses
+decision quality nearly invisibly to agent operators, motivating
+provenance-ordered defenses over detection alone; our experiments are
+designed to falsify or confirm this signature (\S\ref{sec:results}).

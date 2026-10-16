@@ -7,7 +7,7 @@ official artifacts. It consists of a candidate-selection environment
 plausibility floor (\S\ref{sec:method-gen}), a forced-choice susceptibility
 probe (\S\ref{sec:method-probe}), a dose--response sweep with matched defenses
 (\S\ref{sec:method-sweep}), and a gated execution discipline that fixes the
-analysis before scaling compute (\S\ref{sec:method-gates}).
+analysis before scaling compute (\S\ref{sec:method-ablations}).
 
 \subsection{WebShop-Select: a controlled selection environment}
 \label{sec:method-env}
@@ -15,13 +15,19 @@ We load WebShop's official product dump (1{,}181{,}430 products after the
 official deduplication), the official attribute file, and the official human
 instruction set, using a verbatim port of the benchmark's loader; goals are
 produced by the benchmark's own \texttt{get\_human\_goals}, including its
-price-upper sampling. Rewards are computed by the benchmark's official reward
+price-upper sampling. WebShop~\cite{yao2022webshop} is the standard
+substrate for shopping-agent work, with successors extending it to
+personalized curation \cite{kim2026agenticshop}, multi-shop comparison
+\cite{peeters2025webmall}, and deep research shopping
+\cite{lyu2025deepshop}; ReAct-style prompting \cite{yao2022react} remains
+the standard operating mode. Rewards are computed by the benchmark's
+official reward
 function (attribute matching over specifications, title, bullets and
 description; option matching; price constraint; type gate), applied to the
 chosen candidate. Because our protocol removes the variant-selection step, we
-score the chosen listing with its best-matching variant, which keeps the
-option term comparable across candidates: all reward differences then stem
-exclusively from \emph{which listing} was chosen, the manipulated variable.
+score the chosen listing with its best-matching variant, so all reward
+differences stem exclusively from \emph{which listing} was chosen, the
+manipulated variable.
 
 Each task renders $N{=}10$ candidates: the gold product at a fixed slot plus
 nine distractors sampled from the same fine-grained product category (so that
@@ -30,10 +36,10 @@ textual results page and may issue \texttt{view[k]} to inspect a full product
 page or \texttt{select[k]} to purchase; episodes are capped at ten steps.
 The gold product is always present and never replaced. At contamination level
 $\varepsilon$, $\lfloor\varepsilon(N{-}1)\rfloor$ distractor slots are
-replaced by synthetic listings drawn from a per-task pool with a fixed seed,
-so the candidate list is \emph{identical across $\varepsilon$ levels except
-for the replaced slots} --- a paired design that isolates the effect of
-contamination from task difficulty.
+replaced by synthetic listings drawn from a per-task pool with a fixed
+seed, so the candidate list is \emph{identical across $\varepsilon$ levels
+except for the replaced slots} --- the paired design isolates
+contamination effects from task difficulty.
 
 \subsection{Contamination generator with a plausibility floor}
 \label{sec:method-gen}
@@ -51,7 +57,7 @@ programmatic economics (rating 4.6--4.9, 400--3{,}000 reviews), inherit the
 gold listing's option schema (which enters only the reward's option term),
 and must pass a \emph{plausibility floor}: a judge model, distinct from the
 generator, scores each listing 1--5 for plausibility as a real e-commerce
-page, and listings below 4 are regenerated once and dropped if still below.
+page; listings below 4 are regenerated once, then dropped.
 The generator and judge are open-weight 7--8B models --- the same class of
 models implicated in real-world content farming --- keeping the entire study
 reproducible without closed-model APIs.
@@ -64,17 +70,16 @@ candidates --- the gold product and one synthetic listing, order randomized by
 a fixed seed --- and the agent must buy one. The outcome is a Bernoulli choice;
 across 30 tasks with 10 pair seeds each (300 forced choices in total), susceptibility
 $\sigma=\Pr[K=s]$ is estimated with a Wilson 95\% interval, and the null
-$\sigma\le\tfrac12$ is tested binomially. This probe requires no reward model
-interpretation, is robust to task difficulty heterogeneity (each task
-contributes its own pairs), and yields an interpretable headline number: the
+$\sigma\le\tfrac12$ is tested binomially. The probe requires no reward-model
+interpretation and each task contributes its own pairs; it yields the
 probability that an agent buys the machine-optimized page when it competes
 one-on-one with the correct product.
 
 \subsection{Dose--response sweep and defense battery}
 \label{sec:method-sweep}
 The main measurement sweeps $\varepsilon$ over $\{0, 0.25, 0.5, 0.75\}$
-(the nominal $\varepsilon{=}0.1$ level maps to zero replaced slots at
-$N{=}10$ and coincides with $\varepsilon{=}0$, so it is omitted)
+(the nominal $\varepsilon{=}0.1$ level maps to zero replaced slots and
+coincides with $\varepsilon{=}0$)
 under \texttt{mix} contamination (families drawn uniformly), reporting
 success, partial success, regret, ECE, and per-family breakdowns, with
 McNemar tests between adjacent doses on paired tasks and cluster bootstrap
@@ -85,17 +90,17 @@ over five equal-width bins. The defense battery runs at a fixed high
 contamination level and compares seven conditions: \textbf{none} (vanilla);
 \textbf{prompt} (a standing instruction to distrust keyword-rich,
 specification-mismatched pages); \textbf{detector-text} (perplexity
-filtering); \textbf{detector-struct} (structural slop features: marketing
-cue density, keyword stuffing, bullet symmetry); \textbf{random} (the same
-number of candidates dropped uniformly at random --- the critical control
-that separates \emph{filtering quality} from \emph{merely removing
-candidates}); \textbf{provenance} (a noisy provenance bit: real items carry
-verifiable provenance 85\% of the time, synthetic 15\%, deterministic per
-item; the defense re-ranks by this bit alone, never seeing labels);
-\textbf{oracle} (perfect re-ranking, an upper bound). Defenses are evaluated
-on regret recovery relative to \texttt{none} at matched contamination.
+filtering); \textbf{detector-struct} (structural slop features);
+\textbf{random} (the same number of candidates dropped uniformly at
+random --- the critical control that separates \emph{filtering quality}
+from \emph{merely removing candidates}); \textbf{provenance} (a noisy
+provenance bit: real items carry verifiable provenance 85\% of the time,
+synthetic 15\%, deterministic per item; the defense re-ranks by this bit
+alone); \textbf{oracle} (perfect re-ranking, an upper bound). Defenses are
+evaluated on regret recovery relative to \texttt{none} at matched
+contamination.
 
-\subsection{Channel ablations and defense stress tests}
+\subsection{Ablations, stress tests, and gated execution}
 \label{sec:method-ablations}
 To attribute the probe's clone result to specific listing channels, we
 re-run the forced-choice protocol with surgical edits to the synthetic
@@ -110,14 +115,12 @@ as an additive bonus $\lambda\cdot\mathbb{1}[\text{verified}]$,
 $\lambda\in\{0.5,\dots,8\}$; a \textbf{forgery envelope} letting the
 adversary forge the badge on $s\in\{25,35,50,65\}\%$ of synthetic
 listings; and a \textbf{naive popularity baseline} ranking by
-rating$\times\log$(review count). Finally, to probe the structural
-detector's reliance on generator fingerprints, a \textbf{stealth pool} is
+rating$\times\log$(review count). Finally, a \textbf{stealth pool} is
 regenerated with fingerprint-free prompts (no marketing adjectives,
-naturally varied bullet lengths, prose-form specifications, humanlike
-reviews) and the defense battery re-run on it.
+varied bullets, prose-form specifications, humanlike reviews) and the
+defense battery re-run on it.
 
-\subsection{Gated execution}
-\label{sec:method-gates}
+\paragraph{Gated execution.}
 All stages are run under a pre-registered gate discipline: P0 (pipeline
 sanity: zero malformed actions, success in a plausible range, seed
 reproducibility) precedes generation; the generator passes a plausibility and
@@ -128,5 +131,4 @@ below, the premise is falsified and the project pivots; P2 gates on a $\ge$5\,pp
 success drop or $\ge$10\% relative regret increase at $\varepsilon=0.75$;
 a power analysis then fixes the final matrix before the full sweep; P5 gates
 on any defense recovering $\ge$30\% of the incurred regret. Gate decisions
-and full trajectory logs (JSONL, every LLM call with token counts) are
-released with the code.
+and full trajectory logs (JSONL, every LLM call) are released with the code.

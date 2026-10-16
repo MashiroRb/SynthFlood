@@ -107,7 +107,7 @@ ax2.set_title("(b) Purchases shift, confidence inflates")
 ax2.text(0.55, 57, "purchases", fontsize=6.5, color=OK["purple"])
 ax2b.text(0.38, 0.925, "confidence", fontsize=6.5, color=OK["green"])
 ax2b.text(0.43, 0.175, "ECE", fontsize=6.5, color=OK["orange"])
-plt.tight_layout(); plt.savefig("figures/dose_response.pdf", bbox_inches="tight"); plt.close()
+plt.tight_layout(); plt.savefig("paper/figures/dose_response.pdf", bbox_inches="tight"); plt.close()
 
 # ---------------- family ----------------
 fams = ["geo", "clone", "reviews"]
@@ -130,7 +130,7 @@ ax1.legend(frameon=False, loc="upper right")
 ax2.set_xticks(range(3)); ax2.set_xticklabels(labels, fontsize=6.6)
 ax2.set_ylabel("regret"); ax2.set_title("(b) Regret per family")
 ax2.legend(frameon=False, loc="upper left")
-plt.tight_layout(); plt.savefig("figures/family.pdf", bbox_inches="tight"); plt.close()
+plt.tight_layout(); plt.savefig("paper/figures/family.pdf", bbox_inches="tight"); plt.close()
 
 # ---------------- defenses ----------------
 cells = B["B3_cells"]
@@ -151,7 +151,7 @@ for i, v in enumerate(vals):
     ax.text(i, v + 0.012, f"{v:.2f}", ha="center", fontsize=6.8)
 ax.set_xticks(range(7)); ax.set_xticklabels(names, rotation=28, ha="right", fontsize=6.6)
 ax.set_ylabel(r"regret at $\varepsilon=0.75$")
-plt.tight_layout(); plt.savefig("figures/defenses.pdf", bbox_inches="tight"); plt.close()
+plt.tight_layout(); plt.savefig("paper/figures/defenses.pdf", bbox_inches="tight"); plt.close()
 
 # ---------------- defense stress tests (new, 3 panels) ----------------
 fig, (ax1, ax2, ax3) = plt.subplots(1, 3, figsize=(7.0, 2.3))
@@ -162,7 +162,7 @@ for lam in ["0.5", "1.0", "2.0", "4.0", "6.0", "8.0"]:
             if r["task_id"] and r.get("reward") and float(r["eps"]) == 0.75]
     lams.append(float(lam)); regs.append(mean([1 - float(r["reward"]) for r in rows]))
 ax1.plot(lams, regs, marker="o", ms=4, lw=1.3, color=OK["blue"])
-ax1.axhline(0.443, color=OK["grey"], ls=":", lw=1); ax1.text(4.1, 0.452, "no defense 0.443", fontsize=6.3)
+ax1.axhline(0.398, color=OK["grey"], ls=":", lw=1); ax1.text(4.1, 0.407, "no defense 0.398", fontsize=6.3)
 ax1.axhline(0.329, color=OK["green"], ls="--", lw=1); ax1.text(3.0, 0.312, "hard ordering 0.329", fontsize=6.3)
 ax1.annotate("recovers only\nat $\\lambda{=}8$", (8, 0.335), xytext=(4.6, 0.415), fontsize=6.5,
              arrowprops=dict(arrowstyle="->", lw=0.7))
@@ -185,12 +185,12 @@ def arm(fn):
             if r["task_id"] and r.get("reward") and float(r["eps"]) == 0.75]
     return mean([1 - float(r["reward"]) for r in rows])
 sn, ss, sp = arm("p4m_none_st_sweep.csv"), arm("p4m_struct_st_sweep.csv"), arm("p4m_prov_st_sweep.csv")
-on, os_, op = 0.443, 0.250, 0.329
+on, os_, op = 0.398, 0.250, 0.329  # original pool, same 40 tasks (P2 gate run + p4c arms)
 w = 0.34
 ax3.bar([0 - w/2, 1 - w/2, 2 - w/2], [on, os_, op], width=w, color=OK["grey"], label="original pool")
 ax3.bar([0 + w/2, 1 + w/2, 2 + w/2], [sn, ss, sp], width=w, color=OK["blue"], label="stealth pool")
 ax3.set_xticks([0, 1, 2]); ax3.set_xticklabels(["no defense", "struct", "provenance"], fontsize=6.8)
-ax3.set_ylabel("regret"); ax3.set_title("(c) Stealth pool degrades struct only")
+ax3.set_ylabel("regret"); ax3.set_title("(c) Stealth pool: defenses intact")
 ax3.legend(frameon=False, fontsize=6.2, loc="upper right")
-plt.tight_layout(); plt.savefig("figures/defense_stress.pdf", bbox_inches="tight"); plt.close()
+plt.tight_layout(); plt.savefig("paper/figures/defense_stress.pdf", bbox_inches="tight"); plt.close()
 print("figures regenerated")

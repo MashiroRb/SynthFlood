@@ -8,9 +8,9 @@ estimated 27.5\% of tokens passing common quality filters on the open Web
 are now AI-generated, and the share is climbing monthly \cite{russell2026much};
 measurement studies document machine-generated catalogs flooding music
 platforms \cite{wu2026empirical} and scientific publishing \cite{oh2026science}.
-This content is not adversarial in the classical sense: much of it is produced
+This content is not adversarial in the classical sense: it is produced
 by ordinary commercial incentives --- search-optimized content farms,
-counterfeit-style listing clones, review inflation --- and a whole research
+counterfeit-style listing clones, review inflation --- and a research
 program now studies how to \emph{optimize} content for generative engines
 \cite{wu2025what,bagga2025egeo,nimase2026geobench} and how to detect the
 result \cite{chu2026geoflag,zheng2026countergeobench,li2026when}. The
@@ -18,19 +18,50 @@ consequence is that agentic systems increasingly browse a Web
 whose supply of plausible, keyword-rich, well-rated listings no longer
 correlates with actually satisfying the user's goal.
 
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.92\textwidth]{figures/teaser.pdf}
+\caption{Overview of the study. \textbf{(a)}~Threat model: at contamination
+level $\varepsilon=0.75$, six of the nine distractor slots on a results page
+are synthetic listings produced by commercial-style generators
+(search-optimized pages, lookalike clones at lower prices, review-inflated
+pages); the agent purchases the cheaper lookalike and forfeits reward.
+\textbf{(b)}~Channel decomposition (forced-choice probe, $n{=}88$ clone
+duels): removing price parity or rating parity alone drops the clone
+win-rate $\sigma$ from $0.523$ to $0.386$; removing both drops it to
+$0.250$, below the plain-gloss baseline --- the attack operates on
+the agent's \emph{preference}, not its perception. \textbf{(c)}~Dose--response
+($N{=}100$ tasks): regret jumps from $0.262$ to a $0.40$--$0.44$ plateau
+at the first dose step (mean $\pm$95\% CI). \textbf{(d)}~Defenses at
+$\varepsilon=0.75$ ($n{=}40$): consuming a noisy provenance bit as an
+\emph{ordering constraint} recovers the regret excess in point estimate;
+dotted lines mark chance (b) and the uncontaminated regret level (d).}
+\label{fig:teaser}
+\Description{Four-panel teaser. Panel (a) shows a schematic shopping
+results page with nine rows, six of them highlighted as synthetic listings,
+and an agent purchasing the cheapest lookalike. Panel (b) is a bar chart of
+clone win-rate under four probe conditions (0.523, 0.386, 0.386, 0.250)
+with 95\% Wilson intervals, a dashed chance line at 0.5 and a dotted
+plain-gloss baseline at 0.351. Panel (c) is a line chart of regret versus
+contamination level epsilon showing 0.262, 0.429, 0.401, 0.443 with 95\%
+confidence intervals, annotated jump-then-plateau. Panel (d) is a bar chart
+of regret at epsilon 0.75 under five defenses (0.398, 0.364, 0.329, 0.250,
+0.171) with a dotted uncontaminated reference at 0.338.}
+\end{figure*}
+
 This paper asks a question that, to our knowledge, no prior work has measured
 in a controlled setting: \textbf{does ambient, non-targeted synthetic content
 silently erode the decision quality of web agents?} Existing evaluations of
-agents under Web pollution attack them deliberately: programmatic mini-internets
-with adversarially curated falsehoods \cite{shah2026synthetic}, attacker-written
-endorsement pages steering search agents \cite{chen2026much}, or prompt
-injection and memory poisoning \cite{cao2026ward,yang2026zombie,syros2026muzzle}.
-Upstream of the decision, retrieval-level studies show that cumulative AI
-pollution degrades search quality \cite{yu2026retrieval}. But ambient
-contamination is a different regime: no adversary knows the user's goal, so
-no page is crafted to defeat a specific decision. The threat is statistical,
-not surgical --- and whether it materially matters for agent \emph{economics}
-(choice quality, wasted spend, calibrated confidence) is unknown.
+agents under Web pollution attack them deliberately: adversarially curated
+mini-internets \cite{shah2026synthetic}, attacker-written
+endorsement pages steering search agents \cite{chen2026much}, prompt
+injection and memory poisoning \cite{cao2026ward,yang2026zombie,syros2026muzzle};
+upstream of the decision, cumulative AI pollution degrades retrieval quality
+\cite{yu2026retrieval}. Ambient contamination is a different regime: no
+adversary knows the user's goal, so no page is crafted to defeat a specific
+decision --- the threat is statistical, not surgical, and whether it
+materially matters for agent \emph{economics} (choice quality, wasted
+spend, calibrated confidence) is unknown.
 
 Measuring this regime requires disentangling choice quality from task
 difficulty: a naive before/after comparison cannot tell whether agents
@@ -39,28 +70,31 @@ chose worse or the tasks became harder. We therefore build
 official artifacts~\cite{yao2022webshop}: each task renders a fixed
 candidate list in which the gold product is always present and never
 replaced; only distractor slots are progressively replaced by
-synthetic listings, drawn under a fixed seed so that lower
-contamination levels are nested within higher ones. Synthetic
-listings come from a three-family generator that mirrors real content-farm
-modes --- search-optimized pages, specification clones with altered attributes
-and lower prices, and review-inflated plain pages --- with a cross-model
-plausibility floor, all produced by open-weight 7--8B models. Agents act in a
-ReAct loop over rendered listings, and every purchase is scored by WebShop's
-\emph{official} reward function, so regret is measured in the benchmark's own
-currency rather than a proxy.
+synthetic listings, drawn under a fixed seed so lower doses are nested
+within higher ones. Synthetic listings come from a three-family
+generator that mirrors real content-farm modes --- search-optimized
+pages, specification clones with lower prices, and review-inflated
+pages --- with a cross-model plausibility floor, all generated by
+open-weight 7--8B models. Agents act in a ReAct loop over rendered
+listings; every purchase is scored by WebShop's \emph{official} reward
+function, so regret is measured in the benchmark's own currency.
+Figure~\ref{fig:teaser} previews the threat and the four findings that
+organize the paper.
 
-SynthFlood yields three measurements: a \emph{forced-choice
-susceptibility probe} (one gold product against one synthetic listing,
-300 randomized duels, yielding $\sigma$ --- the probability that the
-agent buys the machine-optimized page over the correct product); a
+SynthFlood yields four measurements: a \emph{forced-choice
+susceptibility probe} (gold product vs.\ one synthetic listing, 300
+randomized duels, yielding $\sigma$ --- the probability of buying the
+machine-optimized page over the correct product); a
 \emph{dose--response curve} over $\varepsilon\in\{0,0.25,0.5,0.75\}$
 with McNemar tests on paired tasks, where our silent-erosion
 hypothesis predicts regret rising steeply while coarse success appears
-stable (partial mismatches are invisible in success counts); and a
-\emph{defense battery} at matched contamination whose critical control
-is a random-defense arm dropping the same number of candidates
-uniformly, alongside a provenance-only defense that re-ranks by a
-noisy verifiable bit without ever seeing labels.
+stable (partial mismatches are invisible in success counts); a
+\emph{defense battery} at matched contamination --- its critical
+control drops the same number of candidates uniformly, and its
+headline defense re-ranks by a noisy verifiable provenance bit without
+ever seeing labels; and a \emph{washout experiment} that returns
+exposed agents to clean shopping to test whether contamination leaves
+a memory-carried residue.
 
 Our contributions are:
 \begin{itemize}
@@ -72,53 +106,45 @@ Our contributions are:
       each cut the clone win-rate from $0.523$ to $0.386$, and removing
       both drops it to $0.250$ --- an additive decomposition attributing
       the attack to price and social proof, not perception. A pricing
-      dose--response yields a threshold law: any discount $\geq 10\%$
-      flips the majority to the clone ($0.386\!\to\!0.591$, $p=0.003$),
-      with no further gain at deeper discounts.
+      dose--response yields a threshold law: a 10\% discount restores
+      majority-level clone preference ($0.591$ vs.\ $0.386$ at parity;
+      cluster-robust $p=0.011$), with no further gain at deeper
+      discounts.
 \item \textbf{To our knowledge, the first decision-level
       dose--response evidence} that ambient
       contamination erodes agent economics: at $\varepsilon=0.75$, success
-      drops by $23$\,pp ($p=1.3\times10^{-4}$; $p=1.2\times10^{-8}$ pooled
-      over two seeds) and regret rises $69\%$ (paired $\Delta=+0.181$,
-      95\% CI $[+0.095,+0.264]$), while confidence rises and calibration
-      error doubles --- errors that no success metric would surface.
+      drops by $23$\,pp ($p=1.2\times10^{-8}$ pooled over two
+      seed-replicated pools) and regret rises $69\%$ (paired
+      $\Delta=+0.181$, 95\% CI $[+0.095,+0.264]$), while confidence rises
+      and calibration error doubles --- errors that no success metric
+      would surface.
 \item \textbf{A defense analysis with an ordering principle}: an
-      agent-visible noisy provenance badge eliminates the regret excess,
-      is unchanged under badge forgery up to $65\%$, and a text-free
-      structural detector is statistically indistinguishable from a
-      perfect-provenance oracle in paired runs ($p=0.21$); but consuming the same bit as a soft ranking
-      bonus fails until its weight exceeds the rating scale
-      ($\lambda\leq 4$ all fail, $\lambda=8$ recovers fully) --- and a
-      naive popularity ranking \emph{backfires}, raising synthetic
+      agent-visible noisy provenance badge recovers the regret excess in
+      point estimate (marginal after family-wise correction;
+      \S\ref{app:power}) and is unchanged under badge forgery up to
+      $65\%$; a text-free structural filter drives regret below the
+      uncontaminated level (indistinguishable from a perfect-provenance
+      oracle at this sample size); but consuming the same bit as a soft
+      ranking bonus fails until its weight exceeds the rating scale ---
+      and a naive popularity ranking \emph{backfires}, raising synthetic
       purchases to 67.5\%.
 \item \textbf{Real-document external validation}: real lookalike
       listings from a 1.18M-item catalog reproduce the clone effect
-      ($\sigma=0.60$--$0.64$, indistinguishable from our generator's);
-      a fifty-slot experiment localizes the strong harm to
-      contamination density; Yelp fraud-filtered spam reviews confirm
-      the review channel's direction.
+      ($\sigma=0.60$--$0.64$; the paired difference to our generator's
+      clone is bounded by 95\% CI $[-2.3,+14.5]$\,pp), and Yelp
+      fraud-filtered spam reviews reproduce the review channel's
+      direction (not its significance).
+\item \textbf{Exposure leaves a memory-carried residue}: after twenty
+      contaminated episodes, a memory-equipped agent treats a
+      \emph{full-price} lookalike the way a naive agent treats a
+      discounted one (parity exam $\sigma=0.842$ vs.\ $0.579$,
+      $p=0.011$); the residue is absent without memory read-back
+      ($0.526$), forms despite consistent punishment, and does not
+      transfer even within the exposure category ($p=0.80$).
 \end{itemize}
-An anonymized package with all code, contamination pools, and full
-trajectory logs accompanies the submission. The
-remainder of the paper formalizes the threat model
-(\S\ref{sec:problem}), presents the protocol (\S\ref{sec:method}), reports
-results (\S\ref{sec:results}), discusses implications and limitations
-(\S\ref{sec:discussion}), and concludes (\S\ref{sec:conclusion}).
-
-\paragraph{What is brave and new.}
-This paper proposes that the Web's next decade will be shaped not by
-adversarial attacks on agents but by \emph{ambient} commercial synthetic
-content --- and that the resulting damage is invisible to the metrics we use
-to evaluate agents. What is new: (i) the first decision-level dose--response
-evidence that ambient contamination erodes agent economics on official
-benchmark artifacts; (ii) a channel-decomposed forced-choice probe that
-locates the erosion mechanism in the agent's \emph{preference function}
-(price and social proof), not its perception, with a pricing threshold law
-showing a 10\% discount is sufficient to flip the majority; (iii) a
-diagnostic pair --- regret outrunning success, confidence rising alongside
-error --- that operators can monitor; and (iv) the demonstration that a single noisy
-provenance bit recovers the full loss when consumed as an \emph{ordering
-constraint} --- but not as a soft score --- where content-based detection
-cannot. What is brave: we argue provenance-ordered ranking should become a
-first-class interface contract between the Web and the agents acting on it,
-and we give the community the protocol to falsify or refine that claim.
+An anonymized package with code, contamination pools, and trajectory
+logs accompanies the submission; the remainder of the paper formalizes
+the threat model (\S\ref{sec:problem}), presents the protocol
+(\S\ref{sec:method}), reports results (\S\ref{sec:results}), discusses
+implications and limitations (\S\ref{sec:discussion}), and concludes
+(\S\ref{sec:conclusion}).
