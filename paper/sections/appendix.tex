@@ -268,7 +268,8 @@ carryover McNemar $9/1$, $p{=}0.021$; half-life 4 clean episodes);
 memory causality holds (write-only arm at chance, $0.692$ vs.\ $0.897$,
 $z{=}-2.24$, $p{=}0.025$). The parity persistence ($0.842$ vs.\
 $0.579$, $p{=}0.011$) and its memory mediation ($0.790$ vs.\ $0.526$,
-$p{=}0.016$) are pre-registered secondary tests. The transfer matrix at
+$p{=}0.016$) are pre-registered secondary tests (single-seed
+findings; see below). The transfer matrix at
 checkpoint 0 is exploratory ($n{=}20$): same-category pairs show no
 elevation ($0.718$ vs.\ $0.744$, $p{=}0.80$); a cross-category transfer
 was \emph{not executable} (all remaining pool pairs fall inside the five
@@ -279,3 +280,19 @@ so it is reported as exploratory with mixed evidence. The reward autopsy
 computes, for every exposure episode, the counterfactual official reward
 of the gold product: 38 synthetic purchases, 2 with reward at or above
 gold, mean gap $-0.632$.
+
+\paragraph{Pre-registered re-randomizations (seeds 2028, 2029).}
+Two replication runs shift the treatment-side randomness (exposure
+pools, episode dynamics, memory trajectories) while re-running the
+same five arms; in seed-2029 the exam instrument --- instruction
+texts, clone candidates, and presentation order --- is byte-identical
+to seed-2027, which restores the pre-exposure baseline ($0.718$ vs.\
+seed-2027's $0.692$; the fully shifted seed-2028 raises it to $0.821$
+because goal-pool shuffling changes 24 of 40 exam instructions).
+Pre-registered verdicts: the internalization failure replicates in
+both runs ($p{=}0.53$, $p{=}0.62$); the fast-channel carryover is
+direction-consistent ($+3$ and $+5$\,pp) but not significant
+($p{=}1.0$, $p{=}0.75$); the parity persistence and the write-only
+mediation contrast do not replicate ($p{\ge}0.46$) and are reported
+as single-seed findings in the main text. All trajectories, pools,
+and verdict logs are released with the code.

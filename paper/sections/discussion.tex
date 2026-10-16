@@ -70,14 +70,15 @@ price of noisy provenance, not of the idea.
 A washout experiment adds a second-order consequence: contamination does
 not only bend the choice at hand --- it leaves a trace in experience
 memory. On the discounted exam the trace decays within a few
-clean episodes (half-life ${\approx}4$); at price parity it does not
-decay at all --- the exposed agent's parity preference ($\sigma=0.842$
-at clean episode 20) exceeds even the naive agent's discounted-exam
-level ($0.718$). Three properties make this
-operationally relevant: the trace is carried by the agent's own written
-notes (a write-only control shows none of it), it formed under consistent
+clean episodes (half-life ${\approx}4$) and never internalizes ---
+a result that holds in each of three seeds. The trace is carried by
+the agent's own written notes (a write-only control shows none of it,
+$p{=}0.025$), it formed under consistent
 punishment (2 of 38 synthetic purchases left the agent no worse off),
 and corrective feedback only directionally reduces it ($0.769$, n.s.).
+A price-parity residue seen in seed-1 ($\sigma=0.842$ at clean
+episode 20, above the naive agent's discounted-exam level $0.718$)
+did not survive re-randomization ($p{\ge}0.46$ in both attempts).
 For deployment,
 the attack surface of an experience-carrying agent includes its own
 note-taking: memory curation and provenance-aware filtering join
@@ -107,7 +108,11 @@ saturation; the real-document experiments
 clones and narrow it for reviews. Two secondary
 findings are at reduced strength after replication
 (\S\ref{sec:res-family}, \S\ref{sec:res-defense}); the washout
-experiment is single-model, single-seed (\S\ref{app:m1}); provenance
+experiment is single-model, and its pre-registered
+re-randomizations replicate the internalization failure in every
+seed while the fast-channel carryover stays direction-consistent
+but significant only in seed-1 and the parity residue does not
+replicate (\S\ref{app:m1}); provenance
 availability in the wild is crudely approximated by our 85/15 noise
 model. If agentic browsing becomes
 a dominant traffic source, the question is whether machine readers can
