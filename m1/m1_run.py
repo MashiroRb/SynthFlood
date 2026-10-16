@@ -41,7 +41,12 @@ GEN_DIR = os.path.join(REPO, "data",
                        os.environ.get("M1_GEN_SUBDIR", "contamination"))
 # Second-seed support: M1_SEED_BASE offsets every random draw; the
 # default 2027 reproduces the pre-registered seed-1 draws bit-for-bit.
+# M1_GOALS_SEED decouples the goal-pool shuffle (which also fixes the exam
+# instruction texts via goals_by_asin) from the treatment-side randomness:
+# replication runs set M1_GOALS_SEED=2027 to keep the measurement instrument
+# byte-identical while re-randomizing episodes, pools and shuffles.
 SEED_BASE = int(os.environ.get("M1_SEED_BASE", "2027"))
+GOALS_SEED = int(os.environ.get("M1_GOALS_SEED", str(SEED_BASE)))
 SB_OFF = (SEED_BASE - 2027) * 100000
 PAIRS_PATH = "/root/realattack/realattack_pairs.json"
 MODEL = "Qwen/Qwen2.5-7B-Instruct"
@@ -120,9 +125,9 @@ def fresh_goals_all(by_asin, product_prices):
     (which caps at 100 and would empty the 100+ slices M1 needs)."""
     import random as _r
     from web_agent_site.engine.goal import get_human_goals
-    _r.seed(SEED_BASE)
+    _r.seed(GOALS_SEED)
     goals = get_human_goals(by_asin, product_prices)
-    rng = _r.Random(SEED_BASE)
+    rng = _r.Random(GOALS_SEED)
     rng.shuffle(goals)
     seen, uniq = set(), []
     for g in goals:
@@ -314,7 +319,10 @@ def counterfactual_gold(goal, by_asin, product_prices):
 
 def run_duel_one(pi, rec, goal, gold_item, clone_cand, product_prices, arm,
                  phase, checkpoint, mem_block, client):
-    rng = random.Random(41000 + pi + SB_OFF)
+    # Fixed-instrument mode (M1_FIX_INSTRUMENT=1) keeps the exam presentation
+    # order identical to seed-1; otherwise the shuffle follows the seed shift.
+    fix_instr = os.environ.get("M1_FIX_INSTRUMENT", "") == "1"
+    rng = random.Random(41000 + pi + (0 if fix_instr else SB_OFF))
     env = duel_env(rec, goal, gold_item, clone_cand, product_prices, rng)
     s = run_episode(env, client, goal["instruction_text"], defense="none",
                     max_steps=6, sys_extra=mem_block or "",
@@ -610,7 +618,7 @@ def prep():
     # transfer split: same-cat vs cross-cat vs exposure categories
     exp_cats = {g["category"] for g in ctx["exposure_goals"]}
     rest = [p for p in ctx["pairs"][330:]]
-    rng = random.Random(SEED_BASE)
+    rng = random.Random(GOALS_SEED)
     rng.shuffle(rest)
     same = [p for p in rest if p.get("category", p.get("cat", "")) in exp_cats]
     cross = [p for p in rest if p.get("category", p.get("cat", ""))
