@@ -36,8 +36,13 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from m1_memory import MemoryStore, induce_lesson
 
 REPO = "/root/synthflood_repo"
-OUT = os.path.join(REPO, "results_m1")
-GEN_DIR = os.path.join(REPO, "data", "contamination")
+OUT = os.path.join(REPO, os.environ.get("M1_OUT_SUBDIR", "results_m1"))
+GEN_DIR = os.path.join(REPO, "data",
+                       os.environ.get("M1_GEN_SUBDIR", "contamination"))
+# Second-seed support: M1_SEED_BASE offsets every random draw; the
+# default 2027 reproduces the pre-registered seed-1 draws bit-for-bit.
+SEED_BASE = int(os.environ.get("M1_SEED_BASE", "2027"))
+SB_OFF = (SEED_BASE - 2027) * 100000
 PAIRS_PATH = "/root/realattack/realattack_pairs.json"
 MODEL = "Qwen/Qwen2.5-7B-Instruct"
 PORT = 8000
@@ -115,9 +120,9 @@ def fresh_goals_all(by_asin, product_prices):
     (which caps at 100 and would empty the 100+ slices M1 needs)."""
     import random as _r
     from web_agent_site.engine.goal import get_human_goals
-    _r.seed(2027)
+    _r.seed(SEED_BASE)
     goals = get_human_goals(by_asin, product_prices)
-    rng = _r.Random(2027)
+    rng = _r.Random(SEED_BASE)
     rng.shuffle(goals)
     seen, uniq = set(), []
     for g in goals:
@@ -186,7 +191,7 @@ def build_exam_clones(pairs, goals_by_asin, by_asin, product_prices,
         if g is None:
             return pi, None
         gold_price = product_prices.get(rec["gold_asin"], 100.0)
-        rng = random.Random(41000 + pi)
+        rng = random.Random(41000 + pi + SB_OFF)
         b = synth_listing("clone", g, by_asin[rec["gold_asin"]], rng,
                          RateClient(PORT, MODEL), PORT)
         if b is None:
@@ -236,8 +241,8 @@ def build_xdom_options(goals_xdom, by_asin, client):
             return json.load(f)
     out = {}
     for gi, g in enumerate(goals_xdom):
-        rng = random.Random(88000 + gi)
-        ds = sample_distractors(g, by_asin, 2, seed=88000 + gi)
+        rng = random.Random(88000 + gi + SB_OFF)
+        ds = sample_distractors(g, by_asin, 2, seed=88000 + gi + SB_OFF)
         if len(ds) < 2:
             continue
         a, b = ds[0], ds[1]
@@ -309,7 +314,7 @@ def counterfactual_gold(goal, by_asin, product_prices):
 
 def run_duel_one(pi, rec, goal, gold_item, clone_cand, product_prices, arm,
                  phase, checkpoint, mem_block, client):
-    rng = random.Random(41000 + pi)
+    rng = random.Random(41000 + pi + SB_OFF)
     env = duel_env(rec, goal, gold_item, clone_cand, product_prices, rng)
     s = run_episode(env, client, goal["instruction_text"], defense="none",
                     max_steps=6, sys_extra=mem_block or "",
@@ -354,7 +359,7 @@ def run_exams(ctx, name, phase, checkpoint, pair_idx_list, clones, mem_block,
 
 def run_exposure_episode(ctx, name, cfg, ep_idx, mem, client):
     goal = ctx["exposure_goals"][ep_idx]
-    cseed = 50000 + ep_idx
+    cseed = 50000 + ep_idx + SB_OFF
     env, _info = exposure_env(goal, ctx["by_asin"], ctx["pool"],
                               ep_idx, cseed)
     mem_block = mem.inject_context() if cfg["notes"] else ""
@@ -394,7 +399,7 @@ def run_exposure_episode(ctx, name, cfg, ep_idx, mem, client):
 
 def run_clean_episode(ctx, name, cfg, done_eps, mem, client):
     goal = ctx["washout_goals"][done_eps]
-    cseed = 60000 + done_eps
+    cseed = 60000 + done_eps + SB_OFF
     env, _info = clean_env(goal, ctx["by_asin"], cseed)
     mem_block = mem.inject_context() if cfg["notes"] else ""
     s = run_episode(env, client, goal["instruction_text"], defense="none",
@@ -503,9 +508,9 @@ def run_rank(ctx, name, mem_block, n_limit=None):
         goal = ctx["goals_by_asin"].get(t["goal_asin"])
         if goal is None:
             continue
-        rng = random.Random(99000 + gi)
+        rng = random.Random(99000 + gi + SB_OFF)
         cands = [gold_candidate(goal, ctx["by_asin"], ctx["product_prices"])]
-        ds = sample_distractors(goal, ctx["by_asin"], 3, seed=99000 + gi)
+        ds = sample_distractors(goal, ctx["by_asin"], 3, seed=99000 + gi + SB_OFF)
         for d in ds:
             cands.append({"item": d, "kind": "real", "synthetic": False,
                           "price_float": ctx["product_prices"].get(
@@ -605,7 +610,7 @@ def prep():
     # transfer split: same-cat vs cross-cat vs exposure categories
     exp_cats = {g["category"] for g in ctx["exposure_goals"]}
     rest = [p for p in ctx["pairs"][330:]]
-    rng = random.Random(2027)
+    rng = random.Random(SEED_BASE)
     rng.shuffle(rest)
     same = [p for p in rest if p.get("category", p.get("cat", "")) in exp_cats]
     cross = [p for p in rest if p.get("category", p.get("cat", ""))
@@ -635,7 +640,7 @@ def build_goal_clones(goals, ctx, client):
     out = {}
     for i, g in enumerate(goals):
         gold_price = ctx["product_prices"].get(g["asin"], 100.0)
-        rng = random.Random(99000 + i)
+        rng = random.Random(99000 + i + SB_OFF)
         b = synth_listing("clone", g, ctx["by_asin"][g["asin"]], rng,
                          client, PORT)
         if b is None:
