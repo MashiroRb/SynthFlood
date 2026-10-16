@@ -241,8 +241,15 @@ unprotected arm, $p=0.022$), and the provenance badge --- which never
 reads text --- is unaffected by construction (recovery $0.153$ on the
 stealth pool vs.\ $0.069$ on the original one). We therefore find no
 detectable first-step arms-race erosion at $n{=}40$; the structural
-detector's reliance on generator fingerprints remains a design concern,
-and larger-sample replication is needed before any robustness claim.
+detector's reliance on generator fingerprints remains a design concern.
+A five-fold-larger battery ($N{=}100$ paired tasks,
+independent second-generation pools) confirms the ordering at
+$\varepsilon{=}0.75$: provenance $+0.098$ and structure $+0.102$
+mean-reward recovery (bootstrap 95\% CIs $[+0.021,+0.175]$ and
+$[+0.027,+0.176]$), 25\%-badge forgery still recovering ($+0.153$),
+the soft-bonus variant still failing, text prompts still negative
+($-0.161$), and the random-badge placebo at exactly $+0.000$
+(\S\ref{app:power}); no single arm survives Holm correction.
 
 
 
