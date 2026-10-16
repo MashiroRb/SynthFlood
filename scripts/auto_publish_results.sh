@@ -66,10 +66,9 @@ if os.path.isdir(d) and os.path.exists(f"{d}/m1_exams.csv"):
             if rs:
                 n=len(rs); k=sum(int(r["chose_clone"]) for r in rs)
                 sig[f"{arm}@exam{cp}"]={"sigma":round(k/n,4),"n":n,"ci95":wilson(k/n,n)}
-    par=list(csv.DictReader(open(f"{d}/m1_parity_exams.csv"))) if os.path.exists(f"{d}/m1_parity_exams.csv") else []
     for arm in ("B0","M0","M2","M3"):
         for cp in ("0","10","20"):
-            rs=[r for r in par if r["arm"]==arm and r["checkpoint"]==cp]
+            rs=[r for r in exams if r["arm"]==arm and r["phase"]=="parity" and r["checkpoint"]==cp]
             if rs:
                 n=len(rs); k=sum(int(r["chose_clone"]) for r in rs)
                 sig[f"{arm}@parity{cp}"]={"sigma":round(k/n,4),"n":n,"ci95":wilson(k/n,n)}
