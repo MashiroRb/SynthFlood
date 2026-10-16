@@ -1,0 +1,9 @@
+[08:57:51] === M1-S2b pipeline start 2026-10-16T08:57:51Z treatment=2029 instrument=2027-fixed ===
+[08:57:51] instrument caches copied from seed-1 (byte-identical)
+[08:57:51] PREP: S2b pools under seed 2029 (exam clones reused)...
+[09:09:27] caches OK (instrument verified byte-identical)
+[09:09:27] SMOKE...
+[09:10:42] smoke OK (9 exam rows)
+[09:10:42] FULL: launching S2b full run...
+[09:10:42] full run pid 8552
+[09:10:42] PIPELINE-S2B-SETUP-DONE

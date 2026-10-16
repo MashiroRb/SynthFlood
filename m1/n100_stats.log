@@ -1,0 +1,14 @@
+   spoof25 dR=+0.153 CI[+0.077,+0.230] p=0.0630 holm=0.6930 succ=0.540
+      text dR=-0.161 CI[-0.241,-0.080] p=0.0680 holm=0.6930 succ=0.160
+    oracle dR=+0.146 CI[+0.067,+0.229] p=0.0855 holm=0.7695 succ=0.560
+ structure dR=+0.102 CI[+0.027,+0.176] p=0.2000 holm=1.0000 succ=0.450
+provenance dR=+0.098 CI[+0.021,+0.175] p=0.2225 holm=1.0000 succ=0.510
+   spoof50 dR=+0.079 CI[+0.002,+0.154] p=0.3075 holm=1.0000 succ=0.480
+reviewtrust dR=-0.080 CI[-0.160,+0.001] p=0.3420 holm=1.0000 succ=0.240
+  ppr_l1.0 dR=-0.061 CI[-0.147,+0.023] p=0.4750 holm=1.0000 succ=0.250
+  ppr_l2.0 dR=-0.049 CI[-0.127,+0.029] p=0.5475 holm=1.0000 succ=0.270
+  ppr_l0.5 dR=-0.037 CI[-0.124,+0.048] p=0.6690 holm=1.0000 succ=0.290
+    random dR=+0.000 CI[-0.064,+0.064] p=0.9945 holm=1.0000 succ=0.380
+BASE reward=0.557 succ=0.360
+N100-STATS-DONE
+RC=0
