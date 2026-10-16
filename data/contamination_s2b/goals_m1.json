@@ -1,0 +1,650 @@
+{
+ "exposure": [
+  {
+   "i": 100,
+   "asin": "B07YJ9Z8Z5",
+   "instruction": "i am looking for a gluten free musk melon drink, and price lower than 60.00 dollars",
+   "query": "beverages",
+   "category": "grocery",
+   "product_category": "Grocery & Gourmet Food › Beverages › Bottled Beverages, Water & Drink Mixes › Juices › Fruit Juice"
+  },
+  {
+   "i": 101,
+   "asin": "B09QRN8FQN",
+   "instruction": "i am looking for a gluten free and low calorie sparkling spritz. pick something in coconut passion fruit flavor, and price lower than 50.00 dollars",
+   "query": "beverages",
+   "category": "grocery",
+   "product_category": "Grocery & Gourmet Food › Beverages › Bottled Beverages, Water & Drink Mixes › Water › Seltzer Water"
+  },
+  {
+   "i": 102,
+   "asin": "B01IAA1O60",
+   "instruction": "i would like a coffee latte rooted wig made of natural hair, and price lower than 190.00 dollars",
+   "query": "hair loss products",
+   "category": "beauty",
+   "product_category": "Beauty & Personal Care › Hair Care › Hair Extensions, Wigs & Accessories › Wigs"
+  },
+  {
+   "i": 103,
+   "asin": "B07MJVB31T",
+   "instruction": "i am looking for a perfect valentine gifting cake containing natural holiday flavor ingredients in 48 count size, and price lower than 150.00 dollars",
+   "query": "snack food gifts",
+   "category": "grocery",
+   "product_category": "Grocery & Gourmet Food › Food & Beverage Gifts › Bakery & Dessert Gifts"
+  },
+  {
+   "i": 104,
+   "asin": "B09H2QFSKP",
+   "instruction": "i am looking for easy clean yellow color beauty bedspreads massage table skirt, and price lower than 140.00 dollars",
+   "query": "salon & spa equipment",
+   "category": "beauty",
+   "product_category": "Beauty & Personal Care › Salon & Spa Equipment › Professional Massage Equipment › Linens"
+  },
+  {
+   "i": 105,
+   "asin": "B09QBY2MF3",
+   "instruction": "i am looking for a 49 inch by 59 inch easy to clean fleece throw blanket, and price lower than 70.00 dollars",
+   "query": "throw blankets",
+   "category": "garden",
+   "product_category": "Home & Kitchen › Bedding › Blankets & Throws › Throws"
+  },
+  {
+   "i": 106,
+   "asin": "B0969KNKCN",
+   "instruction": "i need a tongue cleaner that is easy to clean, and price lower than 20.00 dollars",
+   "query": "tongue cleaners",
+   "category": "beauty",
+   "product_category": "Beauty & Personal Care › Oral Care › Tongue Cleaners"
+  },
+  {
+   "i": 107,
+   "asin": "B085VP8ZDB",
+   "instruction": "i am looking for men's slippers of size 8 that are long lasting, and price lower than 50.00 dollars",
+   "query": "men's slippers",
+   "category": "fashion",
+   "product_category": "Clothing, Shoes & Jewelry › Men › Shoes › Slippers"
+  },
+  {
+   "i": 108,
+   "asin": "B08S3S7Y6S",
+   "instruction": "i am looking for 3.3 ft usb cables compatible with apple, and price lower than 40.00 dollars",
+   "query": "hdmi cables",
+   "category": "electronics",
+   "product_category": "Electronics › Computers & Accessories › Computer Accessories & Peripherals › Cables & Accessories › Cables & Interconnects › USB Cables"
+  },
+  {
+   "i": 109,
+   "asin": "B07DYGT4N5",
+   "instruction": "i am looking for a double sided white apron for shaving and trimming, and price lower than 50.00 dollars",
+   "query": "hair cutting tools",
+   "category": "beauty",
+   "product_category": "Beauty & Personal Care › Shave & Hair Removal › Men's › Shaving & Grooming Sets"
+  },
+  {
+   "i": 110,
+   "asin": "B08H5898QC",
+   "instruction": "i want a television stand with storage space, and price lower than 320.00 dollars",
+   "query": "furniture sets",
+   "category": "garden",
+   "product_category": "Home & Kitchen › Furniture › Living Room Furniture › TV & Media Furniture › Television Stands & Entertainment Centers"
+  },
+  {
+   "i": 111,
+   "asin": "B08G14B779",
+   "instruction": "i want a pink niuta 2 pack hair towel wrap for dry hair, and price lower than 40.00 dollars",
+   "query": "bathing accessories",
+   "category": "beauty",
+   "product_category": "Beauty & Personal Care › Hair Care › Hair Accessories › Hair Drying Towels"
+  },
+  {
+   "i": 112,
+   "asin": "B01460C2I2",
+   "instruction": "i'm shopping for number 4, medium brown hair extensions that i can use for hair styling. they should be about 14 inches long, and price lower than 140.00 dollars",
+   "query": "hair cutting tools",
+   "category": "beauty",
+   "product_category": "Beauty & Personal Care › Hair Care › Hair Extensions, Wigs & Accessories › Hair Extensions"
+  },
+  {
+   "i": 113,
+   "asin": "B09DL8BGGW",
+   "instruction": "i need in dash navigation that is hands free, and price lower than 100.00 dollars",
+   "query": "av receivers & amplifiers",
+   "category": "electronics",
+   "product_category": "Electronics › Car & Vehicle Electronics › Car Electronics › Car Video › In-Dash Navigation"
+  },
+  {
+   "i": 114,
+   "asin": "B09K7YCMYK",
+   "instruction": "i'm looking for a clip in hair extensions for hair styling. also choose f one, and price lower than 40.00 dollars",
+   "query": "hair extensions, wigs & accessories",
+   "category": "beauty",
+   "product_category": "Beauty & Personal Care › Hair Care › Hair Extensions, Wigs & Accessories › Hairpieces"
+  },
+  {
+   "i": 115,
+   "asin": "B093VB1HSV",
+   "instruction": "i need a variety pack of keto friendly and gluten free fudge mix, and price lower than 30.00 dollars",
+   "query": "applesauce & fruit cups",
+   "category": "grocery",
+   "product_category": "Grocery & Gourmet Food › Pantry Staples › Cooking & Baking"
+  },
+  {
+   "i": 116,
+   "asin": "B091Q1Y26G",
+   "instruction": "i want to buy some vanity lights with brushed nickel trim and black color. it needs to be a two light style, and price lower than 140.00 dollars",
+   "query": "vanities",
+   "category": "garden",
+   "product_category": "Tools & Home Improvement › Lighting & Ceiling Fans › Wall Lights › Vanity Lights"
+  },
+  {
+   "i": 117,
+   "asin": "B09SLDMH3S",
+   "instruction": "i am interested in a high quality shower cap, and price lower than 40.00 dollars",
+   "query": "bathing accessories",
+   "category": "beauty",
+   "product_category": "Beauty & Personal Care › Personal Care › Bath & Bathing Accessories › Bathing Accessories › Shower Caps"
+  },
+  {
+   "i": 118,
+   "asin": "B093CXPS8D",
+   "instruction": "i need an easy to use warm light for photography, and price lower than 170.00 dollars",
+   "query": "film photography",
+   "category": "electronics",
+   "product_category": "Electronics › Camera & Photo › Lighting & Studio › Lighting › Continuous Output Lighting"
+  },
+  {
+   "i": 119,
+   "asin": "B07FLHLBT4",
+   "instruction": "i'd like to find a 10-pack of black usb flash drives that can store 512 megabytes of data. the usbs must be easy to carry and use, and price lower than 50.00 dollars",
+   "query": "flashes",
+   "category": "electronics",
+   "product_category": "Electronics › Computers & Accessories › Computer Accessories & Peripherals › Hard Drive Accessories"
+  }
+ ],
+ "washout": [
+  {
+   "i": 120,
+   "asin": "B09HS75C7D",
+   "instruction": "i need a elephant11lbg8852 valentine's fleece throw that is 50x60in, and price lower than 60.00 dollars",
+   "query": "throw blankets",
+   "category": "garden",
+   "product_category": "Home & Kitchen › Bedding › Kids' Bedding › Blankets & Throws › Throws"
+  },
+  {
+   "i": 121,
+   "asin": "B08ZDJZ5JD",
+   "instruction": "i'm looking for women's clothing it was long sleeve the color was hot pink, and price lower than 30.00 dollars",
+   "query": "women's dresses",
+   "category": "fashion",
+   "product_category": "Clothing, Shoes & Jewelry › Women › Clothing › Dresses › Casual"
+  },
+  {
+   "i": 122,
+   "asin": "B09DYF1GSZ",
+   "instruction": "i need a 84inch wall mounted motorized projector screen that displays a 16:9 screen, and price lower than 330.00 dollars",
+   "query": "projection screens",
+   "category": "electronics",
+   "product_category": "Electronics › Television & Video › Projection Screens"
+  },
+  {
+   "i": 123,
+   "asin": "B08BQK4P1D",
+   "instruction": "i want tea biscuits made with quality ingredients. make sure that it is individually wrapped and doesn't come in a jar, and price lower than 70.00 dollars",
+   "query": "grocery cookies",
+   "category": "grocery",
+   "product_category": "Grocery & Gourmet Food › Breads & Bakery › Cookies › Biscotti"
+  },
+  {
+   "i": 124,
+   "asin": "B08FSSZXV9",
+   "instruction": "i want a gray colored lightweight throw for the living room. i would prefer it to be double sided, and price lower than 60.00 dollars",
+   "query": "throw blankets",
+   "category": "garden",
+   "product_category": "Home & Kitchen › Bedding › Blankets & Throws"
+  },
+  {
+   "i": 125,
+   "asin": "B01N58JX21",
+   "instruction": "get me a non alcoholic bread mix made with natural ingredients, and price lower than 50.00 dollars",
+   "query": "party mix",
+   "category": "grocery",
+   "product_category": "Grocery & Gourmet Food › Pantry Staples › Cooking & Baking › Baking Mixes › Breads"
+  },
+  {
+   "i": 126,
+   "asin": "B072HSLKRT",
+   "instruction": "i am looking for fredd marshall mens skinny jeans in a slim fit, and price lower than 40.00 dollars",
+   "query": "men's jeans",
+   "category": "fashion",
+   "product_category": "Clothing, Shoes & Jewelry › Men › Clothing › Jeans"
+  },
+  {
+   "i": 127,
+   "asin": "B09C7NSC1K",
+   "instruction": "i am looking a  cosmetic display cases for lipstick eyeshadow highliter  blushes  brushes, and price lower than 140.00 dollars",
+   "query": "cotton balls & swabs",
+   "category": "beauty",
+   "product_category": "Beauty & Personal Care › Tools & Accessories › Bags & Cases › Cosmetic Display Cases"
+  },
+  {
+   "i": 128,
+   "asin": "B09P1GXX9Q",
+   "instruction": "i'm looking for a two piece swimsuit in polyester spandex. i want the black one in x-large, and price lower than 30.00 dollars",
+   "query": "women's swimsuits & cover ups",
+   "category": "fashion",
+   "product_category": "Clothing, Shoes & Jewelry › Women › Clothing › Swimsuits & Cover Ups › Bikinis › Sets"
+  },
+  {
+   "i": 129,
+   "asin": "B07P2YQDS3",
+   "instruction": "i am looking for 450 mocha color face makeup that is oil free, and price lower than 40.00 dollars",
+   "query": "lips makeup",
+   "category": "beauty",
+   "product_category": "Beauty & Personal Care › Makeup › Face"
+  },
+  {
+   "i": 130,
+   "asin": "B07WRSP8FH",
+   "instruction": "i'm looking for a pokemon toothbrush, and price lower than 40.00 dollars",
+   "query": "children's dental care",
+   "category": "beauty",
+   "product_category": "Beauty & Personal Care › Oral Care › Children's Dental Care › Manual Toothbrushes"
+  },
+  {
+   "i": 131,
+   "asin": "B07VL1ZSDP",
+   "instruction": "i am looking for a black, easy to use gameboy case for an iphone, and price lower than 50.00 dollars",
+   "query": "cell phones",
+   "category": "electronics",
+   "product_category": "Cell Phones & Accessories › Cases, Holsters & Sleeves › Basic Cases"
+  },
+  {
+   "i": 132,
+   "asin": "B01LVZZQY8",
+   "instruction": "i'm looking for a perfect waterproof eyeshadow stick with bronze shimmer, and price lower than 50.00 dollars",
+   "query": "makeup remover",
+   "category": "beauty",
+   "product_category": "Beauty & Personal Care › Makeup › Eyes › Eyeshadow"
+  },
+  {
+   "i": 133,
+   "asin": "B082LNYDJJ",
+   "instruction": "i am looking for goodness of health cinnamon flavored toffee covered cashews by it's delish an energizing and delicious snack for those reducing sodium in their diet. almonds flavor , 3 pound size preferable, and price lower than 50.00 dollars",
+   "query": "non-dairy milks",
+   "category": "grocery",
+   "product_category": "Grocery & Gourmet Food › Pantry Staples › Cooking & Baking › Nuts & Seeds › Mixed Nuts"
+  },
+  {
+   "i": 134,
+   "asin": "B096FM43Y4",
+   "instruction": "i want to buy medium sized hand washable casual trousers which can be used for daily wear, and price lower than 40.00 dollars",
+   "query": "women's pants",
+   "category": "fashion",
+   "product_category": "Clothing, Shoes & Jewelry › Women › Clothing › Pants › Casual"
+  },
+  {
+   "i": 135,
+   "asin": "B09PNF3MJR",
+   "instruction": "i am looking for a red colored button down hawaiian shirt with short sleeves, and price lower than 30.00 dollars",
+   "query": "men's casual button-down shirts",
+   "category": "fashion",
+   "product_category": "Sports & Outdoors › Fan Shop › Clothing › Tank Tops"
+  },
+  {
+   "i": 136,
+   "asin": "B09NRCH7RS",
+   "instruction": "i want to buy a television stand that's easy to assemble. it needs to be brown and 27.5 inches tall, and price lower than 210.00 dollars",
+   "query": "tv stands",
+   "category": "garden",
+   "product_category": "Home & Kitchen › Furniture › Living Room Furniture › TV & Media Furniture › Television Stands & Entertainment Centers"
+  },
+  {
+   "i": 137,
+   "asin": "B07ZWGVCNM",
+   "instruction": "i am looking for hp elitedesk 800 g2 business desktop mini tower with core i5 ,16gb ram, 512gb harddrive and windows 10 pro along with high performance and certified refurbished, and price lower than 270.00 dollars",
+   "query": "pc",
+   "category": "electronics",
+   "product_category": "Electronics › Computers & Accessories › Computers & Tablets › Desktops › Minis"
+  },
+  {
+   "i": 138,
+   "asin": "B00LFCEXWI",
+   "instruction": "i need some vinyl sandals in ochre colors, and price lower than 140.00 dollars",
+   "query": "men's mules & clogs",
+   "category": "fashion",
+   "product_category": "Clothing, Shoes & Jewelry › Women › Shoes › Sandals › Slides"
+  },
+  {
+   "i": 139,
+   "asin": "B08D6YC8W9",
+   "instruction": "i am looking for a tempered glass screen protector for an iphone 12 mini, and price lower than 70.00 dollars",
+   "query": "screen protectors",
+   "category": "electronics",
+   "product_category": "Cell Phones & Accessories › Accessories › Maintenance, Upkeep & Repairs › Screen Protectors"
+  }
+ ],
+ "rank": [
+  {
+   "i": 140,
+   "asin": "B09P1QKG2T",
+   "instruction": "i am looking for a glitters nail polish. also, choose the 04# color, and price lower than 40.00 dollars",
+   "query": "mirrors",
+   "category": "beauty",
+   "product_category": "Beauty & Personal Care › Foot, Hand & Nail Care › Nail Art & Polish › Nail Art Accessories › Glitters"
+  },
+  {
+   "i": 141,
+   "asin": "B09PRLF1YQ",
+   "instruction": "i am looking for  wireless bluethooth for my compact radios and stereos- hands free electronic, and price lower than 50.00 dollars",
+   "query": "clock radios",
+   "category": "electronics",
+   "product_category": "Electronics › Home Audio › Compact Radios & Stereos › Clock Radios"
+  },
+  {
+   "i": 142,
+   "asin": "B007QFQJO8",
+   "instruction": "i need a xtreamer that plays blu ray discs, and price lower than 140.00 dollars",
+   "query": "streaming media players",
+   "category": "electronics",
+   "product_category": "Electronics › Television & Video › Streaming Media Players"
+  },
+  {
+   "i": 143,
+   "asin": "B08KGFBJDF",
+   "instruction": "i am looking high quality long lasting travel size parfum prada luna rossa impression, and price lower than 50.00 dollars",
+   "query": "children's fragrance",
+   "category": "beauty",
+   "product_category": "Beauty & Personal Care › Fragrance"
+  },
+  {
+   "i": 144,
+   "asin": "B092MZLG4B",
+   "instruction": "i am looking for an electrolyte drink that is low carb and in the berry flavor, and price lower than 40.00 dollars",
+   "query": "beverages",
+   "category": "grocery",
+   "product_category": "Health & Household › Diet & Sports Nutrition › Sports Nutrition › Electrolyte Replacements"
+  },
+  {
+   "i": 145,
+   "asin": "B07BDQ2413",
+   "instruction": "i would like a body scrub for dry skin, and price lower than 50.00 dollars",
+   "query": "body care",
+   "category": "beauty",
+   "product_category": "Beauty & Personal Care › Skin Care › Body › Body Scrubs"
+  },
+  {
+   "i": 146,
+   "asin": "B019MH122Q",
+   "instruction": "i'm looking for ten high-speed, gold-plated hdmi cables, and price lower than 50.00 dollars",
+   "query": "hdmi cables",
+   "category": "electronics",
+   "product_category": "Electronics › Accessories & Supplies › Audio & Video Accessories › Cables & Interconnects › Video Cables › HDMI Cables"
+  },
+  {
+   "i": 147,
+   "asin": "B000LKUZOU",
+   "instruction": "i would like a 30 ounce bag of quick cook steel cut oats that are usda organic, and price lower than 50.00 dollars",
+   "query": "refrigerated snack packs & lunches",
+   "category": "grocery",
+   "product_category": "Grocery & Gourmet Food › Breakfast Foods › Cereals › Oatmeal"
+  },
+  {
+   "i": 148,
+   "asin": "B0030Y7MLS",
+   "instruction": "i'm looking for a nickel finish valley lightning, preferably the old bronze color, and price lower than 370.00 dollars",
+   "query": "sconces",
+   "category": "garden",
+   "product_category": "Tools & Home Improvement › Lighting & Ceiling Fans › Wall Lights › Wall Lamps & Sconces"
+  },
+  {
+   "i": 149,
+   "asin": "B07S14G6N1",
+   "instruction": "i'm looking for black video play for video acccesseories, and price lower than 30.00 dollars",
+   "query": "cd players & recorders",
+   "category": "electronics",
+   "product_category": "Electronics › Accessories & Supplies › Audio & Video Accessories › Cables & Interconnects › Video Cables › HDMI Cables"
+  },
+  {
+   "i": 150,
+   "asin": "B09QHR7BZ6",
+   "instruction": "i'm looking for a pair of open toe women's sandals with a leather sole.  i want the green ones in size six, and price lower than 120.00 dollars",
+   "query": "women's flats",
+   "category": "fashion",
+   "product_category": "Clothing, Shoes & Jewelry › Women › Shoes › Sandals › Heeled Sandals"
+  },
+  {
+   "i": 151,
+   "asin": "B08S6PGBLT",
+   "instruction": "i'd like to find some brown fur-lined women's boots; they should be warm in the winter and work well in snow, and price lower than 50.00 dollars",
+   "query": "women's outdoor shoes",
+   "category": "fashion",
+   "product_category": "Clothing, Shoes & Jewelry › Women › Shoes › Boots › Ankle & Bootie"
+  },
+  {
+   "i": 152,
+   "asin": "B08TB7HMMS",
+   "instruction": "i'm looking for tablet pc with 32gb storage, android 9.0, dual sim slots and dual camera, and price lower than 220.00 dollars",
+   "query": "tablets",
+   "category": "electronics",
+   "product_category": "Electronics › Computers & Accessories › Computers & Tablets › Tablets"
+  },
+  {
+   "i": 153,
+   "asin": "B000QDZ6KU",
+   "instruction": "i'm looking for soft sandal for habana oiled leather was fully used, and price lower than 180.00 dollars",
+   "query": "men's sandals",
+   "category": "fashion",
+   "product_category": "Clothing, Shoes & Jewelry › Women › Shoes › Sandals"
+  },
+  {
+   "i": 154,
+   "asin": "B09QGGQ4Q6",
+   "instruction": "i want a small sized t-shirt that has long sleeves. it is for a teenage girl, and price lower than 20.00 dollars",
+   "query": "women's activewear",
+   "category": "fashion",
+   "product_category": "Clothing, Shoes & Jewelry › Women › Clothing › Active › Active Shirts & Tees › Button-Down Shirts"
+  },
+  {
+   "i": 155,
+   "asin": "B07Y26SPZK",
+   "instruction": "find high quality toothpaste, and price lower than 100.00 dollars",
+   "query": "toothpaste",
+   "category": "beauty",
+   "product_category": "Beauty & Personal Care › Oral Care › Toothpaste"
+  },
+  {
+   "i": 156,
+   "asin": "B08RDH5HBV",
+   "instruction": "i am looking for a light weight background of size 9x16 ft, and price lower than 140.00 dollars",
+   "query": "underwater photography",
+   "category": "electronics",
+   "product_category": "Electronics › Camera & Photo › Lighting & Studio › Photo Studio › Backgrounds"
+  },
+  {
+   "i": 157,
+   "asin": "B01K0PGUKI",
+   "instruction": "i am looking for a pull down manual projector screen with aspect ratio 16:10 and ultra hd. also easy to install, and price lower than 340.00 dollars",
+   "query": "home theater systems",
+   "category": "electronics",
+   "product_category": "Electronics › Television & Video › Projection Screens"
+  },
+  {
+   "i": 158,
+   "asin": "B081D9PS49",
+   "instruction": "i am looking for a lychee energy drink that has no sugar, and price lower than 40.00 dollars",
+   "query": "food & beverage gifts",
+   "category": "grocery",
+   "product_category": "Grocery & Gourmet Food › Beverages › Bottled Beverages, Water & Drink Mixes › Energy Drinks"
+  },
+  {
+   "i": 159,
+   "asin": "B07PPH541B",
+   "instruction": "i am searching for easy to use mascara brushes. also, choose the pink one, and price lower than 40.00 dollars",
+   "query": "cotton balls & swabs",
+   "category": "beauty",
+   "product_category": "Beauty & Personal Care › Tools & Accessories › Makeup Brushes & Tools › Eye › Mascara Brushes"
+  }
+ ],
+ "xdom": [
+  {
+   "i": 160,
+   "asin": "B01GS1BOK4",
+   "instruction": "for home furnishing, i need a rectangular rug in ivory grey color, measuring 11ft x 15ft, and price lower than 190.00 dollars",
+   "query": "home office furniture sets",
+   "category": "garden",
+   "product_category": "Home & Kitchen › Home Décor Products › Rugs, Pads & Protectors › Area Rugs"
+  },
+  {
+   "i": 161,
+   "asin": "B07R8XNR81",
+   "instruction": "i am looking for x-large short white color running gym workout fitness shorts, and price lower than 50.00 dollars",
+   "query": "women's shorts",
+   "category": "fashion",
+   "product_category": "Clothing, Shoes & Jewelry › Women › Clothing › Active › Active Shorts"
+  },
+  {
+   "i": 162,
+   "asin": "B00UIMGK9U",
+   "instruction": "i need knee high socks that are ivory, and price lower than 30.00 dollars",
+   "query": "women's socks & hosiery",
+   "category": "fashion",
+   "product_category": "Clothing, Shoes & Jewelry › Women › Clothing › Socks & Hosiery › Socks"
+  },
+  {
+   "i": 163,
+   "asin": "B086XZ3D6Q",
+   "instruction": "i need a low carb brownie mix, and price lower than 40.00 dollars",
+   "query": "milks & creams",
+   "category": "grocery",
+   "product_category": "Grocery & Gourmet Food › Pantry Staples › Cooking & Baking › Baking Mixes › Brownies"
+  },
+  {
+   "i": 164,
+   "asin": "B093362GNX",
+   "instruction": "i want a keyboard skin that is dust proof and long lasting. choose a rainbow color, and price lower than 30.00 dollars",
+   "query": "mac",
+   "category": "electronics",
+   "product_category": "Electronics › Computers & Accessories › Computer Accessories & Peripherals › Keyboards, Mice & Accessories › Keyboard & Mice Accessories › Keyboard Skins"
+  },
+  {
+   "i": 165,
+   "asin": "B08XNLBGFL",
+   "instruction": "i really need a foot file for dead skin, and price lower than 40.00 dollars",
+   "query": "skin care tools",
+   "category": "beauty",
+   "product_category": "Beauty & Personal Care › Foot, Hand & Nail Care › Tools & Accessories › Foot Files"
+  },
+  {
+   "i": 166,
+   "asin": "B09HCFGKZY",
+   "instruction": "i want to find a monocular telescope that i can use for birdwatching, and it must be easy to install, and price lower than 40.00 dollars",
+   "query": "binoculars & scopes",
+   "category": "electronics",
+   "product_category": "Electronics › Camera & Photo › Binoculars & Scopes › Monoculars"
+  },
+  {
+   "i": 167,
+   "asin": "B09B1DJBRV",
+   "instruction": "i would like a pair of black size 8.5 boots with a comfortable fit, and price lower than 140.00 dollars",
+   "query": "men's outdoor shoes",
+   "category": "fashion",
+   "product_category": "Clothing, Shoes & Jewelry › Men › Shoes › Boots › Chukka"
+  },
+  {
+   "i": 168,
+   "asin": "B07YD83DNZ",
+   "instruction": "i am interested in a white alarm clock that has batteries included, and price lower than 40.00 dollars",
+   "query": "clock radios",
+   "category": "electronics",
+   "product_category": "Home & Kitchen › Home Décor Products › Clocks › Alarm Clocks"
+  },
+  {
+   "i": 169,
+   "asin": "B09B4F9KPL",
+   "instruction": "i am interested in red heavy duty bed frames for a queen sized bed, and price lower than 350.00 dollars",
+   "query": "bedframes",
+   "category": "garden",
+   "product_category": "Home & Kitchen › Furniture › Bedroom Furniture › Beds, Frames & Bases › Bed Frames"
+  },
+  {
+   "i": 170,
+   "asin": "B019MGTHFQ",
+   "instruction": "i'm looking for a single high speed gold plated hdmi cable, and price lower than 40.00 dollars",
+   "query": "hdmi cables",
+   "category": "electronics",
+   "product_category": "Electronics › Accessories & Supplies › Audio & Video Accessories › Cables & Interconnects › Video Cables › HDMI Cables"
+  },
+  {
+   "i": 171,
+   "asin": "B004989EGK",
+   "instruction": "i want a 36 pack of applesauce that is non gmo, and price lower than 70.00 dollars",
+   "query": "fruit snacks",
+   "category": "grocery",
+   "product_category": "Grocery & Gourmet Food › Snacks & Sweets › Snack Foods › Applesauce & Fruit Cups › Applesauce"
+  },
+  {
+   "i": 172,
+   "asin": "B01N0YGEQT",
+   "instruction": "i need a powerlite 1785w projector that projects 1080p hd",
+   "query": "projectors",
+   "category": "electronics",
+   "product_category": "Electronics › Video Projectors"
+  },
+  {
+   "i": 173,
+   "asin": "B082NBXXJP",
+   "instruction": "i want a solid wood bench with storage space to go in my living room. it should be grey in color, and price lower than 200.00 dollars",
+   "query": "ottomans",
+   "category": "garden",
+   "product_category": "Home & Kitchen › Furniture › Accent Furniture › Ottomans"
+  },
+  {
+   "i": 174,
+   "asin": "B09N6Q57XZ",
+   "instruction": "i need 2 faux leather barstools that is easy to assemble and is back adjustable. pick a brown one, and price lower than 180.00 dollars",
+   "query": "bar stools",
+   "category": "garden",
+   "product_category": "Home & Kitchen › Furniture › Game & Recreation Room Furniture › Home Bar Furniture › Barstools"
+  },
+  {
+   "i": 175,
+   "asin": "B005KIUP9I",
+   "instruction": "i would like a alcohol free fragrance, and price lower than 50.00 dollars",
+   "query": "children's fragrance",
+   "category": "beauty",
+   "product_category": "Beauty & Personal Care › Fragrance › Women's › Eau de Toilette"
+  },
+  {
+   "i": 176,
+   "asin": "B00GM4QXD6",
+   "instruction": "i am looking for a height adjustable faux leather barstool, and price lower than 150.00 dollars",
+   "query": "bar stools",
+   "category": "garden",
+   "product_category": "Home & Kitchen › Furniture › Game & Recreation Room Furniture › Home Bar Furniture › Barstools"
+  },
+  {
+   "i": 177,
+   "asin": "B07X7M89C2",
+   "instruction": "i'm looking for a high performance and high definition bluetooth speakers with stereo sound effect. also, choose golden colored one, and price lower than 40.00 dollars",
+   "query": "bluetooth speakers",
+   "category": "electronics",
+   "product_category": "Electronics › Portable Audio & Video › Portable Speakers & Docks › Portable Bluetooth Speakers"
+  },
+  {
+   "i": 178,
+   "asin": "B0852X4S6J",
+   "instruction": "i need a high density area rug that is white, and price lower than 50.00 dollars",
+   "query": "living room sets",
+   "category": "garden",
+   "product_category": "Home & Kitchen › Home Décor Products › Rugs, Pads & Protectors › Area Rugs"
+  },
+  {
+   "i": 179,
+   "asin": "B09FJW2L94",
+   "instruction": "i need a hard shell case cover for my macbook 12 retina that is sosuke and ponyo colored, and price lower than 60.00 dollars",
+   "query": "mac",
+   "category": "electronics",
+   "product_category": "Electronics › Computers & Accessories › Laptop Accessories › Bags, Cases & Sleeves › Hard Shell Cases"
+  }
+ ]
+}
