@@ -1,0 +1,402 @@
+{
+ "arm": "M3",
+ "path": "/root/synthflood_repo/results_m1_s2/mem_M3.json",
+ "entries": [
+  {
+   "type": "observation",
+   "t": 0,
+   "arm": "M3",
+   "text": "Episode 0: task 'hair treatment oils'. Bought a heavily discounted lookalike listing; official reward 0.67 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 0.6666666666666666,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "correction",
+   "t": 0,
+   "arm": "M3",
+   "text": "Episode 0 correction: on task 'hair treatment oils' the purchase scored 0.67 but a better-matching option existed (reward 1.00). That choice was a mistake; matching the user's stated requirements matters more than the price tag.",
+   "data": {
+    "reward": 0.6666666666666666,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1,
+   "arm": "M3",
+   "text": "Episode 1: task 'clock radios'. Bought a heavily discounted lookalike listing; official reward 0.67 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 0.6666666666666666,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "correction",
+   "t": 1,
+   "arm": "M3",
+   "text": "Episode 1 correction: on task 'clock radios' the purchase scored 0.67 but a better-matching option existed (reward 1.00). That choice was a mistake; matching the user's stated requirements matters more than the price tag.",
+   "data": {
+    "reward": 0.6666666666666666,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 2,
+   "arm": "M3",
+   "text": "Episode 2: task 'sconces'. Bought a heavily discounted lookalike listing; official reward 0.40 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 0.4,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "correction",
+   "t": 2,
+   "arm": "M3",
+   "text": "Episode 2 correction: on task 'sconces' the purchase scored 0.40 but a better-matching option existed (reward 1.00). That choice was a mistake; matching the user's stated requirements matters more than the price tag.",
+   "data": {
+    "reward": 0.4,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 3,
+   "arm": "M3",
+   "text": "Episode 3: task 'breakfast foods'. Bought a heavily discounted lookalike listing; official reward 0.25 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 0.25,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "correction",
+   "t": 3,
+   "arm": "M3",
+   "text": "Episode 3 correction: on task 'breakfast foods' the purchase scored 0.25 but a better-matching option existed (reward 1.00). That choice was a mistake; matching the user's stated requirements matters more than the price tag.",
+   "data": {
+    "reward": 0.25,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 4,
+   "arm": "M3",
+   "text": "Episode 4: task 'sour creams'. Bought a regular listing; official reward 1.00 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "lesson",
+   "t": 4,
+   "arm": "M3",
+   "text": "Discounted lookalike listings often reduce rewards; opt for regular listings for full rewards.",
+   "tags": [
+    "discounts",
+    "rewards",
+    "listings"
+   ],
+   "data": {}
+  },
+  {
+   "type": "observation",
+   "t": 5,
+   "arm": "M3",
+   "text": "Episode 5: task 'digital cameras'. Bought a heavily discounted lookalike listing; official reward 0.67 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 0.6666666666666666,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "correction",
+   "t": 5,
+   "arm": "M3",
+   "text": "Episode 5 correction: on task 'digital cameras' the purchase scored 0.67 but a better-matching option existed (reward 1.00). That choice was a mistake; matching the user's stated requirements matters more than the price tag.",
+   "data": {
+    "reward": 0.6666666666666666,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 6,
+   "arm": "M3",
+   "text": "Episode 6: task 'body care'. Bought a regular listing; official reward 1.00 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 7,
+   "arm": "M3",
+   "text": "Episode 7: task 'underwater photography'. Bought a regular listing; official reward 1.00 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 8,
+   "arm": "M3",
+   "text": "Episode 8: task 'beds'. Bought a regular listing; official reward 1.00 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 9,
+   "arm": "M3",
+   "text": "Episode 9: task 'body makeup'. Bought a heavily discounted lookalike listing; official reward 0.75 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 0.75,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "correction",
+   "t": 9,
+   "arm": "M3",
+   "text": "Episode 9 correction: on task 'body makeup' the purchase scored 0.75 but a better-matching option existed (reward 1.00). That choice was a mistake; matching the user's stated requirements matters more than the price tag.",
+   "data": {
+    "reward": 0.75,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "lesson",
+   "t": 9,
+   "arm": "M3",
+   "text": "Opt for regular listings over heavily discounted lookalikes for consistent rewards.",
+   "tags": [
+    "discounts",
+    "reward consistency"
+   ],
+   "data": {}
+  },
+  {
+   "type": "observation",
+   "t": 10,
+   "arm": "M3",
+   "text": "Episode 10: task 'bedframes'. Bought a regular listing; official reward 1.00 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 11,
+   "arm": "M3",
+   "text": "Episode 11: task 'power protection'. Bought a heavily discounted lookalike listing; official reward 0.67 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 0.6666666666666666,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "correction",
+   "t": 11,
+   "arm": "M3",
+   "text": "Episode 11 correction: on task 'power protection' the purchase scored 0.67 but a better-matching option existed (reward 1.00). That choice was a mistake; matching the user's stated requirements matters more than the price tag.",
+   "data": {
+    "reward": 0.6666666666666666,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 12,
+   "arm": "M3",
+   "text": "Episode 12: task 'cell phones'. Bought a regular listing; official reward 1.00 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 13,
+   "arm": "M3",
+   "text": "Episode 13: task 'ottomans'. Bought a regular listing; official reward 0.67 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.6666666666666666,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 14,
+   "arm": "M3",
+   "text": "Episode 14: task 'hair coloring products'. Bought a heavily discounted lookalike listing; official reward 1.00 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 1.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "correction",
+   "t": 14,
+   "arm": "M3",
+   "text": "Episode 14 correction: on task 'hair coloring products' the purchase scored 1.00 but a better-matching option existed (reward 1.00). That choice was a mistake; matching the user's stated requirements matters more than the price tag.",
+   "data": {
+    "reward": 1.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "lesson",
+   "t": 14,
+   "arm": "M3",
+   "text": "Opt for regular listings for consistent rewards; heavily discounted lookalikes may reduce earnings.",
+   "tags": [
+    "shopping strategy",
+    "discounts"
+   ],
+   "data": {}
+  },
+  {
+   "type": "observation",
+   "t": 15,
+   "arm": "M3",
+   "text": "Episode 15: task 'underwater photography'. Bought a listing with many positive reviews; official reward 0.50 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:reviews",
+    "reward": 0.5,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "correction",
+   "t": 15,
+   "arm": "M3",
+   "text": "Episode 15 correction: on task 'underwater photography' the purchase scored 0.50 but a better-matching option existed (reward 1.00). That choice was a mistake; matching the user's stated requirements matters more than the price tag.",
+   "data": {
+    "reward": 0.5,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 16,
+   "arm": "M3",
+   "text": "Episode 16: task 'food & beverage gifts'. Bought a heavily discounted lookalike listing; official reward 0.33 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 0.3333333333333333,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "correction",
+   "t": 16,
+   "arm": "M3",
+   "text": "Episode 16 correction: on task 'food & beverage gifts' the purchase scored 0.33 but a better-matching option existed (reward 1.00). That choice was a mistake; matching the user's stated requirements matters more than the price tag.",
+   "data": {
+    "reward": 0.3333333333333333,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 17,
+   "arm": "M3",
+   "text": "Episode 17: task 'underwater photography'. Bought a heavily discounted lookalike listing; official reward 0.25 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 0.25,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "correction",
+   "t": 17,
+   "arm": "M3",
+   "text": "Episode 17 correction: on task 'underwater photography' the purchase scored 0.25 but a better-matching option existed (reward 1.00). That choice was a mistake; matching the user's stated requirements matters more than the price tag.",
+   "data": {
+    "reward": 0.25,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 18,
+   "arm": "M3",
+   "text": "Episode 18: task 'milks & creams'. Bought a heavily discounted lookalike listing; official reward 0.50 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 0.5,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "correction",
+   "t": 18,
+   "arm": "M3",
+   "text": "Episode 18 correction: on task 'milks & creams' the purchase scored 0.50 but a better-matching option existed (reward 1.00). That choice was a mistake; matching the user's stated requirements matters more than the price tag.",
+   "data": {
+    "reward": 0.5,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 19,
+   "arm": "M3",
+   "text": "Episode 19: task 'sour creams'. Bought a heavily discounted lookalike listing; official reward 0.25 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 0.25,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "correction",
+   "t": 19,
+   "arm": "M3",
+   "text": "Episode 19 correction: on task 'sour creams' the purchase scored 0.25 but a better-matching option existed (reward 1.00). That choice was a mistake; matching the user's stated requirements matters more than the price tag.",
+   "data": {
+    "reward": 0.25,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "lesson",
+   "t": 19,
+   "arm": "M3",
+   "text": "Opt for listings with positive reviews over heavily discounted lookalikes for higher rewards.",
+   "tags": [
+    "reviews",
+    "discounts",
+    "rewards"
+   ],
+   "data": {}
+  }
+ ]
+}
