@@ -242,7 +242,7 @@ reads text --- is unaffected by construction (recovery $0.153$ on the
 stealth pool vs.\ $0.069$ on the original one). We therefore find no
 detectable first-step arms-race erosion at $n{=}40$; the structural
 detector's reliance on generator fingerprints remains a design concern.
-A five-fold-larger battery ($N{=}100$ paired tasks,
+A two-and-a-half-fold-larger battery ($N{=}100$ paired tasks,
 independent second-generation pools) confirms the ordering at
 $\varepsilon{=}0.75$: provenance $+0.098$ and structure $+0.102$
 mean-reward recovery (bootstrap 95\% CIs $[+0.021,+0.175]$ and
@@ -263,6 +263,7 @@ that is eliminated; significance in \S\ref{app:power}. Wilson 95\%
 half-widths are $\pm0.13$--$0.16$ ($n{=}40$) for the success and
 purchased-share entries.}
 \label{tab:defense}
+\setlength{\tabcolsep}{3.5pt}
 \begin{tabular}{lcccc}
 \toprule
 Defense & Success & Regret & Synth.\ bought & Recovery \\
@@ -291,10 +292,9 @@ Appendix~\ref{sec:app-backbone}).
 \label{sec:res-realworld}
 The tested discount regime matches reality, and the mechanism replicates
 with documents we did not generate (pairing rules and per-source numbers
-in Appendix~\ref{sec:app-real}). Across three sources, the tested
+in Appendix~\ref{sec:app-real}). Across two published catalog sources, the tested
 $10\%$--$30\%$ discounts are the modal regime of real price dispersion:
-ProMap close non-matches~\cite{mackov2023promap}, 73.3\% of 330 pairs
-with a side $\geq10\%$ cheaper (median 20.9\%); WebMall cross-shop
+WebMall cross-shop
 groups~\cite{peeters2025webmall}, 53.3\% of 244 (median 11.1\%) --- where
 buying the cheaper offer is \emph{correct}, matching our near-identical
 control; WebShop lookalike pairs~\cite{yao2022webshop}, 83.3\% of 497
