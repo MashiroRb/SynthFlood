@@ -13,16 +13,16 @@ cap episodes at ten steps, forced-choice probes at six.
 \subsection{Official artifacts}
 We use WebShop's official \texttt{items\_shuffle.json} (1{,}181{,}430
 products after key cleaning and deduplication), \texttt{items\_ins\_v2.json},
-and \texttt{items\_human\_ins.json} (10{,}136 human instructions), with the
-benchmark's own loader, goal builder, and reward function applied
+and \texttt{items\_human\_ins.json} (10{,}136 human instructions) with
+the benchmark's own loader, goal builder, and reward function
 unmodified; the only semantic addition is best-variant scoring of the
 chosen listing (\S\ref{sec:method-env}).
 
 \subsection{Contamination pool}
 The pool covers 100 tasks (the official goal list under seed 2027), three
 families, four listings per family per task (up to 1{,}200 before judge
-drops; 1{,}089 survive in the released pool), with a
-plausibility floor at judge score~4 (regenerate once, then drop). Synthetic
+drops; 1{,}089 survive in the released pool), with a plausibility floor at
+judge score~4. Synthetic
 economics are assigned programmatically: price = gold price $\times$
 $\mathrm{U}(0.75,0.95)$ (deterministic per listing), rating
 $\mathrm{U}(4.6,4.9)$, review counts in $[400,3000)$, and reviews in packs
@@ -66,7 +66,7 @@ backbones, scales, and defenses.
 
 \begin{figure*}[t]
 \centering
-\includegraphics[width=0.86\textwidth]{figures/m1_n100_replication.pdf}
+\includegraphics[width=0.80\textwidth]{figures/m1_n100_replication.pdf}
 \caption{Replication and defense evidence. \textbf{(a)}~Parity
 preference $\sigma$ over clean episodes for the full-memory arm (M0,
 solid) and the clean-experience control (B0, dashed) under seed-1 (S1)
@@ -77,7 +77,7 @@ while B0 tracks the shared pre-exam baseline throughout.
 \textbf{(b)}~Eleven defense arms at $\varepsilon{=}0.75$ on $N{=}100$
 paired tasks: mean reward change vs.\ the no-defense arm with bootstrap
 95\% CIs (blue: above zero; orange: below; gray: covers zero); the
-random-badge placebo sits at $+0.000$.}
+random placebo sits at $+0.000$.}
 \Description{Two-panel figure. Panel (a) plots parity preference over
 clean episodes for the full-memory arm and the clean control under
 three seeds; only seed-1 M0 rises above the control at episode 20.
@@ -164,10 +164,9 @@ median perplexity $\approx22$ synthetic vs.\ $\approx55$ human). First,
 susceptibility is a \emph{decision-level} failure --- the agent buys
 listings it could in principle distinguish --- so structural
 provenance guarantees, not better perception, are the operative
-defense (Section~\ref{sec:res-defense}). Second, we do \emph{not}
-estimate the share of AI-generated text in real catalogs: applying
-the threshold to WebMall text flags a large fraction, but the
-estimate is dominated by genre and length confounds
+defense (Section~\ref{sec:res-defense}). Second, we do \emph{not} estimate the AI-text share of real
+catalogs: applying the threshold to WebMall text flags a large
+fraction, but the estimate is dominated by genre and length confounds
 (93.6\%$\to$55.3\% under length matching alone), and no ground
 truth exists for real-offer provenance; the multi-shop benchmarks we
 build on~\cite{peeters2025webmall} likewise treat provenance as
@@ -189,8 +188,7 @@ discounts add no significant gain ($0.636$ at $f{=}0.8$ vs.\ $0.600$ at
 the natural price; paired McNemar $p{=}0.093$, $n{=}250$).
 \emph{RA3 (reviews).} Real same-category
 listings carry Yelp fraud-filtered spam reviews (label $=-1$, rating
-$\geq4$) with the same programmatic inflation as the synthetic
-family; $\varepsilon{=}0.75$, $n{=}100$: regret $0.327$, success80
+$\geq4$) with the synthetic family's programmatic inflation; $\varepsilon{=}0.75$, $n{=}100$: regret $0.327$, success80
 $0.550$ (synthetic family $0.454/0.450$, $n{=}40$; paired vs.\ clean on the
 40 common tasks: 21 non-tied pairs, 11 vs.\ 10, $p{=}1.0$).
 
@@ -198,13 +196,12 @@ $0.550$ (synthetic family $0.454/0.450$, $n{=}40$; paired vs.\ clean on the
 \label{sec:app-backbone}
 The dose--response replicates on Llama-3.1-8B
 (success $0.475\to0.300$ at $\varepsilon=0.75$; regret $0.346\to0.502$,
-$+45\%$; synthetic purchases 55\%). Across scales, smaller agents are
-\emph{at least} as susceptible --- Qwen2.5-3B buys synthetic listings in
-70\% of tasks (vs.\ 54\% for 7B) and its regret rises by a further 27\%
-in relative terms --- but the success-level dose contrast requires
-minimal baseline competence, which Qwen2.5-1.5B lacks (success $0.300$ at
-$\varepsilon=0$, statistically unchanged; clean regret already $0.578$,
-a floor effect). Summarizing the two competent backbones by a linear
+$+45\%$; synthetic purchases 55\%). Across scales, smaller agents are \emph{at least} as susceptible:
+Qwen2.5-3B buys synthetic listings in 70\% of tasks (vs.\ 54\% for
+7B) with a further 27\% relative regret increase; the success-level
+dose contrast requires minimal baseline competence, which
+Qwen2.5-1.5B lacks (success $0.300$ at $\varepsilon=0$, statistically
+unchanged; clean regret already $0.578$). Summarizing the two competent backbones by a linear
 erosion coefficient $\kappa$ (regret increase per unit contamination,
 endpoint regression): $0.242$ (95\% CI $[0.129,0.352]$) for 7B and
 $0.208$ (95\% CI $[0.037,0.374]$) for 8B --- overlapping intervals, the
@@ -212,7 +209,7 @@ same order of vulnerability.
 
 \subsection{Per-family attribution runs}
 \label{sec:app-family}
-\begin{table}[t]
+\begin{table}[!t]
 \centering
 \small
 \caption{Per-family contamination at $\varepsilon=0.75$ (40 paired tasks).
@@ -240,9 +237,9 @@ generator); \textbf{M2}, exposure with notes written but never injected
 back; \textbf{M3}, exposure plus an explicit corrective entry after every
 synthetic purchase; \textbf{M4}, starts from M0's end-of-exposure memory
 with all entries containing pre-registered price words deleted
-(18-word list in the preregistration); M4 skips the parity exam. Memory
-injection is recency-based (last three entries); lessons are distilled
-every five episodes by the same model. Exposure tasks are official goals
+(18-word list in the preregistration); M4 skips the parity exam.
+Memory injection is recency-based (last three entries); lessons
+distill every five episodes by the same model. Exposure tasks are official goals
 $[100{:}120)$; exams use lookalike pairs disjoint from every other
 experiment --- discounted ($f{=}0.9$) pairs $[250{:}290)$ and parity
 ($f{=}1.0$) pairs $[290{:}330)$, 40 pairs each with fixed clone
@@ -250,11 +247,10 @@ instances across arms and checkpoints. Exam pairs never appear in any previously
 uses $[0{:}250)$) and exposure draws on goals $[100{:}120)$, so the
 exam is leak-free by construction. Eight clone-generation failures
 leave $n{=}39$ (exam) and $n{=}38$ (parity), fixed across all arms.
-Checkpoints are clean episodes $\{0,2,\ldots,20\}$. Seeds: exposure
-$50000{+}e$,
+Checkpoints are clean episodes $\{0,2,\ldots,20\}$; seeds: exposure $50000{+}e$,
 clean $60000{+}e$, exam shuffles $41000{+}p$, generation $99000{+}g$.
 
-\begin{table}[t]
+\begin{table}[!t]
 \centering
 \small
 \caption{Washout experiment: exam win-rate $\sigma$ by arm (40 pairs
@@ -278,9 +274,9 @@ M4 (memory surgery) & 0.744 & 0.667 & \multicolumn{2}{c}{---} \\
 \end{tabular}
 \end{table}
 
-A shared no-memory pre-exam gives $\sigma=0.692$, and the B0 arm tracks
-it ($0.718$ at episode 2, $p{=}0.80$): the memory apparatus itself is
-neutral on the clean path. Pre-registered main tests: the
+The shared no-memory pre-exam gives $\sigma=0.692$, and B0 tracks it
+($0.718$ at episode 2, $p{=}0.80$): the apparatus is neutral on the
+clean path. Pre-registered main tests: the
 internalization hypothesis on the discounted exam fails ($0.667$ vs.\
 $0.718$, $p{=}0.62$); the partial-decay branch holds (checkpoint-0
 carryover McNemar $9/1$, $p{=}0.021$; half-life 4 clean episodes);
@@ -288,31 +284,29 @@ memory causality holds (write-only arm at chance, $0.692$ vs.\ $0.897$,
 $z{=}-2.24$, $p{=}0.025$). The parity persistence ($0.842$ vs.\
 $0.579$, $p{=}0.011$) and its memory mediation ($0.790$ vs.\ $0.526$,
 $p{=}0.016$) are pre-registered secondary tests (single-seed
-findings; see below). The transfer matrix at
+findings). The transfer matrix at
 checkpoint 0 is exploratory ($n{=}20$): same-category pairs show no
 elevation ($0.718$ vs.\ $0.744$, $p{=}0.80$); a cross-category transfer
 was \emph{not executable} (remaining pool pairs all lie inside the five
-exposure categories --- a feasibility limitation); the cross-domain
-praise-block test gives $1.00$ vs.\ $0.70$ ($p{=}0.008$), but the
-write-only ($0.85$) and surgery ($1.00$) arms are also elevated ---
-exploratory with mixed evidence. The reward autopsy
-computes, for every exposure episode, the counterfactual official reward
-of the gold product: 38 synthetic purchases, 2 with reward at or above
-gold, mean gap $-0.632$.
+exposure categories --- a feasibility limitation); the cross-domain praise-block test
+gives $1.00$ vs.\ $0.70$ ($p{=}0.008$), but the write-only ($0.85$)
+and surgery ($1.00$) arms are also elevated; exploratory, mixed
+evidence. The reward autopsy
+computes, per exposure episode, the counterfactual official reward of
+the gold product: 38 synthetic purchases, 2 at or above gold, mean gap
+$-0.632$.
 
 \paragraph{Pre-registered re-randomizations (seeds 2028, 2029).}
 Two replication runs shift the treatment-side randomness (exposure
-pools, episode dynamics, memory trajectories; trajectories in
+pools, episode dynamics, memory trajectories;
 Figure~\ref{fig:replication}a) while re-running the same five arms; in
-seed-2029 the exam instrument --- instruction
-texts, clone candidates, and presentation order --- is byte-identical
-to seed-2027, which restores the pre-exposure baseline ($0.718$ vs.\
-seed-2027's $0.692$; the fully shifted seed-2028 raises it to $0.821$
-because goal-pool shuffling changes 24 of 40 exam instructions).
+seed-2029 the exam instrument (instruction texts, clone candidates,
+presentation order) is byte-identical to seed-2027, restoring the pre-exposure baseline ($0.718$ vs.\
+$0.692$; the fully shifted seed-2028 raises it to $0.821$ (goal-pool shuffling changes
+24 of 40 exam instructions).
 Pre-registered verdicts: the internalization failure replicates in
 both runs ($p{=}0.53$, $p{=}0.62$); the fast-channel carryover is
-direction-consistent ($+3$ and $+5$\,pp) but not significant
-($p{=}1.0$, $p{=}0.75$); the parity persistence and the write-only
-mediation contrast do not replicate ($p{\ge}0.46$) and are reported
-as single-seed findings in the main text; trajectories, pools, and
-verdict logs are released.
+direction-consistent but not significant ($+3$/$+5$\,pp,
+$p{=}1.0$/$0.75$); parity persistence and write-only
+mediation do not replicate ($p{\ge}0.46$) and are single-seed
+findings; trajectories, pools, and verdict logs are released.
