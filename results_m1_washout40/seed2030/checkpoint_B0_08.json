@@ -1,0 +1,107 @@
+{
+ "arm": "B0",
+ "path": "/mnt/beegfs/home/liudianru26/project/www2027/SynthFlood-local/results_m1_washout40/seed2030/mem_B0.json",
+ "entries": [
+  {
+   "type": "observation",
+   "t": 1000,
+   "arm": "B0",
+   "text": "Episode 1000: task 'throw blankets'. Bought 'Chifave Bear Blanket, 50\"x 60\" Kids Throw Blankets Super Soft Fluffy Comfortable Flannel Fleece Couch Bed Premium Polyester Children Cute Cartoon Wild Bears Blanket for All Season' at $16.99; official reward 0.50.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.5,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1001,
+   "arm": "B0",
+   "text": "Episode 1001: task 'women's dresses'. Bought 'Wirziis Dress for Women Sexy Button Blouse V-Neck Long Sleeve Mini Dress Elegant Peacock Print Ladie A-Line Cute Dress' at $16.40; official reward 0.50.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.5,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1002,
+   "arm": "B0",
+   "text": "Episode 1002: task 'projection screens'. Bought 'HUALUWANG Motorized Projector Screen, 60/72/84 inch Remote Control Automatic Lifting Home Cinema Screen, HD Screen Wall-Mounted Electric Projection Screen (Color : 16:9 Screen, Size : 72inch)' at $291.92; official reward 1.00.",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1003,
+   "arm": "B0",
+   "text": "Episode 1003: task 'grocery cookies'. Bought 'Giorgio Cookies Biscotti – Flavorful Italian Tea Biscuits – Handmade Fresh Biscotti - 1-Dozen Original Biscotti Cookies - Individually Wrapped - Turtle' at $30.00; official reward 1.00.",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1004,
+   "arm": "B0",
+   "text": "Episode 1004: task 'throw blankets'. Bought 'LUXEAR Summer Sleeping Cool Blankets, Double-Sided Blankets with Arc-Chill Japanese Cooling Fiber Lightweight Breathable Summer Throw Cold Blanket for Night Sweats , Machine Washable' at $38.99; official reward 1.00.",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "lesson",
+   "t": 1004,
+   "arm": "B0",
+   "text": "Diversify purchases to maximize rewards and find deals on essential items.",
+   "tags": [
+    "purchasing strategy",
+    "reward optimization"
+   ],
+   "data": {}
+  },
+  {
+   "type": "observation",
+   "t": 1005,
+   "arm": "B0",
+   "text": "Episode 1005: task 'party mix'. Bought 'LC Foods Low Carb Large Rye Bread With Caraway Seeds | No Sugar Added | No Artificial Sweeteners | Keto-Friendly | Fresh Baked | Delicious Taste | Low Carb Sandwich Bread |25 Slices (1075g)' at $20.77; official reward 0.67.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.6666666666666666,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1006,
+   "arm": "B0",
+   "text": "Episode 1006: task 'men's jeans'. Bought 'FREDD MARSHALL Men's Skinny Slim Fit Ripped Distressed Stretch Jeans Pants' at $32.95; official reward 1.00.",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1007,
+   "arm": "B0",
+   "text": "Episode 1007: task 'cotton balls & swabs'. Bought 'mDesign Plastic Stackable Bathroom Vanity Countertop Storage Cosmetic Organizer Box with Hinged Lid for Makeup, Beauty, Hair, Nail Supplies - 2 Pack - Clear/Light Pink' at $19.99; official reward 0.33.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.3333333333333333,
+    "gold_reward": null
+   }
+  }
+ ],
+ "injected_context": "Your experience notes from earlier shopping sessions:\n- [observation] Episode 1005: task 'party mix'. Bought 'LC Foods Low Carb Large Rye Bread With Caraway Seeds | No Sugar Added | No Artificial Sweeteners | Keto-Friendly | Fresh Baked | Delicious Taste | Low Carb Sandwich Bread |25 Slices (1075g)' at $20.77; official reward 0.67.\n- [observation] Episode 1006: task 'men's jeans'. Bought 'FREDD MARSHALL Men's Skinny Slim Fit Ripped Distressed Stretch Jeans Pants' at $32.95; official reward 1.00.\n- [observation] Episode 1007: task 'cotton balls & swabs'. Bought 'mDesign Plastic Stackable Bathroom Vanity Countertop Storage Cosmetic Organizer Box with Hinged Lid for Makeup, Beauty, Hair, Nail Supplies - 2 Pack - Clear/Light Pink' at $19.99; official reward 0.33.",
+ "context_sha256": "98e97798b3d4c22e9788136808d1a66c487bd392c7a4f3d94eb21ee8d798058b"
+}

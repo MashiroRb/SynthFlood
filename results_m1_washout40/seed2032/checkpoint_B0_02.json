@@ -1,0 +1,30 @@
+{
+ "arm": "B0",
+ "path": "/mnt/beegfs/home/liudianru26/project/www2027/SynthFlood-local/results_m1_washout40/seed2032/mem_B0.json",
+ "entries": [
+  {
+   "type": "observation",
+   "t": 1000,
+   "arm": "B0",
+   "text": "Episode 1000: task 'throw blankets'. Bought 'Custom Name Blankets for Baby Boys Girls - Personalized Baby Blankets with Dinosaur Design for Kids - Throw Blanket with Cute Animal - Customized Swadding Blanket for Toddler Super Soft 30\"x40\"' at $20.99; official reward 0.50.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.5,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1001,
+   "arm": "B0",
+   "text": "Episode 1001: task 'women's dresses'. No purchase completed; official reward 0.00.",
+   "data": {
+    "chosen_kind": "none",
+    "reward": 0.0,
+    "gold_reward": null
+   }
+  }
+ ],
+ "injected_context": "Your experience notes from earlier shopping sessions:\n- [observation] Episode 1000: task 'throw blankets'. Bought 'Custom Name Blankets for Baby Boys Girls - Personalized Baby Blankets with Dinosaur Design for Kids - Throw Blanket with Cute Animal - Customized Swadding Blanket for Toddler Super Soft 30\"x40\"' at $20.99; official reward 0.50.\n- [observation] Episode 1001: task 'women's dresses'. No purchase completed; official reward 0.00.",
+ "context_sha256": "0071b76bb9c4cdc95e8f9712893e61c0b0fd124be313ca6237505b367f352cae"
+}

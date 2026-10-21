@@ -36,7 +36,8 @@ def clean_product_keys(products):
     return products
 
 
-def generate_product_prices(all_products):
+def generate_product_prices(all_products, seed=2027):
+    rng = random.Random(seed)
     product_prices = dict()
     for product in all_products:
         asin = product['asin']
@@ -46,7 +47,7 @@ def generate_product_prices(all_products):
         elif len(pricing) == 1:
             price = pricing[0]
         else:
-            price = random.uniform(*pricing[:2])
+            price = rng.uniform(*pricing[:2])
         product_prices[asin] = price
     return product_prices
 
@@ -170,7 +171,10 @@ def load_products(filepath, attr_path, human_attr_path, num_products=None,
 def load_official_data(data_dir, cache=True):
     """Load via the verbatim port, with a pickle cache (json.load of the
     5.5GB items_shuffle.json takes several minutes)."""
-    cache_path = os.path.join(data_dir, "all_products.pkl")
+    if os.environ.get("SYNTHFLOOD_PRODUCT_CACHE") == "0":
+        cache = False
+    # Old caches contain an unseeded price table; do not silently reuse them.
+    cache_path = os.path.join(data_dir, "all_products_prices2027_v2.pkl")
     if cache and os.path.exists(cache_path):
         print(f"loading cached products from {cache_path}")
         with open(cache_path, "rb") as f:

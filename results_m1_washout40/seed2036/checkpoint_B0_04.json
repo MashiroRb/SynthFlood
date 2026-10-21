@@ -1,0 +1,52 @@
+{
+ "arm": "B0",
+ "path": "/mnt/beegfs/home/liudianru26/project/www2027/SynthFlood-local/results_m1_washout40/seed2036/mem_B0.json",
+ "entries": [
+  {
+   "type": "observation",
+   "t": 1000,
+   "arm": "B0",
+   "text": "Episode 1000: task 'throw blankets'. Bought 'Soccer Throw Blanket Flame Soccer Pattern Throw Blanket for Kids Soccer Fans Teens Boys, Reversible Soft Cozy Blanket Bed Couch Sofa for All Seasons 50\" X 60\"' at $24.99; official reward 0.25.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.25,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1001,
+   "arm": "B0",
+   "text": "Episode 1001: task 'women's dresses'. Bought 'Leadingstar Women Turtleneck Loose Fit Cotton Lace Casual Dress' at $22.41; official reward 0.33.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.3333333333333333,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1002,
+   "arm": "B0",
+   "text": "Episode 1002: task 'projection screens'. Bought 'PDGJG Portable Projector Screen Outdoor with Stand Bracket Screen 100 Inch 16:9 4K HD 3D Fast Folding Projection Screen' at $100.00; official reward 0.25.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.25,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1003,
+   "arm": "B0",
+   "text": "Episode 1003: task 'grocery cookies'. Bought 'Dibella Biscotti Cookies – Authentic Italian Biscotti, Apricot Almond, 6-Count – Gourmet Cantuccini Biscotti – Rich Flavor – Crunchy Outside with Silky Middle – Classic Italian Biscotti' at $11.63; official reward 0.25.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.25,
+    "gold_reward": null
+   }
+  }
+ ],
+ "injected_context": "Your experience notes from earlier shopping sessions:\n- [observation] Episode 1001: task 'women's dresses'. Bought 'Leadingstar Women Turtleneck Loose Fit Cotton Lace Casual Dress' at $22.41; official reward 0.33.\n- [observation] Episode 1002: task 'projection screens'. Bought 'PDGJG Portable Projector Screen Outdoor with Stand Bracket Screen 100 Inch 16:9 4K HD 3D Fast Folding Projection Screen' at $100.00; official reward 0.25.\n- [observation] Episode 1003: task 'grocery cookies'. Bought 'Dibella Biscotti Cookies – Authentic Italian Biscotti, Apricot Almond, 6-Count – Gourmet Cantuccini Biscotti – Rich Flavor – Crunchy Outside with Silky Middle – Classic Italian Biscotti' at $11.63; official reward 0.25.",
+ "context_sha256": "5123c294d1535d026412d239888abd21ebaf66d2359f738c8375c4216609a8ac"
+}

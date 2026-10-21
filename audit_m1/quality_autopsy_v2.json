@@ -1,0 +1,612 @@
+{
+  "scope": "Exploratory input quality, added after repeated-measurement diagnostic began; does not change the primary cohort or analysis.",
+  "source_sha256": "d21a6c60d73abe14c0be747e7528fed93dad1f5a40dfa2b62c76503b0c9845c4",
+  "context_sha256": "b9fea54761187fcc2f7a3d3117055edad59c6927be4daddfb7f2c0b7ded78331",
+  "n": 74,
+  "clone_reward_ge_gold": 19,
+  "gold_reward_below_one": 0,
+  "rows": [
+    {
+      "phase": "exam",
+      "pair_idx": 251,
+      "gold_asin": "B09P9XB3W9",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666,
+      "gap_clone_minus_gold": -0.33333333333333337
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 252,
+      "gold_asin": "B08BSWZJ4G",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666,
+      "gap_clone_minus_gold": -0.33333333333333337
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 253,
+      "gold_asin": "B09D9RXRPG",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5,
+      "gap_clone_minus_gold": -0.5
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 254,
+      "gold_asin": "B01IDDRDRI",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0,
+      "gap_clone_minus_gold": 0.0
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 255,
+      "gold_asin": "B01IDDRDRI",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0,
+      "gap_clone_minus_gold": 0.0
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 256,
+      "gold_asin": "B07CWWTHN9",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75,
+      "gap_clone_minus_gold": -0.25
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 257,
+      "gold_asin": "B087D5W1B5",
+      "gold_reward": 1.0,
+      "clone_reward": 0.3333333333333333,
+      "gap_clone_minus_gold": -0.6666666666666667
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 258,
+      "gold_asin": "B087D5W1B5",
+      "gold_reward": 1.0,
+      "clone_reward": 0.3333333333333333,
+      "gap_clone_minus_gold": -0.6666666666666667
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 259,
+      "gold_asin": "B0719QLYF2",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75,
+      "gap_clone_minus_gold": -0.25
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 260,
+      "gold_asin": "B0719QLYF2",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75,
+      "gap_clone_minus_gold": -0.25
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 261,
+      "gold_asin": "B07CTC8F3F",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75,
+      "gap_clone_minus_gold": -0.25
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 262,
+      "gold_asin": "B09B22X8TN",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666,
+      "gap_clone_minus_gold": -0.33333333333333337
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 263,
+      "gold_asin": "B09SKGVDWZ",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666,
+      "gap_clone_minus_gold": -0.33333333333333337
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 264,
+      "gold_asin": "B09SKGVDWZ",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0,
+      "gap_clone_minus_gold": 0.0
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 265,
+      "gold_asin": "B09SKGVDWZ",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666,
+      "gap_clone_minus_gold": -0.33333333333333337
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 266,
+      "gold_asin": "B09SKGVDWZ",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666,
+      "gap_clone_minus_gold": -0.33333333333333337
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 267,
+      "gold_asin": "B09DPLKCW3",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5,
+      "gap_clone_minus_gold": -0.5
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 268,
+      "gold_asin": "B09DPLKCW3",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5,
+      "gap_clone_minus_gold": -0.5
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 269,
+      "gold_asin": "B09DPLKCW3",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5,
+      "gap_clone_minus_gold": -0.5
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 270,
+      "gold_asin": "B00I4WT6QU",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666,
+      "gap_clone_minus_gold": -0.33333333333333337
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 271,
+      "gold_asin": "B09LSW7DJ1",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666,
+      "gap_clone_minus_gold": -0.33333333333333337
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 272,
+      "gold_asin": "B09LSW7DJ1",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666,
+      "gap_clone_minus_gold": -0.33333333333333337
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 273,
+      "gold_asin": "B09LSW7DJ1",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0,
+      "gap_clone_minus_gold": 0.0
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 274,
+      "gold_asin": "B09LSW7DJ1",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666,
+      "gap_clone_minus_gold": -0.33333333333333337
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 275,
+      "gold_asin": "B00SKVJK1G",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0,
+      "gap_clone_minus_gold": 0.0
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 276,
+      "gold_asin": "B00SKVJK1G",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666,
+      "gap_clone_minus_gold": -0.33333333333333337
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 278,
+      "gold_asin": "B08P4GMWJB",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0,
+      "gap_clone_minus_gold": 0.0
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 279,
+      "gold_asin": "B084NZ2GKF",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666,
+      "gap_clone_minus_gold": -0.33333333333333337
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 280,
+      "gold_asin": "B084NZ2GKF",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666,
+      "gap_clone_minus_gold": -0.33333333333333337
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 281,
+      "gold_asin": "B07XZ1VW78",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0,
+      "gap_clone_minus_gold": 0.0
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 282,
+      "gold_asin": "B09219DD59",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666,
+      "gap_clone_minus_gold": -0.33333333333333337
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 283,
+      "gold_asin": "B08SCFN6ZG",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75,
+      "gap_clone_minus_gold": -0.25
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 284,
+      "gold_asin": "B07PV723CF",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666,
+      "gap_clone_minus_gold": -0.33333333333333337
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 285,
+      "gold_asin": "B09LK4G5G2",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0,
+      "gap_clone_minus_gold": 0.0
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 286,
+      "gold_asin": "B09R96BLLY",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0,
+      "gap_clone_minus_gold": 0.0
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 287,
+      "gold_asin": "B09R96BLLY",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0,
+      "gap_clone_minus_gold": 0.0
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 288,
+      "gold_asin": "B09R96BLLY",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0,
+      "gap_clone_minus_gold": 0.0
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 289,
+      "gold_asin": "B09R96BLLY",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0,
+      "gap_clone_minus_gold": 0.0
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 290,
+      "gold_asin": "B09R96BLLY",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0,
+      "gap_clone_minus_gold": 0.0
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 291,
+      "gold_asin": "B09N79LQQF",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666,
+      "gap_clone_minus_gold": -0.33333333333333337
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 294,
+      "gold_asin": "B074RVN91Q",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0,
+      "gap_clone_minus_gold": 0.0
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 295,
+      "gold_asin": "B0865SKG5G",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75,
+      "gap_clone_minus_gold": -0.25
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 296,
+      "gold_asin": "B07L9KXTM4",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0,
+      "gap_clone_minus_gold": 0.0
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 299,
+      "gold_asin": "B09BJL1232",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5,
+      "gap_clone_minus_gold": -0.5
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 300,
+      "gold_asin": "B01HJWDWP6",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75,
+      "gap_clone_minus_gold": -0.25
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 301,
+      "gold_asin": "B01HJWDWP6",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75,
+      "gap_clone_minus_gold": -0.25
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 302,
+      "gold_asin": "B01HJWDWP6",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75,
+      "gap_clone_minus_gold": -0.25
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 303,
+      "gold_asin": "B01HJWDWP6",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75,
+      "gap_clone_minus_gold": -0.25
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 304,
+      "gold_asin": "B01HJWDWP6",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75,
+      "gap_clone_minus_gold": -0.25
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 305,
+      "gold_asin": "B09S3QKSWW",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0,
+      "gap_clone_minus_gold": 0.0
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 306,
+      "gold_asin": "B09BZTJPZW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75,
+      "gap_clone_minus_gold": -0.25
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 307,
+      "gold_asin": "B096RZ5DXK",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6,
+      "gap_clone_minus_gold": -0.4
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 308,
+      "gold_asin": "B07HPBFS5S",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666,
+      "gap_clone_minus_gold": -0.33333333333333337
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 309,
+      "gold_asin": "B084ZT7Q8H",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0,
+      "gap_clone_minus_gold": 0.0
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 310,
+      "gold_asin": "B075TGSSSS",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0,
+      "gap_clone_minus_gold": 0.0
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 311,
+      "gold_asin": "B07NX259SR",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666,
+      "gap_clone_minus_gold": -0.33333333333333337
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 312,
+      "gold_asin": "B08R6NCZ95",
+      "gold_reward": 1.0,
+      "clone_reward": 0.3333333333333333,
+      "gap_clone_minus_gold": -0.6666666666666667
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 313,
+      "gold_asin": "B0781HSDTZ",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666,
+      "gap_clone_minus_gold": -0.33333333333333337
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 314,
+      "gold_asin": "B08J1D47RV",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0,
+      "gap_clone_minus_gold": 0.0
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 315,
+      "gold_asin": "B09MLHK36S",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6,
+      "gap_clone_minus_gold": -0.4
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 316,
+      "gold_asin": "B09GFWF132",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8,
+      "gap_clone_minus_gold": -0.19999999999999996
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 317,
+      "gold_asin": "B09GFWF132",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8,
+      "gap_clone_minus_gold": -0.19999999999999996
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 318,
+      "gold_asin": "B076DL1VLG",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666,
+      "gap_clone_minus_gold": -0.33333333333333337
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 319,
+      "gold_asin": "B00SZXFIEW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75,
+      "gap_clone_minus_gold": -0.25
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 320,
+      "gold_asin": "B00SZXFIEW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75,
+      "gap_clone_minus_gold": -0.25
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 321,
+      "gold_asin": "B00SZXFIEW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75,
+      "gap_clone_minus_gold": -0.25
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 322,
+      "gold_asin": "B00SZXFIEW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75,
+      "gap_clone_minus_gold": -0.25
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 323,
+      "gold_asin": "B00SZXFIEW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75,
+      "gap_clone_minus_gold": -0.25
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 324,
+      "gold_asin": "B00SZXFIEW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5,
+      "gap_clone_minus_gold": -0.5
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 325,
+      "gold_asin": "B00SZXFIEW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75,
+      "gap_clone_minus_gold": -0.25
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 326,
+      "gold_asin": "B00SZXFIEW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75,
+      "gap_clone_minus_gold": -0.25
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 327,
+      "gold_asin": "B00SZXFIEW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5,
+      "gap_clone_minus_gold": -0.5
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 328,
+      "gold_asin": "B00SZXFIEW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75,
+      "gap_clone_minus_gold": -0.25
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 329,
+      "gold_asin": "B00SZXFIEW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75,
+      "gap_clone_minus_gold": -0.25
+    }
+  ],
+  "by_phase": {
+    "exam": {
+      "n": 38,
+      "clone_reward_ge_gold": 12
+    },
+    "parity": {
+      "n": 36,
+      "clone_reward_ge_gold": 7
+    }
+  }
+}

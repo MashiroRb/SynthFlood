@@ -1,0 +1,447 @@
+{
+  "exploratory_descriptive_only": true,
+  "no_additional_p_values": true,
+  "records": [
+    {
+      "seed": 2030,
+      "length": 20,
+      "versus_empty": {
+        "n_pairs": 452,
+        "toward_clone": 71,
+        "away_from_clone": 71,
+        "binary_clone_flips": 142,
+        "purchase_category_changes": 142,
+        "net_clone_rate_difference": 0.0
+      },
+      "source": "existing measured expanded study"
+    },
+    {
+      "seed": 2030,
+      "length": 40,
+      "versus_empty": {
+        "n_pairs": 452,
+        "toward_clone": 65,
+        "away_from_clone": 56,
+        "binary_clone_flips": 121,
+        "purchase_category_changes": 122,
+        "net_clone_rate_difference": 0.01991150442477876
+      },
+      "versus_same_seed20": {
+        "n_pairs": 452,
+        "toward_clone": 58,
+        "away_from_clone": 49,
+        "binary_clone_flips": 107,
+        "purchase_category_changes": 108,
+        "net_clone_rate_difference": 0.01991150442477876
+      },
+      "source": "new measured length study"
+    },
+    {
+      "seed": 2030,
+      "length": 80,
+      "versus_empty": {
+        "n_pairs": 452,
+        "toward_clone": 62,
+        "away_from_clone": 59,
+        "binary_clone_flips": 121,
+        "purchase_category_changes": 121,
+        "net_clone_rate_difference": 0.00663716814159292
+      },
+      "versus_same_seed20": {
+        "n_pairs": 452,
+        "toward_clone": 61,
+        "away_from_clone": 58,
+        "binary_clone_flips": 119,
+        "purchase_category_changes": 119,
+        "net_clone_rate_difference": 0.00663716814159292
+      },
+      "source": "new measured length study"
+    },
+    {
+      "seed": 2031,
+      "length": 20,
+      "versus_empty": {
+        "n_pairs": 452,
+        "toward_clone": 69,
+        "away_from_clone": 62,
+        "binary_clone_flips": 131,
+        "purchase_category_changes": 131,
+        "net_clone_rate_difference": 0.015486725663716814
+      },
+      "source": "existing measured expanded study"
+    },
+    {
+      "seed": 2031,
+      "length": 40,
+      "versus_empty": {
+        "n_pairs": 452,
+        "toward_clone": 67,
+        "away_from_clone": 53,
+        "binary_clone_flips": 120,
+        "purchase_category_changes": 120,
+        "net_clone_rate_difference": 0.030973451327433628
+      },
+      "versus_same_seed20": {
+        "n_pairs": 452,
+        "toward_clone": 58,
+        "away_from_clone": 51,
+        "binary_clone_flips": 109,
+        "purchase_category_changes": 109,
+        "net_clone_rate_difference": 0.015486725663716814
+      },
+      "source": "new measured length study"
+    },
+    {
+      "seed": 2031,
+      "length": 80,
+      "versus_empty": {
+        "n_pairs": 452,
+        "toward_clone": 76,
+        "away_from_clone": 65,
+        "binary_clone_flips": 141,
+        "purchase_category_changes": 141,
+        "net_clone_rate_difference": 0.024336283185840708
+      },
+      "versus_same_seed20": {
+        "n_pairs": 452,
+        "toward_clone": 59,
+        "away_from_clone": 55,
+        "binary_clone_flips": 114,
+        "purchase_category_changes": 114,
+        "net_clone_rate_difference": 0.008849557522123894
+      },
+      "source": "new measured length study"
+    },
+    {
+      "seed": 2032,
+      "length": 20,
+      "versus_empty": {
+        "n_pairs": 452,
+        "toward_clone": 61,
+        "away_from_clone": 60,
+        "binary_clone_flips": 121,
+        "purchase_category_changes": 121,
+        "net_clone_rate_difference": 0.0022123893805309734
+      },
+      "source": "existing measured expanded study"
+    },
+    {
+      "seed": 2032,
+      "length": 40,
+      "versus_empty": {
+        "n_pairs": 452,
+        "toward_clone": 68,
+        "away_from_clone": 49,
+        "binary_clone_flips": 117,
+        "purchase_category_changes": 117,
+        "net_clone_rate_difference": 0.0420353982300885
+      },
+      "versus_same_seed20": {
+        "n_pairs": 452,
+        "toward_clone": 61,
+        "away_from_clone": 43,
+        "binary_clone_flips": 104,
+        "purchase_category_changes": 104,
+        "net_clone_rate_difference": 0.03982300884955752
+      },
+      "source": "new measured length study"
+    },
+    {
+      "seed": 2032,
+      "length": 80,
+      "versus_empty": {
+        "n_pairs": 452,
+        "toward_clone": 69,
+        "away_from_clone": 53,
+        "binary_clone_flips": 122,
+        "purchase_category_changes": 122,
+        "net_clone_rate_difference": 0.035398230088495575
+      },
+      "versus_same_seed20": {
+        "n_pairs": 452,
+        "toward_clone": 64,
+        "away_from_clone": 49,
+        "binary_clone_flips": 113,
+        "purchase_category_changes": 113,
+        "net_clone_rate_difference": 0.033185840707964605
+      },
+      "source": "new measured length study"
+    },
+    {
+      "seed": 2033,
+      "length": 20,
+      "versus_empty": {
+        "n_pairs": 452,
+        "toward_clone": 76,
+        "away_from_clone": 60,
+        "binary_clone_flips": 136,
+        "purchase_category_changes": 136,
+        "net_clone_rate_difference": 0.035398230088495575
+      },
+      "source": "existing measured expanded study"
+    },
+    {
+      "seed": 2033,
+      "length": 40,
+      "versus_empty": {
+        "n_pairs": 452,
+        "toward_clone": 70,
+        "away_from_clone": 52,
+        "binary_clone_flips": 122,
+        "purchase_category_changes": 123,
+        "net_clone_rate_difference": 0.03982300884955752
+      },
+      "versus_same_seed20": {
+        "n_pairs": 452,
+        "toward_clone": 52,
+        "away_from_clone": 50,
+        "binary_clone_flips": 102,
+        "purchase_category_changes": 103,
+        "net_clone_rate_difference": 0.004424778761061947
+      },
+      "source": "new measured length study"
+    },
+    {
+      "seed": 2033,
+      "length": 80,
+      "versus_empty": {
+        "n_pairs": 452,
+        "toward_clone": 60,
+        "away_from_clone": 55,
+        "binary_clone_flips": 115,
+        "purchase_category_changes": 115,
+        "net_clone_rate_difference": 0.011061946902654867
+      },
+      "versus_same_seed20": {
+        "n_pairs": 452,
+        "toward_clone": 50,
+        "away_from_clone": 61,
+        "binary_clone_flips": 111,
+        "purchase_category_changes": 111,
+        "net_clone_rate_difference": -0.024336283185840708
+      },
+      "source": "new measured length study"
+    },
+    {
+      "seed": 2034,
+      "length": 20,
+      "versus_empty": {
+        "n_pairs": 452,
+        "toward_clone": 71,
+        "away_from_clone": 53,
+        "binary_clone_flips": 124,
+        "purchase_category_changes": 124,
+        "net_clone_rate_difference": 0.03982300884955752
+      },
+      "source": "existing measured expanded study"
+    },
+    {
+      "seed": 2034,
+      "length": 40,
+      "versus_empty": {
+        "n_pairs": 452,
+        "toward_clone": 74,
+        "away_from_clone": 60,
+        "binary_clone_flips": 134,
+        "purchase_category_changes": 135,
+        "net_clone_rate_difference": 0.030973451327433628
+      },
+      "versus_same_seed20": {
+        "n_pairs": 452,
+        "toward_clone": 59,
+        "away_from_clone": 63,
+        "binary_clone_flips": 122,
+        "purchase_category_changes": 122,
+        "net_clone_rate_difference": -0.008849557522123894
+      },
+      "source": "new measured length study"
+    },
+    {
+      "seed": 2034,
+      "length": 80,
+      "versus_empty": {
+        "n_pairs": 452,
+        "toward_clone": 64,
+        "away_from_clone": 75,
+        "binary_clone_flips": 139,
+        "purchase_category_changes": 139,
+        "net_clone_rate_difference": -0.024336283185840708
+      },
+      "versus_same_seed20": {
+        "n_pairs": 452,
+        "toward_clone": 42,
+        "away_from_clone": 71,
+        "binary_clone_flips": 113,
+        "purchase_category_changes": 113,
+        "net_clone_rate_difference": -0.06415929203539823
+      },
+      "source": "new measured length study"
+    },
+    {
+      "seed": 2035,
+      "length": 20,
+      "versus_empty": {
+        "n_pairs": 452,
+        "toward_clone": 67,
+        "away_from_clone": 55,
+        "binary_clone_flips": 122,
+        "purchase_category_changes": 122,
+        "net_clone_rate_difference": 0.02654867256637168
+      },
+      "source": "existing measured expanded study"
+    },
+    {
+      "seed": 2035,
+      "length": 40,
+      "versus_empty": {
+        "n_pairs": 452,
+        "toward_clone": 70,
+        "away_from_clone": 57,
+        "binary_clone_flips": 127,
+        "purchase_category_changes": 127,
+        "net_clone_rate_difference": 0.028761061946902654
+      },
+      "versus_same_seed20": {
+        "n_pairs": 452,
+        "toward_clone": 59,
+        "away_from_clone": 58,
+        "binary_clone_flips": 117,
+        "purchase_category_changes": 117,
+        "net_clone_rate_difference": 0.0022123893805309734
+      },
+      "source": "new measured length study"
+    },
+    {
+      "seed": 2035,
+      "length": 80,
+      "versus_empty": {
+        "n_pairs": 452,
+        "toward_clone": 65,
+        "away_from_clone": 57,
+        "binary_clone_flips": 122,
+        "purchase_category_changes": 122,
+        "net_clone_rate_difference": 0.017699115044247787
+      },
+      "versus_same_seed20": {
+        "n_pairs": 452,
+        "toward_clone": 56,
+        "away_from_clone": 60,
+        "binary_clone_flips": 116,
+        "purchase_category_changes": 116,
+        "net_clone_rate_difference": -0.008849557522123894
+      },
+      "source": "new measured length study"
+    },
+    {
+      "seed": 2036,
+      "length": 20,
+      "versus_empty": {
+        "n_pairs": 452,
+        "toward_clone": 56,
+        "away_from_clone": 58,
+        "binary_clone_flips": 114,
+        "purchase_category_changes": 114,
+        "net_clone_rate_difference": -0.004424778761061947
+      },
+      "source": "existing measured expanded study"
+    },
+    {
+      "seed": 2036,
+      "length": 40,
+      "versus_empty": {
+        "n_pairs": 452,
+        "toward_clone": 72,
+        "away_from_clone": 58,
+        "binary_clone_flips": 130,
+        "purchase_category_changes": 130,
+        "net_clone_rate_difference": 0.030973451327433628
+      },
+      "versus_same_seed20": {
+        "n_pairs": 452,
+        "toward_clone": 65,
+        "away_from_clone": 49,
+        "binary_clone_flips": 114,
+        "purchase_category_changes": 114,
+        "net_clone_rate_difference": 0.035398230088495575
+      },
+      "source": "new measured length study"
+    },
+    {
+      "seed": 2036,
+      "length": 80,
+      "versus_empty": {
+        "n_pairs": 452,
+        "toward_clone": 51,
+        "away_from_clone": 53,
+        "binary_clone_flips": 104,
+        "purchase_category_changes": 104,
+        "net_clone_rate_difference": -0.004424778761061947
+      },
+      "versus_same_seed20": {
+        "n_pairs": 452,
+        "toward_clone": 53,
+        "away_from_clone": 53,
+        "binary_clone_flips": 106,
+        "purchase_category_changes": 106,
+        "net_clone_rate_difference": 0.0
+      },
+      "source": "new measured length study"
+    },
+    {
+      "seed": 2037,
+      "length": 20,
+      "versus_empty": {
+        "n_pairs": 452,
+        "toward_clone": 69,
+        "away_from_clone": 51,
+        "binary_clone_flips": 120,
+        "purchase_category_changes": 120,
+        "net_clone_rate_difference": 0.03982300884955752
+      },
+      "source": "existing measured expanded study"
+    },
+    {
+      "seed": 2037,
+      "length": 40,
+      "versus_empty": {
+        "n_pairs": 452,
+        "toward_clone": 80,
+        "away_from_clone": 53,
+        "binary_clone_flips": 133,
+        "purchase_category_changes": 133,
+        "net_clone_rate_difference": 0.059734513274336286
+      },
+      "versus_same_seed20": {
+        "n_pairs": 452,
+        "toward_clone": 56,
+        "away_from_clone": 47,
+        "binary_clone_flips": 103,
+        "purchase_category_changes": 103,
+        "net_clone_rate_difference": 0.01991150442477876
+      },
+      "source": "new measured length study"
+    },
+    {
+      "seed": 2037,
+      "length": 80,
+      "versus_empty": {
+        "n_pairs": 452,
+        "toward_clone": 61,
+        "away_from_clone": 57,
+        "binary_clone_flips": 118,
+        "purchase_category_changes": 118,
+        "net_clone_rate_difference": 0.008849557522123894
+      },
+      "versus_same_seed20": {
+        "n_pairs": 452,
+        "toward_clone": 41,
+        "away_from_clone": 55,
+        "binary_clone_flips": 96,
+        "purchase_category_changes": 96,
+        "net_clone_rate_difference": -0.030973451327433628
+      },
+      "source": "new measured length study"
+    }
+  ],
+  "script_sha256": "e7c019ac999ca4b55a00715a5ab0b14ea9350a660eae00ac0ed97518faca142b"
+}

@@ -1,0 +1,162 @@
+{
+ "arm": "B0",
+ "path": "/mnt/beegfs/home/liudianru26/project/www2027/SynthFlood-local/results_m1_washout40/seed2036/mem_B0.json",
+ "entries": [
+  {
+   "type": "observation",
+   "t": 1000,
+   "arm": "B0",
+   "text": "Episode 1000: task 'throw blankets'. Bought 'Soccer Throw Blanket Flame Soccer Pattern Throw Blanket for Kids Soccer Fans Teens Boys, Reversible Soft Cozy Blanket Bed Couch Sofa for All Seasons 50\" X 60\"' at $24.99; official reward 0.25.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.25,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1001,
+   "arm": "B0",
+   "text": "Episode 1001: task 'women's dresses'. Bought 'Leadingstar Women Turtleneck Loose Fit Cotton Lace Casual Dress' at $22.41; official reward 0.33.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.3333333333333333,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1002,
+   "arm": "B0",
+   "text": "Episode 1002: task 'projection screens'. Bought 'PDGJG Portable Projector Screen Outdoor with Stand Bracket Screen 100 Inch 16:9 4K HD 3D Fast Folding Projection Screen' at $100.00; official reward 0.25.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.25,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1003,
+   "arm": "B0",
+   "text": "Episode 1003: task 'grocery cookies'. Bought 'Dibella Biscotti Cookies – Authentic Italian Biscotti, Apricot Almond, 6-Count – Gourmet Cantuccini Biscotti – Rich Flavor – Crunchy Outside with Silky Middle – Classic Italian Biscotti' at $11.63; official reward 0.25.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.25,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1004,
+   "arm": "B0",
+   "text": "Episode 1004: task 'throw blankets'. Bought 'LUXEAR Summer Sleeping Cool Blankets, Double-Sided Blankets with Arc-Chill Japanese Cooling Fiber Lightweight Breathable Summer Throw Cold Blanket for Night Sweats , Machine Washable' at $38.99; official reward 1.00.",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "lesson",
+   "t": 1004,
+   "arm": "B0",
+   "text": "Compare prices and rewards for similar items to maximize savings and earnings.",
+   "tags": [
+    "comparison shopping",
+    "rewards system"
+   ],
+   "data": {}
+  },
+  {
+   "type": "observation",
+   "t": 1005,
+   "arm": "B0",
+   "text": "Episode 1005: task 'party mix'. No purchase completed; official reward 0.00.",
+   "data": {
+    "chosen_kind": "none",
+    "reward": 0.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1006,
+   "arm": "B0",
+   "text": "Episode 1006: task 'men's jeans'. Bought 'FREDD MARSHALL Men's Skinny Slim Fit Ripped Distressed Stretch Jeans Pants' at $32.95; official reward 1.00.",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1007,
+   "arm": "B0",
+   "text": "Episode 1007: task 'cotton balls & swabs'. Bought 'Homde Makeup Organizer Transparent Desk Organizer Clear Vanity Box with 3 Drawers for Cosmetic, Nail Polish, Eyeshadow, Brush, Lipstick, Powder' at $22.99; official reward 0.67.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.6666666666666666,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1008,
+   "arm": "B0",
+   "text": "Episode 1008: task 'women's swimsuits & cover ups'. Bought 'Swimsuit Women Two Piece, Women's Fashion Solid Split Sexy Bikini Beach Sea Two-Piece Swimsuit High Waisted String Bikini' at $7.39; official reward 0.75.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.75,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1009,
+   "arm": "B0",
+   "text": "Episode 1009: task 'lips makeup'. Bought 'Revlon ColorStay Pressed Powder, Longwearing Oil Free, -Fragrance Free, Noncomedogenic Face Makeup, Natural Tan (330)' at $9.31; official reward 1.00.",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "lesson",
+   "t": 1009,
+   "arm": "B0",
+   "text": "Choose items that match tasks precisely to maximize rewards and efficiency.",
+   "tags": [
+    "task matching",
+    "reward optimization"
+   ],
+   "data": {}
+  },
+  {
+   "type": "observation",
+   "t": 1010,
+   "arm": "B0",
+   "text": "Episode 1010: task 'children's dental care'. Bought '“Pokemon Go” Inspired 3pc Bright Smile Oral Hygiene Bundle! Soft Manual Toothbrush, Brushing Timer & Mouthwash Rinse' at $13.90; official reward 1.00.",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1011,
+   "arm": "B0",
+   "text": "Episode 1011: task 'cell phones'. Bought 'Gameboy Case for iPhone, Autbye Retro 3D Phone Case Game Console with 36 Classic Game, Color Display Shockproof Video Game Phone Case for iPhone (for iPhone 6P/7P/8P, Black)' at $22.99; official reward 1.00.",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  }
+ ],
+ "injected_context": "Your experience notes from earlier shopping sessions:\n- [lesson] Choose items that match tasks precisely to maximize rewards and efficiency.\n- [observation] Episode 1010: task 'children's dental care'. Bought '“Pokemon Go” Inspired 3pc Bright Smile Oral Hygiene Bundle! Soft Manual Toothbrush, Brushing Timer & Mouthwash Rinse' at $13.90; official reward 1.00.\n- [observation] Episode 1011: task 'cell phones'. Bought 'Gameboy Case for iPhone, Autbye Retro 3D Phone Case Game Console with 36 Classic Game, Color Display Shockproof Video Game Phone Case for iPhone (for iPhone 6P/7P/8P, Black)' at $22.99; official reward 1.00.",
+ "context_sha256": "cf1b0f054a3711d33e37c1a04cdfa93a47e5df71d0b301654ae207cb04e5f00b"
+}

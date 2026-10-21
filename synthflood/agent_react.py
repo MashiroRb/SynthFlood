@@ -1,13 +1,14 @@
 """ReAct-style agent loop for the WebShop-Select environment.
 
-Decoding is greedy (temperature 0) for reproducibility; variation across
-conditions comes from the contamination protocol, not sampling noise.
+Decoding requests use temperature 0 and a fixed seed. Backend repeatability
+must still be verified against archived inputs, especially with batching.
 Every run is logged as one JSONL record with the full trajectory.
 """
 import json
 import os
 import re
 import time
+import uuid
 
 from .config import LOG_DIR, AGENT_TEMP, AGENT_MAX_STEPS
 from .runlog import RunLogger
@@ -79,12 +80,15 @@ def run_episode(env: SelectEnv, client: LLMClient, instruction: str,
                {"role": "user", "content":
                    f"User instruction: {instruction}\n\n{obs}"}]
     lg = RunLogger(log_path or os.path.join(
-        LOG_DIR, "runs", f"run_{int(time.time()*1000)}.jsonl"),
+        LOG_DIR, "runs", f"run_{uuid.uuid4().hex}.jsonl"),
         meta or {})
     malformed = 0
     steps = 0
     conf = None
     while steps < max_steps and not env.done:
+        # Archive the actual model inputs, including the injected memory.
+        lg.step("input", {"messages": list(history), "temperature": AGENT_TEMP,
+                          "seed": 0, "max_tokens": 300})
         t0 = time.time()
         text, raw = client.chat(history, temperature=AGENT_TEMP,
                                 max_tokens=300)
@@ -115,6 +119,8 @@ def run_episode(env: SelectEnv, client: LLMClient, instruction: str,
         steps += 1
         if done and conf is None:
             t1 = time.time()
+            lg.step("input", {"messages": history + [{"role": "user", "content": CONFIDENCE_ELICIT}],
+                              "temperature": 0.0, "seed": 0, "max_tokens": 20})
             ctext, craw = client.chat(
                 history + [{"role": "user", "content": CONFIDENCE_ELICIT}],
                 temperature=0.0, max_tokens=20)

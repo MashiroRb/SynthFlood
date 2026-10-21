@@ -1,0 +1,9 @@
+# Frozen experimental artifacts must retain their exact bytes and hashes.
+data/m1_v2/** -text -whitespace
+data/m1_expanded/** -text -whitespace
+data/m1_exposure_length/** -text -whitespace
+data/m1_washout40/** -text -whitespace
+results_m1_v2/** -text -whitespace
+results_m1_expanded/** -text -whitespace
+results_m1_exposure_length/** -text -whitespace
+results_m1_washout40/** -text -whitespace

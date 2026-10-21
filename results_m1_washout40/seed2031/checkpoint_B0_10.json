@@ -1,0 +1,140 @@
+{
+ "arm": "B0",
+ "path": "/mnt/beegfs/home/liudianru26/project/www2027/SynthFlood-local/results_m1_washout40/seed2031/mem_B0.json",
+ "entries": [
+  {
+   "type": "observation",
+   "t": 1000,
+   "arm": "B0",
+   "text": "Episode 1000: task 'throw blankets'. Bought 'jinchan Flannel Throw Blanket Dinosaur Glow in The Dark Green Lightweight Fleece Throw Blankets for Nursery Couch Bed Magical Blankets All Seasons Gift for Girls Boys Baby Kids 50x60 Inch' at $17.99; official reward 0.50.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.5,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1001,
+   "arm": "B0",
+   "text": "Episode 1001: task 'women's dresses'. No purchase completed; official reward 0.00.",
+   "data": {
+    "chosen_kind": "none",
+    "reward": 0.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1002,
+   "arm": "B0",
+   "text": "Episode 1002: task 'projection screens'. Bought 'vidaXL Projection Screen Home Theater Indoor Film Public Display Screen Office School Interior Conference Room Presentation with Tripod 84\" 4:3' at $102.64; official reward 0.25.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.25,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1003,
+   "arm": "B0",
+   "text": "Episode 1003: task 'grocery cookies'. Bought 'Traditional Almond Biscotti, Cantuccini d'Abruzzo, Italian Cookies made with real quality ingredients, 200 G, 7 oz, L'Oro del Sud' at $7.99; official reward 0.50.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.5,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1004,
+   "arm": "B0",
+   "text": "Episode 1004: task 'throw blankets'. No purchase completed; official reward 0.00.",
+   "data": {
+    "chosen_kind": "none",
+    "reward": 0.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "lesson",
+   "t": 1004,
+   "arm": "B0",
+   "text": "Select tasks with available products to ensure purchases and rewards.",
+   "tags": [
+    "purchases",
+    "rewards"
+   ],
+   "data": {}
+  },
+  {
+   "type": "observation",
+   "t": 1005,
+   "arm": "B0",
+   "text": "Episode 1005: task 'party mix'. Bought 'Atkins Day Bread Mix 1x400g by Day Break' at $19.98; official reward 0.33.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.3333333333333333,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1006,
+   "arm": "B0",
+   "text": "Episode 1006: task 'men's jeans'. Bought 'FREDD MARSHALL Men's Skinny Slim Fit Ripped Distressed Stretch Jeans Pants' at $32.95; official reward 1.00.",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1007,
+   "arm": "B0",
+   "text": "Episode 1007: task 'cotton balls & swabs'. Bought 'New Plastic Portable Makeup Organizer Caddy Tote Divided Basket Bin with Handle, for Bathroom Storage - Holds Blush Makeup Brushes, Eyeshadow Palette, Lipstick - Extra Large Made In USA (Orion Gray)' at $22.13; official reward 0.33.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.3333333333333333,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1008,
+   "arm": "B0",
+   "text": "Episode 1008: task 'women's swimsuits & cover ups'. Bought 'WOCACHI 2 Piece Bikini Sets for Women Halter Bathing Suit Split Padded Push Up Swimsuits Solid Color Beachwear Swimwear' at $12.71; official reward 0.75.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.75,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1009,
+   "arm": "B0",
+   "text": "Episode 1009: task 'lips makeup'. No purchase completed; official reward 0.00.",
+   "data": {
+    "chosen_kind": "none",
+    "reward": 0.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "lesson",
+   "t": 1009,
+   "arm": "B0",
+   "text": "Select tasks with clear rewards and complete purchases to earn points.",
+   "tags": [
+    "task selection",
+    "purchases"
+   ],
+   "data": {}
+  }
+ ],
+ "injected_context": "Your experience notes from earlier shopping sessions:\n- [observation] Episode 1008: task 'women's swimsuits & cover ups'. Bought 'WOCACHI 2 Piece Bikini Sets for Women Halter Bathing Suit Split Padded Push Up Swimsuits Solid Color Beachwear Swimwear' at $12.71; official reward 0.75.\n- [observation] Episode 1009: task 'lips makeup'. No purchase completed; official reward 0.00.\n- [lesson] Select tasks with clear rewards and complete purchases to earn points.",
+ "context_sha256": "642a2a811a99cb936a045815cc1e2e5964e9a33e29e436883ef277ae755879e2"
+}

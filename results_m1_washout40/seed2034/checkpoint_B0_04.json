@@ -1,0 +1,52 @@
+{
+ "arm": "B0",
+ "path": "/mnt/beegfs/home/liudianru26/project/www2027/SynthFlood-local/results_m1_washout40/seed2034/mem_B0.json",
+ "entries": [
+  {
+   "type": "observation",
+   "t": 1000,
+   "arm": "B0",
+   "text": "Episode 1000: task 'throw blankets'. Bought 'Feelyou Black Cat Fuzzy Blanket for Kids Toddler Cute Pet Cats Fleece Throw Blanket Kawaii Kitten Plush Blanket and Throws Super Soft Cozy Animal Sherpa Blanket 50\"X60\"' at $24.99; official reward 0.50.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.5,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1001,
+   "arm": "B0",
+   "text": "Episode 1001: task 'women's dresses'. Bought 'Women's Elegant Off Shoulder High Waist Floral Print Long Dress Summer Party Stylish Split Dress' at $14.99; official reward 0.33.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.3333333333333333,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1002,
+   "arm": "B0",
+   "text": "Episode 1002: task 'projection screens'. Bought 'Motorized Projector Screen, 100in Projection Screen with Bracket Quickly Set Up Projection Screen Projector ScreenPull Down for Home Theater' at $54.39; official reward 0.25.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.25,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1003,
+   "arm": "B0",
+   "text": "Episode 1003: task 'grocery cookies'. Bought 'Biscotti Brothers Bakery Almond Pizzelle, 5.6 oz' at $14.99; official reward 0.03.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.025,
+    "gold_reward": null
+   }
+  }
+ ],
+ "injected_context": "Your experience notes from earlier shopping sessions:\n- [observation] Episode 1001: task 'women's dresses'. Bought 'Women's Elegant Off Shoulder High Waist Floral Print Long Dress Summer Party Stylish Split Dress' at $14.99; official reward 0.33.\n- [observation] Episode 1002: task 'projection screens'. Bought 'Motorized Projector Screen, 100in Projection Screen with Bracket Quickly Set Up Projection Screen Projector ScreenPull Down for Home Theater' at $54.39; official reward 0.25.\n- [observation] Episode 1003: task 'grocery cookies'. Bought 'Biscotti Brothers Bakery Almond Pizzelle, 5.6 oz' at $14.99; official reward 0.03.",
+ "context_sha256": "73cffe1484f07a915d93405492a98ff590b6e09596f5fae2360253c2ffe76dbe"
+}

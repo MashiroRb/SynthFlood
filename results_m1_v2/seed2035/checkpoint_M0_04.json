@@ -1,0 +1,316 @@
+{
+ "arm": "M0",
+ "path": "/mnt/beegfs/home/liudianru26/project/www2027/SynthFlood-local/results_m1_v2/seed2035/mem_M0.json",
+ "entries": [
+  {
+   "type": "observation",
+   "t": 0,
+   "arm": "M0",
+   "text": "Episode 0: task 'beverages'. Bought 'OKF Watermelon with Aloe Vera Drink, Sweet and Refreshing W/ Chewable Aloe added. Real Watermelon Juice and Real Aloe Vera Gel Added, 16.9 Fluid Ounce (Pack OF 10)' at $25.43; official reward 0.67 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 0.6666666666666666,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1,
+   "arm": "M0",
+   "text": "Episode 1: task 'beverages'. Bought 'Surely Non-Alcoholic Lemon Ginger Brut Sparkling Spritz | Vegan, Low Sugar & Keto Friendly | 4-Pack' at $30.82; official reward 0.50 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 0.5,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 2,
+   "arm": "M0",
+   "text": "Episode 2: task 'hair loss products'. Bought 'Bailey Wig Color Coffee Latte Rooted - Rene of Paris Wigs 6.5\" Mid Length Layered Shag Wispy Bangs Synthetic Cap Bundle w/Comb, MaxWigs Hairloss Booklet' at $153.44; official reward 0.67 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 0.6666666666666666,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 3,
+   "arm": "M0",
+   "text": "Episode 3: task 'snack food gifts'. Bought 'Kayla's Cake Premium French Macarons Cookies Gift Baskets Gourmet Dark Chocolate Box Food Desserts Birthday Snack Care Packages College Students Mother's Day Thank You Condolences Women Men Mom Classi' at $98.80; official reward 0.80 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 0.8,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 4,
+   "arm": "M0",
+   "text": "Episode 4: task 'salon & spa equipment'. Bought '3pcs Set Beauty Salon Massage Table Bed Sheet Skirt SPA Bedspread Full Cover with Pillowcase, Stool Cover…' at $29.99; official reward 0.33 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.3333333333333333,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "lesson",
+   "t": 4,
+   "arm": "M0",
+   "text": "Diversify purchases across categories for better rewards.",
+   "tags": [
+    "diversification",
+    "rewards"
+   ],
+   "data": {}
+  },
+  {
+   "type": "observation",
+   "t": 5,
+   "arm": "M0",
+   "text": "Episode 5: task 'throw blankets'. Bought 'Best Throw Blankets for Cozy Nights - Soft and Luxurious Textures' at $27.80; official reward 0.67 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:reviews",
+    "reward": 0.6666666666666666,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 6,
+   "arm": "M0",
+   "text": "Episode 6: task 'tongue cleaners'. Bought 'Y-Kelin Metal Tongue Scraper - Stainless Steel Tounge Scrappers, Tounge Scraper Cleaner, Portable Tongue Cleaner Tongue Brush, Reduce Bad Breath,Silver + Rose Gold (2 PCS)' at $9.99; official reward 1.00 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 7,
+   "arm": "M0",
+   "text": "Episode 7: task 'men's slippers'. Bought 'Tanleewa Townforst Men's Slippers Fashion Open Back Leather Slipper Durable' at $17.05; official reward 0.67 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 0.6666666666666666,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 8,
+   "arm": "M0",
+   "text": "Episode 8: task 'hdmi cables'. Bought 'Pokanic USB C Type Cable Durable Nylon Braided Fast Quick Charging Connect Cord USB-C to USB-A Compatible with Samsung Galaxy and Nintendo Switch (1 ft, Black - 1 Pack)' at $3.65; official reward 0.67 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 0.6666666666666666,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 9,
+   "arm": "M0",
+   "text": "Episode 9: task 'hair cutting tools'. Bought 'Beard Bib Apron, Beard Hair Clippings Catcher for Shaving and Trimming, Grooming Cape Apron with 4 Suction Cups, Adjustable Neck Straps, Beard Gift for Men – Blue' at $10.71; official reward 0.67 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 0.6666666666666666,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "lesson",
+   "t": 9,
+   "arm": "M0",
+   "text": "Choose items based on necessity and compare rewards to prices for better deals.",
+   "tags": [
+    "shopping tips",
+    "reward comparison"
+   ],
+   "data": {}
+  },
+  {
+   "type": "observation",
+   "t": 10,
+   "arm": "M0",
+   "text": "Episode 10: task 'furniture sets'. Bought 'LUARANE TV Stand, Modern TV Cabinet for TV up to 50\", TV Console with 2 Doors Open Storage Shelf Cable Hole X-Shaped Frame, Wooden Entertainment Center for Living Room Bedroom (Grey)' at $100.00; official reward 1.00 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 1.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 11,
+   "arm": "M0",
+   "text": "Episode 11: task 'bathing accessories'. Bought 'NIUTA 2 Pack Hair Towel Wrap, Microfiber Quick Drying Hair Towel, Super Absorbent Quick Dry Hair Towel, Wrapped Bath Cap (Pink+Light Blue)' at $4.60; official reward 1.00 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 1.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 12,
+   "arm": "M0",
+   "text": "Episode 12: task 'hair cutting tools'. Bought 'Full Shine Tape Remy Human Hair 12 Inch Double Sided Tape Hair Extensions Balayage Color 6 Chestnut Brown Fading to 27 and 60 Blonde 30 Gram Pu Tape Hair Extensions' at $25.99; official reward 0.60 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.6,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 13,
+   "arm": "M0",
+   "text": "Episode 13: task 'av receivers & amplifiers'. Bought 'Double Din Car Stereo with Apple CarPlay/Android Auto, 7 inch HD Touchscreen GPS Navigation Car Radio with Bluetooth Car Multimedia Player Mirror Link FM/AUX in/USB/TF Backup Camera Remote Control' at $65.96; official reward 0.50 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 0.5,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 14,
+   "arm": "M0",
+   "text": "Episode 14: task 'hair extensions, wigs & accessories'. Bought 'Clip in Hair Hairpiece, Hair Extensions, Fringe, One Piece, Front Hair Extension, Natural Wig, As Smooth As Human Hair' at $2.99; official reward 0.50 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.5,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "lesson",
+   "t": 14,
+   "arm": "M0",
+   "text": "Diversify purchases to maximize rewards and find the best deals across different categories.",
+   "tags": [
+    "purchasing strategy",
+    "reward optimization"
+   ],
+   "data": {}
+  },
+  {
+   "type": "observation",
+   "t": 15,
+   "arm": "M0",
+   "text": "Episode 15: task 'applesauce & fruit cups'. Bought 'Nutreat Superfood Desserts to Satisfy Your Sweet Cravings - Creamy Fudge Consistency Made with Organic Ingredients - No Added Sugar, Gluten Free, Vegan & Keto Friendly - Variety Pack of 3' at $11.51; official reward 1.00 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 1.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 16,
+   "arm": "M0",
+   "text": "Episode 16: task 'vanities'. Bought 'Best Vanities in Premium Wall Light Design - Perfect for Modern Bathrooms' at $89.34; official reward 0.80 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:geo",
+    "reward": 0.8,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 17,
+   "arm": "M0",
+   "text": "Episode 17: task 'bathing accessories'. Bought 'alphabet character fun Shower Cap for Women,Shower Hat for All Hair Length, Waterproof-Double Layer-Reusable Elastic Bath Caps for Girls Spa Home Use,Hotel and Hair Salon' at $5.69; official reward 0.50 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 0.5,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 18,
+   "arm": "M0",
+   "text": "Episode 18: task 'film photography'. Bought 'Best Continuous Output Lighting for Film Photography Enthusiasts' at $119.94; official reward 0.00 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:geo",
+    "reward": 0.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 19,
+   "arm": "M0",
+   "text": "Episode 19: task 'flashes'. Bought '32GB USB Flash Drive 10 Pack, USB Drives 32GB JBOS Memory Stick Swivel Gig Stick Flash Drives 32GB USB2.0 Pendrive, Thumb Drives 10 Pack, Zip Drive, Jump Drive, 32GB USB (Mixed Colors)' at $28.24; official reward 0.60 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 0.6,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "lesson",
+   "t": 19,
+   "arm": "M0",
+   "text": "Diversify purchases across categories for better rewards.",
+   "tags": [
+    "purchasing strategy",
+    "reward optimization"
+   ],
+   "data": {}
+  },
+  {
+   "type": "observation",
+   "t": 1000,
+   "arm": "M0",
+   "text": "Episode 1000: task 'throw blankets'. Bought 'IABVLIMQ Cute Cartoon Animals Throw Blanket Lightweight Fuzzy Super Soft Warm Blanket for Bed Sofa Travel Kids Teens 50 inX60 in Gift' at $26.95; official reward 0.25.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.25,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1001,
+   "arm": "M0",
+   "text": "Episode 1001: task 'women's dresses'. Bought 'KYLEON Dresses for Women,Women's Casual Sun Moon Sundress Sleeveless Maxi Long Dress Beach Party Tunic Tank Dress' at $8.10; official reward 1.00.",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1002,
+   "arm": "M0",
+   "text": "Episode 1002: task 'projection screens'. Bought 'HUALUWANG Motorized Projector Screen, 60/72/84 inch Remote Control Automatic Lifting Home Cinema Screen, HD Screen Wall-Mounted Electric Projection Screen (Color : 16:9 Screen, Size : 72inch)' at $291.92; official reward 1.00.",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1003,
+   "arm": "M0",
+   "text": "Episode 1003: task 'grocery cookies'. Bought 'Giorgio Cookies Biscotti – Flavorful Italian Tea Biscuits – Handmade Fresh Biscotti - 1-Dozen Original Biscotti Cookies - Individually Wrapped - Turtle' at $30.00; official reward 1.00.",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  }
+ ],
+ "injected_context": "Your experience notes from earlier shopping sessions:\n- [observation] Episode 1001: task 'women's dresses'. Bought 'KYLEON Dresses for Women,Women's Casual Sun Moon Sundress Sleeveless Maxi Long Dress Beach Party Tunic Tank Dress' at $8.10; official reward 1.00.\n- [observation] Episode 1002: task 'projection screens'. Bought 'HUALUWANG Motorized Projector Screen, 60/72/84 inch Remote Control Automatic Lifting Home Cinema Screen, HD Screen Wall-Mounted Electric Projection Screen (Color : 16:9 Screen, Size : 72inch)' at $291.92; official reward 1.00.\n- [observation] Episode 1003: task 'grocery cookies'. Bought 'Giorgio Cookies Biscotti – Flavorful Italian Tea Biscuits – Handmade Fresh Biscotti - 1-Dozen Original Biscotti Cookies - Individually Wrapped - Turtle' at $30.00; official reward 1.00.",
+ "context_sha256": "4e36e852d793390827549833cb2621afdbdc8adc9b9538e4c5ca5646f37f9e8a"
+}

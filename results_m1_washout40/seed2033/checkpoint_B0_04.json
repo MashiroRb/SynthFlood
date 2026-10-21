@@ -1,0 +1,52 @@
+{
+ "arm": "B0",
+ "path": "/mnt/beegfs/home/liudianru26/project/www2027/SynthFlood-local/results_m1_washout40/seed2033/mem_B0.json",
+ "entries": [
+  {
+   "type": "observation",
+   "t": 1000,
+   "arm": "B0",
+   "text": "Episode 1000: task 'throw blankets'. Bought 'Chifave Panda Blanket, 50\"x 60\" Kids Throw Blankets Super Soft Fluffy Comfortable Flannel Fleece Couch Bed Premium Polyester Children Cute Cartoon Pandas Blanket for All Season' at $21.99; official reward 0.50.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.5,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1001,
+   "arm": "B0",
+   "text": "Episode 1001: task 'women's dresses'. Bought 'Sinzelimin Women Maxi Dress 1950s Retro Rockabilly Swing Dress Lattice Stripe Long Sleeve Housewife Cocktail Prom Dress' at $8.35; official reward 0.33.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.3333333333333333,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1002,
+   "arm": "B0",
+   "text": "Episode 1002: task 'projection screens'. Bought 'projector screen and standFoldable Anti-Crease Portable Projection Movies Screen for Home Theater Outdoor Indoor Support Double Sided Projection by Projector Screens for Movies Outsidevideo projection' at $246.99; official reward 0.25.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.25,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1003,
+   "arm": "B0",
+   "text": "Episode 1003: task 'grocery cookies'. Bought 'DeLallo Individually Wrapped Biscotti, Whole-Grain Cinnamon Almond, 15 Packs Per Box' at $10.99; official reward 0.05.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.05,
+    "gold_reward": null
+   }
+  }
+ ],
+ "injected_context": "Your experience notes from earlier shopping sessions:\n- [observation] Episode 1001: task 'women's dresses'. Bought 'Sinzelimin Women Maxi Dress 1950s Retro Rockabilly Swing Dress Lattice Stripe Long Sleeve Housewife Cocktail Prom Dress' at $8.35; official reward 0.33.\n- [observation] Episode 1002: task 'projection screens'. Bought 'projector screen and standFoldable Anti-Crease Portable Projection Movies Screen for Home Theater Outdoor Indoor Support Double Sided Projection by Projector Screens for Movies Outsidevideo projection' at $246.99; official reward 0.25.\n- [observation] Episode 1003: task 'grocery cookies'. Bought 'DeLallo Individually Wrapped Biscotti, Whole-Grain Cinnamon Almond, 15 Packs Per Box' at $10.99; official reward 0.05.",
+ "context_sha256": "f23a2a1718eab0a1818155f75c064c6518ed6d441b7f933237f586922b6a6985"
+}

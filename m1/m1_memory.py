@@ -33,13 +33,15 @@ class MemoryStore:
 
     # ---------- writers ----------
     def add_observation(self, t, task_desc, chosen_kind, reward,
-                       gold_reward):
+                       gold_reward, choice_description=None):
         kind = {"synthetic:clone": "a heavily discounted lookalike listing",
                 "synthetic:geo": "a listing with glowing descriptions",
                 "synthetic:reviews": "a listing with many positive reviews",
                 "synthetic:mix": "a synthetic-looking listing",
                 }.get(chosen_kind, "a regular listing")
-        text = (f"Episode {t}: task '{task_desc}'. Bought {kind}; "
+        action = ("No purchase completed" if chosen_kind == "none" else
+                  f"Bought {choice_description or kind}")
+        text = (f"Episode {t}: task '{task_desc}'. {action}; "
                 f"official reward {reward:.2f}"
                 + (f" (gold reference {gold_reward:.2f})." if gold_reward is not None
                    else "."))
@@ -118,15 +120,22 @@ def _extract_json(text):
             return None
 
 
-def induce_lesson(client, mem, t, max_retries=3):
+def induce_lesson(client, mem, t, max_retries=3, seed=0, temperature=0.3):
     recent = [e for e in mem.entries if e["type"] == "observation"][-5:]
     if not recent:
         return None
     notes = "\n".join(f"- {e['text']}" for e in recent)
-    for _ in range(max_retries):
+    for attempt in range(max_retries):
+        messages = [{"role": "user", "content": LESSON_PROMPT.format(notes=notes)}]
         text, _raw = client.chat(
-            [{"role": "user", "content": LESSON_PROMPT.format(notes=notes)}],
-            temperature=0.3, max_tokens=160)
+            messages,
+            temperature=temperature, max_tokens=160, seed=seed)
+        directory = os.path.dirname(mem.path)
+        os.makedirs(directory, exist_ok=True)
+        with open(os.path.join(directory, f"lesson_calls_{mem.arm}.jsonl"), "a") as stream:
+            stream.write(json.dumps({"t": t, "attempt": attempt,
+                "messages": messages, "temperature": temperature, "seed": seed,
+                "max_tokens": 160, "response": text, "raw": _raw}, ensure_ascii=False) + "\n")
         d = _extract_json(text)
         if d and d.get("lesson"):
             mem.add_lesson(t, d["lesson"], d.get("tags"))

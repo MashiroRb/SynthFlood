@@ -1,0 +1,85 @@
+{
+ "arm": "B0",
+ "path": "/mnt/beegfs/home/liudianru26/project/www2027/SynthFlood-local/results_m1_washout40/seed2032/mem_B0.json",
+ "entries": [
+  {
+   "type": "observation",
+   "t": 1000,
+   "arm": "B0",
+   "text": "Episode 1000: task 'throw blankets'. Bought 'Custom Name Blankets for Baby Boys Girls - Personalized Baby Blankets with Dinosaur Design for Kids - Throw Blanket with Cute Animal - Customized Swadding Blanket for Toddler Super Soft 30\"x40\"' at $20.99; official reward 0.50.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.5,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1001,
+   "arm": "B0",
+   "text": "Episode 1001: task 'women's dresses'. No purchase completed; official reward 0.00.",
+   "data": {
+    "chosen_kind": "none",
+    "reward": 0.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1002,
+   "arm": "B0",
+   "text": "Episode 1002: task 'projection screens'. Bought 'HUALUWANG Motorized Projector Screen, 60/72/84 inch Remote Control Automatic Lifting Home Cinema Screen, HD Screen Wall-Mounted Electric Projection Screen (Color : 16:9 Screen, Size : 72inch)' at $291.92; official reward 1.00.",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1003,
+   "arm": "B0",
+   "text": "Episode 1003: task 'grocery cookies'. Bought 'Dibella Gourmet Biscotti, Cherry Chocolate' at $14.79; official reward 0.03.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.025,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1004,
+   "arm": "B0",
+   "text": "Episode 1004: task 'throw blankets'. No purchase completed; official reward 0.00.",
+   "data": {
+    "chosen_kind": "none",
+    "reward": 0.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "lesson",
+   "t": 1004,
+   "arm": "B0",
+   "text": "Select tasks with clear purchase opportunities for better rewards.",
+   "tags": [
+    "purchase opportunities",
+    "rewards"
+   ],
+   "data": {}
+  },
+  {
+   "type": "observation",
+   "t": 1005,
+   "arm": "B0",
+   "text": "Episode 1005: task 'party mix'. Bought 'Martha White Cotton Country Buttermilk Cornbread Mix, 6 oz' at $5.32; official reward 0.00.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.0,
+    "gold_reward": null
+   }
+  }
+ ],
+ "injected_context": "Your experience notes from earlier shopping sessions:\n- [observation] Episode 1004: task 'throw blankets'. No purchase completed; official reward 0.00.\n- [lesson] Select tasks with clear purchase opportunities for better rewards.\n- [observation] Episode 1005: task 'party mix'. Bought 'Martha White Cotton Country Buttermilk Cornbread Mix, 6 oz' at $5.32; official reward 0.00.",
+ "context_sha256": "dbc1facdf9d4f6d4bd49c5d323f7232071a4755fa8584bc8d2eee039c900bd3c"
+}

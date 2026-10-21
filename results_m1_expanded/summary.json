@@ -1,0 +1,460 @@
+{
+  "protocol": "m1/EXPANDED_PARITY_PROTOCOL.md",
+  "n_pairs": 452,
+  "n_gold_asins": 305,
+  "seeds": [
+    2030,
+    2031,
+    2032,
+    2033,
+    2034,
+    2035,
+    2036,
+    2037
+  ],
+  "primary_all_gold_macro_clean20": {
+    "n_trajectories": 8,
+    "values": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mean": 0.0,
+    "bootstrap95": [
+      0.0,
+      0.0
+    ],
+    "bootstrap90": [
+      0.0,
+      0.0
+    ],
+    "sign_flip_two_sided_p": 1.0,
+    "conditional_on": "Fixed goals, exam candidates, exposure text pool and frozen backend; seed-level randomization only."
+  },
+  "acquisition_all_gold_macro_clean0": {
+    "n_trajectories": 8,
+    "values": [
+      0.019167080642490397,
+      0.013171054810399041,
+      0.002265275707898584,
+      0.03888392117900308,
+      0.03500413975823813,
+      0.041967213114754154,
+      0.0032803444278853844,
+      0.042654412982281786
+    ],
+    "mean": 0.02454918032786882,
+    "bootstrap95": [
+      0.013283242258652045,
+      0.03539076730418934
+    ],
+    "bootstrap90": [
+      0.015006012998840823,
+      0.033684177844013896
+    ],
+    "sign_flip_two_sided_p": 0.0078125,
+    "conditional_on": "Fixed goals, exam candidates, exposure text pool and frozen backend; seed-level randomization only."
+  },
+  "effects": {
+    "all": {
+      "micro": {
+        "0": {
+          "n_trajectories": 8,
+          "values": [
+            0.0,
+            0.015486725663716783,
+            0.0022123893805309214,
+            0.03539823008849552,
+            0.03982300884955747,
+            0.02654867256637161,
+            -0.004424778761061954,
+            0.03982300884955747
+          ],
+          "mean": 0.01935840707964598,
+          "bootstrap95": [
+            0.007190265486725647,
+            0.03124999999999996
+          ],
+          "bootstrap90": [
+            0.009126106194690245,
+            0.029590707964601712
+          ],
+          "sign_flip_two_sided_p": 0.046875,
+          "conditional_on": "Fixed goals, exam candidates, exposure text pool and frozen backend; seed-level randomization only."
+        },
+        "20": {
+          "n_trajectories": 8,
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ],
+          "bootstrap90": [
+            0.0,
+            0.0
+          ],
+          "sign_flip_two_sided_p": 1.0,
+          "conditional_on": "Fixed goals, exam candidates, exposure text pool and frozen backend; seed-level randomization only."
+        }
+      },
+      "macro": {
+        "0": {
+          "n_trajectories": 8,
+          "values": [
+            0.019167080642490397,
+            0.013171054810399041,
+            0.002265275707898584,
+            0.03888392117900308,
+            0.03500413975823813,
+            0.041967213114754154,
+            0.0032803444278853844,
+            0.042654412982281786
+          ],
+          "mean": 0.02454918032786882,
+          "bootstrap95": [
+            0.013283242258652045,
+            0.03539076730418934
+          ],
+          "bootstrap90": [
+            0.015006012998840823,
+            0.033684177844013896
+          ],
+          "sign_flip_two_sided_p": 0.0078125,
+          "conditional_on": "Fixed goals, exam candidates, exposure text pool and frozen backend; seed-level randomization only."
+        },
+        "20": {
+          "n_trajectories": 8,
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ],
+          "bootstrap90": [
+            0.0,
+            0.0
+          ],
+          "sign_flip_two_sided_p": 1.0,
+          "conditional_on": "Fixed goals, exam candidates, exposure text pool and frozen backend; seed-level randomization only."
+        }
+      }
+    },
+    "old36": {
+      "micro": {
+        "0": {
+          "n_trajectories": 8,
+          "values": [
+            -0.08333333333333326,
+            0.11111111111111116,
+            0.02777777777777779,
+            0.0,
+            -0.05555555555555547,
+            0.02777777777777779,
+            0.11111111111111116,
+            0.05555555555555558
+          ],
+          "mean": 0.024305555555555594,
+          "bootstrap95": [
+            -0.020833333333333287,
+            0.06944444444444448
+          ],
+          "bootstrap90": [
+            -0.01388888888888884,
+            0.06250000000000003
+          ],
+          "sign_flip_two_sided_p": 0.421875,
+          "conditional_on": "Fixed goals, exam candidates, exposure text pool and frozen backend; seed-level randomization only."
+        },
+        "20": {
+          "n_trajectories": 8,
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ],
+          "bootstrap90": [
+            0.0,
+            0.0
+          ],
+          "sign_flip_two_sided_p": 1.0,
+          "conditional_on": "Fixed goals, exam candidates, exposure text pool and frozen backend; seed-level randomization only."
+        }
+      },
+      "macro": {
+        "0": {
+          "n_trajectories": 8,
+          "values": [
+            0.06753246753246755,
+            0.07012987012987015,
+            0.051948051948052076,
+            -0.038961038961038974,
+            -0.17229437229437217,
+            0.10952380952380958,
+            0.04632034632034632,
+            0.0181818181818183
+          ],
+          "mean": 0.019047619047619105,
+          "bootstrap95": [
+            -0.04545454545454536,
+            0.06845238095238097
+          ],
+          "bootstrap90": [
+            -0.03317370129870125,
+            0.06282467532467541
+          ],
+          "sign_flip_two_sided_p": 0.5625,
+          "conditional_on": "Fixed goals, exam candidates, exposure text pool and frozen backend; seed-level randomization only."
+        },
+        "20": {
+          "n_trajectories": 8,
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ],
+          "bootstrap90": [
+            0.0,
+            0.0
+          ],
+          "sign_flip_two_sided_p": 1.0,
+          "conditional_on": "Fixed goals, exam candidates, exposure text pool and frozen backend; seed-level randomization only."
+        }
+      }
+    },
+    "added": {
+      "micro": {
+        "0": {
+          "n_trajectories": 8,
+          "values": [
+            0.007211538461538436,
+            0.007211538461538436,
+            0.0,
+            0.038461538461538436,
+            0.04807692307692302,
+            0.02644230769230771,
+            -0.014423076923076983,
+            0.038461538461538436
+          ],
+          "mean": 0.018930288461538436,
+          "bootstrap95": [
+            0.004507211538461509,
+            0.03305288461538458
+          ],
+          "bootstrap90": [
+            0.006911057692307654,
+            0.030949519230769204
+          ],
+          "sign_flip_two_sided_p": 0.078125,
+          "conditional_on": "Fixed goals, exam candidates, exposure text pool and frozen backend; seed-level randomization only."
+        },
+        "20": {
+          "n_trajectories": 8,
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ],
+          "bootstrap90": [
+            0.0,
+            0.0
+          ],
+          "sign_flip_two_sided_p": 1.0,
+          "conditional_on": "Fixed goals, exam candidates, exposure text pool and frozen backend; seed-level randomization only."
+        }
+      },
+      "macro": {
+        "0": {
+          "n_trajectories": 8,
+          "values": [
+            0.01588693957115006,
+            0.009454191033138382,
+            -0.0008771929824561431,
+            0.04483430799220267,
+            0.050682261208576995,
+            0.0368421052631579,
+            9.74658869394851e-05,
+            0.04483430799220267
+          ],
+          "mean": 0.025219298245614002,
+          "bootstrap95": [
+            0.01120857699805064,
+            0.0390594541910331
+          ],
+          "bootstrap90": [
+            0.013352826510721226,
+            0.03685428849902532
+          ],
+          "sign_flip_two_sided_p": 0.0234375,
+          "conditional_on": "Fixed goals, exam candidates, exposure text pool and frozen backend; seed-level randomization only."
+        },
+        "20": {
+          "n_trajectories": 8,
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "bootstrap95": [
+            0.0,
+            0.0
+          ],
+          "bootstrap90": [
+            0.0,
+            0.0
+          ],
+          "sign_flip_two_sided_p": 1.0,
+          "conditional_on": "Fixed goals, exam candidates, exposure text pool and frozen backend; seed-level randomization only."
+        }
+      }
+    }
+  },
+  "memory_states": [
+    {
+      "seed": 2030,
+      "checkpoint": 0,
+      "same_injected_context": false
+    },
+    {
+      "seed": 2030,
+      "checkpoint": 20,
+      "same_injected_context": true
+    },
+    {
+      "seed": 2031,
+      "checkpoint": 0,
+      "same_injected_context": false
+    },
+    {
+      "seed": 2031,
+      "checkpoint": 20,
+      "same_injected_context": true
+    },
+    {
+      "seed": 2032,
+      "checkpoint": 0,
+      "same_injected_context": false
+    },
+    {
+      "seed": 2032,
+      "checkpoint": 20,
+      "same_injected_context": true
+    },
+    {
+      "seed": 2033,
+      "checkpoint": 0,
+      "same_injected_context": false
+    },
+    {
+      "seed": 2033,
+      "checkpoint": 20,
+      "same_injected_context": true
+    },
+    {
+      "seed": 2034,
+      "checkpoint": 0,
+      "same_injected_context": false
+    },
+    {
+      "seed": 2034,
+      "checkpoint": 20,
+      "same_injected_context": true
+    },
+    {
+      "seed": 2035,
+      "checkpoint": 0,
+      "same_injected_context": false
+    },
+    {
+      "seed": 2035,
+      "checkpoint": 20,
+      "same_injected_context": true
+    },
+    {
+      "seed": 2036,
+      "checkpoint": 0,
+      "same_injected_context": false
+    },
+    {
+      "seed": 2036,
+      "checkpoint": 20,
+      "same_injected_context": true
+    },
+    {
+      "seed": 2037,
+      "checkpoint": 0,
+      "same_injected_context": false
+    },
+    {
+      "seed": 2037,
+      "checkpoint": 20,
+      "same_injected_context": true
+    }
+  ],
+  "inconsistent_identical_inputs": 0,
+  "no_purchase_main": 2,
+  "total_main_exams": 14464,
+  "sentinel_exams": 256,
+  "B0_shopping_episodes": 160,
+  "M0_shopping_source": "existing v2 frozen states; no new shopping",
+  "quality_clone_ge_gold": 94
+}

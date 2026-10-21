@@ -1,0 +1,4759 @@
+{
+  "seeds": [
+    2030,
+    2031,
+    2032,
+    2033,
+    2034,
+    2035,
+    2036,
+    2037
+  ],
+  "checkpoints": [
+    0,
+    20
+  ],
+  "n_pairs": 452,
+  "n_gold_asins": 305,
+  "old36": [
+    "290",
+    "291",
+    "294",
+    "295",
+    "296",
+    "299",
+    "300",
+    "301",
+    "302",
+    "303",
+    "304",
+    "305",
+    "306",
+    "307",
+    "308",
+    "309",
+    "310",
+    "311",
+    "312",
+    "313",
+    "314",
+    "315",
+    "316",
+    "317",
+    "318",
+    "319",
+    "320",
+    "321",
+    "322",
+    "323",
+    "324",
+    "325",
+    "326",
+    "327",
+    "328",
+    "329"
+  ],
+  "sentinel_pairs": [
+    "6",
+    "40",
+    "55",
+    "93",
+    "94",
+    "95",
+    "167",
+    "180",
+    "206",
+    "209",
+    "239",
+    "312",
+    "328",
+    "346",
+    "419",
+    "427"
+  ],
+  "dispositions": [
+    {
+      "pair_idx": 0,
+      "gold_asin": "B071DV6H98",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 1,
+      "gold_asin": "B08NX18SV4",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 2,
+      "gold_asin": "B07B8BBFKL",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 3,
+      "gold_asin": "B001E0XSAE",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 4,
+      "gold_asin": "B0771L6DB1",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 5,
+      "gold_asin": "B004AI97MA",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 6,
+      "gold_asin": "B083GGC2N9",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 7,
+      "gold_asin": "B09LGX32ZW",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 8,
+      "gold_asin": "B01FHVTQNS",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 9,
+      "gold_asin": "B001E5D0GQ",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 10,
+      "gold_asin": "B001E5D0GQ",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 11,
+      "gold_asin": "B001E5D0GQ",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 12,
+      "gold_asin": "B01FHVTQNS",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 13,
+      "gold_asin": "B01FHVTQNS",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 14,
+      "gold_asin": "B01FHVTQNS",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 15,
+      "gold_asin": "B098Q9MZ83",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 16,
+      "gold_asin": "B07CMBP6W2",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 17,
+      "gold_asin": "B09R1KJYT5",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 18,
+      "gold_asin": "B08RRZ2F57",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 19,
+      "gold_asin": "B084Z7CNH9",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 20,
+      "gold_asin": "B07FD4XRJB",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 21,
+      "gold_asin": "B097BHDYZD",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 22,
+      "gold_asin": "B08R7W464K",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 23,
+      "gold_asin": "B08R7W464K",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 24,
+      "gold_asin": "B06Y3Z56DR",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 25,
+      "gold_asin": "B09SYXW2PB",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 26,
+      "gold_asin": "B09SYXW2PB",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 27,
+      "gold_asin": "B09SYXW2PB",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 28,
+      "gold_asin": "B09SYXW2PB",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 29,
+      "gold_asin": "B07ZFCWHCF",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 30,
+      "gold_asin": "B09LR9LHPG",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 31,
+      "gold_asin": "B07Z647R7C",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 32,
+      "gold_asin": "B07Z647R7C",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 33,
+      "gold_asin": "B0861CRGQV",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 34,
+      "gold_asin": "B078JKD43Y",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 35,
+      "gold_asin": "B09S1C5Q4K",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 36,
+      "gold_asin": "B07MJM2ZKY",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 37,
+      "gold_asin": "B07SG76JPK",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 38,
+      "gold_asin": "B07SG76JPK",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 39,
+      "gold_asin": "B08BNGNKW7",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 40,
+      "gold_asin": "B08QRVN886",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 41,
+      "gold_asin": "B07JJCNH26",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 42,
+      "gold_asin": "B0859P9F6C",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 43,
+      "gold_asin": "B00PUEV4CE",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 44,
+      "gold_asin": "B07XVRZR4P",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 45,
+      "gold_asin": "B00RZTITAC",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 46,
+      "gold_asin": "B00RZTITAC",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 47,
+      "gold_asin": "B015ND5QJS",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 48,
+      "gold_asin": "B015ND5QJS",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 49,
+      "gold_asin": "B015ND5QJS",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 50,
+      "gold_asin": "B015ND5QJS",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 51,
+      "gold_asin": "B015ND5QJS",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 52,
+      "gold_asin": "B015ND5QJS",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 53,
+      "gold_asin": "B09NBQ9WG3",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 54,
+      "gold_asin": "B095KSXGZX",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 55,
+      "gold_asin": "B007TVSUUK",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 56,
+      "gold_asin": "B08N9S7DVZ",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 57,
+      "gold_asin": "B08VF6NHJ4",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 58,
+      "gold_asin": "B09QSRNP3T",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 59,
+      "gold_asin": "B08C543HDX",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 60,
+      "gold_asin": "B08CXFN5QM",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 61,
+      "gold_asin": "B094D7Y66B",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 62,
+      "gold_asin": "B09H3Z8QVF",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 63,
+      "gold_asin": "B084CVRFYL",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 64,
+      "gold_asin": "B01LYTO6V1",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 65,
+      "gold_asin": "B08C742D94",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 66,
+      "gold_asin": "B08C742D94",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 67,
+      "gold_asin": "B08C742D94",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 68,
+      "gold_asin": "B07YLDTTP1",
+      "excluded_reasons": [
+        "no_archived_parity_clone"
+      ]
+    },
+    {
+      "pair_idx": 69,
+      "gold_asin": "B07YLDTTP1",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 70,
+      "gold_asin": "B07YLDTTP1",
+      "excluded_reasons": [
+        "no_archived_parity_clone"
+      ]
+    },
+    {
+      "pair_idx": 71,
+      "gold_asin": "B09P6CDSG5",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 72,
+      "gold_asin": "B07YST7545",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 73,
+      "gold_asin": "B086JS4HJF",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 74,
+      "gold_asin": "B08N5CBMDM",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 75,
+      "gold_asin": "B08N5CBMDM",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 76,
+      "gold_asin": "B011M8UDA0",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 77,
+      "gold_asin": "B07N33D4TH",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 78,
+      "gold_asin": "B07N34HVW3",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 79,
+      "gold_asin": "B07THFBCJK",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 80,
+      "gold_asin": "B09BTN8F47",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 81,
+      "gold_asin": "B07C812LHQ",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 82,
+      "gold_asin": "B09M8H129Q",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 83,
+      "gold_asin": "B09M8H129Q",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 84,
+      "gold_asin": "B09M8H129Q",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 85,
+      "gold_asin": "B08WHCWVJW",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 86,
+      "gold_asin": "B099MLG9SN",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 87,
+      "gold_asin": "B09LVQ3T86",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 88,
+      "gold_asin": "B09LVQ3T86",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 89,
+      "gold_asin": "B09MMYY1WG",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 90,
+      "gold_asin": "B08L8Z6N16",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 91,
+      "gold_asin": "B0918YYZBV",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 92,
+      "gold_asin": "B09FLSNYWQ",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 93,
+      "gold_asin": "B09FLSNYWQ",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 94,
+      "gold_asin": "B07YG49L5F",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 95,
+      "gold_asin": "B07ML6CH7P",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 96,
+      "gold_asin": "B07ML6CH7P",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 97,
+      "gold_asin": "B09NC39NKL",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 98,
+      "gold_asin": "B001VJ70UC",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 99,
+      "gold_asin": "B001VJ70UC",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 100,
+      "gold_asin": "B00N8KT1J0",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 101,
+      "gold_asin": "B00VBNQJLY",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 102,
+      "gold_asin": "B01F7B0ZLU",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 103,
+      "gold_asin": "B077JT9MWC",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 104,
+      "gold_asin": "B073H4R7V8",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 105,
+      "gold_asin": "B08KVZP9LB",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 106,
+      "gold_asin": "B01M4IJHRC",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 107,
+      "gold_asin": "B08Y6R25N5",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 108,
+      "gold_asin": "B09RN93XLV",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 109,
+      "gold_asin": "B09RN93XLV",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 110,
+      "gold_asin": "B09RN93XLV",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 111,
+      "gold_asin": "B015QLCI7A",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 112,
+      "gold_asin": "B09J81RMLD",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 113,
+      "gold_asin": "B08F6HWPLJ",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 114,
+      "gold_asin": "B09QSVTP34",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 115,
+      "gold_asin": "B09RB2JZ6D",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 116,
+      "gold_asin": "B09RB2JZ6D",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 117,
+      "gold_asin": "B06XCKNR17",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 118,
+      "gold_asin": "B09Q5XSLVZ",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 119,
+      "gold_asin": "B09Q5XSLVZ",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 120,
+      "gold_asin": "B08C9S7K81",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 121,
+      "gold_asin": "B00OGQY8Y8",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 122,
+      "gold_asin": "B09Q84JC6K",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 123,
+      "gold_asin": "B08HHRCV7H",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 124,
+      "gold_asin": "B09B94Q73Z",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 125,
+      "gold_asin": "B09B94Q73Z",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 126,
+      "gold_asin": "B09B94Q73Z",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 127,
+      "gold_asin": "B0843R2PHK",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 128,
+      "gold_asin": "B09KZNFD8T",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 129,
+      "gold_asin": "B085WB9KBK",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 130,
+      "gold_asin": "B09QCYJ2QM",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 131,
+      "gold_asin": "B07XC5LJV1",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 132,
+      "gold_asin": "B07D6RZQD3",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 133,
+      "gold_asin": "B09SG3LJLK",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 134,
+      "gold_asin": "B081H93CSY",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 135,
+      "gold_asin": "B081H93CSY",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 136,
+      "gold_asin": "B099CPDVHK",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 137,
+      "gold_asin": "B09F2DS41B",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 138,
+      "gold_asin": "B07B7BV15N",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 139,
+      "gold_asin": "B07B7BV15N",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 140,
+      "gold_asin": "B07B7BV15N",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 141,
+      "gold_asin": "B08THK9ZSB",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 142,
+      "gold_asin": "B09ML2WVBK",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 143,
+      "gold_asin": "B09RQ6D2XX",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 144,
+      "gold_asin": "B00O6DHOCY",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 145,
+      "gold_asin": "B085Y48HZM",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 146,
+      "gold_asin": "B019MGTHFQ",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 147,
+      "gold_asin": "B08TR8N884",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 148,
+      "gold_asin": "B08TR8N884",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 149,
+      "gold_asin": "B0977MNS6P",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 150,
+      "gold_asin": "B0977MNS6P",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 151,
+      "gold_asin": "B099KRPB3M",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 152,
+      "gold_asin": "B09L47HSZD",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 153,
+      "gold_asin": "B09NFD1TYB",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 154,
+      "gold_asin": "B09NFD1TYB",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 155,
+      "gold_asin": "B09CLS963D",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 156,
+      "gold_asin": "B08H1Y41XM",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 157,
+      "gold_asin": "B0058HNT4O",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 158,
+      "gold_asin": "B078WXXKV5",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 159,
+      "gold_asin": "B00ZEBG8CY",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 160,
+      "gold_asin": "B08DTWTKTY",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 161,
+      "gold_asin": "B07ZDM9HBC",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 162,
+      "gold_asin": "B07QNF7GVB",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 163,
+      "gold_asin": "B0764L8XHW",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 164,
+      "gold_asin": "B0764L8XHW",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 165,
+      "gold_asin": "B0764L8XHW",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 166,
+      "gold_asin": "B08TLVTW38",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 167,
+      "gold_asin": "B019MH122Q",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 168,
+      "gold_asin": "B019MH122Q",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 169,
+      "gold_asin": "B07GWH4SDR",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 170,
+      "gold_asin": "B097WYZMV6",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 171,
+      "gold_asin": "B08DJ7PMV9",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 172,
+      "gold_asin": "B01IQX5E7G",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 173,
+      "gold_asin": "B083GQMJS3",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 174,
+      "gold_asin": "B083GQMJS3",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 175,
+      "gold_asin": "B083GQMJS3",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 176,
+      "gold_asin": "B083GQMJS3",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 177,
+      "gold_asin": "B07X57RFW3",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 178,
+      "gold_asin": "B0143NQVP2",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 179,
+      "gold_asin": "B0143NQVP2",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 180,
+      "gold_asin": "B08PPNPJ9Q",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 181,
+      "gold_asin": "B07ZDVNYXD",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 182,
+      "gold_asin": "B09PH95SSN",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 183,
+      "gold_asin": "B086Z2QK25",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 184,
+      "gold_asin": "B07Q4DK92V",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 185,
+      "gold_asin": "B07Q4DK92V",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 186,
+      "gold_asin": "B083VZN11N",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 187,
+      "gold_asin": "B07J5S5Z9D",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 188,
+      "gold_asin": "B07J5S5Z9D",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 189,
+      "gold_asin": "B07MZ8T6TK",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 190,
+      "gold_asin": "B0773YNFTJ",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 191,
+      "gold_asin": "B09FRJPSRV",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 192,
+      "gold_asin": "B01LZ2I7EZ",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 193,
+      "gold_asin": "B01LZ2I7EZ",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 194,
+      "gold_asin": "B01LZ2I7EZ",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 195,
+      "gold_asin": "B01LZ2I7EZ",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 196,
+      "gold_asin": "B08Q7W5HZ9",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 197,
+      "gold_asin": "B08Q7W5HZ9",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 198,
+      "gold_asin": "B08Q7W5HZ9",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 199,
+      "gold_asin": "B08Q7W5HZ9",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 200,
+      "gold_asin": "B08Q7W5HZ9",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 201,
+      "gold_asin": "B09K3WGHPQ",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 202,
+      "gold_asin": "B09K3WGHPQ",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 203,
+      "gold_asin": "B082TNGSWD",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 204,
+      "gold_asin": "B07D6GFNG8",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 205,
+      "gold_asin": "B08QDRBN5X",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 206,
+      "gold_asin": "B08QDPGHBL",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 207,
+      "gold_asin": "B0817MVS98",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 208,
+      "gold_asin": "B000XB34TK",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 209,
+      "gold_asin": "B000XB34TK",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 210,
+      "gold_asin": "B075817VBP",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 211,
+      "gold_asin": "B075813R1S",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 212,
+      "gold_asin": "B075817VBP",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 213,
+      "gold_asin": "B075817VBP",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 214,
+      "gold_asin": "B075813R1S",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 215,
+      "gold_asin": "B07D33WVG4",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 216,
+      "gold_asin": "B01FRGFOHK",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 217,
+      "gold_asin": "B07Q4QY2B3",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 218,
+      "gold_asin": "B01LZSM2RW",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 219,
+      "gold_asin": "B088K6SFZ1",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 220,
+      "gold_asin": "B09D1ZMFBH",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 221,
+      "gold_asin": "B07B32DCCQ",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 222,
+      "gold_asin": "B093D82ZGC",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 223,
+      "gold_asin": "B09C3XS9N3",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 224,
+      "gold_asin": "B00H9V37Q2",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 225,
+      "gold_asin": "B01FGHY04I",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 226,
+      "gold_asin": "B01DN401DK",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 227,
+      "gold_asin": "B002U58PRI",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 228,
+      "gold_asin": "B08T8Q5JXC",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 229,
+      "gold_asin": "B087LNZ7P4",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 230,
+      "gold_asin": "B0758FXDS7",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 231,
+      "gold_asin": "B0758FXDS7",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 232,
+      "gold_asin": "B09BB2LHTT",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 233,
+      "gold_asin": "B07R4D5B4V",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 234,
+      "gold_asin": "B097TQG3F6",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 235,
+      "gold_asin": "B07QJ1GBZ3",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 236,
+      "gold_asin": "B09KY9P8CD",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 237,
+      "gold_asin": "B07FYT2X18",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 238,
+      "gold_asin": "B00BCG0OB6",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 239,
+      "gold_asin": "B00BCG0OB6",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 240,
+      "gold_asin": "B00BCG0OB6",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 241,
+      "gold_asin": "B09NM62G51",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 242,
+      "gold_asin": "B07C1VP88H",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 243,
+      "gold_asin": "B07C1VP88H",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 244,
+      "gold_asin": "B096FJX5RM",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 245,
+      "gold_asin": "B099DZH4P9",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 246,
+      "gold_asin": "B099DZH4P9",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 247,
+      "gold_asin": "B07FYL95K5",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 248,
+      "gold_asin": "B097BVKF24",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 249,
+      "gold_asin": "B08SQBV1F9",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 250,
+      "gold_asin": "B08R6RYX4J",
+      "excluded_reasons": [
+        "no_archived_parity_clone"
+      ]
+    },
+    {
+      "pair_idx": 251,
+      "gold_asin": "B09P9XB3W9",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 252,
+      "gold_asin": "B08BSWZJ4G",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 253,
+      "gold_asin": "B09D9RXRPG",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 254,
+      "gold_asin": "B01IDDRDRI",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 255,
+      "gold_asin": "B01IDDRDRI",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 256,
+      "gold_asin": "B07CWWTHN9",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 257,
+      "gold_asin": "B087D5W1B5",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 258,
+      "gold_asin": "B087D5W1B5",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 259,
+      "gold_asin": "B0719QLYF2",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 260,
+      "gold_asin": "B0719QLYF2",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 261,
+      "gold_asin": "B07CTC8F3F",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 262,
+      "gold_asin": "B09B22X8TN",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 263,
+      "gold_asin": "B09SKGVDWZ",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 264,
+      "gold_asin": "B09SKGVDWZ",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 265,
+      "gold_asin": "B09SKGVDWZ",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 266,
+      "gold_asin": "B09SKGVDWZ",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 267,
+      "gold_asin": "B09DPLKCW3",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 268,
+      "gold_asin": "B09DPLKCW3",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 269,
+      "gold_asin": "B09DPLKCW3",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 270,
+      "gold_asin": "B00I4WT6QU",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 271,
+      "gold_asin": "B09LSW7DJ1",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 272,
+      "gold_asin": "B09LSW7DJ1",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 273,
+      "gold_asin": "B09LSW7DJ1",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 274,
+      "gold_asin": "B09LSW7DJ1",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 275,
+      "gold_asin": "B00SKVJK1G",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 276,
+      "gold_asin": "B00SKVJK1G",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 277,
+      "gold_asin": "B07MJVB31T",
+      "excluded_reasons": [
+        "gold_is_shopping_target"
+      ]
+    },
+    {
+      "pair_idx": 278,
+      "gold_asin": "B08P4GMWJB",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 279,
+      "gold_asin": "B084NZ2GKF",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 280,
+      "gold_asin": "B084NZ2GKF",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 281,
+      "gold_asin": "B07XZ1VW78",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 282,
+      "gold_asin": "B09219DD59",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 283,
+      "gold_asin": "B08SCFN6ZG",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 284,
+      "gold_asin": "B07PV723CF",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 285,
+      "gold_asin": "B09LK4G5G2",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 286,
+      "gold_asin": "B09R96BLLY",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 287,
+      "gold_asin": "B09R96BLLY",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 288,
+      "gold_asin": "B09R96BLLY",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 289,
+      "gold_asin": "B09R96BLLY",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 290,
+      "gold_asin": "B09R96BLLY",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 291,
+      "gold_asin": "B09N79LQQF",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 292,
+      "gold_asin": "B09K7YCMYK",
+      "excluded_reasons": [
+        "gold_is_shopping_target"
+      ]
+    },
+    {
+      "pair_idx": 293,
+      "gold_asin": "B09K7YCMYK",
+      "excluded_reasons": [
+        "gold_is_shopping_target"
+      ]
+    },
+    {
+      "pair_idx": 294,
+      "gold_asin": "B074RVN91Q",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 295,
+      "gold_asin": "B0865SKG5G",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 296,
+      "gold_asin": "B07L9KXTM4",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 297,
+      "gold_asin": "B08FFBX4PP",
+      "excluded_reasons": [
+        "no_archived_parity_clone"
+      ]
+    },
+    {
+      "pair_idx": 298,
+      "gold_asin": "B08FFBX4PP",
+      "excluded_reasons": [
+        "no_archived_parity_clone"
+      ]
+    },
+    {
+      "pair_idx": 299,
+      "gold_asin": "B09BJL1232",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 300,
+      "gold_asin": "B01HJWDWP6",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 301,
+      "gold_asin": "B01HJWDWP6",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 302,
+      "gold_asin": "B01HJWDWP6",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 303,
+      "gold_asin": "B01HJWDWP6",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 304,
+      "gold_asin": "B01HJWDWP6",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 305,
+      "gold_asin": "B09S3QKSWW",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 306,
+      "gold_asin": "B09BZTJPZW",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 307,
+      "gold_asin": "B096RZ5DXK",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 308,
+      "gold_asin": "B07HPBFS5S",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 309,
+      "gold_asin": "B084ZT7Q8H",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 310,
+      "gold_asin": "B075TGSSSS",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 311,
+      "gold_asin": "B07NX259SR",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 312,
+      "gold_asin": "B08R6NCZ95",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 313,
+      "gold_asin": "B0781HSDTZ",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 314,
+      "gold_asin": "B08J1D47RV",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 315,
+      "gold_asin": "B09MLHK36S",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 316,
+      "gold_asin": "B09GFWF132",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 317,
+      "gold_asin": "B09GFWF132",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 318,
+      "gold_asin": "B076DL1VLG",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 319,
+      "gold_asin": "B00SZXFIEW",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 320,
+      "gold_asin": "B00SZXFIEW",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 321,
+      "gold_asin": "B00SZXFIEW",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 322,
+      "gold_asin": "B00SZXFIEW",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 323,
+      "gold_asin": "B00SZXFIEW",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 324,
+      "gold_asin": "B00SZXFIEW",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 325,
+      "gold_asin": "B00SZXFIEW",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 326,
+      "gold_asin": "B00SZXFIEW",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 327,
+      "gold_asin": "B00SZXFIEW",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 328,
+      "gold_asin": "B00SZXFIEW",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 329,
+      "gold_asin": "B00SZXFIEW",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 330,
+      "gold_asin": "B08CZKMDNX",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 331,
+      "gold_asin": "B004W55Y9Q",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 332,
+      "gold_asin": "B08G3S9TND",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 333,
+      "gold_asin": "B09JNS2BNK",
+      "excluded_reasons": [
+        "no_archived_parity_clone"
+      ]
+    },
+    {
+      "pair_idx": 334,
+      "gold_asin": "B07K7HZ5BD",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 335,
+      "gold_asin": "B09P89Z11V",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 336,
+      "gold_asin": "B0924HBQBF",
+      "excluded_reasons": [
+        "no_archived_parity_clone",
+        "no_official_goal_or_product"
+      ]
+    },
+    {
+      "pair_idx": 337,
+      "gold_asin": "B0924LVZ21",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 338,
+      "gold_asin": "B0924LVZ21",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 339,
+      "gold_asin": "B0924LVZ21",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 340,
+      "gold_asin": "B0924LVZ21",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 341,
+      "gold_asin": "B0924HBQBF",
+      "excluded_reasons": [
+        "no_archived_parity_clone",
+        "no_official_goal_or_product"
+      ]
+    },
+    {
+      "pair_idx": 342,
+      "gold_asin": "B09P89Z11V",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 343,
+      "gold_asin": "B099KG8HS8",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 344,
+      "gold_asin": "B084LPGQ46",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 345,
+      "gold_asin": "B00XS4M5NU",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 346,
+      "gold_asin": "B09QXS3MHQ",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 347,
+      "gold_asin": "B07MVKQHBJ",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 348,
+      "gold_asin": "B09B6VTZVK",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 349,
+      "gold_asin": "B092YZ1114",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 350,
+      "gold_asin": "B00P4GFA3C",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 351,
+      "gold_asin": "B00P4GFA3C",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 352,
+      "gold_asin": "B07X9Y42VX",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 353,
+      "gold_asin": "B07X9Y42VX",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 354,
+      "gold_asin": "B08BNCVRJT",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 355,
+      "gold_asin": "B0921FPJND",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 356,
+      "gold_asin": "B0921FPJND",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 357,
+      "gold_asin": "B01HJWELG0",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 358,
+      "gold_asin": "B01HJWDQWA",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 359,
+      "gold_asin": "B01HJWARWW",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 360,
+      "gold_asin": "B01HJWELG0",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 361,
+      "gold_asin": "B01HJWELG0",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 362,
+      "gold_asin": "B01HJWELG0",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 363,
+      "gold_asin": "B01HJWELG0",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 364,
+      "gold_asin": "B01HJWELG0",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 365,
+      "gold_asin": "B01HJWELG0",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 366,
+      "gold_asin": "B01HJWELG0",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 367,
+      "gold_asin": "B01HJWELG0",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 368,
+      "gold_asin": "B01HJWDQWA",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 369,
+      "gold_asin": "B01HJWARWW",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 370,
+      "gold_asin": "B01HJWDQWA",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 371,
+      "gold_asin": "B01HJWARWW",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 372,
+      "gold_asin": "B01HJWDQWA",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 373,
+      "gold_asin": "B01HJWARWW",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 374,
+      "gold_asin": "B01HJWDQWA",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 375,
+      "gold_asin": "B01HJWARWW",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 376,
+      "gold_asin": "B01HJWDQWA",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 377,
+      "gold_asin": "B01HJWARWW",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 378,
+      "gold_asin": "B01HJWDQWA",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 379,
+      "gold_asin": "B01HJWARWW",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 380,
+      "gold_asin": "B01HJWDQWA",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 381,
+      "gold_asin": "B01HJWARWW",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 382,
+      "gold_asin": "B01HJWDQWA",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 383,
+      "gold_asin": "B01HJWARWW",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 384,
+      "gold_asin": "B09MFYFTYF",
+      "excluded_reasons": [
+        "no_archived_parity_clone"
+      ]
+    },
+    {
+      "pair_idx": 385,
+      "gold_asin": "B01HJW7AHC",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 386,
+      "gold_asin": "B01HJW7AHC",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 387,
+      "gold_asin": "B01HJW7AHC",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 388,
+      "gold_asin": "B01HJWC5FE",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 389,
+      "gold_asin": "B01HJW66RW",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 390,
+      "gold_asin": "B01HJWC5FE",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 391,
+      "gold_asin": "B01HJWC5FE",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 392,
+      "gold_asin": "B01HJW66RW",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 393,
+      "gold_asin": "B01HJW66RW",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 394,
+      "gold_asin": "B09P5BMMQB",
+      "excluded_reasons": [
+        "no_archived_parity_clone",
+        "no_official_goal_or_product"
+      ]
+    },
+    {
+      "pair_idx": 395,
+      "gold_asin": "B01M34Z8YW",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 396,
+      "gold_asin": "B09RQQ8V11",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 397,
+      "gold_asin": "B08MQVYDLD",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 398,
+      "gold_asin": "B09B3PWGPX",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 399,
+      "gold_asin": "B09B3PWGPX",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 400,
+      "gold_asin": "B09KT1ZG57",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 401,
+      "gold_asin": "B07ZLZPN1N",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 402,
+      "gold_asin": "B099NRCQ9P",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 403,
+      "gold_asin": "B09HGNFL8G",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 404,
+      "gold_asin": "B09HHBDGKV",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 405,
+      "gold_asin": "B09HHBDGKV",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 406,
+      "gold_asin": "B0892P1X12",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 407,
+      "gold_asin": "B09K5CDZQN",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 408,
+      "gold_asin": "B07GRT6GPS",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 409,
+      "gold_asin": "B008Y253N0",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 410,
+      "gold_asin": "B08PPRK2T8",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 411,
+      "gold_asin": "B09SV1J5KS",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 412,
+      "gold_asin": "B09JP4M2WW",
+      "excluded_reasons": [
+        "no_archived_parity_clone"
+      ]
+    },
+    {
+      "pair_idx": 413,
+      "gold_asin": "B09QKSHLWD",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 414,
+      "gold_asin": "B07VWR4HT1",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 415,
+      "gold_asin": "B0843QGW1Z",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 416,
+      "gold_asin": "B097GVR1ZK",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 417,
+      "gold_asin": "B01BY04QQS",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 418,
+      "gold_asin": "B01BY04QQS",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 419,
+      "gold_asin": "B01BY04QQS",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 420,
+      "gold_asin": "B01BY04QQS",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 421,
+      "gold_asin": "B07DFZ34RM",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 422,
+      "gold_asin": "B086PCKRBV",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 423,
+      "gold_asin": "B01FRP21K4",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 424,
+      "gold_asin": "B087N9KJ89",
+      "excluded_reasons": [
+        "no_archived_parity_clone"
+      ]
+    },
+    {
+      "pair_idx": 425,
+      "gold_asin": "B09BZWDPYR",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 426,
+      "gold_asin": "B09BZWDPYR",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 427,
+      "gold_asin": "B08B12P6CS",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 428,
+      "gold_asin": "B075G3RJDZ",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 429,
+      "gold_asin": "B09962GDCV",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 430,
+      "gold_asin": "B09962GDCV",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 431,
+      "gold_asin": "B09Q2S6BBG",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 432,
+      "gold_asin": "B0957HZNK3",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 433,
+      "gold_asin": "B092CJR3ST",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 434,
+      "gold_asin": "B092VN7WGH",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 435,
+      "gold_asin": "B09436PGKF",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 436,
+      "gold_asin": "B08Y99D272",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 437,
+      "gold_asin": "B08Y99D272",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 438,
+      "gold_asin": "B08YDHFQ2X",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 439,
+      "gold_asin": "B08GG22BF6",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 440,
+      "gold_asin": "B08GG22BF6",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 441,
+      "gold_asin": "B08N5DD2CG",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 442,
+      "gold_asin": "B08N5DD2CG",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 443,
+      "gold_asin": "B07JG2QHHY",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 444,
+      "gold_asin": "B08HCKVX5F",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 445,
+      "gold_asin": "B08HCKVX5F",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 446,
+      "gold_asin": "B08Y8DB8H4",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 447,
+      "gold_asin": "B09PYKMRCQ",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 448,
+      "gold_asin": "B096ZGR1JX",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 449,
+      "gold_asin": "B08BXJJSH5",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 450,
+      "gold_asin": "B09LXMCTN9",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 451,
+      "gold_asin": "B09LXMCTN9",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 452,
+      "gold_asin": "B09LXMCTN9",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 453,
+      "gold_asin": "B09B9SSMQH",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 454,
+      "gold_asin": "B0006NXZ7G",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 455,
+      "gold_asin": "B0006NXZ7G",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 456,
+      "gold_asin": "B08L81FYLV",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 457,
+      "gold_asin": "B08N462C25",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 458,
+      "gold_asin": "B00CNWY1YY",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 459,
+      "gold_asin": "B0987XMJMF",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 460,
+      "gold_asin": "B07VZVYG4C",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 461,
+      "gold_asin": "B08665MY24",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 462,
+      "gold_asin": "B07KN925H5",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 463,
+      "gold_asin": "B07X8RMCVW",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 464,
+      "gold_asin": "B079CGP5GP",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 465,
+      "gold_asin": "B0927MLTZZ",
+      "excluded_reasons": []
+    },
+    {
+      "pair_idx": 466,
+      "gold_asin": "B097YHD3PS",
+      "excluded_reasons": []
+    }
+  ],
+  "quality": {
+    "0": {
+      "gold_asin": "B071DV6H98",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "1": {
+      "gold_asin": "B08NX18SV4",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "2": {
+      "gold_asin": "B07B8BBFKL",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "3": {
+      "gold_asin": "B001E0XSAE",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "4": {
+      "gold_asin": "B0771L6DB1",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "5": {
+      "gold_asin": "B004AI97MA",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "6": {
+      "gold_asin": "B083GGC2N9",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "7": {
+      "gold_asin": "B09LGX32ZW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "8": {
+      "gold_asin": "B01FHVTQNS",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "9": {
+      "gold_asin": "B001E5D0GQ",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "10": {
+      "gold_asin": "B001E5D0GQ",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "11": {
+      "gold_asin": "B001E5D0GQ",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "12": {
+      "gold_asin": "B01FHVTQNS",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "13": {
+      "gold_asin": "B01FHVTQNS",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "14": {
+      "gold_asin": "B01FHVTQNS",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "15": {
+      "gold_asin": "B098Q9MZ83",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "16": {
+      "gold_asin": "B07CMBP6W2",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "17": {
+      "gold_asin": "B09R1KJYT5",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "18": {
+      "gold_asin": "B08RRZ2F57",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "19": {
+      "gold_asin": "B084Z7CNH9",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "20": {
+      "gold_asin": "B07FD4XRJB",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "21": {
+      "gold_asin": "B097BHDYZD",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "22": {
+      "gold_asin": "B08R7W464K",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "23": {
+      "gold_asin": "B08R7W464K",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "24": {
+      "gold_asin": "B06Y3Z56DR",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "25": {
+      "gold_asin": "B09SYXW2PB",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "26": {
+      "gold_asin": "B09SYXW2PB",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "27": {
+      "gold_asin": "B09SYXW2PB",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "28": {
+      "gold_asin": "B09SYXW2PB",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "29": {
+      "gold_asin": "B07ZFCWHCF",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "30": {
+      "gold_asin": "B09LR9LHPG",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "31": {
+      "gold_asin": "B07Z647R7C",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "32": {
+      "gold_asin": "B07Z647R7C",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "33": {
+      "gold_asin": "B0861CRGQV",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "34": {
+      "gold_asin": "B078JKD43Y",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "35": {
+      "gold_asin": "B09S1C5Q4K",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "36": {
+      "gold_asin": "B07MJM2ZKY",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "37": {
+      "gold_asin": "B07SG76JPK",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "38": {
+      "gold_asin": "B07SG76JPK",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "39": {
+      "gold_asin": "B08BNGNKW7",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "40": {
+      "gold_asin": "B08QRVN886",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "41": {
+      "gold_asin": "B07JJCNH26",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "42": {
+      "gold_asin": "B0859P9F6C",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "43": {
+      "gold_asin": "B00PUEV4CE",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "44": {
+      "gold_asin": "B07XVRZR4P",
+      "gold_reward": 0.75,
+      "clone_reward": 0.25
+    },
+    "45": {
+      "gold_asin": "B00RZTITAC",
+      "gold_reward": 1.0,
+      "clone_reward": 0.3333333333333333
+    },
+    "46": {
+      "gold_asin": "B00RZTITAC",
+      "gold_reward": 1.0,
+      "clone_reward": 0.3333333333333333
+    },
+    "47": {
+      "gold_asin": "B015ND5QJS",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "48": {
+      "gold_asin": "B015ND5QJS",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "49": {
+      "gold_asin": "B015ND5QJS",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "50": {
+      "gold_asin": "B015ND5QJS",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "51": {
+      "gold_asin": "B015ND5QJS",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "52": {
+      "gold_asin": "B015ND5QJS",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "53": {
+      "gold_asin": "B09NBQ9WG3",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "54": {
+      "gold_asin": "B095KSXGZX",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "55": {
+      "gold_asin": "B007TVSUUK",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "56": {
+      "gold_asin": "B08N9S7DVZ",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "57": {
+      "gold_asin": "B08VF6NHJ4",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "58": {
+      "gold_asin": "B09QSRNP3T",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "59": {
+      "gold_asin": "B08C543HDX",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6
+    },
+    "60": {
+      "gold_asin": "B08CXFN5QM",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "61": {
+      "gold_asin": "B094D7Y66B",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "62": {
+      "gold_asin": "B09H3Z8QVF",
+      "gold_reward": 1.0,
+      "clone_reward": 0.3333333333333333
+    },
+    "63": {
+      "gold_asin": "B084CVRFYL",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "64": {
+      "gold_asin": "B01LYTO6V1",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "65": {
+      "gold_asin": "B08C742D94",
+      "gold_reward": 1.0,
+      "clone_reward": 0.7142857142857143
+    },
+    "66": {
+      "gold_asin": "B08C742D94",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8571428571428571
+    },
+    "67": {
+      "gold_asin": "B08C742D94",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8571428571428571
+    },
+    "69": {
+      "gold_asin": "B07YLDTTP1",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "71": {
+      "gold_asin": "B09P6CDSG5",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "72": {
+      "gold_asin": "B07YST7545",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "73": {
+      "gold_asin": "B086JS4HJF",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "74": {
+      "gold_asin": "B08N5CBMDM",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "75": {
+      "gold_asin": "B08N5CBMDM",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "76": {
+      "gold_asin": "B011M8UDA0",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "77": {
+      "gold_asin": "B07N33D4TH",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "78": {
+      "gold_asin": "B07N34HVW3",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5714285714285714
+    },
+    "79": {
+      "gold_asin": "B07THFBCJK",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "80": {
+      "gold_asin": "B09BTN8F47",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "81": {
+      "gold_asin": "B07C812LHQ",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "82": {
+      "gold_asin": "B09M8H129Q",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6
+    },
+    "83": {
+      "gold_asin": "B09M8H129Q",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "84": {
+      "gold_asin": "B09M8H129Q",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6
+    },
+    "85": {
+      "gold_asin": "B08WHCWVJW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "86": {
+      "gold_asin": "B099MLG9SN",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "87": {
+      "gold_asin": "B09LVQ3T86",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8571428571428571
+    },
+    "88": {
+      "gold_asin": "B09LVQ3T86",
+      "gold_reward": 1.0,
+      "clone_reward": 0.7142857142857143
+    },
+    "89": {
+      "gold_asin": "B09MMYY1WG",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "90": {
+      "gold_asin": "B08L8Z6N16",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "91": {
+      "gold_asin": "B0918YYZBV",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "92": {
+      "gold_asin": "B09FLSNYWQ",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "93": {
+      "gold_asin": "B09FLSNYWQ",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "94": {
+      "gold_asin": "B07YG49L5F",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6
+    },
+    "95": {
+      "gold_asin": "B07ML6CH7P",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "96": {
+      "gold_asin": "B07ML6CH7P",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "97": {
+      "gold_asin": "B09NC39NKL",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "98": {
+      "gold_asin": "B001VJ70UC",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "99": {
+      "gold_asin": "B001VJ70UC",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "100": {
+      "gold_asin": "B00N8KT1J0",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "101": {
+      "gold_asin": "B00VBNQJLY",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "102": {
+      "gold_asin": "B01F7B0ZLU",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "103": {
+      "gold_asin": "B077JT9MWC",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "104": {
+      "gold_asin": "B073H4R7V8",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "105": {
+      "gold_asin": "B08KVZP9LB",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6
+    },
+    "106": {
+      "gold_asin": "B01M4IJHRC",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "107": {
+      "gold_asin": "B08Y6R25N5",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "108": {
+      "gold_asin": "B09RN93XLV",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "109": {
+      "gold_asin": "B09RN93XLV",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "110": {
+      "gold_asin": "B09RN93XLV",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "111": {
+      "gold_asin": "B015QLCI7A",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "112": {
+      "gold_asin": "B09J81RMLD",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "113": {
+      "gold_asin": "B08F6HWPLJ",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "114": {
+      "gold_asin": "B09QSVTP34",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "115": {
+      "gold_asin": "B09RB2JZ6D",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "116": {
+      "gold_asin": "B09RB2JZ6D",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "117": {
+      "gold_asin": "B06XCKNR17",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "118": {
+      "gold_asin": "B09Q5XSLVZ",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "119": {
+      "gold_asin": "B09Q5XSLVZ",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "120": {
+      "gold_asin": "B08C9S7K81",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "121": {
+      "gold_asin": "B00OGQY8Y8",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "122": {
+      "gold_asin": "B09Q84JC6K",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "123": {
+      "gold_asin": "B08HHRCV7H",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6
+    },
+    "124": {
+      "gold_asin": "B09B94Q73Z",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "125": {
+      "gold_asin": "B09B94Q73Z",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "126": {
+      "gold_asin": "B09B94Q73Z",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "127": {
+      "gold_asin": "B0843R2PHK",
+      "gold_reward": 1.0,
+      "clone_reward": 0.4
+    },
+    "128": {
+      "gold_asin": "B09KZNFD8T",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "129": {
+      "gold_asin": "B085WB9KBK",
+      "gold_reward": 1.0,
+      "clone_reward": 0.7142857142857143
+    },
+    "130": {
+      "gold_asin": "B09QCYJ2QM",
+      "gold_reward": 1.0,
+      "clone_reward": 0.25
+    },
+    "131": {
+      "gold_asin": "B07XC5LJV1",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "132": {
+      "gold_asin": "B07D6RZQD3",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "133": {
+      "gold_asin": "B09SG3LJLK",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "134": {
+      "gold_asin": "B081H93CSY",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "135": {
+      "gold_asin": "B081H93CSY",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "136": {
+      "gold_asin": "B099CPDVHK",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "137": {
+      "gold_asin": "B09F2DS41B",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "138": {
+      "gold_asin": "B07B7BV15N",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "139": {
+      "gold_asin": "B07B7BV15N",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "140": {
+      "gold_asin": "B07B7BV15N",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "141": {
+      "gold_asin": "B08THK9ZSB",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "142": {
+      "gold_asin": "B09ML2WVBK",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "143": {
+      "gold_asin": "B09RQ6D2XX",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "144": {
+      "gold_asin": "B00O6DHOCY",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "145": {
+      "gold_asin": "B085Y48HZM",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "146": {
+      "gold_asin": "B019MGTHFQ",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "147": {
+      "gold_asin": "B08TR8N884",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "148": {
+      "gold_asin": "B08TR8N884",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "149": {
+      "gold_asin": "B0977MNS6P",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "150": {
+      "gold_asin": "B0977MNS6P",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "151": {
+      "gold_asin": "B099KRPB3M",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "152": {
+      "gold_asin": "B09L47HSZD",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "153": {
+      "gold_asin": "B09NFD1TYB",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "154": {
+      "gold_asin": "B09NFD1TYB",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "155": {
+      "gold_asin": "B09CLS963D",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "156": {
+      "gold_asin": "B08H1Y41XM",
+      "gold_reward": 0.6666666666666666,
+      "clone_reward": 0.6666666666666666
+    },
+    "157": {
+      "gold_asin": "B0058HNT4O",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "158": {
+      "gold_asin": "B078WXXKV5",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "159": {
+      "gold_asin": "B00ZEBG8CY",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "160": {
+      "gold_asin": "B08DTWTKTY",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "161": {
+      "gold_asin": "B07ZDM9HBC",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "162": {
+      "gold_asin": "B07QNF7GVB",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "163": {
+      "gold_asin": "B0764L8XHW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "164": {
+      "gold_asin": "B0764L8XHW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "165": {
+      "gold_asin": "B0764L8XHW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "166": {
+      "gold_asin": "B08TLVTW38",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "167": {
+      "gold_asin": "B019MH122Q",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "168": {
+      "gold_asin": "B019MH122Q",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "169": {
+      "gold_asin": "B07GWH4SDR",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "170": {
+      "gold_asin": "B097WYZMV6",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6
+    },
+    "171": {
+      "gold_asin": "B08DJ7PMV9",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "172": {
+      "gold_asin": "B01IQX5E7G",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "173": {
+      "gold_asin": "B083GQMJS3",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "174": {
+      "gold_asin": "B083GQMJS3",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "175": {
+      "gold_asin": "B083GQMJS3",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "176": {
+      "gold_asin": "B083GQMJS3",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "177": {
+      "gold_asin": "B07X57RFW3",
+      "gold_reward": 1.0,
+      "clone_reward": 0.7142857142857143
+    },
+    "178": {
+      "gold_asin": "B0143NQVP2",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "179": {
+      "gold_asin": "B0143NQVP2",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "180": {
+      "gold_asin": "B08PPNPJ9Q",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "181": {
+      "gold_asin": "B07ZDVNYXD",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "182": {
+      "gold_asin": "B09PH95SSN",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "183": {
+      "gold_asin": "B086Z2QK25",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "184": {
+      "gold_asin": "B07Q4DK92V",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "185": {
+      "gold_asin": "B07Q4DK92V",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "186": {
+      "gold_asin": "B083VZN11N",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "187": {
+      "gold_asin": "B07J5S5Z9D",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6
+    },
+    "188": {
+      "gold_asin": "B07J5S5Z9D",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6
+    },
+    "189": {
+      "gold_asin": "B07MZ8T6TK",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "190": {
+      "gold_asin": "B0773YNFTJ",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "191": {
+      "gold_asin": "B09FRJPSRV",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "192": {
+      "gold_asin": "B01LZ2I7EZ",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6
+    },
+    "193": {
+      "gold_asin": "B01LZ2I7EZ",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6
+    },
+    "194": {
+      "gold_asin": "B01LZ2I7EZ",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "195": {
+      "gold_asin": "B01LZ2I7EZ",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "196": {
+      "gold_asin": "B08Q7W5HZ9",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "197": {
+      "gold_asin": "B08Q7W5HZ9",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "198": {
+      "gold_asin": "B08Q7W5HZ9",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "199": {
+      "gold_asin": "B08Q7W5HZ9",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "200": {
+      "gold_asin": "B08Q7W5HZ9",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "201": {
+      "gold_asin": "B09K3WGHPQ",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "202": {
+      "gold_asin": "B09K3WGHPQ",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "203": {
+      "gold_asin": "B082TNGSWD",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "204": {
+      "gold_asin": "B07D6GFNG8",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "205": {
+      "gold_asin": "B08QDRBN5X",
+      "gold_reward": 0.75,
+      "clone_reward": 0.75
+    },
+    "206": {
+      "gold_asin": "B08QDPGHBL",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "207": {
+      "gold_asin": "B0817MVS98",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "208": {
+      "gold_asin": "B000XB34TK",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "209": {
+      "gold_asin": "B000XB34TK",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "210": {
+      "gold_asin": "B075817VBP",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "211": {
+      "gold_asin": "B075813R1S",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6
+    },
+    "212": {
+      "gold_asin": "B075817VBP",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "213": {
+      "gold_asin": "B075817VBP",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "214": {
+      "gold_asin": "B075813R1S",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "215": {
+      "gold_asin": "B07D33WVG4",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "216": {
+      "gold_asin": "B01FRGFOHK",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "217": {
+      "gold_asin": "B07Q4QY2B3",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "218": {
+      "gold_asin": "B01LZSM2RW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "219": {
+      "gold_asin": "B088K6SFZ1",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "220": {
+      "gold_asin": "B09D1ZMFBH",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "221": {
+      "gold_asin": "B07B32DCCQ",
+      "gold_reward": 0.8,
+      "clone_reward": 0.6
+    },
+    "222": {
+      "gold_asin": "B093D82ZGC",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "223": {
+      "gold_asin": "B09C3XS9N3",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "224": {
+      "gold_asin": "B00H9V37Q2",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "225": {
+      "gold_asin": "B01FGHY04I",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "226": {
+      "gold_asin": "B01DN401DK",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "227": {
+      "gold_asin": "B002U58PRI",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "228": {
+      "gold_asin": "B08T8Q5JXC",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "229": {
+      "gold_asin": "B087LNZ7P4",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "230": {
+      "gold_asin": "B0758FXDS7",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "231": {
+      "gold_asin": "B0758FXDS7",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "232": {
+      "gold_asin": "B09BB2LHTT",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "233": {
+      "gold_asin": "B07R4D5B4V",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "234": {
+      "gold_asin": "B097TQG3F6",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "235": {
+      "gold_asin": "B07QJ1GBZ3",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "236": {
+      "gold_asin": "B09KY9P8CD",
+      "gold_reward": 0.75,
+      "clone_reward": 0.75
+    },
+    "237": {
+      "gold_asin": "B07FYT2X18",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "238": {
+      "gold_asin": "B00BCG0OB6",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6
+    },
+    "239": {
+      "gold_asin": "B00BCG0OB6",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "240": {
+      "gold_asin": "B00BCG0OB6",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6
+    },
+    "241": {
+      "gold_asin": "B09NM62G51",
+      "gold_reward": 1.0,
+      "clone_reward": 0.4
+    },
+    "242": {
+      "gold_asin": "B07C1VP88H",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "243": {
+      "gold_asin": "B07C1VP88H",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "244": {
+      "gold_asin": "B096FJX5RM",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "245": {
+      "gold_asin": "B099DZH4P9",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "246": {
+      "gold_asin": "B099DZH4P9",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "247": {
+      "gold_asin": "B07FYL95K5",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "248": {
+      "gold_asin": "B097BVKF24",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "249": {
+      "gold_asin": "B08SQBV1F9",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "251": {
+      "gold_asin": "B09P9XB3W9",
+      "gold_reward": 1.0,
+      "clone_reward": 0.3333333333333333
+    },
+    "252": {
+      "gold_asin": "B08BSWZJ4G",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "253": {
+      "gold_asin": "B09D9RXRPG",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "254": {
+      "gold_asin": "B01IDDRDRI",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "255": {
+      "gold_asin": "B01IDDRDRI",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "256": {
+      "gold_asin": "B07CWWTHN9",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "257": {
+      "gold_asin": "B087D5W1B5",
+      "gold_reward": 1.0,
+      "clone_reward": 0.3333333333333333
+    },
+    "258": {
+      "gold_asin": "B087D5W1B5",
+      "gold_reward": 1.0,
+      "clone_reward": 0.3333333333333333
+    },
+    "259": {
+      "gold_asin": "B0719QLYF2",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "260": {
+      "gold_asin": "B0719QLYF2",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "261": {
+      "gold_asin": "B07CTC8F3F",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "262": {
+      "gold_asin": "B09B22X8TN",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "263": {
+      "gold_asin": "B09SKGVDWZ",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "264": {
+      "gold_asin": "B09SKGVDWZ",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "265": {
+      "gold_asin": "B09SKGVDWZ",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "266": {
+      "gold_asin": "B09SKGVDWZ",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "267": {
+      "gold_asin": "B09DPLKCW3",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "268": {
+      "gold_asin": "B09DPLKCW3",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "269": {
+      "gold_asin": "B09DPLKCW3",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "270": {
+      "gold_asin": "B00I4WT6QU",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "271": {
+      "gold_asin": "B09LSW7DJ1",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "272": {
+      "gold_asin": "B09LSW7DJ1",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "273": {
+      "gold_asin": "B09LSW7DJ1",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "274": {
+      "gold_asin": "B09LSW7DJ1",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "275": {
+      "gold_asin": "B00SKVJK1G",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "276": {
+      "gold_asin": "B00SKVJK1G",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "278": {
+      "gold_asin": "B08P4GMWJB",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "279": {
+      "gold_asin": "B084NZ2GKF",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "280": {
+      "gold_asin": "B084NZ2GKF",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "281": {
+      "gold_asin": "B07XZ1VW78",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "282": {
+      "gold_asin": "B09219DD59",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "283": {
+      "gold_asin": "B08SCFN6ZG",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "284": {
+      "gold_asin": "B07PV723CF",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "285": {
+      "gold_asin": "B09LK4G5G2",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "286": {
+      "gold_asin": "B09R96BLLY",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "287": {
+      "gold_asin": "B09R96BLLY",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "288": {
+      "gold_asin": "B09R96BLLY",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "289": {
+      "gold_asin": "B09R96BLLY",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "290": {
+      "gold_asin": "B09R96BLLY",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "291": {
+      "gold_asin": "B09N79LQQF",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "294": {
+      "gold_asin": "B074RVN91Q",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "295": {
+      "gold_asin": "B0865SKG5G",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "296": {
+      "gold_asin": "B07L9KXTM4",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "299": {
+      "gold_asin": "B09BJL1232",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "300": {
+      "gold_asin": "B01HJWDWP6",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "301": {
+      "gold_asin": "B01HJWDWP6",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "302": {
+      "gold_asin": "B01HJWDWP6",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "303": {
+      "gold_asin": "B01HJWDWP6",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "304": {
+      "gold_asin": "B01HJWDWP6",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "305": {
+      "gold_asin": "B09S3QKSWW",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "306": {
+      "gold_asin": "B09BZTJPZW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "307": {
+      "gold_asin": "B096RZ5DXK",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6
+    },
+    "308": {
+      "gold_asin": "B07HPBFS5S",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "309": {
+      "gold_asin": "B084ZT7Q8H",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "310": {
+      "gold_asin": "B075TGSSSS",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "311": {
+      "gold_asin": "B07NX259SR",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "312": {
+      "gold_asin": "B08R6NCZ95",
+      "gold_reward": 1.0,
+      "clone_reward": 0.3333333333333333
+    },
+    "313": {
+      "gold_asin": "B0781HSDTZ",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "314": {
+      "gold_asin": "B08J1D47RV",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "315": {
+      "gold_asin": "B09MLHK36S",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6
+    },
+    "316": {
+      "gold_asin": "B09GFWF132",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "317": {
+      "gold_asin": "B09GFWF132",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "318": {
+      "gold_asin": "B076DL1VLG",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "319": {
+      "gold_asin": "B00SZXFIEW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "320": {
+      "gold_asin": "B00SZXFIEW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "321": {
+      "gold_asin": "B00SZXFIEW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "322": {
+      "gold_asin": "B00SZXFIEW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "323": {
+      "gold_asin": "B00SZXFIEW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "324": {
+      "gold_asin": "B00SZXFIEW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "325": {
+      "gold_asin": "B00SZXFIEW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "326": {
+      "gold_asin": "B00SZXFIEW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "327": {
+      "gold_asin": "B00SZXFIEW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "328": {
+      "gold_asin": "B00SZXFIEW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "329": {
+      "gold_asin": "B00SZXFIEW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "330": {
+      "gold_asin": "B08CZKMDNX",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "331": {
+      "gold_asin": "B004W55Y9Q",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "332": {
+      "gold_asin": "B08G3S9TND",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "334": {
+      "gold_asin": "B07K7HZ5BD",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "335": {
+      "gold_asin": "B09P89Z11V",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "337": {
+      "gold_asin": "B0924LVZ21",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "338": {
+      "gold_asin": "B0924LVZ21",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "339": {
+      "gold_asin": "B0924LVZ21",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "340": {
+      "gold_asin": "B0924LVZ21",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "342": {
+      "gold_asin": "B09P89Z11V",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "343": {
+      "gold_asin": "B099KG8HS8",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "344": {
+      "gold_asin": "B084LPGQ46",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "345": {
+      "gold_asin": "B00XS4M5NU",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "346": {
+      "gold_asin": "B09QXS3MHQ",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "347": {
+      "gold_asin": "B07MVKQHBJ",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "348": {
+      "gold_asin": "B09B6VTZVK",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "349": {
+      "gold_asin": "B092YZ1114",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "350": {
+      "gold_asin": "B00P4GFA3C",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "351": {
+      "gold_asin": "B00P4GFA3C",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6
+    },
+    "352": {
+      "gold_asin": "B07X9Y42VX",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "353": {
+      "gold_asin": "B07X9Y42VX",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "354": {
+      "gold_asin": "B08BNCVRJT",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "355": {
+      "gold_asin": "B0921FPJND",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "356": {
+      "gold_asin": "B0921FPJND",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "357": {
+      "gold_asin": "B01HJWELG0",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "358": {
+      "gold_asin": "B01HJWDQWA",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "359": {
+      "gold_asin": "B01HJWARWW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "360": {
+      "gold_asin": "B01HJWELG0",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "361": {
+      "gold_asin": "B01HJWELG0",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "362": {
+      "gold_asin": "B01HJWELG0",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "363": {
+      "gold_asin": "B01HJWELG0",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "364": {
+      "gold_asin": "B01HJWELG0",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "365": {
+      "gold_asin": "B01HJWELG0",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "366": {
+      "gold_asin": "B01HJWELG0",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "367": {
+      "gold_asin": "B01HJWELG0",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "368": {
+      "gold_asin": "B01HJWDQWA",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "369": {
+      "gold_asin": "B01HJWARWW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "370": {
+      "gold_asin": "B01HJWDQWA",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "371": {
+      "gold_asin": "B01HJWARWW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "372": {
+      "gold_asin": "B01HJWDQWA",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "373": {
+      "gold_asin": "B01HJWARWW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "374": {
+      "gold_asin": "B01HJWDQWA",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "375": {
+      "gold_asin": "B01HJWARWW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "376": {
+      "gold_asin": "B01HJWDQWA",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "377": {
+      "gold_asin": "B01HJWARWW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "378": {
+      "gold_asin": "B01HJWDQWA",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "379": {
+      "gold_asin": "B01HJWARWW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "380": {
+      "gold_asin": "B01HJWDQWA",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "381": {
+      "gold_asin": "B01HJWARWW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "382": {
+      "gold_asin": "B01HJWDQWA",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "383": {
+      "gold_asin": "B01HJWARWW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "385": {
+      "gold_asin": "B01HJW7AHC",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "386": {
+      "gold_asin": "B01HJW7AHC",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "387": {
+      "gold_asin": "B01HJW7AHC",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "388": {
+      "gold_asin": "B01HJWC5FE",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "389": {
+      "gold_asin": "B01HJW66RW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "390": {
+      "gold_asin": "B01HJWC5FE",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "391": {
+      "gold_asin": "B01HJWC5FE",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "392": {
+      "gold_asin": "B01HJW66RW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "393": {
+      "gold_asin": "B01HJW66RW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "395": {
+      "gold_asin": "B01M34Z8YW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.3333333333333333
+    },
+    "396": {
+      "gold_asin": "B09RQQ8V11",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "397": {
+      "gold_asin": "B08MQVYDLD",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "398": {
+      "gold_asin": "B09B3PWGPX",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "399": {
+      "gold_asin": "B09B3PWGPX",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "400": {
+      "gold_asin": "B09KT1ZG57",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "401": {
+      "gold_asin": "B07ZLZPN1N",
+      "gold_reward": 1.0,
+      "clone_reward": 0.25
+    },
+    "402": {
+      "gold_asin": "B099NRCQ9P",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "403": {
+      "gold_asin": "B09HGNFL8G",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "404": {
+      "gold_asin": "B09HHBDGKV",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "405": {
+      "gold_asin": "B09HHBDGKV",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "406": {
+      "gold_asin": "B0892P1X12",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "407": {
+      "gold_asin": "B09K5CDZQN",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "408": {
+      "gold_asin": "B07GRT6GPS",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "409": {
+      "gold_asin": "B008Y253N0",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "410": {
+      "gold_asin": "B08PPRK2T8",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "411": {
+      "gold_asin": "B09SV1J5KS",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "413": {
+      "gold_asin": "B09QKSHLWD",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "414": {
+      "gold_asin": "B07VWR4HT1",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "415": {
+      "gold_asin": "B0843QGW1Z",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "416": {
+      "gold_asin": "B097GVR1ZK",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "417": {
+      "gold_asin": "B01BY04QQS",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "418": {
+      "gold_asin": "B01BY04QQS",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "419": {
+      "gold_asin": "B01BY04QQS",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "420": {
+      "gold_asin": "B01BY04QQS",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "421": {
+      "gold_asin": "B07DFZ34RM",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "422": {
+      "gold_asin": "B086PCKRBV",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "423": {
+      "gold_asin": "B01FRP21K4",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "425": {
+      "gold_asin": "B09BZWDPYR",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "426": {
+      "gold_asin": "B09BZWDPYR",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "427": {
+      "gold_asin": "B08B12P6CS",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "428": {
+      "gold_asin": "B075G3RJDZ",
+      "gold_reward": 1.0,
+      "clone_reward": 0.3333333333333333
+    },
+    "429": {
+      "gold_asin": "B09962GDCV",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "430": {
+      "gold_asin": "B09962GDCV",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "431": {
+      "gold_asin": "B09Q2S6BBG",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "432": {
+      "gold_asin": "B0957HZNK3",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "433": {
+      "gold_asin": "B092CJR3ST",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "434": {
+      "gold_asin": "B092VN7WGH",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "435": {
+      "gold_asin": "B09436PGKF",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "436": {
+      "gold_asin": "B08Y99D272",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "437": {
+      "gold_asin": "B08Y99D272",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "438": {
+      "gold_asin": "B08YDHFQ2X",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "439": {
+      "gold_asin": "B08GG22BF6",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "440": {
+      "gold_asin": "B08GG22BF6",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "441": {
+      "gold_asin": "B08N5DD2CG",
+      "gold_reward": 1.0,
+      "clone_reward": 0.3333333333333333
+    },
+    "442": {
+      "gold_asin": "B08N5DD2CG",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "443": {
+      "gold_asin": "B07JG2QHHY",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "444": {
+      "gold_asin": "B08HCKVX5F",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "445": {
+      "gold_asin": "B08HCKVX5F",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "446": {
+      "gold_asin": "B08Y8DB8H4",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "447": {
+      "gold_asin": "B09PYKMRCQ",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "448": {
+      "gold_asin": "B096ZGR1JX",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "449": {
+      "gold_asin": "B08BXJJSH5",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "450": {
+      "gold_asin": "B09LXMCTN9",
+      "gold_reward": 1.0,
+      "clone_reward": 0.7142857142857143
+    },
+    "451": {
+      "gold_asin": "B09LXMCTN9",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5714285714285714
+    },
+    "452": {
+      "gold_asin": "B09LXMCTN9",
+      "gold_reward": 1.0,
+      "clone_reward": 0.7142857142857143
+    },
+    "453": {
+      "gold_asin": "B09B9SSMQH",
+      "gold_reward": 1.0,
+      "clone_reward": 0.75
+    },
+    "454": {
+      "gold_asin": "B0006NXZ7G",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "455": {
+      "gold_asin": "B0006NXZ7G",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "456": {
+      "gold_asin": "B08L81FYLV",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "457": {
+      "gold_asin": "B08N462C25",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "458": {
+      "gold_asin": "B00CNWY1YY",
+      "gold_reward": 1.0,
+      "clone_reward": 0.5
+    },
+    "459": {
+      "gold_asin": "B0987XMJMF",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "460": {
+      "gold_asin": "B07VZVYG4C",
+      "gold_reward": 0.6666666666666666,
+      "clone_reward": 0.3333333333333333
+    },
+    "461": {
+      "gold_asin": "B08665MY24",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    },
+    "462": {
+      "gold_asin": "B07KN925H5",
+      "gold_reward": 1.0,
+      "clone_reward": 0.8
+    },
+    "463": {
+      "gold_asin": "B07X8RMCVW",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "464": {
+      "gold_asin": "B079CGP5GP",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "465": {
+      "gold_asin": "B0927MLTZZ",
+      "gold_reward": 1.0,
+      "clone_reward": 0.6666666666666666
+    },
+    "466": {
+      "gold_asin": "B097YHD3PS",
+      "gold_reward": 1.0,
+      "clone_reward": 1.0
+    }
+  },
+  "source_sha256": {
+    "m1/expanded_parity.py": "98bce3e207f226b4d1cbdc39bfb117656a6ef79407a289b75230356479dcffa4",
+    "m1/expanded_summary.py": "fc8c5c526817c1c54376f0c26794a368e7cac4308e98e5f8d07541505451abd5",
+    "m1/EXPANDED_PARITY_PROTOCOL.md": "10e474181083e91f07b00b101f2e6b6d9e04770ff62bc40a3fd0699dbaf76f31",
+    "m1/slurm/expanded_run.sbatch": "b2260f68617189c246a3e7ab79d7a48b37d127f9c3f08a667a12d49b1a7542dc",
+    "m1/slurm/expanded_prepare.sbatch": "9fb6c5e1fc02e99190f9f34ad1ab098565058d3beaa3b502817b31cf090a51af",
+    "m1/slurm/expanded_summary.sbatch": "2c20027162a0c023266ef5ebdd128bb4e078572ca80de309cfd902f01513d66c",
+    "m1/m1_run.py": "df3f1e78ebe3e965e0522d843138ebe9d55d38a823c06311d11c718fa02b96fc",
+    "m1/m1_memory.py": "d9a932be6573803b69852599aae7184bc9d578ad05933fba785ea99df4744da3",
+    "synthflood/select_env.py": "47ee53b71791812e68aa96bb6b612b9d0f6e08027e6dbf86dd565c24330735b7",
+    "synthflood/agent_react.py": "da2b2969ed1ef9f9a07816a141e8992abec99a43c3b7466ed0c39439c4c1e6d6",
+    "synthflood/config.py": "c65fce603c92f600bfbeec72b62e3041b885ed01f131200e3e225efca0de91be",
+    "synthflood/vllm_client.py": "a08f218556b5acb52f1ed4a9491d3fb75782a5ad6ae633c678f0e3186394ee53",
+    "synthflood/ws_loader.py": "02c1d2966e353d343a26e6738e04df00239fc0dbaad38ac7bdf3507eb440da6e",
+    "m1/freeze_v2.py": "11ede4d1687619cd40009f51035f207485eb81b28595bfb3aeacc0ebfb747f8f",
+    "m1/summarize_v2.py": "3d5433aa059e06020a8b96f71e57db43c8e30a054a8ed9eb6d2a3eb7d1385490",
+    "m1/audit_figure6.py": "8f257bd22e690eb94dd10b89c2d16f2d857d893cbd12a8d73fd2512a5ee745c6",
+    ".runtime/WebShop/web_agent_site/engine/goal.py": "9703c8583244e2041182eb14856186b998145ab16ce2ba9aef8cb680877c8ed5",
+    ".runtime/WebShop/web_agent_site/engine/normalize.py": "1962113ac9e209a636d4f181b2c70544bbea59b03adca9847e48287158d794fb",
+    "data/m1_v2/context.json": "b9fea54761187fcc2f7a3d3117055edad59c6927be4daddfb7f2c0b7ded78331",
+    "data/m1_v2/manifest.json": "64a582b11928a2881f6d370c2b090e29690e6d3f60be4ed310c27655ec0db2ff",
+    "data/contamination/m1_parity_clones.json": "74414c2e7bba5c10bfe864ba49967b5f1c92d8fc1a2b85ccf8dc7c6dfecaf679",
+    "results_m1_v2/seed2030/checkpoint_M0_00.json": "a8961c7cccfcfc541840480f9e0cc2fd92cc5b535afd6c8d17d5afe8f5aab25b",
+    "results_m1_v2/seed2030/checkpoint_M0_20.json": "ec7c8dfab27a8cc86fa53c61fd57ad4f8e8eb7e20779481a36f99703149e09f2",
+    "results_m1_v2/seed2030/m1_exams.csv": "4f472dcd4f8e02e0004cc55be84324c4be8c215904337540ff4f132bd050864d",
+    "results_m1_v2/seed2031/checkpoint_M0_00.json": "c64e12ff467f74438bc5353353099929dce31b492d3ae514e4cd14b47360dd47",
+    "results_m1_v2/seed2031/checkpoint_M0_20.json": "1544792245dd41c43ef3691bbe7b5e850e0ad56828bbb861535e0f46706f5146",
+    "results_m1_v2/seed2031/m1_exams.csv": "99b3c20d1a5d8a24148378435fb543d9d908c9e9078c0e9337734817d6061ff9",
+    "results_m1_v2/seed2032/checkpoint_M0_00.json": "525e7d9ed3ee2144a3b34c2561dd3c0742060c3dd3372532af999e5eefa0a11d",
+    "results_m1_v2/seed2032/checkpoint_M0_20.json": "cacb9bac91de59017733de865424d4ee54cc0e00125d6f56ac2887a05864fb46",
+    "results_m1_v2/seed2032/m1_exams.csv": "057f17f962d109fe33ccd3b3f9b56ad72d1bdcd41677738c59b0387085088dc4",
+    "results_m1_v2/seed2033/checkpoint_M0_00.json": "f59cbca403336baf87094eb834ae0bec24a4f6e2ebeaa8a293fbeb1c1300f78e",
+    "results_m1_v2/seed2033/checkpoint_M0_20.json": "07847cd3f9aa7f84b50ea45ff582f7fd28d272d661007158b99cccd7e4f8ee3e",
+    "results_m1_v2/seed2033/m1_exams.csv": "0fd9f42a42a18631ce0634bc525e7c0506b1379ff81da2eacc783d5783832d53",
+    "results_m1_v2/seed2034/checkpoint_M0_00.json": "c0855166003a71dfec979b5f95aaac8f2f9c5ffef9325afd94ff037a9afff19c",
+    "results_m1_v2/seed2034/checkpoint_M0_20.json": "95511771df29beb2b15467c9eab017dbad869ca16910ce5c8867729e556b6a9c",
+    "results_m1_v2/seed2034/m1_exams.csv": "7f3a9de21863eb37fe2d50da45aa8e6dea56074df71467fa9c2f24ba767cc570",
+    "results_m1_v2/seed2035/checkpoint_M0_00.json": "8a668d50c0bcf6bfd9a947c9e9a8c624de1582b1b50fdfb876259f2a497f50b9",
+    "results_m1_v2/seed2035/checkpoint_M0_20.json": "ba99adc7bd5b1dde3ed09bf71c1bd4c4ad5e61ee2b929c9140824066425eb443",
+    "results_m1_v2/seed2035/m1_exams.csv": "9c4b1051a68c8ac500a4363ed34c56cfa78cb41ba007fe590bb68d7bba848b56",
+    "results_m1_v2/seed2036/checkpoint_M0_00.json": "cc909cab87ef45c409505f23b4dffc31dbb00583567bd6409453b3a2afb1eba4",
+    "results_m1_v2/seed2036/checkpoint_M0_20.json": "0c0b79617a05a54b0d87c044190dbd9ae815bc9c64e4ded2d906d6fa4a6d4bb8",
+    "results_m1_v2/seed2036/m1_exams.csv": "1c995177c349d259883ff3467a8c154e723e14e793e0e9b73b116c7504e102d7",
+    "results_m1_v2/seed2037/checkpoint_M0_00.json": "34f329df525f8919ddc9ada4617c6bfff76a790ec9372aa418b28219f5082142",
+    "results_m1_v2/seed2037/checkpoint_M0_20.json": "e5270f29212161ab4d040076dfbc8a42a893bb66137adb344abeaa6d65b7e7df",
+    "results_m1_v2/seed2037/m1_exams.csv": "5f1fb67cd44e8863a2d2a14dab541054fbb8b45ffeb5b27910a973c4663971e7"
+  },
+  "M0_source": "read-only v2 checkpoint states; exams never update memory",
+  "B0_source": "fresh empty memory, washout20 only; no warmup",
+  "no_new_pollution_generation": true,
+  "old36_input_hash_checks": 864,
+  "backend": "Qwen2.5-7B-Instruct/a09a35458c702b33eeacc393d103063234e8bc28",
+  "context_sha256": "a24b0ca4374576e7fc287ea16aabbff63c0ddb8278fae5a7111dd556be8aef2c"
+}

@@ -1,0 +1,30 @@
+{
+ "arm": "B0",
+ "path": "/mnt/beegfs/home/liudianru26/project/www2027/SynthFlood-local/results_m1_washout40/seed2035/mem_B0.json",
+ "entries": [
+  {
+   "type": "observation",
+   "t": 1000,
+   "arm": "B0",
+   "text": "Episode 1000: task 'throw blankets'. Bought 'IABVLIMQ Cute Cartoon Animals Throw Blanket Lightweight Fuzzy Super Soft Warm Blanket for Bed Sofa Travel Kids Teens 50 inX60 in Gift' at $26.95; official reward 0.25.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.25,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1001,
+   "arm": "B0",
+   "text": "Episode 1001: task 'women's dresses'. Bought 'KYLEON Dresses for Women,Women's Casual Sun Moon Sundress Sleeveless Maxi Long Dress Beach Party Tunic Tank Dress' at $8.10; official reward 1.00.",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  }
+ ],
+ "injected_context": "Your experience notes from earlier shopping sessions:\n- [observation] Episode 1000: task 'throw blankets'. Bought 'IABVLIMQ Cute Cartoon Animals Throw Blanket Lightweight Fuzzy Super Soft Warm Blanket for Bed Sofa Travel Kids Teens 50 inX60 in Gift' at $26.95; official reward 0.25.\n- [observation] Episode 1001: task 'women's dresses'. Bought 'KYLEON Dresses for Women,Women's Casual Sun Moon Sundress Sleeveless Maxi Long Dress Beach Party Tunic Tank Dress' at $8.10; official reward 1.00.",
+ "context_sha256": "2abf24a0d7b1be0efe117894276b984154bf15cb9641a0685e5ee0243a004783"
+}

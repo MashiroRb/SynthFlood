@@ -9,3 +9,7 @@ results/
 data/items_*.json
 data/all_products.pkl
 data/*.log
+.runtime/
+data/official/
+PAT.txt
+results_m1_*/**/server.log

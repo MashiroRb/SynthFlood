@@ -2,11 +2,11 @@
 and intersect with human instructions to build real-clone probe tasks.
 Output: realattack_pairs.json  (list of task specs)
 """
-import json, re, itertools, collections, statistics
+import json, re, itertools, collections, statistics, os
 
-CATALOG = "/root/data/items_shuffle.json"
-HUMAN_INS = "/root/data/items_human_ins.json"
-OUT = "/root/realattack/realattack_pairs.json"
+CATALOG = os.environ.get("RA_CATALOG", "/root/data/items_shuffle.json")
+HUMAN_INS = os.environ.get("RA_HUMAN_INS", "/root/data/items_human_ins.json")
+OUT = os.environ.get("RA_PAIRS_OUT", "/root/realattack/realattack_pairs.json")
 
 STOP = {"the","and","for","with","set","of","in","to","a","new","pack","size","pc","pcs"}
 def toks(s):

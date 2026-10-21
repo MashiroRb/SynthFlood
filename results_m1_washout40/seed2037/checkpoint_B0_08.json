@@ -1,0 +1,107 @@
+{
+ "arm": "B0",
+ "path": "/mnt/beegfs/home/liudianru26/project/www2027/SynthFlood-local/results_m1_washout40/seed2037/mem_B0.json",
+ "entries": [
+  {
+   "type": "observation",
+   "t": 1000,
+   "arm": "B0",
+   "text": "Episode 1000: task 'throw blankets'. Bought 'JLLIFE Colorful Dinosaur Fleece Blanket for Boys Dinosaurs Print Super Soft Fuzzy Blanket Throw Blanket for Couch Couch Kids Teen Adult. (Dinosaur 1, (51.2x59.1) Inch(130cmx150cm))' at $24.99; official reward 0.50.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.5,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1001,
+   "arm": "B0",
+   "text": "Episode 1001: task 'women's dresses'. Bought 'Women's Casual Long Sleeve T Shirt Dress V Neck Loose Plain Knot Dress (Dark Gray, M)' at $21.99; official reward 0.33.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.3333333333333333,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1002,
+   "arm": "B0",
+   "text": "Episode 1002: task 'projection screens'. Bought 'HUALUWANG Motorized Projector Screen, 60/72/84 inch Remote Control Automatic Lifting Home Cinema Screen, HD Screen Wall-Mounted Electric Projection Screen (Color : 16:9 Screen, Size : 72inch)' at $291.92; official reward 1.00.",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1003,
+   "arm": "B0",
+   "text": "Episode 1003: task 'grocery cookies'. Bought 'Gentilini Osvego Italian Honey Biscuit Cookies Biscotti | 250 Gram | 8.8 Ounce | Pack of 2' at $19.95; official reward 0.25.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.25,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1004,
+   "arm": "B0",
+   "text": "Episode 1004: task 'throw blankets'. Bought 'HOMEIDEAS Fleece Flannel Soft Microfiber Blanket Throw Size, 50X61 Inches Printed Blanket for Couch/Sofa/Bed for All Season, Leopard/Cheetah, Grey' at $17.99; official reward 0.05.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.05,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "lesson",
+   "t": 1004,
+   "arm": "B0",
+   "text": "Compare prices and rewards for similar items to maximize savings.",
+   "tags": [
+    "comparison shopping",
+    "rewards system"
+   ],
+   "data": {}
+  },
+  {
+   "type": "observation",
+   "t": 1005,
+   "arm": "B0",
+   "text": "Episode 1005: task 'party mix'. Bought 'Soberdough Savory Trio - Bread Mixes' at $27.00; official reward 1.00.",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1006,
+   "arm": "B0",
+   "text": "Episode 1006: task 'men's jeans'. Bought 'FREDD MARSHALL Men's Skinny Slim Fit Ripped Distressed Stretch Jeans Pants' at $32.95; official reward 1.00.",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1007,
+   "arm": "B0",
+   "text": "Episode 1007: task 'cotton balls & swabs'. Bought 'BINO | 5 Drawer Makeup Organizer - Fifth Avenue | THE MANHATTAN SERIES | Makeup Drawer Organizer | Makeup Storage | Cosmetic Organizer | Vanity Organizer | Clear Makeup Organizers And Storage Cases' at $21.99; official reward 0.67.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.6666666666666666,
+    "gold_reward": null
+   }
+  }
+ ],
+ "injected_context": "Your experience notes from earlier shopping sessions:\n- [observation] Episode 1005: task 'party mix'. Bought 'Soberdough Savory Trio - Bread Mixes' at $27.00; official reward 1.00.\n- [observation] Episode 1006: task 'men's jeans'. Bought 'FREDD MARSHALL Men's Skinny Slim Fit Ripped Distressed Stretch Jeans Pants' at $32.95; official reward 1.00.\n- [observation] Episode 1007: task 'cotton balls & swabs'. Bought 'BINO | 5 Drawer Makeup Organizer - Fifth Avenue | THE MANHATTAN SERIES | Makeup Drawer Organizer | Makeup Storage | Cosmetic Organizer | Vanity Organizer | Clear Makeup Organizers And Storage Cases' at $21.99; official reward 0.67.",
+ "context_sha256": "c295008f928bc6fe150a21f96792e7776fd26e0ae77d5ce4afcfc7bb68f5b5ee"
+}

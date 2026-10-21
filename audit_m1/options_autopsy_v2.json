@@ -1,0 +1,599 @@
+{
+  "note": "Ablation on frozen v2 instrument, not exact historical reward reconstruction.",
+  "rows": [
+    {
+      "phase": "exam",
+      "pair_idx": 251,
+      "gold_asin": "B09P9XB3W9",
+      "n_goal_options": 0,
+      "with_options": 0.6666666666666666,
+      "without_options": 0.6666666666666666
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 252,
+      "gold_asin": "B08BSWZJ4G",
+      "n_goal_options": 1,
+      "with_options": 0.6666666666666666,
+      "without_options": 0.3333333333333333
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 253,
+      "gold_asin": "B09D9RXRPG",
+      "n_goal_options": 0,
+      "with_options": 0.5,
+      "without_options": 0.5
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 254,
+      "gold_asin": "B01IDDRDRI",
+      "n_goal_options": 1,
+      "with_options": 1.0,
+      "without_options": 0.6666666666666666
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 255,
+      "gold_asin": "B01IDDRDRI",
+      "n_goal_options": 1,
+      "with_options": 1.0,
+      "without_options": 0.6666666666666666
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 256,
+      "gold_asin": "B07CWWTHN9",
+      "n_goal_options": 2,
+      "with_options": 0.75,
+      "without_options": 0.25
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 257,
+      "gold_asin": "B087D5W1B5",
+      "n_goal_options": 0,
+      "with_options": 0.3333333333333333,
+      "without_options": 0.3333333333333333
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 258,
+      "gold_asin": "B087D5W1B5",
+      "n_goal_options": 0,
+      "with_options": 0.3333333333333333,
+      "without_options": 0.3333333333333333
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 259,
+      "gold_asin": "B0719QLYF2",
+      "n_goal_options": 2,
+      "with_options": 0.75,
+      "without_options": 0.25
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 260,
+      "gold_asin": "B0719QLYF2",
+      "n_goal_options": 2,
+      "with_options": 0.75,
+      "without_options": 0.25
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 261,
+      "gold_asin": "B07CTC8F3F",
+      "n_goal_options": 2,
+      "with_options": 0.75,
+      "without_options": 0.25
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 262,
+      "gold_asin": "B09B22X8TN",
+      "n_goal_options": 1,
+      "with_options": 0.6666666666666666,
+      "without_options": 0.3333333333333333
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 263,
+      "gold_asin": "B09SKGVDWZ",
+      "n_goal_options": 1,
+      "with_options": 0.6666666666666666,
+      "without_options": 0.3333333333333333
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 264,
+      "gold_asin": "B09SKGVDWZ",
+      "n_goal_options": 1,
+      "with_options": 1.0,
+      "without_options": 0.6666666666666666
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 265,
+      "gold_asin": "B09SKGVDWZ",
+      "n_goal_options": 1,
+      "with_options": 0.6666666666666666,
+      "without_options": 0.3333333333333333
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 266,
+      "gold_asin": "B09SKGVDWZ",
+      "n_goal_options": 1,
+      "with_options": 0.6666666666666666,
+      "without_options": 0.3333333333333333
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 267,
+      "gold_asin": "B09DPLKCW3",
+      "n_goal_options": 0,
+      "with_options": 0.5,
+      "without_options": 0.5
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 268,
+      "gold_asin": "B09DPLKCW3",
+      "n_goal_options": 0,
+      "with_options": 0.5,
+      "without_options": 0.5
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 269,
+      "gold_asin": "B09DPLKCW3",
+      "n_goal_options": 0,
+      "with_options": 0.5,
+      "without_options": 0.5
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 270,
+      "gold_asin": "B00I4WT6QU",
+      "n_goal_options": 2,
+      "with_options": 0.6666666666666666,
+      "without_options": 0.3333333333333333
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 271,
+      "gold_asin": "B09LSW7DJ1",
+      "n_goal_options": 1,
+      "with_options": 0.6666666666666666,
+      "without_options": 0.3333333333333333
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 272,
+      "gold_asin": "B09LSW7DJ1",
+      "n_goal_options": 1,
+      "with_options": 0.6666666666666666,
+      "without_options": 0.3333333333333333
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 273,
+      "gold_asin": "B09LSW7DJ1",
+      "n_goal_options": 1,
+      "with_options": 1.0,
+      "without_options": 0.6666666666666666
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 274,
+      "gold_asin": "B09LSW7DJ1",
+      "n_goal_options": 1,
+      "with_options": 0.6666666666666666,
+      "without_options": 0.3333333333333333
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 275,
+      "gold_asin": "B00SKVJK1G",
+      "n_goal_options": 1,
+      "with_options": 1.0,
+      "without_options": 0.6666666666666666
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 276,
+      "gold_asin": "B00SKVJK1G",
+      "n_goal_options": 1,
+      "with_options": 0.6666666666666666,
+      "without_options": 0.3333333333333333
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 278,
+      "gold_asin": "B08P4GMWJB",
+      "n_goal_options": 0,
+      "with_options": 1.0,
+      "without_options": 1.0
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 279,
+      "gold_asin": "B084NZ2GKF",
+      "n_goal_options": 1,
+      "with_options": 0.6666666666666666,
+      "without_options": 0.3333333333333333
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 280,
+      "gold_asin": "B084NZ2GKF",
+      "n_goal_options": 1,
+      "with_options": 0.6666666666666666,
+      "without_options": 0.3333333333333333
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 281,
+      "gold_asin": "B07XZ1VW78",
+      "n_goal_options": 2,
+      "with_options": 1.0,
+      "without_options": 0.6
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 282,
+      "gold_asin": "B09219DD59",
+      "n_goal_options": 1,
+      "with_options": 0.6666666666666666,
+      "without_options": 0.3333333333333333
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 283,
+      "gold_asin": "B08SCFN6ZG",
+      "n_goal_options": 1,
+      "with_options": 0.75,
+      "without_options": 0.5
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 284,
+      "gold_asin": "B07PV723CF",
+      "n_goal_options": 1,
+      "with_options": 0.6666666666666666,
+      "without_options": 0.3333333333333333
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 285,
+      "gold_asin": "B09LK4G5G2",
+      "n_goal_options": 1,
+      "with_options": 1.0,
+      "without_options": 0.75
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 286,
+      "gold_asin": "B09R96BLLY",
+      "n_goal_options": 1,
+      "with_options": 1.0,
+      "without_options": 0.75
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 287,
+      "gold_asin": "B09R96BLLY",
+      "n_goal_options": 1,
+      "with_options": 1.0,
+      "without_options": 0.75
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 288,
+      "gold_asin": "B09R96BLLY",
+      "n_goal_options": 1,
+      "with_options": 1.0,
+      "without_options": 0.75
+    },
+    {
+      "phase": "exam",
+      "pair_idx": 289,
+      "gold_asin": "B09R96BLLY",
+      "n_goal_options": 1,
+      "with_options": 1.0,
+      "without_options": 0.75
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 290,
+      "gold_asin": "B09R96BLLY",
+      "n_goal_options": 1,
+      "with_options": 1.0,
+      "without_options": 0.75
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 291,
+      "gold_asin": "B09N79LQQF",
+      "n_goal_options": 0,
+      "with_options": 0.6666666666666666,
+      "without_options": 0.6666666666666666
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 294,
+      "gold_asin": "B074RVN91Q",
+      "n_goal_options": 0,
+      "with_options": 1.0,
+      "without_options": 1.0
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 295,
+      "gold_asin": "B0865SKG5G",
+      "n_goal_options": 2,
+      "with_options": 0.75,
+      "without_options": 0.25
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 296,
+      "gold_asin": "B07L9KXTM4",
+      "n_goal_options": 0,
+      "with_options": 1.0,
+      "without_options": 1.0
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 299,
+      "gold_asin": "B09BJL1232",
+      "n_goal_options": 1,
+      "with_options": 0.5,
+      "without_options": 0.25
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 300,
+      "gold_asin": "B01HJWDWP6",
+      "n_goal_options": 1,
+      "with_options": 0.75,
+      "without_options": 0.5
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 301,
+      "gold_asin": "B01HJWDWP6",
+      "n_goal_options": 1,
+      "with_options": 0.75,
+      "without_options": 0.5
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 302,
+      "gold_asin": "B01HJWDWP6",
+      "n_goal_options": 1,
+      "with_options": 0.75,
+      "without_options": 0.5
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 303,
+      "gold_asin": "B01HJWDWP6",
+      "n_goal_options": 1,
+      "with_options": 0.75,
+      "without_options": 0.5
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 304,
+      "gold_asin": "B01HJWDWP6",
+      "n_goal_options": 1,
+      "with_options": 0.75,
+      "without_options": 0.5
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 305,
+      "gold_asin": "B09S3QKSWW",
+      "n_goal_options": 1,
+      "with_options": 1.0,
+      "without_options": 0.6666666666666666
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 306,
+      "gold_asin": "B09BZTJPZW",
+      "n_goal_options": 0,
+      "with_options": 0.75,
+      "without_options": 0.75
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 307,
+      "gold_asin": "B096RZ5DXK",
+      "n_goal_options": 2,
+      "with_options": 0.6,
+      "without_options": 0.2
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 308,
+      "gold_asin": "B07HPBFS5S",
+      "n_goal_options": 1,
+      "with_options": 0.6666666666666666,
+      "without_options": 0.3333333333333333
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 309,
+      "gold_asin": "B084ZT7Q8H",
+      "n_goal_options": 1,
+      "with_options": 1.0,
+      "without_options": 0.6666666666666666
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 310,
+      "gold_asin": "B075TGSSSS",
+      "n_goal_options": 2,
+      "with_options": 1.0,
+      "without_options": 0.5
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 311,
+      "gold_asin": "B07NX259SR",
+      "n_goal_options": 1,
+      "with_options": 0.6666666666666666,
+      "without_options": 0.3333333333333333
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 312,
+      "gold_asin": "B08R6NCZ95",
+      "n_goal_options": 0,
+      "with_options": 0.3333333333333333,
+      "without_options": 0.3333333333333333
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 313,
+      "gold_asin": "B0781HSDTZ",
+      "n_goal_options": 1,
+      "with_options": 0.6666666666666666,
+      "without_options": 0.3333333333333333
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 314,
+      "gold_asin": "B08J1D47RV",
+      "n_goal_options": 1,
+      "with_options": 1.0,
+      "without_options": 0.6666666666666666
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 315,
+      "gold_asin": "B09MLHK36S",
+      "n_goal_options": 1,
+      "with_options": 0.6,
+      "without_options": 0.4
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 316,
+      "gold_asin": "B09GFWF132",
+      "n_goal_options": 2,
+      "with_options": 0.8,
+      "without_options": 0.4
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 317,
+      "gold_asin": "B09GFWF132",
+      "n_goal_options": 2,
+      "with_options": 0.8,
+      "without_options": 0.4
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 318,
+      "gold_asin": "B076DL1VLG",
+      "n_goal_options": 1,
+      "with_options": 0.6666666666666666,
+      "without_options": 0.3333333333333333
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 319,
+      "gold_asin": "B00SZXFIEW",
+      "n_goal_options": 1,
+      "with_options": 0.75,
+      "without_options": 0.5
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 320,
+      "gold_asin": "B00SZXFIEW",
+      "n_goal_options": 1,
+      "with_options": 0.75,
+      "without_options": 0.5
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 321,
+      "gold_asin": "B00SZXFIEW",
+      "n_goal_options": 1,
+      "with_options": 0.75,
+      "without_options": 0.5
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 322,
+      "gold_asin": "B00SZXFIEW",
+      "n_goal_options": 1,
+      "with_options": 0.75,
+      "without_options": 0.5
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 323,
+      "gold_asin": "B00SZXFIEW",
+      "n_goal_options": 1,
+      "with_options": 0.75,
+      "without_options": 0.5
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 324,
+      "gold_asin": "B00SZXFIEW",
+      "n_goal_options": 1,
+      "with_options": 0.5,
+      "without_options": 0.25
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 325,
+      "gold_asin": "B00SZXFIEW",
+      "n_goal_options": 1,
+      "with_options": 0.75,
+      "without_options": 0.5
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 326,
+      "gold_asin": "B00SZXFIEW",
+      "n_goal_options": 1,
+      "with_options": 0.75,
+      "without_options": 0.5
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 327,
+      "gold_asin": "B00SZXFIEW",
+      "n_goal_options": 1,
+      "with_options": 0.5,
+      "without_options": 0.25
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 328,
+      "gold_asin": "B00SZXFIEW",
+      "n_goal_options": 1,
+      "with_options": 0.75,
+      "without_options": 0.5
+    },
+    {
+      "phase": "parity",
+      "pair_idx": 329,
+      "gold_asin": "B00SZXFIEW",
+      "n_goal_options": 1,
+      "with_options": 0.75,
+      "without_options": 0.5
+    }
+  ],
+  "pairs_affected": 61,
+  "mean_reward_loss_from_dropping_options": 0.26306306306306304
+}

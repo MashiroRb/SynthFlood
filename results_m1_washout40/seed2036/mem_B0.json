@@ -1,0 +1,534 @@
+{
+ "arm": "B0",
+ "path": "/mnt/beegfs/home/liudianru26/project/www2027/SynthFlood-local/results_m1_washout40/seed2036/mem_B0.json",
+ "entries": [
+  {
+   "type": "observation",
+   "t": 1000,
+   "arm": "B0",
+   "text": "Episode 1000: task 'throw blankets'. Bought 'Soccer Throw Blanket Flame Soccer Pattern Throw Blanket for Kids Soccer Fans Teens Boys, Reversible Soft Cozy Blanket Bed Couch Sofa for All Seasons 50\" X 60\"' at $24.99; official reward 0.25.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.25,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1001,
+   "arm": "B0",
+   "text": "Episode 1001: task 'women's dresses'. Bought 'Leadingstar Women Turtleneck Loose Fit Cotton Lace Casual Dress' at $22.41; official reward 0.33.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.3333333333333333,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1002,
+   "arm": "B0",
+   "text": "Episode 1002: task 'projection screens'. Bought 'PDGJG Portable Projector Screen Outdoor with Stand Bracket Screen 100 Inch 16:9 4K HD 3D Fast Folding Projection Screen' at $100.00; official reward 0.25.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.25,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1003,
+   "arm": "B0",
+   "text": "Episode 1003: task 'grocery cookies'. Bought 'Dibella Biscotti Cookies – Authentic Italian Biscotti, Apricot Almond, 6-Count – Gourmet Cantuccini Biscotti – Rich Flavor – Crunchy Outside with Silky Middle – Classic Italian Biscotti' at $11.63; official reward 0.25.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.25,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1004,
+   "arm": "B0",
+   "text": "Episode 1004: task 'throw blankets'. Bought 'LUXEAR Summer Sleeping Cool Blankets, Double-Sided Blankets with Arc-Chill Japanese Cooling Fiber Lightweight Breathable Summer Throw Cold Blanket for Night Sweats , Machine Washable' at $38.99; official reward 1.00.",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "lesson",
+   "t": 1004,
+   "arm": "B0",
+   "text": "Compare prices and rewards for similar items to maximize savings and earnings.",
+   "tags": [
+    "comparison shopping",
+    "rewards system"
+   ],
+   "data": {}
+  },
+  {
+   "type": "observation",
+   "t": 1005,
+   "arm": "B0",
+   "text": "Episode 1005: task 'party mix'. No purchase completed; official reward 0.00.",
+   "data": {
+    "chosen_kind": "none",
+    "reward": 0.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1006,
+   "arm": "B0",
+   "text": "Episode 1006: task 'men's jeans'. Bought 'FREDD MARSHALL Men's Skinny Slim Fit Ripped Distressed Stretch Jeans Pants' at $32.95; official reward 1.00.",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1007,
+   "arm": "B0",
+   "text": "Episode 1007: task 'cotton balls & swabs'. Bought 'Homde Makeup Organizer Transparent Desk Organizer Clear Vanity Box with 3 Drawers for Cosmetic, Nail Polish, Eyeshadow, Brush, Lipstick, Powder' at $22.99; official reward 0.67.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.6666666666666666,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1008,
+   "arm": "B0",
+   "text": "Episode 1008: task 'women's swimsuits & cover ups'. Bought 'Swimsuit Women Two Piece, Women's Fashion Solid Split Sexy Bikini Beach Sea Two-Piece Swimsuit High Waisted String Bikini' at $7.39; official reward 0.75.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.75,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1009,
+   "arm": "B0",
+   "text": "Episode 1009: task 'lips makeup'. Bought 'Revlon ColorStay Pressed Powder, Longwearing Oil Free, -Fragrance Free, Noncomedogenic Face Makeup, Natural Tan (330)' at $9.31; official reward 1.00.",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "lesson",
+   "t": 1009,
+   "arm": "B0",
+   "text": "Choose items that match tasks precisely to maximize rewards and efficiency.",
+   "tags": [
+    "task matching",
+    "reward optimization"
+   ],
+   "data": {}
+  },
+  {
+   "type": "observation",
+   "t": 1010,
+   "arm": "B0",
+   "text": "Episode 1010: task 'children's dental care'. Bought '“Pokemon Go” Inspired 3pc Bright Smile Oral Hygiene Bundle! Soft Manual Toothbrush, Brushing Timer & Mouthwash Rinse' at $13.90; official reward 1.00.",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1011,
+   "arm": "B0",
+   "text": "Episode 1011: task 'cell phones'. Bought 'Gameboy Case for iPhone, Autbye Retro 3D Phone Case Game Console with 36 Classic Game, Color Display Shockproof Video Game Phone Case for iPhone (for iPhone 6P/7P/8P, Black)' at $22.99; official reward 1.00.",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1012,
+   "arm": "B0",
+   "text": "Episode 1012: task 'makeup remover'. Bought 'Julep Eyeshadow 101 Crème to Powder Waterproof Eyeshadow Stick, Bronze Shimmer' at $15.00; official reward 1.00.",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1013,
+   "arm": "B0",
+   "text": "Episode 1013: task 'non-dairy milks'. Bought 'Cinnamon Flavored Toffee Covered Cashews by It's Delish, 12 Oz Bag, Vegan Kosher' at $12.99; official reward 1.00.",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1014,
+   "arm": "B0",
+   "text": "Episode 1014: task 'women's pants'. Bought 'NRTHYE Womens Palazzo Long Pants High Waist Wide Leg Stretchy Loose Fit Casual Trousers with Pocket' at $27.86; official reward 1.00.",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "lesson",
+   "t": 1014,
+   "arm": "B0",
+   "text": "Diversify purchases across categories to maximize rewards and benefits.",
+   "tags": [
+    "diversification",
+    "rewards"
+   ],
+   "data": {}
+  },
+  {
+   "type": "observation",
+   "t": 1015,
+   "arm": "B0",
+   "text": "Episode 1015: task 'men's casual button-down shirts'. Bought 'Hawaiian Shirts for Men,Men's Summer Short Sleeve Tops Classic Button Down Shirts Casual Beach Hawaiian Shirts Floral Tops' at $6.97; official reward 1.00.",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1016,
+   "arm": "B0",
+   "text": "Episode 1016: task 'tv stands'. No purchase completed; official reward 0.00.",
+   "data": {
+    "chosen_kind": "none",
+    "reward": 0.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1017,
+   "arm": "B0",
+   "text": "Episode 1017: task 'pc'. Bought 'HP EliteDesk 800 G2 Business Desktop Mini Tower, Intel Core i5 6500 3.2Ghz, 16GB DDR4 RAM, 512GB SSD Hard Drive, Windows 10 Pro (Renewed)' at $244.00; official reward 1.00.",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1018,
+   "arm": "B0",
+   "text": "Episode 1018: task 'men's mules & clogs'. Bought 'Naturalizer Women's Faryn Slide Sandal' at $34.40; official reward 0.00.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1019,
+   "arm": "B0",
+   "text": "Episode 1019: task 'screen protectors'. Bought '[2+1] WSKEN for iPhone 13 (6.1 inch)/ iPhone 13 mini (5.4 inch) Camera Lens Protector,Anti Scrach HD Tempered Glass Camera Screen Protector Shockproof Cover Film,Black' at $11.99; official reward 0.67.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.6666666666666666,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "lesson",
+   "t": 1019,
+   "arm": "B0",
+   "text": "Select tasks with clear product needs and compare prices before buying.",
+   "tags": [
+    "shopping strategies",
+    "price comparison"
+   ],
+   "data": {}
+  },
+  {
+   "type": "observation",
+   "t": 1020,
+   "arm": "B0",
+   "text": "Episode 1020: task 'pc'. Bought 'Partaker B18 DDR4 Coffee Lake 8th Gen Mini PC Intel Core I7 8750H DDR4 RAM NGFF SSD Intel UHD Graphics 630 Mini DP HDMI WiFi,Barebone System' at $100.00; official reward 1.00.",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1021,
+   "arm": "B0",
+   "text": "Episode 1021: task 'women's socks & hosiery'. Bought 'Set of 2 Mesh Laundry Bags Cherry-1 Medium & 1 Small Bags Laundry,Blouse, Hosiery, Stocking, Underwear, Bra Lingerie, Travel Laundry Bag(8rp9n)' at $15.99; official reward 1.00.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1022,
+   "arm": "B0",
+   "text": "Episode 1022: task 'hair coloring products'. Bought '3pcs Silicone eyeliner tool,Eyeliner Guide Wand,Reusable silicone eyeliner tool waterproof long lasting Eyeliner（Eyeliner tool + 2 eyeliner creams）' at $19.99; official reward 0.07.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.06666666666666667,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1023,
+   "arm": "B0",
+   "text": "Episode 1023: task 'salon & spa equipment'. Bought 'QXGIAO Personalized Beauty Salon Metal Sign Art | Custom Hair Stylist Salon Monogram Metal Sign | Hair Stylist Gifts | Job Funny | Hair Salon Gift' at $59.90; official reward 1.00.",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1024,
+   "arm": "B0",
+   "text": "Episode 1024: task 'children's fragrance'. Bought 'CA Perfume Club Impression of Bad Boy For Men Fragrance Refillable Atomizer Sample Travel Size Concentrated Hypoallergenic Vegan Long Lasting Eau de Parfum (Cologne) 0.27 Fl Oz/ 8 ml-X1' at $12.99; official reward 1.00.",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "lesson",
+   "t": 1024,
+   "arm": "B0",
+   "text": "Diversify purchases across various categories for consistent rewards.",
+   "tags": [
+    "diversification",
+    "rewards"
+   ],
+   "data": {}
+  },
+  {
+   "type": "observation",
+   "t": 1025,
+   "arm": "B0",
+   "text": "Episode 1025: task 'pc'. Bought 'Dell Optiplex 9020 Ultra Small Form Factor Desktop PC, Intel Quad Core i5-4590S up to 3.7GHz, 8G DDR3, 1T, WiFi, BT 4.0, Windows 10 64-Multi-Language Support English/Spanish/French (Renewed)' at $261.46; official reward 1.00.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1026,
+   "arm": "B0",
+   "text": "Episode 1026: task 'dried fruits & raisins'. Bought 'Barnana Organic Plantain Crisps, Sea Salt, 5 Ounce Bag (Pack of 6)' at $25.82; official reward 0.25.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.25,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1027,
+   "arm": "B0",
+   "text": "Episode 1027: task 'pc'. Bought 'Firewall,VPN,1U Rackmount, Network Security Appliance,Router PC,6 Nics I5 2540M/I5 2520M with AES-NI Support 4G RAM 32G SSD R11' at $100.00; official reward 1.00.",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1028,
+   "arm": "B0",
+   "text": "Episode 1028: task 'salon & spa equipment'. Bought 'KKCD Round Head Beauty Bed Mattress Topper,Tatami Massage Mattress Pad with Face Breath Hole,High-Density Sponge Filling,for Beauty Salon Massage Spa Center,Pink,60180cm' at $64.99; official reward 0.67.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.6666666666666666,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1029,
+   "arm": "B0",
+   "text": "Episode 1029: task 'digital cameras'. Bought 'Digital Optical Audio Toslink Cable 6FT, JSAUX [24K Gold-Plated, Ultra-Durable] Fiber Optic Cable Male to Male Cord Compatible with Sound Bar, TV, PS4, Xbox, Home Theater, Samsung' at $9.98; official reward 0.33.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.3333333333333333,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "lesson",
+   "t": 1029,
+   "arm": "B0",
+   "text": "Diversify purchases to maximize rewards and find the best deals.",
+   "tags": [
+    "purchases",
+    "rewards"
+   ],
+   "data": {}
+  },
+  {
+   "type": "observation",
+   "t": 1030,
+   "arm": "B0",
+   "text": "Episode 1030: task 'eyes makeup'. Bought 'Kilshye Shimmer Liquid Eyeshadow Glitter Eyeshadows High Pigment Eye Shadow Waterproof Long Lasting Eyes Makeup for Women and Girls Pack of 1 (Purple 6)' at $8.66; official reward 1.00.",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1031,
+   "arm": "B0",
+   "text": "Episode 1031: task 'men's sweaters'. Bought 'Cute Frog Hoodie Zipper Mouth Casual Loose Tunic Cute Cosplay Costume Tops Women's Girls Sweatshirt with Pockets' at $24.98; official reward 0.67.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.6666666666666666,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1032,
+   "arm": "B0",
+   "text": "Episode 1032: task 'men's boots'. Bought 'Reebok Women's Princess Wide D Premium Walking Shoe' at $60.15; official reward 0.00.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1033,
+   "arm": "B0",
+   "text": "Episode 1033: task 'sensitivity treatments'. Bought 'FaceTory Moon Velvet Moisturizing Cream Sheet Mask with Jojoba Oil - For Dry and Combo Skin, Made in Korea - Moisturizing, Radiance Boosting, Smoothing (Pack of 10)' at $17.50; official reward 1.00.",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1034,
+   "arm": "B0",
+   "text": "Episode 1034: task 'food & beverage gifts'. Bought 'EVA’S WALK Herbal Tea Selection from Greek Mountains, Natural Flavors, Maximum Freshness, Individually Foil-Packed, Alleviates Digest Discomfort, Caffeine-Free, 4-Pack Wellness Variety (48 Count)' at $13.99; official reward 0.50.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.5,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "lesson",
+   "t": 1034,
+   "arm": "B0",
+   "text": "Select items based on tasks and rewards; focus on necessity and value.",
+   "tags": [
+    "shopping strategy",
+    "task completion"
+   ],
+   "data": {}
+  },
+  {
+   "type": "observation",
+   "t": 1035,
+   "arm": "B0",
+   "text": "Episode 1035: task 'toothpicks'. Bought 'Luxshiny 40pcs Ball Cake Topper Happy Birthday Cake Toppers Foam Pearl Balls Cupcake Toppers Picks Reusable Cake Dessert Decorations for Wedding Birthday Party' at $11.29; official reward 0.50.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.5,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1036,
+   "arm": "B0",
+   "text": "Episode 1036: task 'beds'. Bought 'Dooppec Updated Version & Stronger Bunk Bed Twin Over Twin,Solid Wood Twin Loft Bed with Drawers and Desk,More Durable Twin Over Twin Size Bunk Bed Frame for Kids & Girls,Includes Cushion Set (White)' at $100.00; official reward 0.33.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.3333333333333333,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1037,
+   "arm": "B0",
+   "text": "Episode 1037: task 'beverages'. Bought 'Peet's Iced Espresso Vanilla Latte 8 oz Can (12 Count) Single-Origin Colombian Espresso & Milk & Vanilla Flavors 120 Calorie 17 grams of sugar' at $34.99; official reward 1.00.",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1038,
+   "arm": "B0",
+   "text": "Episode 1038: task 'makeup sets'. Bought 'Mented Cosmetics | Unpinkable Sheer Lip Gloss | Pink Tinted Lip Gloss | Vegan, Paraben-Free, Cruelty-Free Gloss Topper | Long Lasting and Moisturizing Lipgloss' at $15.00; official reward 0.03.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.03333333333333333,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1039,
+   "arm": "B0",
+   "text": "Episode 1039: task 'mattresses'. Bought 'Modway Corinne Full Bed Frame in Gray with Modway Aveline 6\" Gel Infused Memory Foam Full Mattress With CertiPUR-US Certified Foam' at $382.28; official reward 1.00.",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "lesson",
+   "t": 1039,
+   "arm": "B0",
+   "text": "Diversify purchases to maximize rewards; focus on bulk or high-cost items for better returns.",
+   "tags": [
+    "purchasing strategy",
+    "reward optimization"
+   ],
+   "data": {}
+  }
+ ]
+}

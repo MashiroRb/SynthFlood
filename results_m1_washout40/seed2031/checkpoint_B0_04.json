@@ -1,0 +1,52 @@
+{
+ "arm": "B0",
+ "path": "/mnt/beegfs/home/liudianru26/project/www2027/SynthFlood-local/results_m1_washout40/seed2031/mem_B0.json",
+ "entries": [
+  {
+   "type": "observation",
+   "t": 1000,
+   "arm": "B0",
+   "text": "Episode 1000: task 'throw blankets'. Bought 'jinchan Flannel Throw Blanket Dinosaur Glow in The Dark Green Lightweight Fleece Throw Blankets for Nursery Couch Bed Magical Blankets All Seasons Gift for Girls Boys Baby Kids 50x60 Inch' at $17.99; official reward 0.50.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.5,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1001,
+   "arm": "B0",
+   "text": "Episode 1001: task 'women's dresses'. No purchase completed; official reward 0.00.",
+   "data": {
+    "chosen_kind": "none",
+    "reward": 0.0,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1002,
+   "arm": "B0",
+   "text": "Episode 1002: task 'projection screens'. Bought 'vidaXL Projection Screen Home Theater Indoor Film Public Display Screen Office School Interior Conference Room Presentation with Tripod 84\" 4:3' at $102.64; official reward 0.25.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.25,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1003,
+   "arm": "B0",
+   "text": "Episode 1003: task 'grocery cookies'. Bought 'Traditional Almond Biscotti, Cantuccini d'Abruzzo, Italian Cookies made with real quality ingredients, 200 G, 7 oz, L'Oro del Sud' at $7.99; official reward 0.50.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.5,
+    "gold_reward": null
+   }
+  }
+ ],
+ "injected_context": "Your experience notes from earlier shopping sessions:\n- [observation] Episode 1001: task 'women's dresses'. No purchase completed; official reward 0.00.\n- [observation] Episode 1002: task 'projection screens'. Bought 'vidaXL Projection Screen Home Theater Indoor Film Public Display Screen Office School Interior Conference Room Presentation with Tripod 84\" 4:3' at $102.64; official reward 0.25.\n- [observation] Episode 1003: task 'grocery cookies'. Bought 'Traditional Almond Biscotti, Cantuccini d'Abruzzo, Italian Cookies made with real quality ingredients, 200 G, 7 oz, L'Oro del Sud' at $7.99; official reward 0.50.",
+ "context_sha256": "e369765cad79dca59e5a44813e8b7ccfa6bfafe53093ab0f0fe825f87c0f709c"
+}

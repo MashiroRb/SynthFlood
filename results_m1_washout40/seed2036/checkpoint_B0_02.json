@@ -1,0 +1,30 @@
+{
+ "arm": "B0",
+ "path": "/mnt/beegfs/home/liudianru26/project/www2027/SynthFlood-local/results_m1_washout40/seed2036/mem_B0.json",
+ "entries": [
+  {
+   "type": "observation",
+   "t": 1000,
+   "arm": "B0",
+   "text": "Episode 1000: task 'throw blankets'. Bought 'Soccer Throw Blanket Flame Soccer Pattern Throw Blanket for Kids Soccer Fans Teens Boys, Reversible Soft Cozy Blanket Bed Couch Sofa for All Seasons 50\" X 60\"' at $24.99; official reward 0.25.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.25,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1001,
+   "arm": "B0",
+   "text": "Episode 1001: task 'women's dresses'. Bought 'Leadingstar Women Turtleneck Loose Fit Cotton Lace Casual Dress' at $22.41; official reward 0.33.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.3333333333333333,
+    "gold_reward": null
+   }
+  }
+ ],
+ "injected_context": "Your experience notes from earlier shopping sessions:\n- [observation] Episode 1000: task 'throw blankets'. Bought 'Soccer Throw Blanket Flame Soccer Pattern Throw Blanket for Kids Soccer Fans Teens Boys, Reversible Soft Cozy Blanket Bed Couch Sofa for All Seasons 50\" X 60\"' at $24.99; official reward 0.25.\n- [observation] Episode 1001: task 'women's dresses'. Bought 'Leadingstar Women Turtleneck Loose Fit Cotton Lace Casual Dress' at $22.41; official reward 0.33.",
+ "context_sha256": "26acf3adfa26c9a30d461556213141f66f714b86a8278daa480a780a5520c595"
+}

@@ -3,7 +3,7 @@ import os
 from dataclasses import dataclass, field
 
 LAB_ROOT = os.environ.get("SYNTHFLOOD_ROOT", os.path.expanduser("~/synthflood"))
-DATA_DIR = os.path.join(LAB_ROOT, "data")
+DATA_DIR = os.environ.get("SYNTHFLOOD_DATA_DIR", os.path.join(LAB_ROOT, "data"))
 MODEL_DIR = os.path.join(LAB_ROOT, "models")
 LOG_DIR = os.path.join(LAB_ROOT, "logs")
 RESULT_DIR = os.path.join(LAB_ROOT, "results")
@@ -29,7 +29,7 @@ VLLM_PORT_MODEL1 = 8001
 
 
 def vllm_url(port: int) -> str:
-    return f"http://127.0.0.1:{port}/v1"
+    return os.environ.get("SYNTHFLOOD_API_BASE", f"http://127.0.0.1:{port}/v1")
 
 
 @dataclass

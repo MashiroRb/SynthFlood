@@ -1,0 +1,1120 @@
+{
+  "scope": "Exploratory options-only counterfactual for released exposure rewards; not a replay of the resulting memories.",
+  "certificate": "The generator inherits gold variant options. A gold counterfactual reward of 1 certifies those options fully satisfy the same goal. Restore only the missing option term using released reward components.",
+  "source_sha256": "eaa039b56ad1ad217a326caef8220aa3c73bd8949ded2e18ce920b6dd40db5cc",
+  "runs": {
+    "seed1": {
+      "synthetic_purchases": 38,
+      "certified_n": 38,
+      "uncertified": [],
+      "original_reward_ge_gold": 2,
+      "original_mean_gap_all": -0.6324561403508772,
+      "rows": [
+        {
+          "arm": "M0",
+          "ep": 0,
+          "old_reward": 0.3333333333333333,
+          "options_restored_reward": 0.6666666666666666,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 1,
+          "old_reward": 0.25,
+          "options_restored_reward": 0.5,
+          "gold_reward": 1.0,
+          "option_weight": 0.25,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M0",
+          "ep": 1,
+          "old_reward": 0.25,
+          "options_restored_reward": 0.5,
+          "gold_reward": 1.0,
+          "option_weight": 0.25,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 2,
+          "old_reward": 0.3333333333333333,
+          "options_restored_reward": 0.6666666666666666,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M2",
+          "ep": 1,
+          "old_reward": 0.25,
+          "options_restored_reward": 0.5,
+          "gold_reward": 1.0,
+          "option_weight": 0.25,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 3,
+          "old_reward": 0.4,
+          "options_restored_reward": 0.6000000000000001,
+          "gold_reward": 1.0,
+          "option_weight": 0.2,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M0",
+          "ep": 3,
+          "old_reward": 0.4,
+          "options_restored_reward": 0.6000000000000001,
+          "gold_reward": 1.0,
+          "option_weight": 0.2,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 4,
+          "old_reward": 0.6666666666666666,
+          "options_restored_reward": 1.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 5,
+          "old_reward": 0.6666666666666666,
+          "options_restored_reward": 1.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M0",
+          "ep": 5,
+          "old_reward": 0.6666666666666666,
+          "options_restored_reward": 1.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 6,
+          "old_reward": 0.5,
+          "options_restored_reward": 0.5,
+          "gold_reward": 1.0,
+          "option_weight": 0.0,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M0",
+          "ep": 6,
+          "old_reward": 0.5,
+          "options_restored_reward": 0.5,
+          "gold_reward": 1.0,
+          "option_weight": 0.0,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 7,
+          "old_reward": 0.3333333333333333,
+          "options_restored_reward": 0.6666666666666666,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M0",
+          "ep": 7,
+          "old_reward": 0.3333333333333333,
+          "options_restored_reward": 0.6666666666666666,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M2",
+          "ep": 6,
+          "old_reward": 0.5,
+          "options_restored_reward": 0.5,
+          "gold_reward": 1.0,
+          "option_weight": 0.0,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M0",
+          "ep": 8,
+          "old_reward": 0.3333333333333333,
+          "options_restored_reward": 0.6666666666666666,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M2",
+          "ep": 7,
+          "old_reward": 0.3333333333333333,
+          "options_restored_reward": 0.6666666666666666,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 8,
+          "old_reward": 0.0,
+          "options_restored_reward": 0.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 0.0
+        },
+        {
+          "arm": "M0",
+          "ep": 10,
+          "old_reward": 0.0,
+          "options_restored_reward": 0.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.0,
+          "type_factor": 0.0
+        },
+        {
+          "arm": "M0",
+          "ep": 11,
+          "old_reward": 0.6666666666666666,
+          "options_restored_reward": 1.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M2",
+          "ep": 9,
+          "old_reward": 0.3333333333333333,
+          "options_restored_reward": 0.6666666666666666,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M0",
+          "ep": 13,
+          "old_reward": 0.5,
+          "options_restored_reward": 0.5,
+          "gold_reward": 1.0,
+          "option_weight": 0.0,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M2",
+          "ep": 10,
+          "old_reward": 1.0,
+          "options_restored_reward": 1.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.0,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 10,
+          "old_reward": 1.0,
+          "options_restored_reward": 1.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.0,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M0",
+          "ep": 14,
+          "old_reward": 0.5,
+          "options_restored_reward": 0.75,
+          "gold_reward": 1.0,
+          "option_weight": 0.25,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 11,
+          "old_reward": 0.6666666666666666,
+          "options_restored_reward": 1.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 13,
+          "old_reward": 0.5,
+          "options_restored_reward": 0.5,
+          "gold_reward": 1.0,
+          "option_weight": 0.0,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M2",
+          "ep": 14,
+          "old_reward": 0.5,
+          "options_restored_reward": 0.75,
+          "gold_reward": 1.0,
+          "option_weight": 0.25,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M0",
+          "ep": 16,
+          "old_reward": 0.2,
+          "options_restored_reward": 0.6000000000000001,
+          "gold_reward": 1.0,
+          "option_weight": 0.4,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M0",
+          "ep": 17,
+          "old_reward": 0.05,
+          "options_restored_reward": 0.05,
+          "gold_reward": 1.0,
+          "option_weight": 0.0,
+          "type_factor": 0.1
+        },
+        {
+          "arm": "M3",
+          "ep": 14,
+          "old_reward": 0.5,
+          "options_restored_reward": 0.75,
+          "gold_reward": 1.0,
+          "option_weight": 0.25,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M0",
+          "ep": 18,
+          "old_reward": 0.0,
+          "options_restored_reward": 0.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 0.0
+        },
+        {
+          "arm": "M3",
+          "ep": 16,
+          "old_reward": 0.2,
+          "options_restored_reward": 0.6000000000000001,
+          "gold_reward": 1.0,
+          "option_weight": 0.4,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 17,
+          "old_reward": 0.05,
+          "options_restored_reward": 0.05,
+          "gold_reward": 1.0,
+          "option_weight": 0.0,
+          "type_factor": 0.1
+        },
+        {
+          "arm": "M0",
+          "ep": 19,
+          "old_reward": 0.2,
+          "options_restored_reward": 0.6000000000000001,
+          "gold_reward": 1.0,
+          "option_weight": 0.4,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 18,
+          "old_reward": 0.0,
+          "options_restored_reward": 0.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 0.0
+        },
+        {
+          "arm": "M2",
+          "ep": 17,
+          "old_reward": 0.05,
+          "options_restored_reward": 0.05,
+          "gold_reward": 1.0,
+          "option_weight": 0.0,
+          "type_factor": 0.1
+        },
+        {
+          "arm": "M2",
+          "ep": 18,
+          "old_reward": 0.0,
+          "options_restored_reward": 0.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 0.0
+        }
+      ],
+      "input_sha256": "247029b87d33d3fe1c9a68d1dea30f042317bd03c68cb9fec47c639d1127490d",
+      "original_reward_ge_gold_certified": 2,
+      "restored_reward_ge_gold_certified": 7,
+      "old_mean_gap_certified": -0.6324561403508772,
+      "restored_mean_gap_certified": -0.4456140350877192
+    },
+    "seed2": {
+      "synthetic_purchases": 39,
+      "certified_n": 39,
+      "uncertified": [],
+      "original_reward_ge_gold": 2,
+      "original_mean_gap_all": -0.5188034188034188,
+      "rows": [
+        {
+          "arm": "M0",
+          "ep": 0,
+          "old_reward": 0.6666666666666666,
+          "options_restored_reward": 1.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 0,
+          "old_reward": 0.6666666666666666,
+          "options_restored_reward": 1.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M2",
+          "ep": 0,
+          "old_reward": 0.6666666666666666,
+          "options_restored_reward": 1.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M2",
+          "ep": 1,
+          "old_reward": 0.6666666666666666,
+          "options_restored_reward": 1.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 1,
+          "old_reward": 0.6666666666666666,
+          "options_restored_reward": 1.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M0",
+          "ep": 1,
+          "old_reward": 0.3333333333333333,
+          "options_restored_reward": 0.6666666666666666,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 2,
+          "old_reward": 0.4,
+          "options_restored_reward": 0.6000000000000001,
+          "gold_reward": 1.0,
+          "option_weight": 0.2,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M0",
+          "ep": 2,
+          "old_reward": 0.8,
+          "options_restored_reward": 1.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.2,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 3,
+          "old_reward": 0.25,
+          "options_restored_reward": 0.5,
+          "gold_reward": 1.0,
+          "option_weight": 0.25,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M2",
+          "ep": 5,
+          "old_reward": 0.6666666666666666,
+          "options_restored_reward": 0.6666666666666666,
+          "gold_reward": 1.0,
+          "option_weight": 0.0,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M2",
+          "ep": 6,
+          "old_reward": 0.2,
+          "options_restored_reward": 0.6000000000000001,
+          "gold_reward": 1.0,
+          "option_weight": 0.4,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 5,
+          "old_reward": 0.6666666666666666,
+          "options_restored_reward": 0.6666666666666666,
+          "gold_reward": 1.0,
+          "option_weight": 0.0,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M2",
+          "ep": 7,
+          "old_reward": 0.3333333333333333,
+          "options_restored_reward": 0.6666666666666666,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M2",
+          "ep": 8,
+          "old_reward": 0.4,
+          "options_restored_reward": 0.8,
+          "gold_reward": 1.0,
+          "option_weight": 0.4,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 9,
+          "old_reward": 0.75,
+          "options_restored_reward": 1.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.25,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M2",
+          "ep": 12,
+          "old_reward": 0.4,
+          "options_restored_reward": 0.6000000000000001,
+          "gold_reward": 1.0,
+          "option_weight": 0.2,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 11,
+          "old_reward": 0.6666666666666666,
+          "options_restored_reward": 1.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M0",
+          "ep": 6,
+          "old_reward": 0.2,
+          "options_restored_reward": 0.6000000000000001,
+          "gold_reward": 1.0,
+          "option_weight": 0.4,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M2",
+          "ep": 14,
+          "old_reward": 1.0,
+          "options_restored_reward": 1.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.0,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M0",
+          "ep": 7,
+          "old_reward": 0.3333333333333333,
+          "options_restored_reward": 0.6666666666666666,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M2",
+          "ep": 15,
+          "old_reward": 0.5,
+          "options_restored_reward": 0.5,
+          "gold_reward": 1.0,
+          "option_weight": 0.0,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M2",
+          "ep": 16,
+          "old_reward": 0.3333333333333333,
+          "options_restored_reward": 0.6666666666666666,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 14,
+          "old_reward": 1.0,
+          "options_restored_reward": 1.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.0,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 15,
+          "old_reward": 0.5,
+          "options_restored_reward": 0.5,
+          "gold_reward": 1.0,
+          "option_weight": 0.0,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 16,
+          "old_reward": 0.3333333333333333,
+          "options_restored_reward": 0.6666666666666666,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M0",
+          "ep": 11,
+          "old_reward": 0.6666666666666666,
+          "options_restored_reward": 1.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 17,
+          "old_reward": 0.25,
+          "options_restored_reward": 0.75,
+          "gold_reward": 1.0,
+          "option_weight": 0.5,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M2",
+          "ep": 17,
+          "old_reward": 0.25,
+          "options_restored_reward": 0.75,
+          "gold_reward": 1.0,
+          "option_weight": 0.5,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M2",
+          "ep": 18,
+          "old_reward": 0.5,
+          "options_restored_reward": 1.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.5,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M0",
+          "ep": 12,
+          "old_reward": 0.2,
+          "options_restored_reward": 0.4,
+          "gold_reward": 1.0,
+          "option_weight": 0.2,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 18,
+          "old_reward": 0.5,
+          "options_restored_reward": 1.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.5,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M2",
+          "ep": 19,
+          "old_reward": 0.25,
+          "options_restored_reward": 0.75,
+          "gold_reward": 1.0,
+          "option_weight": 0.5,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M0",
+          "ep": 13,
+          "old_reward": 0.6666666666666666,
+          "options_restored_reward": 1.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 19,
+          "old_reward": 0.25,
+          "options_restored_reward": 0.75,
+          "gold_reward": 1.0,
+          "option_weight": 0.5,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M0",
+          "ep": 15,
+          "old_reward": 0.5,
+          "options_restored_reward": 0.5,
+          "gold_reward": 1.0,
+          "option_weight": 0.0,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M0",
+          "ep": 16,
+          "old_reward": 0.3333333333333333,
+          "options_restored_reward": 0.6666666666666666,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M0",
+          "ep": 17,
+          "old_reward": 0.25,
+          "options_restored_reward": 0.75,
+          "gold_reward": 1.0,
+          "option_weight": 0.5,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M0",
+          "ep": 18,
+          "old_reward": 0.5,
+          "options_restored_reward": 1.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.5,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M0",
+          "ep": 19,
+          "old_reward": 0.25,
+          "options_restored_reward": 0.75,
+          "gold_reward": 1.0,
+          "option_weight": 0.5,
+          "type_factor": 1.0
+        }
+      ],
+      "input_sha256": "b3ea29bb00cac2bbf96df6f4e4d0d6118f14e23310890e3fd59bff15dd18a9d5",
+      "original_reward_ge_gold_certified": 2,
+      "restored_reward_ge_gold_certified": 15,
+      "old_mean_gap_certified": -0.5188034188034188,
+      "restored_mean_gap_certified": -0.21965811965811965
+    },
+    "seed2b": {
+      "synthetic_purchases": 42,
+      "certified_n": 42,
+      "uncertified": [],
+      "original_reward_ge_gold": 0,
+      "original_mean_gap_all": -0.5626190476190476,
+      "rows": [
+        {
+          "arm": "M0",
+          "ep": 0,
+          "old_reward": 0.0,
+          "options_restored_reward": 0.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 0.0
+        },
+        {
+          "arm": "M2",
+          "ep": 0,
+          "old_reward": 0.0,
+          "options_restored_reward": 0.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 0.0
+        },
+        {
+          "arm": "M3",
+          "ep": 0,
+          "old_reward": 0.0,
+          "options_restored_reward": 0.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 0.0
+        },
+        {
+          "arm": "M2",
+          "ep": 2,
+          "old_reward": 0.3333333333333333,
+          "options_restored_reward": 0.6666666666666666,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M2",
+          "ep": 3,
+          "old_reward": 0.6,
+          "options_restored_reward": 0.8,
+          "gold_reward": 1.0,
+          "option_weight": 0.2,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M0",
+          "ep": 2,
+          "old_reward": 0.3333333333333333,
+          "options_restored_reward": 0.6666666666666666,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M0",
+          "ep": 3,
+          "old_reward": 0.6,
+          "options_restored_reward": 0.8,
+          "gold_reward": 1.0,
+          "option_weight": 0.2,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 2,
+          "old_reward": 0.3333333333333333,
+          "options_restored_reward": 0.6666666666666666,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M2",
+          "ep": 5,
+          "old_reward": 0.6666666666666666,
+          "options_restored_reward": 1.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 3,
+          "old_reward": 0.6,
+          "options_restored_reward": 0.8,
+          "gold_reward": 1.0,
+          "option_weight": 0.2,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M2",
+          "ep": 6,
+          "old_reward": 0.5,
+          "options_restored_reward": 0.5,
+          "gold_reward": 1.0,
+          "option_weight": 0.0,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M2",
+          "ep": 7,
+          "old_reward": 0.3333333333333333,
+          "options_restored_reward": 0.6666666666666666,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M0",
+          "ep": 4,
+          "old_reward": 0.3333333333333333,
+          "options_restored_reward": 0.6666666666666666,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 5,
+          "old_reward": 0.3333333333333333,
+          "options_restored_reward": 0.6666666666666666,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 6,
+          "old_reward": 0.5,
+          "options_restored_reward": 0.5,
+          "gold_reward": 1.0,
+          "option_weight": 0.0,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M0",
+          "ep": 5,
+          "old_reward": 0.3333333333333333,
+          "options_restored_reward": 0.6666666666666666,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 7,
+          "old_reward": 0.3333333333333333,
+          "options_restored_reward": 0.6666666666666666,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M0",
+          "ep": 6,
+          "old_reward": 0.5,
+          "options_restored_reward": 0.5,
+          "gold_reward": 1.0,
+          "option_weight": 0.0,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M2",
+          "ep": 9,
+          "old_reward": 0.3333333333333333,
+          "options_restored_reward": 0.6666666666666666,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M0",
+          "ep": 7,
+          "old_reward": 0.3333333333333333,
+          "options_restored_reward": 0.6666666666666666,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M2",
+          "ep": 10,
+          "old_reward": 0.5,
+          "options_restored_reward": 0.5,
+          "gold_reward": 1.0,
+          "option_weight": 0.0,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M2",
+          "ep": 12,
+          "old_reward": 0.6,
+          "options_restored_reward": 1.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.4,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 9,
+          "old_reward": 0.3333333333333333,
+          "options_restored_reward": 0.6666666666666666,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 10,
+          "old_reward": 0.5,
+          "options_restored_reward": 0.5,
+          "gold_reward": 1.0,
+          "option_weight": 0.0,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M2",
+          "ep": 14,
+          "old_reward": 0.75,
+          "options_restored_reward": 1.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.25,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 11,
+          "old_reward": 0.6666666666666666,
+          "options_restored_reward": 1.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M2",
+          "ep": 15,
+          "old_reward": 0.5,
+          "options_restored_reward": 0.75,
+          "gold_reward": 1.0,
+          "option_weight": 0.25,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M0",
+          "ep": 9,
+          "old_reward": 0.3333333333333333,
+          "options_restored_reward": 0.6666666666666666,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 12,
+          "old_reward": 0.6,
+          "options_restored_reward": 1.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.4,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M2",
+          "ep": 17,
+          "old_reward": 0.5,
+          "options_restored_reward": 0.5,
+          "gold_reward": 1.0,
+          "option_weight": 0.0,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M0",
+          "ep": 11,
+          "old_reward": 0.6666666666666666,
+          "options_restored_reward": 1.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M2",
+          "ep": 18,
+          "old_reward": 0.3333333333333333,
+          "options_restored_reward": 0.6666666666666666,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M0",
+          "ep": 12,
+          "old_reward": 0.6,
+          "options_restored_reward": 1.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.4,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 14,
+          "old_reward": 0.75,
+          "options_restored_reward": 1.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.25,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 15,
+          "old_reward": 0.5,
+          "options_restored_reward": 0.75,
+          "gold_reward": 1.0,
+          "option_weight": 0.25,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M2",
+          "ep": 19,
+          "old_reward": 0.020000000000000004,
+          "options_restored_reward": 0.06000000000000001,
+          "gold_reward": 1.0,
+          "option_weight": 0.4,
+          "type_factor": 0.1
+        },
+        {
+          "arm": "M0",
+          "ep": 14,
+          "old_reward": 0.75,
+          "options_restored_reward": 1.0,
+          "gold_reward": 1.0,
+          "option_weight": 0.25,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M0",
+          "ep": 15,
+          "old_reward": 0.5,
+          "options_restored_reward": 0.75,
+          "gold_reward": 1.0,
+          "option_weight": 0.25,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 17,
+          "old_reward": 0.5,
+          "options_restored_reward": 0.5,
+          "gold_reward": 1.0,
+          "option_weight": 0.0,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M3",
+          "ep": 18,
+          "old_reward": 0.3333333333333333,
+          "options_restored_reward": 0.6666666666666666,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M0",
+          "ep": 17,
+          "old_reward": 0.5,
+          "options_restored_reward": 0.5,
+          "gold_reward": 1.0,
+          "option_weight": 0.0,
+          "type_factor": 1.0
+        },
+        {
+          "arm": "M0",
+          "ep": 18,
+          "old_reward": 0.3333333333333333,
+          "options_restored_reward": 0.6666666666666666,
+          "gold_reward": 1.0,
+          "option_weight": 0.3333333333333333,
+          "type_factor": 1.0
+        }
+      ],
+      "input_sha256": "1f7f94f540fa6648461070e27a0450b0368b574d86b693fb0e9dddf9f80e7546",
+      "original_reward_ge_gold_certified": 0,
+      "restored_reward_ge_gold_certified": 9,
+      "old_mean_gap_certified": -0.5626190476190476,
+      "restored_mean_gap_certified": -0.3402380952380953
+    }
+  }
+}

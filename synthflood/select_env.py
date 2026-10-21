@@ -25,14 +25,16 @@ from thefuzz import fuzz
 from .config import DATA_DIR
 from .ws_loader import load_official_data
 
-WEBSHOP_REPO = os.path.join(os.environ.get("SYNTHFLOOD_ROOT",
+WEBSHOP_REPO = os.environ.get("WEBSHOP_REPO", os.path.join(os.environ.get("SYNTHFLOOD_ROOT",
                                            os.path.expanduser("~/synthflood")),
-                            "webshop_repo")
+                            "webshop_repo"))
 if os.path.isdir(WEBSHOP_REPO):
     if WEBSHOP_REPO not in sys.path:
         sys.path.insert(0, WEBSHOP_REPO)
 
 _CACHE = {}
+_DISTRACTOR_INDEX = None
+_DISTRACTOR_SOURCE = None
 
 
 def get_official_data():
@@ -277,6 +279,8 @@ class SelectEnv:
         try:
             r, info = get_reward(prod, self.goal, price, options, verbose=True)
         except Exception:
+            if os.environ.get("SYNTHFLOOD_STRICT_REWARD") == "1":
+                raise
             r, info = 0.0, {}
         return r, info
 
@@ -288,12 +292,20 @@ def sample_distractors(goal, by_asin, k, seed):
     rng = random.Random(seed)
     fine = goal["product_category"]
     coarse = goal["category"]
-    pool = [p for p in by_asin.values()
-            if p.get("product_category") == fine and p["asin"] != goal["asin"]]
+    global _DISTRACTOR_INDEX, _DISTRACTOR_SOURCE
+    if _DISTRACTOR_SOURCE is not by_asin:
+        from collections import defaultdict
+        by_fine, by_coarse = defaultdict(list), defaultdict(list)
+        for product in by_asin.values():
+            by_fine[product.get("product_category")].append(product)
+            by_coarse[product.get("category")].append(product)
+        _DISTRACTOR_INDEX = by_fine, by_coarse
+        _DISTRACTOR_SOURCE = by_asin
+    by_fine, by_coarse = _DISTRACTOR_INDEX
+    pool = [p for p in by_fine.get(fine, []) if p["asin"] != goal["asin"]]
     if len(pool) < k:
-        extra = [p for p in by_asin.values()
-                 if p.get("category") == coarse
-                 and p.get("product_category") != fine
+        extra = [p for p in by_coarse.get(coarse, [])
+                 if p.get("product_category") != fine
                  and p["asin"] != goal["asin"]]
         rng.shuffle(extra)
         pool += extra

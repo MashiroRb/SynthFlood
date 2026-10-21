@@ -17,6 +17,7 @@ import os
 import random
 import re
 import threading
+from concurrent.futures import ThreadPoolExecutor
 
 from .config import GEN_DIR, GEN_TEMP, GEN_SEED, JUDGE_MODEL
 from .vllm_client import LLMClient
@@ -116,7 +117,8 @@ Return ONLY JSON: {{"reviews": ["...", ...]}}"""
 
 def synth_listing(family, goal, gold_item, rng, client, port, style="default"):
     f = product_fields(gold_item)
-    attrs = goal["attributes"]
+    # Never shuffle a shared goal in place (generation uses worker threads).
+    attrs = list(goal["attributes"])
     rng.shuffle(attrs)
     violate = attrs[:2] if len(attrs) >= 2 else attrs
     base = dict(
@@ -198,14 +200,14 @@ def judge_plausible(base, goal, client, port):
 
 def generate_pool(goals, gold_items, out_path, port, model,
                   per_task_per_family=4, n_review_packs=1, max_workers=8,
-                  judge_port=None, judge_model=None, style="default"):
+                  judge_port=None, judge_model=None, style="default",
+                  seed=GEN_SEED):
     """Generate a synthetic listing pool keyed by goal index.
 
     judge_port/judge_model: serve the plausibility judge on a separate
     model/port than the generator (avoids generator self-preference bias).
     """
     judge_model = judge_model or model
-    rng = random.Random(GEN_SEED)
     sem = threading.Semaphore(max_workers)
     results, lock = {}, threading.Lock()
 
@@ -214,13 +216,16 @@ def generate_pool(goals, gold_items, out_path, port, model,
             cl = LLMClient(port, model)
             jc = LLMClient(judge_port or port, judge_model)
             g = dict(goal)
+            g["attributes"] = list(goal["attributes"])
             gold = gold_items[gi]
-            fam_rng = random.Random(GEN_SEED + gi)
+            fam_rng = random.Random(seed + gi)
             fam_rng.shuffle(g["attributes"])
             out = []
-            for fam in FAMILIES:
+            for fam_idx, fam in enumerate(FAMILIES):
                 for i in range(per_task_per_family):
-                    r = random.Random(GEN_SEED * 1000 + gi * 100 + hash(fam) % 100 + i)
+                    # Python hash(str) changes between processes. Allocate
+                    # disjoint stable streams instead, including the run seed.
+                    r = random.Random(seed * 1000000 + gi * 1000 + fam_idx * 100 + i)
                     b = synth_listing(fam, g, gold, r, cl, port, style=style)
                     if b is None:
                         continue
@@ -243,15 +248,13 @@ def generate_pool(goals, gold_items, out_path, port, model,
             with lock:
                 results[gi] = out
 
-    threads = [threading.Thread(target=work, args=(gi, g))
-               for gi, g in enumerate(goals)]
-    for t in threads:
-        t.start()
-    for t in threads:
-        t.join()
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        futures = [executor.submit(work, gi, g) for gi, g in enumerate(goals)]
+        for future in futures:
+            future.result()
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
     with open(out_path, "w") as f:
-        json.dump(results, f, ensure_ascii=False)
+        json.dump(results, f, ensure_ascii=False, sort_keys=True)
     return results
 
 
@@ -290,7 +293,7 @@ def pick_synths(pool_for_goal, eps, n_candidates, seed, family="mix"):
 
 _SYNTH_FIELDS = ("asin", "Title", "price", "rating", "num_reviews",
                  "Brand", "product_category", "query",
-                 "BulletPoints", "Description", "Attributes")
+                 "BulletPoints", "Description", "Attributes", "options")
 
 
 def _as_candidate(b):

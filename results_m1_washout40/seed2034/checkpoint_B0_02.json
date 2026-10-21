@@ -1,0 +1,30 @@
+{
+ "arm": "B0",
+ "path": "/mnt/beegfs/home/liudianru26/project/www2027/SynthFlood-local/results_m1_washout40/seed2034/mem_B0.json",
+ "entries": [
+  {
+   "type": "observation",
+   "t": 1000,
+   "arm": "B0",
+   "text": "Episode 1000: task 'throw blankets'. Bought 'Feelyou Black Cat Fuzzy Blanket for Kids Toddler Cute Pet Cats Fleece Throw Blanket Kawaii Kitten Plush Blanket and Throws Super Soft Cozy Animal Sherpa Blanket 50\"X60\"' at $24.99; official reward 0.50.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.5,
+    "gold_reward": null
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1001,
+   "arm": "B0",
+   "text": "Episode 1001: task 'women's dresses'. Bought 'Women's Elegant Off Shoulder High Waist Floral Print Long Dress Summer Party Stylish Split Dress' at $14.99; official reward 0.33.",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.3333333333333333,
+    "gold_reward": null
+   }
+  }
+ ],
+ "injected_context": "Your experience notes from earlier shopping sessions:\n- [observation] Episode 1000: task 'throw blankets'. Bought 'Feelyou Black Cat Fuzzy Blanket for Kids Toddler Cute Pet Cats Fleece Throw Blanket Kawaii Kitten Plush Blanket and Throws Super Soft Cozy Animal Sherpa Blanket 50\"X60\"' at $24.99; official reward 0.50.\n- [observation] Episode 1001: task 'women's dresses'. Bought 'Women's Elegant Off Shoulder High Waist Floral Print Long Dress Summer Party Stylish Split Dress' at $14.99; official reward 0.33.",
+ "context_sha256": "662f3a8741cdaecd38ad42b8e787a18d9012143e32264882660c5dd68108705b"
+}

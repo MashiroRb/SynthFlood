@@ -1,0 +1,662 @@
+{
+  "protocol": "m1/EXPOSURE_LENGTH_PROTOCOL.md",
+  "seeds": [
+    2030,
+    2031,
+    2032,
+    2033,
+    2034,
+    2035,
+    2036,
+    2037
+  ],
+  "lengths": [
+    20,
+    40,
+    80
+  ],
+  "n_pairs": 452,
+  "n_gold_asins": 305,
+  "effects_minus_empty": {
+    "all": {
+      "micro": {
+        "20": {
+          "n_trajectories": 8,
+          "values": [
+            0.0,
+            0.015486725663716783,
+            0.0022123893805309214,
+            0.03539823008849552,
+            0.03982300884955747,
+            0.02654867256637161,
+            -0.004424778761061954,
+            0.03982300884955747
+          ],
+          "mean": 0.01935840707964598,
+          "bootstrap95": [
+            0.007190265486725647,
+            0.03124999999999996
+          ],
+          "bootstrap90": [
+            0.009126106194690245,
+            0.029590707964601712
+          ],
+          "sign_flip_two_sided_p": 0.046875,
+          "conditional_on": "Fixed goals, exam candidates, exposure text pool and frozen backend; seed-level randomization only."
+        },
+        "40": {
+          "n_trajectories": 8,
+          "values": [
+            0.019911504424778736,
+            0.030973451327433565,
+            0.042035398230088505,
+            0.03982300884955747,
+            0.030973451327433565,
+            0.028761061946902644,
+            0.030973451327433565,
+            0.05973451327433621
+          ],
+          "mean": 0.03539823008849553,
+          "bootstrap95": [
+            0.028207964601769886,
+            0.04369469026548667
+          ],
+          "bootstrap90": [
+            0.029314159292035347,
+            0.042311946902654815
+          ],
+          "sign_flip_two_sided_p": 0.0078125,
+          "conditional_on": "Fixed goals, exam candidates, exposure text pool and frozen backend; seed-level randomization only."
+        },
+        "80": {
+          "n_trajectories": 8,
+          "values": [
+            0.006637168141592875,
+            0.02433628318584069,
+            0.03539823008849552,
+            0.011061946902654829,
+            -0.02433628318584069,
+            0.017699115044247815,
+            -0.004424778761061954,
+            0.008849557522123908
+          ],
+          "mean": 0.009402654867256624,
+          "bootstrap95": [
+            -0.0030420353982300863,
+            0.020464601769911495
+          ],
+          "bootstrap90": [
+            -0.0008296460176991233,
+            0.019081858407079613
+          ],
+          "sign_flip_two_sided_p": 0.1953125,
+          "conditional_on": "Fixed goals, exam candidates, exposure text pool and frozen backend; seed-level randomization only."
+        }
+      },
+      "macro": {
+        "20": {
+          "n_trajectories": 8,
+          "values": [
+            0.019167080642490397,
+            0.013171054810399041,
+            0.002265275707898584,
+            0.03888392117900308,
+            0.03500413975823813,
+            0.041967213114754154,
+            0.0032803444278853844,
+            0.042654412982281786
+          ],
+          "mean": 0.02454918032786882,
+          "bootstrap95": [
+            0.013283242258652045,
+            0.03539076730418934
+          ],
+          "bootstrap90": [
+            0.015006012998840823,
+            0.033684177844013896
+          ],
+          "sign_flip_two_sided_p": 0.0078125,
+          "conditional_on": "Fixed goals, exam candidates, exposure text pool and frozen backend; seed-level randomization only."
+        },
+        "40": {
+          "n_trajectories": 8,
+          "values": [
+            0.024421261798310945,
+            0.026814042059943644,
+            0.04728100678920344,
+            0.024878291107799266,
+            0.029181983772147646,
+            0.04048021195562179,
+            0.03560026494452717,
+            0.0630137439973506
+          ],
+          "mean": 0.03645885080311306,
+          "bootstrap95": [
+            0.02852597698294415,
+            0.04580787382016889
+          ],
+          "bootstrap90": [
+            0.029555721145885033,
+            0.0441277529392283
+          ],
+          "sign_flip_two_sided_p": 0.0078125,
+          "conditional_on": "Fixed goals, exam candidates, exposure text pool and frozen backend; seed-level randomization only."
+        },
+        "80": {
+          "n_trajectories": 8,
+          "values": [
+            0.0028961748633878903,
+            0.02630899155489319,
+            0.04839211790031461,
+            0.02611359496605392,
+            -0.027984765689683777,
+            0.010717006126842121,
+            -0.011808246398410382,
+            0.013540321245239295
+          ],
+          "mean": 0.011021899321079609,
+          "bootstrap95": [
+            -0.004620384169564562,
+            0.026256002649445248
+          ],
+          "bootstrap90": [
+            -0.0019027363801954506,
+            0.023923259231660835
+          ],
+          "sign_flip_two_sided_p": 0.234375,
+          "conditional_on": "Fixed goals, exam candidates, exposure text pool and frozen backend; seed-level randomization only."
+        }
+      }
+    },
+    "old36": {
+      "micro": {
+        "20": {
+          "n_trajectories": 8,
+          "values": [
+            -0.08333333333333326,
+            0.11111111111111116,
+            0.02777777777777779,
+            0.0,
+            -0.05555555555555547,
+            0.02777777777777779,
+            0.11111111111111116,
+            0.05555555555555558
+          ],
+          "mean": 0.024305555555555594,
+          "bootstrap95": [
+            -0.020833333333333287,
+            0.06944444444444448
+          ],
+          "bootstrap90": [
+            -0.01388888888888884,
+            0.06250000000000003
+          ],
+          "sign_flip_two_sided_p": 0.421875,
+          "conditional_on": "Fixed goals, exam candidates, exposure text pool and frozen backend; seed-level randomization only."
+        },
+        "40": {
+          "n_trajectories": 8,
+          "values": [
+            -0.02777777777777768,
+            0.13888888888888895,
+            0.05555555555555558,
+            0.13888888888888895,
+            0.02777777777777779,
+            -0.11111111111111105,
+            0.05555555555555558,
+            0.13888888888888895
+          ],
+          "mean": 0.052083333333333384,
+          "bootstrap95": [
+            -0.010416666666666602,
+            0.10763888888888894
+          ],
+          "bootstrap90": [
+            0.0034722222222222654,
+            0.09722222222222228
+          ],
+          "sign_flip_two_sided_p": 0.1640625,
+          "conditional_on": "Fixed goals, exam candidates, exposure text pool and frozen backend; seed-level randomization only."
+        },
+        "80": {
+          "n_trajectories": 8,
+          "values": [
+            -0.08333333333333326,
+            -0.02777777777777768,
+            0.02777777777777779,
+            -0.11111111111111105,
+            -0.13888888888888884,
+            0.0,
+            -0.05555555555555547,
+            0.02777777777777779
+          ],
+          "mean": -0.04513888888888884,
+          "bootstrap95": [
+            -0.0868055555555555,
+            -0.006944444444444392
+          ],
+          "bootstrap90": [
+            -0.07986111111111105,
+            -0.01041666666666663
+          ],
+          "sign_flip_two_sided_p": 0.125,
+          "conditional_on": "Fixed goals, exam candidates, exposure text pool and frozen backend; seed-level randomization only."
+        }
+      },
+      "macro": {
+        "20": {
+          "n_trajectories": 8,
+          "values": [
+            0.06753246753246755,
+            0.07012987012987015,
+            0.051948051948052076,
+            -0.038961038961038974,
+            -0.17229437229437217,
+            0.10952380952380958,
+            0.04632034632034632,
+            0.0181818181818183
+          ],
+          "mean": 0.019047619047619105,
+          "bootstrap95": [
+            -0.04545454545454536,
+            0.06845238095238097
+          ],
+          "bootstrap90": [
+            -0.03317370129870125,
+            0.06282467532467541
+          ],
+          "sign_flip_two_sided_p": 0.5625,
+          "conditional_on": "Fixed goals, exam candidates, exposure text pool and frozen backend; seed-level randomization only."
+        },
+        "40": {
+          "n_trajectories": 8,
+          "values": [
+            -0.08658008658008653,
+            0.09393939393939399,
+            0.0181818181818183,
+            0.03116883116883118,
+            -0.07272727272727264,
+            -0.10995670995670992,
+            -0.06839826839826835,
+            0.07445887445887456
+          ],
+          "mean": -0.014989177489177427,
+          "bootstrap95": [
+            -0.06482683982683976,
+            0.03614718614718622
+          ],
+          "bootstrap90": [
+            -0.05703463203463198,
+            0.02895292207792212
+          ],
+          "sign_flip_two_sided_p": 0.625,
+          "conditional_on": "Fixed goals, exam candidates, exposure text pool and frozen backend; seed-level randomization only."
+        },
+        "80": {
+          "n_trajectories": 8,
+          "values": [
+            -0.05714285714285705,
+            -0.08138528138528134,
+            0.022943722943723044,
+            -0.061471861471861455,
+            -0.09480519480519478,
+            -0.01948051948051943,
+            -0.09610389610389602,
+            -0.009956709956709942
+          ],
+          "mean": -0.04967532467532462,
+          "bootstrap95": [
+            -0.07678571428571422,
+            -0.021158008658008612
+          ],
+          "bootstrap90": [
+            -0.07278138528138522,
+            -0.025487012987012933
+          ],
+          "sign_flip_two_sided_p": 0.03125,
+          "conditional_on": "Fixed goals, exam candidates, exposure text pool and frozen backend; seed-level randomization only."
+        }
+      }
+    },
+    "added": {
+      "micro": {
+        "20": {
+          "n_trajectories": 8,
+          "values": [
+            0.007211538461538436,
+            0.007211538461538436,
+            0.0,
+            0.038461538461538436,
+            0.04807692307692302,
+            0.02644230769230771,
+            -0.014423076923076983,
+            0.038461538461538436
+          ],
+          "mean": 0.018930288461538436,
+          "bootstrap95": [
+            0.004507211538461509,
+            0.03305288461538458
+          ],
+          "bootstrap90": [
+            0.006911057692307654,
+            0.030949519230769204
+          ],
+          "sign_flip_two_sided_p": 0.078125,
+          "conditional_on": "Fixed goals, exam candidates, exposure text pool and frozen backend; seed-level randomization only."
+        },
+        "40": {
+          "n_trajectories": 8,
+          "values": [
+            0.024038461538461453,
+            0.021634615384615308,
+            0.04086538461538458,
+            0.03125,
+            0.03125,
+            0.04086538461538458,
+            0.028846153846153855,
+            0.05288461538461531
+          ],
+          "mean": 0.033954326923076886,
+          "bootstrap95": [
+            0.027644230769230727,
+            0.04086538461538458
+          ],
+          "bootstrap90": [
+            0.02854567307692303,
+            0.039963942307692235
+          ],
+          "sign_flip_two_sided_p": 0.0078125,
+          "conditional_on": "Fixed goals, exam candidates, exposure text pool and frozen backend; seed-level randomization only."
+        },
+        "80": {
+          "n_trajectories": 8,
+          "values": [
+            0.014423076923076872,
+            0.028846153846153855,
+            0.03605769230769229,
+            0.021634615384615308,
+            -0.014423076923076983,
+            0.019230769230769162,
+            0.0,
+            0.007211538461538436
+          ],
+          "mean": 0.014122596153846118,
+          "bootstrap95": [
+            0.003305288461538408,
+            0.024038461538461522
+          ],
+          "bootstrap90": [
+            0.005108173076923031,
+            0.022836538461538422
+          ],
+          "sign_flip_two_sided_p": 0.0625,
+          "conditional_on": "Fixed goals, exam candidates, exposure text pool and frozen backend; seed-level randomization only."
+        }
+      },
+      "macro": {
+        "20": {
+          "n_trajectories": 8,
+          "values": [
+            0.01588693957115006,
+            0.009454191033138382,
+            -0.0008771929824561431,
+            0.04483430799220267,
+            0.050682261208576995,
+            0.0368421052631579,
+            9.74658869394851e-05,
+            0.04483430799220267
+          ],
+          "mean": 0.025219298245614002,
+          "bootstrap95": [
+            0.01120857699805064,
+            0.0390594541910331
+          ],
+          "bootstrap90": [
+            0.013352826510721226,
+            0.03685428849902532
+          ],
+          "sign_flip_two_sided_p": 0.0234375,
+          "conditional_on": "Fixed goals, exam candidates, exposure text pool and frozen backend; seed-level randomization only."
+        },
+        "40": {
+          "n_trajectories": 8,
+          "values": [
+            0.03304093567251454,
+            0.022124756335282547,
+            0.04961013645224166,
+            0.024853801169590684,
+            0.03693957115009738,
+            0.0519493177387913,
+            0.04366471734892785,
+            0.06247563352826502
+          ],
+          "mean": 0.04058235867446387,
+          "bootstrap95": [
+            0.031627375730994084,
+            0.04965947855750475
+          ],
+          "bootstrap90": [
+            0.03299220272904477,
+            0.04822124756335275
+          ],
+          "sign_flip_two_sided_p": 0.0078125,
+          "conditional_on": "Fixed goals, exam candidates, exposure text pool and frozen backend; seed-level randomization only."
+        },
+        "80": {
+          "n_trajectories": 8,
+          "values": [
+            0.007309941520467822,
+            0.034502923976608146,
+            0.05009746588693953,
+            0.0324756335282651,
+            -0.02261208576998064,
+            0.013255360623781631,
+            -0.005555555555555647,
+            0.015399610136452191
+          ],
+          "mean": 0.015609161793372267,
+          "bootstrap95": [
+            0.00024604044834299104,
+            0.030499512670565262
+          ],
+          "bootstrap90": [
+            0.0027919103313839406,
+            0.028167641325536008
+          ],
+          "sign_flip_two_sided_p": 0.1015625,
+          "conditional_on": "Fixed goals, exam candidates, exposure text pool and frozen backend; seed-level randomization only."
+        }
+      }
+    }
+  },
+  "increments_macro": {
+    "40_minus_20": {
+      "n_trajectories": 8,
+      "values": [
+        0.0052541811558205476,
+        0.013642987249544603,
+        0.045015731081304855,
+        -0.014005630071203812,
+        -0.005822155986090483,
+        -0.0014870011591323617,
+        0.03231992051664179,
+        0.020359331015068816
+      ],
+      "mean": 0.011909670475244244,
+      "bootstrap95": [
+        -0.0004417122040072663,
+        0.02519560875144893
+      ],
+      "bootstrap90": [
+        0.0013321742010266452,
+        0.02297483026991222
+      ],
+      "sign_flip_two_sided_p": 0.1640625,
+      "conditional_on": "Fixed goals, exam candidates, exposure text pool and frozen backend; seed-level randomization only."
+    },
+    "80_minus_20": {
+      "n_trajectories": 8,
+      "values": [
+        -0.016270905779102507,
+        0.01313793674449415,
+        0.04612684219241603,
+        -0.012770326212949157,
+        -0.0629889054479219,
+        -0.03125020698791203,
+        -0.015088590826295767,
+        -0.02911409173704249
+      ],
+      "mean": -0.01352728100678921,
+      "bootstrap95": [
+        -0.03371108627256174,
+        0.008202630816360265
+      ],
+      "bootstrap90": [
+        -0.030570044709388983,
+        0.0049667059943699155
+      ],
+      "sign_flip_two_sided_p": 0.28125,
+      "conditional_on": "Fixed goals, exam candidates, exposure text pool and frozen backend; seed-level randomization only."
+    }
+  },
+  "increments_holm": {
+    "40_minus_20": 0.328125,
+    "80_minus_20": 0.328125
+  },
+  "new_shopping_episodes": 480,
+  "new_main_exams": 7232,
+  "new_sentinel_exams": 256,
+  "new_no_purchase": 3,
+  "old20_and_empty_reused": true,
+  "inconsistent_inputs": 0,
+  "exposure_blocks": [
+    {
+      "seed": 2030,
+      "block": "21-40",
+      "n": 20,
+      "synthetic_purchase_rate": 0.6,
+      "mean_reward": 0.6909,
+      "mean_gold_cf": 0.9833500000000001
+    },
+    {
+      "seed": 2030,
+      "block": "41-80",
+      "n": 40,
+      "synthetic_purchase_rate": 0.6,
+      "mean_reward": 0.589,
+      "mean_gold_cf": 1.0
+    },
+    {
+      "seed": 2031,
+      "block": "21-40",
+      "n": 20,
+      "synthetic_purchase_rate": 0.4,
+      "mean_reward": 0.75415,
+      "mean_gold_cf": 0.9833500000000001
+    },
+    {
+      "seed": 2031,
+      "block": "41-80",
+      "n": 40,
+      "synthetic_purchase_rate": 0.675,
+      "mean_reward": 0.65025,
+      "mean_gold_cf": 1.0
+    },
+    {
+      "seed": 2032,
+      "block": "21-40",
+      "n": 20,
+      "synthetic_purchase_rate": 0.65,
+      "mean_reward": 0.65515,
+      "mean_gold_cf": 0.9833500000000001
+    },
+    {
+      "seed": 2032,
+      "block": "41-80",
+      "n": 40,
+      "synthetic_purchase_rate": 0.625,
+      "mean_reward": 0.5767249999999999,
+      "mean_gold_cf": 1.0
+    },
+    {
+      "seed": 2033,
+      "block": "21-40",
+      "n": 20,
+      "synthetic_purchase_rate": 0.75,
+      "mean_reward": 0.7222500000000001,
+      "mean_gold_cf": 0.9833500000000001
+    },
+    {
+      "seed": 2033,
+      "block": "41-80",
+      "n": 40,
+      "synthetic_purchase_rate": 0.575,
+      "mean_reward": 0.541925,
+      "mean_gold_cf": 1.0
+    },
+    {
+      "seed": 2034,
+      "block": "21-40",
+      "n": 20,
+      "synthetic_purchase_rate": 0.65,
+      "mean_reward": 0.6251,
+      "mean_gold_cf": 0.9833500000000001
+    },
+    {
+      "seed": 2034,
+      "block": "41-80",
+      "n": 40,
+      "synthetic_purchase_rate": 0.6,
+      "mean_reward": 0.566725,
+      "mean_gold_cf": 1.0
+    },
+    {
+      "seed": 2035,
+      "block": "21-40",
+      "n": 20,
+      "synthetic_purchase_rate": 0.7,
+      "mean_reward": 0.6309,
+      "mean_gold_cf": 0.9833500000000001
+    },
+    {
+      "seed": 2035,
+      "block": "41-80",
+      "n": 40,
+      "synthetic_purchase_rate": 0.55,
+      "mean_reward": 0.674175,
+      "mean_gold_cf": 1.0
+    },
+    {
+      "seed": 2036,
+      "block": "21-40",
+      "n": 20,
+      "synthetic_purchase_rate": 0.65,
+      "mean_reward": 0.7106,
+      "mean_gold_cf": 0.9833500000000001
+    },
+    {
+      "seed": 2036,
+      "block": "41-80",
+      "n": 40,
+      "synthetic_purchase_rate": 0.65,
+      "mean_reward": 0.62025,
+      "mean_gold_cf": 1.0
+    },
+    {
+      "seed": 2037,
+      "block": "21-40",
+      "n": 20,
+      "synthetic_purchase_rate": 0.6,
+      "mean_reward": 0.6172500000000001,
+      "mean_gold_cf": 0.9833500000000001
+    },
+    {
+      "seed": 2037,
+      "block": "41-80",
+      "n": 40,
+      "synthetic_purchase_rate": 0.65,
+      "mean_reward": 0.5505,
+      "mean_gold_cf": 1.0
+    }
+  ]
+}

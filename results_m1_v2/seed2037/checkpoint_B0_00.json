@@ -1,0 +1,272 @@
+{
+ "arm": "B0",
+ "path": "/mnt/beegfs/home/liudianru26/project/www2027/SynthFlood-local/results_m1_v2/seed2037/mem_B0.json",
+ "entries": [
+  {
+   "type": "observation",
+   "t": 0,
+   "arm": "B0",
+   "text": "Episode 0: task 'beverages'. No purchase completed; official reward 0.00 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "none",
+    "reward": 0.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 1,
+   "arm": "B0",
+   "text": "Episode 1: task 'beverages'. Bought 'Surely Non-Alcoholic Lemon Ginger Brut Sparkling Spritz | Gluten-free, Vegan, Low Sugar & Low Calorie | 4-Pack' at $37.99; official reward 1.00 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 2,
+   "arm": "B0",
+   "text": "Episode 2: task 'hair loss products'. Bought 'ORIOLE 4x4 Lace Front Wigs Human Hair Brazilian Virgin Straight Glueless Human Hair Lace Closure Wigs for Black Women Pre Plucked with Baby Hair Natural Black(26inch)' at $168.86; official reward 0.07 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.06666666666666667,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 3,
+   "arm": "B0",
+   "text": "Episode 3: task 'snack food gifts'. Bought 'The Great Cookie 13-inch 'Happy Birthday Balloon\" Giant Cookie Cake (Chocolate Chip Cookie)' at $34.95; official reward 0.40 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.4,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 4,
+   "arm": "B0",
+   "text": "Episode 4: task 'salon & spa equipment'. Bought '4 Piece Beauty Bed Cover with Face Hole for Beauty Spa Salon Bed Cover Beauty Bedspreads Massage Table Skirt for Fumigation Physiotherapy Massage' at $100.00; official reward 1.00 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "lesson",
+   "t": 4,
+   "arm": "B0",
+   "text": "Select items based on tasks and compare prices to maximize rewards.",
+   "tags": [
+    "shopping strategy",
+    "task completion"
+   ],
+   "data": {}
+  },
+  {
+   "type": "observation",
+   "t": 5,
+   "arm": "B0",
+   "text": "Episode 5: task 'throw blankets'. Bought 'Carstens Vintage Holiday Rustic Cabin Sherpa Throw Blanket 54\" x 68\", Green' at $28.00; official reward 0.03 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.03333333333333333,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 6,
+   "arm": "B0",
+   "text": "Episode 6: task 'tongue cleaners'. Bought 'Supvox 3pcs Tongue Scraper Set Tongue Oral Cleaner Scraping Brush Fresher Stainless Steel Oral Tongue Cleaner Breath Tools For Mouth Hygiene' at $8.99; official reward 1.00 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 1.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 7,
+   "arm": "B0",
+   "text": "Episode 7: task 'men's slippers'. Bought 'PULL & SNAIL Men’s Memory Foam Open Toe Adjustable House Slippers Breathable Bedroom Slide Slippers for Men Anti-slip Sole Indoor Outdoor' at $20.99; official reward 0.33 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.3333333333333333,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 8,
+   "arm": "B0",
+   "text": "Episode 8: task 'hdmi cables'. Bought 'Pokanic USB C Type Cable Durable Nylon Braided Fast Quick Charging Connect Cord USB-C to USB-A Compatible with Apple iPad Pro Samsung Galaxy LG Google Pixel Nintendo Switch (1 ft, Black - 1 Pack)' at $4.49; official reward 1.00 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 9,
+   "arm": "B0",
+   "text": "Episode 9: task 'hair cutting tools'. Bought 'JIBIACB Beard Bib Apron for Men,Valentines Day Gifts for Him,Beard Hair Clippings Catcher with Suction Cups for Shaving and Trimming,Beard Grooming Apron Cape,Gift for Men (White)' at $9.99; official reward 0.67 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.6666666666666666,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "lesson",
+   "t": 9,
+   "arm": "B0",
+   "text": "Choose items based on tasks and compare rewards to prices for better value.",
+   "tags": [
+    "shopping tips",
+    "value comparison"
+   ],
+   "data": {}
+  },
+  {
+   "type": "observation",
+   "t": 10,
+   "arm": "B0",
+   "text": "Episode 10: task 'furniture sets'. Bought 'Wdminyy Modern Minimalist TV Cabinet Living Room with High-Gloss LED Lights 51in TV Cabinet TV Stand Media Storage Console Storage Shelves Home Office Entertainment Center (White) (US in Stock)' at $100.00; official reward 1.00 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 1.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 11,
+   "arm": "B0",
+   "text": "Episode 11: task 'bathing accessories'. Bought 'NIUTA 2 Pack Hair Towel Wrap, Microfiber Quick Drying Hair Towels, Super Absorbent Quick Dry Hair Towel, Wrapped Bath Cap (Pink+Light Blue)' at $4.99; official reward 1.00 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 12,
+   "arm": "B0",
+   "text": "Episode 12: task 'hair cutting tools'. Bought 'Brazilian Human Hair Body Wave Bundles with T Part Closure Unprocessed Body Wave 3 Bundles with 4x1 Closure(10 10 10+10)Brazilian 10A Virgin Hair Bundles with 4x4x1 Hand-Tied Lace Closure 50g/bundles' at $36.99; official reward 0.04 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.04000000000000001,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 13,
+   "arm": "B0",
+   "text": "Episode 13: task 'av receivers & amplifiers'. No purchase completed; official reward 0.00 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "none",
+    "reward": 0.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 14,
+   "arm": "B0",
+   "text": "Episode 14: task 'hair extensions, wigs & accessories'. Bought 'Clip in Hair Extensions for Women 24\" Long Straight Synthetic Wigs Natural Looking Hair Styling Accessories' at $5.49; official reward 1.00 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "lesson",
+   "t": 14,
+   "arm": "B0",
+   "text": "Select affordable items and complete tasks for consistent rewards.",
+   "tags": [
+    "affordability",
+    "task completion"
+   ],
+   "data": {}
+  },
+  {
+   "type": "observation",
+   "t": 15,
+   "arm": "B0",
+   "text": "Episode 15: task 'applesauce & fruit cups'. Bought 'Nutreat Superfood Desserts to Satisfy Your Sweet Cravings - Creamy Fudge Consistency Made with Organic Ingredients - No Added Sugar, Gluten Free, Vegan & Keto Friendly - Variety Pack of 3' at $13.98; official reward 1.00 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 16,
+   "arm": "B0",
+   "text": "Episode 16: task 'vanities'. Bought 'Zeyu Bathroom Wall Sconce 2 Pack, Vintage Vanity Lights in Oil Rubbed Bronze Finish with Metal Shade, 102-1W2 ORB' at $59.99; official reward 0.40 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.4,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 17,
+   "arm": "B0",
+   "text": "Episode 17: task 'bathing accessories'. Bought 'Auban Extra Large Shower Cap, Bowknot Double Layer Reusable Bath Hair Caps With Silky Satin for Women Beauty Bathing, Hair Spa, Home Hotel Travel Use (Black)' at $5.99; official reward 0.50 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.5,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 18,
+   "arm": "B0",
+   "text": "Episode 18: task 'film photography'. Bought 'LUXCEO RGB LED Video Light, Portable Handheld Full Color Studio Photography Lighting Wand Stick with APP Control, IP67 Waterproof Mini Professional Tube Lights for Vlog, YouTube, TikTok' at $49.99; official reward 0.33 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.3333333333333333,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 19,
+   "arm": "B0",
+   "text": "Episode 19: task 'flashes'. No purchase completed; official reward 0.00 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "none",
+    "reward": 0.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "lesson",
+   "t": 19,
+   "arm": "B0",
+   "text": "Select items with clear rewards and avoid tasks without purchases for better outcomes.",
+   "tags": [
+    "shopping strategy",
+    "rewards system"
+   ],
+   "data": {}
+  }
+ ],
+ "injected_context": "Your experience notes from earlier shopping sessions:\n- [observation] Episode 18: task 'film photography'. Bought 'LUXCEO RGB LED Video Light, Portable Handheld Full Color Studio Photography Lighting Wand Stick with APP Control, IP67 Waterproof Mini Professional Tube Lights for Vlog, YouTube, TikTok' at $49.99; official reward 0.33 (gold reference 1.00).\n- [observation] Episode 19: task 'flashes'. No purchase completed; official reward 0.00 (gold reference 1.00).\n- [lesson] Select items with clear rewards and avoid tasks without purchases for better outcomes.",
+ "context_sha256": "6ffbb0972876540db19592466cffd435bfb6f908fd9c57f798b4cab02442a916"
+}

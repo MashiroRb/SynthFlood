@@ -19,10 +19,13 @@ import random
 import sys
 import threading
 import time
+import hashlib
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-sys.path.insert(0, "/root/synthflood")
-sys.path.insert(0, "/root/webshop_repo")
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, REPO)
+if os.environ.get("WEBSHOP_REPO"):
+    sys.path.insert(0, os.environ["WEBSHOP_REPO"])
 
 from synthflood.config import LOG_DIR, N_CANDIDATES, GEN_TEMP, AGENT_TEMP
 from synthflood.select_env import (SelectEnv, build_goals, build_task,
@@ -35,22 +38,23 @@ from synthflood.vllm_client import LLMClient
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from m1_memory import MemoryStore, induce_lesson
 
-REPO = "/root/synthflood_repo"
 OUT = os.path.join(REPO, os.environ.get("M1_OUT_SUBDIR", "results_m1"))
 GEN_DIR = os.path.join(REPO, "data",
                        os.environ.get("M1_GEN_SUBDIR", "contamination"))
-# Second-seed support: M1_SEED_BASE offsets every random draw; the
-# default 2027 reproduces the pre-registered seed-1 draws bit-for-bit.
+# Treatment-side seed support. Local reproducibility fixes change historical
+# draws; the released result directories remain the historical reference.
 # M1_GOALS_SEED decouples the goal-pool shuffle (which also fixes the exam
 # instruction texts via goals_by_asin) from the treatment-side randomness:
-# replication runs set M1_GOALS_SEED=2027 to keep the measurement instrument
-# byte-identical while re-randomizing episodes, pools and shuffles.
+# A goal seed alone does not freeze the instrument: v2 freezes full contexts.
 SEED_BASE = int(os.environ.get("M1_SEED_BASE", "2027"))
 GOALS_SEED = int(os.environ.get("M1_GOALS_SEED", str(SEED_BASE)))
 SB_OFF = (SEED_BASE - 2027) * 100000
-PAIRS_PATH = "/root/realattack/realattack_pairs.json"
+PAIRS_PATH = os.environ.get("M1_PAIRS_PATH", os.path.join(REPO, "data", "official", "realattack_pairs.json"))
 MODEL = "Qwen/Qwen2.5-7B-Instruct"
 PORT = 8000
+BALANCED = os.environ.get("M1_PROTOCOL") == "balanced_v2"
+if BALANCED:
+    os.environ["SYNTHFLOOD_STRICT_REWARD"] = "1"
 
 EXPOSURE_T = 20
 EPS_EXP = 0.75
@@ -59,17 +63,21 @@ GOAL_OFFSETS = {"exposure": (100, 120), "washout": (120, 140),
 EXAM_SLICE = (250, 290)      # 40 fixed exam pairs (RA1 used 0:250)
 PARITY_SLICE = (290, 330)    # 40 fixed parity pairs
 CHECKPOINTS = [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+if BALANCED:
+    CHECKPOINTS = [0, 4, 10, 20]
 EXAM_IDX = list(range(*EXAM_SLICE))
 PARITY_IDX = list(range(*PARITY_SLICE))
-PARITY_CPS = [0, 10, 20]
+PARITY_CPS = CHECKPOINTS if BALANCED else [0, 10, 20]
 ARMS = {
     "B0": dict(exposure=0, notes=True, lessons=True, correct=False),
     "M0": dict(exposure=EXPOSURE_T, notes=True, lessons=True, correct=False),
-    "M2": dict(exposure=EXPOSURE_T, notes=False, lessons=False, correct=False),
+    "M2": dict(exposure=EXPOSURE_T, notes=True, inject=False, lessons=False, correct=False),
     "M3": dict(exposure=EXPOSURE_T, notes=True, lessons=True, correct=True),
     "M4": dict(exposure=0, notes=True, lessons=True, correct=False,
                delete=True),
 }
+if BALANCED:
+    ARMS["B0"]["exposure"] = EXPOSURE_T
 LLM_SEM = threading.Semaphore(16)
 
 
@@ -100,13 +108,13 @@ EPISODE_FIELDS = ["arm", "phase", "ep_idx", "goal_asin", "chosen_kind",
                   "chose_synthetic", "reward", "gold_reward_cf", "steps",
                   "malformed"]
 EXAM_FIELDS = ["arm", "phase", "checkpoint", "pair_idx", "chose_clone",
-               "reward", "steps"]
+               "reward", "steps", "chosen_kind", "purchased", "malformed", "input_sha256"]
 
 
 def _append_csv(name, row, fields):
     path = os.path.join(OUT, name)
-    new = not os.path.exists(path)
     with CSV_LOCK:
+        new = not os.path.exists(path) or os.path.getsize(path) == 0
         with open(path, "a", newline="") as f:
             w = csv.DictWriter(f, fieldnames=fields)
             if new:
@@ -119,14 +127,51 @@ def log(msg):
     print(line, flush=True)
 
 
+def memory_context(cfg, mem):
+    return mem.inject_context() if cfg.get("inject", cfg["notes"]) else ""
+
+
+def save_checkpoint(mem, name, checkpoint, cfg):
+    snapshot = mem.export()
+    snapshot["injected_context"] = memory_context(cfg, mem)
+    snapshot["context_sha256"] = hashlib.sha256(snapshot["injected_context"].encode()).hexdigest()
+    path = os.path.join(OUT, f"checkpoint_{name}_{checkpoint:02d}.json")
+    with open(path, "w") as f:
+        json.dump(snapshot, f, ensure_ascii=False, indent=1)
+
+
+def record_observation(mem, t, goal, summary, gold_cf, env):
+    description = None
+    if BALANCED and env.chosen is not None:
+        from synthflood.select_env import product_fields
+        # Use visible product facts, without oracle synthetic labels or an
+        # experimenter-written 'heavily discounted' interpretation.
+        title = product_fields(env.chosen["item"])["title"]
+        description = f"'{title}' at ${env.chosen['price_float']:.2f}"
+    mem.add_observation(t, goal["query"], summary["chosen_kind"],
+                        summary["reward"], gold_cf,
+                        choice_description=description)
+
+
+def write_lesson(client, mem, t):
+    lesson = induce_lesson(client, mem, t, seed=SEED_BASE * 10000 + t,
+                           temperature=0.0 if BALANCED else 0.3)
+    if lesson is None:
+        log(f"WARN lesson failed at episode {t}")
+
+
 # ---------------------------------------------------------------- data ----
 def fresh_goals_all(by_asin, product_prices):
     """Full deduped seed-2027 goal list, bypassing the frozen goals100.json
     (which caps at 100 and would empty the 100+ slices M1 needs)."""
     import random as _r
     from web_agent_site.engine.goal import get_human_goals
-    _r.seed(GOALS_SEED)
-    goals = get_human_goals(by_asin, product_prices)
+    state = _r.getstate()
+    try:
+        _r.seed(GOALS_SEED)
+        goals = get_human_goals(by_asin, product_prices)
+    finally:
+        _r.setstate(state)
     rng = _r.Random(GOALS_SEED)
     rng.shuffle(goals)
     seen, uniq = set(), []
@@ -178,7 +223,7 @@ def _cand_from_listing(b, kind="synthetic:clone"):
             "item": {k: b.get(k) for k in
                      ("asin", "Title", "price", "rating", "num_reviews",
                       "Brand", "product_category", "query", "BulletPoints",
-                      "Description", "Attributes")},
+                      "Description", "Attributes", "options")},
             "price_float": float(b.get("price", 0.0)),
             "reviews": b.get("reviews", [])}
 
@@ -231,7 +276,7 @@ def build_exposure_pool(goals_exp, by_asin, client):
             return {int(k): v for k, v in json.load(f).items()}
     golds = [by_asin[g["asin"]] for g in goals_exp]
     pool = generate_pool(goals_exp, golds, path, PORT, MODEL,
-                         per_task_per_family=4, max_workers=8)
+                         per_task_per_family=4, max_workers=8, seed=SEED_BASE)
     n = sum(len(v) for v in pool.values())
     log(f"exposure pool: {n} listings for {len(goals_exp)} goals -> {path}")
     return pool
@@ -324,14 +369,20 @@ def run_duel_one(pi, rec, goal, gold_item, clone_cand, product_prices, arm,
     fix_instr = os.environ.get("M1_FIX_INSTRUMENT", "") == "1"
     rng = random.Random(41000 + pi + (0 if fix_instr else SB_OFF))
     env = duel_env(rec, goal, gold_item, clone_cand, product_prices, rng)
+    audit = {"goal": goal, "candidates": env.candidates,
+             "memory": mem_block or ""}
+    digest = hashlib.sha256(json.dumps(audit, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
     s = run_episode(env, client, goal["instruction_text"], defense="none",
                     max_steps=6, sys_extra=mem_block or "",
                     meta={"stage": "M1", "arm": arm, "phase": phase,
-                          "checkpoint": checkpoint, "pair": pi})
+                          "checkpoint": checkpoint, "pair": pi,
+                          "input_sha256": digest})
     row = {"arm": arm, "phase": phase, "checkpoint": checkpoint,
            "pair_idx": pi,
            "chose_clone": int(s["chosen_kind"].startswith("synthetic")),
-           "reward": round(s["reward"], 3), "steps": s["steps"]}
+           "reward": round(s["reward"], 3), "steps": s["steps"],
+           "chosen_kind": s["chosen_kind"], "purchased": int(env.done),
+           "malformed": s["malformed"], "input_sha256": digest}
     _append_csv("m1_exams.csv", row, EXAM_FIELDS)
     return row
 
@@ -349,7 +400,7 @@ def run_exams(ctx, name, phase, checkpoint, pair_idx_list, clones, mem_block,
         jobs.append((pi, rec, cc))
     if n_limit:
         jobs = jobs[:n_limit]
-    sem_n = 12
+    sem_n = int(os.environ.get("M1_EXAM_WORKERS", "12"))
     with ThreadPoolExecutor(sem_n) as ex:
         futs = [ex.submit(run_duel_one, pi, rec,
                           ctx["goals_by_asin"][rec["gold_asin"]],
@@ -368,9 +419,14 @@ def run_exams(ctx, name, phase, checkpoint, pair_idx_list, clones, mem_block,
 def run_exposure_episode(ctx, name, cfg, ep_idx, mem, client):
     goal = ctx["exposure_goals"][ep_idx]
     cseed = 50000 + ep_idx + SB_OFF
-    env, _info = exposure_env(goal, ctx["by_asin"], ctx["pool"],
-                              ep_idx, cseed)
-    mem_block = mem.inject_context() if cfg["notes"] else ""
+    if "episode_tasks" in ctx:
+        key = f"warmup_clean:{ep_idx}" if name == "B0" else f"warmup_treated:{ep_idx}"
+        env = SelectEnv(goal, ctx["episode_tasks"][str(SEED_BASE)][key], n_candidates=N_CANDIDATES)
+    elif BALANCED and name == "B0":
+        env, _info = clean_env(goal, ctx["by_asin"], cseed)
+    else:
+        env, _info = exposure_env(goal, ctx["by_asin"], ctx["pool"], ep_idx, cseed)
+    mem_block = memory_context(cfg, mem)
     s = run_episode(env, client, goal["instruction_text"], defense="none",
                     max_steps=10, sys_extra=mem_block,
                     meta={"stage": "M1", "arm": name, "phase": "exposure",
@@ -378,12 +434,11 @@ def run_exposure_episode(ctx, name, cfg, ep_idx, mem, client):
     gold_cf = counterfactual_gold(goal, ctx["by_asin"],
                                   ctx["product_prices"])
     if cfg["notes"]:
-        mem.add_observation(ep_idx, goal["query"], s["chosen_kind"],
-                            s["reward"], gold_cf)
+        record_observation(mem, ep_idx, goal, s, gold_cf, env)
         if cfg["correct"] and s["chosen_is_synthetic"]:
             mem.add_correction(ep_idx, goal["query"], s["reward"], gold_cf)
         if cfg["lessons"] and (ep_idx + 1) % 5 == 0:
-            induce_lesson(client, mem, ep_idx)
+            write_lesson(client, mem, ep_idx)
         mem.save()
     with CSV_LOCK:
         _append_csv("m1_episodes.csv",
@@ -408,17 +463,19 @@ def run_exposure_episode(ctx, name, cfg, ep_idx, mem, client):
 def run_clean_episode(ctx, name, cfg, done_eps, mem, client):
     goal = ctx["washout_goals"][done_eps]
     cseed = 60000 + done_eps + SB_OFF
-    env, _info = clean_env(goal, ctx["by_asin"], cseed)
-    mem_block = mem.inject_context() if cfg["notes"] else ""
+    if "episode_tasks" in ctx:
+        env = SelectEnv(goal, ctx["episode_tasks"][str(SEED_BASE)][f"washout:{done_eps}"], n_candidates=N_CANDIDATES)
+    else:
+        env, _info = clean_env(goal, ctx["by_asin"], cseed)
+    mem_block = memory_context(cfg, mem)
     s = run_episode(env, client, goal["instruction_text"], defense="none",
                     max_steps=10, sys_extra=mem_block,
                     meta={"stage": "M1", "arm": name, "phase": "clean",
                           "ep": done_eps})
     if cfg["notes"]:
-        mem.add_observation(done_eps + 1000, goal["query"],
-                            s["chosen_kind"], s["reward"], None)
+        record_observation(mem, done_eps + 1000, goal, s, None, env)
         if cfg["lessons"] and (done_eps + 1) % 5 == 0:
-            induce_lesson(client, mem, done_eps + 1000)
+            write_lesson(client, mem, done_eps + 1000)
         mem.save()
     _append_csv("m1_episodes.csv",
                 {"arm": name, "phase": "clean", "ep_idx": done_eps,
@@ -460,20 +517,21 @@ def run_arm(ctx, name, smoke=False):
     # washout with exams
     done = 0
     for c in ([0, 2] if smoke else CHECKPOINTS):
-        if c == 0 and name == "B0":
+        if c == 0 and name == "B0" and not BALANCED:
             continue
         if smoke and c == 2:
             break
         while done < c:
             run_clean_episode(ctx, name, cfg, done, mem, client)
             done += 1
-        mb = mem.inject_context() if cfg["notes"] else ""
+        save_checkpoint(mem, name, c, cfg)
+        mb = memory_context(cfg, mem)
         run_exams(ctx, name, "exam", c, EXAM_IDX, ctx["exam_clones"], mb,
                   n_limit=8 if smoke else None)
         if c in PARITY_CPS and name != "M4" and not smoke:
             run_exams(ctx, name, "parity", c, PARITY_IDX,
                       ctx["parity_clones"], mb)
-        if c == 0 and not smoke:
+        if c == 0 and not smoke and not BALANCED:
             run_exams(ctx, name, "transfer_samecat", -1,
                       ctx["samecat_idx"], ctx["transfer_clones"], mb)
             run_exams(ctx, name, "transfer_crosscat", -1,
@@ -484,7 +542,7 @@ def run_arm(ctx, name, smoke=False):
             with open(os.path.join(OUT, f"snapshot_{name}_wash_end.json"),
                       "w") as f:
                 json.dump(mem.export(), f, ensure_ascii=False, indent=1)
-    if name == "B0" and not smoke:
+    if name == "B0" and not smoke and not BALANCED:
         mb = mem.inject_context()
         run_exams(ctx, name, "transfer_samecat", -1, ctx["samecat_idx"],
                   ctx["transfer_clones"], mb)
@@ -663,6 +721,12 @@ def build_goal_clones(goals, ctx, client):
 
 # ---------------------------------------------------------------- init ----
 def init_ctx(smoke=False):
+    frozen = os.environ.get("M1_CONTEXT_PATH")
+    if frozen:
+        with open(frozen) as f:
+            ctx = json.load(f)
+        log(f"Using frozen context: {frozen}")
+        return ctx
     by_asin, product_prices, goals_all, goals_by_asin = load_everything()
     if not os.path.exists(PAIRS_PATH):
         sys.exit(f"missing pair pool: run scripts/mine_full_pairs.py first "
@@ -713,29 +777,25 @@ def _load_or_die(path, msg):
 
 # ---------------------------------------------------------------- main ----
 def full(smoke=False, arms=None):
+    os.makedirs(OUT, exist_ok=True)
+    if any(name.endswith(".csv") or name.startswith("mem_") for name in os.listdir(OUT)):
+        raise RuntimeError(f"Refusing to append a fresh experiment to nonempty results: {OUT}")
     ctx = init_ctx(smoke=smoke)
     os.makedirs(OUT, exist_ok=True)
     # shared pre-exam (no memory): identical conditions for every arm
     if not smoke:
-        log("shared pre-exam (40 duels, no memory)")
+        log(f"shared pre-exam ({len(ctx['exam_clones'])} duels, no memory)")
         run_exams(ctx, "PRE", "exam", -1, EXAM_IDX, ctx["exam_clones"], "")
-    names = arms or (["M0"] if smoke else ["M0", "M2", "M3"])
-    threads = [threading.Thread(target=run_arm, args=(ctx, n),
-                                kwargs={"smoke": smoke})
-               for n in names]
-    for t in threads:
-        t.start()
-    for t in threads:
-        t.join()
-    if not smoke:
-        t4 = threading.Thread(target=run_arm, args=(ctx, "M4"),
-                              kwargs={"smoke": smoke})
-        t4.start()
-        t4.join()
-        tb = threading.Thread(target=run_arm, args=(ctx, "B0"),
-                              kwargs={"smoke": smoke})
-        tb.start()
-        tb.join()
+        run_exams(ctx, "PRE", "parity", -1, PARITY_IDX, ctx["parity_clones"], "")
+    names = arms or (["M0"] if smoke else (["M0", "B0", "M2"] if BALANCED else ["M0", "M2", "M3"]))
+    # In v2 one arm at a time; failures must propagate to the batch job.
+    with ThreadPoolExecutor(1 if BALANCED else len(names)) as executor:
+        futures = [executor.submit(run_arm, ctx, n, smoke=smoke) for n in names]
+        for future in as_completed(futures):
+            future.result()
+    if not smoke and not BALANCED:
+        run_arm(ctx, "M4", smoke=smoke)
+        run_arm(ctx, "B0", smoke=smoke)
     log("FULL RUN DONE")
 
 
@@ -745,6 +805,9 @@ def _sigma(rows, arm, phase, ckpt=None):
            and (ckpt is None or int(r["checkpoint"]) == ckpt)]
     if not sel:
         return None, 0
+    keys=[(r["checkpoint"],r["pair_idx"]) for r in sel]
+    if len(keys)!=len(set(keys)):
+        raise ValueError(f"Duplicate exam rows: {arm}/{phase}/{ckpt}")
     k = sum(int(r["chose_clone"]) for r in sel)
     return k / len(sel), len(sel)
 
@@ -771,12 +834,14 @@ def _binom_p_two_sided(k, n):
     return min(1.0, c / 2 ** n)
 
 
-def mcnemar(rows, arm_a, ckpt_a, arm_b, ckpt_b):
+def mcnemar(rows, arm_a, ckpt_a, arm_b, ckpt_b, phase="exam"):
     idx_a = {int(r["pair_idx"]): int(r["chose_clone"]) for r in rows
-             if r["arm"] == arm_a and int(r["checkpoint"]) == ckpt_a}
+             if r["arm"] == arm_a and r["phase"] == phase and int(r["checkpoint"]) == ckpt_a}
     idx_b = {int(r["pair_idx"]): int(r["chose_clone"]) for r in rows
-             if r["arm"] == arm_b and int(r["checkpoint"]) == ckpt_b}
+             if r["arm"] == arm_b and r["phase"] == phase and int(r["checkpoint"]) == ckpt_b}
     common = sorted(set(idx_a) & set(idx_b))
+    if set(idx_a)!=set(idx_b) or not common:
+        raise ValueError("McNemar requires complete nonempty matched pair sets")
     b = sum(1 for i in common if idx_a[i] == 1 and idx_b[i] == 0)
     c = sum(1 for i in common if idx_a[i] == 0 and idx_b[i] == 1)
     if b + c == 0:
@@ -788,7 +853,9 @@ def analyze():
     rows = []
     with open(os.path.join(OUT, "m1_exams.csv")) as f:
         rows = list(csv.DictReader(f))
-    summary = {"sigma": {}, "tests": {}}
+    summary = {"sigma": {}, "tests": {},
+               "inference_scope": "Legacy pair-level diagnostics; p-values are unadjusted, not trajectory-level evidence. Use summarize_v2.py for the revised protocol."}
+    print("WARNING: legacy analysis reports unadjusted pair-level tests; it does not establish trajectory-level effects.")
     arms_present = sorted({r["arm"] for r in rows})
     print(f"{'arm':>5} {'phase':>16} {'ckpt':>5} {'sigma':>7} n")
     for arm in arms_present:
@@ -804,7 +871,7 @@ def analyze():
     b0, nb0 = _sigma(rows, "B0", "exam", 20)
     # primary tests
     t = summary["tests"]
-    if not b0 or not nb0:
+    if b0 is None or not nb0:
         print("WARNING: B0 exam@20 missing; skipping tests")
         with open(os.path.join(OUT, "m1_summary.json"), "w") as f:
             json.dump(summary, f, ensure_ascii=False, indent=1)
@@ -812,11 +879,12 @@ def analyze():
     if _sigma(rows, "M0", "exam", 0)[1]:
         m0_0, n0 = _sigma(rows, "M0", "exam", 0)
         m0_20, n20 = _sigma(rows, "M0", "exam", 20)
-        if not m0_20 or not n20:
+        if m0_20 is None or not n20:
             m0_20, n20 = None, None
         z, p = (two_prop_z(round(m0_20 * n20), n20,
-                           round(b0 * nb0), nb0) if m0_20 else (None, None))
-        t["M0_clean20_vs_B0"] = {"z": round(z, 2), "p": round(p, 4)}
+                           round(b0 * nb0), nb0) if m0_20 is not None else (None, None))
+        t["M0_clean20_vs_B0"] = {"z": round(z, 2) if z is not None else None,
+                                "p": round(p, 4) if p is not None else None}
         b_, c_, pm = mcnemar(rows, "M0", 0, "PRE", -1)
         t["M0_c0_vs_PRE_mcnemar"] = {"b": b_, "c": c_, "p": round(pm, 5)}
         half = b0 + 0.5 * (m0_0 - b0)
