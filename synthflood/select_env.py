@@ -24,6 +24,7 @@ from thefuzz import fuzz
 
 from .config import DATA_DIR
 from .ws_loader import load_official_data
+from .product_metadata import rating_and_count
 
 WEBSHOP_REPO = os.environ.get("WEBSHOP_REPO", os.path.join(os.environ.get("SYNTHFLOOD_ROOT",
                                            os.path.expanduser("~/synthflood")),
@@ -99,14 +100,9 @@ def product_fields(p):
     attrs = p.get("Attributes") or []
     cat = p.get("product_category") or p.get("category") or ""
     brand = p.get("Brand") or p.get("brand") or ""
-    rating = p.get("Rating")
-    if rating in (None, "N.A."):
-        rating = p.get("star5_ratios") or p.get("rating") or ""
-    if rating in (None, ""):
-        rating = "n/a"
-    nrev = p.get("num_reviews") or p.get("review_num") or ""
-    if nrev in (None, ""):
-        nrev = 0
+    rating, nrev = rating_and_count(p)
+    rating = rating if rating is not None else "n/a"
+    nrev = nrev if nrev is not None else "n/a"
     price = p.get("Price") or p.get("price") or ""
     if isinstance(price, (int, float)):
         price = f"${float(price):.2f}"

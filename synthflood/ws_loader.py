@@ -1,10 +1,11 @@
-"""Verbatim port of the official WebShop product loader.
+"""Port of the official WebShop product loader with metadata field repair.
 
 Source: webshop_repo/web_agent_site/engine/engine.py
         (clean_product_keys, generate_product_prices, load_products)
-The only changes: file paths are parameters (not module constants) and the
-pyserini/flask imports are dropped. Loading must be byte-identical to the
-official pipeline so that goals and rewards match the benchmark.
+File paths are parameters and server-only imports are dropped. Ratings and
+review counts are recovered from raw average_rating/total_reviews; unknown
+values remain unknown. Official goal/reward and product price semantics are
+unchanged. This metadata repair is intentionally distinct from old snapshots.
 """
 import json
 import os
@@ -15,6 +16,7 @@ from collections import defaultdict
 from decimal import Decimal
 
 from tqdm import tqdm
+from .product_metadata import rating_and_count
 
 
 def clean_product_keys(products):
@@ -25,7 +27,7 @@ def clean_product_keys(products):
         product.pop('list_price', None)
         product.pop('availability_quantity', None)
         product.pop('availability_status', None)
-        product.pop('total_reviews', None)
+        # Preserve the raw review count for rendering and metadata defenses.
         product.pop('total_answered_questions', None)
         product.pop('seller_id', None)
         product.pop('seller_name', None)
@@ -92,6 +94,9 @@ def load_products(filepath, attr_path, human_attr_path, num_products=None,
         products[i]['Description'] = p['full_description']
         products[i]['Reviews'] = all_reviews.get(asin, [])
         products[i]['Rating'] = all_ratings.get(asin, 'N.A.')
+        rating, count = rating_and_count(products[i])
+        products[i]['Rating'] = rating if rating is not None else 'N.A.'
+        products[i]['num_reviews'] = count
         for r in products[i]['Reviews']:
             if 'score' not in r:
                 r['score'] = r.pop('stars')
@@ -174,7 +179,7 @@ def load_official_data(data_dir, cache=True):
     if os.environ.get("SYNTHFLOOD_PRODUCT_CACHE") == "0":
         cache = False
     # Old caches contain an unseeded price table; do not silently reuse them.
-    cache_path = os.path.join(data_dir, "all_products_prices2027_v2.pkl")
+    cache_path = os.path.join(data_dir, "all_products_prices2027_metadata_v3.pkl")
     if cache and os.path.exists(cache_path):
         print(f"loading cached products from {cache_path}")
         with open(cache_path, "rb") as f:
