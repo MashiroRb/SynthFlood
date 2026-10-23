@@ -1,0 +1,1 @@
+{"compute_capability": [8, 0], "cuda": "12.4", "name": "NVIDIA A800 80GB PCIe", "node": "aias-compute-5", "torch": "2.6.0+cu124", "total_memory": 85095874560, "uuid": "197ed94e-78b9-3f51-205c-955f817cf813", "visible_devices": "0"}

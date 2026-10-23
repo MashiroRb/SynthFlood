@@ -1,0 +1,1 @@
+{"compute_capability": [8, 9], "cuda": "12.4", "name": "NVIDIA GeForce RTX 4090", "node": "aias-compute-2", "torch": "2.6.0+cu124", "total_memory": 25262096384, "uuid": "2e0ad763-5387-b779-23c9-f9cb6403be5f", "visible_devices": "0"}

@@ -1,0 +1,1 @@
+{"compute_capability": [8, 6], "cuda": "12.4", "name": "NVIDIA GeForce RTX 3090", "node": "aias-compute-01", "torch": "2.6.0+cu124", "total_memory": 25307578368, "uuid": "56e11a5f-d123-02ef-f4af-40822027f26a", "visible_devices": "0"}

@@ -7,3 +7,5 @@ results_m1_v2/** -text -whitespace
 results_m1_expanded/** -text -whitespace
 results_m1_exposure_length/** -text -whitespace
 results_m1_washout40/** -text -whitespace
+data/paired_n98_ratingfix_v2/** -text -whitespace
+results_paired_n98_ratingfix_v2/** -text -whitespace
