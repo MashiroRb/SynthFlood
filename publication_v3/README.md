@@ -38,18 +38,19 @@ Absolute analysis-worker symlinks are omitted from Git and recreated as
 portable relative links. They refer to the original worker records, without
 duplicating those records.
 
-The **complete original per-case request log archive remains local**, pending
-separate explicit authorization to upload its prompt/page/interaction text.
-It is not part of this remote results archive. Formal outcome JSONLs, all
-189,480 CSV records, frozen inputs, memories/lessons, statistics and the retained
-preflight/provenance evidence are included. Do not infer that the complete
-per-case request log set is present merely because individual evidence files
-are retained.
+The user explicitly authorized uploading the **complete original request logs**
+to this same GitHub repository, including prompts, product pages and model
+interaction text. They are supplied as 83 lossless bundles under
+`results_protocol_v3_20261024_relaxed_v1/request_archives/*.tar.zst`, containing
+161,581 original files. This includes preflight and recovery evidence; it is
+not an additional count of independent evaluations or formal records.
 
-The cluster-local `request_archives/*.tar.zst` bundles retain every original
-gzip file byte-for-byte, without recompression. Their local `members.jsonl`
-records original paths, byte sizes and SHA256; `COMPLETE.json` lists bundle
-hashes. Neither these bundles nor their full member manifest has been uploaded.
+The bundles retain every original gzip file byte-for-byte, without
+decompression/recompression. `members.jsonl` records original paths, byte sizes
+and SHA256; `COMPLETE.json` lists bundle hashes and the member-manifest hash.
+`VERIFIED.json` records the completed archive/restoration checks. Original
+request files on the cluster remain unchanged. Credentials, model weights and
+virtual environments are excluded.
 
 From the repository root, restore the merged analysis files and relative links:
 
@@ -57,14 +58,13 @@ From the repository root, restore the merged analysis files and relative links:
 sbatch --partition=cpu,rtx,a800,pro6000 publication_v3/restore.sbatch
 ```
 
-Only on the cluster, or after separately obtaining the local request bundles,
-the optional `--requests` mode restores and verifies those original logs:
+To also restore and verify all archived original request logs:
 
 ```sh
 sbatch --partition=cpu,rtx,a800,pro6000 publication_v3/restore.sbatch --requests
 ```
 
-Restoring the published analysis needs Python 3; optional local request-bundle
+Restoring the published analysis needs Python 3; optional request-bundle
 restoration also needs the `zstd` executable. Restoration verifies SHA256 and
 refuses to replace a different existing file. No model or API is invoked.
 `publication_v3/files.jsonl` records the SHA256 and size of archived ordinary

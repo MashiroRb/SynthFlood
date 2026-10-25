@@ -61,7 +61,7 @@ def main():
     if args.requests:
         directory = OUT / 'request_archives'
         if not (directory / 'COMPLETE.json').exists():
-            raise ValueError('Complete original request bundles are local-only and are not included in this Git archive.')
+            raise ValueError('Request bundle manifests are missing; obtain the complete request_archives directory before restoring requests.')
         done = json.loads((directory / 'COMPLETE.json').read_text())
         if digest(directory / 'members.jsonl') != done['member_manifest_sha256']:
             raise ValueError('Request member manifest checksum mismatch')

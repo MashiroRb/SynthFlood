@@ -1,0 +1,13 @@
+{
+  "validated": true,
+  "formal_records": 189480,
+  "request_members": 161581,
+  "request_archives": 83,
+  "ordinary_files": 2404,
+  "frozen_hashes_valid": true,
+  "all_archive_members_byte_exact": true,
+  "restoration_sample_passed": true,
+  "existing_file_protection_passed": true,
+  "upload_authorized": true,
+  "authorization_scope": "Complete original request logs including prompts, product pages and model interactions; same GitHub repository"
+}
