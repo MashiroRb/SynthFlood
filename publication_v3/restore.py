@@ -60,6 +60,8 @@ def main():
             target.symlink_to(relative, target_is_directory=True)
     if args.requests:
         directory = OUT / 'request_archives'
+        if not (directory / 'COMPLETE.json').exists():
+            raise ValueError('Complete original request bundles are local-only and are not included in this Git archive.')
         done = json.loads((directory / 'COMPLETE.json').read_text())
         if digest(directory / 'members.jsonl') != done['member_manifest_sha256']:
             raise ValueError('Request member manifest checksum mismatch')

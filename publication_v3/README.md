@@ -38,12 +38,18 @@ Absolute analysis-worker symlinks are omitted from Git and recreated as
 portable relative links. They refer to the original worker records, without
 duplicating those records.
 
-Every original per-case request file is included byte-for-byte in
-`results_protocol_v3_20261024_relaxed_v1/request_archives/*.tar.zst`.
-The gzip files inside these bundles were **not** decompressed/recompressed.
-`members.jsonl` lists each original relative path, byte size and SHA256;
-`COMPLETE.json` lists bundle hashes. Original request files remain unchanged
-on the cluster and are intentionally not duplicated as individual Git files.
+The **complete original per-case request log archive remains local**, pending
+separate explicit authorization to upload its prompt/page/interaction text.
+It is not part of this remote results archive. Formal outcome JSONLs, all
+189,480 CSV records, frozen inputs, memories/lessons, statistics and the retained
+preflight/provenance evidence are included. Do not infer that the complete
+per-case request log set is present merely because individual evidence files
+are retained.
+
+The cluster-local `request_archives/*.tar.zst` bundles retain every original
+gzip file byte-for-byte, without recompression. Their local `members.jsonl`
+records original paths, byte sizes and SHA256; `COMPLETE.json` lists bundle
+hashes. Neither these bundles nor their full member manifest has been uploaded.
 
 From the repository root, restore the merged analysis files and relative links:
 
@@ -51,13 +57,15 @@ From the repository root, restore the merged analysis files and relative links:
 sbatch --partition=cpu,rtx,a800,pro6000 publication_v3/restore.sbatch
 ```
 
-To also restore all archived per-case requests:
+Only on the cluster, or after separately obtaining the local request bundles,
+the optional `--requests` mode restores and verifies those original logs:
 
 ```sh
 sbatch --partition=cpu,rtx,a800,pro6000 publication_v3/restore.sbatch --requests
 ```
 
-Restoration needs Python 3 and the `zstd` executable. It verifies SHA256 and
+Restoring the published analysis needs Python 3; optional local request-bundle
+restoration also needs the `zstd` executable. Restoration verifies SHA256 and
 refuses to replace a different existing file. No model or API is invoked.
 `publication_v3/files.jsonl` records the SHA256 and size of archived ordinary
 files, excluding this manifest itself and the request bundles' own manifests.

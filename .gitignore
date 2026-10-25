@@ -19,3 +19,5 @@ results_protocol_v3_20261024_relaxed_v1/*/requests/
 results_protocol_v3_20261024_relaxed_v1/analysis_scaled/worker[0-7]
 results_protocol_v3_20261024_relaxed_v1/analysis_scaled/washout*/exam.jsonl
 results_protocol_v3_20261024_relaxed_v1/**/RESUME.lock
+# Complete original request archives stay local pending explicit upload consent.
+results_protocol_v3_20261024_relaxed_v1/request_archives/
