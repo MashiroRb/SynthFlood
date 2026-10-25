@@ -1,0 +1,28 @@
+{
+  "planned_tasks": 100,
+  "planned_candidates": 300,
+  "accepted_candidates": 7,
+  "accepted_by_family": {
+    "geo": 3,
+    "clone": 2,
+    "reviews": 2
+  },
+  "complete_tasks": 2,
+  "partial_tasks": 1,
+  "unstarted_tasks": 97,
+  "formal_exam_file_exists": false,
+  "formal_manifest_exists": false,
+  "all_tasks_have_one_each": false,
+  "failure": {
+    "task_id": 2,
+    "family": "clone",
+    "attempt_count": 20,
+    "target_asin": "B09SKN22ST",
+    "instruction": "i need elbow pads for teen girls that are small and black, and price lower than 40.00 dollars",
+    "goal_category": "Sports & Outdoors › Sports › Team Sports › Lacrosse › Protective Gear › Elbow Pads",
+    "product_title": "Women's One Piece Swimsuit Wrapped Tummy Control Bathing Suit Sexy Swimwear Halter Cut Out Backless Monokini Beachwear",
+    "product_query": "women's swimsuits & cover ups"
+  },
+  "request_log_sha256": "9950f6bd776db1a410acb9a4eb0f4f9762cdc33834043453fa6c325000fb4c84",
+  "replayed_request_count": 73
+}

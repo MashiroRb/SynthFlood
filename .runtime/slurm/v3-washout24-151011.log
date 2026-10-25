@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/liudianru26/project/www2027/SynthFlood-local/.runtime/scaling/mem24_run.py", line 14, in <module>
+    env['CUDA_VISIBLE_DEVICES']=ordered_devices(actual,plan['gpu_uuids'],os.environ['CUDA_VISIBLE_DEVICES'])
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/beegfs/home/liudianru26/project/www2027/SynthFlood-local/.runtime/scaling/mem24_common.py", line 13, in ordered_devices
+    raise ValueError('Allocated GPU identities differ; refuse inference and result writes')
+ValueError: Allocated GPU identities differ; refuse inference and result writes

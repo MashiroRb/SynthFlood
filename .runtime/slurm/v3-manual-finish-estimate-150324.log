@@ -1,0 +1,424 @@
+{
+  "timestamp_utc": "2026-10-24T01:51:18.255122+00:00",
+  "washout": [
+    {
+      "directory": "washout0",
+      "counts": {
+        "shopping": 78,
+        "exam": 5768
+      },
+      "completed": 5846,
+      "groups": {
+        "2030:M0:shopping": 78,
+        "2030:M0:exam": 5768
+      },
+      "checkpoints": [
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_00",
+          "time": "2026-10-23T17:17:50+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_02",
+          "time": "2026-10-23T17:39:36+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_04",
+          "time": "2026-10-23T18:02:35+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_06",
+          "time": "2026-10-23T18:26:31+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_08",
+          "time": "2026-10-23T18:50:40+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_10",
+          "time": "2026-10-23T19:14:27+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_12",
+          "time": "2026-10-23T19:39:35+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_14",
+          "time": "2026-10-23T20:03:05+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_16",
+          "time": "2026-10-23T20:28:59+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_18",
+          "time": "2026-10-23T20:56:22+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_20",
+          "time": "2026-10-23T21:24:19+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_22",
+          "time": "2026-10-23T21:50:56+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_24",
+          "time": "2026-10-23T22:17:59+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_26",
+          "time": "2026-10-23T22:44:36+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_28",
+          "time": "2026-10-23T23:12:30+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_30",
+          "time": "2026-10-23T23:40:46+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_32",
+          "time": "2026-10-24T00:09:39+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_34",
+          "time": "2026-10-24T00:41:21+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_36",
+          "time": "2026-10-24T01:12:56+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_38",
+          "time": "2026-10-24T01:44:00+00:00"
+        }
+      ]
+    },
+    {
+      "directory": "washout1",
+      "counts": {
+        "shopping": 84,
+        "exam": 6913
+      },
+      "completed": 6997,
+      "groups": {
+        "2031:M0:shopping": 80,
+        "2031:B0:shopping": 4,
+        "2031:M0:exam": 6300,
+        "2031:B0:exam": 613
+      },
+      "checkpoints": [
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_B0_00",
+          "time": "2026-10-24T01:18:43+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_B0_02",
+          "time": "2026-10-24T01:34:23+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_B0_04",
+          "time": "2026-10-24T01:50:31+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_00",
+          "time": "2026-10-23T17:19:07+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_02",
+          "time": "2026-10-23T17:36:25+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_04",
+          "time": "2026-10-23T17:55:28+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_06",
+          "time": "2026-10-23T18:16:27+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_08",
+          "time": "2026-10-23T18:37:11+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_10",
+          "time": "2026-10-23T18:57:34+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_12",
+          "time": "2026-10-23T19:20:45+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_14",
+          "time": "2026-10-23T19:42:19+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_16",
+          "time": "2026-10-23T20:04:57+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_18",
+          "time": "2026-10-23T20:27:36+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_20",
+          "time": "2026-10-23T20:50:17+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_22",
+          "time": "2026-10-23T21:12:40+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_24",
+          "time": "2026-10-23T21:35:13+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_26",
+          "time": "2026-10-23T21:58:13+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_28",
+          "time": "2026-10-23T22:23:17+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_30",
+          "time": "2026-10-23T22:49:07+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_32",
+          "time": "2026-10-23T23:14:09+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_34",
+          "time": "2026-10-23T23:38:52+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_36",
+          "time": "2026-10-24T00:02:17+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_38",
+          "time": "2026-10-24T00:28:08+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_40",
+          "time": "2026-10-24T00:52:24+00:00"
+        }
+      ]
+    },
+    {
+      "directory": "washout2",
+      "counts": {
+        "shopping": 44,
+        "exam": 858
+      },
+      "completed": 902,
+      "groups": {
+        "2034:M0:shopping": 44,
+        "2034:M0:exam": 858
+      },
+      "checkpoints": [
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_M0_00",
+          "time": "2026-10-24T01:11:32+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_M0_02",
+          "time": "2026-10-24T01:25:17+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_M0_04",
+          "time": "2026-10-24T01:39:19+00:00"
+        }
+      ]
+    },
+    {
+      "directory": "washout3",
+      "counts": {
+        "shopping": 44,
+        "exam": 819
+      },
+      "completed": 863,
+      "groups": {
+        "2035:M0:shopping": 44,
+        "2035:M0:exam": 819
+      },
+      "checkpoints": [
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_M0_00",
+          "time": "2026-10-24T01:11:02+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_M0_02",
+          "time": "2026-10-24T01:25:23+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_M0_04",
+          "time": "2026-10-24T01:39:53+00:00"
+        }
+      ]
+    }
+  ],
+  "stateless": [
+    {
+      "directory": "worker0",
+      "counts": {
+        "main": 1000,
+        "probe": 130,
+        "single": 1180,
+        "clone": 1260,
+        "defense": 3404
+      },
+      "completed": 6974,
+      "STARTED.json": "2026-10-23T17:13:28+00:00",
+      "DEFENSE_PLAN_FROZEN.json": "2026-10-23T21:56:43+00:00"
+    },
+    {
+      "directory": "worker1",
+      "counts": {
+        "main": 1000,
+        "probe": 120,
+        "single": 1100,
+        "clone": 1190,
+        "defense": 2153
+      },
+      "completed": 5563,
+      "STARTED.json": "2026-10-23T17:13:28+00:00",
+      "DEFENSE_PLAN_FROZEN.json": "2026-10-23T22:28:45+00:00"
+    },
+    {
+      "directory": "worker2",
+      "counts": {
+        "main": 1000,
+        "probe": 130,
+        "single": 1220,
+        "clone": 1260,
+        "defense": 2747
+      },
+      "completed": 6357,
+      "STARTED.json": "2026-10-23T17:12:47+00:00",
+      "DEFENSE_PLAN_FROZEN.json": "2026-10-23T22:12:57+00:00"
+    },
+    {
+      "directory": "worker3",
+      "counts": {
+        "main": 1000,
+        "probe": 130,
+        "single": 1340,
+        "clone": 1540,
+        "defense": 2363
+      },
+      "completed": 6373,
+      "STARTED.json": "2026-10-23T17:12:48+00:00",
+      "DEFENSE_PLAN_FROZEN.json": "2026-10-23T22:53:34+00:00"
+    },
+    {
+      "directory": "worker4",
+      "counts": {
+        "main": 960,
+        "probe": 120,
+        "single": 1180,
+        "clone": 1260,
+        "defense": 2715
+      },
+      "completed": 6235,
+      "STARTED.json": "2026-10-23T17:12:48+00:00",
+      "DEFENSE_PLAN_FROZEN.json": "2026-10-23T22:10:31+00:00"
+    },
+    {
+      "directory": "worker5",
+      "counts": {
+        "main": 960,
+        "single": 1180,
+        "clone": 1343
+      },
+      "completed": 3483,
+      "STARTED.json": "2026-10-23T17:12:47+00:00"
+    }
+  ],
+  "stateless_frozen_plan": {
+    "worker0": {
+      "nondefense": 3570,
+      "defense": 7500
+    },
+    "worker1": {
+      "nondefense": 3410,
+      "defense": 7500
+    },
+    "worker2": {
+      "nondefense": 3610,
+      "defense": 7500
+    },
+    "worker3": {
+      "nondefense": 4010,
+      "defense": 7500
+    },
+    "worker4": {
+      "nondefense": 3520,
+      "defense": 7200
+    },
+    "worker5": {
+      "nondefense": 3670,
+      "defense": 7200
+    },
+    "worker6": {
+      "nondefense": 3560,
+      "defense": 7200
+    },
+    "worker7": {
+      "nondefense": 3570,
+      "defense": 7200
+    }
+  }
+}

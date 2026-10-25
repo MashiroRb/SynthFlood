@@ -1,0 +1,7 @@
+{
+  "paused_ready_check_pid": 293954,
+  "start": "63182446",
+  "job150933_retained_to_host_srun": true,
+  "server_responding": true,
+  "original_gpu_allocation": 150049
+}

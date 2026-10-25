@@ -1,0 +1,107 @@
+{
+  "timestamp_utc": "2026-10-24T13:47:08.665082+00:00",
+  "frozen_hashes_valid": true,
+  "rows": 138728,
+  "rows_by_directory": {
+    "washout0": 16153,
+    "washout1": 18166,
+    "washout2": 15121,
+    "washout3": 15199,
+    "worker0": 11070,
+    "worker1": 10910,
+    "worker2": 11110,
+    "worker3": 11510,
+    "worker4": 10720,
+    "worker5": 8828,
+    "worker6": 5195,
+    "worker7": 4746
+  },
+  "ownership": {
+    "washout0": [
+      2030,
+      2032
+    ],
+    "washout1": [
+      2031,
+      2033
+    ],
+    "washout2": [
+      2034,
+      2036
+    ],
+    "washout3": [
+      2035,
+      2037
+    ]
+  },
+  "checks": {
+    "exclusive_seed_partition": 1,
+    "scaling_source_hash": 12,
+    "lane7_exclusive_routing_manifest": 1,
+    "lane7_unchanged_frozen_inputs": 1,
+    "lane7_routing_source_hash": 5,
+    "lane7_original_batch_preserved": 1,
+    "lane7_legacy_launch_disabled": 1,
+    "lane7_no_control_error": 1,
+    "exam_fixed_300_pairs": 1,
+    "exam_binary_pair": 300,
+    "exam_price_equivalence": 300,
+    "exam_all_three_types": 1,
+    "unique_formal_case": 138728,
+    "case_identity": 138728,
+    "raw_response_execution": 476132,
+    "executed_action": 462646,
+    "purchase_terminates": 462646,
+    "remaining_budget": 476132,
+    "confidence_from_raw_response": 138107,
+    "chosen_candidate_matches_action": 138107,
+    "budget_and_cumulative_retries": 138728,
+    "valid_means_purchase": 138728,
+    "finite_purchase_reward": 138107,
+    "finite_confidence_or_missing": 138728,
+    "distinct_candidates": 138728,
+    "row_seed_owned_by_writer": 64639,
+    "model_call_accounting": 116306,
+    "request_sequence_hash": 116306,
+    "failure_excluded_without_imputation": 621,
+    "stateless_case_in_frozen_plan": 74089,
+    "defense_plan_frozen_before_purchases": 8,
+    "frozen_detector_requests": 8,
+    "defense_matches_frozen_plan": 45169,
+    "reuse_has_retained_source": 22422,
+    "reuse_exact_input_backend_and_source_hash": 22422,
+    "reuse_adds_no_model_calls": 22422,
+    "memory_exact_observation_lesson_order": 16,
+    "memory_group_and_length": 16,
+    "observation_matches_shopping_only": 726,
+    "lesson_only_last_five_shops": 143,
+    "checkpoint_full_memory_no_exam_entries": 215,
+    "checkpoint_full_context_hash": 215,
+    "checkpoint_expected_memory_counts": 215,
+    "shopping_frozen_plan_and_order": 726,
+    "washout_exact_frozen_request_and_full_memory": 64639,
+    "exam_fixed_question_identity": 63913,
+    "complete_request_archive": 1005,
+    "successful_request_has_response": 3594,
+    "actual_request_hash": 3594,
+    "actual_sampling_model_settings": 3594,
+    "actual_context_with_output_reserve": 3594,
+    "response_archive_matches_trajectory": 3594,
+    "fresh_dialogue_per_question": 1005,
+    "within_question_history_retained": 2589,
+    "actual_exam_injects_full_checkpoint": 473
+  },
+  "sampled_complete_cases": 1005,
+  "lessons_checked": 143,
+  "issues": [],
+  "deferred_concurrent_writes": [],
+  "log_files_scanned": 26,
+  "log_findings": [
+    {
+      "path": "results_protocol_v3_20261024_relaxed_v1/washout1/server.log",
+      "line": 86,
+      "text": "Exception raised from checkTimeout at /pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:632 (most recent call first):"
+    }
+  ],
+  "failures": []
+}

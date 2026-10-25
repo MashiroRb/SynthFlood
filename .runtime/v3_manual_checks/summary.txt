@@ -1,0 +1,6 @@
+2026-10-25T02:25:13.494622+00:00
+logical=189480; new=161373; purchased=160781; final_no_purchase=592
+all: final_no_purchase=592/161373=0.3669%; missing_conf=1.1991%; confidence=0.9167; reward_success=0.5201; failure_reasons={'format_retries_exhausted': 592}
+memory: final_no_purchase=70/101760=0.0688%; missing_conf=0.6274%; confidence=0.9391; reward_success=0.5876; failure_reasons={'format_retries_exhausted': 70}
+stateless: final_no_purchase=522/59613=0.8756%; missing_conf=2.1831%; confidence=0.8777; reward_success=0.4020; failure_reasons={'format_retries_exhausted': 522}
+hashes_valid=True; failures=[]

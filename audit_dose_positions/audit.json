@@ -1,0 +1,745 @@
+{
+  "scope": "Exact assembly-body reproduction with fixed labelled stand-ins; not model reruns or recovered historical full prompts",
+  "historical_commit": "e102c95dc7c050bcecf12cafe3dfbed952e470fd",
+  "current_commit": "d6f6336c24aa830161484578e8d999a5b4e85a84",
+  "historical_current_build_task_AST_identical": true,
+  "assembler_sha256": "47ee53b71791812e68aa96bb6b612b9d0f6e08027e6dbf86dd565c24330735b7",
+  "cases": [
+    {
+      "seed": 1,
+      "eps": 0,
+      "n_synth": 0,
+      "layout": [
+        "G",
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "D9"
+      ],
+      "synthetic_positions": [],
+      "moved_surviving_reals": [],
+      "unreplaced_slots_changed": [],
+      "intended_retained": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "D9"
+      ],
+      "actual_retained": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "D9"
+      ],
+      "retained_identity_set_matches_in_place_replacement": true
+    },
+    {
+      "seed": 1,
+      "eps": 0.1,
+      "n_synth": 0,
+      "layout": [
+        "G",
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "D9"
+      ],
+      "synthetic_positions": [],
+      "moved_surviving_reals": [],
+      "unreplaced_slots_changed": [],
+      "intended_retained": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "D9"
+      ],
+      "actual_retained": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "D9"
+      ],
+      "retained_identity_set_matches_in_place_replacement": true
+    },
+    {
+      "seed": 1,
+      "eps": 0.25,
+      "n_synth": 2,
+      "layout": [
+        "G",
+        "D1",
+        "S1",
+        "S2",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D7"
+      ],
+      "synthetic_positions": [
+        3,
+        4
+      ],
+      "moved_surviving_reals": [
+        {
+          "id": "D2",
+          "from": 3,
+          "to": 5
+        },
+        {
+          "id": "D3",
+          "from": 4,
+          "to": 6
+        },
+        {
+          "id": "D4",
+          "from": 5,
+          "to": 7
+        },
+        {
+          "id": "D5",
+          "from": 6,
+          "to": 8
+        },
+        {
+          "id": "D6",
+          "from": 7,
+          "to": 9
+        },
+        {
+          "id": "D7",
+          "from": 8,
+          "to": 10
+        }
+      ],
+      "unreplaced_slots_changed": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "intended_retained": [
+        "D1",
+        "D4",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "D9"
+      ],
+      "actual_retained": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D7"
+      ],
+      "retained_identity_set_matches_in_place_replacement": false
+    },
+    {
+      "seed": 1,
+      "eps": 0.5,
+      "n_synth": 4,
+      "layout": [
+        "G",
+        "S1",
+        "S2",
+        "S3",
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "S4"
+      ],
+      "synthetic_positions": [
+        2,
+        3,
+        4,
+        10
+      ],
+      "moved_surviving_reals": [
+        {
+          "id": "D1",
+          "from": 2,
+          "to": 5
+        },
+        {
+          "id": "D2",
+          "from": 3,
+          "to": 6
+        },
+        {
+          "id": "D3",
+          "from": 4,
+          "to": 7
+        },
+        {
+          "id": "D4",
+          "from": 5,
+          "to": 8
+        },
+        {
+          "id": "D5",
+          "from": 6,
+          "to": 9
+        }
+      ],
+      "unreplaced_slots_changed": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "intended_retained": [
+        "D4",
+        "D5",
+        "D6",
+        "D7",
+        "D8"
+      ],
+      "actual_retained": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5"
+      ],
+      "retained_identity_set_matches_in_place_replacement": false
+    },
+    {
+      "seed": 1,
+      "eps": 0.75,
+      "n_synth": 6,
+      "layout": [
+        "G",
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "D1",
+        "D2",
+        "D3",
+        "S6"
+      ],
+      "synthetic_positions": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        10
+      ],
+      "moved_surviving_reals": [
+        {
+          "id": "D1",
+          "from": 2,
+          "to": 7
+        },
+        {
+          "id": "D2",
+          "from": 3,
+          "to": 8
+        },
+        {
+          "id": "D3",
+          "from": 4,
+          "to": 9
+        }
+      ],
+      "unreplaced_slots_changed": [
+        7,
+        8,
+        9
+      ],
+      "intended_retained": [
+        "D6",
+        "D7",
+        "D8"
+      ],
+      "actual_retained": [
+        "D1",
+        "D2",
+        "D3"
+      ],
+      "retained_identity_set_matches_in_place_replacement": false
+    },
+    {
+      "seed": 2,
+      "eps": 0,
+      "n_synth": 0,
+      "layout": [
+        "G",
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "D9"
+      ],
+      "synthetic_positions": [],
+      "moved_surviving_reals": [],
+      "unreplaced_slots_changed": [],
+      "intended_retained": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "D9"
+      ],
+      "actual_retained": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "D9"
+      ],
+      "retained_identity_set_matches_in_place_replacement": true
+    },
+    {
+      "seed": 2,
+      "eps": 0.1,
+      "n_synth": 0,
+      "layout": [
+        "G",
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "D9"
+      ],
+      "synthetic_positions": [],
+      "moved_surviving_reals": [],
+      "unreplaced_slots_changed": [],
+      "intended_retained": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "D9"
+      ],
+      "actual_retained": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "D9"
+      ],
+      "retained_identity_set_matches_in_place_replacement": true
+    },
+    {
+      "seed": 2,
+      "eps": 0.25,
+      "n_synth": 2,
+      "layout": [
+        "G",
+        "S1",
+        "S2",
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D7"
+      ],
+      "synthetic_positions": [
+        2,
+        3
+      ],
+      "moved_surviving_reals": [
+        {
+          "id": "D1",
+          "from": 2,
+          "to": 4
+        },
+        {
+          "id": "D2",
+          "from": 3,
+          "to": 5
+        },
+        {
+          "id": "D3",
+          "from": 4,
+          "to": 6
+        },
+        {
+          "id": "D4",
+          "from": 5,
+          "to": 7
+        },
+        {
+          "id": "D5",
+          "from": 6,
+          "to": 8
+        },
+        {
+          "id": "D6",
+          "from": 7,
+          "to": 9
+        },
+        {
+          "id": "D7",
+          "from": 8,
+          "to": 10
+        }
+      ],
+      "unreplaced_slots_changed": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "intended_retained": [
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "D9"
+      ],
+      "actual_retained": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D7"
+      ],
+      "retained_identity_set_matches_in_place_replacement": false
+    },
+    {
+      "seed": 2,
+      "eps": 0.5,
+      "n_synth": 4,
+      "layout": [
+        "G",
+        "S1",
+        "S2",
+        "S3",
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "S4"
+      ],
+      "synthetic_positions": [
+        2,
+        3,
+        4,
+        10
+      ],
+      "moved_surviving_reals": [
+        {
+          "id": "D1",
+          "from": 2,
+          "to": 5
+        },
+        {
+          "id": "D2",
+          "from": 3,
+          "to": 6
+        },
+        {
+          "id": "D3",
+          "from": 4,
+          "to": 7
+        },
+        {
+          "id": "D4",
+          "from": 5,
+          "to": 8
+        },
+        {
+          "id": "D5",
+          "from": 6,
+          "to": 9
+        }
+      ],
+      "unreplaced_slots_changed": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "intended_retained": [
+        "D4",
+        "D5",
+        "D6",
+        "D7",
+        "D8"
+      ],
+      "actual_retained": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5"
+      ],
+      "retained_identity_set_matches_in_place_replacement": false
+    },
+    {
+      "seed": 2,
+      "eps": 0.75,
+      "n_synth": 6,
+      "layout": [
+        "G",
+        "S1",
+        "S2",
+        "S3",
+        "D1",
+        "D2",
+        "S4",
+        "D3",
+        "S5",
+        "S6"
+      ],
+      "synthetic_positions": [
+        2,
+        3,
+        4,
+        7,
+        9,
+        10
+      ],
+      "moved_surviving_reals": [
+        {
+          "id": "D1",
+          "from": 2,
+          "to": 5
+        },
+        {
+          "id": "D2",
+          "from": 3,
+          "to": 6
+        },
+        {
+          "id": "D3",
+          "from": 4,
+          "to": 8
+        }
+      ],
+      "unreplaced_slots_changed": [
+        5,
+        6,
+        8
+      ],
+      "intended_retained": [
+        "D4",
+        "D5",
+        "D7"
+      ],
+      "actual_retained": [
+        "D1",
+        "D2",
+        "D3"
+      ],
+      "retained_identity_set_matches_in_place_replacement": false
+    }
+  ],
+  "cross_dose_synthetic_mapping": [
+    {
+      "seed": 1,
+      "low": 0.25,
+      "high": 0.5,
+      "synthetic_slots_nested": true,
+      "common_synthetics_moved": [
+        {
+          "id": "S1",
+          "from": 3,
+          "to": 2
+        },
+        {
+          "id": "S2",
+          "from": 4,
+          "to": 3
+        }
+      ]
+    },
+    {
+      "seed": 1,
+      "low": 0.5,
+      "high": 0.75,
+      "synthetic_slots_nested": true,
+      "common_synthetics_moved": [
+        {
+          "id": "S4",
+          "from": 10,
+          "to": 5
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "low": 0.25,
+      "high": 0.5,
+      "synthetic_slots_nested": true,
+      "common_synthetics_moved": []
+    },
+    {
+      "seed": 2,
+      "low": 0.5,
+      "high": 0.75,
+      "synthetic_slots_nested": true,
+      "common_synthetics_moved": [
+        {
+          "id": "S4",
+          "from": 10,
+          "to": 7
+        }
+      ]
+    }
+  ],
+  "reference_invariant_checks": 1000,
+  "recorded_result_inventory": [
+    {
+      "file": "p4a_sweep.csv",
+      "rows": 500,
+      "seeds": [
+        "1"
+      ],
+      "doses": [
+        0.0,
+        0.1,
+        0.25,
+        0.5,
+        0.75
+      ],
+      "tasks": 100
+    },
+    {
+      "file": "p2_sweep.csv",
+      "rows": 120,
+      "seeds": [
+        "1"
+      ],
+      "doses": [
+        0.0,
+        0.25,
+        0.75
+      ],
+      "tasks": 40
+    },
+    {
+      "file": "p4e_sweep.csv",
+      "rows": 200,
+      "seeds": [
+        "2"
+      ],
+      "doses": [
+        0.0,
+        0.75
+      ],
+      "tasks": 100
+    },
+    {
+      "file": "p4g_sham_sweep.csv",
+      "rows": 100,
+      "seeds": [
+        "1"
+      ],
+      "doses": [
+        0.75
+      ],
+      "tasks": 100
+    }
+  ],
+  "historical_log_samples": [
+    {
+      "stage": "P4A",
+      "sample_log": "logs/P4A/P4A__0__e0.00__mix__none.jsonl",
+      "step_kinds": [
+        "conf",
+        "llm"
+      ],
+      "has_recorded_input_steps": false
+    },
+    {
+      "stage": "P2",
+      "sample_log": "logs/P2/P2__0__e0.00__mix__none.jsonl",
+      "step_kinds": [
+        "conf",
+        "llm"
+      ],
+      "has_recorded_input_steps": false
+    },
+    {
+      "stage": "P4E",
+      "sample_log": "logs/P4E/P4E__0__e0.00__mix__none.jsonl",
+      "step_kinds": [
+        "conf",
+        "llm"
+      ],
+      "has_recorded_input_steps": false
+    }
+  ],
+  "new_model_calls": 0,
+  "production_source_modified": false
+}

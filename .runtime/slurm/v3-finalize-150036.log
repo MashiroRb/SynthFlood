@@ -1,0 +1,9 @@
+.........
+----------------------------------------------------------------------
+Ran 9 tests in 0.361s
+
+OK
+REUSE_COMPLETE_EXAM 100 300 NO_REGENERATION
+REUSE_COMPLETE_EXAM 100 300 NO_REGENERATION
+Token indices sequence length is longer than the specified maximum sequence length for this model (131073 > 131072). Running this sequence through the model will result in indexing errors
+V3_OFFICIAL_INPUTS_FROZEN

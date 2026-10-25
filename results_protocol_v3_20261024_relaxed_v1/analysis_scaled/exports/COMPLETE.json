@@ -1,0 +1,39 @@
+{
+  "validated": true,
+  "formal_records": 189480,
+  "counts": {
+    "clone": 10500,
+    "defense": 58800,
+    "exam": 100800,
+    "main": 7840,
+    "probe": 980,
+    "shopping": 960,
+    "single": 9600
+  },
+  "outputs": [
+    {
+      "path": "results_protocol_v3_20261024_relaxed_v1/analysis_scaled/exports/all_condition_summary.csv",
+      "rows": 348
+    },
+    {
+      "path": "results_protocol_v3_20261024_relaxed_v1/analysis_scaled/exports/paired_comparisons.csv",
+      "rows": 650
+    },
+    {
+      "path": "results_protocol_v3_20261024_relaxed_v1/analysis_scaled/exports/washout_all_checkpoints.csv",
+      "rows": 168
+    },
+    {
+      "path": "results_protocol_v3_20261024_relaxed_v1/analysis_scaled/exports/all_formal_records.csv",
+      "rows": 189480
+    },
+    {
+      "path": "results_protocol_v3_20261024_relaxed_v1/analysis_scaled/exports/washout_seed_group_summary.csv",
+      "rows": 16
+    },
+    {
+      "path": "results_protocol_v3_20261024_relaxed_v1/analysis_scaled/exports/washout_pair_coverage.csv",
+      "rows": 168
+    }
+  ]
+}

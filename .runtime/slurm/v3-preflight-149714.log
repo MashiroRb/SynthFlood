@@ -1,0 +1,39 @@
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.133s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK
+REUSE_FIXED_QUALITY_TARGETS 100 REUSE_ACCEPTED_INPUTS 7
+EXAM_GENERATED 1 /100
+EXAM_GENERATED 2 /100
+EXAM_GENERATED 3 /100
+EXAM_GENERATED 4 /100
+EXAM_GENERATED 5 /100
+EXAM_GENERATED 6 /100
+EXAM_GENERATED 7 /100
+EXAM_GENERATED 8 /100
+EXAM_GENERATED 9 /100
+EXAM_GENERATED 10 /100
+EXAM_GENERATED 11 /100
+EXAM_GENERATED 12 /100
+EXAM_GENERATED 13 /100
+EXAM_GENERATED 14 /100
+EXAM_GENERATED 15 /100
+EXAM_GENERATED 16 /100
+EXAM_GENERATED 17 /100
+EXAM_GENERATED 18 /100
+EXAM_GENERATED 19 /100
+EXAM_GENERATED 20 /100
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/beegfs/home/liudianru26/project/www2027/SynthFlood-local/protocol_v3/generate.py", line 219, in <module>
+    generate()
+  File "/mnt/beegfs/home/liudianru26/project/www2027/SynthFlood-local/protocol_v3/generate.py", line 138, in generate
+    raise RuntimeError(f'Exam task {gi} lacks a complete {f} candidate after 20 fixed attempts')
+RuntimeError: Exam task 20 lacks a complete geo candidate after 20 fixed attempts

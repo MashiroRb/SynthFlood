@@ -1,5 +1,44 @@
 # 本地 Figure 6(a) 审计与 Slurm 补跑
 
+## 2026-10-25：统一协议 v3 已完成，当前远程归档
+
+本次用户明确授权 push 新代码与实验结果，覆盖旧协议中的“未push/不发布”运行期限制。
+当前权威结果为 `results_protocol_v3_20261024_relaxed_v1/analysis_scaled`，共189480条正式记录、8个洗脱种子全部完成。
+入口、逐条CSV、原始请求归档及续跑限制见 [publication_v3/README.md](../publication_v3/README.md)。以下“正在运行”等状态是历史记录。
+
+## 当前运行：N98评分/评论数修复重跑 v2，不含PPR
+
+用户授权修复真实商品评分字段并重跑上一轮N98主剂量与防御，暂不跑PPR。新协议：[paired_sweep_ratingfix/PROTOCOL.md](../paired_sweep_ratingfix/PROTOCOL.md)。本轮不重启M0/B0记忆实验。
+核心修复：新增synthflood/product_metadata.py；ws_loader保留total_reviews并标准化原始average_rating/total_reviews；product_fields统一读取原始/标准字段；未知值页面n/a，0评论保留0；官方产品缓存版本升为metadata_v3避免旧缓存。没有生成评论正文，没有修改options或官方奖励算法。
+原v1原始输入和结果保留，旧代码可从其worker*/code-snapshot.tar.gz重构并已核对旧manifest。当前核心源码有明确版本变更，验证历史manifest需用旧代码快照，不能拿当前源码哈希冒充历史版本。
+新输入直接基于旧lane冻结块，不重新抽题或商品；任务/seed/商品身份/顺序/槽位/合成文本/价格/来源随机数/原lane分配完全沿用。
+CPU准备148775已COMPLETED / 0:0，43秒，2CPU/8GB，实际MaxRSS约0.57GiB；10项回归、7840项槽位检查、3136项固定选择奖励检查全部通过。
+原始1840个不同真实商品恢复1252个有效评分、1253个有效评论数；区组候选1960实例中已知评分1347、已知评论数1348；原始缺失保留未知。
+新manifest SHA256：8497f26198e9bbe5505f2e8b0e7e484751289660e07a8eaabb183ad470703f3e。
+主剂量7840，15个非PPR防御/消融臂58800，共66640正式单元；不复用v1购买结果，主剂量全局通过后才在原服务内继续防御。
+GPU数组148784_0–6和A800 148785均已RUNNING，实际3×4090+4×3090+1×A800，合计8张，每任务4CPU/16GB，Pro6000为0。汇总148786为1CPU/8GB。
+新的数据/结果为data/paired_n98_ratingfix_v2、results_paired_n98_ratingfix_v2。运行日志.runtime/slurm/n98rf-*；作业登记.runtime/paired_n98_ratingfix_jobs.json。
+8个服务均确认加载相同本地Qwen快照a09a35458c702b33eeacc393d103063234e8bc28，初始32次重复哨兵全部通过。实际请求日志确认真实商品已显示恢复后的星级/评论数（如4.3分、3条评论），截至启动核查已154条主剂量记录，无FAILED或服务器ERROR。后续分阶段哨兵仍会继续执行。
+轻量状态命令：python3 -m paired_sweep_ratingfix.progress。本轮正在运行，没有最终结果；未push。
+
+## 已完成：N98固定槽位主剂量 → 配对防御
+
+用户明确授权启动本轮；Options不修补、不继承、不改评分实现。排除原goals100编号9/21，保留98个原任务编号，混合缓存每题6条不同合成ASIN，禁止重复补位。
+两个环境seed1/2，k=0/2/4/6，十种共同循环排列。主剂量7840单元；21防御/消融臂在k0/6接收同样十种输入，排序后不轮转，共82320个防御单元，允许完整输入相同结果显式复用。
+协议 [paired_sweep/PROTOCOL.md](../paired_sweep/PROTOCOL.md)，新目录 `data/paired_n98_v1/` 与 `results_paired_n98_v1/`；不覆盖旧实验。
+CPU准备147642已COMPLETED / 0:0，2分18秒，MaxRSS约1.34GiB，申请2CPU/16GB。8项新设计回归及7840项冻结槽位检查通过。
+manifest SHA256：9afde444d8eaadb9f994e991aa0178ef6f2176338fd64f2bf4d31ad8694e5f67。
+七个RTX worker数组147649_0–6与单卡A800 worker147656均已RUNNING；实际4×3090、3×4090、1×A800，总计8张，Pro6000为0张。每GPU任务4CPU/16GB。
+A800首次提交qos=a800被账户权限拒绝，改用当前账户默认urgent QoS成功；命令行覆盖已记录 `.runtime/paired_n98_jobs.json`，冻结源文件不变。
+协调/汇总147657为1CPU/8GB；等待所有主剂量完成并校验后才发布DEFENSE_READY，让原GPU持续服务开始防御，保证每个任务/seed的所有条件使用同一后端。
+2026-10-22 07:34（北京时间）全部8个worker和汇总已COMPLETED / 0:0，主剂量7840+防御82320正式记录全部校验通过，总计90160。主剂量00:53校验后才释放防御，全部128次服务内重复哨兵通过，无FAILED标记。
+正式新增购物评测47391，完整输入复用42769；全套GPU阶段至汇总约8小时6分，GPU任务实际MaxRSS约4.3–4.9GiB。已无待递补GPU任务。
+k0/2/4/6成功率51.28/44.18/35.82/33.93%，奖励0.6806/0.6687/0.6284/0.6385；k6−k0奖励−0.04208，95%任务区间[−0.07964,−0.00426]，p=.03080。不是严格单调剂量曲线。
+k6来源/结构过滤奖励0.6699/0.7499，主要Holm p=.00930/.00010；文本过滤奖励0.5200，固定Qwen阈值15反而有害。
+补充CPU检查148568已COMPLETED / 0:0。发现真实商品页面评分全部n/a/评论数0，合成候选均有评分和评论数，限制评分防御机制结论；PPR多参数最终输入相同，clean评论排序退化为原顺序。不能说位置控制修正同时解决了元数据对称性。
+主剂量11个非法动作单元、10个强制选择；新增评测总计146个非法动作、141个强制选择。匹配排除异常的事后敏感性分析中，主剂量下降/来源和结构改善方向不变。
+完整解释与限制：[audit_paired_n98/REPORT.md](../audit_paired_n98/REPORT.md)；原冻结汇总与图见results_paired_n98_v1。所有原始文件及冻结源代码保持不变，本轮未push。
+
 ## 本次远程归档授权
 
 用户在本轮明确要求将代码与结果推送到远程，替代此前“先别push”的限制。

@@ -1,0 +1,2 @@
+STATELESS_PROGRESS 2 100
+slurmstepd-aias-compute-01: error: *** JOB 149995 ON aias-compute-01 CANCELLED AT 2026-10-24T01:04:21 ***

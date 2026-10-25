@@ -1,0 +1,76 @@
+{
+  "node": "aias-compute-4",
+  "probe_job": "150472",
+  "old_job": 150046,
+  "old_array_element": "150037_1",
+  "worker7_exists": false,
+  "worker1_complete": false,
+  "processes": [
+    {
+      "pid": 3324023,
+      "ppid": 3324016,
+      "state": "S (sleeping)",
+      "argv": [
+        "/bin/bash",
+        "/var/spool/slurm/job150046/slurm_script"
+      ]
+    },
+    {
+      "pid": 3324025,
+      "ppid": 3324023,
+      "state": "S (sleeping)",
+      "argv": [
+        "bash",
+        "protocol_v3/slurm/launch.sh",
+        "worker",
+        "1"
+      ]
+    },
+    {
+      "pid": 3324053,
+      "ppid": 3324025,
+      "state": "S (sleeping)",
+      "argv": [
+        ".runtime/venv/bin/python",
+        "-m",
+        "vllm.entrypoints.openai.api_server",
+        "--model",
+        "/mnt/beegfs/home/liudianru26/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28",
+        "--served-model-name",
+        "Qwen/Qwen2.5-7B-Instruct",
+        "--host",
+        "127.0.0.1",
+        "--port"
+      ]
+    },
+    {
+      "pid": 3324162,
+      "ppid": 3324053,
+      "state": "R (running)",
+      "argv": [
+        ".runtime/venv/bin/python",
+        "-m",
+        "vllm.entrypoints.openai.api_server",
+        "--model",
+        "/mnt/beegfs/home/liudianru26/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28",
+        "--served-model-name",
+        "Qwen/Qwen2.5-7B-Instruct",
+        "--host",
+        "127.0.0.1",
+        "--port"
+      ]
+    },
+    {
+      "pid": 3324325,
+      "ppid": 3324025,
+      "state": "S (sleeping)",
+      "argv": [
+        ".runtime/venv/bin/python",
+        "-m",
+        "protocol_v3.worker",
+        "1"
+      ]
+    }
+  ],
+  "frozen_hashes_valid": true
+}

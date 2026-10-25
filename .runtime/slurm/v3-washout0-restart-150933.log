@@ -1,0 +1,4 @@
+{"utc": "2026-10-24T16:37:27.374321+00:00", "phase": "PREPARED", "controller": "150933", "client": 150932, "original_gpu_job": 150049}
+{"utc": "2026-10-24T16:37:29.696364+00:00", "phase": "CLIENT_RETIRED_AND_RESULTS_PRESERVED", "controller": "150933", "client": 150932, "original_gpu_job": 150049}
+{"utc": "2026-10-24T16:37:35.706981+00:00", "phase": "OLD_SERVER_RETIRED_ALLOCATION_PRESERVED", "controller": "150933", "client": 150932, "original_gpu_job": 150049}
+slurmstepd-aias-compute-01: error: *** JOB 150933 ON aias-compute-01 CANCELLED AT 2026-10-25T01:14:34 ***

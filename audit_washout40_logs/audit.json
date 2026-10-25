@@ -1,0 +1,517 @@
+{
+  "expected_main_rows": 151872,
+  "matched_raw_traces": 151872,
+  "unique_trace_inodes": 151872,
+  "scanned_files": 185146,
+  "time_eligible_files": 152715,
+  "missing_traces": 0,
+  "excess_traces": 0,
+  "actual_action_model_calls": 357904,
+  "errors": {},
+  "cp14_through40_pairs": 50624,
+  "identical_actual_first_inputs": 50624,
+  "identical_full_input_output_trajectories": 50624,
+  "multiple_first_inputs_for_same_key": 0,
+  "csv_signature_conflicts": 0,
+  "permanent_context_equality": {
+    "2030": 4,
+    "2031": 14,
+    "2032": 14,
+    "2033": 14,
+    "2034": 4,
+    "2035": 14,
+    "2036": 14,
+    "2037": 8
+  },
+  "lesson_calls": 128,
+  "unique_lesson_request_ids": 128,
+  "lesson_pairs": [
+    {
+      "seed": 2030,
+      "t": 1004,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2030,
+      "t": 1009,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2030,
+      "t": 1014,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2030,
+      "t": 1019,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2030,
+      "t": 1024,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2030,
+      "t": 1029,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2030,
+      "t": 1034,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2030,
+      "t": 1039,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2031,
+      "t": 1004,
+      "same_prompt": false,
+      "same_response": false,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2031,
+      "t": 1009,
+      "same_prompt": false,
+      "same_response": false,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2031,
+      "t": 1014,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2031,
+      "t": 1019,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2031,
+      "t": 1024,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2031,
+      "t": 1029,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2031,
+      "t": 1034,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2031,
+      "t": 1039,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2032,
+      "t": 1004,
+      "same_prompt": false,
+      "same_response": false,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2032,
+      "t": 1009,
+      "same_prompt": false,
+      "same_response": false,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2032,
+      "t": 1014,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2032,
+      "t": 1019,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2032,
+      "t": 1024,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2032,
+      "t": 1029,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2032,
+      "t": 1034,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2032,
+      "t": 1039,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2033,
+      "t": 1004,
+      "same_prompt": false,
+      "same_response": false,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2033,
+      "t": 1009,
+      "same_prompt": false,
+      "same_response": false,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2033,
+      "t": 1014,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2033,
+      "t": 1019,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2033,
+      "t": 1024,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2033,
+      "t": 1029,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2033,
+      "t": 1034,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2033,
+      "t": 1039,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2034,
+      "t": 1004,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2034,
+      "t": 1009,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2034,
+      "t": 1014,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2034,
+      "t": 1019,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2034,
+      "t": 1024,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2034,
+      "t": 1029,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2034,
+      "t": 1034,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2034,
+      "t": 1039,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2035,
+      "t": 1004,
+      "same_prompt": false,
+      "same_response": false,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2035,
+      "t": 1009,
+      "same_prompt": false,
+      "same_response": false,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2035,
+      "t": 1014,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2035,
+      "t": 1019,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2035,
+      "t": 1024,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2035,
+      "t": 1029,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2035,
+      "t": 1034,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2035,
+      "t": 1039,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2036,
+      "t": 1004,
+      "same_prompt": false,
+      "same_response": false,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2036,
+      "t": 1009,
+      "same_prompt": false,
+      "same_response": false,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2036,
+      "t": 1014,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2036,
+      "t": 1019,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2036,
+      "t": 1024,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2036,
+      "t": 1029,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2036,
+      "t": 1034,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2036,
+      "t": 1039,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2037,
+      "t": 1004,
+      "same_prompt": false,
+      "same_response": false,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2037,
+      "t": 1009,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2037,
+      "t": 1014,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2037,
+      "t": 1019,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2037,
+      "t": 1024,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2037,
+      "t": 1029,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2037,
+      "t": 1034,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    },
+    {
+      "seed": 2037,
+      "t": 1039,
+      "same_prompt": true,
+      "same_response": true,
+      "different_request_ids": true
+    }
+  ],
+  "evidence": [
+    {
+      "path": "logs/runs/run_b2bcdb6b0dd84efbb8b4383412718836.jsonl",
+      "mtime": 1792492454.0,
+      "wall_sec": 1.89,
+      "input_hash": "cf7f6414c2a33cfc04bf29551c150bfcc535a4c369de083cc5c8f2052f997b73",
+      "trajectory_hash": "8e6894369b972c8cfc68255d3847647484a72d576d6ce9724e7f5ea445199fff",
+      "arm": "M0",
+      "audit_input_hash": "7ae62769437490f24e650391e040e7cd4f5428ca0a260351e898094173b5303e"
+    },
+    {
+      "path": "logs/runs/run_155ea2ff1b9940b29ddd9341df9f16c9.jsonl",
+      "mtime": 1792493648.0,
+      "wall_sec": 1.88,
+      "input_hash": "cf7f6414c2a33cfc04bf29551c150bfcc535a4c369de083cc5c8f2052f997b73",
+      "trajectory_hash": "8e6894369b972c8cfc68255d3847647484a72d576d6ce9724e7f5ea445199fff",
+      "arm": "B0",
+      "audit_input_hash": "7ae62769437490f24e650391e040e7cd4f5428ca0a260351e898094173b5303e"
+    },
+    {
+      "path": "logs/runs/run_fabc522967e44b49aecc589a52e72cc2.jsonl",
+      "mtime": 1792492349.0,
+      "wall_sec": 1.9,
+      "input_hash": "fe167ded1d413990fe55c9c05c9cc4f46392f4052807ba5dff923d47d113faa7",
+      "trajectory_hash": "e942d3d0f82df1ead26f3d56513f946c592a3dea73573abd02922178231f3a37",
+      "arm": "M0",
+      "audit_input_hash": "830b4c263b0c567d1be9911db8b164114ef2f88c5974953a57450a8bd954a85a"
+    },
+    {
+      "path": "logs/runs/run_ddcc646b7f974cfd963f184c5a78ed82.jsonl",
+      "mtime": 1792493461.0,
+      "wall_sec": 1.91,
+      "input_hash": "fe167ded1d413990fe55c9c05c9cc4f46392f4052807ba5dff923d47d113faa7",
+      "trajectory_hash": "e942d3d0f82df1ead26f3d56513f946c592a3dea73573abd02922178231f3a37",
+      "arm": "B0",
+      "audit_input_hash": "830b4c263b0c567d1be9911db8b164114ef2f88c5974953a57450a8bd954a85a"
+    }
+  ],
+  "provenance_limit": "Raw episode metadata lacks seed; coverage is checked by aggregate multiplicity of (arm, checkpoint, pair, frozen input hash) within study time range, not by claiming unique per-seed trace attribution."
+}

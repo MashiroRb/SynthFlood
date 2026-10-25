@@ -1,0 +1,25 @@
+{
+  "validated": true,
+  "accepted_candidates": 31,
+  "planned_candidates": 300,
+  "by_family": {
+    "geo": 11,
+    "clone": 10,
+    "reviews": 10
+  },
+  "complete_tasks": 10,
+  "incomplete_started_tasks": {
+    "10": [
+      "clone",
+      "reviews"
+    ]
+  },
+  "unique_synthetic_asins": 31,
+  "all_accepted_judge_scores_at_least_4": true,
+  "all_review_counts_match": true,
+  "frozen_target_sha256": "9b77d2bbe7514133b8c2e9573ac8be3dd84d355d8c215f43c632f1243f7b6c1c",
+  "target_changes": 0,
+  "formal_exam_exists": false,
+  "formal_manifest_exists": false,
+  "preflight_failure_exists": false
+}

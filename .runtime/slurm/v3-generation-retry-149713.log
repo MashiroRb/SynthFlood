@@ -1,0 +1,12 @@
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK
+CONTROLLED_GENERATION_RESUME_PREPARED 7 accepted;100 targets unchanged
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.116s
+
+OK
+V3_INPUT_INVARIANTS_PASS {'main': 7840, 'single': 9600, 'clone': 10500, 'probe': 980}

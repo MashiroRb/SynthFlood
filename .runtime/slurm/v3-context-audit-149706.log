@@ -1,0 +1,19 @@
+{
+  "context": 131072,
+  "stateless_context": 65536,
+  "max_stateless_bound": 57277,
+  "full_memory_token_upper_bound": 34169,
+  "worst": {
+    "asin": "B00YEU96GQ",
+    "budget": 30,
+    "uses_memory": true,
+    "tokens_with_output_reserve": 89765,
+    "transcript_bound": 55596
+  },
+  "max_transcript_bound": 57277,
+  "lesson_max_chars": 400,
+  "lesson_bound_policy": "Up to four UTF-8 byte tokens per stored character, 16 lessons",
+  "no_truncation": true,
+  "actual_tokenizer": "/mnt/beegfs/home/liudianru26/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28",
+  "chat_template_sha256": "2e2d2512cfe46af53dc1eed45368ecaab26ac4461c480e6b69fe571cf0ceaa75"
+}

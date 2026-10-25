@@ -1,0 +1,114 @@
+{
+  "source": "/mnt/beegfs/home/liudianru26/project/www2027/SynthFlood-local/data/protocol_v3_20261024_relaxed_v1/exams.json",
+  "questions": 300,
+  "by_family": {
+    "geo": {
+      "n": 100,
+      "equal_price": 100,
+      "equal_display_price": 100,
+      "synthetic_rating_distribution": {
+        "4.8": 40,
+        "4.6": 13,
+        "4.7": 34,
+        "4.9": 13
+      },
+      "gold_rating_distribution": {
+        "4.4": 11,
+        "4.6": 5,
+        "3.7": 4,
+        "4.5": 12,
+        "5.0": 10,
+        "4.7": 9,
+        "4.2": 4,
+        "4.0": 9,
+        "3.4": 1,
+        "4.3": 2,
+        "3.6": 3,
+        "3.1": 1,
+        "4.8": 1,
+        "3.8": 2
+      },
+      "gold_missing": 26,
+      "synthetic_missing": 0,
+      "gold_rating_mean_known": 4.372972972972973,
+      "synthetic_rating_mean_all": 4.753,
+      "synthetic_rating_mean_matched": 4.748648648648649,
+      "higher": 59,
+      "equal": 3,
+      "lower": 12,
+      "mean_delta_matched": 0.3756756756756756
+    },
+    "clone": {
+      "n": 100,
+      "equal_price": 100,
+      "equal_display_price": 100,
+      "synthetic_rating_distribution": {
+        "4.7": 27,
+        "4.6": 14,
+        "4.8": 40,
+        "4.9": 19
+      },
+      "gold_rating_distribution": {
+        "4.4": 11,
+        "4.6": 5,
+        "3.7": 4,
+        "4.5": 12,
+        "5.0": 10,
+        "4.7": 9,
+        "4.2": 4,
+        "4.0": 9,
+        "3.4": 1,
+        "4.3": 2,
+        "3.6": 3,
+        "3.1": 1,
+        "4.8": 1,
+        "3.8": 2
+      },
+      "gold_missing": 26,
+      "synthetic_missing": 0,
+      "gold_rating_mean_known": 4.372972972972973,
+      "synthetic_rating_mean_all": 4.764,
+      "synthetic_rating_mean_matched": 4.768918918918919,
+      "higher": 59,
+      "equal": 5,
+      "lower": 10,
+      "mean_delta_matched": 0.3959459459459459
+    },
+    "reviews": {
+      "n": 100,
+      "equal_price": 100,
+      "equal_display_price": 100,
+      "synthetic_rating_distribution": {
+        "4.8": 31,
+        "4.6": 20,
+        "4.9": 11,
+        "4.7": 38
+      },
+      "gold_rating_distribution": {
+        "4.4": 11,
+        "4.6": 5,
+        "3.7": 4,
+        "4.5": 12,
+        "5.0": 10,
+        "4.7": 9,
+        "4.2": 4,
+        "4.0": 9,
+        "3.4": 1,
+        "4.3": 2,
+        "3.6": 3,
+        "3.1": 1,
+        "4.8": 1,
+        "3.8": 2
+      },
+      "gold_missing": 26,
+      "synthetic_missing": 0,
+      "gold_rating_mean_known": 4.372972972972973,
+      "synthetic_rating_mean_all": 4.733,
+      "synthetic_rating_mean_matched": 4.727027027027027,
+      "higher": 57,
+      "equal": 6,
+      "lower": 11,
+      "mean_delta_matched": 0.354054054054054
+    }
+  }
+}

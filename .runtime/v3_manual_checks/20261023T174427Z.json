@@ -1,0 +1,174 @@
+{
+  "timestamp_utc": "2026-10-23T17:44:27.994671+00:00",
+  "counts": {
+    "logical_rows": 3262,
+    "new_evaluations": 2732,
+    "valid": 2724,
+    "format_failure": 8,
+    "format_affected": 133,
+    "missing_confidence": 78,
+    "repeated_browsing": 67,
+    "views": 6419,
+    "budget_exhausted": 4,
+    "confidence_reports": 2646,
+    "confidence_sum": 2378.800000000015,
+    "confidence_success_sum": 1342
+  },
+  "rates": {
+    "all": {
+      "new_evaluations": 2732,
+      "valid": 2724,
+      "format_failure": 0.0029282576866764276,
+      "format_affected": 0.04868228404099561,
+      "repeated_browsing": 0.02452415812591508,
+      "missing_confidence": 0.028634361233480177,
+      "confidence_mean": 0.8990173847316761,
+      "confidence_report_success": 0.5071806500377929
+    },
+    "memory": {
+      "new_evaluations": 875,
+      "valid": 875,
+      "format_failure": 0.0,
+      "format_affected": 0.022857142857142857,
+      "repeated_browsing": 0.006857142857142857,
+      "missing_confidence": 0.009142857142857144,
+      "confidence_mean": 0.9461937716262997,
+      "confidence_report_success": 0.5478662053056517
+    },
+    "stateless": {
+      "new_evaluations": 1857,
+      "valid": 1849,
+      "format_failure": 0.004308023694130318,
+      "format_affected": 0.06085083467959074,
+      "repeated_browsing": 0.03284868066774367,
+      "missing_confidence": 0.03785830178474851,
+      "confidence_mean": 0.8760258572231517,
+      "confidence_report_success": 0.4873524451939292
+    }
+  },
+  "incomplete_lines": 0,
+  "examples": [
+    {
+      "case_key": "shopping:M0:pollution:60:2030:0",
+      "format_failure": false,
+      "repeated_browsing": true,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "exam:M0:cp0:clone:32:2030:0",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "exam:M0:cp0:clone:94:2030:0",
+      "format_failure": false,
+      "repeated_browsing": true,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "exam:M0:cp0:clone:95:2030:1",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "exam:M0:cp2:geo:9:2030:0",
+      "format_failure": false,
+      "repeated_browsing": true,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "exam:M0:cp2:clone:9:2030:1",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "exam:M0:cp2:reviews:9:2030:1",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "shopping:M0:pollution:27:2031:2",
+      "format_failure": false,
+      "repeated_browsing": true,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "exam:M0:cp0:clone:52:2031:0",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "exam:M0:cp0:clone:88:2031:0",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "exam:M0:cp0:clone:95:2031:1",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "exam:M0:cp0:reviews:95:2031:0",
+      "format_failure": false,
+      "repeated_browsing": true,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "exam:M0:cp2:geo:9:2031:0",
+      "format_failure": false,
+      "repeated_browsing": true,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "exam:M0:cp2:reviews:9:2031:1",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "main:k2:87:2:0",
+      "format_failure": false,
+      "repeated_browsing": true,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "main:k4:87:2:5",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "main:k4:87:2:9",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "main:k2:48:2:2",
+      "format_failure": false,
+      "repeated_browsing": true,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "main:k6:48:2:1",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "main:k4:54:2:5",
+      "format_failure": false,
+      "repeated_browsing": true,
+      "missing_confidence": false
+    }
+  ],
+  "source_input_hashes_valid": true,
+  "failures": []
+}

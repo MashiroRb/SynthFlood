@@ -1,0 +1,12 @@
+{
+  "reason": "Use the exact array element when releasing completed legacy allocation; never its parent array",
+  "old_shard0_actual_job": 150049,
+  "old_shard1_release_target": "150039_1",
+  "sources_sha256": {
+    "resume_washout.py": "99bee9f8c50b2150980fa18e9037e37addcab2e73f2fea004ebf29256ae36dbd",
+    "attach.sbatch": "cd2a7966250fe9a2a5bbc7f44adc9726b1aa011896b35c2bd096f9fd53b5b413",
+    "test_resume.py": "5ca9509ee3ed21c670aa3c2b5974d7256ec773928b120b301f13dfaa67708820"
+  },
+  "retained_prior_source_sha256": "3f63f49b06b0ce3b3f3bff1de9c58b315107adb17f0b9a2f72adec17ea8a84c0",
+  "frozen_protocol_sources_modified": false
+}

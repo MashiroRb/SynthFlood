@@ -13,3 +13,9 @@ data/*.log
 data/official/
 PAT.txt
 results_m1_*/**/server.log
+# Raw requests are preserved byte-for-byte in request_archives/*.tar.zst.
+results_protocol_v3_20261024_relaxed_v1/*/requests/
+# Restore these derived files/links with publication_v3/restore.sbatch.
+results_protocol_v3_20261024_relaxed_v1/analysis_scaled/worker[0-7]
+results_protocol_v3_20261024_relaxed_v1/analysis_scaled/washout*/exam.jsonl
+results_protocol_v3_20261024_relaxed_v1/**/RESUME.lock

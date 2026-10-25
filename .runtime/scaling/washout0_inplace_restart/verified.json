@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-24T16:43:32.984609+00:00",
+  "checks": {
+    "shopping.jsonl_exact_history": true,
+    "exam.jsonl_exact_history": true,
+    "resume_events.jsonl_exact_history": true,
+    "old_memories_lessons_checkpoints_preserved": true,
+    "exact_hardware_backend_unchanged": true
+  },
+  "baseline_rows": 17837,
+  "current_rows": 17837,
+  "fresh_rows": 0,
+  "fresh_examples": [],
+  "no_duplicate_cases": true,
+  "memory_current": 8526700544,
+  "memory_limit": 17179869184,
+  "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "path": "results_protocol_v3_20261024_relaxed_v1/analysis_scaled/washout0/exam.jsonl",
+    "archive": "results_protocol_v3_20261024_relaxed_v1/analysis_scaled/washout0/exam.jsonl.gz",
+    "sha256": "6a8be1e8d2e1b7fdfe823deb2642652a3319d0f9e0521b62b7d5f80b7c4e58ae",
+    "bytes": 130745839
+  },
+  {
+    "path": "results_protocol_v3_20261024_relaxed_v1/analysis_scaled/washout1/exam.jsonl",
+    "archive": "results_protocol_v3_20261024_relaxed_v1/analysis_scaled/washout1/exam.jsonl.gz",
+    "sha256": "e5e7432a70236b2b51107c2b52fefb4eab56dc0e9b66ae5c4a17c6cf56e09f88",
+    "bytes": 130545377
+  }
+]

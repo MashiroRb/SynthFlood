@@ -1,0 +1,4 @@
+window=2026-10-23T21:51:11.880357+00:00 -> 2026-10-23T22:21:53.285482+00:00
+all: repeated_browsing=70/2160=3.2407%; format_failure=12/2160=0.5556%; format_affected=259/2160=11.9907%; missing_confidence=28/2148=1.3035%
+memory: repeated_browsing=2/714=0.2801%; format_failure=0/714=0.0000%; format_affected=130/714=18.2073%; missing_confidence=1/714=0.1401%
+stateless: repeated_browsing=68/1446=4.7026%; format_failure=12/1446=0.8299%; format_affected=129/1446=8.9212%; missing_confidence=27/1434=1.8828%

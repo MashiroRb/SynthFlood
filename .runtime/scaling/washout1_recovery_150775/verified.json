@@ -1,0 +1,38 @@
+{
+  "utc": "2026-10-24T13:58:14.103736+00:00",
+  "checks": {
+    "shopping.jsonl_preserved_exact_prefix": true,
+    "exam.jsonl_preserved_exact_prefix": true,
+    "resume_events.jsonl_preserved_exact_prefix": true,
+    "all_old_memories_lessons_and_checkpoints_preserved": true,
+    "all_model_precision_context_and_inference_settings_unchanged": true
+  },
+  "baseline_rows": 18166,
+  "current_rows": 18198,
+  "new_rows": 32,
+  "last_new": [
+    {
+      "case_key": "exam:M0:cp34:reviews:99:2033:1",
+      "valid": true,
+      "confidence": 1.0,
+      "backend_sha256": "f2a286ce1a2ee033684aedaa874ea1f95e11ee2d5b9f8386899f2a9ebdfbca6a"
+    },
+    {
+      "case_key": "exam:M0:cp36:geo:0:2033:1",
+      "valid": true,
+      "confidence": 1.0,
+      "backend_sha256": "f2a286ce1a2ee033684aedaa874ea1f95e11ee2d5b9f8386899f2a9ebdfbca6a"
+    },
+    {
+      "case_key": "exam:M0:cp36:clone:0:2033:1",
+      "valid": true,
+      "confidence": 0.85,
+      "backend_sha256": "f2a286ce1a2ee033684aedaa874ea1f95e11ee2d5b9f8386899f2a9ebdfbca6a"
+    }
+  ],
+  "hardware_backend_changed": true,
+  "old_backend": "d32fbce82e6d810e69658ff32917afdae6722080d5563aea8c3d12188c0c2e72",
+  "new_backend": "f2a286ce1a2ee033684aedaa874ea1f95e11ee2d5b9f8386899f2a9ebdfbca6a",
+  "settings_unchanged": true,
+  "no_duplicate_cases": true
+}

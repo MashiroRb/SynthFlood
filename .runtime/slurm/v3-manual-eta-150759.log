@@ -1,0 +1,1379 @@
+{
+  "timestamp_utc": "2026-10-24T12:30:57.295928+00:00",
+  "washout": [
+    {
+      "directory": "washout0",
+      "counts": {
+        "shopping": 176,
+        "exam": 15175
+      },
+      "completed": 15351,
+      "gpu": "NVIDIA GeForce RTX 3090",
+      "node": "aias-compute-01",
+      "recent_rows_per_hour_median": 701.6020593620281,
+      "groups": {
+        "2030:M0:shopping": 80,
+        "2030:B0:shopping": 40,
+        "2032:M0:shopping": 56,
+        "2030:M0:exam": 6300,
+        "2030:B0:exam": 6300,
+        "2032:M0:exam": 2575
+      },
+      "checkpoints": [
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_B0_00",
+          "time": "2026-10-24T02:45:49+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_B0_02",
+          "time": "2026-10-24T03:00:54+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_B0_04",
+          "time": "2026-10-24T03:16:21+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_B0_06",
+          "time": "2026-10-24T03:31:57+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_B0_08",
+          "time": "2026-10-24T03:48:39+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_B0_10",
+          "time": "2026-10-24T04:04:17+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_B0_12",
+          "time": "2026-10-24T04:20:50+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_B0_14",
+          "time": "2026-10-24T04:39:09+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_B0_16",
+          "time": "2026-10-24T04:56:08+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_B0_18",
+          "time": "2026-10-24T05:13:03+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_B0_20",
+          "time": "2026-10-24T05:30:18+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_B0_22",
+          "time": "2026-10-24T05:47:50+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_B0_24",
+          "time": "2026-10-24T06:05:56+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_B0_26",
+          "time": "2026-10-24T06:23:29+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_B0_28",
+          "time": "2026-10-24T06:41:19+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_B0_30",
+          "time": "2026-10-24T06:59:15+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_B0_32",
+          "time": "2026-10-24T07:17:28+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_B0_34",
+          "time": "2026-10-24T07:36:35+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_B0_36",
+          "time": "2026-10-24T07:56:28+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_B0_38",
+          "time": "2026-10-24T08:17:21+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_B0_40",
+          "time": "2026-10-24T08:37:49+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_00",
+          "time": "2026-10-23T17:17:50+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_02",
+          "time": "2026-10-23T17:39:36+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_04",
+          "time": "2026-10-23T18:02:35+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_06",
+          "time": "2026-10-23T18:26:31+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_08",
+          "time": "2026-10-23T18:50:40+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_10",
+          "time": "2026-10-23T19:14:27+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_12",
+          "time": "2026-10-23T19:39:35+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_14",
+          "time": "2026-10-23T20:03:05+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_16",
+          "time": "2026-10-23T20:28:59+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_18",
+          "time": "2026-10-23T20:56:22+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_20",
+          "time": "2026-10-23T21:24:19+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_22",
+          "time": "2026-10-23T21:50:56+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_24",
+          "time": "2026-10-23T22:17:59+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_26",
+          "time": "2026-10-23T22:44:36+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_28",
+          "time": "2026-10-23T23:12:30+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_30",
+          "time": "2026-10-23T23:40:46+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_32",
+          "time": "2026-10-24T00:09:39+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_34",
+          "time": "2026-10-24T00:41:21+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_36",
+          "time": "2026-10-24T01:12:56+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_38",
+          "time": "2026-10-24T01:44:00+00:00"
+        },
+        {
+          "seed": "seed2030",
+          "checkpoint": "checkpoint_M0_40",
+          "time": "2026-10-24T02:14:15+00:00"
+        },
+        {
+          "seed": "seed2032",
+          "checkpoint": "checkpoint_M0_00",
+          "time": "2026-10-24T09:01:36+00:00"
+        },
+        {
+          "seed": "seed2032",
+          "checkpoint": "checkpoint_M0_02",
+          "time": "2026-10-24T09:22:38+00:00"
+        },
+        {
+          "seed": "seed2032",
+          "checkpoint": "checkpoint_M0_04",
+          "time": "2026-10-24T09:46:09+00:00"
+        },
+        {
+          "seed": "seed2032",
+          "checkpoint": "checkpoint_M0_06",
+          "time": "2026-10-24T10:10:36+00:00"
+        },
+        {
+          "seed": "seed2032",
+          "checkpoint": "checkpoint_M0_08",
+          "time": "2026-10-24T10:34:56+00:00"
+        },
+        {
+          "seed": "seed2032",
+          "checkpoint": "checkpoint_M0_10",
+          "time": "2026-10-24T10:58:05+00:00"
+        },
+        {
+          "seed": "seed2032",
+          "checkpoint": "checkpoint_M0_12",
+          "time": "2026-10-24T11:23:50+00:00"
+        },
+        {
+          "seed": "seed2032",
+          "checkpoint": "checkpoint_M0_14",
+          "time": "2026-10-24T11:49:36+00:00"
+        },
+        {
+          "seed": "seed2032",
+          "checkpoint": "checkpoint_M0_16",
+          "time": "2026-10-24T12:16:12+00:00"
+        }
+      ],
+      "stage_rates": {
+        "M0": {
+          "recent_interval_hours": 0.42930555555555555,
+          "recent_exam_rows_per_hour": 698.8029763830475,
+          "recent_rate_full_group_hours": 9.015416666666667
+        },
+        "B0": {
+          "recent_interval_hours": 0.33625,
+          "recent_exam_rows_per_hour": 892.1933085501859,
+          "recent_rate_full_group_hours": 7.06125
+        }
+      },
+      "completed_M0_exam_stage_hours": 9.466388888888888
+    },
+    {
+      "directory": "washout1",
+      "counts": {
+        "shopping": 190,
+        "exam": 17144
+      },
+      "completed": 17334,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "node": "aias-compute-2",
+      "recent_rows_per_hour_median": 796.3763016615512,
+      "groups": {
+        "2031:M0:shopping": 80,
+        "2031:B0:shopping": 40,
+        "2033:M0:shopping": 70,
+        "2031:M0:exam": 6300,
+        "2031:B0:exam": 6300,
+        "2033:M0:exam": 4544
+      },
+      "checkpoints": [
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_B0_00",
+          "time": "2026-10-24T01:18:43+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_B0_02",
+          "time": "2026-10-24T01:34:23+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_B0_04",
+          "time": "2026-10-24T01:50:31+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_B0_06",
+          "time": "2026-10-24T02:05:35+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_B0_08",
+          "time": "2026-10-24T02:22:02+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_B0_10",
+          "time": "2026-10-24T02:38:00+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_B0_12",
+          "time": "2026-10-24T02:54:43+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_B0_14",
+          "time": "2026-10-24T03:11:35+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_B0_16",
+          "time": "2026-10-24T03:28:14+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_B0_18",
+          "time": "2026-10-24T03:44:50+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_B0_20",
+          "time": "2026-10-24T04:01:57+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_B0_22",
+          "time": "2026-10-24T04:18:17+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_B0_24",
+          "time": "2026-10-24T04:35:11+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_B0_26",
+          "time": "2026-10-24T04:50:30+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_B0_28",
+          "time": "2026-10-24T05:07:00+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_B0_30",
+          "time": "2026-10-24T05:23:39+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_B0_32",
+          "time": "2026-10-24T05:40:27+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_B0_34",
+          "time": "2026-10-24T05:57:53+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_B0_36",
+          "time": "2026-10-24T06:15:48+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_B0_38",
+          "time": "2026-10-24T06:34:03+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_B0_40",
+          "time": "2026-10-24T06:51:34+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_00",
+          "time": "2026-10-23T17:19:07+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_02",
+          "time": "2026-10-23T17:36:25+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_04",
+          "time": "2026-10-23T17:55:28+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_06",
+          "time": "2026-10-23T18:16:27+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_08",
+          "time": "2026-10-23T18:37:11+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_10",
+          "time": "2026-10-23T18:57:34+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_12",
+          "time": "2026-10-23T19:20:45+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_14",
+          "time": "2026-10-23T19:42:19+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_16",
+          "time": "2026-10-23T20:04:57+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_18",
+          "time": "2026-10-23T20:27:36+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_20",
+          "time": "2026-10-23T20:50:17+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_22",
+          "time": "2026-10-23T21:12:40+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_24",
+          "time": "2026-10-23T21:35:13+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_26",
+          "time": "2026-10-23T21:58:13+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_28",
+          "time": "2026-10-23T22:23:17+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_30",
+          "time": "2026-10-23T22:49:07+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_32",
+          "time": "2026-10-23T23:14:09+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_34",
+          "time": "2026-10-23T23:38:52+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_36",
+          "time": "2026-10-24T00:02:17+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_38",
+          "time": "2026-10-24T00:28:08+00:00"
+        },
+        {
+          "seed": "seed2031",
+          "checkpoint": "checkpoint_M0_40",
+          "time": "2026-10-24T00:52:24+00:00"
+        },
+        {
+          "seed": "seed2033",
+          "checkpoint": "checkpoint_M0_00",
+          "time": "2026-10-24T07:12:42+00:00"
+        },
+        {
+          "seed": "seed2033",
+          "checkpoint": "checkpoint_M0_02",
+          "time": "2026-10-24T07:29:17+00:00"
+        },
+        {
+          "seed": "seed2033",
+          "checkpoint": "checkpoint_M0_04",
+          "time": "2026-10-24T07:47:27+00:00"
+        },
+        {
+          "seed": "seed2033",
+          "checkpoint": "checkpoint_M0_06",
+          "time": "2026-10-24T08:06:21+00:00"
+        },
+        {
+          "seed": "seed2033",
+          "checkpoint": "checkpoint_M0_08",
+          "time": "2026-10-24T08:26:43+00:00"
+        },
+        {
+          "seed": "seed2033",
+          "checkpoint": "checkpoint_M0_10",
+          "time": "2026-10-24T08:46:30+00:00"
+        },
+        {
+          "seed": "seed2033",
+          "checkpoint": "checkpoint_M0_12",
+          "time": "2026-10-24T09:07:11+00:00"
+        },
+        {
+          "seed": "seed2033",
+          "checkpoint": "checkpoint_M0_14",
+          "time": "2026-10-24T09:28:30+00:00"
+        },
+        {
+          "seed": "seed2033",
+          "checkpoint": "checkpoint_M0_16",
+          "time": "2026-10-24T09:50:20+00:00"
+        },
+        {
+          "seed": "seed2033",
+          "checkpoint": "checkpoint_M0_18",
+          "time": "2026-10-24T10:11:29+00:00"
+        },
+        {
+          "seed": "seed2033",
+          "checkpoint": "checkpoint_M0_20",
+          "time": "2026-10-24T10:33:21+00:00"
+        },
+        {
+          "seed": "seed2033",
+          "checkpoint": "checkpoint_M0_22",
+          "time": "2026-10-24T10:56:28+00:00"
+        },
+        {
+          "seed": "seed2033",
+          "checkpoint": "checkpoint_M0_24",
+          "time": "2026-10-24T11:18:07+00:00"
+        },
+        {
+          "seed": "seed2033",
+          "checkpoint": "checkpoint_M0_26",
+          "time": "2026-10-24T11:40:12+00:00"
+        },
+        {
+          "seed": "seed2033",
+          "checkpoint": "checkpoint_M0_28",
+          "time": "2026-10-24T12:04:20+00:00"
+        },
+        {
+          "seed": "seed2033",
+          "checkpoint": "checkpoint_M0_30",
+          "time": "2026-10-24T12:27:42+00:00"
+        }
+      ],
+      "stage_rates": {
+        "M0": {
+          "recent_interval_hours": 0.37875000000000003,
+          "recent_exam_rows_per_hour": 792.079207920792,
+          "recent_rate_full_group_hours": 7.95375
+        },
+        "B0": {
+          "recent_interval_hours": 0.29527777777777775,
+          "recent_exam_rows_per_hour": 1015.9924741298214,
+          "recent_rate_full_group_hours": 6.200833333333333
+        }
+      },
+      "completed_M0_exam_stage_hours": 7.993333333333333
+    },
+    {
+      "directory": "washout2",
+      "counts": {
+        "shopping": 166,
+        "exam": 13518
+      },
+      "completed": 13684,
+      "gpu": "NVIDIA A800 80GB PCIe",
+      "node": "aias-compute-5",
+      "recent_rows_per_hour_median": 1268.3813349287411,
+      "groups": {
+        "2034:M0:shopping": 80,
+        "2034:B0:shopping": 40,
+        "2036:M0:shopping": 46,
+        "2034:M0:exam": 6300,
+        "2034:B0:exam": 6300,
+        "2036:M0:exam": 918
+      },
+      "checkpoints": [
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_B0_00",
+          "time": "2026-10-24T07:18:59+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_B0_02",
+          "time": "2026-10-24T07:30:35+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_B0_04",
+          "time": "2026-10-24T07:42:18+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_B0_06",
+          "time": "2026-10-24T07:53:42+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_B0_08",
+          "time": "2026-10-24T08:05:20+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_B0_10",
+          "time": "2026-10-24T08:16:37+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_B0_12",
+          "time": "2026-10-24T08:28:12+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_B0_14",
+          "time": "2026-10-24T08:40:54+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_B0_16",
+          "time": "2026-10-24T08:52:53+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_B0_18",
+          "time": "2026-10-24T09:05:19+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_B0_20",
+          "time": "2026-10-24T09:17:32+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_B0_22",
+          "time": "2026-10-24T09:29:52+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_B0_24",
+          "time": "2026-10-24T09:42:58+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_B0_26",
+          "time": "2026-10-24T09:55:02+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_B0_28",
+          "time": "2026-10-24T10:07:38+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_B0_30",
+          "time": "2026-10-24T10:20:32+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_B0_32",
+          "time": "2026-10-24T10:34:07+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_B0_34",
+          "time": "2026-10-24T10:48:01+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_B0_36",
+          "time": "2026-10-24T11:02:42+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_B0_38",
+          "time": "2026-10-24T11:16:03+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_B0_40",
+          "time": "2026-10-24T11:29:15+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_M0_00",
+          "time": "2026-10-24T01:11:32+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_M0_02",
+          "time": "2026-10-24T01:25:17+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_M0_04",
+          "time": "2026-10-24T01:39:19+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_M0_06",
+          "time": "2026-10-24T01:53:15+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_M0_08",
+          "time": "2026-10-24T02:08:12+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_M0_10",
+          "time": "2026-10-24T02:22:46+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_M0_12",
+          "time": "2026-10-24T02:38:16+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_M0_14",
+          "time": "2026-10-24T02:55:03+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_M0_16",
+          "time": "2026-10-24T03:11:16+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_M0_18",
+          "time": "2026-10-24T03:28:25+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_M0_20",
+          "time": "2026-10-24T03:44:38+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_M0_22",
+          "time": "2026-10-24T04:01:27+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_M0_24",
+          "time": "2026-10-24T04:18:45+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_M0_26",
+          "time": "2026-10-24T04:37:27+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_M0_28",
+          "time": "2026-10-24T04:57:06+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_M0_30",
+          "time": "2026-10-24T05:17:14+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_M0_32",
+          "time": "2026-10-24T05:37:14+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_M0_34",
+          "time": "2026-10-24T05:57:59+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_M0_36",
+          "time": "2026-10-24T06:18:21+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_M0_38",
+          "time": "2026-10-24T06:37:18+00:00"
+        },
+        {
+          "seed": "seed2034",
+          "checkpoint": "checkpoint_M0_40",
+          "time": "2026-10-24T06:58:39+00:00"
+        },
+        {
+          "seed": "seed2036",
+          "checkpoint": "checkpoint_M0_00",
+          "time": "2026-10-24T11:45:19+00:00"
+        },
+        {
+          "seed": "seed2036",
+          "checkpoint": "checkpoint_M0_02",
+          "time": "2026-10-24T11:59:15+00:00"
+        },
+        {
+          "seed": "seed2036",
+          "checkpoint": "checkpoint_M0_04",
+          "time": "2026-10-24T12:14:35+00:00"
+        },
+        {
+          "seed": "seed2036",
+          "checkpoint": "checkpoint_M0_06",
+          "time": "2026-10-24T12:30:05+00:00"
+        }
+      ],
+      "stage_rates": {
+        "M0": {
+          "recent_interval_hours": 0.2569444444444444,
+          "recent_exam_rows_per_hour": 1167.5675675675677,
+          "recent_rate_full_group_hours": 5.395833333333333
+        },
+        "B0": {
+          "recent_interval_hours": 0.22708333333333333,
+          "recent_exam_rows_per_hour": 1321.1009174311928,
+          "recent_rate_full_group_hours": 4.76875
+        }
+      },
+      "completed_M0_exam_stage_hours": 6.1241666666666665
+    },
+    {
+      "directory": "washout3",
+      "counts": {
+        "shopping": 166,
+        "exam": 13614
+      },
+      "completed": 13780,
+      "gpu": "NVIDIA A800 80GB PCIe",
+      "node": "aias-compute-5",
+      "recent_rows_per_hour_median": 1257.9096624009496,
+      "groups": {
+        "2035:M0:shopping": 80,
+        "2035:B0:shopping": 40,
+        "2037:M0:shopping": 46,
+        "2035:M0:exam": 6300,
+        "2035:B0:exam": 6300,
+        "2037:M0:exam": 1014
+      },
+      "checkpoints": [
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_B0_00",
+          "time": "2026-10-24T07:07:43+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_B0_02",
+          "time": "2026-10-24T07:19:23+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_B0_04",
+          "time": "2026-10-24T07:31:18+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_B0_06",
+          "time": "2026-10-24T07:42:55+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_B0_08",
+          "time": "2026-10-24T07:54:32+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_B0_10",
+          "time": "2026-10-24T08:06:24+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_B0_12",
+          "time": "2026-10-24T08:18:40+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_B0_14",
+          "time": "2026-10-24T08:31:25+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_B0_16",
+          "time": "2026-10-24T08:44:08+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_B0_18",
+          "time": "2026-10-24T08:56:47+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_B0_20",
+          "time": "2026-10-24T09:10:29+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_B0_22",
+          "time": "2026-10-24T09:24:09+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_B0_24",
+          "time": "2026-10-24T09:37:02+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_B0_26",
+          "time": "2026-10-24T09:49:42+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_B0_28",
+          "time": "2026-10-24T10:02:38+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_B0_30",
+          "time": "2026-10-24T10:15:32+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_B0_32",
+          "time": "2026-10-24T10:28:44+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_B0_34",
+          "time": "2026-10-24T10:42:25+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_B0_36",
+          "time": "2026-10-24T10:56:43+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_B0_38",
+          "time": "2026-10-24T11:11:27+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_B0_40",
+          "time": "2026-10-24T11:25:09+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_M0_00",
+          "time": "2026-10-24T01:11:02+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_M0_02",
+          "time": "2026-10-24T01:25:23+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_M0_04",
+          "time": "2026-10-24T01:39:53+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_M0_06",
+          "time": "2026-10-24T01:55:26+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_M0_08",
+          "time": "2026-10-24T02:10:34+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_M0_10",
+          "time": "2026-10-24T02:25:18+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_M0_12",
+          "time": "2026-10-24T02:41:05+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_M0_14",
+          "time": "2026-10-24T02:56:22+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_M0_16",
+          "time": "2026-10-24T03:12:41+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_M0_18",
+          "time": "2026-10-24T03:28:50+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_M0_20",
+          "time": "2026-10-24T03:45:13+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_M0_22",
+          "time": "2026-10-24T04:01:49+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_M0_24",
+          "time": "2026-10-24T04:18:59+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_M0_26",
+          "time": "2026-10-24T04:36:05+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_M0_28",
+          "time": "2026-10-24T04:54:20+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_M0_30",
+          "time": "2026-10-24T05:12:44+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_M0_32",
+          "time": "2026-10-24T05:31:35+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_M0_34",
+          "time": "2026-10-24T05:50:48+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_M0_36",
+          "time": "2026-10-24T06:10:12+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_M0_38",
+          "time": "2026-10-24T06:29:26+00:00"
+        },
+        {
+          "seed": "seed2035",
+          "checkpoint": "checkpoint_M0_40",
+          "time": "2026-10-24T06:48:38+00:00"
+        },
+        {
+          "seed": "seed2037",
+          "checkpoint": "checkpoint_M0_00",
+          "time": "2026-10-24T11:42:44+00:00"
+        },
+        {
+          "seed": "seed2037",
+          "checkpoint": "checkpoint_M0_02",
+          "time": "2026-10-24T11:56:21+00:00"
+        },
+        {
+          "seed": "seed2037",
+          "checkpoint": "checkpoint_M0_04",
+          "time": "2026-10-24T12:10:34+00:00"
+        },
+        {
+          "seed": "seed2037",
+          "checkpoint": "checkpoint_M0_06",
+          "time": "2026-10-24T12:25:13+00:00"
+        }
+      ],
+      "stage_rates": {
+        "M0": {
+          "recent_interval_hours": 0.24055555555555558,
+          "recent_exam_rows_per_hour": 1247.1131639722862,
+          "recent_rate_full_group_hours": 5.051666666666667
+        },
+        "B0": {
+          "recent_interval_hours": 0.23333333333333334,
+          "recent_exam_rows_per_hour": 1285.7142857142858,
+          "recent_rate_full_group_hours": 4.9
+        }
+      },
+      "completed_M0_exam_stage_hours": 5.9447222222222225
+    }
+  ],
+  "stateless": [
+    {
+      "directory": "worker0",
+      "counts": {
+        "main": 1000,
+        "probe": 130,
+        "single": 1180,
+        "clone": 1260,
+        "defense": 7500
+      },
+      "completed": 11070,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "node": "aias-compute-4",
+      "recent_rows_per_hour_median": 0.0,
+      "complete": true,
+      "completed_utc": "2026-10-24T05:27:45+00:00",
+      "STARTED.json": "2026-10-23T17:13:28+00:00",
+      "DEFENSE_PLAN_FROZEN.json": "2026-10-23T21:56:43+00:00",
+      "planned": {
+        "nondefense": 3570,
+        "defense": 7500
+      },
+      "remaining_nondefense": 0,
+      "remaining_defense": 0,
+      "nondefense_elapsed_hours": 4.720833333333333
+    },
+    {
+      "directory": "worker1",
+      "counts": {
+        "main": 1000,
+        "probe": 120,
+        "single": 1100,
+        "clone": 1190,
+        "defense": 7500
+      },
+      "completed": 10910,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "node": "aias-compute-4",
+      "recent_rows_per_hour_median": 0.0,
+      "complete": true,
+      "completed_utc": "2026-10-24T08:07:46+00:00",
+      "STARTED.json": "2026-10-23T17:13:28+00:00",
+      "DEFENSE_PLAN_FROZEN.json": "2026-10-23T22:28:45+00:00",
+      "planned": {
+        "nondefense": 3410,
+        "defense": 7500
+      },
+      "remaining_nondefense": 0,
+      "remaining_defense": 0,
+      "nondefense_elapsed_hours": 5.254722222222222
+    },
+    {
+      "directory": "worker2",
+      "counts": {
+        "main": 1000,
+        "probe": 130,
+        "single": 1220,
+        "clone": 1260,
+        "defense": 7500
+      },
+      "completed": 11110,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "node": "aias-compute-2",
+      "recent_rows_per_hour_median": 0.0,
+      "complete": true,
+      "completed_utc": "2026-10-24T06:36:01+00:00",
+      "STARTED.json": "2026-10-23T17:12:47+00:00",
+      "DEFENSE_PLAN_FROZEN.json": "2026-10-23T22:12:57+00:00",
+      "planned": {
+        "nondefense": 3610,
+        "defense": 7500
+      },
+      "remaining_nondefense": 0,
+      "remaining_defense": 0,
+      "nondefense_elapsed_hours": 5.002777777777778
+    },
+    {
+      "directory": "worker3",
+      "counts": {
+        "main": 1000,
+        "probe": 130,
+        "single": 1340,
+        "clone": 1540,
+        "defense": 7500
+      },
+      "completed": 11510,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "node": "aias-compute-2",
+      "recent_rows_per_hour_median": 0.0,
+      "complete": true,
+      "completed_utc": "2026-10-24T06:51:19+00:00",
+      "STARTED.json": "2026-10-23T17:12:48+00:00",
+      "DEFENSE_PLAN_FROZEN.json": "2026-10-23T22:53:34+00:00",
+      "planned": {
+        "nondefense": 4010,
+        "defense": 7500
+      },
+      "remaining_nondefense": 0,
+      "remaining_defense": 0,
+      "nondefense_elapsed_hours": 5.679444444444444
+    },
+    {
+      "directory": "worker4",
+      "counts": {
+        "main": 960,
+        "probe": 120,
+        "single": 1180,
+        "clone": 1260,
+        "defense": 7200
+      },
+      "completed": 10720,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "node": "aias-compute-2",
+      "recent_rows_per_hour_median": 0.0,
+      "complete": true,
+      "completed_utc": "2026-10-24T06:04:40+00:00",
+      "STARTED.json": "2026-10-23T17:12:48+00:00",
+      "DEFENSE_PLAN_FROZEN.json": "2026-10-23T22:10:31+00:00",
+      "planned": {
+        "nondefense": 3520,
+        "defense": 7200
+      },
+      "remaining_nondefense": 0,
+      "remaining_defense": 0,
+      "nondefense_elapsed_hours": 4.961944444444445
+    },
+    {
+      "directory": "worker5",
+      "counts": {
+        "main": 960,
+        "probe": 110,
+        "single": 1200,
+        "clone": 1400,
+        "defense": 4478
+      },
+      "completed": 8148,
+      "gpu": "NVIDIA GeForce RTX 3090",
+      "node": "aias-compute-01",
+      "recent_rows_per_hour_median": 504.6037199329512,
+      "STARTED.json": "2026-10-23T17:12:47+00:00",
+      "DEFENSE_PLAN_FROZEN.json": "2026-10-24T02:30:10+00:00",
+      "planned": {
+        "nondefense": 3670,
+        "defense": 7200
+      },
+      "remaining_nondefense": 0,
+      "remaining_defense": 2722,
+      "nondefense_elapsed_hours": 9.289722222222222,
+      "defense_rows_per_hour_since_start": 447.21246309846094
+    },
+    {
+      "directory": "worker6",
+      "counts": {
+        "main": 960,
+        "probe": 120,
+        "single": 1220,
+        "clone": 1260,
+        "defense": 763
+      },
+      "completed": 4323,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "node": "aias-compute-4",
+      "recent_rows_per_hour_median": 551.0374146833318,
+      "STARTED.json": "2026-10-24T05:29:04+00:00",
+      "DEFENSE_PLAN_FROZEN.json": "2026-10-24T11:06:39+00:00",
+      "planned": {
+        "nondefense": 3560,
+        "defense": 7200
+      },
+      "remaining_nondefense": 0,
+      "remaining_defense": 6437,
+      "nondefense_elapsed_hours": 5.626388888888889,
+      "defense_rows_per_hour_since_start": 543.0287272824819
+    },
+    {
+      "directory": "worker7",
+      "counts": {
+        "main": 960,
+        "probe": 120,
+        "single": 1160,
+        "clone": 1330,
+        "defense": 305
+      },
+      "completed": 3875,
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "node": "aias-compute-2",
+      "recent_rows_per_hour_median": 644.6623399921621,
+      "STARTED.json": "2026-10-24T07:22:05+00:00",
+      "DEFENSE_PLAN_FROZEN.json": "2026-10-24T12:00:42+00:00",
+      "planned": {
+        "nondefense": 3570,
+        "defense": 7200
+      },
+      "remaining_nondefense": 0,
+      "remaining_defense": 6895,
+      "nondefense_elapsed_hours": 4.643611111111111,
+      "defense_rows_per_hour_since_start": 604.860057836256
+    }
+  ],
+  "stateless_frozen_plan": {
+    "worker0": {
+      "nondefense": 3570,
+      "defense": 7500
+    },
+    "worker1": {
+      "nondefense": 3410,
+      "defense": 7500
+    },
+    "worker2": {
+      "nondefense": 3610,
+      "defense": 7500
+    },
+    "worker3": {
+      "nondefense": 4010,
+      "defense": 7500
+    },
+    "worker4": {
+      "nondefense": 3520,
+      "defense": 7200
+    },
+    "worker5": {
+      "nondefense": 3670,
+      "defense": 7200
+    },
+    "worker6": {
+      "nondefense": 3560,
+      "defense": 7200
+    },
+    "worker7": {
+      "nondefense": 3570,
+      "defense": 7200
+    }
+  }
+}

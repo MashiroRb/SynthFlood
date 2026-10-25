@@ -1,0 +1,11 @@
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.002s
+
+OK
+{"counts": {"geo": 82, "clone": 75, "reviews": 83}, "metadata_coverage": {"real_instances": 1960, "known_rating": 1347, "known_review_count": 1348}}
+Products loaded: 5637
+Attributes loaded.
+  0%|          | 0/5637 [00:00<?, ?it/s]100%|██████████| 5637/5637 [00:00<00:00, 93548.25it/s]
+3 skipped
+V3_PREPARED

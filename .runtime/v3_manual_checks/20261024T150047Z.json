@@ -1,0 +1,405 @@
+{
+  "schema_version": 2,
+  "timestamp_utc": "2026-10-24T15:00:47.959862+00:00",
+  "monitoring_policy": "Final legal purchase completion; no repeated-browsing or intermediate-format behavior statistics",
+  "counts": {
+    "logical_rows": 145711,
+    "new_evaluations": 122343,
+    "valid": 121845,
+    "purchase_failure": 498,
+    "missing_confidence": 1575,
+    "confidence_reports": 120270,
+    "confidence_sum": 109820.7800000405,
+    "confidence_success_sum": 60666
+  },
+  "rates": {
+    "all": {
+      "new_evaluations": 122343,
+      "valid": 121845,
+      "purchase_failures": 498,
+      "purchase_failure": 0.0040705230376891196,
+      "missing_confidence": 0.01292625877138988,
+      "confidence_mean": 0.9131186497051675,
+      "confidence_report_success": 0.5044150661012722
+    },
+    "memory": {
+      "new_evaluations": 68874,
+      "valid": 68837,
+      "purchase_failures": 37,
+      "purchase_failure": 0.0005372128814937422,
+      "missing_confidence": 0.006188532329996949,
+      "confidence_mean": 0.9401109470698401,
+      "confidence_report_success": 0.5814561985645583
+    },
+    "phase:shopping": {
+      "new_evaluations": 754,
+      "valid": 754,
+      "purchase_failures": 0,
+      "purchase_failure": 0.0,
+      "missing_confidence": 0.005305039787798408,
+      "confidence_mean": 0.899866666666669,
+      "confidence_report_success": 0.48
+    },
+    "writer:washout0": {
+      "new_evaluations": 16909,
+      "valid": 16896,
+      "purchase_failures": 13,
+      "purchase_failure": 0.0007688213377491276,
+      "missing_confidence": 0.006924715909090909,
+      "confidence_mean": 0.939401037010569,
+      "confidence_report_success": 0.5752428631026879
+    },
+    "phase:exam": {
+      "new_evaluations": 68120,
+      "valid": 68083,
+      "purchase_failures": 37,
+      "purchase_failure": 0.0005431591309453905,
+      "missing_confidence": 0.006198316760424776,
+      "confidence_mean": 0.9405570417226293,
+      "confidence_report_success": 0.5825808072597213
+    },
+    "writer:washout1": {
+      "new_evaluations": 18958,
+      "valid": 18944,
+      "purchase_failures": 14,
+      "purchase_failure": 0.0007384745226289693,
+      "missing_confidence": 0.006017736486486487,
+      "confidence_mean": 0.9431285183218279,
+      "confidence_report_success": 0.5815188528943176
+    },
+    "writer:washout2": {
+      "new_evaluations": 16416,
+      "valid": 16413,
+      "purchase_failures": 3,
+      "purchase_failure": 0.0001827485380116959,
+      "missing_confidence": 0.005117894352038019,
+      "confidence_mean": 0.9392559250413516,
+      "confidence_report_success": 0.5829505787249678
+    },
+    "writer:washout3": {
+      "new_evaluations": 16591,
+      "valid": 16584,
+      "purchase_failures": 7,
+      "purchase_failure": 0.00042191549635344465,
+      "missing_confidence": 0.006693198263386397,
+      "confidence_mean": 0.9382322588478532,
+      "confidence_report_success": 0.5862320160262248
+    },
+    "stateless": {
+      "new_evaluations": 53469,
+      "valid": 53008,
+      "purchase_failures": 461,
+      "purchase_failure": 0.008621818249827003,
+      "missing_confidence": 0.021675973437971625,
+      "confidence_mean": 0.877511135965022,
+      "confidence_report_success": 0.40278447328332595
+    },
+    "phase:main": {
+      "new_evaluations": 7840,
+      "valid": 7746,
+      "purchase_failures": 94,
+      "purchase_failure": 0.011989795918367347,
+      "missing_confidence": 0.020526723470178157,
+      "confidence_mean": 0.8815803347832148,
+      "confidence_report_success": 0.4191379992091736
+    },
+    "writer:worker0": {
+      "new_evaluations": 7335,
+      "valid": 7298,
+      "purchase_failures": 37,
+      "purchase_failure": 0.005044308111792775,
+      "missing_confidence": 0.014935598794190189,
+      "confidence_mean": 0.8767561552372075,
+      "confidence_report_success": 0.4035331756850744
+    },
+    "phase:probe": {
+      "new_evaluations": 980,
+      "valid": 961,
+      "purchase_failures": 19,
+      "purchase_failure": 0.019387755102040816,
+      "missing_confidence": 0.011446409989594173,
+      "confidence_mean": 0.9055263157894693,
+      "confidence_report_success": 0.6336842105263157
+    },
+    "phase:single": {
+      "new_evaluations": 4800,
+      "valid": 4751,
+      "purchase_failures": 49,
+      "purchase_failure": 0.010208333333333333,
+      "missing_confidence": 0.03051989054935803,
+      "confidence_mean": 0.8815783760312914,
+      "confidence_report_success": 0.39209726443769
+    },
+    "phase:clone": {
+      "new_evaluations": 9000,
+      "valid": 8950,
+      "purchase_failures": 50,
+      "purchase_failure": 0.005555555555555556,
+      "missing_confidence": 0.013743016759776537,
+      "confidence_mean": 0.8850515463917896,
+      "confidence_report_success": 0.4022884332162683
+    },
+    "phase:defense": {
+      "new_evaluations": 30849,
+      "valid": 30600,
+      "purchase_failures": 249,
+      "purchase_failure": 0.008071574443255859,
+      "missing_confidence": 0.02323529411764706,
+      "confidence_mean": 0.8727341162298976,
+      "confidence_report_success": 0.3930877580380742
+    },
+    "writer:worker1": {
+      "new_evaluations": 7531,
+      "valid": 7425,
+      "purchase_failures": 106,
+      "purchase_failure": 0.014075156021776657,
+      "missing_confidence": 0.018855218855218854,
+      "confidence_mean": 0.8692244337680567,
+      "confidence_report_success": 0.4230610844200412
+    },
+    "writer:worker2": {
+      "new_evaluations": 7602,
+      "valid": 7538,
+      "purchase_failures": 64,
+      "purchase_failure": 0.008418837148118917,
+      "missing_confidence": 0.030512072167683736,
+      "confidence_mean": 0.8768814997263648,
+      "confidence_report_success": 0.3541324575807334
+    },
+    "writer:worker3": {
+      "new_evaluations": 7683,
+      "valid": 7615,
+      "purchase_failures": 68,
+      "purchase_failure": 0.008850709358323572,
+      "missing_confidence": 0.02521339461588969,
+      "confidence_mean": 0.8737437693655205,
+      "confidence_report_success": 0.34649063720867573
+    },
+    "writer:worker4": {
+      "new_evaluations": 7203,
+      "valid": 7162,
+      "purchase_failures": 41,
+      "purchase_failure": 0.005692072747466334,
+      "missing_confidence": 0.02429488969561575,
+      "confidence_mean": 0.8872567258157199,
+      "confidence_report_success": 0.4307384087006296
+    },
+    "writer:worker5": {
+      "new_evaluations": 6835,
+      "valid": 6809,
+      "purchase_failures": 26,
+      "purchase_failure": 0.003803950256035113,
+      "missing_confidence": 0.016742546629461008,
+      "confidence_mean": 0.8715085884989253,
+      "confidence_report_success": 0.476773711725168
+    },
+    "writer:worker6": {
+      "new_evaluations": 4729,
+      "valid": 4684,
+      "purchase_failures": 45,
+      "purchase_failure": 0.009515753859166844,
+      "missing_confidence": 0.016865926558497012,
+      "confidence_mean": 0.8668729641694092,
+      "confidence_report_success": 0.3993485342019544
+    },
+    "writer:worker7": {
+      "new_evaluations": 4551,
+      "valid": 4477,
+      "purchase_failures": 74,
+      "purchase_failure": 0.016260162601626018,
+      "missing_confidence": 0.024793388429752067,
+      "confidence_mean": 0.9048671552909104,
+      "confidence_report_success": 0.39028859367842417
+    }
+  },
+  "purchase_failure_reasons": {
+    "all": {
+      "format_retries_exhausted": 498
+    },
+    "memory": {
+      "format_retries_exhausted": 37
+    },
+    "phase:exam": {
+      "format_retries_exhausted": 37
+    },
+    "writer:washout0": {
+      "format_retries_exhausted": 13
+    },
+    "writer:washout1": {
+      "format_retries_exhausted": 14
+    },
+    "writer:washout2": {
+      "format_retries_exhausted": 3
+    },
+    "writer:washout3": {
+      "format_retries_exhausted": 7
+    },
+    "stateless": {
+      "format_retries_exhausted": 461
+    },
+    "phase:main": {
+      "format_retries_exhausted": 94
+    },
+    "writer:worker0": {
+      "format_retries_exhausted": 37
+    },
+    "phase:probe": {
+      "format_retries_exhausted": 19
+    },
+    "phase:single": {
+      "format_retries_exhausted": 49
+    },
+    "phase:clone": {
+      "format_retries_exhausted": 50
+    },
+    "phase:defense": {
+      "format_retries_exhausted": 249
+    },
+    "writer:worker1": {
+      "format_retries_exhausted": 106
+    },
+    "writer:worker2": {
+      "format_retries_exhausted": 64
+    },
+    "writer:worker3": {
+      "format_retries_exhausted": 68
+    },
+    "writer:worker4": {
+      "format_retries_exhausted": 41
+    },
+    "writer:worker5": {
+      "format_retries_exhausted": 26
+    },
+    "writer:worker6": {
+      "format_retries_exhausted": 45
+    },
+    "writer:worker7": {
+      "format_retries_exhausted": 74
+    }
+  },
+  "incomplete_lines": 0,
+  "examples": [
+    {
+      "case_key": "exam:M0:cp34:clone:37:2030:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 3,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:geo:49:2030:0",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:geo:91:2030:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:geo:93:2030:0",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:geo:99:2030:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:reviews:99:2030:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp2:geo:64:2030:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp2:reviews:64:2030:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp4:geo:42:2030:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp4:reviews:42:2030:0",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp22:reviews:52:2030:0",
+      "reason": "format_retries_exhausted",
+      "effective_views": 4,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:M0:cp8:clone:61:2032:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 5,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:M0:cp20:clone:58:2032:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:M0:cp10:clone:52:2031:0",
+      "reason": "format_retries_exhausted",
+      "effective_views": 5,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:geo:12:2031:0",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:geo:35:2031:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:reviews:35:2031:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:geo:44:2031:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:geo:49:2031:0",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:reviews:49:2031:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    }
+  ],
+  "source_input_hashes_valid": true,
+  "failures": []
+}

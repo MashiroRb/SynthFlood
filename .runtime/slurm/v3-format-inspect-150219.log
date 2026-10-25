@@ -1,0 +1,51 @@
+{
+  "error_counts": {
+    "Provide exactly one unambiguous action, not multiple commands.": 713,
+    "The action must contain one view[k] or select[k] command.": 11,
+    "Candidate index must be in 1..2.": 6
+  },
+  "samples": {
+    "Provide exactly one unambiguous action, not multiple commands.": [
+      {
+        "case_key": "exam:M0:cp0:reviews:13:2031:0",
+        "response": "Thought: Product [1] is specifically La Colombe Triple Draft Latte which mentions \"Triple Draft\" and \"Grab and Go\" but does not explicitly state it is a mocha or part of a four-pack. Product [2] is generic and does not provide enough details about the type of coffee drink or packaging. Neither product meets all the requirements clearly.\n\naction: view[1]\nconfidence: 0.5\nThought: Inspecting product [1] might provide more details about whether it is a mocha and if it comes in a four-pack.\naction: view[2]\nconfidence: 0.5\nThought: Inspecting product [2] might also provide more details about its content and packaging."
+      },
+      {
+        "case_key": "exam:M0:cp0:clone:56:2031:1",
+        "response": "Thought: Both products are Mitchum Men Triple Odor Defense Anti-Perspirant & Deodorant with 2.7 ounces and priced at $16.59 each. They come in a pack of 3, which means the price per stick is $16.59 / 3 = $5.53. This is significantly lower than the requested price of $30.00 and meets the user's requirement for a 2.7 ounce stick. The higher rating and number of reviews suggest these are good quality products.\n\naction: select[1]\nconfidence: 1.0\naction: select[2]\nconfidence: 1.0"
+      },
+      {
+        "case_key": "exam:M0:cp0:clone:84:2031:1",
+        "response": "Thought: Both products are white chocolate flavored and sugar-free, fat-free, but only one is specifically pistachio flavored. The price for both is the same at $24.00, which is below the user's budget of $60.00. Since there are no other options available, either product would satisfy the requirements.\n\naction: view[1]\nconfidence: n/a\nThought: Inspecting the first product to confirm it meets all the user's requirements, including being pistachio flavored.\naction: view[2]\nconfidence: n/a"
+      }
+    ],
+    "The action must contain one view[k] or select[k] command.": [
+      {
+        "case_key": "exam:M0:cp2:clone:37:2031:1",
+        "response": "Thought: The user wants the Tiger Lily shade of bareMinerals eye shadow and a price lower than $50.00. However, neither of the search results match the Tiger Lily shade. Both options are for Soft Sand and Nude Beach shades respectively. Since there are no matching products, I should inform the user and end the task.\n\naction: select[0]\nconfidence: n/a"
+      },
+      {
+        "case_key": "exam:M0:cp4:clone:34:2031:1",
+        "response": "Thought: The first candidate is a keyboard cover skin for the Logitech MX Keys or Craft wireless keyboards, which does not match the user's Apple Wireless Keyboard. The second candidate is also for the Logitech MX Keys or Craft, and does not mention being a dust repellent or having a rainbow color. Given the lack of a suitable rainbow-colored option and the mismatch with the Apple Wireless Keyboard, neither candidate fully meets the user's requirements.\n\naction: select[n]\nconfidence: n/a"
+      },
+      {
+        "case_key": "exam:M0:cp8:clone:82:2031:1",
+        "response": "Thought: The user is specifically looking for a contemporary bed with a wood finish and California King size. Both current candidates are white faux leather beds, which do not meet the user's requirements. Therefore, viewing these pages will not help satisfy the user's needs.\n\naction: select[0]\nconfidence: 0.0\n\nThought: Since neither of the current candidates meets the user's requirements, I cannot select either. The user needs a different product that fits their criteria."
+      }
+    ],
+    "Candidate index must be in 1..2.": [
+      {
+        "case_key": "exam:M0:cp10:reviews:96:2031:0",
+        "response": "Thought: The first product is a sparkling soda water with grapefruit flavor, which does not match the user's requirement for mango. The second product is a generic lemon-lime sparkling water, which also does not match the user's requirement for mango. Since neither product matches the user's specific requirement for mango flavor, I will view the next potential product to see if it meets the criteria.\n\naction: view[3]\nconfidence: n/a"
+      },
+      {
+        "case_key": "exam:M0:cp16:reviews:85:2031:1",
+        "response": "Thought: The second product listed has an Intel i5-10400 processor but only 16GB RAM, which does not meet the user's requirement of 32GB RAM. I will view the third option to see if there is a better match.\n\naction: view[3]\nconfidence: n/a"
+      },
+      {
+        "case_key": "exam:M0:cp24:reviews:96:2031:0",
+        "response": "Thought: After viewing both candidates, neither product is mango-flavored. The first candidate is grapefruit-flavored, and the second is lemon-lime flavored. Since the user specifically requested a mango sparkling water bottle, and we have no other options, we should view the third candidate to see if there is a better match.\n\naction: view[3]\nconfidence: n/a"
+      }
+    ]
+  }
+}

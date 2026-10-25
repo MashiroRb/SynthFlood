@@ -1,0 +1,102 @@
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.329s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK
+GENERATION_DEFERRED 0 geo continuing other cells
+GENERATION_ACCEPTED 0 clone 1 /300
+GENERATION_ACCEPTED 0 reviews 2 /300
+GENERATION_ACCEPTED 1 geo 3 /300
+GENERATION_ACCEPTED 1 clone 4 /300
+GENERATION_ACCEPTED 1 reviews 5 /300
+EXAM_TASK_COMPLETE 1 complete_tasks 1
+GENERATION_PASS_COMPLETE 0 accepted 5 missing 1
+GENERATION_DEFERRED 0 geo continuing other cells
+EXAM_TASK_COMPLETE 1 complete_tasks 1
+GENERATION_PASS_COMPLETE 1 accepted 5 missing 1
+GENERATION_ACCEPTED 0 geo 6 /300
+EXAM_TASK_COMPLETE 0 complete_tasks 2
+EXAM_TASK_COMPLETE 1 complete_tasks 2
+GENERATION_PASS_COMPLETE 2 accepted 6 missing 0
+..GENERATION_DEFERRED 0 geo continuing other cells
+GENERATION_ACCEPTED 0 clone 1 /300
+GENERATION_ACCEPTED 0 reviews 2 /300
+GENERATION_ACCEPTED 1 geo 3 /300
+GENERATION_ACCEPTED 1 clone 4 /300
+GENERATION_ACCEPTED 1 reviews 5 /300
+EXAM_TASK_COMPLETE 1 complete_tasks 1
+GENERATION_PASS_COMPLETE 0 accepted 5 missing 1
+GENERATION_DEFERRED 0 geo continuing other cells
+EXAM_TASK_COMPLETE 1 complete_tasks 1
+GENERATION_PASS_COMPLETE 1 accepted 5 missing 1
+.
+----------------------------------------------------------------------
+Ran 3 tests in 0.016s
+
+OK
+protocol_v3/slurm/launch.sh: line 88: 272602 Killed                  .runtime/venv/bin/python -m vllm.entrypoints.openai.api_server --model "$MODEL_PATH" --served-model-name Qwen/Qwen2.5-7B-Instruct --host 127.0.0.1 --port "$PORT" --dtype bfloat16 --max-model-len "$MODEL_CONTEXT" --max-num-seqs 1 --enforce-eager --rope-scaling '{"rope_type":"yarn","factor":4.0,"original_max_position_embeddings":32768}' --enable-chunked-prefill --max-num-batched-tokens 4096 --no-enable-prefix-caching --gpu-memory-utilization "$GPU_UTIL" --seed 2027 --swap-space 0 "${TP_ARGS[@]}" --disable-log-requests --disable-log-stats --uvicorn-log-level warning > "$OUTDIR/server.log" 2>&1
+[1;36m(VllmWorker rank=0 pid=272633)[0;0m ERROR 10-23 23:18:21 [multiproc_executor.py:375]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorker rank=0 pid=272633)[0;0m ERROR 10-23 23:18:21 [multiproc_executor.py:375]   File "/apps/miniconda3/envs/vllm/lib/python3.12/site-packages/torch/_functorch/aot_autograd.py", line 489, in __call__
+[1;36m(VllmWorker rank=0 pid=272633)[0;0m ERROR 10-23 23:18:21 [multiproc_executor.py:375]     return self.compiler_fn(gm, example_inputs)
+[1;36m(VllmWorker rank=0 pid=272633)[0;0m ERROR 10-23 23:18:21 [multiproc_executor.py:375]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorker rank=0 pid=272633)[0;0m ERROR 10-23 23:18:21 [multiproc_executor.py:375]   File "/apps/miniconda3/envs/vllm/lib/python3.12/site-packages/torch/_inductor/compile_fx.py", line 1741, in fw_compiler_base
+[1;36m(VllmWorker rank=0 pid=272633)[0;0m ERROR 10-23 23:18:21 [multiproc_executor.py:375]     return inner_compile(
+[1;36m(VllmWorker rank=0 pid=272633)[0;0m ERROR 10-23 23:18:21 [multiproc_executor.py:375]            ^^^^^^^^^^^^^^
+[1;36m(VllmWorker rank=0 pid=272633)[0;0m ERROR 10-23 23:18:21 [multiproc_executor.py:375]   File "/apps/miniconda3/envs/vllm/lib/python3.12/site-packages/torch/_inductor/compile_fx.py", line 569, in compile_fx_inner
+[1;36m(VllmWorker rank=0 pid=272633)[0;0m ERROR 10-23 23:18:21 [multiproc_executor.py:375]     return wrap_compiler_debug(_compile_fx_inner, compiler_name="inductor")(
+[1;36m(VllmWorker rank=0 pid=272633)[0;0m ERROR 10-23 23:18:21 [multiproc_executor.py:375]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorker rank=0 pid=272633)[0;0m ERROR 10-23 23:18:21 [multiproc_executor.py:375]   File "/apps/miniconda3/envs/vllm/lib/python3.12/site-packages/torch/_dynamo/repro/after_aot.py", line 102, in debug_wrapper
+[1;36m(VllmWorker rank=0 pid=272633)[0;0m ERROR 10-23 23:18:21 [multiproc_executor.py:375]     inner_compiled_fn = compiler_fn(gm, example_inputs)
+[1;36m(VllmWorker rank=0 pid=272633)[0;0m ERROR 10-23 23:18:21 [multiproc_executor.py:375]                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorker rank=0 pid=272633)[0;0m ERROR 10-23 23:18:21 [multiproc_executor.py:375]   File "/apps/miniconda3/envs/vllm/lib/python3.12/site-packages/torch/_inductor/compile_fx.py", line 660, in _compile_fx_inner
+[1;36m(VllmWorker rank=0 pid=272633)[0;0m ERROR 10-23 23:18:21 [multiproc_executor.py:375]     mb_compiled_graph, cache_info = FxGraphCache.load_with_key(
+[1;36m(VllmWorker rank=0 pid=272633)[0;0m ERROR 10-23 23:18:21 [multiproc_executor.py:375]                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorker rank=0 pid=272633)[0;0m ERROR 10-23 23:18:21 [multiproc_executor.py:375]   File "/apps/miniconda3/envs/vllm/lib/python3.12/site-packages/torch/_inductor/codecache.py", line 1308, in load_with_key
+[1;36m(VllmWorker rank=0 pid=272633)[0;0m ERROR 10-23 23:18:21 [multiproc_executor.py:375]     compiled_graph, cache_info = FxGraphCache._lookup_graph(
+[1;36m(VllmWorker rank=0 pid=272633)[0;0m ERROR 10-23 23:18:21 [multiproc_executor.py:375]                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorker rank=0 pid=272633)[0;0m ERROR 10-23 23:18:21 [multiproc_executor.py:375]   File "/apps/miniconda3/envs/vllm/lib/python3.12/site-packages/torch/_inductor/codecache.py", line 1077, in _lookup_graph
+[1;36m(VllmWorker rank=0 pid=272633)[0;0m ERROR 10-23 23:18:21 [multiproc_executor.py:375]     triton_bundler_meta = TritonBundler.read_and_emit(bundle)
+[1;36m(VllmWorker rank=0 pid=272633)[0;0m ERROR 10-23 23:18:21 [multiproc_executor.py:375]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorker rank=0 pid=272633)[0;0m ERROR 10-23 23:18:21 [multiproc_executor.py:375]   File "/apps/miniconda3/envs/vllm/lib/python3.12/site-packages/torch/_inductor/triton_bundler.py", line 268, in read_and_emit
+[1;36m(VllmWorker rank=0 pid=272633)[0;0m ERROR 10-23 23:18:21 [multiproc_executor.py:375]     os.replace(tmp_dir, directory)
+[1;36m(VllmWorker rank=0 pid=272633)[0;0m ERROR 10-23 23:18:21 [multiproc_executor.py:375] torch._dynamo.exc.BackendCompilerFailed: backend='inductor' raised:
+[1;36m(VllmWorker rank=0 pid=272633)[0;0m ERROR 10-23 23:18:21 [multiproc_executor.py:375] FileExistsError: [Errno 17] File exists: '/mnt/beegfs/home/liudianru26/project/www2027/SynthFlood-local/.runtime/v3-triton-149821/tmp.c095e696-307d-4b68-b467-11e36eb3c53c' -> '/mnt/beegfs/home/liudianru26/project/www2027/SynthFlood-local/.runtime/v3-triton-149821/5Y3HvZrSdLZWY8WCVptxXus9fmNXBIISyokqTr0X76g'
+[1;36m(VllmWorker rank=0 pid=272633)[0;0m ERROR 10-23 23:18:21 [multiproc_executor.py:375] 
+[1;36m(VllmWorker rank=0 pid=272633)[0;0m ERROR 10-23 23:18:21 [multiproc_executor.py:375] Set TORCH_LOGS="+dynamo" and TORCHDYNAMO_VERBOSE=1 for more information
+[1;36m(VllmWorker rank=0 pid=272633)[0;0m ERROR 10-23 23:18:21 [multiproc_executor.py:375] 
+[1;36m(VllmWorker rank=0 pid=272633)[0;0m ERROR 10-23 23:18:21 [multiproc_executor.py:375] 
+[1;36m(VllmWorker rank=0 pid=272633)[0;0m ERROR 10-23 23:18:21 [multiproc_executor.py:375] You can suppress this exception and fall back to eager by setting:
+[1;36m(VllmWorker rank=0 pid=272633)[0;0m ERROR 10-23 23:18:21 [multiproc_executor.py:375]     import torch._dynamo
+[1;36m(VllmWorker rank=0 pid=272633)[0;0m ERROR 10-23 23:18:21 [multiproc_executor.py:375]     torch._dynamo.config.suppress_errors = True
+[1;36m(VllmWorker rank=0 pid=272633)[0;0m ERROR 10-23 23:18:21 [multiproc_executor.py:375] 
+ERROR 10-23 23:18:21 [core.py:340] EngineCore hit an exception: Traceback (most recent call last):
+ERROR 10-23 23:18:21 [core.py:340]   File "/apps/miniconda3/envs/vllm/lib/python3.12/site-packages/vllm/v1/engine/core.py", line 332, in run_engine_core
+ERROR 10-23 23:18:21 [core.py:340]     engine_core = EngineCoreProc(*args, **kwargs)
+ERROR 10-23 23:18:21 [core.py:340]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ERROR 10-23 23:18:21 [core.py:340]   File "/apps/miniconda3/envs/vllm/lib/python3.12/site-packages/vllm/v1/engine/core.py", line 287, in __init__
+ERROR 10-23 23:18:21 [core.py:340]     super().__init__(vllm_config, executor_class, log_stats)
+ERROR 10-23 23:18:21 [core.py:340]   File "/apps/miniconda3/envs/vllm/lib/python3.12/site-packages/vllm/v1/engine/core.py", line 62, in __init__
+ERROR 10-23 23:18:21 [core.py:340]     num_gpu_blocks, num_cpu_blocks = self._initialize_kv_caches(
+ERROR 10-23 23:18:21 [core.py:340]                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ERROR 10-23 23:18:21 [core.py:340]   File "/apps/miniconda3/envs/vllm/lib/python3.12/site-packages/vllm/v1/engine/core.py", line 121, in _initialize_kv_caches
+ERROR 10-23 23:18:21 [core.py:340]     available_gpu_memory = self.model_executor.determine_available_memory()
+ERROR 10-23 23:18:21 [core.py:340]                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ERROR 10-23 23:18:21 [core.py:340]   File "/apps/miniconda3/envs/vllm/lib/python3.12/site-packages/vllm/v1/executor/abstract.py", line 66, in determine_available_memory
+ERROR 10-23 23:18:21 [core.py:340]     output = self.collective_rpc("determine_available_memory")
+ERROR 10-23 23:18:21 [core.py:340]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ERROR 10-23 23:18:21 [core.py:340]   File "/apps/miniconda3/envs/vllm/lib/python3.12/site-packages/vllm/v1/executor/multiproc_executor.py", line 133, in collective_rpc
+ERROR 10-23 23:18:21 [core.py:340]     raise e
+ERROR 10-23 23:18:21 [core.py:340]   File "/apps/miniconda3/envs/vllm/lib/python3.12/site-packages/vllm/v1/executor/multiproc_executor.py", line 117, in collective_rpc
+ERROR 10-23 23:18:21 [core.py:340]     status, result = w.worker_response_mq.dequeue(
+ERROR 10-23 23:18:21 [core.py:340]                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ERROR 10-23 23:18:21 [core.py:340]   File "/apps/miniconda3/envs/vllm/lib/python3.12/site-packages/vllm/distributed/device_communicators/shm_broadcast.py", line 464, in dequeue
+ERROR 10-23 23:18:21 [core.py:340]     obj = pickle.loads(buf[1:])
+ERROR 10-23 23:18:21 [core.py:340]           ^^^^^^^^^^^^^^^^^^^^^
+ERROR 10-23 23:18:21 [core.py:340] TypeError: BackendCompilerFailed.__init__() missing 1 required positional argument: 'inner_exception'
+ERROR 10-23 23:18:21 [core.py:340] 
+CRITICAL 10-23 23:18:21 [core_client.py:269] Got fatal signal from worker processes, shutting down. See stack trace above for root cause issue.

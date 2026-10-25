@@ -1,0 +1,15 @@
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.281s
+
+OK
+EXAM_GENERATED 1 /100
+EXAM_GENERATED 2 /100
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/beegfs/home/liudianru26/project/www2027/SynthFlood-local/protocol_v3/generate.py", line 192, in <module>
+    generate()
+  File "/mnt/beegfs/home/liudianru26/project/www2027/SynthFlood-local/protocol_v3/generate.py", line 124, in generate
+    raise RuntimeError(f'Exam task {gi} lacks a complete {f} candidate after 20 fixed attempts')
+RuntimeError: Exam task 2 lacks a complete clone candidate after 20 fixed attempts

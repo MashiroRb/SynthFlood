@@ -1,0 +1,86 @@
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.138s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK
+GENERATION_DEFERRED 0 geo continuing other cells
+GENERATION_ACCEPTED 0 clone 1 /300
+GENERATION_ACCEPTED 0 reviews 2 /300
+GENERATION_ACCEPTED 1 geo 3 /300
+GENERATION_ACCEPTED 1 clone 4 /300
+GENERATION_ACCEPTED 1 reviews 5 /300
+EXAM_TASK_COMPLETE 1 complete_tasks 1
+GENERATION_PASS_COMPLETE 0 accepted 5 missing 1
+GENERATION_DEFERRED 0 geo continuing other cells
+EXAM_TASK_COMPLETE 1 complete_tasks 1
+GENERATION_PASS_COMPLETE 1 accepted 5 missing 1
+GENERATION_ACCEPTED 0 geo 6 /300
+EXAM_TASK_COMPLETE 0 complete_tasks 2
+EXAM_TASK_COMPLETE 1 complete_tasks 2
+GENERATION_PASS_COMPLETE 2 accepted 6 missing 0
+..GENERATION_DEFERRED 0 geo continuing other cells
+GENERATION_ACCEPTED 0 clone 1 /300
+GENERATION_ACCEPTED 0 reviews 2 /300
+GENERATION_ACCEPTED 1 geo 3 /300
+GENERATION_ACCEPTED 1 clone 4 /300
+GENERATION_ACCEPTED 1 reviews 5 /300
+EXAM_TASK_COMPLETE 1 complete_tasks 1
+GENERATION_PASS_COMPLETE 0 accepted 5 missing 1
+GENERATION_DEFERRED 0 geo continuing other cells
+EXAM_TASK_COMPLETE 1 complete_tasks 1
+GENERATION_PASS_COMPLETE 1 accepted 5 missing 1
+.
+----------------------------------------------------------------------
+Ran 3 tests in 0.018s
+
+OK
+REUSE_FIXED_QUALITY_TARGETS 100 REUSE_ACCEPTED_INPUTS 60
+GENERATION_QUERY_QA 1 /100 compatible True
+GENERATION_QUERY_QA 2 /100 compatible False
+GENERATION_QUERY_QA 3 /100 compatible True
+GENERATION_QUERY_QA 4 /100 compatible True
+GENERATION_QUERY_QA 5 /100 compatible False
+GENERATION_QUERY_QA 6 /100 compatible True
+GENERATION_QUERY_QA 7 /100 compatible True
+GENERATION_QUERY_QA 8 /100 compatible True
+GENERATION_QUERY_QA 9 /100 compatible True
+GENERATION_QUERY_QA 10 /100 compatible False
+GENERATION_QUERY_QA 11 /100 compatible True
+GENERATION_QUERY_QA 12 /100 compatible True
+GENERATION_QUERY_QA 13 /100 compatible True
+GENERATION_QUERY_QA 14 /100 compatible False
+GENERATION_QUERY_QA 15 /100 compatible True
+GENERATION_QUERY_QA 16 /100 compatible True
+GENERATION_QUERY_QA 17 /100 compatible True
+GENERATION_QUERY_QA 18 /100 compatible True
+GENERATION_QUERY_QA 19 /100 compatible True
+GENERATION_QUERY_QA 20 /100 compatible True
+GENERATION_QUERY_QA 21 /100 compatible False
+GENERATION_QUERY_QA 22 /100 compatible True
+GENERATION_QUERY_QA 23 /100 compatible True
+GENERATION_QUERY_QA 24 /100 compatible True
+GENERATION_QUERY_QA 25 /100 compatible True
+GENERATION_QUERY_QA 26 /100 compatible True
+GENERATION_QUERY_QA 27 /100 compatible False
+GENERATION_QUERY_QA 28 /100 compatible True
+GENERATION_QUERY_QA 29 /100 compatible True
+GENERATION_QUERY_QA 30 /100 compatible True
+GENERATION_QUERY_QA 31 /100 compatible True
+GENERATION_QUERY_QA 32 /100 compatible True
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/beegfs/home/liudianru26/project/www2027/SynthFlood-local/protocol_v3/generate.py", line 200, in <module>
+    generate()
+  File "/mnt/beegfs/home/liudianru26/project/www2027/SynthFlood-local/protocol_v3/generate.py", line 117, in generate
+    queries=generation_queries(targets,query_client)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/beegfs/home/liudianru26/project/www2027/SynthFlood-local/protocol_v3/generation_queries.py", line 34, in generation_queries
+    assert leaf
+           ^^^^
+AssertionError

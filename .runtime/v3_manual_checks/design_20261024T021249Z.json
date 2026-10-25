@@ -1,0 +1,93 @@
+{
+  "timestamp_utc": "2026-10-24T02:12:49.330342+00:00",
+  "frozen_hashes_valid": true,
+  "rows": 52737,
+  "rows_by_directory": {
+    "washout0": 6063,
+    "washout1": 7416,
+    "washout2": 1345,
+    "washout3": 1292,
+    "worker0": 7357,
+    "worker1": 5850,
+    "worker2": 6645,
+    "worker3": 6645,
+    "worker4": 6592,
+    "worker5": 3532
+  },
+  "ownership": {
+    "washout0": [
+      2030,
+      2032
+    ],
+    "washout1": [
+      2031,
+      2033
+    ],
+    "washout2": [
+      2034,
+      2036
+    ],
+    "washout3": [
+      2035,
+      2037
+    ]
+  },
+  "checks": {
+    "exclusive_seed_partition": 1,
+    "scaling_source_hash": 12,
+    "exam_fixed_300_pairs": 1,
+    "exam_binary_pair": 300,
+    "exam_price_equivalence": 300,
+    "exam_all_three_types": 1,
+    "unique_formal_case": 52737,
+    "case_identity": 52737,
+    "raw_response_execution": 194204,
+    "executed_action": 188373,
+    "purchase_terminates": 188373,
+    "remaining_budget": 194204,
+    "confidence_from_raw_response": 52443,
+    "chosen_candidate_matches_action": 52443,
+    "budget_and_cumulative_retries": 52737,
+    "valid_means_purchase": 52737,
+    "finite_purchase_reward": 52443,
+    "finite_confidence_or_missing": 52737,
+    "distinct_candidates": 52737,
+    "row_seed_owned_by_writer": 16116,
+    "model_call_accounting": 44048,
+    "request_sequence_hash": 44048,
+    "failure_excluded_without_imputation": 294,
+    "stateless_case_in_frozen_plan": 36621,
+    "defense_plan_frozen_before_purchases": 5,
+    "frozen_detector_requests": 5,
+    "defense_matches_frozen_plan": 14969,
+    "reuse_has_retained_source": 8689,
+    "reuse_exact_input_backend_and_source_hash": 8689,
+    "reuse_adds_no_model_calls": 8689,
+    "memory_exact_observation_lesson_order": 16,
+    "memory_group_and_length": 16,
+    "observation_matches_shopping_only": 260,
+    "lesson_only_last_five_shops": 50,
+    "checkpoint_full_memory_no_exam_entries": 55,
+    "checkpoint_full_context_hash": 55,
+    "checkpoint_expected_memory_counts": 55,
+    "shopping_frozen_plan_and_order": 260,
+    "washout_exact_frozen_request_and_full_memory": 16116,
+    "exam_fixed_question_identity": 15856,
+    "complete_request_archive": 360,
+    "successful_request_has_response": 1273,
+    "actual_request_hash": 1273,
+    "actual_sampling_model_settings": 1273,
+    "actual_context_with_output_reserve": 1273,
+    "response_archive_matches_trajectory": 1273,
+    "fresh_dialogue_per_question": 360,
+    "within_question_history_retained": 913,
+    "actual_exam_injects_full_checkpoint": 132
+  },
+  "sampled_complete_cases": 360,
+  "lessons_checked": 50,
+  "issues": [],
+  "deferred_concurrent_writes": [],
+  "log_files_scanned": 22,
+  "log_findings": [],
+  "failures": []
+}

@@ -1,0 +1,862 @@
+{
+  "schema_version": 2,
+  "timestamp_utc": "2026-10-24T04:14:43.040044+00:00",
+  "monitoring_policy": "Final legal purchase completion; no repeated-browsing or intermediate-format behavior statistics",
+  "counts": {
+    "logical_rows": 72278,
+    "new_evaluations": 59286,
+    "valid": 58996,
+    "purchase_failure": 290,
+    "missing_confidence": 866,
+    "confidence_reports": 58130,
+    "confidence_sum": 52502.45000001798,
+    "confidence_success_sum": 27708
+  },
+  "rates": {
+    "all": {
+      "new_evaluations": 59286,
+      "valid": 58996,
+      "purchase_failures": 290,
+      "purchase_failure": 0.004891542691360524,
+      "missing_confidence": 0.014678961285510881,
+      "confidence_mean": 0.9031902632034747,
+      "confidence_report_success": 0.47665577154653366
+    },
+    "memory": {
+      "new_evaluations": 24935,
+      "valid": 24911,
+      "purchase_failures": 24,
+      "purchase_failure": 0.000962502506516944,
+      "missing_confidence": 0.00578057886074425,
+      "confidence_mean": 0.9374550813581973,
+      "confidence_report_success": 0.5753623773569669
+    },
+    "phase:shopping": {
+      "new_evaluations": 314,
+      "valid": 314,
+      "purchase_failures": 0,
+      "purchase_failure": 0.0,
+      "missing_confidence": 0.006369426751592357,
+      "confidence_mean": 0.8939102564102572,
+      "confidence_report_success": 0.46794871794871795
+    },
+    "writer:washout0": {
+      "new_evaluations": 8087,
+      "valid": 8077,
+      "purchase_failures": 10,
+      "purchase_failure": 0.0012365524916532708,
+      "missing_confidence": 0.005571375510709422,
+      "confidence_mean": 0.9385669820717333,
+      "confidence_report_success": 0.5687250996015937
+    },
+    "phase:exam": {
+      "new_evaluations": 24621,
+      "valid": 24597,
+      "purchase_failures": 24,
+      "purchase_failure": 0.0009747776288534178,
+      "missing_confidence": 0.005773061755498638,
+      "confidence_mean": 0.9380106317725851,
+      "confidence_report_success": 0.5767327744837456
+    },
+    "writer:washout1": {
+      "new_evaluations": 9649,
+      "valid": 9636,
+      "purchase_failures": 13,
+      "purchase_failure": 0.001347289874598404,
+      "missing_confidence": 0.005396430053964301,
+      "confidence_mean": 0.9345221202003514,
+      "confidence_report_success": 0.5843071786310517
+    },
+    "writer:washout2": {
+      "new_evaluations": 3597,
+      "valid": 3597,
+      "purchase_failures": 0,
+      "purchase_failure": 0.0,
+      "missing_confidence": 0.006394217403391716,
+      "confidence_mean": 0.9398628987129184,
+      "confidence_report_success": 0.5593172915500839
+    },
+    "writer:washout3": {
+      "new_evaluations": 3602,
+      "valid": 3601,
+      "purchase_failures": 1,
+      "purchase_failure": 0.000277623542476402,
+      "missing_confidence": 0.006664815329075257,
+      "confidence_mean": 0.940410958904102,
+      "confidence_report_success": 0.5823315627620912
+    },
+    "stateless": {
+      "new_evaluations": 34351,
+      "valid": 34085,
+      "purchase_failures": 266,
+      "purchase_failure": 0.007743588250705947,
+      "missing_confidence": 0.02118233827196714,
+      "confidence_mean": 0.877753799118634,
+      "confidence_report_success": 0.4033809909180829
+    },
+    "phase:main": {
+      "new_evaluations": 5920,
+      "valid": 5849,
+      "purchase_failures": 71,
+      "purchase_failure": 0.011993243243243244,
+      "missing_confidence": 0.021542143956231833,
+      "confidence_mean": 0.8795387034772255,
+      "confidence_report_success": 0.4256508824043334
+    },
+    "writer:worker0": {
+      "new_evaluations": 6619,
+      "valid": 6586,
+      "purchase_failures": 33,
+      "purchase_failure": 0.0049856473787581205,
+      "missing_confidence": 0.014728211357424841,
+      "confidence_mean": 0.8779395900755498,
+      "confidence_report_success": 0.4062259207890276
+    },
+    "phase:probe": {
+      "new_evaluations": 740,
+      "valid": 730,
+      "purchase_failures": 10,
+      "purchase_failure": 0.013513513513513514,
+      "missing_confidence": 0.005479452054794521,
+      "confidence_mean": 0.9037190082644608,
+      "confidence_report_success": 0.6542699724517906
+    },
+    "phase:single": {
+      "new_evaluations": 3610,
+      "valid": 3579,
+      "purchase_failures": 31,
+      "purchase_failure": 0.008587257617728532,
+      "missing_confidence": 0.029617211511595416,
+      "confidence_mean": 0.8816009213936241,
+      "confidence_report_success": 0.39648718687014106
+    },
+    "phase:clone": {
+      "new_evaluations": 6780,
+      "valid": 6758,
+      "purchase_failures": 22,
+      "purchase_failure": 0.0032448377581120944,
+      "missing_confidence": 0.015093222846996152,
+      "confidence_mean": 0.8820387620192661,
+      "confidence_report_success": 0.4118088942307692
+    },
+    "phase:defense": {
+      "new_evaluations": 17301,
+      "valid": 17169,
+      "purchase_failures": 132,
+      "purchase_failure": 0.007629616785156927,
+      "missing_confidence": 0.022365892014677615,
+      "confidence_mean": 0.8735269585938965,
+      "confidence_report_success": 0.38302055406613045
+    },
+    "writer:worker1": {
+      "new_evaluations": 5621,
+      "valid": 5543,
+      "purchase_failures": 78,
+      "purchase_failure": 0.01387653442447963,
+      "missing_confidence": 0.01786036442359733,
+      "confidence_mean": 0.8708486407053962,
+      "confidence_report_success": 0.4307494489346069
+    },
+    "writer:worker2": {
+      "new_evaluations": 6254,
+      "valid": 6202,
+      "purchase_failures": 52,
+      "purchase_failure": 0.008314678605692356,
+      "missing_confidence": 0.02999032570138665,
+      "confidence_mean": 0.8776928191489699,
+      "confidence_report_success": 0.35023271276595747
+    },
+    "writer:worker3": {
+      "new_evaluations": 6266,
+      "valid": 6208,
+      "purchase_failures": 58,
+      "purchase_failure": 0.00925630386211299,
+      "missing_confidence": 0.023518041237113402,
+      "confidence_mean": 0.8746783239855155,
+      "confidence_report_success": 0.35136918508742987
+    },
+    "writer:worker4": {
+      "new_evaluations": 6160,
+      "valid": 6126,
+      "purchase_failures": 34,
+      "purchase_failure": 0.00551948051948052,
+      "missing_confidence": 0.02366960496245511,
+      "confidence_mean": 0.8873098144123391,
+      "confidence_report_success": 0.4301956194616285
+    },
+    "writer:worker5": {
+      "new_evaluations": 3431,
+      "valid": 3420,
+      "purchase_failures": 11,
+      "purchase_failure": 0.0032060623724861556,
+      "missing_confidence": 0.01432748538011696,
+      "confidence_mean": 0.8772322752892489,
+      "confidence_report_success": 0.4945120142390982
+    }
+  },
+  "purchase_failure_reasons": {
+    "all": {
+      "format_retries_exhausted": 290
+    },
+    "memory": {
+      "format_retries_exhausted": 24
+    },
+    "phase:exam": {
+      "format_retries_exhausted": 24
+    },
+    "writer:washout0": {
+      "format_retries_exhausted": 10
+    },
+    "writer:washout1": {
+      "format_retries_exhausted": 13
+    },
+    "writer:washout3": {
+      "format_retries_exhausted": 1
+    },
+    "stateless": {
+      "format_retries_exhausted": 266
+    },
+    "phase:main": {
+      "format_retries_exhausted": 71
+    },
+    "writer:worker0": {
+      "format_retries_exhausted": 33
+    },
+    "phase:probe": {
+      "format_retries_exhausted": 10
+    },
+    "phase:single": {
+      "format_retries_exhausted": 31
+    },
+    "phase:clone": {
+      "format_retries_exhausted": 22
+    },
+    "phase:defense": {
+      "format_retries_exhausted": 132
+    },
+    "writer:worker1": {
+      "format_retries_exhausted": 78
+    },
+    "writer:worker2": {
+      "format_retries_exhausted": 52
+    },
+    "writer:worker3": {
+      "format_retries_exhausted": 58
+    },
+    "writer:worker4": {
+      "format_retries_exhausted": 34
+    },
+    "writer:worker5": {
+      "format_retries_exhausted": 11
+    }
+  },
+  "incomplete_lines": 0,
+  "examples": [
+    {
+      "case_key": "exam:M0:cp34:clone:37:2030:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 3,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:geo:49:2030:0",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:geo:91:2030:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:geo:93:2030:0",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:geo:99:2030:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:reviews:99:2030:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp2:geo:64:2030:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp2:reviews:64:2030:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp4:geo:42:2030:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp4:reviews:42:2030:0",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:M0:cp10:clone:52:2031:0",
+      "reason": "format_retries_exhausted",
+      "effective_views": 5,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:geo:12:2031:0",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:geo:35:2031:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:reviews:35:2031:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:geo:44:2031:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:geo:49:2031:0",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:reviews:49:2031:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:geo:91:2031:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:reviews:93:2031:0",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:geo:99:2031:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    }
+  ],
+  "source_input_hashes_valid": true,
+  "failures": []
+}
+window=2026-10-24T03:43:12.525877+00:00 -> 2026-10-24T04:14:43.040044+00:00
+all: final_no_purchase=22/4048=0.5435%; missing_confidence=47/4026=1.1674%
+memory: final_no_purchase=1/2314=0.0432%; missing_confidence=15/2313=0.6485%
+stateless: final_no_purchase=21/1734=1.2111%; missing_confidence=32/1713=1.8681%
+{
+  "timestamp_utc": "2026-10-24T04:15:28.468035+00:00",
+  "frozen_hashes_valid": true,
+  "rows": 72378,
+  "rows_by_directory": {
+    "washout0": 8098,
+    "washout1": 9657,
+    "washout2": 3609,
+    "washout3": 3611,
+    "worker0": 9600,
+    "worker1": 7453,
+    "worker2": 8675,
+    "worker3": 8722,
+    "worker4": 8658,
+    "worker5": 4295
+  },
+  "ownership": {
+    "washout0": [
+      2030,
+      2032
+    ],
+    "washout1": [
+      2031,
+      2033
+    ],
+    "washout2": [
+      2034,
+      2036
+    ],
+    "washout3": [
+      2035,
+      2037
+    ]
+  },
+  "checks": {
+    "exclusive_seed_partition": 1,
+    "scaling_source_hash": 12,
+    "exam_fixed_300_pairs": 1,
+    "exam_binary_pair": 300,
+    "exam_price_equivalence": 300,
+    "exam_all_three_types": 1,
+    "unique_formal_case": 72378,
+    "case_identity": 72378,
+    "raw_response_execution": 261695,
+    "executed_action": 254088,
+    "purchase_terminates": 254088,
+    "remaining_budget": 261695,
+    "confidence_from_raw_response": 72006,
+    "chosen_candidate_matches_action": 72006,
+    "budget_and_cumulative_retries": 72378,
+    "valid_means_purchase": 72378,
+    "finite_purchase_reward": 72006,
+    "finite_confidence_or_missing": 72378,
+    "distinct_candidates": 72378,
+    "row_seed_owned_by_writer": 24975,
+    "model_call_accounting": 59358,
+    "request_sequence_hash": 59358,
+    "failure_excluded_without_imputation": 372,
+    "stateless_case_in_frozen_plan": 47403,
+    "defense_plan_frozen_before_purchases": 6,
+    "frozen_detector_requests": 6,
+    "defense_matches_frozen_plan": 25613,
+    "reuse_has_retained_source": 13020,
+    "reuse_exact_input_backend_and_source_hash": 13020,
+    "reuse_adds_no_model_calls": 13020,
+    "memory_exact_observation_lesson_order": 16,
+    "memory_group_and_length": 16,
+    "observation_matches_shopping_only": 314,
+    "lesson_only_last_five_shops": 62,
+    "checkpoint_full_memory_no_exam_entries": 83,
+    "checkpoint_full_context_hash": 83,
+    "checkpoint_expected_memory_counts": 83,
+    "shopping_frozen_plan_and_order": 314,
+    "washout_exact_frozen_request_and_full_memory": 24975,
+    "exam_fixed_question_identity": 24661,
+    "complete_request_archive": 445,
+    "successful_request_has_response": 1567,
+    "actual_request_hash": 1567,
+    "actual_sampling_model_settings": 1567,
+    "actual_context_with_output_reserve": 1567,
+    "response_archive_matches_trajectory": 1567,
+    "fresh_dialogue_per_question": 445,
+    "within_question_history_retained": 1122,
+    "actual_exam_injects_full_checkpoint": 193
+  },
+  "sampled_complete_cases": 445,
+  "lessons_checked": 62,
+  "issues": [],
+  "deferred_concurrent_writes": [],
+  "log_files_scanned": 22,
+  "log_findings": [],
+  "failures": []
+}
+{
+  "timestamp_utc": "2026-10-24T04:15:32.771533+00:00",
+  "complete_seeds": [],
+  "inventory": [
+    {
+      "seed": 2030,
+      "directory": "washout0",
+      "complete": false,
+      "groups": {
+        "M0": {
+          "group": "M0",
+          "complete": true,
+          "rows": 6380,
+          "planned_rows": 6380,
+          "exam_rows": 6300,
+          "shopping_rows": 80,
+          "completed_checkpoints": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10,
+            12,
+            14,
+            16,
+            18,
+            20,
+            22,
+            24,
+            26,
+            28,
+            30,
+            32,
+            34,
+            36,
+            38,
+            40
+          ]
+        },
+        "B0": {
+          "group": "B0",
+          "complete": false,
+          "rows": 1725,
+          "planned_rows": 6340,
+          "exam_rows": 1715,
+          "shopping_rows": 10,
+          "completed_checkpoints": [
+            0,
+            2,
+            4,
+            6,
+            8
+          ]
+        }
+      }
+    },
+    {
+      "seed": 2032,
+      "directory": "washout0",
+      "complete": false,
+      "groups": {
+        "M0": {
+          "group": "M0",
+          "complete": false,
+          "rows": 0,
+          "planned_rows": 6380,
+          "exam_rows": 0,
+          "shopping_rows": 0,
+          "completed_checkpoints": []
+        },
+        "B0": {
+          "group": "B0",
+          "complete": false,
+          "rows": 0,
+          "planned_rows": 6340,
+          "exam_rows": 0,
+          "shopping_rows": 0,
+          "completed_checkpoints": []
+        }
+      }
+    },
+    {
+      "seed": 2031,
+      "directory": "washout1",
+      "complete": false,
+      "groups": {
+        "M0": {
+          "group": "M0",
+          "complete": true,
+          "rows": 6380,
+          "planned_rows": 6380,
+          "exam_rows": 6300,
+          "shopping_rows": 80,
+          "completed_checkpoints": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10,
+            12,
+            14,
+            16,
+            18,
+            20,
+            22,
+            24,
+            26,
+            28,
+            30,
+            32,
+            34,
+            36,
+            38,
+            40
+          ]
+        },
+        "B0": {
+          "group": "B0",
+          "complete": false,
+          "rows": 3279,
+          "planned_rows": 6340,
+          "exam_rows": 3259,
+          "shopping_rows": 20,
+          "completed_checkpoints": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10,
+            12,
+            14,
+            16,
+            18
+          ]
+        }
+      }
+    },
+    {
+      "seed": 2033,
+      "directory": "washout1",
+      "complete": false,
+      "groups": {
+        "M0": {
+          "group": "M0",
+          "complete": false,
+          "rows": 0,
+          "planned_rows": 6380,
+          "exam_rows": 0,
+          "shopping_rows": 0,
+          "completed_checkpoints": []
+        },
+        "B0": {
+          "group": "B0",
+          "complete": false,
+          "rows": 0,
+          "planned_rows": 6340,
+          "exam_rows": 0,
+          "shopping_rows": 0,
+          "completed_checkpoints": []
+        }
+      }
+    },
+    {
+      "seed": 2034,
+      "directory": "washout2",
+      "complete": false,
+      "groups": {
+        "M0": {
+          "group": "M0",
+          "complete": false,
+          "rows": 3614,
+          "planned_rows": 6380,
+          "exam_rows": 3552,
+          "shopping_rows": 62,
+          "completed_checkpoints": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10,
+            12,
+            14,
+            16,
+            18,
+            20
+          ]
+        },
+        "B0": {
+          "group": "B0",
+          "complete": false,
+          "rows": 0,
+          "planned_rows": 6340,
+          "exam_rows": 0,
+          "shopping_rows": 0,
+          "completed_checkpoints": []
+        }
+      }
+    },
+    {
+      "seed": 2036,
+      "directory": "washout2",
+      "complete": false,
+      "groups": {
+        "M0": {
+          "group": "M0",
+          "complete": false,
+          "rows": 0,
+          "planned_rows": 6380,
+          "exam_rows": 0,
+          "shopping_rows": 0,
+          "completed_checkpoints": []
+        },
+        "B0": {
+          "group": "B0",
+          "complete": false,
+          "rows": 0,
+          "planned_rows": 6340,
+          "exam_rows": 0,
+          "shopping_rows": 0,
+          "completed_checkpoints": []
+        }
+      }
+    },
+    {
+      "seed": 2035,
+      "directory": "washout3",
+      "complete": false,
+      "groups": {
+        "M0": {
+          "group": "M0",
+          "complete": false,
+          "rows": 3617,
+          "planned_rows": 6380,
+          "exam_rows": 3555,
+          "shopping_rows": 62,
+          "completed_checkpoints": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10,
+            12,
+            14,
+            16,
+            18,
+            20
+          ]
+        },
+        "B0": {
+          "group": "B0",
+          "complete": false,
+          "rows": 0,
+          "planned_rows": 6340,
+          "exam_rows": 0,
+          "shopping_rows": 0,
+          "completed_checkpoints": []
+        }
+      }
+    },
+    {
+      "seed": 2037,
+      "directory": "washout3",
+      "complete": false,
+      "groups": {
+        "M0": {
+          "group": "M0",
+          "complete": false,
+          "rows": 0,
+          "planned_rows": 6380,
+          "exam_rows": 0,
+          "shopping_rows": 0,
+          "completed_checkpoints": []
+        },
+        "B0": {
+          "group": "B0",
+          "complete": false,
+          "rows": 0,
+          "planned_rows": 6340,
+          "exam_rows": 0,
+          "shopping_rows": 0,
+          "completed_checkpoints": []
+        }
+      }
+    }
+  ],
+  "generated_reports": [],
+  "experiment_inventory": [
+    {
+      "experiment": "clone",
+      "seed": 1,
+      "complete": false,
+      "rows": 3780,
+      "planned_rows": 5250
+    },
+    {
+      "experiment": "clone",
+      "seed": 2,
+      "complete": false,
+      "rows": 4130,
+      "planned_rows": 5250
+    },
+    {
+      "experiment": "defense",
+      "seed": 1,
+      "complete": false,
+      "rows": 12242,
+      "planned_rows": 29400
+    },
+    {
+      "experiment": "defense",
+      "seed": 2,
+      "complete": false,
+      "rows": 13434,
+      "planned_rows": 29400
+    },
+    {
+      "experiment": "main",
+      "seed": 1,
+      "complete": false,
+      "rows": 2800,
+      "planned_rows": 3920
+    },
+    {
+      "experiment": "main",
+      "seed": 2,
+      "complete": false,
+      "rows": 3120,
+      "planned_rows": 3920
+    },
+    {
+      "experiment": "probe_all_pairs",
+      "seed": null,
+      "complete": false,
+      "rows": 740,
+      "planned_rows": 980
+    },
+    {
+      "experiment": "single_clone",
+      "seed": 1,
+      "complete": false,
+      "rows": 1080,
+      "planned_rows": 1500
+    },
+    {
+      "experiment": "single_clone",
+      "seed": 2,
+      "complete": false,
+      "rows": 1180,
+      "planned_rows": 1500
+    },
+    {
+      "experiment": "single_geo",
+      "seed": 1,
+      "complete": false,
+      "rows": 1180,
+      "planned_rows": 1640
+    },
+    {
+      "experiment": "single_geo",
+      "seed": 2,
+      "complete": false,
+      "rows": 1320,
+      "planned_rows": 1640
+    },
+    {
+      "experiment": "single_reviews",
+      "seed": 1,
+      "complete": false,
+      "rows": 1160,
+      "planned_rows": 1660
+    },
+    {
+      "experiment": "single_reviews",
+      "seed": 2,
+      "complete": false,
+      "rows": 1300,
+      "planned_rows": 1660
+    }
+  ],
+  "complete_experiment_seeds": [],
+  "snapshot_directory": ".runtime/v3_seed_summaries/20261024T041532Z"
+}

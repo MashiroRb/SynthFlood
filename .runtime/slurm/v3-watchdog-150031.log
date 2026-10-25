@@ -1,0 +1,299 @@
+{
+  "timestamp_utc": "2026-10-23T17:04:21.843143+00:00",
+  "monitor_job": "150031",
+  "status": "STOPPING",
+  "counts": {
+    "logical_rows": 944,
+    "new_evaluations": 774,
+    "valid": 766,
+    "format_failure": 8,
+    "format_affected": 74,
+    "missing_confidence": 26,
+    "repeated_browsing": 108,
+    "views": 3900,
+    "budget_exhausted": 43,
+    "confidence_reports": 740,
+    "confidence_sum": 676.699999999997,
+    "confidence_success_sum": 422
+  },
+  "rates": {
+    "all": {
+      "new_evaluations": 774,
+      "valid": 766,
+      "format_failure": 0.0103359173126615,
+      "format_affected": 0.09560723514211886,
+      "repeated_browsing": 0.13953488372093023,
+      "missing_confidence": 0.033942558746736295,
+      "confidence_mean": 0.9144594594594554,
+      "confidence_report_success": 0.5702702702702702
+    },
+    "since_previous_check": {
+      "new_evaluations": 774,
+      "valid": 766,
+      "format_failure": 0.0103359173126615,
+      "format_affected": 0.09560723514211886,
+      "repeated_browsing": 0.13953488372093023,
+      "missing_confidence": 0.033942558746736295,
+      "confidence_mean": 0.9144594594594554,
+      "confidence_report_success": 0.5702702702702702
+    },
+    "memory": {
+      "new_evaluations": 177,
+      "valid": 172,
+      "format_failure": 0.02824858757062147,
+      "format_affected": 0.07909604519774012,
+      "repeated_browsing": 0.07909604519774012,
+      "missing_confidence": 0.03488372093023256,
+      "confidence_mean": 0.9361445783132525,
+      "confidence_report_success": 0.5240963855421686
+    },
+    "stateless": {
+      "new_evaluations": 597,
+      "valid": 594,
+      "format_failure": 0.005025125628140704,
+      "format_affected": 0.10050251256281408,
+      "repeated_browsing": 0.1574539363484087,
+      "missing_confidence": 0.03367003367003367,
+      "confidence_mean": 0.908188153310105,
+      "confidence_report_success": 0.5836236933797909
+    }
+  },
+  "thresholds": {
+    "format_failure": 0.05,
+    "format_affected": 0.2,
+    "repeated_browsing": 0.1,
+    "missing_confidence": 0.1
+  },
+  "trigger_reasons": [
+    {
+      "scope": "all",
+      "metric": "repeated_browsing",
+      "rate": 0.13953488372093023,
+      "threshold": 0.1
+    },
+    {
+      "scope": "since_previous_check",
+      "metric": "repeated_browsing",
+      "rate": 0.13953488372093023,
+      "threshold": 0.1
+    },
+    {
+      "scope": "stateless",
+      "metric": "repeated_browsing",
+      "rate": 0.1574539363484087,
+      "threshold": 0.1
+    }
+  ],
+  "incomplete_lines": 0,
+  "examples": [
+    {
+      "case_key": "shopping:M0:pollution:68:2030:6",
+      "format_failure": false,
+      "repeated_browsing": true,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "shopping:M0:pollution:56:2030:4",
+      "format_failure": false,
+      "repeated_browsing": true,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "shopping:M0:pollution:19:2030:7",
+      "format_failure": false,
+      "repeated_browsing": true,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "shopping:M0:pollution:77:2030:9",
+      "format_failure": false,
+      "repeated_browsing": true,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "shopping:M0:pollution:40:2030:3",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "shopping:M0:pollution:82:2030:4",
+      "format_failure": false,
+      "repeated_browsing": true,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "shopping:M0:pollution:63:2030:6",
+      "format_failure": false,
+      "repeated_browsing": true,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "exam:M0:cp0:reviews:0:2030:0",
+      "format_failure": true,
+      "repeated_browsing": false,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "exam:M0:cp0:clone:3:2030:1",
+      "format_failure": false,
+      "repeated_browsing": true,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "exam:M0:cp0:clone:5:2030:1",
+      "format_failure": true,
+      "repeated_browsing": false,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "exam:M0:cp0:clone:7:2030:1",
+      "format_failure": true,
+      "repeated_browsing": false,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "exam:M0:cp0:reviews:7:2030:0",
+      "format_failure": true,
+      "repeated_browsing": false,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "exam:M0:cp0:geo:9:2030:0",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "exam:M0:cp0:clone:9:2030:1",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "exam:M0:cp0:geo:10:2030:1",
+      "format_failure": false,
+      "repeated_browsing": true,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "exam:M0:cp0:reviews:13:2030:0",
+      "format_failure": true,
+      "repeated_browsing": false,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "shopping:M0:pollution:7:2031:2",
+      "format_failure": false,
+      "repeated_browsing": true,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "shopping:M0:pollution:35:2031:8",
+      "format_failure": false,
+      "repeated_browsing": true,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "shopping:M0:pollution:59:2031:9",
+      "format_failure": false,
+      "repeated_browsing": true,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "shopping:M0:pollution:19:2031:7",
+      "format_failure": false,
+      "repeated_browsing": true,
+      "missing_confidence": false
+    }
+  ],
+  "live_jobs": [
+    {
+      "job": "149998",
+      "name": "sf-v3-analysis",
+      "state": "PENDING"
+    },
+    {
+      "job": "149997_1",
+      "name": "sf-v3-washout",
+      "state": "RUNNING"
+    },
+    {
+      "job": "149997_0",
+      "name": "sf-v3-washout",
+      "state": "RUNNING"
+    },
+    {
+      "job": "149995_0",
+      "name": "sf-v3-rtx-stateless",
+      "state": "RUNNING"
+    },
+    {
+      "job": "149996_3",
+      "name": "sf-v3-rtx-stateless",
+      "state": "RUNNING"
+    },
+    {
+      "job": "149995_1",
+      "name": "sf-v3-rtx-stateless",
+      "state": "RUNNING"
+    },
+    {
+      "job": "149995_2",
+      "name": "sf-v3-rtx-stateless",
+      "state": "RUNNING"
+    },
+    {
+      "job": "149996_4",
+      "name": "sf-v3-rtx-stateless",
+      "state": "RUNNING"
+    },
+    {
+      "job": "149996_5",
+      "name": "sf-v3-rtx-stateless",
+      "state": "RUNNING"
+    }
+  ],
+  "remaining_jobs": [
+    {
+      "job": "149997_1",
+      "name": "sf-v3-washout",
+      "state": "COMPLETING"
+    },
+    {
+      "job": "149997_0",
+      "name": "sf-v3-washout",
+      "state": "COMPLETING"
+    },
+    {
+      "job": "149995_0",
+      "name": "sf-v3-rtx-stateless",
+      "state": "COMPLETING"
+    },
+    {
+      "job": "149996_3",
+      "name": "sf-v3-rtx-stateless",
+      "state": "COMPLETING"
+    },
+    {
+      "job": "149995_1",
+      "name": "sf-v3-rtx-stateless",
+      "state": "COMPLETING"
+    },
+    {
+      "job": "149995_2",
+      "name": "sf-v3-rtx-stateless",
+      "state": "COMPLETING"
+    },
+    {
+      "job": "149996_4",
+      "name": "sf-v3-rtx-stateless",
+      "state": "COMPLETING"
+    },
+    {
+      "job": "149996_5",
+      "name": "sf-v3-rtx-stateless",
+      "state": "COMPLETING"
+    }
+  ]
+}

@@ -1,0 +1,526 @@
+{
+  "timestamp_utc": "2026-10-23T16:54:28.071165+00:00",
+  "result_directory": "results_protocol_v3_20261023_examfix_v3_r3",
+  "source_and_input_hashes_valid": true,
+  "errors": [],
+  "partial_json_lines": 0,
+  "counts_by_lane": {
+    "0": {
+      "main": 80,
+      "single": 53
+    },
+    "1": {
+      "main": 22
+    },
+    "2": {
+      "main": 40,
+      "single": 12
+    },
+    "3": {
+      "main": 19
+    },
+    "4": {
+      "main": 23
+    },
+    "5": {
+      "main": 23
+    },
+    "6": {},
+    "7": {}
+  },
+  "descriptive": {
+    "planned": 272,
+    "valid": 268,
+    "excluded": 4,
+    "exclusion_reasons": {
+      "format_retries_exhausted": 4
+    },
+    "n_independent_tasks": 7,
+    "reward": 0.5533208955223881,
+    "success_rate": 0.39552238805970147,
+    "regret": 0.44667910447761194,
+    "synthetic_choice_rate": 0.19776119402985073,
+    "purchase_distribution": {
+      "real": 117,
+      "gold": 98,
+      "synthetic:geo": 20,
+      "synthetic:reviews": 19,
+      "synthetic:clone": 14
+    },
+    "confidence_n": 262,
+    "confidence": 0.9150763358778626,
+    "confidence_sample_success": 0.40076335877862596,
+    "ece5": 0.5448473282442748,
+    "new_model_calls": 1446,
+    "origins": {
+      "new": 232,
+      "reused_new_protocol": 40
+    },
+    "high_confidence_n": 189,
+    "high_confidence_success_n": 79,
+    "distinct_tasks_observed": 7,
+    "warning": "Partial, task-ordered sample; not a formal effect estimate"
+  },
+  "requests_checked": 1446,
+  "official_frozen_reward_checks": 205,
+  "max_prompt_tokens": 15868,
+  "minimum_context_margin_tokens": 49368,
+  "checks": {
+    "no_stateless_memory": 1446,
+    "repeatability_sentinels": 6
+  },
+  "view_confidence": {
+    "n/a": 1207,
+    "other": 71
+  },
+  "ratings": {
+    "n98:real": {
+      "items": 1960,
+      "rating_missing": 613,
+      "count_missing": 612
+    },
+    "n98:synthetic": {
+      "items": 1176,
+      "rating_missing": 0,
+      "count_missing": 0
+    },
+    "exam:synthetic": {
+      "items": 300,
+      "rating_missing": 0,
+      "count_missing": 0
+    },
+    "exam:real": {
+      "items": 100,
+      "rating_missing": 26,
+      "count_missing": 26
+    }
+  },
+  "review_visibility": {
+    "n98:geo": {
+      "generated=6,visible=6": 404
+    },
+    "n98:reviews": {
+      "generated=20,visible=8": 421,
+      "generated=0,visible=0": 4,
+      "generated=19,visible=8": 4
+    },
+    "n98:clone": {
+      "generated=6,visible=6": 342,
+      "generated=0,visible=0": 1
+    },
+    "exam:geo": {
+      "generated=6,visible=6": 100
+    },
+    "exam:clone": {
+      "generated=6,visible=6": 100
+    },
+    "exam:reviews": {
+      "generated=20,visible=8": 100
+    }
+  },
+  "exam_family_counts": {
+    "geo": 100,
+    "clone": 100,
+    "reviews": 100
+  },
+  "washout": {
+    "0": {
+      "launched": false,
+      "shopping_rows": 0,
+      "exam_rows": 0
+    },
+    "1": {
+      "launched": false,
+      "shopping_rows": 0,
+      "exam_rows": 0
+    }
+  },
+  "raw_metadata_checks": {
+    "n98": 1960,
+    "exam": 100
+  },
+  "underfilled_parent_synthetics": [
+    {
+      "asin": "SYN-21088821",
+      "family": "reviews",
+      "review_count": 0,
+      "required_by_current_generator": 20,
+      "task_ids": [
+        40
+      ]
+    },
+    {
+      "asin": "SYN-34078845",
+      "family": "reviews",
+      "review_count": 19,
+      "required_by_current_generator": 20,
+      "task_ids": [
+        42
+      ]
+    },
+    {
+      "asin": "SYN-12795089",
+      "family": "reviews",
+      "review_count": 0,
+      "required_by_current_generator": 20,
+      "task_ids": [
+        79
+      ]
+    },
+    {
+      "asin": "SYN-77473032",
+      "family": "reviews",
+      "review_count": 19,
+      "required_by_current_generator": 20,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "asin": "SYN-32236857",
+      "family": "reviews",
+      "review_count": 19,
+      "required_by_current_generator": 20,
+      "task_ids": [
+        43
+      ]
+    },
+    {
+      "asin": "SYN-55457098",
+      "family": "clone",
+      "review_count": 0,
+      "required_by_current_generator": 6,
+      "task_ids": [
+        31
+      ]
+    }
+  ],
+  "failure_examples": [
+    {
+      "case_key": "main:k0:87:2:5",
+      "exclusion_reason": "format_retries_exhausted",
+      "trajectory": [
+        {
+          "response": "Thought: Inspect the product pages for FSYSM Soundbar and BYL100Watt 32 Inch Soundbar.\naction: view[1] view[3]\nconfidence: n/a",
+          "error": "The independent action line must contain exactly one view[k] or select[k].",
+          "executed": false,
+          "remaining_views": 30
+        },
+        {
+          "response": "Thought: Inspect the product pages for FSYSM Soundbar and BYL100Watt 32 Inch Soundbar.\naction: view[1]\nconfidence: n/a\naction: view[3]\nconfidence: n/a\nconfidence: n/a",
+          "error": "Expected exactly three lines: Thought, action, confidence.",
+          "executed": false,
+          "remaining_views": 30
+        },
+        {
+          "response": "Thought: Inspect the product pages for FSYSM Soundbar and BYL100Watt 32 Inch Soundbar.\naction: view[1]\nconfidence: n/a\naction: view[3]\nconfidence: n/a\nconfidence: n/a\nThought: Inspect the product pages for FSYSM Soundbar and BYL100Watt 32 Inch Soundbar.\naction: view[1]\nconfidence: n/a\nconfidence: 0.8",
+          "error": "Expected exactly three lines: Thought, action, confidence.",
+          "executed": false,
+          "remaining_views": 30
+        },
+        {
+          "response": "Thought: Inspect the product pages for FSYSM Soundbar and BYL100Watt 32 Inch Soundbar.\naction: view[3]\nconfidence: n/a\nconfidence: 0.8",
+          "error": "Expected exactly three lines: Thought, action, confidence.",
+          "executed": false,
+          "remaining_views": 30
+        }
+      ]
+    },
+    {
+      "case_key": "single:geo:k0:87:2:5",
+      "exclusion_reason": "format_retries_exhausted",
+      "trajectory": [
+        {
+          "response": "Thought: Inspect the product pages for FSYSM Soundbar and BYL100Watt 32 Inch Soundbar.\naction: view[1] view[3]\nconfidence: n/a",
+          "error": "The independent action line must contain exactly one view[k] or select[k].",
+          "executed": false,
+          "remaining_views": 30
+        },
+        {
+          "response": "Thought: Inspect the product pages for FSYSM Soundbar and BYL100Watt 32 Inch Soundbar.\naction: view[1]\nconfidence: n/a\naction: view[3]\nconfidence: n/a\nconfidence: n/a",
+          "error": "Expected exactly three lines: Thought, action, confidence.",
+          "executed": false,
+          "remaining_views": 30
+        },
+        {
+          "response": "Thought: Inspect the product pages for FSYSM Soundbar and BYL100Watt 32 Inch Soundbar.\naction: view[1]\nconfidence: n/a\naction: view[3]\nconfidence: n/a\nconfidence: n/a\nThought: Inspect the product pages for FSYSM Soundbar and BYL100Watt 32 Inch Soundbar.\naction: view[1]\nconfidence: n/a\nconfidence: 0.8",
+          "error": "Expected exactly three lines: Thought, action, confidence.",
+          "executed": false,
+          "remaining_views": 30
+        },
+        {
+          "response": "Thought: Inspect the product pages for FSYSM Soundbar and BYL100Watt 32 Inch Soundbar.\naction: view[3]\nconfidence: n/a\nconfidence: 0.8",
+          "error": "Expected exactly three lines: Thought, action, confidence.",
+          "executed": false,
+          "remaining_views": 30
+        }
+      ]
+    },
+    {
+      "case_key": "single:reviews:k0:87:2:5",
+      "exclusion_reason": "format_retries_exhausted",
+      "trajectory": [
+        {
+          "response": "Thought: Inspect the product pages for FSYSM Soundbar and BYL100Watt 32 Inch Soundbar.\naction: view[1] view[3]\nconfidence: n/a",
+          "error": "The independent action line must contain exactly one view[k] or select[k].",
+          "executed": false,
+          "remaining_views": 30
+        },
+        {
+          "response": "Thought: Inspect the product pages for FSYSM Soundbar and BYL100Watt 32 Inch Soundbar.\naction: view[1]\nconfidence: n/a\naction: view[3]\nconfidence: n/a\nconfidence: n/a",
+          "error": "Expected exactly three lines: Thought, action, confidence.",
+          "executed": false,
+          "remaining_views": 30
+        },
+        {
+          "response": "Thought: Inspect the product pages for FSYSM Soundbar and BYL100Watt 32 Inch Soundbar.\naction: view[1]\nconfidence: n/a\naction: view[3]\nconfidence: n/a\nconfidence: n/a\nThought: Inspect the product pages for FSYSM Soundbar and BYL100Watt 32 Inch Soundbar.\naction: view[1]\nconfidence: n/a\nconfidence: 0.8",
+          "error": "Expected exactly three lines: Thought, action, confidence.",
+          "executed": false,
+          "remaining_views": 30
+        },
+        {
+          "response": "Thought: Inspect the product pages for FSYSM Soundbar and BYL100Watt 32 Inch Soundbar.\naction: view[3]\nconfidence: n/a\nconfidence: 0.8",
+          "error": "Expected exactly three lines: Thought, action, confidence.",
+          "executed": false,
+          "remaining_views": 30
+        }
+      ]
+    },
+    {
+      "case_key": "main:k0:90:2:7",
+      "exclusion_reason": "format_retries_exhausted",
+      "trajectory": [
+        {
+          "response": "Thought: Jamaican Style Patties do not seem to match the user's requirements\naction: view[4]\nconfidence: n/a",
+          "action": "view[4]",
+          "executed": true,
+          "remaining_views": 29
+        },
+        {
+          "response": "Thought: The product is 24 patties, not 12 as required\naction: view[6]\nconfidence: n/a",
+          "action": "view[6]",
+          "executed": true,
+          "remaining_views": 28
+        },
+        {
+          "response": "Thought: This product is not related to beef patties\naction: view[10]\nconfidence: n/a",
+          "action": "view[10]",
+          "executed": true,
+          "remaining_views": 27
+        },
+        {
+          "response": "Thought: This product is not related to beef patties\naction: view[10]\nconfidence: n/a",
+          "action": "view[10]",
+          "executed": true,
+          "remaining_views": 26
+        },
+        {
+          "response": "Thought: This product is not related to beef patties\naction: view[10]\nconfidence: n/a",
+          "action": "view[10]",
+          "executed": true,
+          "remaining_views": 25
+        },
+        {
+          "response": "Thought: This product is not related to beef patties\naction: view[10]\nconfidence: n/a",
+          "action": "view[10]",
+          "executed": true,
+          "remaining_views": 24
+        },
+        {
+          "response": "Thought: This product is not related to beef patties\naction: view[10]\nconfidence: n/a",
+          "action": "view[10]",
+          "executed": true,
+          "remaining_views": 23
+        },
+        {
+          "response": "Thought: This product is not related to beef patties\naction: view[10]\nconfidence: n/a",
+          "action": "view[10]",
+          "executed": true,
+          "remaining_views": 22
+        },
+        {
+          "response": "Thought: This product is not related to beef patties\naction: view[10]\nconfidence: n/a",
+          "action": "view[10]",
+          "executed": true,
+          "remaining_views": 21
+        },
+        {
+          "response": "Thought: This product is not related to beef patties\naction: view[10]\nconfidence: n/a",
+          "action": "view[10]",
+          "executed": true,
+          "remaining_views": 20
+        },
+        {
+          "response": "Thought: This product is not related to beef patties\naction: view[10]\nconfidence: n/a",
+          "action": "view[10]",
+          "executed": true,
+          "remaining_views": 19
+        },
+        {
+          "response": "Thought: This product is not related to beef patties\naction: view[10]\nconfidence: n/a",
+          "action": "view[10]",
+          "executed": true,
+          "remaining_views": 18
+        },
+        {
+          "response": "Thought: This product is not related to beef patties\naction: view[10]\nconfidence: n/a",
+          "action": "view[10]",
+          "executed": true,
+          "remaining_views": 17
+        },
+        {
+          "response": "Thought: This product is not related to beef patties\naction: view[10]\nconfidence: n/a",
+          "action": "view[10]",
+          "executed": true,
+          "remaining_views": 16
+        },
+        {
+          "response": "Thought: This product is not related to beef patties\naction: view[10]\nconfidence: n/a",
+          "action": "view[10]",
+          "executed": true,
+          "remaining_views": 15
+        },
+        {
+          "response": "Thought: This product is not related to beef patties\naction: view[10]\nconfidence: n/a",
+          "action": "view[10]",
+          "executed": true,
+          "remaining_views": 14
+        },
+        {
+          "response": "Thought: This product is not related to beef patties\naction: view[10]\nconfidence: n/a",
+          "action": "view[10]",
+          "executed": true,
+          "remaining_views": 13
+        },
+        {
+          "response": "Thought: This product is not related to beef patties\naction: view[10]\nconfidence: n/a",
+          "action": "view[10]",
+          "executed": true,
+          "remaining_views": 12
+        },
+        {
+          "response": "Thought: This product is not related to beef patties\naction: view[10]\nconfidence: n/a",
+          "action": "view[10]",
+          "executed": true,
+          "remaining_views": 11
+        },
+        {
+          "response": "Thought: This product is not related to beef patties\naction: view[10]\nconfidence: n/a",
+          "action": "view[10]",
+          "executed": true,
+          "remaining_views": 10
+        },
+        {
+          "response": "Thought: This product is not related to beef patties\naction: view[10]\nconfidence: n/a",
+          "action": "view[10]",
+          "executed": true,
+          "remaining_views": 9
+        },
+        {
+          "response": "Thought: This product is not related to beef patties\naction: view[10]\nconfidence: n/a",
+          "action": "view[10]",
+          "executed": true,
+          "remaining_views": 8
+        },
+        {
+          "response": "Thought: This product is not related to beef patties\naction: view[10]\nconfidence: n/a",
+          "action": "view[10]",
+          "executed": true,
+          "remaining_views": 7
+        },
+        {
+          "response": "Thought: This product is not related to beef patties\naction: view[10]\nconfidence: n/a",
+          "action": "view[10]",
+          "executed": true,
+          "remaining_views": 6
+        },
+        {
+          "response": "Thought: This product is not related to beef patties\naction: view[10]\nconfidence: n/a",
+          "action": "view[10]",
+          "executed": true,
+          "remaining_views": 5
+        },
+        {
+          "response": "Thought: This product is not related to beef patties\naction: view[10]\nconfidence: n/a",
+          "action": "view[10]",
+          "executed": true,
+          "remaining_views": 4
+        },
+        {
+          "response": "Thought: This product is not related to beef patties\naction: view[10]\nconfidence: n/a",
+          "action": "view[10]",
+          "executed": true,
+          "remaining_views": 3
+        },
+        {
+          "response": "Thought: This product is not related to beef patties\naction: view[10]\nconfidence: n/a",
+          "action": "view[10]",
+          "executed": true,
+          "remaining_views": 2
+        },
+        {
+          "response": "Thought: This product is not related to beef patties\naction: view[10]\nconfidence: n/a",
+          "action": "view[10]",
+          "executed": true,
+          "remaining_views": 1
+        },
+        {
+          "response": "Thought: This product is not related to beef patties\naction: view[10]\nconfidence: n/a",
+          "action": "view[10]",
+          "executed": true,
+          "remaining_views": 0
+        },
+        {
+          "response": "Thought: Inspect the product details to confirm\naction: view[4]\nconfidence: n/a",
+          "error": "Browsing is exhausted. Only select[k] is permitted in the submission phase.",
+          "executed": false,
+          "remaining_views": 0
+        },
+        {
+          "response": "Thought: Inspect the product details to confirm\naction: view[4]\nconfidence: n/a",
+          "error": "Browsing is exhausted. Only select[k] is permitted in the submission phase.",
+          "executed": false,
+          "remaining_views": 0
+        },
+        {
+          "response": "Thought: Inspect the product details to confirm\naction: view[4]\nconfidence: n/a",
+          "error": "Browsing is exhausted. Only select[k] is permitted in the submission phase.",
+          "executed": false,
+          "remaining_views": 0
+        },
+        {
+          "response": "Thought: Inspect the product details to confirm\naction: view[4]\nconfidence: n/a",
+          "error": "Browsing is exhausted. Only select[k] is permitted in the submission phase.",
+          "executed": false,
+          "remaining_views": 0
+        }
+      ]
+    }
+  ],
+  "missing_confidence_examples": [
+    {
+      "case_key": "main:k4:87:2:1",
+      "last_response": "Thought: The TCL Alto 6 sound bar has a high power output and good reviews but exceeds the price limit.\naction: select[2]\nconfidence: n/a"
+    },
+    {
+      "case_key": "main:k0:90:2:3",
+      "last_response": "Thought: The product is Jamaican patties, not beef patties as required.\naction: select[8]\nconfidence: n/a"
+    },
+    {
+      "case_key": "main:k0:90:2:9",
+      "last_response": "Thought: None of the products match the user's requirements\naction: select[10]\nconfidence: n/a"
+    },
+    {
+      "case_key": "main:k2:90:2:7",
+      "last_response": "Thought: This product is not related to beef patties.\naction: select[10]\nconfidence: n/a"
+    },
+    {
+      "case_key": "main:k2:90:2:8",
+      "last_response": "Thought: The Women's Fashion Couple Tees do not match the user's requirement for beef patties\naction: select[10]\nconfidence: n/a"
+    },
+    {
+      "case_key": "main:k0:80:1:5",
+      "last_response": "Thought: This product is not a steel bed frame and does not mention memory foam\naction: select[9]\nconfidence: n/a"
+    }
+  ]
+}

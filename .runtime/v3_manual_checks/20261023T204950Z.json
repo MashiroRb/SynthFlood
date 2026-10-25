@@ -1,0 +1,174 @@
+{
+  "timestamp_utc": "2026-10-23T20:49:50.345727+00:00",
+  "counts": {
+    "logical_rows": 20242,
+    "new_evaluations": 16992,
+    "valid": 16894,
+    "format_failure": 98,
+    "format_affected": 1374,
+    "missing_confidence": 272,
+    "repeated_browsing": 435,
+    "views": 40998,
+    "budget_exhausted": 50,
+    "confidence_reports": 16622,
+    "confidence_sum": 15069.839999998467,
+    "confidence_success_sum": 7939
+  },
+  "rates": {
+    "all": {
+      "new_evaluations": 16992,
+      "valid": 16894,
+      "format_failure": 0.005767419962335217,
+      "format_affected": 0.08086158192090395,
+      "repeated_browsing": 0.025600282485875706,
+      "missing_confidence": 0.01610039067124423,
+      "confidence_mean": 0.9066201419804155,
+      "confidence_report_success": 0.47762002165804357
+    },
+    "memory": {
+      "new_evaluations": 5750,
+      "valid": 5749,
+      "format_failure": 0.00017391304347826088,
+      "format_affected": 0.07182608695652173,
+      "repeated_browsing": 0.0071304347826086955,
+      "missing_confidence": 0.006261958601495913,
+      "confidence_mean": 0.9410099772448873,
+      "confidence_report_success": 0.5610012252756871
+    },
+    "stateless": {
+      "new_evaluations": 11242,
+      "valid": 11145,
+      "format_failure": 0.008628357943426437,
+      "format_affected": 0.0854830101405444,
+      "repeated_browsing": 0.03504714463618573,
+      "missing_confidence": 0.02117541498429789,
+      "confidence_mean": 0.8886103217526786,
+      "confidence_report_success": 0.4339536162801357
+    }
+  },
+  "incomplete_lines": 0,
+  "examples": [
+    {
+      "case_key": "shopping:M0:pollution:60:2030:0",
+      "format_failure": false,
+      "repeated_browsing": true,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "exam:M0:cp0:clone:32:2030:0",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "exam:M0:cp0:clone:94:2030:0",
+      "format_failure": false,
+      "repeated_browsing": true,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "exam:M0:cp0:clone:95:2030:1",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "exam:M0:cp2:geo:9:2030:0",
+      "format_failure": false,
+      "repeated_browsing": true,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "exam:M0:cp2:clone:9:2030:1",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "exam:M0:cp2:reviews:9:2030:1",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "exam:M0:cp2:clone:28:2030:1",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "exam:M0:cp2:clone:52:2030:0",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "exam:M0:cp2:reviews:57:2030:0",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "exam:M0:cp2:clone:69:2030:0",
+      "format_failure": false,
+      "repeated_browsing": true,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "exam:M0:cp2:clone:82:2030:1",
+      "format_failure": false,
+      "repeated_browsing": true,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "exam:M0:cp2:clone:86:2030:1",
+      "format_failure": false,
+      "repeated_browsing": true,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "exam:M0:cp2:clone:95:2030:1",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "exam:M0:cp4:reviews:3:2030:0",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "exam:M0:cp4:clone:52:2030:0",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "exam:M0:cp4:reviews:52:2030:0",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "exam:M0:cp4:clone:88:2030:0",
+      "format_failure": false,
+      "repeated_browsing": true,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "exam:M0:cp4:clone:95:2030:1",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "exam:M0:cp6:clone:32:2030:0",
+      "format_failure": false,
+      "repeated_browsing": true,
+      "missing_confidence": false
+    }
+  ],
+  "source_input_hashes_valid": true,
+  "failures": []
+}

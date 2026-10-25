@@ -1,0 +1,15 @@
+{
+  "phase": "MEM24_HISTORY_MEMORY_BACKEND_VERIFIED",
+  "utc": "2026-10-24T17:18:46.774016+00:00",
+  "new_job": "151012",
+  "baseline": {
+    "shopping.jsonl": 214,
+    "exam.jsonl": 21206,
+    "resume_events.jsonl": 15133
+  },
+  "current": {
+    "shopping.jsonl": 214,
+    "exam.jsonl": 21257,
+    "resume_events.jsonl": 15185
+  }
+}

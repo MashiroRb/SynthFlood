@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-24T13:51:50.172955+00:00",
+  "old_gpu_element": "150039_1",
+  "old_client": 150298,
+  "new_gpu": 150775,
+  "source_hashes_valid": true,
+  "hashes": {
+    "server.log": "e16c705459d4acf83cd32584d0a1bfd527266f8c00951e92985497e407651e5c",
+    "hardware.json": "d32fbce82e6d810e69658ff32917afdae6722080d5563aea8c3d12188c0c2e72",
+    "LAUNCH.json": "c5a30fad17ea62dacef2772b0918fc1656e23d1f43b6764a4a05a1f695d7f136",
+    "CLIENT_HANDOFF.json": "498c1e87d8cc77a37a7468b9a1707ab2a4d8cf95d58491290d7833ea01655d0e",
+    "shopping.jsonl": "02fdcc6f141e57042facfc046e0682399f21cee16f8b7f291b0273507b5c1a68",
+    "exam.jsonl": "19a99dd92be83d8b5e2fea4a6ef12c02bb6b98234bb300c5dd2cf2587e74a78b",
+    "resume_events.jsonl": "ba3cda8e3580342e1b5f977250a3029a2ce7c97cae735070b1e2d2f45efcbf55"
+  },
+  "counts": {
+    "2031:M0:pollution": 40,
+    "2031:M0:clean": 40,
+    "2031:B0:clean": 40,
+    "2033:M0:pollution": 40,
+    "2033:M0:clean": 34,
+    "2031:M0:exam": 6300,
+    "2031:B0:exam": 6300,
+    "2033:M0:exam": 5372
+  },
+  "last_record": "exam:M0:cp34:clone:90:2033:1",
+  "no_duplicate_cases": true,
+  "baseline_rows": 18166,
+  "price_and_protocol_unchanged": true
+}

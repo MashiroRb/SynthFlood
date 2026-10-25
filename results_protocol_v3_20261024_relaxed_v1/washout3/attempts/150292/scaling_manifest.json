@@ -1,0 +1,41 @@
+{
+  "parent_manifest_sha256": "71f201084a8a9b5091ed4eaae5dd1db168e754ab0d5f26cf70c2e1e2c1609800",
+  "ownership": {
+    "washout0": [
+      2030,
+      2032
+    ],
+    "washout1": [
+      2031,
+      2033
+    ],
+    "washout2": [
+      2034,
+      2036
+    ],
+    "washout3": [
+      2035,
+      2037
+    ]
+  },
+  "additional_gpu": 2,
+  "total_gpu_limit": 12,
+  "a800_limit": 3,
+  "unchanged_frozen_sources": true,
+  "experiment_rules_unchanged": true,
+  "continuation_method": "Pause only the old client; preserve original Slurm allocation and vLLM server; resume completed cases and request prefixes",
+  "source_sha256": {
+    "analyze_scaled.py": "09137cdee8c6e6068b9a0b45a09887124bdd9159e6384a0a0d098992cf74c1b6",
+    "recover_gpu.sbatch": "4d6b233ecf83fbf803e6eacebf44b94969697dea6382d2100c29bd18f45aa564",
+    "prepare.py": "3c685648a44d0c841cfad404488bbd7a0cec8439bf162effe2643871d4c3f63b",
+    "test_resume.py": "940a6381c1ea883a53f56b1d4bb193cc5efa4761ed19d8121208ad3e7cbe8827",
+    "resume_washout.py": "3f63f49b06b0ce3b3f3bff1de9c58b315107adb17f0b9a2f72adec17ea8a84c0",
+    "extra.sbatch": "3ceb92cdaa7aaef78014122b962541e81dbe23ea996bd476e8206b579d41d624",
+    "attach.sbatch": "42b362d510021d9f541fe879843a91072186073b8254b25f7b03010b18146b82",
+    "analyze.sbatch": "19f6d71ee0b3fc029e0d128e6a8053c4772611e692210b05329678603f4a4c52",
+    "launch_extra.sh": "6225676bc23e590cdd93e8d2673c91acb1ffbab6278d89f6a103aa87d7468824",
+    "prepare.sbatch": "5b39223273292e66146c57688c455ad108abf5a6847029cc805ba4c6f3ff1794",
+    "test.sbatch": "9af8cc59b730e80b6783f03171f08e3ea930c7cbce1b6454e9217b66bfc3eec4",
+    "resume_core.py": "336044e99fe90fce28abb22017a33667370150469f2cbc8f69f013e93fb4d557"
+  }
+}

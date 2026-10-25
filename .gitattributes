@@ -9,3 +9,8 @@ results_m1_exposure_length/** -text -whitespace
 results_m1_washout40/** -text -whitespace
 data/paired_n98_ratingfix_v2/** -text -whitespace
 results_paired_n98_ratingfix_v2/** -text -whitespace
+protocol_v3/** -text -whitespace
+data/protocol_v3_20261024_relaxed_v1/** -text -whitespace
+results_protocol_v3_20261024_relaxed_v1/** -text -whitespace
+.runtime/scaling/** -text -whitespace
+.runtime/WebShop/web_agent_site/engine/** -text -whitespace

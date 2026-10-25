@@ -1,0 +1,196 @@
+{
+  "utc": "2026-10-24T20:26:21.437622+00:00",
+  "node": "aias-compute-5",
+  "targets": [
+    "150292",
+    "150293"
+  ],
+  "processes": [
+    {
+      "pid": 3217169,
+      "job": "150293",
+      "cmd": "/bin/bash /var/spool/slurm/job150293/slurm_script ",
+      "status": {
+        "State": "S (sleeping)",
+        "PPid": "3217161",
+        "VmRSS": "2944 kB",
+        "RssAnon": "264 kB",
+        "RssFile": "2680 kB",
+        "RssShmem": "0 kB",
+        "VmSwap": "0 kB",
+        "Threads": "1"
+      },
+      "smaps_rollup": "5615eb4c6000-7fff173b6000 ---p 00000000 00:00 0                          [rollup]\nRss:                3196 kB\nPss:                 632 kB\nPss_Dirty:           328 kB\nPss_Anon:            328 kB\nPss_File:            304 kB\nPss_Shmem:             0 kB\nShared_Clean:       2868 kB\nShared_Dirty:          0 kB\nPrivate_Clean:         0 kB\nPrivate_Dirty:       328 kB\nReferenced:         3136 kB\nAnonymous:           328 kB\nLazyFree:              0 kB\nAnonHugePages:         0 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:         0 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\n",
+      "cgroup": "/system.slice/aias-compute-5_slurmstepd.scope/job_150293/step_batch/user/task_0"
+    },
+    {
+      "pid": 3217170,
+      "job": "150292",
+      "cmd": "/bin/bash /var/spool/slurm/job150292/slurm_script ",
+      "status": {
+        "State": "S (sleeping)",
+        "PPid": "3217162",
+        "VmRSS": "2952 kB",
+        "RssAnon": "264 kB",
+        "RssFile": "2688 kB",
+        "RssShmem": "0 kB",
+        "VmSwap": "0 kB",
+        "Threads": "1"
+      },
+      "smaps_rollup": "55841907d000-7ffd1d49d000 ---p 00000000 00:00 0                          [rollup]\nRss:                3184 kB\nPss:                 660 kB\nPss_Dirty:           328 kB\nPss_Anon:            328 kB\nPss_File:            332 kB\nPss_Shmem:             0 kB\nShared_Clean:       2856 kB\nShared_Dirty:          0 kB\nPrivate_Clean:         0 kB\nPrivate_Dirty:       328 kB\nReferenced:         3124 kB\nAnonymous:           328 kB\nLazyFree:              0 kB\nAnonHugePages:         0 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:         0 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\n",
+      "cgroup": "/system.slice/aias-compute-5_slurmstepd.scope/job_150292/step_batch/user/task_0"
+    },
+    {
+      "pid": 3217171,
+      "job": "150292",
+      "cmd": "bash .runtime/scaling/launch_extra.sh washout 3 ",
+      "status": {
+        "State": "S (sleeping)",
+        "PPid": "3217170",
+        "VmRSS": "3292 kB",
+        "RssAnon": "368 kB",
+        "RssFile": "2924 kB",
+        "RssShmem": "0 kB",
+        "VmSwap": "0 kB",
+        "Threads": "1"
+      },
+      "smaps_rollup": "55af4dc66000-7ffde7f62000 ---p 00000000 00:00 0                          [rollup]\nRss:                3292 kB\nPss:                 674 kB\nPss_Dirty:           368 kB\nPss_Anon:            368 kB\nPss_File:            306 kB\nPss_Shmem:             0 kB\nShared_Clean:       2924 kB\nShared_Dirty:          0 kB\nPrivate_Clean:         0 kB\nPrivate_Dirty:       368 kB\nReferenced:         3232 kB\nAnonymous:           368 kB\nLazyFree:              0 kB\nAnonHugePages:         0 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:         0 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\n",
+      "cgroup": "/system.slice/aias-compute-5_slurmstepd.scope/job_150292/step_batch/user/task_0"
+    },
+    {
+      "pid": 3217172,
+      "job": "150293",
+      "cmd": "bash .runtime/scaling/launch_extra.sh washout 2 ",
+      "status": {
+        "State": "S (sleeping)",
+        "PPid": "3217169",
+        "VmRSS": "3372 kB",
+        "RssAnon": "372 kB",
+        "RssFile": "3000 kB",
+        "RssShmem": "0 kB",
+        "VmSwap": "0 kB",
+        "Threads": "1"
+      },
+      "smaps_rollup": "5604c20ed000-7ffc3004e000 ---p 00000000 00:00 0                          [rollup]\nRss:                3372 kB\nPss:                 707 kB\nPss_Dirty:           372 kB\nPss_Anon:            372 kB\nPss_File:            335 kB\nPss_Shmem:             0 kB\nShared_Clean:       3000 kB\nShared_Dirty:          0 kB\nPrivate_Clean:         0 kB\nPrivate_Dirty:       372 kB\nReferenced:         3312 kB\nAnonymous:           372 kB\nLazyFree:              0 kB\nAnonHugePages:         0 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:         0 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\n",
+      "cgroup": "/system.slice/aias-compute-5_slurmstepd.scope/job_150293/step_batch/user/task_0"
+    },
+    {
+      "pid": 3217204,
+      "job": "150293",
+      "cmd": ".runtime/venv/bin/python -m vllm.entrypoints.openai.api_server --model /mnt/beegfs/home/liudianru26/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28 --served-model-name Qwen/Qwen2.5-7B-Instruct --host 127.0.0.1 --port 18293 --dtype bfloat16 --max-model-len 131072 --max-num-seqs 1 --enforce-eager --rope-scaling {\"rope_type\":\"yarn\",\"factor\":4.0,\"original_max_position_embeddings\":32768} --enable-chunked-prefill --max-num-batched-tokens 4096",
+      "status": {
+        "State": "S (sleeping)",
+        "PPid": "3217172",
+        "VmRSS": "849996 kB",
+        "RssAnon": "578020 kB",
+        "RssFile": "271976 kB",
+        "RssShmem": "0 kB",
+        "VmSwap": "0 kB",
+        "Threads": "10"
+      },
+      "smaps_rollup": "00400000-7ffff198f000 ---p 00000000 00:00 0                              [rollup]\nRss:              723184 kB\nPss:              419773 kB\nPss_Dirty:        347050 kB\nPss_Anon:         347050 kB\nPss_File:          72723 kB\nPss_Shmem:             0 kB\nShared_Clean:     270852 kB\nShared_Dirty:     208188 kB\nPrivate_Clean:      1188 kB\nPrivate_Dirty:    242956 kB\nReferenced:       714076 kB\nAnonymous:        451144 kB\nLazyFree:              0 kB\nAnonHugePages:    169984 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:         0 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\n",
+      "cgroup": "/system.slice/aias-compute-5_slurmstepd.scope/job_150293/step_batch/user/task_0"
+    },
+    {
+      "pid": 3217206,
+      "job": "150292",
+      "cmd": ".runtime/venv/bin/python -m vllm.entrypoints.openai.api_server --model /mnt/beegfs/home/liudianru26/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28 --served-model-name Qwen/Qwen2.5-7B-Instruct --host 127.0.0.1 --port 18292 --dtype bfloat16 --max-model-len 131072 --max-num-seqs 1 --enforce-eager --rope-scaling {\"rope_type\":\"yarn\",\"factor\":4.0,\"original_max_position_embeddings\":32768} --enable-chunked-prefill --max-num-batched-tokens 4096",
+      "status": {
+        "State": "S (sleeping)",
+        "PPid": "3217171",
+        "VmRSS": "846036 kB",
+        "RssAnon": "574032 kB",
+        "RssFile": "272004 kB",
+        "RssShmem": "0 kB",
+        "VmSwap": "0 kB",
+        "Threads": "10"
+      },
+      "smaps_rollup": "00400000-7ffc0e339000 ---p 00000000 00:00 0                              [rollup]\nRss:              727416 kB\nPss:              425087 kB\nPss_Dirty:        352568 kB\nPss_Anon:         352568 kB\nPss_File:          72519 kB\nPss_Shmem:             0 kB\nShared_Clean:     271156 kB\nShared_Dirty:     205560 kB\nPrivate_Clean:       912 kB\nPrivate_Dirty:    249788 kB\nReferenced:       718284 kB\nAnonymous:        455348 kB\nLazyFree:              0 kB\nAnonHugePages:    182272 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:         0 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\n",
+      "cgroup": "/system.slice/aias-compute-5_slurmstepd.scope/job_150292/step_batch/user/task_0"
+    },
+    {
+      "pid": 3217275,
+      "job": "150292",
+      "cmd": ".runtime/venv/bin/python -m vllm.entrypoints.openai.api_server --model /mnt/beegfs/home/liudianru26/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28 --served-model-name Qwen/Qwen2.5-7B-Instruct --host 127.0.0.1 --port 18292 --dtype bfloat16 --max-model-len 131072 --max-num-seqs 1 --enforce-eager --rope-scaling {\"rope_type\":\"yarn\",\"factor\":4.0,\"original_max_position_embeddings\":32768} --enable-chunked-prefill --max-num-batched-tokens 4096",
+      "status": {
+        "State": "R (running)",
+        "PPid": "3217206",
+        "VmRSS": "8416712 kB",
+        "RssAnon": "8160612 kB",
+        "RssFile": "236892 kB",
+        "RssShmem": "19208 kB",
+        "VmSwap": "0 kB",
+        "Threads": "36"
+      },
+      "smaps_rollup": "00400000-7ffc0e339000 ---p 00000000 00:00 0                              [rollup]\nRss:             7571640 kB\nPss:             7368224 kB\nPss_Dirty:       7239058 kB\nPss_Anon:        7213174 kB\nPss_File:         135842 kB\nPss_Shmem:         19208 kB\nShared_Clean:     162604 kB\nShared_Dirty:     203764 kB\nPrivate_Clean:     68096 kB\nPrivate_Dirty:   7137176 kB\nReferenced:      7446336 kB\nAnonymous:       7315056 kB\nLazyFree:              0 kB\nAnonHugePages:    311296 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:         0 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\n",
+      "cgroup": "/system.slice/aias-compute-5_slurmstepd.scope/job_150292/step_batch/user/task_0"
+    },
+    {
+      "pid": 3217276,
+      "job": "150293",
+      "cmd": ".runtime/venv/bin/python -m vllm.entrypoints.openai.api_server --model /mnt/beegfs/home/liudianru26/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28 --served-model-name Qwen/Qwen2.5-7B-Instruct --host 127.0.0.1 --port 18293 --dtype bfloat16 --max-model-len 131072 --max-num-seqs 1 --enforce-eager --rope-scaling {\"rope_type\":\"yarn\",\"factor\":4.0,\"original_max_position_embeddings\":32768} --enable-chunked-prefill --max-num-batched-tokens 4096",
+      "status": {
+        "State": "R (running)",
+        "PPid": "3217204",
+        "VmRSS": "8473140 kB",
+        "RssAnon": "8215052 kB",
+        "RssFile": "238880 kB",
+        "RssShmem": "19208 kB",
+        "VmSwap": "0 kB",
+        "Threads": "36"
+      },
+      "smaps_rollup": "00400000-7ffff198f000 ---p 00000000 00:00 0                              [rollup]\nRss:             7482528 kB\nPss:             7277020 kB\nPss_Dirty:       7145908 kB\nPss_Anon:        7120024 kB\nPss_File:         137788 kB\nPss_Shmem:         19208 kB\nShared_Clean:     162664 kB\nShared_Dirty:     207864 kB\nPrivate_Clean:     70024 kB\nPrivate_Dirty:   7041976 kB\nReferenced:      7352636 kB\nAnonymous:       7223956 kB\nLazyFree:              0 kB\nAnonHugePages:    301056 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:         0 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\n",
+      "cgroup": "/system.slice/aias-compute-5_slurmstepd.scope/job_150293/step_batch/user/task_0"
+    },
+    {
+      "pid": 3217386,
+      "job": "150292",
+      "cmd": ".runtime/venv/bin/python -u .runtime/scaling/resume_washout.py --shard 3 --seeds 2035 2037 ",
+      "status": {
+        "State": "S (sleeping)",
+        "PPid": "3217171",
+        "VmRSS": "1016692 kB",
+        "RssAnon": "753924 kB",
+        "RssFile": "262768 kB",
+        "RssShmem": "0 kB",
+        "VmSwap": "0 kB",
+        "Threads": "12"
+      },
+      "smaps_rollup": "00400000-7ffc9751c000 ---p 00000000 00:00 0                              [rollup]\nRss:              779388 kB\nPss:              589124 kB\nPss_Dirty:        516556 kB\nPss_Anon:         516556 kB\nPss_File:          72568 kB\nPss_Shmem:             0 kB\nShared_Clean:     253956 kB\nShared_Dirty:          0 kB\nPrivate_Clean:      8876 kB\nPrivate_Dirty:    516556 kB\nReferenced:       773384 kB\nAnonymous:        516556 kB\nLazyFree:              0 kB\nAnonHugePages:    305152 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:         0 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\n",
+      "cgroup": "/system.slice/aias-compute-5_slurmstepd.scope/job_150292/step_batch/user/task_0"
+    },
+    {
+      "pid": 3217387,
+      "job": "150293",
+      "cmd": ".runtime/venv/bin/python -u .runtime/scaling/resume_washout.py --shard 2 --seeds 2034 2036 ",
+      "status": {
+        "State": "S (sleeping)",
+        "PPid": "3217172",
+        "VmRSS": "1007228 kB",
+        "RssAnon": "752312 kB",
+        "RssFile": "254916 kB",
+        "RssShmem": "0 kB",
+        "VmSwap": "0 kB",
+        "Threads": "12"
+      },
+      "smaps_rollup": "00400000-7ffefa9f4000 ---p 00000000 00:00 0                              [rollup]\nRss:              776048 kB\nPss:              587580 kB\nPss_Dirty:        521068 kB\nPss_Anon:         521068 kB\nPss_File:          66512 kB\nPss_Shmem:             0 kB\nShared_Clean:     251240 kB\nShared_Dirty:          0 kB\nPrivate_Clean:      3740 kB\nPrivate_Dirty:    521068 kB\nReferenced:       770260 kB\nAnonymous:        521068 kB\nLazyFree:              0 kB\nAnonHugePages:    311296 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:         0 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\n",
+      "cgroup": "/system.slice/aias-compute-5_slurmstepd.scope/job_150293/step_batch/user/task_0"
+    }
+  ],
+  "cgroups": {
+    "/system.slice/aias-compute-5_slurmstepd.scope/job_150293": {
+      "memory.current": "11280166912\n",
+      "memory.max": "17179869184\n",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+      "memory.stat": "anon 9488044032\nfile 1750974464\nkernel 40742912\nkernel_stack 999424\npagetables 24707072\nsec_pagetables 0\npercpu 674832\nsock 0\nvmalloc 8192\nshmem 19668992\nzswap 0\nzswapped 0\nfile_mapped 105209856\nfile_dirty 0\nfile_writeback 0\nswapcached 0\nanon_thp 2105540608\nfile_thp 0\nshmem_thp 0\ninactive_anon 9507631104\nactive_anon 36864\ninactive_file 69513216\nactive_file 1661792256\nunevictable 0\nslab_reclaimable 9926520\nslab_unreclaimable 2105872\nslab 12032392\nworkingset_refault_anon 0\nworkingset_refault_file 163121\nworkingset_activate_anon 0\nworkingset_activate_file 24803\nworkingset_restore_anon 0\nworkingset_restore_file 24797\nworkingset_nodereclaim 0\npgscan 10787\npgsteal 8424\npgscan_kswapd 8689\npgscan_direct 2098\npgsteal_kswapd 6584\npgsteal_direct 1840\npgfault 20657494\npgmajfault 8440\npgrefill 16202\npgactivate 392034\npgdeactivate 12230\npglazyfree 0\npglazyfreed 0\nzswpin 0\nzswpout 0\nthp_fault_alloc 857\nthp_collapse_alloc 752\n",
+      "memory.peak": "11280613376\n"
+    },
+    "/system.slice/aias-compute-5_slurmstepd.scope/job_150292": {
+      "memory.current": "11406815232\n",
+      "memory.max": "17179869184\n",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+      "memory.stat": "anon 9432121344\nfile 1932668928\nkernel 41328640\nkernel_stack 999424\npagetables 24551424\nsec_pagetables 0\npercpu 674832\nsock 0\nvmalloc 8192\nshmem 19668992\nzswap 0\nzswapped 0\nfile_mapped 203980800\nfile_dirty 0\nfile_writeback 0\nswapcached 0\nanon_thp 1969225728\nfile_thp 0\nshmem_thp 0\ninactive_anon 9451655168\nactive_anon 40960\ninactive_file 76292096\nactive_file 1836707840\nunevictable 0\nslab_reclaimable 10677240\nslab_unreclaimable 2090048\nslab 12767288\nworkingset_refault_anon 0\nworkingset_refault_file 174013\nworkingset_activate_anon 0\nworkingset_activate_file 28389\nworkingset_restore_anon 0\nworkingset_restore_file 28389\nworkingset_nodereclaim 0\npgscan 14034\npgsteal 10199\npgscan_kswapd 11416\npgscan_direct 2618\npgsteal_kswapd 7869\npgsteal_direct 2330\npgfault 20662007\npgmajfault 8857\npgrefill 17808\npgactivate 427871\npgdeactivate 9679\npglazyfree 0\npglazyfreed 0\nzswpin 0\nzswpout 0\nthp_fault_alloc 869\nthp_collapse_alloc 686\n",
+      "memory.peak": "11406868480\n"
+    }
+  }
+}

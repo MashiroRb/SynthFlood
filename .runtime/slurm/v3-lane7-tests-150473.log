@@ -1,0 +1,21 @@
+..../tmp/tmpeforaxr_/parent.sh: line 1: python: command not found
+E
+======================================================================
+ERROR: test_stopping_waiting_parent_preserves_child (__main__.RoutingTests.test_stopping_waiting_parent_preserves_child)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/liudianru26/project/www2027/SynthFlood-local/.runtime/scaling/test_stateless7_handoff.py", line 55, in test_stopping_waiting_parent_preserves_child
+    before=int(counter.read_text())
+               ^^^^^^^^^^^^^^^^^^^
+  File "/apps/miniconda3/envs/vllm/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/apps/miniconda3/envs/vllm/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/tmpeforaxr_/counter'
+
+----------------------------------------------------------------------
+Ran 5 tests in 2.014s
+
+FAILED (errors=1)

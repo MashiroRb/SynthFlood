@@ -1,0 +1,56 @@
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.348s
+
+OK
+EXAM_TARGET_QA 25 / 1000 eligible 9
+EXAM_TARGET_QA 50 / 1000 eligible 21
+EXAM_TARGET_QA 75 / 1000 eligible 31
+EXAM_TARGET_QA 100 / 1000 eligible 38
+EXAM_TARGET_QA 125 / 1000 eligible 50
+EXAM_TARGET_QA 150 / 1000 eligible 60
+EXAM_TARGET_QA 175 / 1000 eligible 72
+EXAM_TARGET_QA 200 / 1000 eligible 80
+EXAM_TARGET_QA 225 / 1000 eligible 91
+EXAM_TARGET_QA 250 / 1000 eligible 104
+EXAM_TARGET_QA 275 / 1000 eligible 115
+EXAM_TARGET_QA 300 / 1000 eligible 124
+EXAM_TARGET_QA 325 / 1000 eligible 130
+EXAM_TARGET_QA 350 / 1000 eligible 142
+EXAM_TARGET_QA 375 / 1000 eligible 155
+EXAM_TARGET_QA 400 / 1000 eligible 164
+EXAM_TARGET_QA 425 / 1000 eligible 178
+EXAM_TARGET_QA 450 / 1000 eligible 190
+EXAM_TARGET_QA 475 / 1000 eligible 201
+EXAM_TARGET_QA 500 / 1000 eligible 206
+EXAM_TARGET_QA 525 / 1000 eligible 218
+EXAM_TARGET_QA 550 / 1000 eligible 228
+EXAM_TARGET_QA 575 / 1000 eligible 237
+EXAM_TARGET_QA 600 / 1000 eligible 250
+EXAM_TARGET_QA 625 / 1000 eligible 260
+EXAM_TARGET_QA 650 / 1000 eligible 272
+EXAM_TARGET_QA 675 / 1000 eligible 280
+EXAM_TARGET_QA 700 / 1000 eligible 289
+EXAM_TARGET_QA 725 / 1000 eligible 301
+EXAM_TARGET_QA 750 / 1000 eligible 313
+EXAM_TARGET_QA 775 / 1000 eligible 322
+EXAM_TARGET_QA 800 / 1000 eligible 330
+EXAM_TARGET_QA 825 / 1000 eligible 340
+EXAM_TARGET_QA 850 / 1000 eligible 356
+EXAM_TARGET_QA 875 / 1000 eligible 363
+EXAM_TARGET_QA 900 / 1000 eligible 373
+EXAM_TARGET_QA 925 / 1000 eligible 382
+EXAM_TARGET_QA 950 / 1000 eligible 394
+EXAM_TARGET_QA 975 / 1000 eligible 401
+EXAM_TARGET_QA 1000 / 1000 eligible 412
+EXAM_TARGETS_QUALITY_FROZEN 100
+EXAM_GENERATED 1 /100
+EXAM_GENERATED 2 /100
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/beegfs/home/liudianru26/project/www2027/SynthFlood-local/protocol_v3/generate.py", line 208, in <module>
+    generate()
+  File "/mnt/beegfs/home/liudianru26/project/www2027/SynthFlood-local/protocol_v3/generate.py", line 127, in generate
+    raise RuntimeError(f'Exam task {gi} lacks a complete {f} candidate after 20 fixed attempts')
+RuntimeError: Exam task 2 lacks a complete clone candidate after 20 fixed attempts

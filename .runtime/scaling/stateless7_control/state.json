@@ -1,0 +1,1 @@
+{"completion": {"defense_rows": 7500, "lane": 1, "nondefense_rows": 3410, "validated": true}, "controller_job": 150477, "expected_slurm_state": "CANCELLED_OR_FAILED_RETIRED_BATCH_AFTER_WORKER1_COMPLETE", "new_gpu_job": 150478, "old_element": "150037_1", "old_job": 150046, "phase": "OLD_ALLOCATION_RELEASED", "updated_utc": "2026-10-24T08:07:57.565857+00:00"}

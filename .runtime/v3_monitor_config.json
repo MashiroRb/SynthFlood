@@ -1,0 +1,20 @@
+{
+  "user": "liudianru26",
+  "result_directory": "results_protocol_v3_20261024_relaxed_v1",
+  "job_ids": [],
+  "monitoring_complete": true,
+  "completion_beijing": "2026-10-25 10:28",
+  "completion_evidence": ".runtime/v3_manual_checks/MONITORING_COMPLETE.json",
+  "repair_on_stop": false,
+  "executor_already_relaxed": true,
+  "interval_minutes": 30,
+  "minimum_new_evaluations": 100,
+  "stop_thresholds": {
+    "purchase_failure": 0.05,
+    "missing_confidence": 0.10
+  },
+  "calibration_policy": "Report high confidence versus actual success; never alter reported values or stop solely because task success is low",
+  "purchase_completion_policy": "User amendment 2026-10-24: count only final failure to complete a legal purchase; repeated views or corrected intermediate replies are not failure or stopping criteria. Keep confidence and design/log audits separate.",
+  "restart_policy": "Preserve completed results and memory; if a real defect requires intervention, use validated continuation and never restart completed cases. Do not change frozen live protocol silently.",
+  "llm_monitor_calls": 0
+}

@@ -1,0 +1,160 @@
+{
+  "from_utc": "2026-10-25T02:21:13.750988+00:00",
+  "to_utc": "2026-10-25T02:25:13.494622+00:00",
+  "rates": {
+    "all": {
+      "new_evaluations": 14,
+      "valid": 14,
+      "purchase_failures": 0,
+      "purchase_failure": 0.0,
+      "missing_confidence": 0.07142857142857142
+    },
+    "memory": {
+      "new_evaluations": 14,
+      "valid": 14,
+      "purchase_failures": 0,
+      "purchase_failure": 0.0,
+      "missing_confidence": 0.07142857142857142
+    },
+    "phase:shopping": {
+      "new_evaluations": 0,
+      "valid": 0,
+      "purchase_failures": 0,
+      "purchase_failure": 0.0,
+      "missing_confidence": 0.0
+    },
+    "writer:washout0": {
+      "new_evaluations": 14,
+      "valid": 14,
+      "purchase_failures": 0,
+      "purchase_failure": 0.0,
+      "missing_confidence": 0.07142857142857142
+    },
+    "phase:exam": {
+      "new_evaluations": 14,
+      "valid": 14,
+      "purchase_failures": 0,
+      "purchase_failure": 0.0,
+      "missing_confidence": 0.07142857142857142
+    },
+    "writer:washout1": {
+      "new_evaluations": 0,
+      "valid": 0,
+      "purchase_failures": 0,
+      "purchase_failure": 0.0,
+      "missing_confidence": 0.0
+    },
+    "writer:washout2": {
+      "new_evaluations": 0,
+      "valid": 0,
+      "purchase_failures": 0,
+      "purchase_failure": 0.0,
+      "missing_confidence": 0.0
+    },
+    "writer:washout3": {
+      "new_evaluations": 0,
+      "valid": 0,
+      "purchase_failures": 0,
+      "purchase_failure": 0.0,
+      "missing_confidence": 0.0
+    },
+    "stateless": {
+      "new_evaluations": 0,
+      "valid": 0,
+      "purchase_failures": 0,
+      "purchase_failure": 0.0,
+      "missing_confidence": 0.0
+    },
+    "phase:main": {
+      "new_evaluations": 0,
+      "valid": 0,
+      "purchase_failures": 0,
+      "purchase_failure": 0.0,
+      "missing_confidence": 0.0
+    },
+    "writer:worker0": {
+      "new_evaluations": 0,
+      "valid": 0,
+      "purchase_failures": 0,
+      "purchase_failure": 0.0,
+      "missing_confidence": 0.0
+    },
+    "phase:probe": {
+      "new_evaluations": 0,
+      "valid": 0,
+      "purchase_failures": 0,
+      "purchase_failure": 0.0,
+      "missing_confidence": 0.0
+    },
+    "phase:single": {
+      "new_evaluations": 0,
+      "valid": 0,
+      "purchase_failures": 0,
+      "purchase_failure": 0.0,
+      "missing_confidence": 0.0
+    },
+    "phase:clone": {
+      "new_evaluations": 0,
+      "valid": 0,
+      "purchase_failures": 0,
+      "purchase_failure": 0.0,
+      "missing_confidence": 0.0
+    },
+    "phase:defense": {
+      "new_evaluations": 0,
+      "valid": 0,
+      "purchase_failures": 0,
+      "purchase_failure": 0.0,
+      "missing_confidence": 0.0
+    },
+    "writer:worker1": {
+      "new_evaluations": 0,
+      "valid": 0,
+      "purchase_failures": 0,
+      "purchase_failure": 0.0,
+      "missing_confidence": 0.0
+    },
+    "writer:worker2": {
+      "new_evaluations": 0,
+      "valid": 0,
+      "purchase_failures": 0,
+      "purchase_failure": 0.0,
+      "missing_confidence": 0.0
+    },
+    "writer:worker3": {
+      "new_evaluations": 0,
+      "valid": 0,
+      "purchase_failures": 0,
+      "purchase_failure": 0.0,
+      "missing_confidence": 0.0
+    },
+    "writer:worker4": {
+      "new_evaluations": 0,
+      "valid": 0,
+      "purchase_failures": 0,
+      "purchase_failure": 0.0,
+      "missing_confidence": 0.0
+    },
+    "writer:worker5": {
+      "new_evaluations": 0,
+      "valid": 0,
+      "purchase_failures": 0,
+      "purchase_failure": 0.0,
+      "missing_confidence": 0.0
+    },
+    "writer:worker6": {
+      "new_evaluations": 0,
+      "valid": 0,
+      "purchase_failures": 0,
+      "purchase_failure": 0.0,
+      "missing_confidence": 0.0
+    },
+    "writer:worker7": {
+      "new_evaluations": 0,
+      "valid": 0,
+      "purchase_failures": 0,
+      "purchase_failure": 0.0,
+      "missing_confidence": 0.0
+    }
+  }
+}

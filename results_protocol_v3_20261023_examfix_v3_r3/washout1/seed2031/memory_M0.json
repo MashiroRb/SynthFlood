@@ -1,0 +1,534 @@
+{
+ "arm": "M0",
+ "path": "/mnt/beegfs/home/liudianru26/project/www2027/SynthFlood-local/results_protocol_v3_20261023_examfix_v3_r3/washout1/seed2031/memory_M0.json",
+ "entries": [
+  {
+   "type": "observation",
+   "t": 1,
+   "arm": "M0",
+   "text": "Episode 1: task 'mac'. Bought 'ProElife Ultra Thin Silicone Keyboard Protector Cover Skin for Apple Wireless Keyboard with Bluetooth MC184LL/B (Model A1314, U.S Layout) (Not Fits Magic Keyboard), Translucent' at $5.74; official reward 0.67 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 0.6666666666666666,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 2,
+   "arm": "M0",
+   "text": "Episode 2: task 'mirrors'. Bought 'Cordless Water Dental Flosser for Teeth - KUSKER Portable Oral Irrigator with 5 New Mode, 4 Replaceable Jet Tips - Rechargeable IPX7 Waterproof Oral Irrigator for Home&Travel(Pink)' at $29.95; official reward 1.00 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 3,
+   "arm": "M0",
+   "text": "Episode 3: task 'women's mules & clogs'. Bought 'Women's Fashion Mules & Clogs - Perfect for Everyday Wear' at $75.33; official reward 0.67 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:geo",
+    "reward": 0.6666666666666666,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 4,
+   "arm": "M0",
+   "text": "Episode 4: task 'video surveillance'. Bought '2PCS Fake Security Camera & 6PCS Door Alarm, Dummy Camera with Realistic Look Red LED Light Indoor/ Outdoor Use, Personal Security Window Door Alarm Bell Wireless Sensor Door Window Burglar Alarm' at $6.51; official reward 1.00 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 1.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 5,
+   "arm": "M0",
+   "text": "Episode 5: task 'window coverings'. Bought 'Radiance 2208848E Cordless Roman Shade Driftwood, 23\" W X 64\" L' at $31.01; official reward 0.03 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.025,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "lesson",
+   "t": 5,
+   "arm": "M0",
+   "text": "Choose items with higher gold references for better rewards; focus on essential tasks for practical purchases.",
+   "tags": [
+    "shopping strategy",
+    "task relevance"
+   ],
+   "data": {}
+  },
+  {
+   "type": "observation",
+   "t": 6,
+   "arm": "M0",
+   "text": "Episode 6: task 'eyes makeup'. Bought 'BELLESKY Eyeshadow Primer Set 6 Colors Smudge-proof Long Wearing Eyeshadow Cream Prevent Oily Lids and Creasing Eyeshadow (6PCS-A)' at $15.03; official reward 0.67 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 0.6666666666666666,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 7,
+   "arm": "M0",
+   "text": "Episode 7: task 'meat substitutes'. Bought 'Pride Of India - Himalayan Black Rock Salt - Fine Grind, (4.8 oz) - Kala Namak, Contains 84+ Minerals, Perfect for Cooking, Tofu Scramble' at $5.34; official reward 0.75 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 0.75,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 8,
+   "arm": "M0",
+   "text": "Episode 8: task 'whipped toppings'. Bought 'Cake Craft Java Brown Color Gel 1.06 Ounces' at $6.99; official reward 1.00 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 9,
+   "arm": "M0",
+   "text": "Episode 9: task 'satellite television'. Bought '12ft Quad Shield Indoor Outdoor Solid Copper RG-6 Coaxial Cable 3Ghz 75 Ohm DIRECTV Approved Satellite TV or Broadband Internet Belden SNAP N Seal RG6 Fittings Assembled in USA by PHAT SATELLITE INTL' at $18.34; official reward 0.80 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.8,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 10,
+   "arm": "M0",
+   "text": "Episode 10: task 'makeup sets'. Bought 'S'well 3.4oz Travel Kit - Includes 3 Lightweight & Recyclable Aluminum Containers - Spill-Resistant Pumps Are Suitable for a Range of Liquid Soaps, Lotions, Sanitizers & More - TSA Carry-On Approved' at $29.93; official reward 0.50 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 0.5,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "lesson",
+   "t": 10,
+   "arm": "M0",
+   "text": "Choose items with higher gold reference rewards for better value.",
+   "tags": [
+    "shopping tips",
+    "reward system"
+   ],
+   "data": {}
+  },
+  {
+   "type": "observation",
+   "t": 11,
+   "arm": "M0",
+   "text": "Episode 11: task 'nightstands'. Bought 'ERRTT Nightstand 1-Drawer Shelf Storage- Bedside Furniture & Accent End Table Chest For Home, Bedroom, Office, College Dorm, Steel Frame, Wood Top, Easy Pull Fabric Bins Brown' at $69.99; official reward 1.00 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 12,
+   "arm": "M0",
+   "text": "Episode 12: task 'hair cutting tools'. Bought 'SURKER Hair Clippers for Men Cordless Hair Trimmer Beard Trimmer Haircut Grooming Kit Barber Hair Cut Professional Rechargeable' at $12.14; official reward 0.50 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 0.5,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 13,
+   "arm": "M0",
+   "text": "Episode 13: task 'toothpicks'. Bought 'BESTOYARD 20pcs Happy Birthday Cake Topper Acrylic Cupcake Topper Birthday Cake Topper Set Cupcake Toppers Double- Sided Glitter Birthday Decorations Golden' at $13.49; official reward 0.75 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.75,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 14,
+   "arm": "M0",
+   "text": "Episode 14: task 'milks & creams'. Bought 'Enchanted Brew Birthday Cake Gourmet Flavored Coffee, Artisan Infused Medium-Roast Arabica Coffee Beans - 8 Oz Bag, Whole Bean' at $12.99; official reward 0.33 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.3333333333333333,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 15,
+   "arm": "M0",
+   "text": "Episode 15: task 'men's mules & clogs'. Bought 'HAFLINGER Lammfellclog Snowy Day Mule' at $118.96; official reward 0.75 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 0.75,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "lesson",
+   "t": 15,
+   "arm": "M0",
+   "text": "Diversify purchases across tasks to maximize rewards and avoid overpaying for single items.",
+   "tags": [
+    "task diversity",
+    "reward optimization"
+   ],
+   "data": {}
+  },
+  {
+   "type": "observation",
+   "t": 16,
+   "arm": "M0",
+   "text": "Episode 16: task 'men's fashion sneakers'. Bought 'Lugz Men's Rusher Sneaker' at $44.33; official reward 0.75 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 0.75,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 17,
+   "arm": "M0",
+   "text": "Episode 17: task 'end tables'. Bought 'Mellow RNNS-BK Round Multipurpose End & Side Table, Black' at $87.33; official reward 1.00 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 1.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 18,
+   "arm": "M0",
+   "text": "Episode 18: task 'men's pants'. Bought 'BROOKLYN ATHLETICS Men's Fleece Jogger Pants Active Zipper Pocket Sweatpants' at $20.24; official reward 0.60 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.6,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 19,
+   "arm": "M0",
+   "text": "Episode 19: task 'candles'. Bought 'CoastaBay Honeysuckle Jasmine Candle | All Natural Soy Candles for Home Scented, Summer and Spring Candles, Long Lasting 45hr Burn, Floral, Clean, Organic & Non Toxic, 7.1oz' at $25.95; official reward 1.00 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 20,
+   "arm": "M0",
+   "text": "Episode 20: task 'playstation'. Bought 'PS3 Controller Wireless Wi-Fi PlayStation 3 Remote with Charger Cable (White+Blue)' at $14.93; official reward 0.67 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 0.6666666666666666,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "lesson",
+   "t": 20,
+   "arm": "M0",
+   "text": "Balance rewards with product quality and price for successful shopping experiences.",
+   "tags": [
+    "shopping strategies",
+    "value assessment"
+   ],
+   "data": {}
+  },
+  {
+   "type": "observation",
+   "t": 21,
+   "arm": "M0",
+   "text": "Episode 21: task 'shampoo & conditioner'. Bought 'Bain De Terre Green Meadow Balancing Shampoo and Conditioner for Normal to Oily Hair, 13.5 Ounce Value Pack!' at $14.23; official reward 0.33 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.3333333333333333,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 22,
+   "arm": "M0",
+   "text": "Episode 22: task 'hair coloring products'. Bought 'MANIC PANIC Shocking Blue Hair Dye Classic' at $11.99; official reward 1.00 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 23,
+   "arm": "M0",
+   "text": "Episode 23: task 'digital cameras'. Bought 'Canon PowerShot S200 2MP Digital ELPH Camera w/ 4x Optical Zoom' at $37.92; official reward 1.00 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 1.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 24,
+   "arm": "M0",
+   "text": "Episode 24: task 'home office cabinets'. Bought 'Sculpture Wine-Rack Ornament Decoration Resin Modern Creative Simplicity Desktop Library Bookcase Living Room Decor' at $58.90; official reward 1.00 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 1.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 25,
+   "arm": "M0",
+   "text": "Episode 25: task 'sensitivity treatments'. Bought 'FaceTory Golden Glow Hydrating Cream Sheet Mask with Argan Oil - For Normal and Sensitive Skin, Made in Korea - Hydrating, Radiance Boosting, Smoothing (Pack of 10)' at $13.57; official reward 0.33 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 0.3333333333333333,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "lesson",
+   "t": 25,
+   "arm": "M0",
+   "text": "Choose items with higher official rewards for better value.",
+   "tags": [
+    "shopping strategy",
+    "reward system"
+   ],
+   "data": {}
+  },
+  {
+   "type": "observation",
+   "t": 26,
+   "arm": "M0",
+   "text": "Episode 26: task 'women's slippers'. Bought 'SDBING Women's Winter Super Soft Warm Cozy Fuzzy Snowflake Moose Sherpa-lined With Grippers Slipper Socks' at $7.32; official reward 0.33 (gold reference 0.67).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 0.3333333333333333,
+    "gold_reward": 0.6666666666666666
+   }
+  },
+  {
+   "type": "observation",
+   "t": 27,
+   "arm": "M0",
+   "text": "Episode 27: task 'video glasses'. Bought 'LG k22 Case,LG K22+ Plus Case with Tempered Glass Screen Protector [2 Pack],YmhxcY Armor Grade Case with Rotating Holder Kickstand Non-Slip Hybrid Rugged Case for LG k22 6.2 ”-KJ Rose Gold' at $7.88; official reward 1.00 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 28,
+   "arm": "M0",
+   "text": "Episode 28: task 'hair cutting tools'. Bought 'Best Hair Styling Tools Kit - Perfect for Salon-Quality Cuts at Home' at $9.79; official reward 0.10 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:geo",
+    "reward": 0.1,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 29,
+   "arm": "M0",
+   "text": "Episode 29: task 'film photography'. Bought 'SmallRig Mini Tripod for Camera, Updated Desktop Tabletop Tripod with Arca-Type Compatible QR Plate, 360° Ball Head and 1/4 Screws Portable for Compact Cameras DSLRs, Phone, Gopro - BUT2664' at $45.89; official reward 1.00 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 30,
+   "arm": "M0",
+   "text": "Episode 30: task 'beds'. Bought 'Queen Bed, Canopy Platform Bed with Built-in Headboard / Four-Post Canopy Bed / Metal Bed Frame ,Black' at $213.99; official reward 0.10 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.1,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "lesson",
+   "t": 30,
+   "arm": "M0",
+   "text": "Choose items with higher official rewards for better gold returns.",
+   "tags": [
+    "shopping strategy",
+    "gold reward"
+   ],
+   "data": {}
+  },
+  {
+   "type": "observation",
+   "t": 31,
+   "arm": "M0",
+   "text": "Episode 31: task 'beds'. Bought 'P PURLOVE Queen Size Platform Bed Frame with Headboard, Wood Platform Bed with Slat Support, No Box Spring Needed, White' at $189.99; official reward 1.00 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 1.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 32,
+   "arm": "M0",
+   "text": "Episode 32: task 'satellite television'. Bought '150ft Black TRI-Shield Indoor Outdoor RG-6 Coaxial Cable Gold-Plated Copper Connector 75 Ohm (Satellite TV, Broadband Internet, Ham Radio, OTA HD Antenna Coax) Assembled in USA PHAT SATELLITE' at $14.92; official reward 0.60 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 0.6,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 33,
+   "arm": "M0",
+   "text": "Episode 33: task 'dried fruits & raisins'. Bought 'Mariani Mixed Fruits - 32oz (Pack of 1) – Perfect Blend of Orchard Fruits, No Sugar Added, Good Source of Dietary Fiber, Gluten Free, Vegan, Fat Free, Cholesterol Free, NonGMO, Resealable Bag - Healthy Snack for Kids & Adults' at $100.00; official reward 1.00 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "gold",
+    "reward": 1.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 34,
+   "arm": "M0",
+   "text": "Episode 34: task 'tripods & monopods'. Bought 'Pro Photo/Video Tripod 50\" With Case For Sony HDR-PJ810 HDR-PJ275 HDR-CX240' at $21.95; official reward 0.33 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.3333333333333333,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 35,
+   "arm": "M0",
+   "text": "Episode 35: task 'meat & seafood'. Bought 'Thai Basil Beef Jerky by Dublin Jerky | Big Flavor With A Touch Of Spice - 8 Ounce' at $14.39; official reward 0.75 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 0.75,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "lesson",
+   "t": 35,
+   "arm": "M0",
+   "text": "Compare official rewards with gold references to assess value; mix high and low-value purchases for better overall rewards.",
+   "tags": [
+    "value assessment",
+    "reward optimization"
+   ],
+   "data": {}
+  },
+  {
+   "type": "observation",
+   "t": 36,
+   "arm": "M0",
+   "text": "Episode 36: task 'beverages'. Bought 'Peet's Iced Espresso Vanilla Latte 8 oz Can (12 Count) Single-Origin Ethiopian Espresso & Milk & Caramel Flavors 120 Calorie 17 grams of sugar' at $29.43; official reward 0.50 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:clone",
+    "reward": 0.5,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 37,
+   "arm": "M0",
+   "text": "Episode 37: task 'hair extensions, wigs & accessories'. Bought 'Human Hair Hair Extensions, Wigs & Accessories for Women and Men' at $9.08; official reward 0.67 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "synthetic:geo",
+    "reward": 0.6666666666666666,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 38,
+   "arm": "M0",
+   "text": "Episode 38: task 'salon & spa equipment'. Bought 'Hydraulic Recliner Barber Chair for Hair Salon, Heavy Duty Hair Spa Salon Styling Beauty Barber Chair In Beauty & Personal, Barber Chairs Salon Chair for Hair,Barber Chairs Hair Salon Spa Equipment' at $100.00; official reward 0.50 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.5,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 39,
+   "arm": "M0",
+   "text": "Episode 39: task 'hair treatment oils'. Bought 'Allurials Fragrance Free Hair Conditioner, Natural Hair Treatment for Dry Damaged and all Hair Types, Safe for Color Treated Hair, Sulfate Free, Silk and Pea Peptides, Argan Jojoba Avocado and Coconut' at $13.49; official reward 1.00 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 1.0,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "observation",
+   "t": 40,
+   "arm": "M0",
+   "text": "Episode 40: task 'makeup palettes'. Bought 'Mitchum Men Gel Antiperspirant Deodorant, Unscented, 2.25oz.' at $5.00; official reward 0.17 (gold reference 1.00).",
+   "data": {
+    "chosen_kind": "real",
+    "reward": 0.16666666666666666,
+    "gold_reward": 1.0
+   }
+  },
+  {
+   "type": "lesson",
+   "t": 40,
+   "arm": "M0",
+   "text": "Choose items with higher official rewards for better gold returns.",
+   "tags": [
+    "shopping strategy",
+    "reward system"
+   ],
+   "data": {}
+  }
+ ]
+}

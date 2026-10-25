@@ -1,0 +1,43 @@
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK
+GENERATION_DEFERRED 0 geo continuing other cells
+GENERATION_ACCEPTED 0 clone 1 /300
+GENERATION_ACCEPTED 0 reviews 2 /300
+GENERATION_ACCEPTED 1 geo 3 /300
+GENERATION_ACCEPTED 1 clone 4 /300
+GENERATION_ACCEPTED 1 reviews 5 /300
+EXAM_TASK_COMPLETE 1 complete_tasks 1
+GENERATION_PASS_COMPLETE 0 accepted 5 missing 1
+GENERATION_DEFERRED 0 geo continuing other cells
+EXAM_TASK_COMPLETE 1 complete_tasks 1
+GENERATION_PASS_COMPLETE 1 accepted 5 missing 1
+GENERATION_ACCEPTED 0 geo 6 /300
+EXAM_TASK_COMPLETE 0 complete_tasks 2
+EXAM_TASK_COMPLETE 1 complete_tasks 2
+GENERATION_PASS_COMPLETE 2 accepted 6 missing 0
+..GENERATION_DEFERRED 0 geo continuing other cells
+GENERATION_ACCEPTED 0 clone 1 /300
+GENERATION_ACCEPTED 0 reviews 2 /300
+GENERATION_ACCEPTED 1 geo 3 /300
+GENERATION_ACCEPTED 1 clone 4 /300
+GENERATION_ACCEPTED 1 reviews 5 /300
+EXAM_TASK_COMPLETE 1 complete_tasks 1
+GENERATION_PASS_COMPLETE 0 accepted 5 missing 1
+GENERATION_DEFERRED 0 geo continuing other cells
+EXAM_TASK_COMPLETE 1 complete_tasks 1
+GENERATION_PASS_COMPLETE 1 accepted 5 missing 1
+.
+----------------------------------------------------------------------
+Ran 3 tests in 0.064s
+
+OK
+CONTROLLED_GENERATION_RESUME_PREPARED 60 accepted;100 targets unchanged
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.204s
+
+OK
+V3_INPUT_INVARIANTS_PASS {'main': 7840, 'single': 9600, 'clone': 10500, 'probe': 980}

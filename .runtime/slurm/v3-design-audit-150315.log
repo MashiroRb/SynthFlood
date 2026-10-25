@@ -1,0 +1,271 @@
+{
+  "timestamp_utc": "2026-10-24T01:42:00.332636+00:00",
+  "counts": {
+    "logical_rows": 48114,
+    "new_evaluations": 40354,
+    "valid": 40139,
+    "format_failure": 215,
+    "format_affected": 3608,
+    "missing_confidence": 627,
+    "repeated_browsing": 1082,
+    "views": 100369,
+    "budget_exhausted": 93,
+    "confidence_reports": 39512,
+    "confidence_sum": 35544.32999999886,
+    "confidence_success_sum": 18209
+  },
+  "rates": {
+    "all": {
+      "new_evaluations": 40354,
+      "valid": 40139,
+      "format_failure": 0.005327848540417307,
+      "format_affected": 0.0894087327154681,
+      "repeated_browsing": 0.026812707538286167,
+      "missing_confidence": 0.015620718004932858,
+      "confidence_mean": 0.8995831646081914,
+      "confidence_report_success": 0.4608473375177161
+    },
+    "memory": {
+      "new_evaluations": 13983,
+      "valid": 13971,
+      "format_failure": 0.0008581849388543231,
+      "format_affected": 0.096045197740113,
+      "repeated_browsing": 0.006507902452978617,
+      "missing_confidence": 0.0056545701810894,
+      "confidence_mean": 0.9375273538727484,
+      "confidence_report_success": 0.5585948747480565
+    },
+    "stateless": {
+      "new_evaluations": 26371,
+      "valid": 26168,
+      "format_failure": 0.007697849910886959,
+      "format_affected": 0.08588980319290129,
+      "repeated_browsing": 0.037579158924576236,
+      "missing_confidence": 0.02094160807092632,
+      "confidence_mean": 0.8790085870412464,
+      "confidence_report_success": 0.40784543325526934
+    }
+  },
+  "incomplete_lines": 0,
+  "examples": [
+    {
+      "case_key": "shopping:M0:pollution:60:2030:0",
+      "format_failure": false,
+      "repeated_browsing": true,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "shopping:M0:clean:12:2030:4",
+      "format_failure": false,
+      "repeated_browsing": true,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "exam:M0:cp0:clone:32:2030:0",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "exam:M0:cp0:clone:94:2030:0",
+      "format_failure": false,
+      "repeated_browsing": true,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "exam:M0:cp0:clone:95:2030:1",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "exam:M0:cp2:geo:9:2030:0",
+      "format_failure": false,
+      "repeated_browsing": true,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "exam:M0:cp2:clone:9:2030:1",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "exam:M0:cp2:reviews:9:2030:1",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "exam:M0:cp2:clone:28:2030:1",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "exam:M0:cp2:clone:52:2030:0",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "exam:M0:cp2:reviews:57:2030:0",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "exam:M0:cp2:clone:69:2030:0",
+      "format_failure": false,
+      "repeated_browsing": true,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "exam:M0:cp2:clone:82:2030:1",
+      "format_failure": false,
+      "repeated_browsing": true,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "exam:M0:cp2:clone:86:2030:1",
+      "format_failure": false,
+      "repeated_browsing": true,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "exam:M0:cp2:clone:95:2030:1",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "exam:M0:cp4:reviews:3:2030:0",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "exam:M0:cp4:clone:52:2030:0",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "exam:M0:cp4:reviews:52:2030:0",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    },
+    {
+      "case_key": "exam:M0:cp4:clone:88:2030:0",
+      "format_failure": false,
+      "repeated_browsing": true,
+      "missing_confidence": false
+    },
+    {
+      "case_key": "exam:M0:cp4:clone:95:2030:1",
+      "format_failure": false,
+      "repeated_browsing": false,
+      "missing_confidence": true
+    }
+  ],
+  "source_input_hashes_valid": true,
+  "failures": []
+}
+window=2026-10-24T01:12:43.013916+00:00 -> 2026-10-24T01:42:00.332636+00:00
+all: repeated_browsing=71/3513=2.0211%; format_failure=23/3513=0.6547%; format_affected=242/3513=6.8887%; missing_confidence=55/3490=1.5759%
+memory: repeated_browsing=17/2054=0.8277%; format_failure=10/2054=0.4869%; format_affected=106/2054=5.1607%; missing_confidence=14/2044=0.6849%
+stateless: repeated_browsing=54/1459=3.7012%; format_failure=13/1459=0.8910%; format_affected=136/1459=9.3215%; missing_confidence=41/1446=2.8354%
+{
+  "timestamp_utc": "2026-10-24T01:42:39.446879+00:00",
+  "frozen_hashes_valid": true,
+  "rows": 48199,
+  "rows_by_directory": {
+    "washout0": 5765,
+    "washout1": 6846,
+    "washout2": 710,
+    "washout3": 694,
+    "worker0": 6793,
+    "worker1": 5427,
+    "worker2": 6198,
+    "worker3": 6237,
+    "worker4": 6107,
+    "worker5": 3422
+  },
+  "ownership": {
+    "washout0": [
+      2030,
+      2032
+    ],
+    "washout1": [
+      2031,
+      2033
+    ],
+    "washout2": [
+      2034,
+      2036
+    ],
+    "washout3": [
+      2035,
+      2037
+    ]
+  },
+  "checks": {
+    "exclusive_seed_partition": 1,
+    "scaling_source_hash": 12,
+    "exam_fixed_300_pairs": 1,
+    "exam_binary_pair": 300,
+    "exam_price_equivalence": 300,
+    "exam_all_three_types": 1,
+    "unique_formal_case": 48199,
+    "case_identity": 48199,
+    "raw_response_execution": 178679,
+    "executed_action": 173299,
+    "purchase_terminates": 173299,
+    "remaining_budget": 178679,
+    "confidence_from_raw_response": 47928,
+    "chosen_candidate_matches_action": 47928,
+    "budget_and_cumulative_retries": 48199,
+    "valid_means_purchase": 48199,
+    "finite_purchase_reward": 47928,
+    "finite_confidence_or_missing": 48199,
+    "distinct_candidates": 48199,
+    "row_seed_owned_by_writer": 14015,
+    "model_call_accounting": 40414,
+    "request_sequence_hash": 40414,
+    "failure_excluded_without_imputation": 271,
+    "stateless_case_in_frozen_plan": 34184,
+    "defense_plan_frozen_before_purchases": 5,
+    "frozen_detector_requests": 5,
+    "defense_matches_frozen_plan": 12642,
+    "reuse_has_retained_source": 7785,
+    "reuse_exact_input_backend_and_source_hash": 7785,
+    "reuse_adds_no_model_calls": 7785,
+    "memory_exact_observation_lesson_order": 16,
+    "memory_group_and_length": 16,
+    "observation_matches_shopping_only": 246,
+    "lesson_only_last_five_shops": 47,
+    "checkpoint_full_memory_no_exam_entries": 48,
+    "checkpoint_full_context_hash": 48,
+    "checkpoint_expected_memory_counts": 48,
+    "shopping_frozen_plan_and_order": 246,
+    "washout_exact_frozen_request_and_full_memory": 14015,
+    "exam_fixed_question_identity": 13769,
+    "complete_request_archive": 338,
+    "successful_request_has_response": 1215,
+    "actual_request_hash": 1215,
+    "actual_sampling_model_settings": 1215,
+    "actual_context_with_output_reserve": 1215,
+    "response_archive_matches_trajectory": 1215,
+    "fresh_dialogue_per_question": 338,
+    "within_question_history_retained": 877,
+    "actual_exam_injects_full_checkpoint": 118
+  },
+  "sampled_complete_cases": 338,
+  "lessons_checked": 47,
+  "issues": [],
+  "deferred_concurrent_writes": [],
+  "log_files_scanned": 14,
+  "log_findings": [],
+  "failures": []
+}

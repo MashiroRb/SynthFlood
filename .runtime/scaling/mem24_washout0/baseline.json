@@ -1,0 +1,25 @@
+{
+  "new_job": 151011,
+  "counts": {
+    "shopping.jsonl": 194,
+    "exam.jsonl": 17812,
+    "resume_events.jsonl": 12561
+  },
+  "hashes": {
+    "shopping.jsonl": "5954c5506de341536f3b3c060a075533d3a343e2b38e95dab9e5606d0025798c",
+    "exam.jsonl": "30df58bba703ca55202182c5fcad967978ff02130ebb3c701ea2fd5510c750d8",
+    "resume_events.jsonl": "b6d75edf604bc9bd5e5a345e11cf669970c376e407cdcce43a289810b4e7f2ed"
+  },
+  "old": {
+    "old_job": 150049,
+    "old_target": "150039_0",
+    "client_job": 150946,
+    "host_job": 150933,
+    "node": "aias-compute-01",
+    "seeds": [
+      2030,
+      2032
+    ],
+    "port": 18049
+  }
+}

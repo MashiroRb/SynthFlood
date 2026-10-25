@@ -1,0 +1,405 @@
+{
+  "schema_version": 2,
+  "timestamp_utc": "2026-10-24T08:55:49.561015+00:00",
+  "monitoring_policy": "Final legal purchase completion; no repeated-browsing or intermediate-format behavior statistics",
+  "counts": {
+    "logical_rows": 109697,
+    "new_evaluations": 89621,
+    "valid": 89230,
+    "purchase_failure": 391,
+    "missing_confidence": 1222,
+    "confidence_reports": 88008,
+    "confidence_sum": 79932.68000003767,
+    "confidence_success_sum": 43554
+  },
+  "rates": {
+    "all": {
+      "new_evaluations": 89621,
+      "valid": 89230,
+      "purchase_failures": 391,
+      "purchase_failure": 0.004362816750538378,
+      "missing_confidence": 0.013694945646083156,
+      "confidence_mean": 0.9082433415148358,
+      "confidence_report_success": 0.4948868284701391
+    },
+    "memory": {
+      "new_evaluations": 45054,
+      "valid": 45020,
+      "purchase_failures": 34,
+      "purchase_failure": 0.0007546499755848537,
+      "missing_confidence": 0.0061528209684584625,
+      "confidence_mean": 0.9387285161924046,
+      "confidence_report_success": 0.5840019667881009
+    },
+    "phase:shopping": {
+      "new_evaluations": 482,
+      "valid": 482,
+      "purchase_failures": 0,
+      "purchase_failure": 0.0,
+      "missing_confidence": 0.006224066390041493,
+      "confidence_mean": 0.8975991649269337,
+      "confidence_report_success": 0.4759916492693111
+    },
+    "writer:washout0": {
+      "new_evaluations": 12705,
+      "valid": 12694,
+      "purchase_failures": 11,
+      "purchase_failure": 0.0008658008658008658,
+      "missing_confidence": 0.007168741137545297,
+      "confidence_mean": 0.9412512893755599,
+      "confidence_report_success": 0.5793065143219869
+    },
+    "phase:exam": {
+      "new_evaluations": 44572,
+      "valid": 44538,
+      "purchase_failures": 34,
+      "purchase_failure": 0.0007628107331957282,
+      "missing_confidence": 0.0061520499348870624,
+      "confidence_mean": 0.9391735947947949,
+      "confidence_report_success": 0.5851707934212904
+    },
+    "writer:washout1": {
+      "new_evaluations": 14408,
+      "valid": 14394,
+      "purchase_failures": 14,
+      "purchase_failure": 0.000971682398667407,
+      "missing_confidence": 0.006461025427261359,
+      "confidence_mean": 0.9406866652681825,
+      "confidence_report_success": 0.5885602405426194
+    },
+    "writer:washout2": {
+      "new_evaluations": 8866,
+      "valid": 8864,
+      "purchase_failures": 2,
+      "purchase_failure": 0.00022558087074216106,
+      "missing_confidence": 0.004512635379061372,
+      "confidence_mean": 0.9350668631006547,
+      "confidence_report_success": 0.5755893019038985
+    },
+    "writer:washout3": {
+      "new_evaluations": 9075,
+      "valid": 9068,
+      "purchase_failures": 7,
+      "purchase_failure": 0.0007713498622589532,
+      "missing_confidence": 0.00584472871636524,
+      "confidence_mean": 0.9356794231836043,
+      "confidence_report_success": 0.5915696062118692
+    },
+    "stateless": {
+      "new_evaluations": 44567,
+      "valid": 44210,
+      "purchase_failures": 357,
+      "purchase_failure": 0.008010411290865438,
+      "missing_confidence": 0.021375254467315086,
+      "confidence_mean": 0.8767167456373739,
+      "confidence_report_success": 0.4027273777880504
+    },
+    "phase:main": {
+      "new_evaluations": 6800,
+      "valid": 6722,
+      "purchase_failures": 78,
+      "purchase_failure": 0.011470588235294118,
+      "missing_confidence": 0.019934543290687296,
+      "confidence_mean": 0.8803809957498796,
+      "confidence_report_success": 0.42319368548876746
+    },
+    "writer:worker0": {
+      "new_evaluations": 7335,
+      "valid": 7298,
+      "purchase_failures": 37,
+      "purchase_failure": 0.005044308111792775,
+      "missing_confidence": 0.014935598794190189,
+      "confidence_mean": 0.8767561552372075,
+      "confidence_report_success": 0.4035331756850744
+    },
+    "phase:probe": {
+      "new_evaluations": 740,
+      "valid": 730,
+      "purchase_failures": 10,
+      "purchase_failure": 0.013513513513513514,
+      "missing_confidence": 0.005479452054794521,
+      "confidence_mean": 0.9037190082644608,
+      "confidence_report_success": 0.6542699724517906
+    },
+    "phase:single": {
+      "new_evaluations": 4139,
+      "valid": 4101,
+      "purchase_failures": 38,
+      "purchase_failure": 0.009180961584923895,
+      "missing_confidence": 0.02852962692026335,
+      "confidence_mean": 0.8804593373494203,
+      "confidence_report_success": 0.39633534136546184
+    },
+    "phase:clone": {
+      "new_evaluations": 7681,
+      "valid": 7649,
+      "purchase_failures": 32,
+      "purchase_failure": 0.004166124202577789,
+      "missing_confidence": 0.014380964832004184,
+      "confidence_mean": 0.8825507361719439,
+      "confidence_report_success": 0.41225626740947074
+    },
+    "phase:defense": {
+      "new_evaluations": 25207,
+      "valid": 25008,
+      "purchase_failures": 199,
+      "purchase_failure": 0.007894632443368906,
+      "missing_confidence": 0.023192578374920024,
+      "confidence_mean": 0.8725151465530041,
+      "confidence_report_success": 0.3878336335352874
+    },
+    "writer:worker1": {
+      "new_evaluations": 7531,
+      "valid": 7425,
+      "purchase_failures": 106,
+      "purchase_failure": 0.014075156021776657,
+      "missing_confidence": 0.018855218855218854,
+      "confidence_mean": 0.8692244337680567,
+      "confidence_report_success": 0.4230610844200412
+    },
+    "writer:worker2": {
+      "new_evaluations": 7602,
+      "valid": 7538,
+      "purchase_failures": 64,
+      "purchase_failure": 0.008418837148118917,
+      "missing_confidence": 0.030512072167683736,
+      "confidence_mean": 0.8768814997263648,
+      "confidence_report_success": 0.3541324575807334
+    },
+    "writer:worker3": {
+      "new_evaluations": 7683,
+      "valid": 7615,
+      "purchase_failures": 68,
+      "purchase_failure": 0.008850709358323572,
+      "missing_confidence": 0.02521339461588969,
+      "confidence_mean": 0.8737437693655205,
+      "confidence_report_success": 0.34649063720867573
+    },
+    "writer:worker4": {
+      "new_evaluations": 7203,
+      "valid": 7162,
+      "purchase_failures": 41,
+      "purchase_failure": 0.005692072747466334,
+      "missing_confidence": 0.02429488969561575,
+      "confidence_mean": 0.8872567258157199,
+      "confidence_report_success": 0.4307384087006296
+    },
+    "writer:worker5": {
+      "new_evaluations": 4903,
+      "valid": 4886,
+      "purchase_failures": 17,
+      "purchase_failure": 0.0034672649398327553,
+      "missing_confidence": 0.014940646745804339,
+      "confidence_mean": 0.8740182838147031,
+      "confidence_report_success": 0.4882609599002701
+    },
+    "writer:worker6": {
+      "new_evaluations": 1559,
+      "valid": 1547,
+      "purchase_failures": 12,
+      "purchase_failure": 0.007697241821680564,
+      "missing_confidence": 0.006464124111182934,
+      "confidence_mean": 0.8765126870526891,
+      "confidence_report_success": 0.4690956408588159
+    },
+    "writer:worker7": {
+      "new_evaluations": 751,
+      "valid": 739,
+      "purchase_failures": 12,
+      "purchase_failure": 0.015978695073235686,
+      "missing_confidence": 0.023004059539918808,
+      "confidence_mean": 0.8972299168975058,
+      "confidence_report_success": 0.2770083102493075
+    }
+  },
+  "purchase_failure_reasons": {
+    "all": {
+      "format_retries_exhausted": 391
+    },
+    "memory": {
+      "format_retries_exhausted": 34
+    },
+    "phase:exam": {
+      "format_retries_exhausted": 34
+    },
+    "writer:washout0": {
+      "format_retries_exhausted": 11
+    },
+    "writer:washout1": {
+      "format_retries_exhausted": 14
+    },
+    "writer:washout2": {
+      "format_retries_exhausted": 2
+    },
+    "writer:washout3": {
+      "format_retries_exhausted": 7
+    },
+    "stateless": {
+      "format_retries_exhausted": 357
+    },
+    "phase:main": {
+      "format_retries_exhausted": 78
+    },
+    "writer:worker0": {
+      "format_retries_exhausted": 37
+    },
+    "phase:probe": {
+      "format_retries_exhausted": 10
+    },
+    "phase:single": {
+      "format_retries_exhausted": 38
+    },
+    "phase:clone": {
+      "format_retries_exhausted": 32
+    },
+    "phase:defense": {
+      "format_retries_exhausted": 199
+    },
+    "writer:worker1": {
+      "format_retries_exhausted": 106
+    },
+    "writer:worker2": {
+      "format_retries_exhausted": 64
+    },
+    "writer:worker3": {
+      "format_retries_exhausted": 68
+    },
+    "writer:worker4": {
+      "format_retries_exhausted": 41
+    },
+    "writer:worker5": {
+      "format_retries_exhausted": 17
+    },
+    "writer:worker6": {
+      "format_retries_exhausted": 12
+    },
+    "writer:worker7": {
+      "format_retries_exhausted": 12
+    }
+  },
+  "incomplete_lines": 0,
+  "examples": [
+    {
+      "case_key": "exam:M0:cp34:clone:37:2030:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 3,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:geo:49:2030:0",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:geo:91:2030:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:geo:93:2030:0",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:geo:99:2030:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:reviews:99:2030:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp2:geo:64:2030:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp2:reviews:64:2030:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp4:geo:42:2030:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp4:reviews:42:2030:0",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp22:reviews:52:2030:0",
+      "reason": "format_retries_exhausted",
+      "effective_views": 4,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:M0:cp10:clone:52:2031:0",
+      "reason": "format_retries_exhausted",
+      "effective_views": 5,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:geo:12:2031:0",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:geo:35:2031:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:reviews:35:2031:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:geo:44:2031:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:geo:49:2031:0",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:reviews:49:2031:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:geo:91:2031:1",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    },
+    {
+      "case_key": "exam:B0:cp0:reviews:93:2031:0",
+      "reason": "format_retries_exhausted",
+      "effective_views": 0,
+      "malformed": 4
+    }
+  ],
+  "source_input_hashes_valid": true,
+  "failures": []
+}

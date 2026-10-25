@@ -1,0 +1,692 @@
+{
+  "pdf": "/mnt/beegfs/home/liudianru26/project/www2027/sigconf.pdf",
+  "pdf_sha256": "06b0d1c3480cbace3393395546b1c843de9b20147606023a7d5b050a84b79af0",
+  "figure_groups": {
+    "Fig3c_Fig4_Table1": [
+      "p4a_sweep.csv",
+      "p4e_sweep.csv"
+    ],
+    "Fig8_Table3": [
+      "p4b_geo_sweep.csv",
+      "p4b_clone_sweep.csv",
+      "p4b_reviews_sweep.csv"
+    ],
+    "Fig3d_Fig7_Table2": [
+      "p2_sweep.csv",
+      "p4a_sweep.csv",
+      "p4c_prompt_sweep.csv",
+      "p4c_detector_text_sweep.csv",
+      "p4c_detector_struct_sweep.csv",
+      "p4c_provenance_sweep.csv",
+      "p4c_oracle_sweep.csv",
+      "p4c_random_sweep.csv"
+    ],
+    "Fig5a": [
+      "p4h_ppr_l0.5_sweep.csv",
+      "p4h_ppr_l1.0_sweep.csv",
+      "p4h_ppr_l2.0_sweep.csv",
+      "p4h_ppr_l4.0_sweep.csv",
+      "p4h_ppr_l6.0_sweep.csv",
+      "p4h_ppr_l8.0_sweep.csv"
+    ],
+    "Fig5b": [
+      "p4i_spoof25_sweep.csv",
+      "p4i_spoof35_sweep.csv",
+      "p4i_spoof50_sweep.csv",
+      "p4i_spoof65_sweep.csv",
+      "p4c_provenance_sweep.csv"
+    ],
+    "Fig5c": [
+      "p4m_none_st_sweep.csv",
+      "p4m_struct_st_sweep.csv",
+      "p4m_prov_st_sweep.csv"
+    ],
+    "Fig6b": [
+      "p4a_sweep.csv",
+      "p4j_prov_s2_n100_sweep.csv",
+      "p4j_struct_s2_n100_sweep.csv",
+      "p4h_ppr_l0.5_n100_sweep.csv",
+      "p4h_ppr_l1.0_n100_sweep.csv",
+      "p4h_ppr_l2.0_n100_sweep.csv",
+      "p4i_spoof25_n100_sweep.csv",
+      "p4i_spoof50_n100_sweep.csv",
+      "p4k_revtrust_n100_sweep.csv",
+      "p4c_oracle_n100_sweep.csv",
+      "p4c_text_n100_sweep.csv",
+      "p4c_random_n100_sweep.csv"
+    ],
+    "Text_Backbone": [
+      "p4d_llama_sweep.csv",
+      "p4f_3b_sweep.csv",
+      "p4f_1b5_sweep.csv"
+    ]
+  },
+  "result_files": {
+    "p2_sweep.csv": {
+      "sha256": "69364cfc82836e05cebefff9edd29d7f858e3316d137212d6c909fc8f176207f",
+      "rows": 120,
+      "cells": [
+        {
+          "eps": "0.0",
+          "seed": "1",
+          "defense": "none",
+          "rows": 40
+        },
+        {
+          "eps": "0.25",
+          "seed": "1",
+          "defense": "none",
+          "rows": 40
+        },
+        {
+          "eps": "0.75",
+          "seed": "1",
+          "defense": "none",
+          "rows": 40
+        }
+      ]
+    },
+    "p4a_sweep.csv": {
+      "sha256": "3fead6f87447a7e6ba8069b8dcf2047ee6246f93f32e29c4773053b8379eac9f",
+      "rows": 500,
+      "cells": [
+        {
+          "eps": "0.0",
+          "seed": "1",
+          "defense": "none",
+          "rows": 100
+        },
+        {
+          "eps": "0.1",
+          "seed": "1",
+          "defense": "none",
+          "rows": 100
+        },
+        {
+          "eps": "0.25",
+          "seed": "1",
+          "defense": "none",
+          "rows": 100
+        },
+        {
+          "eps": "0.5",
+          "seed": "1",
+          "defense": "none",
+          "rows": 100
+        },
+        {
+          "eps": "0.75",
+          "seed": "1",
+          "defense": "none",
+          "rows": 100
+        }
+      ]
+    },
+    "p4b_clone_sweep.csv": {
+      "sha256": "d48f88e575af981d3fcefd3735a9c2a00653dc41187f86f62b8b1f72e7b579ab",
+      "rows": 80,
+      "cells": [
+        {
+          "eps": "0.0",
+          "seed": "1",
+          "defense": "none",
+          "rows": 40
+        },
+        {
+          "eps": "0.75",
+          "seed": "1",
+          "defense": "none",
+          "rows": 40
+        }
+      ]
+    },
+    "p4b_geo_sweep.csv": {
+      "sha256": "957ea63743133f4dd6384302b2c2e94424ff6ce423072dc3081f5ad859fa1ab1",
+      "rows": 80,
+      "cells": [
+        {
+          "eps": "0.0",
+          "seed": "1",
+          "defense": "none",
+          "rows": 40
+        },
+        {
+          "eps": "0.75",
+          "seed": "1",
+          "defense": "none",
+          "rows": 40
+        }
+      ]
+    },
+    "p4b_reviews_sweep.csv": {
+      "sha256": "6df5aba33115215b6b8492f131f514201dbb7fc90e670b39f6178393998a9a0e",
+      "rows": 80,
+      "cells": [
+        {
+          "eps": "0.0",
+          "seed": "1",
+          "defense": "none",
+          "rows": 40
+        },
+        {
+          "eps": "0.75",
+          "seed": "1",
+          "defense": "none",
+          "rows": 40
+        }
+      ]
+    },
+    "p4c_detector_struct_sweep.csv": {
+      "sha256": "9da43e42652cffbf82a379cf8ff718d10f4bf52eb5f4dd117232c00e3bf48f7b",
+      "rows": 80,
+      "cells": [
+        {
+          "eps": "0.0",
+          "seed": "1",
+          "defense": "detector_struct",
+          "rows": 40
+        },
+        {
+          "eps": "0.75",
+          "seed": "1",
+          "defense": "detector_struct",
+          "rows": 40
+        }
+      ]
+    },
+    "p4c_detector_text_sweep.csv": {
+      "sha256": "42757c689627102970196592fe24e93e5b17c935754c15ce9c4a5986171d234b",
+      "rows": 80,
+      "cells": [
+        {
+          "eps": "0.0",
+          "seed": "1",
+          "defense": "detector_text",
+          "rows": 40
+        },
+        {
+          "eps": "0.75",
+          "seed": "1",
+          "defense": "detector_text",
+          "rows": 40
+        }
+      ]
+    },
+    "p4c_oracle_n100_sweep.csv": {
+      "sha256": "6e23bf3a705e5295bde2d7b8d06442dd9612c831a75bd987697b0d53ee87f2ac",
+      "rows": 200,
+      "cells": [
+        {
+          "eps": "0.0",
+          "seed": "1",
+          "defense": "oracle",
+          "rows": 100
+        },
+        {
+          "eps": "0.75",
+          "seed": "1",
+          "defense": "oracle",
+          "rows": 100
+        }
+      ]
+    },
+    "p4c_oracle_sweep.csv": {
+      "sha256": "a242667358d18a92be97c70461c4e6c7d255ffe9f764a4a5904022341bd2c391",
+      "rows": 80,
+      "cells": [
+        {
+          "eps": "0.0",
+          "seed": "1",
+          "defense": "oracle",
+          "rows": 40
+        },
+        {
+          "eps": "0.75",
+          "seed": "1",
+          "defense": "oracle",
+          "rows": 40
+        }
+      ]
+    },
+    "p4c_prompt_sweep.csv": {
+      "sha256": "96628794d0658827ddd71ff5992b43b9738182b7c704223480a37bddd82fd498",
+      "rows": 80,
+      "cells": [
+        {
+          "eps": "0.0",
+          "seed": "1",
+          "defense": "prompt",
+          "rows": 40
+        },
+        {
+          "eps": "0.75",
+          "seed": "1",
+          "defense": "prompt",
+          "rows": 40
+        }
+      ]
+    },
+    "p4c_provenance_sweep.csv": {
+      "sha256": "0121c6414b20c924c18b4202d886c5dfc2119fce1e9c1bfd17556912ae8c5c85",
+      "rows": 80,
+      "cells": [
+        {
+          "eps": "0.0",
+          "seed": "1",
+          "defense": "provenance",
+          "rows": 40
+        },
+        {
+          "eps": "0.75",
+          "seed": "1",
+          "defense": "provenance",
+          "rows": 40
+        }
+      ]
+    },
+    "p4c_random_n100_sweep.csv": {
+      "sha256": "874d643e809c8ee892f012c0889d9df09fe63928b6ed890c6b5931831b8ce010",
+      "rows": 200,
+      "cells": [
+        {
+          "eps": "0.0",
+          "seed": "1",
+          "defense": "random",
+          "rows": 100
+        },
+        {
+          "eps": "0.75",
+          "seed": "1",
+          "defense": "random",
+          "rows": 100
+        }
+      ]
+    },
+    "p4c_random_sweep.csv": {
+      "sha256": "f5e5d208740928c2a90f42512012fa7bdead5e05efdd9978eb9883cd7fa74f43",
+      "rows": 80,
+      "cells": [
+        {
+          "eps": "0.0",
+          "seed": "1",
+          "defense": "random",
+          "rows": 40
+        },
+        {
+          "eps": "0.75",
+          "seed": "1",
+          "defense": "random",
+          "rows": 40
+        }
+      ]
+    },
+    "p4c_text_n100_sweep.csv": {
+      "sha256": "ae347cbd385275c8385966845c05c6ffeb2b047c31b51f998269444e3b8a462e",
+      "rows": 200,
+      "cells": [
+        {
+          "eps": "0.0",
+          "seed": "1",
+          "defense": "detector_text",
+          "rows": 100
+        },
+        {
+          "eps": "0.75",
+          "seed": "1",
+          "defense": "detector_text",
+          "rows": 100
+        }
+      ]
+    },
+    "p4d_llama_sweep.csv": {
+      "sha256": "e0216dbc86649a9bcdf4d18729ab3d2ef322f2cc0b162e0c1204ae8b50c5be3d",
+      "rows": 120,
+      "cells": [
+        {
+          "eps": "0.0",
+          "seed": "1",
+          "defense": "none",
+          "rows": 40
+        },
+        {
+          "eps": "0.25",
+          "seed": "1",
+          "defense": "none",
+          "rows": 40
+        },
+        {
+          "eps": "0.75",
+          "seed": "1",
+          "defense": "none",
+          "rows": 40
+        }
+      ]
+    },
+    "p4e_sweep.csv": {
+      "sha256": "2dc6d59908d2788529c70877df60d6a2f130063ee2a7feac98844823961d50ca",
+      "rows": 200,
+      "cells": [
+        {
+          "eps": "0.0",
+          "seed": "2",
+          "defense": "none",
+          "rows": 100
+        },
+        {
+          "eps": "0.75",
+          "seed": "2",
+          "defense": "none",
+          "rows": 100
+        }
+      ]
+    },
+    "p4f_1b5_sweep.csv": {
+      "sha256": "2acba87102cb8b0190523f3af79b296935f2cbfe7ed78e376198ddf7c7d8b8da",
+      "rows": 80,
+      "cells": [
+        {
+          "eps": "0.0",
+          "seed": "1",
+          "defense": "none",
+          "rows": 40
+        },
+        {
+          "eps": "0.75",
+          "seed": "1",
+          "defense": "none",
+          "rows": 40
+        }
+      ]
+    },
+    "p4f_3b_sweep.csv": {
+      "sha256": "488d91523d1b0e61ad583f10a8df9eb9d76def47582275fe39d39a5abb02e0bf",
+      "rows": 80,
+      "cells": [
+        {
+          "eps": "0.0",
+          "seed": "1",
+          "defense": "none",
+          "rows": 40
+        },
+        {
+          "eps": "0.75",
+          "seed": "1",
+          "defense": "none",
+          "rows": 40
+        }
+      ]
+    },
+    "p4h_ppr_l0.5_n100_sweep.csv": {
+      "sha256": "3eddf4499b0e3d285545fc445cd2657c0febf636465b8e01abe890ba0a71eb8d",
+      "rows": 100,
+      "cells": [
+        {
+          "eps": "0.75",
+          "seed": "1",
+          "defense": "ppr",
+          "rows": 100
+        }
+      ]
+    },
+    "p4h_ppr_l0.5_sweep.csv": {
+      "sha256": "efb99939cbe346662a8bac5b89b2cc8b23ceebeb2a6dea62a8ac42d2ea8444e8",
+      "rows": 40,
+      "cells": [
+        {
+          "eps": "0.75",
+          "seed": "1",
+          "defense": "ppr",
+          "rows": 40
+        }
+      ]
+    },
+    "p4h_ppr_l1.0_n100_sweep.csv": {
+      "sha256": "1dcbab3d7efce9fc2e06679a5f5193dfc3ac1b33495a99a072c33a63d07dfa0b",
+      "rows": 100,
+      "cells": [
+        {
+          "eps": "0.75",
+          "seed": "1",
+          "defense": "ppr",
+          "rows": 100
+        }
+      ]
+    },
+    "p4h_ppr_l1.0_sweep.csv": {
+      "sha256": "7f334237f39eadb05da1bbc44d9a7f7ea0904eed7ac0f3291e26c17f8c72fe0a",
+      "rows": 40,
+      "cells": [
+        {
+          "eps": "0.75",
+          "seed": "1",
+          "defense": "ppr",
+          "rows": 40
+        }
+      ]
+    },
+    "p4h_ppr_l2.0_n100_sweep.csv": {
+      "sha256": "2aa331fd16794f0781085a3d547e5b9a7386b3a756857ff98503f5cd772f8421",
+      "rows": 100,
+      "cells": [
+        {
+          "eps": "0.75",
+          "seed": "1",
+          "defense": "ppr",
+          "rows": 100
+        }
+      ]
+    },
+    "p4h_ppr_l2.0_sweep.csv": {
+      "sha256": "02c45aa00b1effbcaa708749b0dc3c0870abf01c8ef7c6ddfc3e429a0dba3656",
+      "rows": 40,
+      "cells": [
+        {
+          "eps": "0.75",
+          "seed": "1",
+          "defense": "ppr",
+          "rows": 40
+        }
+      ]
+    },
+    "p4h_ppr_l4.0_sweep.csv": {
+      "sha256": "eab81dc9c48301104d802b1dc35ffc46fcedda9b391230969afd627e4bef4fce",
+      "rows": 40,
+      "cells": [
+        {
+          "eps": "0.75",
+          "seed": "1",
+          "defense": "ppr",
+          "rows": 40
+        }
+      ]
+    },
+    "p4h_ppr_l6.0_sweep.csv": {
+      "sha256": "83b57bec962686c6347d65ced4bab190c196b2b1b47efaef017429654cf68081",
+      "rows": 40,
+      "cells": [
+        {
+          "eps": "0.75",
+          "seed": "1",
+          "defense": "ppr",
+          "rows": 40
+        }
+      ]
+    },
+    "p4h_ppr_l8.0_sweep.csv": {
+      "sha256": "50ff0ad41c2bb1778432fbdcc41be13038b7a3addf83539a76215b74d5cfe220",
+      "rows": 40,
+      "cells": [
+        {
+          "eps": "0.75",
+          "seed": "1",
+          "defense": "ppr",
+          "rows": 40
+        }
+      ]
+    },
+    "p4i_spoof25_n100_sweep.csv": {
+      "sha256": "17c5f4f2f8bca2d8989811868a170601c4f05e44fd8a8db00cd657bc14b37e92",
+      "rows": 100,
+      "cells": [
+        {
+          "eps": "0.75",
+          "seed": "1",
+          "defense": "provenance",
+          "rows": 100
+        }
+      ]
+    },
+    "p4i_spoof25_sweep.csv": {
+      "sha256": "2f1aa725638800e20490728c92890306115105cedb2c7bf4704d95fd55a7bc75",
+      "rows": 40,
+      "cells": [
+        {
+          "eps": "0.75",
+          "seed": "1",
+          "defense": "provenance",
+          "rows": 40
+        }
+      ]
+    },
+    "p4i_spoof35_sweep.csv": {
+      "sha256": "90fc5ba83b33932c5edc46699a21dad209dc106378d9440f571cff167082df87",
+      "rows": 40,
+      "cells": [
+        {
+          "eps": "0.75",
+          "seed": "1",
+          "defense": "provenance",
+          "rows": 40
+        }
+      ]
+    },
+    "p4i_spoof50_n100_sweep.csv": {
+      "sha256": "4c63208b77c44917f7f44476ba343a33e12f23d711fa1bc11607477d4efdeb38",
+      "rows": 100,
+      "cells": [
+        {
+          "eps": "0.75",
+          "seed": "1",
+          "defense": "provenance",
+          "rows": 100
+        }
+      ]
+    },
+    "p4i_spoof50_sweep.csv": {
+      "sha256": "a5fa6d477ee2b542b2e859655b3fdd731f3b87e9f56c65cec64eb31f9039e0ba",
+      "rows": 40,
+      "cells": [
+        {
+          "eps": "0.75",
+          "seed": "1",
+          "defense": "provenance",
+          "rows": 40
+        }
+      ]
+    },
+    "p4i_spoof65_sweep.csv": {
+      "sha256": "360eae6c4578ce0ae3888f927384b56ccbb436872feea8e96c8af5a7706e7492",
+      "rows": 40,
+      "cells": [
+        {
+          "eps": "0.75",
+          "seed": "1",
+          "defense": "provenance",
+          "rows": 40
+        }
+      ]
+    },
+    "p4j_prov_s2_n100_sweep.csv": {
+      "sha256": "ad9d713d0c6158a7250769557a44c4a372ff9e00d7c64d54412a708c76d82f53",
+      "rows": 200,
+      "cells": [
+        {
+          "eps": "0.0",
+          "seed": "2",
+          "defense": "provenance",
+          "rows": 100
+        },
+        {
+          "eps": "0.75",
+          "seed": "2",
+          "defense": "provenance",
+          "rows": 100
+        }
+      ]
+    },
+    "p4j_struct_s2_n100_sweep.csv": {
+      "sha256": "ea87fa8788b6ceeba2338612743e0033922296b04ea3fa19b3bb75a7b713f905",
+      "rows": 200,
+      "cells": [
+        {
+          "eps": "0.0",
+          "seed": "2",
+          "defense": "detector_struct",
+          "rows": 100
+        },
+        {
+          "eps": "0.75",
+          "seed": "2",
+          "defense": "detector_struct",
+          "rows": 100
+        }
+      ]
+    },
+    "p4k_revtrust_n100_sweep.csv": {
+      "sha256": "a5090dfcfbf676314ffc8aeaa36b63856f6567cf43a188459ede00469f63d7b2",
+      "rows": 200,
+      "cells": [
+        {
+          "eps": "0.0",
+          "seed": "1",
+          "defense": "reviewtrust",
+          "rows": 100
+        },
+        {
+          "eps": "0.75",
+          "seed": "1",
+          "defense": "reviewtrust",
+          "rows": 100
+        }
+      ]
+    },
+    "p4m_none_st_sweep.csv": {
+      "sha256": "316d55d0030f8f4cf2e30629859462c5db28e65bb225dbbf80a7fd818fd83632",
+      "rows": 40,
+      "cells": [
+        {
+          "eps": "0.75",
+          "seed": "1",
+          "defense": "none",
+          "rows": 40
+        }
+      ]
+    },
+    "p4m_prov_st_sweep.csv": {
+      "sha256": "d79261af7965227ce08bb941f20de4a86ae03038408b2df093fec12b41f7ac78",
+      "rows": 40,
+      "cells": [
+        {
+          "eps": "0.75",
+          "seed": "1",
+          "defense": "provenance",
+          "rows": 40
+        }
+      ]
+    },
+    "p4m_struct_st_sweep.csv": {
+      "sha256": "4c0ab5a01fb2872d10ceb575a0e73551fafb3c0b4f7823e0e9b128681686bc39",
+      "rows": 40,
+      "cells": [
+        {
+          "eps": "0.75",
+          "seed": "1",
+          "defense": "detector_struct",
+          "rows": 40
+        }
+      ]
+    }
+  },
+  "new_model_calls": 0,
+  "scope": "PDF captions and source path inventory; not certification of identical historical model inputs"
+}

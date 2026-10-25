@@ -1,0 +1,389 @@
+{"task_id": 1, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "Oral Care", "status": "accepted", "score": 5, "asin": "SYN-44594440"}
+{"task_id": 1, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "Oral Care", "status": "accepted", "score": 5, "asin": "SYN-10148385"}
+{"task_id": 1, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "Oral Care", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 1, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "Oral Care", "status": "accepted", "score": 5, "asin": "SYN-20857891"}
+{"task_id": 4, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "Hair Color", "status": "accepted", "score": 5, "asin": "SYN-15847629"}
+{"task_id": 4, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "Hair Color", "status": "accepted", "score": 5, "asin": "SYN-60729395"}
+{"task_id": 4, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "Hair Color", "status": "accepted", "score": 5, "asin": "SYN-12909571"}
+{"task_id": 9, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "Herbal", "status": "accepted", "score": 5, "asin": "SYN-90112083"}
+{"task_id": 9, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "Herbal", "status": "accepted", "score": 5, "asin": "SYN-29123359"}
+{"task_id": 9, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "Herbal", "status": "accepted", "score": 5, "asin": "SYN-39459452"}
+{"task_id": 13, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "Bottled & Canned Coffee Drinks", "status": "accepted", "score": 5, "asin": "SYN-26462676"}
+{"task_id": 13, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "Bottled & Canned Coffee Drinks", "status": "accepted", "score": 5, "asin": "SYN-81389064"}
+{"task_id": 13, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "Bottled & Canned Coffee Drinks", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 13, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "Bottled & Canned Coffee Drinks", "status": "accepted", "score": 5, "asin": "SYN-33709046"}
+{"task_id": 20, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "Hair Clippers", "status": "accepted", "score": 5, "asin": "SYN-91581415"}
+{"task_id": 20, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "Hair Clippers", "status": "accepted", "score": 5, "asin": "SYN-21446375"}
+{"task_id": 20, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "Hair Clippers", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 20, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "Hair Clippers", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 20, "family": "reviews", "pass_index": 0, "attempt": 2, "generation_query": "Hair Clippers", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 20, "family": "reviews", "pass_index": 0, "attempt": 3, "generation_query": "Hair Clippers", "status": "accepted", "score": 5, "asin": "SYN-23999775"}
+{"task_id": 21, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "makeup brushes & tools", "status": "accepted", "score": 5, "asin": "SYN-32896654"}
+{"task_id": 21, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "makeup brushes & tools", "status": "accepted", "score": 5, "asin": "SYN-10088149"}
+{"task_id": 21, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "makeup brushes & tools", "status": "accepted", "score": 5, "asin": "SYN-21797483"}
+{"task_id": 22, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "shampoo & conditioner", "status": "accepted", "score": 5, "asin": "SYN-74433387"}
+{"task_id": 22, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "shampoo & conditioner", "status": "judge_rejection", "score": 3}
+{"task_id": 22, "family": "clone", "pass_index": 0, "attempt": 1, "generation_query": "shampoo & conditioner", "status": "accepted", "score": 5, "asin": "SYN-56440154"}
+{"task_id": 22, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "shampoo & conditioner", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 22, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "shampoo & conditioner", "status": "accepted", "score": 5, "asin": "SYN-23421956"}
+{"task_id": 23, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "makeup palettes", "status": "accepted", "score": 5, "asin": "SYN-91325145"}
+{"task_id": 23, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "makeup palettes", "status": "accepted", "score": 5, "asin": "SYN-71989679"}
+{"task_id": 23, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "makeup palettes", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 23, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "makeup palettes", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 23, "family": "reviews", "pass_index": 0, "attempt": 2, "generation_query": "makeup palettes", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 23, "family": "reviews", "pass_index": 0, "attempt": 3, "generation_query": "makeup palettes", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 23, "family": "reviews", "pass_index": 0, "attempt": 4, "generation_query": "makeup palettes", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 23, "family": "reviews", "pass_index": 0, "attempt": 5, "generation_query": "makeup palettes", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 23, "family": "reviews", "pass_index": 0, "attempt": 6, "generation_query": "makeup palettes", "status": "accepted", "score": 5, "asin": "SYN-22972733"}
+{"task_id": 24, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "skin care tools", "status": "accepted", "score": 5, "asin": "SYN-34159801"}
+{"task_id": 24, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "skin care tools", "status": "accepted", "score": 5, "asin": "SYN-89195993"}
+{"task_id": 24, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "skin care tools", "status": "accepted", "score": 4, "asin": "SYN-50541401"}
+{"task_id": 25, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "hair cutting tools", "status": "accepted", "score": 5, "asin": "SYN-42444022"}
+{"task_id": 25, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "hair cutting tools", "status": "accepted", "score": 5, "asin": "SYN-89862750"}
+{"task_id": 25, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "hair cutting tools", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 25, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "hair cutting tools", "status": "accepted", "score": 4, "asin": "SYN-20293121"}
+{"task_id": 26, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "Statues", "status": "accepted", "score": 5, "asin": "SYN-00021454"}
+{"task_id": 26, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "Statues", "status": "accepted", "score": 5, "asin": "SYN-17835094"}
+{"task_id": 26, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "Statues", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 26, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "Statues", "status": "accepted", "score": 5, "asin": "SYN-63511904"}
+{"task_id": 27, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "makeup palettes", "status": "accepted", "score": 5, "asin": "SYN-69697005"}
+{"task_id": 27, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "makeup palettes", "status": "accepted", "score": 5, "asin": "SYN-43752025"}
+{"task_id": 27, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "makeup palettes", "status": "judge_rejection", "score": 3}
+{"task_id": 27, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "makeup palettes", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 27, "family": "reviews", "pass_index": 0, "attempt": 2, "generation_query": "makeup palettes", "status": "accepted", "score": 5, "asin": "SYN-39019074"}
+{"task_id": 28, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "home theater systems", "status": "accepted", "score": 5, "asin": "SYN-72198606"}
+{"task_id": 28, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "home theater systems", "status": "accepted", "score": 5, "asin": "SYN-91617682"}
+{"task_id": 28, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "home theater systems", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 28, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "home theater systems", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 28, "family": "reviews", "pass_index": 0, "attempt": 2, "generation_query": "home theater systems", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 28, "family": "reviews", "pass_index": 0, "attempt": 3, "generation_query": "home theater systems", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 28, "family": "reviews", "pass_index": 0, "attempt": 4, "generation_query": "home theater systems", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 28, "family": "reviews", "pass_index": 0, "attempt": 5, "generation_query": "home theater systems", "status": "accepted", "score": 5, "asin": "SYN-33094593"}
+{"task_id": 29, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "makeup palettes", "status": "accepted", "score": 5, "asin": "SYN-30982709"}
+{"task_id": 29, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "makeup palettes", "status": "accepted", "score": 5, "asin": "SYN-68338745"}
+{"task_id": 29, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "makeup palettes", "status": "accepted", "score": 5, "asin": "SYN-37878291"}
+{"task_id": 30, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "women's mules & clogs", "status": "accepted", "score": 5, "asin": "SYN-70330482"}
+{"task_id": 30, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "women's mules & clogs", "status": "accepted", "score": 5, "asin": "SYN-73873824"}
+{"task_id": 30, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "women's mules & clogs", "status": "accepted", "score": 5, "asin": "SYN-53477382"}
+{"task_id": 31, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "men's pants", "status": "accepted", "score": 5, "asin": "SYN-33042826"}
+{"task_id": 31, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "men's pants", "status": "accepted", "score": 5, "asin": "SYN-19757923"}
+{"task_id": 31, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "men's pants", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 31, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "men's pants", "status": "accepted", "score": 5, "asin": "SYN-09629000"}
+{"task_id": 32, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "hair loss products", "status": "accepted", "score": 5, "asin": "SYN-46821322"}
+{"task_id": 32, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "hair loss products", "status": "accepted", "score": 5, "asin": "SYN-25764176"}
+{"task_id": 32, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "hair loss products", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 32, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "hair loss products", "status": "accepted", "score": 5, "asin": "SYN-32891366"}
+{"task_id": 33, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "coffee tables", "status": "accepted", "score": 5, "asin": "SYN-09598990"}
+{"task_id": 33, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "coffee tables", "status": "accepted", "score": 5, "asin": "SYN-96815578"}
+{"task_id": 33, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "coffee tables", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 33, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "coffee tables", "status": "accepted", "score": 5, "asin": "SYN-26557451"}
+{"task_id": 34, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "mac", "status": "accepted", "score": 5, "asin": "SYN-66860358"}
+{"task_id": 34, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "mac", "status": "accepted", "score": 5, "asin": "SYN-88226826"}
+{"task_id": 34, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "mac", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 34, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "mac", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 34, "family": "reviews", "pass_index": 0, "attempt": 2, "generation_query": "mac", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 34, "family": "reviews", "pass_index": 0, "attempt": 3, "generation_query": "mac", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 34, "family": "reviews", "pass_index": 0, "attempt": 4, "generation_query": "mac", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 34, "family": "reviews", "pass_index": 0, "attempt": 5, "generation_query": "mac", "status": "accepted", "score": 5, "asin": "SYN-99209814"}
+{"task_id": 35, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "men's shorts", "status": "accepted", "score": 5, "asin": "SYN-75199351"}
+{"task_id": 35, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "men's shorts", "status": "accepted", "score": 5, "asin": "SYN-31964877"}
+{"task_id": 35, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "men's shorts", "status": "accepted", "score": 5, "asin": "SYN-35525479"}
+{"task_id": 36, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "storage benches", "status": "accepted", "score": 5, "asin": "SYN-30119211"}
+{"task_id": 36, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "storage benches", "status": "accepted", "score": 5, "asin": "SYN-64210324"}
+{"task_id": 36, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "storage benches", "status": "accepted", "score": 5, "asin": "SYN-18552672"}
+{"task_id": 37, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "eyes makeup", "status": "accepted", "score": 5, "asin": "SYN-54966851"}
+{"task_id": 37, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "eyes makeup", "status": "accepted", "score": 5, "asin": "SYN-52094451"}
+{"task_id": 37, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "eyes makeup", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 37, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "eyes makeup", "status": "accepted", "score": 5, "asin": "SYN-22755499"}
+{"task_id": 38, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "digital cameras", "status": "accepted", "score": 5, "asin": "SYN-69524801"}
+{"task_id": 38, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "digital cameras", "status": "accepted", "score": 5, "asin": "SYN-69304734"}
+{"task_id": 38, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "digital cameras", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 38, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "digital cameras", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 38, "family": "reviews", "pass_index": 0, "attempt": 2, "generation_query": "digital cameras", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 38, "family": "reviews", "pass_index": 0, "attempt": 3, "generation_query": "digital cameras", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 38, "family": "reviews", "pass_index": 0, "attempt": 4, "generation_query": "digital cameras", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 38, "family": "reviews", "pass_index": 0, "attempt": 5, "generation_query": "digital cameras", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 38, "family": "reviews", "pass_index": 0, "attempt": 6, "generation_query": "digital cameras", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 38, "family": "reviews", "pass_index": 0, "attempt": 7, "generation_query": "digital cameras", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 38, "family": "reviews", "pass_index": 0, "attempt": 8, "generation_query": "digital cameras", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 38, "family": "reviews", "pass_index": 0, "attempt": 9, "generation_query": "digital cameras", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 38, "family": "reviews", "pass_index": 0, "attempt": 10, "generation_query": "digital cameras", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 38, "family": "reviews", "pass_index": 0, "attempt": 11, "generation_query": "digital cameras", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 38, "family": "reviews", "pass_index": 0, "attempt": 12, "generation_query": "digital cameras", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 38, "family": "reviews", "pass_index": 0, "attempt": 13, "generation_query": "digital cameras", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 38, "family": "reviews", "pass_index": 0, "attempt": 14, "generation_query": "digital cameras", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 38, "family": "reviews", "pass_index": 0, "attempt": 15, "generation_query": "digital cameras", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 38, "family": "reviews", "pass_index": 0, "attempt": 16, "generation_query": "digital cameras", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 38, "family": "reviews", "pass_index": 0, "attempt": 17, "generation_query": "digital cameras", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 38, "family": "reviews", "pass_index": 0, "attempt": 18, "generation_query": "digital cameras", "status": "accepted", "score": 5, "asin": "SYN-47040530"}
+{"task_id": 39, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "bluetooth headsets", "status": "accepted", "score": 5, "asin": "SYN-99245798"}
+{"task_id": 39, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "bluetooth headsets", "status": "accepted", "score": 5, "asin": "SYN-37616068"}
+{"task_id": 39, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "bluetooth headsets", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 39, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "bluetooth headsets", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 39, "family": "reviews", "pass_index": 0, "attempt": 2, "generation_query": "bluetooth headsets", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 39, "family": "reviews", "pass_index": 0, "attempt": 3, "generation_query": "bluetooth headsets", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 39, "family": "reviews", "pass_index": 0, "attempt": 4, "generation_query": "bluetooth headsets", "status": "accepted", "score": 5, "asin": "SYN-40814223"}
+{"task_id": 40, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "men's athletic shoes", "status": "accepted", "score": 5, "asin": "SYN-58455551"}
+{"task_id": 40, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "men's athletic shoes", "status": "accepted", "score": 5, "asin": "SYN-94115008"}
+{"task_id": 40, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "men's athletic shoes", "status": "accepted", "score": 5, "asin": "SYN-49815901"}
+{"task_id": 41, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "lips makeup", "status": "accepted", "score": 5, "asin": "SYN-10544409"}
+{"task_id": 41, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "lips makeup", "status": "accepted", "score": 5, "asin": "SYN-34002227"}
+{"task_id": 41, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "lips makeup", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 41, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "lips makeup", "status": "accepted", "score": 5, "asin": "SYN-24479247"}
+{"task_id": 42, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "deodorants & antiperspirants", "status": "accepted", "score": 5, "asin": "SYN-76408057"}
+{"task_id": 42, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "deodorants & antiperspirants", "status": "accepted", "score": 5, "asin": "SYN-14729507"}
+{"task_id": 42, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "deodorants & antiperspirants", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 42, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "deodorants & antiperspirants", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 42, "family": "reviews", "pass_index": 0, "attempt": 2, "generation_query": "deodorants & antiperspirants", "status": "accepted", "score": 5, "asin": "SYN-07746966"}
+{"task_id": 43, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "Nail Polish", "status": "accepted", "score": 5, "asin": "SYN-50362138"}
+{"task_id": 43, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "Nail Polish", "status": "accepted", "score": 5, "asin": "SYN-94420853"}
+{"task_id": 43, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "Nail Polish", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 43, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "Nail Polish", "status": "accepted", "score": 5, "asin": "SYN-20383366"}
+{"task_id": 44, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "women's tops, tees & blouses", "status": "accepted", "score": 5, "asin": "SYN-23330928"}
+{"task_id": 44, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "women's tops, tees & blouses", "status": "accepted", "score": 5, "asin": "SYN-35332437"}
+{"task_id": 44, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "women's tops, tees & blouses", "status": "accepted", "score": 5, "asin": "SYN-94008345"}
+{"task_id": 45, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "eyes care", "status": "accepted", "score": 5, "asin": "SYN-43519692"}
+{"task_id": 45, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "eyes care", "status": "accepted", "score": 5, "asin": "SYN-29066184"}
+{"task_id": 45, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "eyes care", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 45, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "eyes care", "status": "accepted", "score": 5, "asin": "SYN-15452365"}
+{"task_id": 46, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "End Tables", "status": "accepted", "score": 5, "asin": "SYN-54279864"}
+{"task_id": 46, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "End Tables", "status": "accepted", "score": 5, "asin": "SYN-80344856"}
+{"task_id": 46, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "End Tables", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 46, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "End Tables", "status": "accepted", "score": 5, "asin": "SYN-17878973"}
+{"task_id": 47, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "furniture sets", "status": "accepted", "score": 5, "asin": "SYN-03095188"}
+{"task_id": 47, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "furniture sets", "status": "accepted", "score": 5, "asin": "SYN-08140713"}
+{"task_id": 47, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "furniture sets", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 47, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "furniture sets", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 47, "family": "reviews", "pass_index": 0, "attempt": 2, "generation_query": "furniture sets", "status": "accepted", "score": 5, "asin": "SYN-29470861"}
+{"task_id": 48, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "breakfast foods", "status": "accepted", "score": 5, "asin": "SYN-99701129"}
+{"task_id": 48, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "breakfast foods", "status": "accepted", "score": 5, "asin": "SYN-49358996"}
+{"task_id": 48, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "breakfast foods", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 48, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "breakfast foods", "status": "accepted", "score": 5, "asin": "SYN-61876529"}
+{"task_id": 49, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "hair coloring products", "status": "accepted", "score": 5, "asin": "SYN-81413635"}
+{"task_id": 49, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "hair coloring products", "status": "accepted", "score": 5, "asin": "SYN-45588744"}
+{"task_id": 49, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "hair coloring products", "status": "accepted", "score": 5, "asin": "SYN-52836043"}
+{"task_id": 50, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "pc", "status": "accepted", "score": 5, "asin": "SYN-81856081"}
+{"task_id": 50, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "pc", "status": "accepted", "score": 5, "asin": "SYN-81806014"}
+{"task_id": 50, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "pc", "status": "accepted", "score": 5, "asin": "SYN-01833592"}
+{"task_id": 51, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "Freeze-Dried", "status": "accepted", "score": 5, "asin": "SYN-31340699"}
+{"task_id": 51, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "Freeze-Dried", "status": "accepted", "score": 5, "asin": "SYN-33962925"}
+{"task_id": 51, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "Freeze-Dried", "status": "accepted", "score": 5, "asin": "SYN-22581068"}
+{"task_id": 52, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "television accessories", "status": "accepted", "score": 5, "asin": "SYN-96187923"}
+{"task_id": 52, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "television accessories", "status": "accepted", "score": 5, "asin": "SYN-33463904"}
+{"task_id": 52, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "television accessories", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 52, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "television accessories", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 52, "family": "reviews", "pass_index": 0, "attempt": 2, "generation_query": "television accessories", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 52, "family": "reviews", "pass_index": 0, "attempt": 3, "generation_query": "television accessories", "status": "accepted", "score": 5, "asin": "SYN-61103557"}
+{"task_id": 53, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "Chandeliers", "status": "accepted", "score": 5, "asin": "SYN-63939046"}
+{"task_id": 53, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "Chandeliers", "status": "accepted", "score": 5, "asin": "SYN-14232692"}
+{"task_id": 53, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "Chandeliers", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 53, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "Chandeliers", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 53, "family": "reviews", "pass_index": 0, "attempt": 2, "generation_query": "Chandeliers", "status": "accepted", "score": 5, "asin": "SYN-16257088"}
+{"task_id": 54, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "candles", "status": "accepted", "score": 5, "asin": "SYN-17393263"}
+{"task_id": 54, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "candles", "status": "accepted", "score": 5, "asin": "SYN-28892673"}
+{"task_id": 54, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "candles", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 54, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "candles", "status": "accepted", "score": 5, "asin": "SYN-39534784"}
+{"task_id": 55, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "nightstands", "status": "accepted", "score": 5, "asin": "SYN-36753097"}
+{"task_id": 55, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "nightstands", "status": "accepted", "score": 5, "asin": "SYN-92500171"}
+{"task_id": 55, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "nightstands", "status": "accepted", "score": 5, "asin": "SYN-29560925"}
+{"task_id": 56, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "deodorants & antiperspirants", "status": "accepted", "score": 5, "asin": "SYN-93447858"}
+{"task_id": 56, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "deodorants & antiperspirants", "status": "accepted", "score": 5, "asin": "SYN-23115711"}
+{"task_id": 56, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "deodorants & antiperspirants", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 56, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "deodorants & antiperspirants", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 56, "family": "reviews", "pass_index": 0, "attempt": 2, "generation_query": "deodorants & antiperspirants", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 56, "family": "reviews", "pass_index": 0, "attempt": 3, "generation_query": "deodorants & antiperspirants", "status": "accepted", "score": 5, "asin": "SYN-08389402"}
+{"task_id": 57, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "playstation", "status": "accepted", "score": 5, "asin": "SYN-23378621"}
+{"task_id": 57, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "playstation", "status": "accepted", "score": 5, "asin": "SYN-54151518"}
+{"task_id": 57, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "playstation", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 57, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "playstation", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 57, "family": "reviews", "pass_index": 0, "attempt": 2, "generation_query": "playstation", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 57, "family": "reviews", "pass_index": 0, "attempt": 3, "generation_query": "playstation", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 57, "family": "reviews", "pass_index": 0, "attempt": 4, "generation_query": "playstation", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 57, "family": "reviews", "pass_index": 0, "attempt": 5, "generation_query": "playstation", "status": "accepted", "score": 5, "asin": "SYN-45241857"}
+{"task_id": 58, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "women's tops, tees & blouses", "status": "accepted", "score": 5, "asin": "SYN-65919051"}
+{"task_id": 58, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "women's tops, tees & blouses", "status": "accepted", "score": 5, "asin": "SYN-75441263"}
+{"task_id": 58, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "women's tops, tees & blouses", "status": "accepted", "score": 5, "asin": "SYN-36817786"}
+{"task_id": 59, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "mouthwash", "status": "accepted", "score": 5, "asin": "SYN-22387676"}
+{"task_id": 59, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "mouthwash", "status": "accepted", "score": 5, "asin": "SYN-16082015"}
+{"task_id": 59, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "mouthwash", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 59, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "mouthwash", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 59, "family": "reviews", "pass_index": 0, "attempt": 2, "generation_query": "mouthwash", "status": "accepted", "score": 5, "asin": "SYN-38575819"}
+{"task_id": 60, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "women's mules & clogs", "status": "accepted", "score": 5, "asin": "SYN-42094913"}
+{"task_id": 60, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "women's mules & clogs", "status": "accepted", "score": 5, "asin": "SYN-44898174"}
+{"task_id": 60, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "women's mules & clogs", "status": "accepted", "score": 5, "asin": "SYN-64333489"}
+{"task_id": 61, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "meat snacks", "status": "accepted", "score": 5, "asin": "SYN-32439822"}
+{"task_id": 61, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "meat snacks", "status": "accepted", "score": 5, "asin": "SYN-99032924"}
+{"task_id": 61, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "meat snacks", "status": "accepted", "score": 5, "asin": "SYN-25720859"}
+{"task_id": 62, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "meat snacks", "status": "accepted", "score": 5, "asin": "SYN-06484014"}
+{"task_id": 62, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "meat snacks", "status": "accepted", "score": 5, "asin": "SYN-34161754"}
+{"task_id": 62, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "meat snacks", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 62, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "meat snacks", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 62, "family": "reviews", "pass_index": 0, "attempt": 2, "generation_query": "meat snacks", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 62, "family": "reviews", "pass_index": 0, "attempt": 3, "generation_query": "meat snacks", "status": "accepted", "score": 5, "asin": "SYN-59653594"}
+{"task_id": 63, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "food & beverage gifts", "status": "accepted", "score": 5, "asin": "SYN-18261621"}
+{"task_id": 63, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "food & beverage gifts", "status": "accepted", "score": 5, "asin": "SYN-40116972"}
+{"task_id": 63, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "food & beverage gifts", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 63, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "food & beverage gifts", "status": "accepted", "score": 5, "asin": "SYN-43862071"}
+{"task_id": 64, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "snack & trail mixes", "status": "accepted", "score": 5, "asin": "SYN-51279270"}
+{"task_id": 64, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "snack & trail mixes", "status": "accepted", "score": 5, "asin": "SYN-84442940"}
+{"task_id": 64, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "snack & trail mixes", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 64, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "snack & trail mixes", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 64, "family": "reviews", "pass_index": 0, "attempt": 2, "generation_query": "snack & trail mixes", "status": "accepted", "score": 5, "asin": "SYN-95011249"}
+{"task_id": 65, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "iphone accessories", "status": "accepted", "score": 5, "asin": "SYN-96587315"}
+{"task_id": 65, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "iphone accessories", "status": "accepted", "score": 5, "asin": "SYN-92834841"}
+{"task_id": 65, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "iphone accessories", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 65, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "iphone accessories", "status": "accepted", "score": 5, "asin": "SYN-98043232"}
+{"task_id": 66, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "Routers", "status": "accepted", "score": 5, "asin": "SYN-56755084"}
+{"task_id": 66, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "Routers", "status": "accepted", "score": 5, "asin": "SYN-69923766"}
+{"task_id": 66, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "Routers", "status": "accepted", "score": 5, "asin": "SYN-59854008"}
+{"task_id": 67, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "men's shorts", "status": "accepted", "score": 5, "asin": "SYN-86231170"}
+{"task_id": 67, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "men's shorts", "status": "accepted", "score": 5, "asin": "SYN-11771270"}
+{"task_id": 67, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "men's shorts", "status": "accepted", "score": 5, "asin": "SYN-79659326"}
+{"task_id": 68, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "cheeses", "status": "accepted", "score": 5, "asin": "SYN-78628806"}
+{"task_id": 68, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "cheeses", "status": "accepted", "score": 5, "asin": "SYN-39031400"}
+{"task_id": 68, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "cheeses", "status": "accepted", "score": 5, "asin": "SYN-60360770"}
+{"task_id": 69, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "foot, hand & nail care", "status": "accepted", "score": 5, "asin": "SYN-58789889"}
+{"task_id": 69, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "foot, hand & nail care", "status": "accepted", "score": 5, "asin": "SYN-64776403"}
+{"task_id": 69, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "foot, hand & nail care", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 69, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "foot, hand & nail care", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 69, "family": "reviews", "pass_index": 0, "attempt": 2, "generation_query": "foot, hand & nail care", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 69, "family": "reviews", "pass_index": 0, "attempt": 3, "generation_query": "foot, hand & nail care", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 69, "family": "reviews", "pass_index": 0, "attempt": 4, "generation_query": "foot, hand & nail care", "status": "accepted", "score": 5, "asin": "SYN-09386485"}
+{"task_id": 70, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "hair loss products", "status": "accepted", "score": 5, "asin": "SYN-57812759"}
+{"task_id": 70, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "hair loss products", "status": "accepted", "score": 5, "asin": "SYN-02048144"}
+{"task_id": 70, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "hair loss products", "status": "accepted", "score": 5, "asin": "SYN-28064225"}
+{"task_id": 71, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "face care", "status": "accepted", "score": 5, "asin": "SYN-72442604"}
+{"task_id": 71, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "face care", "status": "accepted", "score": 5, "asin": "SYN-61280707"}
+{"task_id": 71, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "face care", "status": "accepted", "score": 5, "asin": "SYN-80232395"}
+{"task_id": 72, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "men's dress shirts", "status": "accepted", "score": 5, "asin": "SYN-80192955"}
+{"task_id": 72, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "men's dress shirts", "status": "accepted", "score": 5, "asin": "SYN-37249268"}
+{"task_id": 72, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "men's dress shirts", "status": "accepted", "score": 5, "asin": "SYN-15709682"}
+{"task_id": 73, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "salon & spa equipment", "status": "accepted", "score": 5, "asin": "SYN-94561869"}
+{"task_id": 73, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "salon & spa equipment", "status": "accepted", "score": 5, "asin": "SYN-52932506"}
+{"task_id": 73, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "salon & spa equipment", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 73, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "salon & spa equipment", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 73, "family": "reviews", "pass_index": 0, "attempt": 2, "generation_query": "salon & spa equipment", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 73, "family": "reviews", "pass_index": 0, "attempt": 3, "generation_query": "salon & spa equipment", "status": "accepted", "score": 5, "asin": "SYN-86841460"}
+{"task_id": 74, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "children's dental care", "status": "accepted", "score": 5, "asin": "SYN-90432976"}
+{"task_id": 74, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "children's dental care", "status": "accepted", "score": 5, "asin": "SYN-02871479"}
+{"task_id": 74, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "children's dental care", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 74, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "children's dental care", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 74, "family": "reviews", "pass_index": 0, "attempt": 2, "generation_query": "children's dental care", "status": "accepted", "score": 5, "asin": "SYN-38155774"}
+{"task_id": 75, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "digital cameras", "status": "accepted", "score": 5, "asin": "SYN-85906079"}
+{"task_id": 75, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "digital cameras", "status": "accepted", "score": 5, "asin": "SYN-97654125"}
+{"task_id": 75, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "digital cameras", "status": "review_count_incomplete", "review_count": 18}
+{"task_id": 75, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "digital cameras", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 75, "family": "reviews", "pass_index": 0, "attempt": 2, "generation_query": "digital cameras", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 75, "family": "reviews", "pass_index": 0, "attempt": 3, "generation_query": "digital cameras", "status": "accepted", "score": 5, "asin": "SYN-22745698"}
+{"task_id": 76, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "Hair Cutting Kits", "status": "accepted", "score": 5, "asin": "SYN-26386256"}
+{"task_id": 76, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "Hair Cutting Kits", "status": "accepted", "score": 5, "asin": "SYN-76524900"}
+{"task_id": 76, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "Hair Cutting Kits", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 76, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "Hair Cutting Kits", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 76, "family": "reviews", "pass_index": 0, "attempt": 2, "generation_query": "Hair Cutting Kits", "status": "judge_rejection", "score": 3}
+{"task_id": 76, "family": "reviews", "pass_index": 0, "attempt": 3, "generation_query": "Hair Cutting Kits", "status": "accepted", "score": 5, "asin": "SYN-55013145"}
+{"task_id": 77, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "breakfast foods", "status": "accepted", "score": 5, "asin": "SYN-96295812"}
+{"task_id": 77, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "breakfast foods", "status": "accepted", "score": 5, "asin": "SYN-47419025"}
+{"task_id": 77, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "breakfast foods", "status": "accepted", "score": 5, "asin": "SYN-06069551"}
+{"task_id": 78, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "wall art", "status": "accepted", "score": 5, "asin": "SYN-51136409"}
+{"task_id": 78, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "wall art", "status": "accepted", "score": 5, "asin": "SYN-48886510"}
+{"task_id": 78, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "wall art", "status": "accepted", "score": 5, "asin": "SYN-15139213"}
+{"task_id": 79, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "pc", "status": "accepted", "score": 5, "asin": "SYN-47384496"}
+{"task_id": 79, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "pc", "status": "accepted", "score": 5, "asin": "SYN-21549436"}
+{"task_id": 79, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "pc", "status": "accepted", "score": 4, "asin": "SYN-76042551"}
+{"task_id": 80, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "eyes makeup", "status": "accepted", "score": 5, "asin": "SYN-55888291"}
+{"task_id": 80, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "eyes makeup", "status": "accepted", "score": 5, "asin": "SYN-63833941"}
+{"task_id": 80, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "eyes makeup", "status": "accepted", "score": 5, "asin": "SYN-82600188"}
+{"task_id": 81, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "digital cameras", "status": "accepted", "score": 5, "asin": "SYN-16756991"}
+{"task_id": 81, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "digital cameras", "status": "accepted", "score": 5, "asin": "SYN-44868624"}
+{"task_id": 81, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "digital cameras", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 81, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "digital cameras", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 81, "family": "reviews", "pass_index": 0, "attempt": 2, "generation_query": "digital cameras", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 81, "family": "reviews", "pass_index": 0, "attempt": 3, "generation_query": "digital cameras", "status": "accepted", "score": 5, "asin": "SYN-34460886"}
+{"task_id": 82, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "bedframes", "status": "accepted", "score": 5, "asin": "SYN-50796610"}
+{"task_id": 82, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "bedframes", "status": "accepted", "score": 5, "asin": "SYN-66499201"}
+{"task_id": 82, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "bedframes", "status": "accepted", "score": 4, "asin": "SYN-95192313"}
+{"task_id": 83, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "bedframes", "status": "accepted", "score": 5, "asin": "SYN-49791611"}
+{"task_id": 83, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "bedframes", "status": "accepted", "score": 5, "asin": "SYN-23220331"}
+{"task_id": 83, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "bedframes", "status": "accepted", "score": 5, "asin": "SYN-07296498"}
+{"task_id": 84, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "snack puddings & gelatins", "status": "accepted", "score": 5, "asin": "SYN-38189376"}
+{"task_id": 84, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "snack puddings & gelatins", "status": "accepted", "score": 5, "asin": "SYN-80533541"}
+{"task_id": 84, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "snack puddings & gelatins", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 84, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "snack puddings & gelatins", "status": "accepted", "score": 5, "asin": "SYN-54124511"}
+{"task_id": 85, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "pc", "status": "accepted", "score": 5, "asin": "SYN-09283859"}
+{"task_id": 85, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "pc", "status": "accepted", "score": 5, "asin": "SYN-53194921"}
+{"task_id": 85, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "pc", "status": "accepted", "score": 5, "asin": "SYN-93477358"}
+{"task_id": 86, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "Chips & Crisps", "status": "accepted", "score": 5, "asin": "SYN-09570244"}
+{"task_id": 86, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "Chips & Crisps", "status": "accepted", "score": 5, "asin": "SYN-33878366"}
+{"task_id": 86, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "Chips & Crisps", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 86, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "Chips & Crisps", "status": "accepted", "score": 5, "asin": "SYN-41470571"}
+{"task_id": 87, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "granola & nutrition bars", "status": "accepted", "score": 5, "asin": "SYN-18684400"}
+{"task_id": 87, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "granola & nutrition bars", "status": "accepted", "score": 5, "asin": "SYN-64715459"}
+{"task_id": 87, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "granola & nutrition bars", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 87, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "granola & nutrition bars", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 87, "family": "reviews", "pass_index": 0, "attempt": 2, "generation_query": "granola & nutrition bars", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 87, "family": "reviews", "pass_index": 0, "attempt": 3, "generation_query": "granola & nutrition bars", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 87, "family": "reviews", "pass_index": 0, "attempt": 4, "generation_query": "granola & nutrition bars", "status": "accepted", "score": 5, "asin": "SYN-84482696"}
+{"task_id": 88, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "men's outdoor shoes", "status": "accepted", "score": 5, "asin": "SYN-02569468"}
+{"task_id": 88, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "men's outdoor shoes", "status": "accepted", "score": 5, "asin": "SYN-30065242"}
+{"task_id": 88, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "men's outdoor shoes", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 88, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "men's outdoor shoes", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 88, "family": "reviews", "pass_index": 0, "attempt": 2, "generation_query": "men's outdoor shoes", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 88, "family": "reviews", "pass_index": 0, "attempt": 3, "generation_query": "men's outdoor shoes", "status": "accepted", "score": 5, "asin": "SYN-00300440"}
+{"task_id": 89, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "women's athletic shoes", "status": "accepted", "score": 5, "asin": "SYN-36311625"}
+{"task_id": 89, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "women's athletic shoes", "status": "accepted", "score": 5, "asin": "SYN-13324282"}
+{"task_id": 89, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "women's athletic shoes", "status": "accepted", "score": 5, "asin": "SYN-70926026"}
+{"task_id": 90, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "men's fashion sneakers", "status": "accepted", "score": 5, "asin": "SYN-83173708"}
+{"task_id": 90, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "men's fashion sneakers", "status": "accepted", "score": 5, "asin": "SYN-52775498"}
+{"task_id": 90, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "men's fashion sneakers", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 90, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "men's fashion sneakers", "status": "accepted", "score": 5, "asin": "SYN-78652875"}
+{"task_id": 91, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "women's fragrance", "status": "accepted", "score": 5, "asin": "SYN-27636106"}
+{"task_id": 91, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "women's fragrance", "status": "accepted", "score": 5, "asin": "SYN-52520732"}
+{"task_id": 91, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "women's fragrance", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 91, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "women's fragrance", "status": "accepted", "score": 5, "asin": "SYN-06574185"}
+{"task_id": 92, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "makeup sets", "status": "accepted", "score": 5, "asin": "SYN-27218825"}
+{"task_id": 92, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "makeup sets", "status": "accepted", "score": 5, "asin": "SYN-40658720"}
+{"task_id": 92, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "makeup sets", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 92, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "makeup sets", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 92, "family": "reviews", "pass_index": 0, "attempt": 2, "generation_query": "makeup sets", "status": "accepted", "score": 5, "asin": "SYN-80231211"}
+{"task_id": 93, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "coffee tables", "status": "accepted", "score": 5, "asin": "SYN-38442842"}
+{"task_id": 93, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "coffee tables", "status": "accepted", "score": 5, "asin": "SYN-75067906"}
+{"task_id": 93, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "coffee tables", "status": "accepted", "score": 5, "asin": "SYN-74862555"}
+{"task_id": 94, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "women's mules & clogs", "status": "accepted", "score": 5, "asin": "SYN-70010756"}
+{"task_id": 94, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "women's mules & clogs", "status": "accepted", "score": 5, "asin": "SYN-90787888"}
+{"task_id": 94, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "women's mules & clogs", "status": "accepted", "score": 5, "asin": "SYN-53421312"}
+{"task_id": 95, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "Fiber Optic Cables", "status": "accepted", "score": 5, "asin": "SYN-27366249"}
+{"task_id": 95, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "Fiber Optic Cables", "status": "accepted", "score": 5, "asin": "SYN-61727431"}
+{"task_id": 95, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "Fiber Optic Cables", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 95, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "Fiber Optic Cables", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 95, "family": "reviews", "pass_index": 0, "attempt": 2, "generation_query": "Fiber Optic Cables", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 95, "family": "reviews", "pass_index": 0, "attempt": 3, "generation_query": "Fiber Optic Cables", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 95, "family": "reviews", "pass_index": 0, "attempt": 4, "generation_query": "Fiber Optic Cables", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 95, "family": "reviews", "pass_index": 0, "attempt": 5, "generation_query": "Fiber Optic Cables", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 95, "family": "reviews", "pass_index": 0, "attempt": 6, "generation_query": "Fiber Optic Cables", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 95, "family": "reviews", "pass_index": 0, "attempt": 7, "generation_query": "Fiber Optic Cables", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 95, "family": "reviews", "pass_index": 0, "attempt": 8, "generation_query": "Fiber Optic Cables", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 95, "family": "reviews", "pass_index": 0, "attempt": 9, "generation_query": "Fiber Optic Cables", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 95, "family": "reviews", "pass_index": 0, "attempt": 10, "generation_query": "Fiber Optic Cables", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 95, "family": "reviews", "pass_index": 0, "attempt": 11, "generation_query": "Fiber Optic Cables", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 95, "family": "reviews", "pass_index": 0, "attempt": 12, "generation_query": "Fiber Optic Cables", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 95, "family": "reviews", "pass_index": 0, "attempt": 13, "generation_query": "Fiber Optic Cables", "status": "accepted", "score": 5, "asin": "SYN-38994510"}
+{"task_id": 96, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "beverages", "status": "accepted", "score": 5, "asin": "SYN-61338924"}
+{"task_id": 96, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "beverages", "status": "accepted", "score": 5, "asin": "SYN-06703772"}
+{"task_id": 96, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "beverages", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 96, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "beverages", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 96, "family": "reviews", "pass_index": 0, "attempt": 2, "generation_query": "beverages", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 96, "family": "reviews", "pass_index": 0, "attempt": 3, "generation_query": "beverages", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 96, "family": "reviews", "pass_index": 0, "attempt": 4, "generation_query": "beverages", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 96, "family": "reviews", "pass_index": 0, "attempt": 5, "generation_query": "beverages", "status": "accepted", "score": 5, "asin": "SYN-76318800"}
+{"task_id": 97, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "Salon & Spa Chairs", "status": "accepted", "score": 5, "asin": "SYN-55235470"}
+{"task_id": 97, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "Salon & Spa Chairs", "status": "accepted", "score": 5, "asin": "SYN-38691079"}
+{"task_id": 97, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "Salon & Spa Chairs", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 97, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "Salon & Spa Chairs", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 97, "family": "reviews", "pass_index": 0, "attempt": 2, "generation_query": "Salon & Spa Chairs", "status": "accepted", "score": 5, "asin": "SYN-84237292"}
+{"task_id": 98, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "hair coloring products", "status": "accepted", "score": 5, "asin": "SYN-72624623"}
+{"task_id": 98, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "hair coloring products", "status": "accepted", "score": 5, "asin": "SYN-74999753"}
+{"task_id": 98, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "hair coloring products", "status": "review_count_incomplete", "review_count": 19}
+{"task_id": 98, "family": "reviews", "pass_index": 0, "attempt": 1, "generation_query": "hair coloring products", "status": "accepted", "score": 5, "asin": "SYN-57357486"}
+{"task_id": 99, "family": "geo", "pass_index": 0, "attempt": 0, "generation_query": "hair cutting tools", "status": "accepted", "score": 5, "asin": "SYN-57429485"}
+{"task_id": 99, "family": "clone", "pass_index": 0, "attempt": 0, "generation_query": "hair cutting tools", "status": "accepted", "score": 5, "asin": "SYN-99229675"}
+{"task_id": 99, "family": "reviews", "pass_index": 0, "attempt": 0, "generation_query": "hair cutting tools", "status": "accepted", "score": 5, "asin": "SYN-17565299"}

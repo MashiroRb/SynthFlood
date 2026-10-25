@@ -1,0 +1,21 @@
+{
+  "validated_selected_targets": true,
+  "reservoir_count": 1000,
+  "eligible_count": 412,
+  "selected_count": 100,
+  "n98_overlap": 0,
+  "known_bad_asin_selected": false,
+  "all_selected_official_gold_reward_at_least_0_999": true,
+  "category_matching": {
+    "fine": 73,
+    "coarse": 27
+  },
+  "partial_candidates": 6,
+  "partial_by_family": {
+    "geo": 2,
+    "clone": 2,
+    "reviews": 2
+  },
+  "complete_tasks_at_snapshot": 2,
+  "target_sha256": "9b77d2bbe7514133b8c2e9573ac8be3dd84d355d8c215f43c632f1243f7b6c1c"
+}
